@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@frctl/fractal": "^1.5.2",
+    "@frctl/nunjucks": "^2.0.6"
+  },
+  "name": "jorant",
+  "version": "0.0.1",
+  "description": "Jorant DEsign System",
+  "main": "fractal.config.js",
+  "scripts": {
+    "start": "npx fractal start --sync"
+  },
+  "author": "Etat de Vaud - DGNSI",
+  "license": "ISC"
+}
