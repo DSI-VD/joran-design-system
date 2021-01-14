@@ -1,13 +1,18 @@
 {
   "dependencies": {
     "@frctl/fractal": "^1.5.2",
-    "@frctl/nunjucks": "^2.0.6"
+    "@frctl/nunjucks": "^2.0.6",
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
   },
   "name": "jorant",
   "version": "0.0.1",
   "description": "Jorant DEsign System",
   "main": "fractal.config.js",
   "scripts": {
+    "build:styles": "postcss src/assets/styles/style.css -o www/assets/styles/style.css --config postcss.config.js",
     "start": "npx fractal start --sync"
   },
   "author": "Etat de Vaud - DGNSI",
