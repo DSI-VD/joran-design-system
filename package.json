@@ -18,7 +18,7 @@
   },
   "author": "Etat de Vaud - DGNSI",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@frctl/fractal": "^1.5.2",
     "@frctl/nunjucks": "^2.0.6",
     "alpinejs": "^2.8.0",
