@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Include Tailwind */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Settings */
+@import "./_settings.*.css";
+
+/* Tools */
+@import "./_tools.*.css";
+
+/* Generic */
+@import "./_generic.*.css";
+
+/* Elements */
+@import "./_elements.*.css";
+
+/* Objects */
+@import "./_objects.*.css";
+
+/* Components */
+@import "./_components.*.css";
+
+/* Vendors */
+@import "./_vendors.*.css";
+
+/* Utilities */
+@import "./_utilities.*.css";
