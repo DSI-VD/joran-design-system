@@ -21,6 +21,7 @@
   "devDependencies": {
     "@frctl/fractal": "^1.5.2",
     "@frctl/nunjucks": "^2.0.6",
+    "@tailwindcss/typography": "^0.3.1",
     "alpinejs": "^2.8.0",
     "autoprefixer": "^10.2.1",
     "chokidar-cli": "^2.1.0",
