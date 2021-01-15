@@ -1,20 +1,34 @@
 {
-  "dependencies": {
-    "@frctl/fractal": "^1.5.2",
-    "@frctl/nunjucks": "^2.0.6",
-    "autoprefixer": "^10.2.1",
-    "postcss": "^8.2.4",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.2"
-  },
   "name": "jorant",
   "version": "0.0.1",
   "description": "Jorant DEsign System",
   "main": "fractal.config.js",
   "scripts": {
-    "build:styles": "postcss src/assets/styles/style.css -o www/assets/styles/style.css --config postcss.config.js",
-    "start": "npx fractal start --sync"
+    "clean": "rimraf build public",
+    "prebuild": "npm run clean",
+    "build": "run-s build:*",
+    "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
+    "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
+    "build:fractal": "npx fractal build",
+    "watch": "npm run build && run-p watch:*",
+    "watch:styles": "chokidar \"src/assets/**/*.css\" -c \"npm run build:styles\" --initial",
+    "watch:scripts": "chokidar \"src/assets/**/*.js\" -c \"npm run build:scripts\" --initial",
+    "watch:fractal": "npx fractal start --sync",
+    "start": "npm run watch"
   },
   "author": "Etat de Vaud - DGNSI",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.2",
+    "@frctl/nunjucks": "^2.0.6",
+    "alpinejs": "^2.8.0",
+    "autoprefixer": "^10.2.1",
+    "chokidar-cli": "^2.1.0",
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.0.2"
+  }
 }

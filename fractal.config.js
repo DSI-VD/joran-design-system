@@ -13,3 +13,6 @@ fractal.components.set("ext", ".nunj"); // look for files with a .nunj file exte
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/src/docs');
+
+fractal.web.set("static.path", __dirname + "/public");
+fractal.web.set("builder.dest", __dirname + "/build");
