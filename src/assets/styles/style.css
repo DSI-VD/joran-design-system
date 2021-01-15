@@ -1,7 +1,6 @@
 /* Include Tailwind */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
 /* Settings */
 @import "./_settings.*.css";
@@ -26,3 +25,9 @@
 
 /* Utilities */
 @import "./_utilities.*.css";
+
+/***
+ * Tailwind utilities 
+ * https://tailwindcss.com/docs/installation#using-a-custom-css-file
+ */
+@import "tailwindcss/utilities";
