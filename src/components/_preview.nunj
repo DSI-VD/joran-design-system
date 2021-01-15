@@ -27,6 +27,6 @@
   </head>
 
   <body>
-    <p>Hello world!</p>
+      {{ yield | safe }}
   </body>
 </html>
