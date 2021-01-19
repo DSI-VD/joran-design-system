@@ -1,0 +1,12 @@
+.c-button {
+    @apply bg-green-200;
+    @apply text-white;
+    @apply no-underline !important;
+    @apply font-bold;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded;
+    
+    @apply hover:bg-green-700;
+    @apply hover:text-white;
+}
