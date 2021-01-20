@@ -6,9 +6,13 @@
     @apply lg:relative;
 }
 
+/***
+ * 1. Add horizontal padding
+ */
 .c-overlay__text-container {
     @apply 
         mb-5
+        px-4 /* [1] */
     ;
 }
 
