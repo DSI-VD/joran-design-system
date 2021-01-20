@@ -4,9 +4,7 @@
  
  .c-nav {
   @apply
-    container
-    mx-auto
-    bg-green-200
+    bg-gray-50
   ;
 }
 
