@@ -1,7 +1,13 @@
-.c-nav {
-  @apply container;
-  @apply mx-auto;
-  @apply bg-green-200;
+/* ======================================================================
+ # _components.nav.css
+ ====================================================================== */
+ 
+ .c-nav {
+  @apply
+    container
+    mx-auto
+    bg-green-200
+  ;
 }
 
 .c-nav__toggle {
@@ -9,34 +15,53 @@
 }
 
 .c-nav__container--level-1 {
-  @apply flex;
-  @apply flex-col;
-  @apply flex-wrap;
-  @apply min-h-screen;
+  @apply 
+    flex
+    flex-col
+    flex-wrap
+    min-h-screen
+  ;
+}
 
-  @apply md:flex !important;
-  @apply md:flex-row;
-  @apply md:relative;
-  @apply md:min-h-0;
+@screen md {
+  .c-nav__container--level-1 {
+    @apply 
+      flex !important
+      flex-row
+      relative
+      md:min-h-0
+    ;
+  }
 }
 
 .c-nav__item--level-1 {
-  @apply text-3xl;
-  @apply font-bold;
-  @apply p-2;
+  @apply 
+    text-3xl
+    font-bold
+    p-2
+  ;
 }
 
 .c-nav__container--level-2 {
-  @apply bg-gray-50;
-  @apply flex;
-  @apply flex-col;
-  @apply w-full;
-  @apply md:absolute;
-  @apply left-0;
+  @apply 
+    bg-gray-50
+    flex
+    flex-col
+    w-full
+    left-0
+  ;
+}
+
+@screen md {
+  .c-nav__container--level-2 {
+    @apply absolute;
+  }
 }
 
 .c-nav__item--level-2 {
-  @apply text-xl;
-  @apply font-normal;
-  @apply p-2;
+  @apply 
+    text-xl
+    font-normal
+    p-2
+  ;
 }

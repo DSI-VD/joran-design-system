@@ -1,20 +1,33 @@
+/* ======================================================================
+   # _components.overlay.css
+   ====================================================================== */
+
 .c-overlay {
     @apply lg:relative;
 }
 
 .c-overlay__text-container {
-    @apply mb-5;
-    @apply lg:p-5;
-    @apply lg:m-20;
+    @apply 
+        mb-5
+    ;
+}
 
-    @apply lg:absolute;
-    @apply lg:z-10;
-    @apply lg:top-0;
-    @apply lg:left-1/2;
-    @apply lg:right-0;
-    @apply lg:max-h-full;
-
-    @apply lg:overflow-auto;
-    @apply lg:bg-white;
-    @apply lg:bg-opacity-90;
+@screen lg {
+    .c-overlay__text-container {
+        @apply
+            p-5
+            m-20
+            
+            absolute
+            z-10
+            top-0
+            left-1/2
+            right-0
+            max-h-full
+            
+            overflow-auto
+            bg-white
+            bg-opacity-90
+        ;
+    }
 }
