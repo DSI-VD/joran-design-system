@@ -1,0 +1,19 @@
+<div>
+    header
+</div>
+
+{% render '@navigation' %}
+
+<div>
+    img with title
+</div>
+
+<div>
+    text
+</div>
+
+{% render '@overlay' %}
+
+{% render '@overlay' %}
+
+{% render '@footer' %}
