@@ -8,6 +8,8 @@
 
 /***
  * 1. Add horizontal padding
+ *
+ * FIXME: when resizing from mobile to desktop the text not being centered behave strangely
  */
 .c-overlay__text-container {
     @apply 
