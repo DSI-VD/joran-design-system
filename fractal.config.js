@@ -10,6 +10,7 @@ fractal.set('project.title', 'Jorant design system');
 fractal.components.set('path', __dirname + '/src/components');
 fractal.components.engine("@frctl/nunjucks"); // register the Nunjucks adapter for your components
 fractal.components.set("ext", ".nunj"); // look for files with a .nunj file extension
+fractal.components.set('default.status', 'wip');
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/src/docs');
