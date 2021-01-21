@@ -1,5 +1,5 @@
 <div class="c-nav">
-  <nav class="container mx-auto" x-data="{ open: false }">
+  <nav class="o-container" x-data="{ open: false }">
     <a class="c-nav__toggle" href="#" @click.prevent="open = !open">SVG + Menu</a>
     <ul
       class="c-nav__container--level-1"
