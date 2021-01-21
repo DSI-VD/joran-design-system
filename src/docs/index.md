@@ -1,4 +1,4 @@
 ---
-title: Jorant Components
+title: Jorant Design System
 ---
-This is the component library for FooCorp. **Feel free to look around!**
+This is the component library for publications.vd.ch. **Feel free to look around!**
