@@ -1950,6 +1950,19 @@ video {
   }
 }
 
+/* ======================================================================
+   # _objects.list-inline.css
+   ====================================================================== */
+
+.o-list-inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.o-list-inline > li + li {
+  display: block;
+}
+
 .o-prose {
   color: #374151;
   max-width: 65ch;
@@ -3038,6 +3051,60 @@ video {
 .c-footer {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* -----------------------------------
+   # Headings
+   ----------------------------------- */
+
+.c-footer h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+/* -----------------------------------
+# Paragraph
+----------------------------------- */
+
+.c-footer p {
+  margin-bottom: 1.25rem;
+}
+
+/* -----------------------------------
+   # List
+   ----------------------------------- */
+
+.c-footer ul > li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* -----------------------------------
+   # Anchor
+   ----------------------------------- */
+
+.c-footer a {
+  text-decoration: underline;
+}
+
+/* -----------------------------------
+   # SVG
+   ----------------------------------- */
+
+.c-footer svg {
+  height: 2rem;
+}
+
+.c-footer__liste-image li + li {
+  margin-left: 1rem;
 }
 
 /* ======================================================================
@@ -3189,6 +3256,22 @@ video {
 /* Vendors */
 
 /* Utilities */
+
+/* ======================================================================
+   # _utilities.visually-hidden.css
+   ====================================================================== */
+
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 
 /***
  * Tailwind utilities 
