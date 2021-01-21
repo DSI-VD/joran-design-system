@@ -1,5 +1,5 @@
 <div class="c-overlay">
-    <div class="c-overlay__text-container prose">
+    <div class="c-overlay__text-container o-prose">
         <h2>Title</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim congue volutpat. Phasellus velit felis, cursus vitae porttitor sit amet, dictum eget turpis. Curabitur gravida felis nec ipsum dictum, id vestibulum nulla lobortis. Mauris non scelerisque ante. Fusce eleifend id ante a aliquet. Pellentesque sollicitudin tortor sed felis facilisis, in malesuada ligula luctus. In hac habitasse platea dictumst. Maecenas quis justo convallis, mollis risus in, gravida leo.</p>
         <p>
