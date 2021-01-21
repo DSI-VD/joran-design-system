@@ -1,0 +1,160 @@
+
+
+<div class="c-nav">
+  <nav class="o-container" x-data="{ open: false }">
+    <a class="c-nav__toggle" href="#" @click.prevent="open = !open">SVG + Menu</a>
+    <ul
+      class="c-nav__container--level-1"
+      x-show.transition="open"
+      @click.away="open = false"
+    >
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Somaire</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 1.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 1.2</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Projets</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 2.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 2.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 2.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Remerciement</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 3.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 3.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 3.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Où sommes-nous ?</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.3</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.4</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.5</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.6</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.7</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.8</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.9</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Menu 5 est passablement long</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 5.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 5.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 5.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+  </nav>
+</div>
+

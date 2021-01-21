@@ -1,0 +1,241 @@
+
+
+<div>
+    header
+</div>
+
+<div class="c-nav">
+  <nav class="o-container" x-data="{ open: false }">
+    <a class="c-nav__toggle" href="#" @click.prevent="open = !open">SVG + Menu</a>
+    <ul
+      class="c-nav__container--level-1"
+      x-show.transition="open"
+      @click.away="open = false"
+    >
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Somaire</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 1.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 1.2</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Projets</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 2.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 2.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 2.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Remerciement</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 3.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 3.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 3.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Où sommes-nous ?</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.3</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.4</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.5</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.6</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.7</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.8</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 4.9</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__item c-nav__item--level-1" x-data="{ open: false }">
+        <a href="#" @click.prevent="open = !open">Menu 5 est passablement long</a>
+        
+        <ul
+          class="c-nav__container--level-2"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 5.1</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 5.2</a>
+          </li>
+          
+          <li class="c-nav__item c-nav__item--level-2">
+            <a href="#">Menu 5.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+  </nav>
+</div>
+
+
+<header class="c-header">
+    <h1 class="o-container c-header__heading">Title of the page</h1>
+    <figure class="c-header__image">
+        <img src="https://images.unsplash.com/photo-1609965803451-43c6e8d7b346?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=85" />
+    </figure>
+</header>
+
+<div class="o-container">
+    <div class="o-prose">
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus tellus in sem feugiat, a accumsan leo placerat. Donec mollis vitae tellus id facilisis. Donec tincidunt metus at tellus dictum imperdiet. Duis at risus accumsan, gravida sem sit amet, ultrices augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. In congue lobortis lorem sit amet rutrum. Etiam dictum, diam vel scelerisque pulvinar, nisl sapien rutrum magna, vitae finibus mauris neque sit amet turpis. Praesent eu auctor ante. Nulla facilisi. Fusce tincidunt erat ac malesuada ullamcorper.</p>
+    
+    <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim.</p>
+    </div>
+</div>
+
+<div class="c-overlay">
+    <div class="c-overlay__text-container o-prose">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim congue volutpat. Phasellus velit felis, cursus vitae porttitor sit amet, dictum eget turpis. Curabitur gravida felis nec ipsum dictum, id vestibulum nulla lobortis.</p>
+        <p>
+            <a href="#" class="c-button">button</a>
+        </p>
+    </div>
+    <figure class="c-overlay__image">
+        <img src="https://images.unsplash.com/photo-1609965803451-43c6e8d7b346?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=85" />
+    </figure>
+</div>
+
+<div class="c-overlay">
+    <div class="c-overlay__text-container o-prose">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim congue volutpat. Phasellus velit felis, cursus vitae porttitor sit amet, dictum eget turpis. Curabitur gravida felis nec ipsum dictum, id vestibulum nulla lobortis.</p>
+        <p>
+            <a href="#" class="c-button">button</a>
+        </p>
+    </div>
+    <figure class="c-overlay__image">
+        <img src="https://images.unsplash.com/photo-1609965803451-43c6e8d7b346?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=85" />
+    </figure>
+</div>
+
+<footer class="c-footer">
+    <div class="o-container o-grid">
+        <div class="prose">
+            <h2>Archives</h2>
+            <ul>
+                <li><a href="#">2019</a></li>
+                <li><a href="#">2018</a></li>
+                <li><a href="#">2017</a></li>
+                <li><a href="#">Autre</a></li>
+            </ul>
+        </div>
+        <div class="prose">
+            <h2>Sitemap</h2>
+            <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim. </p>
+        </div>
+        <div class="prose">
+            <h2>Partager</h2>
+            <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim. </p>
+        </div>
+        <div class="prose">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="#">as dsad asd</a></li>
+                <li><a href="#">da sda dgwe fsdfsddfds</a></li>
+                <li><a href="#">fsd sdf sdfsd fsd f</a></li>
+                <li><a href="#">fdsf fds kdsbfksdbfskjfdsjhf dsffs</a></li>
+            </ul>
+        </div>
+        <div class="prose">
+            <h2>Logo</h2>
+            <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim. </p>
+        </div>
+    </div>
+</footer>
