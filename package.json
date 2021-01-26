@@ -8,10 +8,10 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "run-s build:*",
-    "build:fractal": "npx fractal build",
     "build:fonts": "copyfiles node_modules/@fontsource/inter/files/inter-latin-ext-*.woff2 public/assets/fonts -f",
     "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
     "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
+    "build:fractal": "npx fractal build",
     "clean": "rimraf build public",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git",
