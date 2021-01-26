@@ -5,7 +5,7 @@
    ====================================================================== */
 
 @font-face {
-  font-family: 'Inter-var';
+  font-family: 'intervar';
 
   font-display: swap;
 
@@ -380,7 +380,7 @@ ul {
  */
 
 html {
-  font-family: Inter-var, system-ui, sans-serif; /* 1 */
+  font-family: intervar, system-ui, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -13917,7 +13917,7 @@ video {
 }
 
 .font-sans {
-  font-family: Inter-var, system-ui, sans-serif;
+  font-family: intervar, system-ui, sans-serif;
 }
 
 .font-thin {
@@ -45816,7 +45816,7 @@ video {
   }
 
   .sm\:font-sans {
-    font-family: Inter-var, system-ui, sans-serif;
+    font-family: intervar, system-ui, sans-serif;
   }
 
   .sm\:font-thin {
@@ -77637,7 +77637,7 @@ video {
   }
 
   .md\:font-sans {
-    font-family: Inter-var, system-ui, sans-serif;
+    font-family: intervar, system-ui, sans-serif;
   }
 
   .md\:font-thin {
@@ -109458,7 +109458,7 @@ video {
   }
 
   .lg\:font-sans {
-    font-family: Inter-var, system-ui, sans-serif;
+    font-family: intervar, system-ui, sans-serif;
   }
 
   .lg\:font-thin {
@@ -141279,7 +141279,7 @@ video {
   }
 
   .xl\:font-sans {
-    font-family: Inter-var, system-ui, sans-serif;
+    font-family: intervar, system-ui, sans-serif;
   }
 
   .xl\:font-thin {
@@ -173100,7 +173100,7 @@ video {
   }
 
   .\32xl\:font-sans {
-    font-family: Inter-var, system-ui, sans-serif;
+    font-family: intervar, system-ui, sans-serif;
   }
 
   .\32xl\:font-thin {
