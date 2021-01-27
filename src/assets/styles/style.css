@@ -1,9 +1,9 @@
+/* Settings */
+@import "./_settings.*.css";
+
 /* Include Tailwind */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-
-/* Settings */
-@import "./_settings.*.css";
 
 /* Tools */
 @import "./_tools.*.css";
@@ -18,7 +18,7 @@
 @import "./_objects.*.css";
 
 /* Components */
-@import "./_components.*.css";
+@import "../../components/**/_components.*.css";
 
 /* Vendors */
 @import "./_vendors.*.css";

@@ -7,9 +7,13 @@
         bg-green-200
         no-underline
         font-bold
-        py-2
-        px-4
+        py-3
+        px-6
         rounded
+        uppercase
+        shadow
+        outline-none
+        shadow
     ;
 }
 
@@ -17,9 +21,11 @@
     @apply no-underline !important;
 }
 
-.c-button:hover {
+.c-button:hover,
+.c-button:active {
     @apply
         bg-green-700
         text-white
+        shadow-lg
     ;
 }
