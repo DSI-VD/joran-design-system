@@ -15,7 +15,7 @@
 @import "./_elements.*.css";
 
 /* Objects */
-@import "./_objects.*.css";
+@import "../../components/**/_objects.*.css";
 
 /* Components */
 @import "../../components/**/_components.*.css";
