@@ -1,0 +1,36 @@
+/* ======================================================================
+   # _components.button.css
+   ====================================================================== */
+   
+.c-button {
+    @apply 
+        bg-primary
+        text-white
+        no-underline
+        font-bold
+        py-3
+        px-6
+        rounded
+        uppercase
+        shadow
+        shadow
+    ;
+}
+
+.prose .c-button {
+    @apply no-underline text-white !important;
+}
+
+.c-button:hover,
+.c-button:active {
+    @apply
+        bg-primary-light
+        shadow-lg
+    ;
+}
+
+.c-button:focus {
+   @apply
+      outline-focus
+   ;
+}

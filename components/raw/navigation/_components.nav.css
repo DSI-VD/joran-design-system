@@ -1,0 +1,65 @@
+/* ======================================================================
+ # _components.nav.css
+ ====================================================================== */
+ 
+ .c-nav {
+  @apply
+    bg-gray
+  ;
+}
+
+.c-nav__toggle {
+  @apply md:hidden;
+}
+
+.c-nav__container--level-1 {
+  @apply 
+    flex
+    flex-col
+    flex-wrap
+    min-h-screen
+  ;
+}
+
+@screen md {
+  .c-nav__container--level-1 {
+    @apply 
+      flex !important
+      flex-row
+      relative
+      md:min-h-0
+    ;
+  }
+}
+
+.c-nav__item--level-1 {
+  @apply 
+    text-3xl
+    font-bold
+    p-2
+  ;
+}
+
+.c-nav__container--level-2 {
+  @apply 
+    bg-gray
+    flex
+    flex-col
+    w-full
+    left-0
+  ;
+}
+
+@screen md {
+  .c-nav__container--level-2 {
+    @apply absolute;
+  }
+}
+
+.c-nav__item--level-2 {
+  @apply 
+    text-xl
+    font-normal
+    p-2
+  ;
+}

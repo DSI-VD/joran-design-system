@@ -1,0 +1,50 @@
+/* ======================================================================
+   # _components.heading.css
+   ====================================================================== */
+  
+.c-header {
+
+}
+
+@screen md {
+    .c-header {
+        @apply
+            relative
+        ;
+    }
+}
+
+.c-header__heading {
+    @apply
+        text-6xl
+        font-black
+    ;
+}
+
+@screen md {
+    .c-header__heading {
+        @apply
+            absolute
+            top-auto
+            left-4
+            bottom-1/2
+            right-4
+        ;
+    }
+}
+
+@screen md {
+    .c-header__image {
+        @apply
+            h-80
+            overflow-hidden
+        ;
+    }
+}
+
+.header__image > img {
+    @apply
+        object-cover
+        w-full
+    ;
+}
