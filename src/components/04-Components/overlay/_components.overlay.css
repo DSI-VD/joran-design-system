@@ -3,7 +3,7 @@
    ====================================================================== */
 
 .c-overlay {
-    @apply lg:relative;
+    @apply md:relative;
 }
 
 /***
@@ -14,11 +14,10 @@
 .c-overlay__text-container {
     @apply 
         mb-5
-        px-4 /* [1] */
     ;
 }
 
-@screen lg {
+@screen md {
     .c-overlay__text-container {
         @apply
             p-5
@@ -32,9 +31,6 @@
             max-h-full
             
             overflow-auto
-            bg-white
-            bg-opacity-90
-            shadow
         ;
     }
 }
