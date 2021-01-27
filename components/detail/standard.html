@@ -317,10 +317,13 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-header&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-header__heading&quot;</span>&gt;</span>Title of the page<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-header__image&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://images.unsplash.com/photo-1609965803451-43c6e8d7b346?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&amp;ixlib=rb-1.2.1&amp;q=85&quot;</span> /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-header__image&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80&#x27;&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;decoration&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-header__container o-container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-header__title&quot;</span>&gt;</span>Title of the page<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
@@ -360,7 +363,7 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Pied de page&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Pied de page<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-grid&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-auto-grid&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Archives<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
@@ -423,7 +426,7 @@
 
 </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="navigation.html">@navigation</a>&#x27; %}</span><span class="xml">
 
-</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="heading.html">@heading</a>&#x27; %}</span><span class="xml">
+</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="header.html">@header</a>&#x27; %}</span><span class="xml">
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-prose&quot;</span>&gt;</span>
@@ -499,7 +502,7 @@
             
                 <a href="navigation.html">@<span>navigation</span></a>, 
             
-                <a href="heading.html">@<span>heading</span></a>, 
+                <a href="header.html">@<span>header</span></a>, 
             
                 <a href="overlay.html">@<span>overlay</span></a>, 
             
@@ -748,8 +751,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="heading.html" data-pjax>
-                <span>Heading</span>
+            <a class="Tree-entityLink" href="header.html" data-pjax>
+                <span>Header</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -835,6 +838,30 @@
                 
                 
                 
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content.html" data-pjax>
+                <span>Content</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
     
         
         
@@ -925,7 +952,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-01-27T10:39:58.009Z">
+                            <time datetime="2021-01-27T13:48:28.468Z">
                                 1/27/2021
                             </time>
                         
