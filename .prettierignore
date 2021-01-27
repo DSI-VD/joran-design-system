@@ -1,0 +1,2 @@
+# Ignore CSS because of tailwind
+*.css
