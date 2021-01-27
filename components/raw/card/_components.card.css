@@ -1,0 +1,25 @@
+/* ======================================================================
+   # _components.card.css
+   ====================================================================== */
+
+.c-card {
+    @apply
+        p-4
+        shadow
+        bg-gray-lightest
+    ;
+}
+
+.c-card__heading {
+    @apply
+        text-xl
+        font-bold
+        pb-4
+    ;
+}
+
+.c-card__content {
+    @apply
+        prose
+    ;
+}
