@@ -9,3 +9,19 @@
         px-4
     ;
 }
+
+@screen md {
+   .o-container {
+       @apply
+           px-8
+       ;
+   }
+}
+
+@screen lg {
+   .o-container {
+       @apply
+           px-16
+       ;
+   }
+}
