@@ -5,7 +5,9 @@ module.exports = {
 	},
 	darkMode: false, // Or 'media' or 'class'
 	theme: {
-		extend: {}
+		fontFamily: {
+			  sans: ['intervar', 'system-ui', 'sans-serif']
+			}
 	},
 	variants: {
 		extend: {}
