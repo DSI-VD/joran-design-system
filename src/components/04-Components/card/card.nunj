@@ -1,5 +1,6 @@
 <article class="c-card">
     <figure>
+        <img src="https://source.unsplash.com/random" />
     </figure>
     
     <h3 class="c-card__heading">Card title</h3>
