@@ -4,7 +4,8 @@
    
 .c-button {
     @apply 
-        bg-green-200
+        bg-primary
+        text-white
         no-underline
         font-bold
         py-3
@@ -12,20 +13,24 @@
         rounded
         uppercase
         shadow
-        outline-none
         shadow
     ;
 }
 
 .prose .c-button {
-    @apply no-underline !important;
+    @apply no-underline text-white !important;
 }
 
 .c-button:hover,
 .c-button:active {
     @apply
-        bg-green-700
-        text-white
+        bg-primary-light
         shadow-lg
     ;
+}
+
+.c-button:focus {
+   @apply
+      outline-focus
+   ;
 }
