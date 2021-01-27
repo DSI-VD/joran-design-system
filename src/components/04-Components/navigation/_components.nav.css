@@ -4,7 +4,7 @@
  
  .c-nav {
   @apply
-    bg-gray-50
+    bg-gray
   ;
 }
 
@@ -42,7 +42,7 @@
 
 .c-nav__container--level-2 {
   @apply 
-    bg-gray-50
+    bg-gray
     flex
     flex-col
     w-full
