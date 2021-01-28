@@ -1,26 +1,7 @@
 <ul class="o-auto-grid">
+    {% for item in items %}
     <li>
-        {% render '@card' %}
+        {% render '@card', { image:item.image, title:item.title, content:item.content, button:item.button } %}
     </li>
-    <li>
-        {% render '@card' %}
-    </li>
-    <li>
-        {% render '@card' %}
-    </li>
-    <li>
-        {% render '@card' %}
-    </li>
-    <li>
-        {% render '@card' %}
-    </li>
-    <li>
-        {% render '@card' %}
-    </li>
-    <li>
-        {% render '@card' %}
-    </li>
-    <li>
-        {% render '@card' %}
-    </li>
+    {% endfor %}
 </ul>
