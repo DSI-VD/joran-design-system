@@ -1,4 +1,4 @@
-<article class="c-card">
+<article class="c-card o-stack">
     {% if image %}
     <figure>
         <img src="{{ image.src}}" alt="{{ image.alt }}"/>
@@ -9,6 +9,8 @@
         {{ content }}
     </div>
     {% if button %}
-    {% render '@button' %}
+    <div>
+        {% render '@button' %}
+    </div>
     {% endif %}
 </article>
