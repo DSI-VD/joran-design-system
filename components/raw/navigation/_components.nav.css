@@ -1,65 +1,105 @@
 /* ======================================================================
  # _components.nav.css
  ====================================================================== */
- 
- .c-nav {
+
+/* -----------------------------------
+   # c-nav
+   ----------------------------------- */ 
+.c-nav {
   @apply
-    bg-gray
+    bg-gray-lightest
+    py-4
   ;
 }
 
-.c-nav__toggle {
-  @apply md:hidden;
-}
 
-.c-nav__container--level-1 {
-  @apply 
+
+/* -----------------------------------
+ # c-nav__container
+ ----------------------------------- */ 
+ 
+.c-nav__container {
+  @apply
     flex
     flex-col
-    flex-wrap
-    min-h-screen
+  ;
+}
+
+
+
+/* -----------------------------------
+ # c-nav__toggle
+ ----------------------------------- */ 
+ 
+.c-nav__toggle {
+  @apply
+    ml-auto;
+  ;
+}
+
+.c-nav__toggle svg {
+  @apply
+    h-4
+  ;
+}
+
+
+
+/* -----------------------------------
+ # c-nav__list
+ ----------------------------------- */
+ 
+.c-nav__list {
+  @apply
+    flex
+    flex-col
   ;
 }
 
 @screen md {
-  .c-nav__container--level-1 {
-    @apply 
-      flex !important
+  .c-nav__list--resp-row {
+    @apply
       flex-row
-      relative
-      md:min-h-0
+      flex-wrap
+    ;
+  }
+  
+  .c-nav__list--resp-row .c-nav__list-item {
+    @apply
+      pr-8
     ;
   }
 }
 
-.c-nav__item--level-1 {
-  @apply 
-    text-3xl
-    font-bold
-    p-2
-  ;
-}
 
-.c-nav__container--level-2 {
-  @apply 
-    bg-gray
+
+/* -----------------------------------
+ # c-nav__list-item
+ ----------------------------------- */
+ 
+.c-nav__list-item {
+  @apply
     flex
     flex-col
-    w-full
-    left-0
   ;
 }
 
-@screen md {
-  .c-nav__container--level-2 {
-    @apply absolute;
-  }
+.c-nav__list-link--level-1 {
+  @apply
+    text-xl
+    font-bold
+  ;
 }
 
-.c-nav__item--level-2 {
-  @apply 
-    text-xl
-    font-normal
-    p-2
+
+
+/* -----------------------------------
+ # c-nav__list-link
+ ----------------------------------- */
+ 
+.c-nav__list-link {
+  @apply
+    py-2
+    uppercase
   ;
 }
