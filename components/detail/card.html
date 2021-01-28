@@ -182,18 +182,21 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-52022325a702e808f5527e20f6ea2e93-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card o-stack&quot;</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/random&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/random&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;A random image from Unsplash&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card__heading&quot;</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card__content&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies
-            eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-            Aenean ultricies mi vitae est. Mauris placerat eleifend leo.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button&quot;</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
         
     </code>
@@ -202,18 +205,21 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-52022325a702e808f5527e20f6ea2e93-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card o-stack&quot;</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> image %}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/random&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ image.src}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ image.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>/&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
-    
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card__heading&quot;</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card__heading&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-card__content&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies
-        eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-        Aenean ultricies mi vitae est. Mauris placerat eleifend leo.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        </span><span class="hljs-template-variable">{{ content }}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> button %}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="button.html">@button</a>&#x27; %}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -223,7 +229,18 @@
     <code class="Code Code--lang-json hljs">
         
             
-            <pre><span class="hljs-comment">/* No context defined. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">&quot;image&quot;</span>: {
+    <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/random&quot;</span>,
+    <span class="hljs-attr">&quot;alt&quot;</span>: <span class="hljs-string">&quot;A random image from Unsplash&quot;</span>
+  },
+  <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Card title&quot;</span>,
+  <span class="hljs-attr">&quot;content&quot;</span>: <span class="hljs-string">&quot;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&quot;</span>,
+  <span class="hljs-attr">&quot;button&quot;</span>: {
+    <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Button&quot;</span>,
+    <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+  }
+}</pre>
             
         
     </code>
@@ -270,7 +287,6 @@
     @apply
         text-xl
         font-bold
-        pb-4
     ;
 }
 
@@ -295,7 +311,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">398 Bytes</span>
+                    <span class="Meta-value">385 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -338,6 +354,15 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src/components/04-Components/card/card.nunj</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="button.html">@<span>button</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
         <li class="Meta-item">
@@ -501,6 +526,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="prose.html" data-pjax>
                 <span>Prose</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="stack.html" data-pjax>
+                <span>Stack</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -815,8 +864,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-01-27T20:54:25.783Z">
-                                1/27/2021
+                            <time datetime="2021-01-28T07:42:31.093Z">
+                                1/28/2021
                             </time>
                         
                     </dd>
