@@ -1,1 +1,1 @@
-<button class="c-button">Bouton</button>
+<a href="{{ url }}" class="c-button">{{ text }}</a>
