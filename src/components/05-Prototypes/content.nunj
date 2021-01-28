@@ -4,7 +4,7 @@
 
 {% render '@navigation' %}
 
-<main>
+<main class="o-stack">
     {% render '@header' %}
 
     <div class="o-container">
