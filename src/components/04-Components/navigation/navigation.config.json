@@ -35,15 +35,59 @@
                 "name": "Projets",
                 "levels": [
                     {
-                        "name": "Menu 2.1",
+                        "name": "Communication tactique",
                         "url": "#"
                     },
                     {
-                        "name": "Menu 2.2",
+                        "name": "Bilderberg",
                         "url": "#"
                     },
                     {
-                        "name": "Menu 2.3",
+                        "name": "Facebook live",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Paléo Festival",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Visite du président indien",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Attaques fourgons blindés",
+                        "url": "#"
+                    },
+                    {
+                        "name": "100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Fermeture de l'autoroute A12",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Bol d'Or",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Inauguration CIO",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Montreux Jazz Festival",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Fête des Vignerons",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Cérémonie du souvenir",
+                        "url": "#"
+                    },
+                    {
+                        "name": "Escrocrie à la caisse de chômage",
                         "url": "#"
                     }
                 ]
