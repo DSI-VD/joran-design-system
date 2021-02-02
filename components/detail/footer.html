@@ -184,7 +184,7 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Pied de page&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Pied de page<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-auto-grid&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__grid&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Archives<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
@@ -243,7 +243,7 @@
     <code class="Code Code--lang-django hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Pied de page&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Pied de page<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-auto-grid&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__grid&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Archives<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
@@ -331,6 +331,38 @@
     ;
 }
 
+
+
+/* -----------------------------------
+   # Grid
+   ----------------------------------- */
+
+@screen xs {
+   .c-footer__grid {
+      @apply
+         grid
+         grid-cols-2
+         gap-4
+      ;
+   }
+}
+
+@screen sm {
+   .c-footer__grid {
+      @apply
+         grid-cols-3
+      ;
+   }
+}
+
+@screen md {
+   .c-footer__grid {
+      @apply
+         grid-cols-5
+      ;
+   }
+}
+
 /* -----------------------------------
    # Headings
    ----------------------------------- */
@@ -344,6 +376,8 @@
     ;
 }
 
+
+
 /* -----------------------------------
 # Paragraph
 ----------------------------------- */
@@ -353,6 +387,8 @@
         mb-5
     ;
 }
+
+
 
 /* -----------------------------------
    # List
@@ -364,6 +400,8 @@
     ;
 }
 
+
+
 /* -----------------------------------
    # Anchor
    ----------------------------------- */
@@ -373,6 +411,8 @@
         underline
     ;
 }
+
+
 
 /* -----------------------------------
    # SVG
@@ -404,7 +444,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -948,8 +988,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-01-28T10:28:45.489Z">
-                                1/28/2021
+                            <time datetime="2021-02-02T11:02:16.209Z">
+                                2/2/2021
                             </time>
                         
                     </dd>

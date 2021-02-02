@@ -34,13 +34,12 @@
 </div>
 
 <div class="c-nav">
-  <div>Titre du site</div>
   <nav class="o-container c-nav__container" x-data="{ open: false }">
     <a class="c-nav__toggle" href="#" @click.prevent="open = !open">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     </a>
     <ul
-      class="c-nav__list"
+      class="c-nav__list c-nav__list--visible-desktop"
       x-show.transition="open"
     >
       
@@ -51,37 +50,37 @@
            @click.prevent="open = !open">Somaire</a>
         
         <ul
-          class="c-nav__list c-nav__list--resp-row"
+          class="c-nav__list c-nav__list--desktop-row"
           x-show.transition="open"
           @click.away="open = false"
         >
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Organigrame</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">La police en chiffres</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Finances</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Objectifs 2020</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Valorisation des colabirateurs</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Témoignages</a>
           </li>
@@ -97,24 +96,79 @@
            @click.prevent="open = !open">Projets</a>
         
         <ul
-          class="c-nav__list c-nav__list--resp-row"
+          class="c-nav__list c-nav__list--desktop-row"
           x-show.transition="open"
           @click.away="open = false"
         >
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
-               class="c-nav__list-link">Menu 2.1</a>
+               class="c-nav__list-link">Communication tactique</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
-               class="c-nav__list-link">Menu 2.2</a>
+               class="c-nav__list-link">Bilderberg</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
-               class="c-nav__list-link">Menu 2.3</a>
+               class="c-nav__list-link">Facebook live</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Paléo Festival</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Visite du président indien</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Attaques fourgons blindés</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Fermeture de l&#39;autoroute A12</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Bol d&#39;Or</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Inauguration CIO</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Montreux Jazz Festival</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Fête des Vignerons</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Cérémonie du souvenir</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#"
+               class="c-nav__list-link">Escrocrie à la caisse de chômage</a>
           </li>
           
         </ul>
@@ -128,22 +182,22 @@
            @click.prevent="open = !open">Remerciement</a>
         
         <ul
-          class="c-nav__list c-nav__list--resp-row"
+          class="c-nav__list c-nav__list--desktop-row"
           x-show.transition="open"
           @click.away="open = false"
         >
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 3.1</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 3.2</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 3.3</a>
           </li>
@@ -159,52 +213,52 @@
            @click.prevent="open = !open">Où sommes-nous ?</a>
         
         <ul
-          class="c-nav__list c-nav__list--resp-row"
+          class="c-nav__list c-nav__list--desktop-row"
           x-show.transition="open"
           @click.away="open = false"
         >
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.1</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.2</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.3</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.4</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.5</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.6</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.7</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.8</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 4.9</a>
           </li>
@@ -220,22 +274,22 @@
            @click.prevent="open = !open">Menu 5 est passablement très très très très long</a>
         
         <ul
-          class="c-nav__list c-nav__list--resp-row"
+          class="c-nav__list c-nav__list--desktop-row"
           x-show.transition="open"
           @click.away="open = false"
         >
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 5.1 très très très très très très très très très très très très long</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 5.2</a>
           </li>
           
-          <li class="c-nav__list-item">
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
             <a href="#"
                class="c-nav__list-link">Menu 5.3</a>
           </li>
@@ -295,7 +349,7 @@
 
 <footer class="c-footer" aria-label="Pied de page">
     <h2 class="u-visually-hidden">Pied de page</h2>
-    <div class="o-container o-auto-grid">
+    <div class="c-footer__grid">
         <div>
             <h3>Archives</h3>
             <ul>

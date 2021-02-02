@@ -5,6 +5,11 @@
 /* -----------------------------------
    # c-nav
    ----------------------------------- */ 
+
+/***
+ * 1. Fix navigation at top
+ * 2. Make it pass over the header image
+ */
 .c-nav {
   @apply
     bg-gray-lightest
@@ -57,16 +62,10 @@
 }
 
 @screen md {
-  .c-nav__list--resp-row {
+  .c-nav__list--desktop-row {
     @apply
       flex-row
       flex-wrap
-    ;
-  }
-  
-  .c-nav__list--resp-row .c-nav__list-item {
-    @apply
-      pr-8
     ;
   }
 }
@@ -83,6 +82,20 @@
     flex-col
   ;
 }
+
+@screen md {
+  .c-nav__list-item--desktop-row {
+    @apply
+      pr-8
+    ;
+  }
+}
+
+
+
+/* -----------------------------------
+ # c-nav__list-link
+ ----------------------------------- */
 
 .c-nav__list-link--level-1 {
   @apply
