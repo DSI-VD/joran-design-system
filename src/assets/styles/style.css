@@ -24,7 +24,7 @@
 @import "./_vendors.*.css";
 
 /* Utilities */
-@import "./_utilities.*.css";
+@import "../../components/**/_utilities.*.css";
 
 /***
  * Tailwind utilities 
