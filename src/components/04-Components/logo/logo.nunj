@@ -1,0 +1,4 @@
+<object data="{{ '/assets/vectors/logo.svg' | path  }}" type="image/svg+xml" class="c-logo">
+  <img src="yourfallback.jpg" />
+</object>
+

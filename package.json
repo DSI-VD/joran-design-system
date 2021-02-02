@@ -11,6 +11,7 @@
         "build:fonts": "copyfiles node_modules/@fontsource/inter/files/inter-latin-ext-*.woff2 public/assets/fonts -f",
         "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
         "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
+        "build:vectors": "copyfiles src/assets/vectors/**/*.* public/assets/vectors/ -f",
         "build:fractal": "npx fractal build",
         "clean": "rimraf build public",
         "predeploy": "npm run build",
@@ -19,7 +20,8 @@
         "watch": "npm run build && run-p watch:*",
         "watch:fractal": "npx fractal start --sync",
         "watch:scripts": "chokidar \"src/assets/**/*.js\" -c \"npm run build:scripts\" --initial",
-        "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial"
+        "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial",
+        "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial"
     },
     "devDependencies": {
         "@frctl/fractal": "^1.5.2",
