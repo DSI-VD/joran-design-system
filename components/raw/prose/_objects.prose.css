@@ -1,21 +1,21 @@
 .o-prose {
-    @apply prose;
+  @apply prose;
 }
 
 @screen lg {
-    .o-prose {
-        @apply prose-lg;
-    }
+  .o-prose {
+    @apply prose-lg;
+  }
 }
 
 @screen xl {
-    .o-prose {
-        @apply prose-xl;
-    }
+  .o-prose {
+    @apply prose-xl;
+  }
 }
 
 @screen 2xl {
-    .o-prose {
-        @apply prose-2xl;
-    }
+  .o-prose {
+    @apply prose-2xl;
+  }
 }

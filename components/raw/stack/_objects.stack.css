@@ -1,9 +1,10 @@
 /* ======================================================================
    # _objects.stack.css
    ====================================================================== */
-   
+
 .o-stack {
   --stack-space: 1.25rem;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,7 +13,7 @@
 .o-stack > * {
   margin-top: 0;
   margin-bottom: 0;
-} 
+}
 
 .o-stack > * + * {
   margin-top: var(--stack-space);

@@ -3,7 +3,7 @@
    ====================================================================== */
 
 .c-overlay {
-    @apply md:relative;
+  @apply md:relative;
 }
 
 /***
@@ -12,25 +12,25 @@
  * FIXME: when resizing from mobile to desktop the text not being centered behave strangely
  */
 .c-overlay__text-container {
-    @apply 
-        mb-5
+  @apply
+    mb-5
     ;
 }
 
 @screen md {
-    .c-overlay__text-container {
-        @apply
-            p-5
-            m-20
-            
-            absolute
-            z-10
+  .c-overlay__text-container {
+    @apply
+      p-5
+      m-20
+
+      absolute
+      z-10
             top-0
             left-1/2
             right-0
             max-h-full
-            
+
             overflow-auto
         ;
-    }
+  }
 }

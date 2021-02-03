@@ -3,11 +3,12 @@
    ====================================================================== */
 
 .o-split-pair {
-    @apply
-        flex
-        justify-between
-        items-center
-        flex-wrap
+  @apply
+    flex
+    justify-between
+    items-center
+    flex-wrap
     ;
-    gap: var(--split-pair-space,1.25rem);
+
+  gap: var(--split-pair-space, 1.25rem);
 }

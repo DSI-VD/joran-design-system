@@ -3,22 +3,22 @@
    ====================================================================== */
 
 .c-card {
-    @apply
-        p-4
-        shadow
-        bg-gray-lightest
+  @apply
+    p-4
+    shadow
+    bg-gray-lightest
     ;
 }
 
 .c-card__heading {
-    @apply
-        text-xl
-        font-bold
+  @apply
+    text-xl
+    font-bold
     ;
 }
 
 .c-card__content {
-    @apply
-        prose
+  @apply
+    prose
     ;
 }
