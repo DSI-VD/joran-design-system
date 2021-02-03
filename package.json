@@ -23,11 +23,13 @@
     "watch:scripts": "chokidar \"src/assets/**/*.js\" -c \"npm run build:scripts\" --initial",
     "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial",
     "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial",
-    "lint": "run-p lint:*",
+    "lint": "run-s lint:*",
     "lint:styles": "stylelint src/**/*.css",
+    "lint:scripts": "xo --space",
     "lint:all": "prettier --check .",
     "beautify": "run-p beautify:*",
     "beautify:styles": "stylelint src/**/*.css --fix",
+    "beautify:scripts": "xo --space --fix",
     "beautify:all": "prettier --write ."
   },
   "devDependencies": {
@@ -46,7 +48,8 @@
     "rimraf": "^3.0.2",
     "stylelint": "^13.9.0",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "xo": "^0.37.1"
   },
   "dependencies": {
     "@fontsource/inter": "^4.1.0"

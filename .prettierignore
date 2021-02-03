@@ -13,3 +13,6 @@ build
 
 # Ignore CSS because Stylelint is in charge of that
 *.css
+
+# Ignore Scripts because XO is in charge of that
+*.js
