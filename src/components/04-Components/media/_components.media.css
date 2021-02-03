@@ -6,8 +6,8 @@
   @apply
     flex
     flex-wrap
-        justify-end
-        gap-4
+    justify-end
+    gap-4
     ;
 }
 

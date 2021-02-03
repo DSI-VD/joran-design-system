@@ -6,8 +6,8 @@
   @apply
     relative
     h-60
-      min-h-full
-      flex
+    min-h-full
+    flex
       items-end
    ;
 }
@@ -31,8 +31,8 @@
   @apply
     absolute
     bg-center
-      bg-cover
-      h-full
+    bg-cover
+    h-full
       inset-x-0
       top-0
    ;
@@ -48,8 +48,8 @@
   @apply
     bg-white
     z-10
-      pt-10
-      pb-5
+    pt-10
+    pb-5
       mt-10
    ;
 }

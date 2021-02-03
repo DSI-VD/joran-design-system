@@ -1,2 +1,15 @@
 # Ignore CSS because of tailwind
 *.css
+
+# Ignore npm files
+package-lock.json
+
+# Igonre build files
+public
+build
+
+# Ignore IDE files
+.nova
+
+# Ignore CSS because Stylelint is in charge of that
+*.css

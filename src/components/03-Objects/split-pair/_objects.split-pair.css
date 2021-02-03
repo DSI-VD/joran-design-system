@@ -6,8 +6,8 @@
   @apply
     flex
     justify-between
-        items-center
-        flex-wrap
+    items-center
+    flex-wrap
     ;
 
   gap: var(--split-pair-space, 1.25rem);

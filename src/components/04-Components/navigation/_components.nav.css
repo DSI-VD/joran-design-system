@@ -39,7 +39,6 @@
 .c-nav__toggle {
   @apply
     ml-auto;
-  
 }
 
 .c-nav__toggle svg {

@@ -20,7 +20,7 @@
     @apply
       grid
       grid-cols-2
-         gap-4
+      gap-4
       ;
   }
 }
@@ -48,8 +48,8 @@
   @apply
     font-bold
     text-xl
-        leading-5
-        mt-8
+    leading-5
+    mt-8
         mb-4
     ;
 }

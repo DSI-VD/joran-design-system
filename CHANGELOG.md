@@ -9,18 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
--   Style footer component
+- Style footer component
 
 ### Added
 
--   Add list-inline component
+- Add list-inline component
 
 ## [0.0.1] - 2021-01-21
 
 ### Added
 
--   Setup Fractal
--   Basic styles
+- Setup Fractal
+- Basic styles
 
 [unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...HEAD
 [0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1
