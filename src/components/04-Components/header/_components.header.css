@@ -1,11 +1,11 @@
 /* ======================================================================
    # _components.header.css
    ====================================================================== */
-  
+
 .c-header {
-   @apply
-      relative
-      h-60
+  @apply
+    relative
+    h-60
       min-h-full
       flex
       items-end
@@ -14,11 +14,11 @@
 
 /* Make image bigger */
 @screen lg {
-   .c-header {
-      @apply
-         h-80
+  .c-header {
+    @apply
+      h-80
       ;
-   }
+  }
 }
 
 
@@ -28,9 +28,9 @@
    ----------------------------------- */
 
 .c-header__image {
-   @apply
-      absolute
-      bg-center
+  @apply
+    absolute
+    bg-center
       bg-cover
       h-full
       inset-x-0
@@ -45,9 +45,9 @@
    ----------------------------------- */
 
 .c-header__container {
-   @apply
-      bg-white
-      z-10
+  @apply
+    bg-white
+    z-10
       pt-10
       pb-5
       mt-10
@@ -55,11 +55,11 @@
 }
 
 @screen sm {
-   .c-header__container {
-      @apply
-         rounded-t-xl
+  .c-header__container {
+    @apply
+      rounded-t-xl
       ;
-   }
+  }
 }
 
 
@@ -69,16 +69,16 @@
    ----------------------------------- */
 
 .c-header__title {
-   @apply
-      font-bold
-      text-4xl
+  @apply
+    font-bold
+    text-4xl
    ;
 }
 
 @screen lg {
-   .c-header__title {
-      @apply
-         text-6xl
+  .c-header__title {
+    @apply
+      text-6xl
       ;
-   }
+  }
 }

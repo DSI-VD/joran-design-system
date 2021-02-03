@@ -3,14 +3,14 @@
    ====================================================================== */
 
 .o-list-inline {
-    @apply
-        flex
-        flex-wrap
+  @apply
+    flex
+    flex-wrap
     ;
 }
 
 .o-list-inline > li + li {
-    @apply 
-        block
+  @apply
+    block
     ;
 }

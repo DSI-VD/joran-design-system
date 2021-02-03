@@ -1,11 +1,11 @@
 /* ======================================================================
    # _components.footer.css
    ====================================================================== */
-   
+
 .c-footer {
-    @apply 
-        bg-gray-lightest
-        text-sm
+  @apply
+    bg-gray-lightest
+    text-sm
     ;
 }
 
@@ -16,38 +16,38 @@
    ----------------------------------- */
 
 @screen xs {
-   .c-footer__grid {
-      @apply
-         grid
-         grid-cols-2
+  .c-footer__grid {
+    @apply
+      grid
+      grid-cols-2
          gap-4
       ;
-   }
+  }
 }
 
 @screen sm {
-   .c-footer__grid {
-      @apply
-         grid-cols-3
+  .c-footer__grid {
+    @apply
+      grid-cols-3
       ;
-   }
+  }
 }
 
 @screen md {
-   .c-footer__grid {
-      @apply
-         grid-cols-5
+  .c-footer__grid {
+    @apply
+      grid-cols-5
       ;
-   }
+  }
 }
 
 /* -----------------------------------
    # Headings
    ----------------------------------- */
-.c-footer h3 {    
-    @apply 
-        font-bold
-        text-xl
+.c-footer h3 {
+  @apply
+    font-bold
+    text-xl
         leading-5
         mt-8
         mb-4
@@ -61,8 +61,8 @@
 ----------------------------------- */
 
 .c-footer p {
-    @apply
-        mb-5
+  @apply
+    mb-5
     ;
 }
 
@@ -73,8 +73,8 @@
    ----------------------------------- */
 
 .c-footer ul > li {
-    @apply
-        my-2
+  @apply
+    my-2
     ;
 }
 
@@ -85,8 +85,8 @@
    ----------------------------------- */
 
 .c-footer a {
-    @apply 
-        underline
+  @apply
+    underline
     ;
 }
 
@@ -97,13 +97,13 @@
    ----------------------------------- */
 
 .c-footer svg {
-    @apply
-        h-8
+  @apply
+    h-8
     ;
 }
 
 .c-footer__liste-image li + li {
-    @apply 
-        ml-4
+  @apply
+    ml-4
     ;
 }

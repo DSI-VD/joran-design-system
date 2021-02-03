@@ -27,7 +27,7 @@
 @import "../../components/**/_utilities.*.css";
 
 /***
- * Tailwind utilities 
+ * Tailwind utilities
  * https://tailwindcss.com/docs/installation#using-a-custom-css-file
  */
 @import "tailwindcss/utilities";

@@ -1,27 +1,27 @@
 /* ======================================================================
    # _objects.container.css
    ====================================================================== */
-   
+
 .o-container {
-    @apply
-        container
-        mx-auto
+  @apply
+    container
+    mx-auto
         px-4
     ;
 }
 
 @screen md {
-   .o-container {
-       @apply
-           px-8
+  .o-container {
+    @apply
+      px-8
        ;
-   }
+  }
 }
 
 @screen lg {
-   .o-container {
-       @apply
-           px-16
+  .o-container {
+    @apply
+      px-16
        ;
-   }
+  }
 }

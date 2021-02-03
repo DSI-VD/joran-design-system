@@ -1,11 +1,11 @@
 /* ======================================================================
    # _components.button.css
    ====================================================================== */
-   
+
 .c-button {
-    @apply 
-        bg-primary
-        text-white
+  @apply
+    bg-primary
+    text-white
         no-underline
         font-bold
         py-3
@@ -19,19 +19,19 @@
 }
 
 .prose .c-button {
-    @apply no-underline text-white !important;
+  @apply no-underline text-white !important;
 }
 
 .c-button:hover,
 .c-button:active {
-    @apply
-        bg-primary-light
-        shadow-lg
+  @apply
+    bg-primary-light
+    shadow-lg
     ;
 }
 
 .c-button:focus {
-   @apply
-      outline-focus
+  @apply
+    outline-focus
    ;
 }

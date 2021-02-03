@@ -1,9 +1,9 @@
 /* ======================================================================
    # _settings.typography.css
    ====================================================================== */
-   
+
 @font-face {
-    font-family: 'intervar';
-    font-display: swap;
-    src: url("../fonts/inter-latin-ext-variable-full-normal.woff2") format("woff2");
+  font-family: 'intervar';
+  font-display: swap;
+  src: url("../fonts/inter-latin-ext-variable-full-normal.woff2") format("woff2");
 }

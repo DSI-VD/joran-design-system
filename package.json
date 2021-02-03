@@ -16,12 +16,15 @@
         "clean": "rimraf build public",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git",
+        "test": "npm run lint",
         "start": "npm run watch",
         "watch": "npm run build && run-p watch:*",
         "watch:fractal": "npx fractal start --sync",
         "watch:scripts": "chokidar \"src/assets/**/*.js\" -c \"npm run build:scripts\" --initial",
         "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial",
-        "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial"
+        "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial",
+        "lint": "run-p lint:*",
+        "lint:styles": "stylelint src/**/*.css"
     },
     "devDependencies": {
         "@frctl/fractal": "^1.5.2",
@@ -37,6 +40,8 @@
         "postcss-cli": "^8.3.1",
         "postcss-easy-import": "^3.0.0",
         "rimraf": "^3.0.2",
+        "stylelint": "^13.9.0",
+        "stylelint-config-standard": "^20.0.0",
         "tailwindcss": "^2.0.2"
     },
     "dependencies": {
