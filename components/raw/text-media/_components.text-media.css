@@ -1,0 +1,25 @@
+/* ======================================================================
+   # _components.text-media.css
+   ====================================================================== */
+
+.c-text-media {
+    @apply
+        flex
+        flex-row
+        flex-wrap
+        gap-4
+    ;
+}
+
+.c-text-media__text {
+    @apply
+        flex-1
+        self-center
+    ;
+}
+
+.c-text-media__media {
+    @apply
+        flex-1
+    ;
+}
