@@ -15,7 +15,7 @@
     "build:fractal": "npx fractal build",
     "clean": "rimraf build public",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git",
+    "deploy": "gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git && gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git",
     "test": "npm run lint",
     "start": "npm run watch",
     "watch": "npm run build && run-p watch:*",
