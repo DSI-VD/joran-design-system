@@ -54,19 +54,23 @@ module.exports = {
             },
             h3: {
               color: 'var(--color__primary)',
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
+              marginBottom: '0'
             },
             h4: {
               color: 'var(--color__primary)',
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
+              marginBottom: '0'
             },
             h5: {
               color: 'var(--color__primary)',
               textTransform: 'uppercase'
+              marginBottom: '0'
             },
             h6: {
               color: 'var(--color__primary)',
               textTransform: 'uppercase'
+              marginBottom: '0'
             },
           }
         }
