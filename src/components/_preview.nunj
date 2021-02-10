@@ -17,6 +17,7 @@
 
     <style>
       :root {
+        --color__primary--lightest: #ddd9f9;
         --color__primary--lighter: #beb5f5;
         --color__primary--light: #8577e5;
         --color__primary: #6047e6;

@@ -1,0 +1,20 @@
+/* ======================================================================
+   # _components.highlight.css
+   ====================================================================== */
+
+.c-highlight {
+    @apply
+        py-24
+        text-primary
+        font-bold
+        text-3xl
+        bg-primary-lightest
+    ;
+}
+
+.c-highlight__text {
+    @apply
+        text-center
+        max-w-3xl
+    ;
+}
