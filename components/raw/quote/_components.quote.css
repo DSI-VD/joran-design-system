@@ -54,6 +54,24 @@
 
 .c-quote__cite {
   @apply
-    block
+    mt-12
+    flex
+    flex-col
+    items-center
     ;
+}
+
+
+
+/* -----------------------------------
+ # Author
+ ----------------------------------- */
+
+.c-quote__author {
+@apply
+  mt-4
+  text-xs
+  uppercase
+  not-italic
+  ;
 }

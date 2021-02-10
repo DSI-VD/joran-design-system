@@ -182,7 +182,10 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__heading&quot;</span>&gt;</span>Témoignage<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__text&quot;</span>&gt;</span>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__cite&quot;</span>&gt;</span>Titre Prénom Nom Fonction<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__cite&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-avatar&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/100x100/?face&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;This is an avatar&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__author&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Auteur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;<span class="hljs-name">Titre</span></span> Prénom Nom <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>Fonction<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -198,7 +201,10 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__heading&quot;</span>&gt;</span>Témoignage<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__text&quot;</span>&gt;</span>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__cite&quot;</span>&gt;</span>Titre Prénom Nom Fonction<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__cite&quot;</span>&gt;</span>
+                </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="avatar.html">@avatar</a>&#x27; %}</span><span class="xml">
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__author&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Auteur: <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;<span class="hljs-name">Titre</span></span> Prénom Nom <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>Fonction<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
@@ -297,8 +303,26 @@
 
 <span class="hljs-selector-class">.c-quote__cite</span> {
   <span class="hljs-keyword">@apply</span>
-    block
+    mt-<span class="hljs-number">12</span>
+    flex
+    flex-col
+    items-center
     ;
+}
+
+
+
+<span class="hljs-comment">/* -----------------------------------
+ # Author
+ ----------------------------------- */</span>
+
+<span class="hljs-selector-class">.c-quote__author</span> {
+<span class="hljs-keyword">@apply</span>
+  mt-<span class="hljs-number">4</span>
+  text-xs
+  uppercase
+  not-italic
+  ;
 }
 </pre>
                             </code>
@@ -316,7 +340,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">896 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -355,6 +379,15 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src/components/04-Components/quote/quote.nunj</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="avatar.html">@<span>avatar</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
     </ul>
@@ -760,6 +793,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="avatar.html" data-role="tree-link" data-pjax data-handle="avatar">
+                <span>Avatar</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button.html" data-role="tree-link" data-pjax data-handle="button">
                 <span>Button</span>
                 
@@ -1137,8 +1196,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-10T12:47:23.587Z">
-                                10.02.2021 à 13:47:23
+                            <time datetime="2021-02-10T13:09:04.011Z">
+                                10.02.2021 à 14:09:04
                             </time>
                         
                     </dd>
@@ -1370,6 +1429,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

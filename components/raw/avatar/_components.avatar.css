@@ -1,0 +1,16 @@
+/* ======================================================================
+   # _components.avatar.css
+   ====================================================================== */
+
+.c-avatar {
+    @apply
+        rounded-full
+        h-24
+        w-24
+        flex
+        items-center
+        justify-center
+        shadow
+        bg-primary-light
+        ;
+}
