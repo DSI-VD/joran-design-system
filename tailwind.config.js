@@ -13,21 +13,9 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         primary: {
-          light: '#035177',
-          DEFAULT: '#023650',
-          dark: '#011B28'
-        },
-        secondary: {
-          light: '#40BEDD',
-          DEFAULT: '#219EBC',
-          dark: '#156579'
-        },
-        alternate: {
-          darkest: '#FFB35C',
-          dark: '#FFA033',
-          DEFAULT: '#FB8500',
-          light: '#E07800',
-          lightest: '#B86200'
+          light: 'var(--color__primary--light)',
+          DEFAULT: 'var(--color__primary)',
+          dark: 'var(--color__primary--dark)'
         },
         white: {
           DEFAULT: '#ffffff'
