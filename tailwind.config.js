@@ -39,9 +39,6 @@ module.exports = {
       outline: {
         focus: ['3px solid #FFB703', '1px']
       },
-      screens: {
-        xs: '320px'
-      },
       typography: {
         DEFAULT: {
           css: {
