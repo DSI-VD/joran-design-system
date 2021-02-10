@@ -64,12 +64,12 @@ module.exports = {
             },
             h5: {
               color: 'var(--color__primary)',
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
               marginBottom: '0'
             },
             h6: {
               color: 'var(--color__primary)',
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
               marginBottom: '0'
             },
           }
