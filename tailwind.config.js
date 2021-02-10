@@ -39,6 +39,36 @@ module.exports = {
       },
       screens: {
         xs: '320px'
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: {
+              color: 'var(--color__primary)',
+              fontSize: '2.5em'
+            },
+            h2: {
+              color: 'var(--color__primary)',
+              fontSize: '2em'
+            },
+            h3: {
+              color: 'var(--color__primary)',
+              textTransform: 'uppercase'
+            },
+            h4: {
+              color: 'var(--color__primary)',
+              textTransform: 'uppercase'
+            },
+            h5: {
+              color: 'var(--color__primary)',
+              textTransform: 'uppercase'
+            },
+            h6: {
+              color: 'var(--color__primary)',
+              textTransform: 'uppercase'
+            },
+          }
+        }
       }
     }
   },
