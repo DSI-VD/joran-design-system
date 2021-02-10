@@ -12,7 +12,12 @@
     rounded
     uppercase
     shadow
-    inline-block
+    flex
+    flex-row
+    flex-nowrap
+    items-center
+    gap-2
+    max-w-min
     transition
     ;
 }
@@ -33,4 +38,11 @@
   @apply
     outline-focus
    ;
+}
+
+.c-button svg {
+  @apply
+    fill-current
+  ;
+  height: 1em;
 }
