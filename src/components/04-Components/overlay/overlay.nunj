@@ -1,8 +1,0 @@
-<div class="c-overlay">
-    <div class="c-overlay__text-container">
-        {% render '@card', { image:false, title:'This is an overlay', content:'Text should not be long. Otherwise, it will break everything' }, true %}
-    </div>
-    <figure class="c-overlay__image">
-        <img src="https://images.unsplash.com/photo-1609965803451-43c6e8d7b346?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=85" />
-    </figure>
-</div>
