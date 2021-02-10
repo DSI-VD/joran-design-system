@@ -1,6 +1,9 @@
 <h2>Primary</h2>
 
 <ul>
+    <li class="bg-primary-lighter h-40">
+        Primary lighter
+    </li>
     <li class="bg-primary-light h-40">
         Primary light
     </li>

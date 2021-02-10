@@ -7,14 +7,13 @@
     bg-primary
     text-white
     no-underline
-    font-bold
     py-3
     px-6
     rounded
     uppercase
     shadow
-    shadow
     inline-block
+    transition
     ;
 }
 

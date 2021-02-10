@@ -13,6 +13,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         primary: {
+          lighter: 'var(--color__primary--lighter)',
           light: 'var(--color__primary--light)',
           DEFAULT: 'var(--color__primary)',
           dark: 'var(--color__primary--dark)'
