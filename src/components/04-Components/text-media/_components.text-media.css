@@ -1,0 +1,25 @@
+/* ======================================================================
+   # _components.text-media.css
+   ====================================================================== */
+
+.c-text-media {
+    @apply
+        grid
+        grid-cols-1
+        gap-4
+    ;
+}
+
+@screen md {
+    .c-text-media {
+        @apply
+            grid-cols-2
+        ;
+}
+}
+
+.c-text-media__text {
+    @apply
+        self-center
+    ;
+}

@@ -1,0 +1,7 @@
+<div class="c-text-media">
+    <div class="c-text-media__text o-prose">
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue 
+    </div>
+    {% render '@figure' %}
+</div>
