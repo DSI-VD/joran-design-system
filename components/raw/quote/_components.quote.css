@@ -6,10 +6,10 @@
   @apply
     py-24
     bg-gradient-to-b
-        from-transparent
-        to-primary-lighter
-        rounded
-        text-center
+    from-transparent
+    to-primary-lighter
+    rounded
+    text-center
     ;
 }
 
@@ -68,10 +68,10 @@
  ----------------------------------- */
 
 .c-quote__author {
-@apply
-  mt-4
-  text-xs
-  uppercase
-  not-italic
+  @apply
+    mt-4
+    text-xs
+    uppercase
+    not-italic
   ;
 }

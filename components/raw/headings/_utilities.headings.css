@@ -10,7 +10,7 @@
   @apply
     text-primary
     text-2xl
-     uppercase
+    uppercase
    ;
 }
 
@@ -35,7 +35,7 @@
   @apply
     text-primary
     font-bold
-  text-3xl
+    text-3xl
 ;
 }
 
@@ -47,7 +47,7 @@
   @apply
     text-primary
     text-2xl
-uppercase
+    uppercase
 ;
 }
 
