@@ -4,8 +4,34 @@
 
 .c-footer {
   @apply
-    bg-gray-lightest
+    bg-primary
+    text-white
+    ;
+}
+
+
+
+/* -------------------------------------
+   # Main
+   ------------------------------------- */
+
+.c-footer__main {
+  @apply
+    font-bold
     text-sm
+    ;
+}
+
+
+
+/* -------------------------------------
+   # Secondary
+   ------------------------------------- */
+
+.c-footer__secondary {
+  @apply
+    mt-12
+    text-xs
     ;
 }
 
@@ -15,50 +41,43 @@
    # Grid
    ----------------------------------- */
 
-@screen xs {
-  .c-footer__grid {
-    @apply
-      grid
-      grid-cols-2
-      gap-4
-      ;
-  }
-}
-
-@screen sm {
-  .c-footer__grid {
-    @apply
-      grid-cols-3
-      ;
-  }
+.c-footer__grid {
+  @apply
+    flex
+    flex-wrap
+    gap-24
+    ;
 }
 
 @screen md {
   .c-footer__grid {
     @apply
-      grid-cols-5
+      gap-48
       ;
   }
 }
 
-/* -----------------------------------
-   # Headings
-   ----------------------------------- */
-.c-footer h3 {
+.c-footer__grid .c-footer__grid-item:last-of-type {
   @apply
-    font-bold
-    text-xl
-    leading-5
-    mt-8
-    mb-4
+    ml-auto
     ;
 }
 
 
 
+/* -------------------------------------
+   # Headings
+   ------------------------------------- */
+
+.c-footer h3 {
+  @apply
+    mb-4
+    ;
+}
+
 /* -----------------------------------
-# Paragraph
------------------------------------ */
+   # Paragraph
+   ----------------------------------- */
 
 .c-footer p {
   @apply
@@ -72,9 +91,9 @@
    # List
    ----------------------------------- */
 
-.c-footer ul > li {
+.c-footer ul > li + li {
   @apply
-    my-2
+    mt-4
     ;
 }
 
@@ -84,7 +103,7 @@
    # Anchor
    ----------------------------------- */
 
-.c-footer a {
+.c-footer a:hover {
   @apply
     underline
     ;
@@ -98,12 +117,7 @@
 
 .c-footer svg {
   @apply
-    h-8
-    ;
-}
-
-.c-footer__liste-image li + li {
-  @apply
-    ml-4
+    h-5
+    fill-current
     ;
 }
