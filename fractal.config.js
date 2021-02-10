@@ -26,7 +26,7 @@ const myCustomisedTheme = mandelbrot({
 });
 
 /* Set the title of the project */
-fractal.set('project.title', 'Jorant design system');
+fractal.set('project.title', 'Joran design system');
 
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/src/components');
