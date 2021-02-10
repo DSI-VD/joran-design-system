@@ -3,9 +3,9 @@
    ====================================================================== */
 
 .c-avatar {
-    @apply
-        rounded-full
-        h-24
+  @apply
+    rounded-full
+    h-24
         w-24
         flex
         items-center
