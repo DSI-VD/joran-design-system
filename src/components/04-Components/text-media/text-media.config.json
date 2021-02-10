@@ -1,0 +1,15 @@
+{
+  "context": {
+    "source": "https://source.unsplash.com/daily",
+    "alt": "Daily image from Unsplash",
+    "caption": "This is the caption"
+  },
+  "variants": [
+    {
+      "name": "reverse",
+      "context": {
+        "styleModifier": "c-text-media--reverse"
+      }
+    }
+  ]
+}

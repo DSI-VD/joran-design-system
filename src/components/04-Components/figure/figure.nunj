@@ -1,6 +1,8 @@
 <figure class="c-figure">
-    <img class="c-figure__media" src="https://source.unsplash.com/daily">
+    <img class="c-figure__media" src="{{ src }}" alt="{{ alt }}">
+    {% if caption -%}
     <figcaption class="c-figure__caption">
-        This is the legend
+        {{ caption }}
     </figcaption>
+    {%- endif %}
 </figure>
