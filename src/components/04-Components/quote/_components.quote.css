@@ -7,9 +7,9 @@
     py-24
     bg-gradient-to-b
     from-transparent
-        to-primary-lighter
-        rounded
-        text-center
+    to-primary-lighter
+    rounded
+    text-center
     ;
 }
 
@@ -71,7 +71,7 @@
   @apply
     mt-4
     text-xs
-  uppercase
-  not-italic
+    uppercase
+    not-italic
   ;
 }
