@@ -1,21 +1,19 @@
+/* ==========================================================================
+   # _objects.prse.css
+   ========================================================================== */
+
 .o-prose {
   @apply prose;
 }
 
-@screen lg {
-  .o-prose {
-    @apply prose-lg;
-  }
-}
+/* -------------------------------------
+   # Customisation
+   ------------------------------------- */
 
-@screen xl {
-  .o-prose {
-    @apply prose-xl;
-  }
-}
+/**
+ * There is other customisation in the Tailwind config file
+ */
 
-@screen 2xl {
-  .o-prose {
-    @apply prose-2xl;
-  }
+.o-prose a {
+  text-decoration-color: var(--color__primary);
 }

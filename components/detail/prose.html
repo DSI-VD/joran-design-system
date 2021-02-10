@@ -1286,26 +1286,24 @@ color: hsla(60, 100%, 80%, .75);
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-CSS FileBrowser-code hljs">
-                                <pre><span class="hljs-selector-class">.o-prose</span> {
+                                <pre><span class="hljs-comment">/* ==========================================================================
+   # _objects.prse.css
+   ========================================================================== */</span>
+
+<span class="hljs-selector-class">.o-prose</span> {
   <span class="hljs-keyword">@apply</span> prose;
 }
 
-<span class="hljs-keyword">@screen</span> lg {
-  <span class="hljs-selector-class">.o-prose</span> {
-    <span class="hljs-keyword">@apply</span> prose-lg;
-  }
-}
+<span class="hljs-comment">/* -------------------------------------
+   # Customisation
+   ------------------------------------- */</span>
 
-<span class="hljs-keyword">@screen</span> xl {
-  <span class="hljs-selector-class">.o-prose</span> {
-    <span class="hljs-keyword">@apply</span> prose-xl;
-  }
-}
+<span class="hljs-comment">/**
+ * There is other customisation in the Tailwind config file
+ */</span>
 
-<span class="hljs-keyword">@screen</span> <span class="hljs-number">2</span>xl {
-  <span class="hljs-selector-class">.o-prose</span> {
-    <span class="hljs-keyword">@apply</span> prose-<span class="hljs-number">2</span>xl;
-  }
+<span class="hljs-selector-class">.o-prose</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">text-decoration-color</span>: <span class="hljs-built_in">var</span>(--color__primary);
 }
 </pre>
                             </code>
@@ -1323,7 +1321,7 @@ color: hsla(60, 100%, 80%, .75);
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">193 Bytes</span>
+                    <span class="Meta-value">450 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1567,6 +1565,32 @@ color: hsla(60, 100%, 80%, .75);
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="auto-grid.html" data-role="tree-link" data-pjax data-handle="auto-grid">
                 <span>Auto Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="container.html" data-role="tree-link" data-pjax data-handle="container">
+                <span>Container</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2066,8 +2090,8 @@ color: hsla(60, 100%, 80%, .75);
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-10T08:00:31.919Z">
-                                10.02.2021 à 09:00:31
+                            <time datetime="2021-02-10T09:40:46.343Z">
+                                10.02.2021 à 10:40:46
                             </time>
                         
                     </dd>
@@ -2092,6 +2116,8 @@ color: hsla(60, 100%, 80%, .75);
                 Back
             </button>
         </div>
+        
+    
         
     
         
