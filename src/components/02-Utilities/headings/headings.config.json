@@ -1,61 +1,61 @@
 {
-    "collated": true,
-    "context": {
-        "text": "Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+  "collated": true,
+  "context": {
+    "text": "Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+  },
+  "variants": [
+    {
+      "name": "default",
+      "hidden": true
     },
-    "variants": [
-        {
-            "name": "default",
-            "hidden": true
-        },
-        {
-            "name": "subhead",
-            "context": {
-            "styleModifier": "u-subhead",
-            "text": "[SUBHEAD] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
-            }
-        },
-        {
-            "name": "h1",
-            "context": {
-            "styleModifier": "u-h1",
-            "text": "[H1] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
-            }
-        },
-        {
-            "name": "h2",
-            "context": {
-            "styleModifier": "u-h2",
-            "text": "[H2] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
-            }
-        },
-        {
-            "name": "h3",
-            "context": {
-            "styleModifier": "u-h3",
-            "text": "[H3] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
-            }
-        },
-        {
-            "name": "h4",
-            "context": {
-            "styleModifier": "u-h4",
-            "text": "[H4] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
-            }
-        },
-        {
-            "name": "h5",
-            "context": {
-            "styleModifier": "u-h5",
-            "text": "[H5] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
-            }
-        },
-        {
-            "name": "h6",
-            "context": {
-            "styleModifier": "u-h6",
-            "text": "[H6] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
-            }
-        }
-    ]
+    {
+      "name": "subhead",
+      "context": {
+        "styleModifier": "u-subhead",
+        "text": "[SUBHEAD] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    },
+    {
+      "name": "h1",
+      "context": {
+        "styleModifier": "u-h1",
+        "text": "[H1] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    },
+    {
+      "name": "h2",
+      "context": {
+        "styleModifier": "u-h2",
+        "text": "[H2] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    },
+    {
+      "name": "h3",
+      "context": {
+        "styleModifier": "u-h3",
+        "text": "[H3] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    },
+    {
+      "name": "h4",
+      "context": {
+        "styleModifier": "u-h4",
+        "text": "[H4] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    },
+    {
+      "name": "h5",
+      "context": {
+        "styleModifier": "u-h5",
+        "text": "[H5] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    },
+    {
+      "name": "h6",
+      "context": {
+        "styleModifier": "u-h6",
+        "text": "[H6] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    }
+  ]
 }

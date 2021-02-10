@@ -71,7 +71,7 @@ module.exports = {
               color: 'var(--color__primary)',
               textTransform: 'uppercase',
               marginBottom: '0'
-            },
+            }
           }
         }
       }
@@ -81,6 +81,6 @@ module.exports = {
     extend: {}
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/typography')
   ]
 };

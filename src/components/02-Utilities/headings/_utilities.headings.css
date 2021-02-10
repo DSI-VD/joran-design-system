@@ -1,18 +1,18 @@
 /* ======================================================================
  # _utilities.headings.css
  ====================================================================== */
- 
- /* -----------------------------------
+
+/* -----------------------------------
   # Subhead
   ----------------------------------- */
- 
- .u-subhead {
-   @apply
-     text-primary
-     text-2xl
+
+.u-subhead {
+  @apply
+    text-primary
+    text-2xl
      uppercase
    ;
- }
+}
 
 /* -----------------------------------
  # Heanding 1
@@ -32,9 +32,9 @@
  ----------------------------------- */
 
 .u-h2 {
-@apply
-  text-primary
-  font-bold
+  @apply
+    text-primary
+    font-bold
   text-3xl
 ;
 }
@@ -44,9 +44,9 @@
  ----------------------------------- */
 
 .u-h3 {
-@apply
-text-primary
-text-2xl
+  @apply
+    text-primary
+    text-2xl
 uppercase
 ;
 }
@@ -56,9 +56,9 @@ uppercase
  ----------------------------------- */
 
 .u-h4 {
-@apply
-text-primary
-text-xl
+  @apply
+    text-primary
+    text-xl
 ;
 }
 
@@ -67,9 +67,9 @@ text-xl
  ----------------------------------- */
 
 .u-h5 {
-@apply
-text-primary
-text-lg
+  @apply
+    text-primary
+    text-lg
 ;
 }
 
@@ -78,7 +78,7 @@ text-lg
  ----------------------------------- */
 
 .u-h6 {
-@apply
-text-primary
+  @apply
+    text-primary
 ;
 }
