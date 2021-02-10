@@ -3,14 +3,14 @@
    ====================================================================== */
 
 .c-figure__media {
-    @apply
-        rounded
-        bg-primary-light
+  @apply
+    rounded
+    bg-primary-light
     ;
 }
 
 .c-figure__caption {
-    @apply 
-        text-sm
+  @apply
+    text-sm
         ;
 }

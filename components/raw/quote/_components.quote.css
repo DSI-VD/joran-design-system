@@ -1,0 +1,59 @@
+/* ======================================================================
+   # _components.quotes.css
+   ====================================================================== */
+
+.c-quote {
+  @apply
+    py-24
+    bg-gradient-to-b
+        from-transparent
+        to-primary-lighter
+        rounded
+        text-center
+    ;
+}
+
+
+
+/* -----------------------------------
+   # Heading
+   ----------------------------------- */
+.c-quote__heading {
+  @apply
+    text-xs
+    uppercase
+    ;
+}
+
+
+
+/* -----------------------------------
+   # Text
+   ----------------------------------- */
+
+/***
+ * Size has to be the same as `u-h2`
+ */
+.c-quote__text {
+  @apply
+    font-bold
+    text-3xl
+    ;
+}
+
+.c-quote__text::before,
+.c-quote__text::after {
+  content: "\"";
+}
+
+
+
+/* -----------------------------------
+   # Cite
+   ----------------------------------- */
+
+.c-quote__cite {
+  @apply
+    block
+    ;
+}
