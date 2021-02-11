@@ -1,1 +1,1 @@
-<a href="{{ url }}" class="c-button">{{ text }}</a>
+<a href="{{ url }}" class="c-button{% if styleModifier %} {{ styleModifier }}{% endif %}">{{ text }}</a>
