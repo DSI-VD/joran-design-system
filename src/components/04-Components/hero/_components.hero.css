@@ -52,7 +52,7 @@
  ----------------------------------- */
 
 .c-hero__heading {
-    @apply
+  @apply
     font-bold
     text-5xl
     uppercase
