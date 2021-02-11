@@ -7,22 +7,32 @@
   "variants": [
     {
       "name": "default",
-      "label": "Page title"
+      "hidden": true
     },
     {
-      "name": "with-image",
+      "name": "title",
       "label": "Page title with image",
       "context": {
-        "variantModifier": "c-hero--with-image",
+        "variantModifier": "c-hero--title"
+      }
+    },
+    {
+      "name": "title-with-image",
+      "label": "Page title with image",
+      "context": {
+        "variantModifier": "c-hero--title c-hero--with-image",
         "image": "https://source.unsplash.com/daily"
       }
     },
     {
-      "name": "full-width",
-      "label": "Full width",
+      "name": "contained",
+      "context": {}
+    },
+    {
+      "name": "contained-with-image",
       "context": {
-        "variantModifier": "c-hero--fullwidth",
-        "image": false
+        "variantModifier": "c-hero--with-image",
+        "image": "https://source.unsplash.com/daily"
       }
     }
   ]

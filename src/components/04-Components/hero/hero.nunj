@@ -2,6 +2,6 @@
     <div class="c-hero__container o-container">
         <div class="c-hero__caption">{{ caption }}</div>
         <div class="c-hero__heading">{{ heading }}</div>
-        {% render '@button---arrow-right', { styleModifier: "c-hero__button" }, true %}
+        {% render '@arrow--down', { styleModifier: "c-hero__button" }, true %}
     </div>
 </div>
