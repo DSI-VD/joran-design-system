@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Make underline of links and anchors style thicker with a background effect on hover stats
 - Fix link in README
 - Fix links in CHANGELOG
 

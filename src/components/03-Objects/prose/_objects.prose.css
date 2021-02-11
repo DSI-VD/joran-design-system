@@ -16,4 +16,15 @@
 
 .o-prose a {
   text-decoration-color: var(--color__primary);
+  text-decoration-thickness: 0.1em;
+  @apply
+    transition-all
+  ;
+}
+
+.o-prose a:hover {
+  @apply
+    bg-primary-lightest
+    rounded-t
+  ;
 }
