@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Build files are included in the node package
+
 ## [0.0.3] - 2021-02-11
 
 ### Added
@@ -15,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add _arrow_ component
 - Add _hero--title_ and _hero--contained_ variants of _hero_ components
 
-### Fixes
+### Fixed
 
 - Make underline of links and anchors style thicker with a background effect on hover stats
 - Fix link in README
