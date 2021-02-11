@@ -20,6 +20,10 @@ const myCustomisedTheme = mandelbrot({
       format: value => {
         return value.toLocaleString('CH-fr');
       }
+    },
+    {
+      label: 'Changelog',
+      value: '<a href="https://github.com/DSI-VD/joran-design-system/blob/master/CHANGELOG.md">Voir les changements</a>'
     }
   ]
   // Any other theme configuration values here
