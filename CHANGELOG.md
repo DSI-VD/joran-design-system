@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2021-02-11
+
 ### Fixed
 
 - Build files are included in the node package
@@ -64,7 +66,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.3...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.4...HEAD
+[0.0.3]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.4...v0.0.3
 [0.0.3]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.3...v0.0.2
 [0.0.2]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/DSI-VD/joran-design-system/releases/tag/v0.0.1
