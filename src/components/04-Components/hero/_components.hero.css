@@ -7,10 +7,6 @@
  # Hero
  ----------------------------------- */
 
-/***
- * 1. Darken image
- */
-
 .c-hero {
   @apply
     text-white
@@ -20,12 +16,20 @@
     bg-primary-light
 
     py-24
-
-    relative /* [1] */
     ;
 }
 
-.c-hero::before {
+/***
+ * 1. If there's an image, an overlay is applied to darken it
+ */
+ 
+.c-hero--with-image {
+   @apply
+   relative /* [1] */
+   ;
+ }
+ 
+.c-hero--with-image::before {
   content: "";
 
   @apply
@@ -41,7 +45,7 @@
  # Container
  ----------------------------------- */
 
-.c-hero__container {
+.c-hero--with-image .c-hero__container {
   @apply
     relative
     z-20 /* [1] */

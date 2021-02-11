@@ -2,8 +2,7 @@
   "context": {
     "caption": "caption",
     "heading": "[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.",
-    "caption": "[caption] caption",
-    "image": "https://source.unsplash.com/daily"
+    "caption": "[caption] caption"
   },
   "variants": [
     {
@@ -11,15 +10,19 @@
       "label": "Page title"
     },
     {
-      "name": "without-image",
+      "name": "with-image",
+      "label": "Page title with image",
       "context": {
-        "image": false
+        "variantModifier": "c-hero--with-image",
+        "image": "https://source.unsplash.com/daily"
       }
     },
     {
       "name": "full-width",
+      "label": "Full width",
       "context": {
-        "variantModifier": "c-button--fullwidth"
+        "variantModifier": "c-hero--fullwidth",
+        "image": false
       }
     }
   ]
