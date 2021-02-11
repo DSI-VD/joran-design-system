@@ -1,0 +1,2734 @@
+/* Settings */
+
+/* ======================================================================
+   # _settings.typography.css
+   ====================================================================== */
+
+@font-face {
+  font-family: 'intervar';
+
+  font-display: swap;
+
+  src: url("../fonts/inter-latin-ext-variable-full-normal.woff2") format("woff2");
+}
+
+/* Include Tailwind */
+
+/* ! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
+
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: intervar, system-ui, sans-serif; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * Make replaced elements `display: block` by default as that's
+ * the behavior you want almost all of the time. Inspired by
+ * CSS Remedy, with `svg` added as well.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their instrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose {
+  color: #374151;
+  max-width: 65ch;
+}
+
+.prose [class~="lead"] {
+  color: #4b5563;
+  font-size: 1.25em;
+  line-height: 1.6;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.prose a {
+  color: #111827;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.prose strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.prose ol[type="A"] {
+  --list-counter-style: upper-alpha;
+}
+
+.prose ol[type="a"] {
+  --list-counter-style: lower-alpha;
+}
+
+.prose ol[type="I"] {
+  --list-counter-style: upper-roman;
+}
+
+.prose ol[type="i"] {
+  --list-counter-style: lower-roman;
+}
+
+.prose ol[type="1"] {
+  --list-counter-style: decimal;
+}
+
+.prose ol > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.prose ol > li::before {
+  content: counter(list-item, var(--list-counter-style, decimal)) ".";
+  position: absolute;
+  font-weight: 400;
+  color: #6b7280;
+  left: 0;
+}
+
+.prose ul > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.prose ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  width: 0.375em;
+  height: 0.375em;
+  top: calc(0.875em - 0.1875em);
+  left: 0.25em;
+}
+
+.prose hr {
+  border-color: #e5e7eb;
+  border-top-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.prose blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: #111827;
+  border-left-width: 0.25rem;
+  border-left-color: #e5e7eb;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+.prose blockquote p:first-of-type::before {
+  content: open-quote;
+}
+
+.prose blockquote p:last-of-type::after {
+  content: close-quote;
+}
+
+.prose h1 {
+  color: var(--color__primary);
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.prose h2 {
+  color: var(--color__primary);
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+.prose h3 {
+  color: var(--color__primary);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.prose h4 {
+  color: var(--color__primary);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.prose figure figcaption {
+  color: #6b7280;
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+}
+
+.prose code {
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+.prose code::before {
+  content: "`";
+}
+
+.prose code::after {
+  content: "`";
+}
+
+.prose a code {
+  color: #111827;
+}
+
+.prose pre {
+  color: #e5e7eb;
+  background-color: #1f2937;
+  overflow-x: auto;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+  border-radius: 0.375rem;
+  padding-top: 0.8571429em;
+  padding-right: 1.1428571em;
+  padding-bottom: 0.8571429em;
+  padding-left: 1.1428571em;
+}
+
+.prose pre code {
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 400;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.prose pre code::before {
+  content: none;
+}
+
+.prose pre code::after {
+  content: none;
+}
+
+.prose table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+}
+
+.prose thead {
+  color: #111827;
+  font-weight: 600;
+  border-bottom-width: 1px;
+  border-bottom-color: #d1d5db;
+}
+
+.prose thead th {
+  vertical-align: bottom;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.prose tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e7eb;
+}
+
+.prose tbody tr:last-child {
+  border-bottom-width: 0;
+}
+
+.prose tbody td {
+  vertical-align: top;
+  padding-top: 0.5714286em;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose video {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose h2 code {
+  font-size: 0.875em;
+}
+
+.prose h3 code {
+  font-size: 0.9em;
+}
+
+.prose ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose ul {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose > ul > li p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.prose > ul > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.prose > ul > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.prose > ol > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.prose > ol > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.prose hr + * {
+  margin-top: 0;
+}
+
+.prose h2 + * {
+  margin-top: 0;
+}
+
+.prose h3 + * {
+  margin-top: 0;
+}
+
+.prose h4 + * {
+  margin-top: 0;
+}
+
+.prose thead th:first-child {
+  padding-left: 0;
+}
+
+.prose thead th:last-child {
+  padding-right: 0;
+}
+
+.prose tbody td:first-child {
+  padding-left: 0;
+}
+
+.prose tbody td:last-child {
+  padding-right: 0;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose > :last-child {
+  margin-bottom: 0;
+}
+
+.prose h5 {
+  color: var(--color__primary);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.prose h6 {
+  color: var(--color__primary);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* Tools */
+
+/* Generic */
+
+/* Elements */
+
+/* Objects */
+
+/* ======================================================================
+# _objects.auto-grid.css
+====================================================================== */
+
+.o-auto-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(var(--auto-grid-min-size, 16rem), 1fr)
+    );
+}
+
+/* ======================================================================
+   # _objects.container.css
+   ====================================================================== */
+
+.o-container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .o-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .o-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .o-container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .o-container {
+    max-width: 1536px;
+  }
+}
+
+.o-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ======================================================================
+   # _objects.list-inline.css
+   ====================================================================== */
+
+.o-list-inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.o-list-inline > li + li {
+  display: block;
+}
+
+/* ==========================================================================
+   # _objects.prse.css
+   ========================================================================== */
+
+.o-prose {
+  color: #374151;
+  max-width: 65ch;
+}
+
+.o-prose [class~="lead"] {
+  color: #4b5563;
+  font-size: 1.25em;
+  line-height: 1.6;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.o-prose a {
+  color: #111827;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.o-prose strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.o-prose ol[type="A"] {
+  --list-counter-style: upper-alpha;
+}
+
+.o-prose ol[type="a"] {
+  --list-counter-style: lower-alpha;
+}
+
+.o-prose ol[type="A s"] {
+  --list-counter-style: upper-alpha;
+}
+
+.o-prose ol[type="a s"] {
+  --list-counter-style: lower-alpha;
+}
+
+.o-prose ol[type="I"] {
+  --list-counter-style: upper-roman;
+}
+
+.o-prose ol[type="i"] {
+  --list-counter-style: lower-roman;
+}
+
+.o-prose ol[type="I s"] {
+  --list-counter-style: upper-roman;
+}
+
+.o-prose ol[type="i s"] {
+  --list-counter-style: lower-roman;
+}
+
+.o-prose ol[type="1"] {
+  --list-counter-style: decimal;
+}
+
+.o-prose ol > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.o-prose ol > li::before {
+  content: counter(list-item, var(--list-counter-style, decimal)) ".";
+  position: absolute;
+  font-weight: 400;
+  color: #6b7280;
+  left: 0;
+}
+
+.o-prose ul > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.o-prose ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  width: 0.375em;
+  height: 0.375em;
+  top: calc(0.875em - 0.1875em);
+  left: 0.25em;
+}
+
+.o-prose hr {
+  border-color: #e5e7eb;
+  border-top-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.o-prose blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: #111827;
+  border-left-width: 0.25rem;
+  border-left-color: #e5e7eb;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+.o-prose blockquote p:first-of-type::before {
+  content: open-quote;
+}
+
+.o-prose blockquote p:last-of-type::after {
+  content: close-quote;
+}
+
+.o-prose h1 {
+  color: var(--color__primary);
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.o-prose h2 {
+  color: var(--color__primary);
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+.o-prose h3 {
+  color: var(--color__primary);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.o-prose h4 {
+  color: var(--color__primary);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.o-prose figure figcaption {
+  color: #6b7280;
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+}
+
+.o-prose code {
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+.o-prose code::before {
+  content: "`";
+}
+
+.o-prose code::after {
+  content: "`";
+}
+
+.o-prose a code {
+  color: #111827;
+}
+
+.o-prose pre {
+  color: #e5e7eb;
+  background-color: #1f2937;
+  overflow-x: auto;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+  border-radius: 0.375rem;
+  padding-top: 0.8571429em;
+  padding-right: 1.1428571em;
+  padding-bottom: 0.8571429em;
+  padding-left: 1.1428571em;
+}
+
+.o-prose pre code {
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 400;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.o-prose pre code::before {
+  content: none;
+}
+
+.o-prose pre code::after {
+  content: none;
+}
+
+.o-prose table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+}
+
+.o-prose thead {
+  color: #111827;
+  font-weight: 600;
+  border-bottom-width: 1px;
+  border-bottom-color: #d1d5db;
+}
+
+.o-prose thead th {
+  vertical-align: bottom;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.o-prose tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e7eb;
+}
+
+.o-prose tbody tr:last-child {
+  border-bottom-width: 0;
+}
+
+.o-prose tbody td {
+  vertical-align: top;
+  padding-top: 0.5714286em;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.o-prose {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.o-prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.o-prose img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.o-prose video {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.o-prose figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.o-prose figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.o-prose h2 code {
+  font-size: 0.875em;
+}
+
+.o-prose h3 code {
+  font-size: 0.9em;
+}
+
+.o-prose ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.o-prose ul {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.o-prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.o-prose > ul > li p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.o-prose > ul > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.o-prose > ul > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.o-prose > ol > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.o-prose > ol > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.o-prose ul ul, .o-prose ul ol, .o-prose ol ul, .o-prose ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.o-prose hr + * {
+  margin-top: 0;
+}
+
+.o-prose h2 + * {
+  margin-top: 0;
+}
+
+.o-prose h3 + * {
+  margin-top: 0;
+}
+
+.o-prose h4 + * {
+  margin-top: 0;
+}
+
+.o-prose thead th:first-child {
+  padding-left: 0;
+}
+
+.o-prose thead th:last-child {
+  padding-right: 0;
+}
+
+.o-prose tbody td:first-child {
+  padding-left: 0;
+}
+
+.o-prose tbody td:last-child {
+  padding-right: 0;
+}
+
+.o-prose > :first-child {
+  margin-top: 0;
+}
+
+.o-prose > :last-child {
+  margin-bottom: 0;
+}
+
+.o-prose h5 {
+  color: var(--color__primary);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.o-prose h6 {
+  color: var(--color__primary);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.o-prose .c-button {
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+  text-decoration: none !important;
+}
+
+/* -------------------------------------
+   # Customisation
+   ------------------------------------- */
+
+/**
+ * There is other customisation in the Tailwind config file
+ */
+
+.o-prose a {
+  -webkit-text-decoration-color: var(--color__primary);
+          text-decoration-color: var(--color__primary);
+  text-decoration-thickness: 0.1em;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.o-prose a:hover {
+  background-color: var(--color__primary--lightest);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+/* ======================================================================
+   # _objects.region.css
+   ====================================================================== */
+
+.o-region {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* ======================================================================
+   # _objects.split-pair.css
+   ====================================================================== */
+
+.o-split-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--split-pair-space, 1.25rem);
+}
+
+/* ======================================================================
+   # _objects.stack.css
+   ====================================================================== */
+
+.o-stack {
+  --stack-space: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.o-stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.o-stack > * + * {
+  margin-top: var(--stack-space);
+}
+
+/* Components */
+
+/* ======================================================================
+   # _components.arrow.css
+   ====================================================================== */
+
+.c-arrow {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  height: 3rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 3rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.c-arrow svg {
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.c-arrow:hover {
+  --tw-bg-opacity: 0.25;
+}
+
+.c-arrow:focus {
+  outline: 3px solid #FFB703;
+  outline-offset: 1px;
+}
+
+/* ======================================================================
+   # _components.avatar.css
+   ====================================================================== */
+
+.c-avatar {
+  background-color: var(--color__primary--light);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  width: 6rem;
+}
+
+/* ======================================================================
+   # _components.button.css
+   ====================================================================== */
+
+.c-button {
+  background-color: var(--color__primary);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  text-transform: uppercase;
+  text-decoration: none;
+  gap: 0.5rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.prose .c-button {
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+  text-decoration: none !important;
+}
+
+.c-button:hover, .c-button:active {
+  background-color: var(--color__primary--light);
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.c-button:focus {
+  outline: 3px solid #FFB703;
+  outline-offset: 1px;
+}
+
+.c-button svg {
+  fill: currentColor;
+  height: 1em;
+}
+
+/* ======================================================================
+   # _components.card.css
+   ====================================================================== */
+
+.c-card {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 252, var(--tw-bg-opacity));
+  padding: 1rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.c-card__heading {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c-card__content {
+  color: #374151;
+  max-width: 65ch;
+}
+
+.c-card__content [class~="lead"] {
+  color: #4b5563;
+  font-size: 1.25em;
+  line-height: 1.6;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.c-card__content a {
+  color: #111827;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.c-card__content strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.c-card__content ol[type="A"] {
+  --list-counter-style: upper-alpha;
+}
+
+.c-card__content ol[type="a"] {
+  --list-counter-style: lower-alpha;
+}
+
+.c-card__content ol[type="A s"] {
+  --list-counter-style: upper-alpha;
+}
+
+.c-card__content ol[type="a s"] {
+  --list-counter-style: lower-alpha;
+}
+
+.c-card__content ol[type="I"] {
+  --list-counter-style: upper-roman;
+}
+
+.c-card__content ol[type="i"] {
+  --list-counter-style: lower-roman;
+}
+
+.c-card__content ol[type="I s"] {
+  --list-counter-style: upper-roman;
+}
+
+.c-card__content ol[type="i s"] {
+  --list-counter-style: lower-roman;
+}
+
+.c-card__content ol[type="1"] {
+  --list-counter-style: decimal;
+}
+
+.c-card__content ol > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.c-card__content ol > li::before {
+  content: counter(list-item, var(--list-counter-style, decimal)) ".";
+  position: absolute;
+  font-weight: 400;
+  color: #6b7280;
+  left: 0;
+}
+
+.c-card__content ul > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.c-card__content ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  width: 0.375em;
+  height: 0.375em;
+  top: calc(0.875em - 0.1875em);
+  left: 0.25em;
+}
+
+.c-card__content hr {
+  border-color: #e5e7eb;
+  border-top-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.c-card__content blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: #111827;
+  border-left-width: 0.25rem;
+  border-left-color: #e5e7eb;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+.c-card__content blockquote p:first-of-type::before {
+  content: open-quote;
+}
+
+.c-card__content blockquote p:last-of-type::after {
+  content: close-quote;
+}
+
+.c-card__content h1 {
+  color: var(--color__primary);
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.c-card__content h2 {
+  color: var(--color__primary);
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+.c-card__content h3 {
+  color: var(--color__primary);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.c-card__content h4 {
+  color: var(--color__primary);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.c-card__content figure figcaption {
+  color: #6b7280;
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+}
+
+.c-card__content code {
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+.c-card__content code::before {
+  content: "`";
+}
+
+.c-card__content code::after {
+  content: "`";
+}
+
+.c-card__content a code {
+  color: #111827;
+}
+
+.c-card__content pre {
+  color: #e5e7eb;
+  background-color: #1f2937;
+  overflow-x: auto;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+  border-radius: 0.375rem;
+  padding-top: 0.8571429em;
+  padding-right: 1.1428571em;
+  padding-bottom: 0.8571429em;
+  padding-left: 1.1428571em;
+}
+
+.c-card__content pre code {
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 400;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.c-card__content pre code::before {
+  content: none;
+}
+
+.c-card__content pre code::after {
+  content: none;
+}
+
+.c-card__content table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+}
+
+.c-card__content thead {
+  color: #111827;
+  font-weight: 600;
+  border-bottom-width: 1px;
+  border-bottom-color: #d1d5db;
+}
+
+.c-card__content thead th {
+  vertical-align: bottom;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.c-card__content tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e7eb;
+}
+
+.c-card__content tbody tr:last-child {
+  border-bottom-width: 0;
+}
+
+.c-card__content tbody td {
+  vertical-align: top;
+  padding-top: 0.5714286em;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.c-card__content {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.c-card__content p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.c-card__content img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.c-card__content video {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.c-card__content figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.c-card__content figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c-card__content h2 code {
+  font-size: 0.875em;
+}
+
+.c-card__content h3 code {
+  font-size: 0.9em;
+}
+
+.c-card__content ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.c-card__content ul {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.c-card__content li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.c-card__content > ul > li p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.c-card__content > ul > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.c-card__content > ul > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.c-card__content > ol > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.c-card__content > ol > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.c-card__content ul ul, .c-card__content ul ol, .c-card__content ol ul, .c-card__content ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.prose ul ul, .prose ul ol, .prose ol ul, .prose ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.c-card__content hr + * {
+  margin-top: 0;
+}
+
+.c-card__content h2 + * {
+  margin-top: 0;
+}
+
+.c-card__content h3 + * {
+  margin-top: 0;
+}
+
+.c-card__content h4 + * {
+  margin-top: 0;
+}
+
+.c-card__content thead th:first-child {
+  padding-left: 0;
+}
+
+.c-card__content thead th:last-child {
+  padding-right: 0;
+}
+
+.c-card__content tbody td:first-child {
+  padding-left: 0;
+}
+
+.c-card__content tbody td:last-child {
+  padding-right: 0;
+}
+
+.c-card__content > :first-child {
+  margin-top: 0;
+}
+
+.c-card__content > :last-child {
+  margin-bottom: 0;
+}
+
+.c-card__content h5 {
+  color: var(--color__primary);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.c-card__content h6 {
+  color: var(--color__primary);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.c-card__content .c-button {
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+  text-decoration: none !important;
+}
+
+/* ======================================================================
+   # _components.figure.css
+   ====================================================================== */
+
+.c-figure__media {
+  background-color: var(--color__primary--light);
+  border-radius: 0.25rem;
+}
+
+.c-figure__caption {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* ======================================================================
+   # _components.footer.css
+   ====================================================================== */
+
+.c-footer {
+  background-color: var(--color__primary);
+  padding-bottom: 1.75rem;
+  padding-top: 6rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+/* -------------------------------------
+   # Main
+   ------------------------------------- */
+
+.c-footer__main {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* -------------------------------------
+   # Secondary
+   ------------------------------------- */
+
+.c-footer__secondary {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------
+   # Grid
+   ----------------------------------- */
+
+.c-footer__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+@media (min-width: 768px) {
+  .c-footer__grid {
+    gap: 12rem;
+  }
+}
+
+.c-footer__grid .c-footer__grid-item:last-of-type {
+  margin-left: auto;
+}
+
+/* -------------------------------------
+   # Headings
+   ------------------------------------- */
+
+.c-footer h3 {
+  margin-bottom: 1rem;
+}
+
+/* -----------------------------------
+   # Paragraph
+   ----------------------------------- */
+
+.c-footer p {
+  margin-bottom: 1.25rem;
+}
+
+/* -----------------------------------
+   # List
+   ----------------------------------- */
+
+.c-footer ul > li + li {
+  margin-top: 1rem;
+}
+
+/* -----------------------------------
+   # Anchor
+   ----------------------------------- */
+
+.c-footer a:hover {
+  text-decoration: underline;
+}
+
+.c-footer a:focus {
+  outline: 3px solid #FFB703;
+  outline-offset: 1px;
+}
+
+/* -----------------------------------
+   # SVG
+   ----------------------------------- */
+
+.c-footer svg {
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+/* ======================================================================
+   # _components.header.css
+   ====================================================================== */
+
+.c-header {
+  display: flex;
+  align-items: flex-end;
+  height: 15rem;
+  min-height: 100%;
+  position: relative;
+}
+
+/* Make image bigger */
+
+@media (min-width: 1024px) {
+  .c-header {
+    height: 20rem;
+  }
+}
+
+/* -----------------------------------
+   # c-header__image
+   ----------------------------------- */
+
+.c-header__image {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+
+/* -----------------------------------
+   # c-header__container
+   ----------------------------------- */
+
+.c-header__container {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  margin-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  padding-top: 2.5rem;
+  z-index: 10;
+}
+
+@media (min-width: 640px) {
+  .c-header__container {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+}
+
+/* -----------------------------------
+   # c-header__title
+   ----------------------------------- */
+
+.c-header__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .c-header__title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+/* ======================================================================
+   # _components.hero.css
+   ====================================================================== */
+
+/* -----------------------------------
+ # Hero
+ ----------------------------------- */
+
+/***
+ * 1. Center vertically
+ */
+
+.c-hero {
+  background-color: var(--color__primary--light);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.c-hero--title {
+  min-height: 100vh;
+}
+
+/***
+ * 2. If there's an image, an overlay is applied to darken it
+ */
+
+.c-hero--with-image {
+  position: relative;
+}
+
+.c-hero--with-image::before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+/* -----------------------------------
+ # Container
+ ----------------------------------- */
+
+.c-hero--with-image .c-hero__container {
+  position: relative;
+  z-index: 20;
+}
+
+/* -----------------------------------
+ # Heading
+ ----------------------------------- */
+
+.c-hero__heading {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 35ch;
+}
+
+/* -----------------------------------
+ # Buton
+ ----------------------------------- */
+
+.c-hero__button {
+  margin-top: 3rem;
+}
+
+/* ======================================================================
+   # _components.highlight.css
+   ====================================================================== */
+
+.c-highlight {
+  background-color: var(--color__primary--lightest);
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: var(--color__primary);
+}
+
+.c-highlight__text {
+  max-width: 65ch;
+  text-align: center;
+}
+
+/* ==========================================================================
+   # _components.logo.css
+   ========================================================================== */
+
+.c-logo {
+  width: 3rem;
+}
+
+/* ======================================================================
+ # _components.nav.css
+ ====================================================================== */
+
+/* -----------------------------------
+   # c-nav
+   ----------------------------------- */
+
+/***
+ * 1. Fix navigation at top
+ * 2. Make it pass over the header image
+ */
+
+.c-nav {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 252, var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* -----------------------------------
+ # c-nav__container
+ ----------------------------------- */
+
+.c-nav__container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -----------------------------------
+ # c-nav__toggle
+ ----------------------------------- */
+
+.c-nav__toggle {
+  margin-left: auto;
+}
+
+.c-nav__toggle svg {
+  height: 1rem;
+}
+
+/* -----------------------------------
+ # c-nav__list
+ ----------------------------------- */
+
+.c-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .c-nav__list--desktop-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* -----------------------------------
+ # c-nav__list-item
+ ----------------------------------- */
+
+.c-nav__list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .c-nav__list-item--desktop-row {
+    padding-right: 2rem;
+  }
+}
+
+/* -----------------------------------
+ # c-nav__list-link
+ ----------------------------------- */
+
+.c-nav__list-link--level-1 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* -----------------------------------
+ # c-nav__list-link
+ ----------------------------------- */
+
+.c-nav__list-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* ======================================================================
+   # _components.quotes.css
+   ====================================================================== */
+
+.c-quote {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: transparent;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  --tw-gradient-to: var(--color__primary--lighter);
+  border-radius: 0.25rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+
+/* -----------------------------------
+   # Heading
+   ----------------------------------- */
+
+.c-quote__heading {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------
+   # Text
+   ----------------------------------- */
+
+/***
+ * Size has to be the same as `u-h2`
+ */
+
+.c-quote__text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  max-width: 65ch;
+}
+
+.c-quote__text::before,
+.c-quote__text::after {
+  content: "\"";
+}
+
+/* -----------------------------------
+   # Cite
+   ----------------------------------- */
+
+.c-quote__cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* -----------------------------------
+ # Author
+ ----------------------------------- */
+
+.c-quote__author {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 1rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* ======================================================================
+   # _components.text-media.css
+   ====================================================================== */
+
+.c-text-media {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .c-text-media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .c-text-media__text {
+    grid-column: 1;
+    align-self: center;
+  }
+
+  .c-text-media__media {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-text-media--reverse .c-text-media__text {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-text-media--reverse .c-text-media__media {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+/* Vendors */
+
+/* Utilities */
+
+/* ======================================================================
+ # _utilities.headings.css
+ ====================================================================== */
+
+/* -----------------------------------
+  # Subhead
+  ----------------------------------- */
+
+.u-subhead {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--color__primary);
+  text-transform: uppercase;
+}
+
+/* -----------------------------------
+ # Heanding 1
+ ----------------------------------- */
+
+.u-h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color__primary);
+  text-transform: uppercase;
+}
+
+/* -----------------------------------
+ # Heanding 2
+ ----------------------------------- */
+
+.u-h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: var(--color__primary);
+}
+
+/* -----------------------------------
+ # Heanding 3
+ ----------------------------------- */
+
+.u-h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--color__primary);
+  text-transform: uppercase;
+}
+
+/* -----------------------------------
+ # Heanding 4
+ ----------------------------------- */
+
+.u-h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--color__primary);
+}
+
+/* -----------------------------------
+ # Heanding 5
+ ----------------------------------- */
+
+.u-h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--color__primary);
+}
+
+/* -----------------------------------
+ # Heanding 6
+ ----------------------------------- */
+
+.u-h6 {
+  color: var(--color__primary);
+}
+
+/* ==========================================================================
+   # _utilities.visually-hidden.css
+   ========================================================================== */
+
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/***
+ * Tailwind utilities
+ * https://tailwindcss.com/docs/installation#using-a-custom-css-file
+ */
+
+.bg-gray-darkest {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 45, 61, var(--tw-bg-opacity));
+}
+
+.bg-gray-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgba(60, 72, 88, var(--tw-bg-opacity));
+}
+
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgba(192, 204, 218, var(--tw-bg-opacity));
+}
+
+.bg-gray-light {
+  --tw-bg-opacity: 1;
+  background-color: rgba(224, 230, 237, var(--tw-bg-opacity));
+}
+
+.bg-gray-lightest {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 252, var(--tw-bg-opacity));
+}
+
+.bg-primary-lighter {
+  background-color: var(--color__primary--lighter);
+}
+
+.bg-primary-light {
+  background-color: var(--color__primary--light);
+}
+
+.bg-primary {
+  background-color: var(--color__primary);
+}
+
+.bg-primary-dark {
+  background-color: var(--color__primary--dark);
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.table {
+  display: table;
+}
+
+.contents {
+  display: contents;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+* {
+  --tw-shadow: 0 0 #0000;
+}
+
+* {
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
