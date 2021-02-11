@@ -6,32 +6,35 @@
   "author": "Etat de Vaud - DGNSI",
   "main": "fractal.config.js",
   "scripts": {
+    "beautify": "run-p beautify:*",
+    "beautify:all": "prettier --write .",
+    "beautify:scripts": "xo --space --fix",
+    "beautify:styles": "stylelint src/**/*.css --fix",
     "prebuild": "npm run clean",
     "build": "run-s build:*",
     "build:fonts": "copyfiles node_modules/@fontsource/inter/files/inter-latin-ext-*.woff2 public/assets/fonts -f",
+    "build:fractal": "npx fractal build",
     "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
     "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
     "build:vectors": "copyfiles src/assets/vectors/**/*.* public/assets/vectors/ -f",
-    "build:fractal": "npx fractal build",
     "clean": "rimraf build public",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git",
-    "test": "npm run lint",
+    "lint": "run-s lint:*",
+    "lint:all": "prettier --check .",
+    "lint:scripts": "xo --space",
+    "lint:styles": "stylelint src/**/*.css",
+    "prepublishOnly": "npm run build",
     "start": "npm run watch",
+    "test": "npm run lint",
     "watch": "npm run build && run-p watch:*",
     "watch:fractal": "npx fractal start --sync",
     "watch:scripts": "chokidar \"src/assets/**/*.js\" -c \"npm run build:scripts\" --initial",
     "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial",
-    "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial",
-    "lint": "run-s lint:*",
-    "lint:styles": "stylelint src/**/*.css",
-    "lint:scripts": "xo --space",
-    "lint:all": "prettier --check .",
-    "beautify": "run-p beautify:*",
-    "beautify:styles": "stylelint src/**/*.css --fix",
-    "beautify:scripts": "xo --space --fix",
-    "beautify:all": "prettier --write .",
-    "prepublishOnly": "npm run build"
+    "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.2.0"
   },
   "devDependencies": {
     "@frctl/fractal": "^1.5.3",
@@ -51,8 +54,5 @@
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^2.0.3",
     "xo": "^0.37.1"
-  },
-  "dependencies": {
-    "@fontsource/inter": "^4.2.0"
   }
 }
