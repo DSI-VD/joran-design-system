@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Gradient on _quote_ display correctly on Safari
+
 ### Removed
 
 - _header_ components is removed. It is replaced by _hero--title_
