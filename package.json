@@ -30,7 +30,8 @@
     "beautify": "run-p beautify:*",
     "beautify:styles": "stylelint src/**/*.css --fix",
     "beautify:scripts": "xo --space --fix",
-    "beautify:all": "prettier --write ."
+    "beautify:all": "prettier --write .",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@frctl/fractal": "^1.5.3",
