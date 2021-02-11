@@ -8,24 +8,41 @@
  ----------------------------------- */
 
 /***
- * 1. Darken image
+ * 1. Center vertically
  */
 
 .c-hero {
   @apply
+    flex /* [1] */
+    items-center /* [1] */
+  
     text-white
 
     bg-cover
     bg-center
     bg-primary-light
 
-        py-24
-
-        relative /* [1] */
+    py-24
     ;
 }
 
-.c-hero::before {
+.c-hero--title {
+  @apply
+    min-h-screen
+  ;
+}
+
+/***
+ * 2. If there's an image, an overlay is applied to darken it
+ */
+ 
+.c-hero--with-image {
+   @apply
+   relative /* [2] */
+   ;
+ }
+ 
+.c-hero--with-image::before {
   content: "";
 
   @apply
@@ -33,7 +50,7 @@
     inset-0
     bg-black
     bg-opacity-50
-        z-10 /* [1] */
+    z-10 /* [2] */
     ;
 }
 
@@ -41,10 +58,10 @@
  # Container
  ----------------------------------- */
 
-.c-hero__container {
+.c-hero--with-image .c-hero__container {
   @apply
     relative
-    z-20 /* [1] */
+    z-20 /* [2] */
     ;
 }
 
@@ -57,8 +74,8 @@
     font-bold
     text-5xl
     uppercase
-    shadow
   ;
+  max-width: 35ch;
 }
 
 /* -----------------------------------
