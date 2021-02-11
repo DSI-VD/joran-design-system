@@ -1,0 +1,43 @@
+/* ======================================================================
+   # _components.hero.css
+   ====================================================================== */
+
+.c-hero {
+    @apply
+        text-white
+        
+        bg-cover
+        bg-center
+        bg-primary-light
+        
+        py-24
+        
+        relative
+    ;
+}
+
+.c-hero::before {
+    content: "";
+    @apply
+        absolute
+        inset-0
+        bg-black
+        bg-opacity-25
+        z-10
+    ;
+}
+
+.c-hero__container {
+    @apply
+        relative
+        z-20
+    ;
+}
+
+.c-hero__heading {
+    @apply
+    font-bold
+    text-5xl
+    uppercase
+  ;
+}
