@@ -1,4 +1,4 @@
-# Jorant Design System
+# Joran Design System
 
 Design system build for publications.vd.ch
 
