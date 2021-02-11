@@ -1,8 +1,8 @@
 {
-  "name": "jorant",
+  "name": "@dsivd/joran",
   "version": "0.0.1",
-  "description": "Jorant DEsign System",
-  "license": "ISC",
+  "description": "Joran Design System",
+  "license": "MIT",
   "author": "Etat de Vaud - DGNSI",
   "main": "fractal.config.js",
   "scripts": {
