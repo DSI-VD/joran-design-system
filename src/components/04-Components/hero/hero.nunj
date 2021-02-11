@@ -1,5 +1,5 @@
-<div class="c-hero"{% if image %} style="background-image: url({{ image }});"{% endif %}>
-    <div class="c-hero__container">
+<div class="c-hero{% if variantModifier %} {{ variantModifier }}{% endif %}"{% if image %} style="background-image: url({{ image }});"{% endif %}>
+    <div class="c-hero__container o-container">
         <div class="c-hero__caption">{{ caption }}</div>
         <div class="c-hero__heading">{{ heading }}</div>
         {% render '@button---arrow-right' %}

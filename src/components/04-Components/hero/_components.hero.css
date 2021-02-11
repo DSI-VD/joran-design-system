@@ -2,6 +2,15 @@
    # _components.hero.css
    ====================================================================== */
 
+
+/* -----------------------------------
+ # Hero
+ ----------------------------------- */
+
+/***
+ * 1. Darken image
+ */
+
 .c-hero {
     @apply
         text-white
@@ -12,27 +21,35 @@
         
         py-24
         
-        relative
+        relative /* [1] */
     ;
 }
 
 .c-hero::before {
     content: "";
     @apply
-        absolute
-        inset-0
-        bg-black
-        bg-opacity-25
-        z-10
+        absolute /* [1] */
+        inset-0 /* [1] */
+        bg-black /* [1] */
+        bg-opacity-25 /* [1] */
+        z-10 /* [1] */
     ;
 }
 
+/* -----------------------------------
+ # Container
+ ----------------------------------- */
+
 .c-hero__container {
     @apply
-        relative
-        z-20
+        relative /* [1] */
+        z-20 /* [1] */
     ;
 }
+
+/* -----------------------------------
+ # Heading
+ ----------------------------------- */
 
 .c-hero__heading {
     @apply
