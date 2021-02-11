@@ -11,12 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add a variant without image for _hero_ component
 - Add _arrow_ component
+- Add _hero--title_ and _hero--contained_ variants of _hero_ components
 
 ### Fixes
 
 - Make underline of links and anchors style thicker with a background effect on hover stats
 - Fix link in README
 - Fix links in CHANGELOG
+- Fix missing styles on links in _footer_
 
 ## [0.0.2] - 2021-02-11
 
