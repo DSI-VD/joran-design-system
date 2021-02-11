@@ -3,18 +3,18 @@
    ====================================================================== */
 
 .c-highlight {
-    @apply
-        py-24
-        text-primary
-        font-bold
-        text-3xl
+  @apply
+    py-24
+    text-primary
+    font-bold
+    text-3xl
         bg-primary-lightest
     ;
 }
 
 .c-highlight__text {
-    @apply
-        text-center
-        max-w-3xl
+  @apply
+    text-center
+    max-w-3xl
     ;
 }

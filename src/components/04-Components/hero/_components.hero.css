@@ -12,26 +12,27 @@
  */
 
 .c-hero {
-    @apply
-        text-white
-        
-        bg-cover
-        bg-center
-        bg-primary-light
-        
+  @apply
+    text-white
+
+    bg-cover
+    bg-center
+    bg-primary-light
+
         py-24
-        
+
         relative /* [1] */
     ;
 }
 
 .c-hero::before {
-    content: "";
-    @apply
-        absolute /* [1] */
-        inset-0 /* [1] */
-        bg-black /* [1] */
-        bg-opacity-50 /* [1] */
+  content: "";
+
+  @apply
+    absolute
+    inset-0
+    bg-black
+    bg-opacity-50
         z-10 /* [1] */
     ;
 }
@@ -41,9 +42,9 @@
  ----------------------------------- */
 
 .c-hero__container {
-    @apply
-        relative /* [1] */
-        z-20 /* [1] */
+  @apply
+    relative
+    z-20 /* [1] */
     ;
 }
 
@@ -63,7 +64,7 @@
 /* -----------------------------------
  # Buton
  ----------------------------------- */
- 
+
 .c-hero__button {
   @apply
     mt-12
