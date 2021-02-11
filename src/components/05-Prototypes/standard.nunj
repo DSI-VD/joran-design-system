@@ -1,12 +1,6 @@
-<div>
-  header
-</div>
-
 {% render '@navigation' %}
-
 <main class="o-stack">
-  {% render '@header' %}
-
+  {% render '@hero--title-with-image' %}
   <div class="o-container">
     <div class="o-prose">
       <h2>Heading 2</h2>
@@ -16,9 +10,9 @@
     </div>
   </div>
 
-  {% render '@overlay' %}
+  {% render '@quote' %}
 
-  {% render '@overlay' %}
+  {% render '@highlight' %}
 
   <div class="o-container">
     <div class="o-prose">
@@ -29,7 +23,7 @@
     </div>
   </div>
   <div class="o-container">
-    {% render '@media--reverse' %}
+    {% render '@text-media' %}
   </div>
 
   <div class="o-container">
