@@ -8,13 +8,13 @@
     text-primary
     font-bold
     text-3xl
-        bg-primary-lightest
+    bg-primary-lightest
     ;
 }
 
 .c-highlight__text {
   @apply
+    max-w-prose
     text-center
-    max-w-3xl
     ;
 }

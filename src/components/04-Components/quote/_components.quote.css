@@ -36,8 +36,10 @@
  */
 .c-quote__text {
   @apply
+    inline-block
     font-bold
     text-3xl
+    max-w-prose
     ;
 }
 

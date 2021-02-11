@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix link in README
 - Fix links in CHANGELOG
 - Fix missing styles on links in _footer_
+- Maximum width of _quote_ and _highlight_ is 65 characters instead of a fixed units
 
 ## [0.0.2] - 2021-02-11
 
