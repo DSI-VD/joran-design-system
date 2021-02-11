@@ -112,6 +112,12 @@
     ;
 }
 
+.c-footer a:focus {
+  @apply
+    outline-focus
+  ;
+}
+
 
 
 /* -----------------------------------
@@ -124,3 +130,4 @@
     fill-current
     ;
 }
+
