@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "name": "default",
+      "hidden": true
+    },
+    {
+      "name": "up",
+      "context": {
+        "text": "Voir plus haut"
+      }
+    },
+    {
+      "name": "right",
+      "context": {
+        "text": "Voir plus bas"
+      }
+    },
+    {
+      "name": "down",
+      "context": {
+        "text": "Voir plus loin"
+      }
+    },
+    {
+      "name": "left",
+      "context": {
+        "text": "Voir avant"
+      }
+    }
+  ]
+}

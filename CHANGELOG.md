@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add a variant without image for _hero_ component
+- Add _arrow_ component
 
 ### Fixes
 
@@ -53,6 +54,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[Unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.2...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.2...HEAD
 [0.0.2]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/DSI-VD/joran-design-system/releases/tag/v0.0.1
