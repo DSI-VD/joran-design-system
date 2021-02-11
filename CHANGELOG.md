@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.3] - 2021-02-11
+
 ### Added
 
 - Add a variant without image for _hero_ component
@@ -58,6 +60,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.2...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.3...HEAD
+[0.0.3]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.3...v0.0.2
 [0.0.2]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/DSI-VD/joran-design-system/releases/tag/v0.0.1
