@@ -20,4 +20,4 @@ $ npm run deploy
 
 ## Changelog
 
-All changes are documented in [CHANGELOG.md](https://github.com/DSI-VD/joran-design-system/blob/master/README.md) file.
+All changes are documented in [CHANGELOG.md](https://github.com/DSI-VD/joran-design-system/blob/master/CHANGELOG.md) file.
