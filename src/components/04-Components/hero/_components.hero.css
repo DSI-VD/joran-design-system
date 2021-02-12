@@ -59,9 +59,9 @@
  ----------------------------------- */
 
 .c-hero__container {
-    @apply
-        flex
-        flex-col
+  @apply
+    flex
+    flex-col
     ;
 }
 
@@ -83,8 +83,8 @@
     uppercase
   ;
 
-    max-width: 35ch;
-    hyphens: auto;
+  max-width: 35ch;
+  hyphens: auto;
 }
 
 @screen md {
@@ -101,13 +101,12 @@
   @apply
     mt-12
     mx-auto;
-  ;
 }
 
 @screen md {
-    .c-hero__button {
+  .c-hero__button {
     @apply
-        mx-0
+      mx-0
     ;
-}
+  }
 }
