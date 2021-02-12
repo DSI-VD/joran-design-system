@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Gradient on _quote_ display correctly on Safari
 - Fix gap between column not being supported in Safari
 - Add a background on _arrow_ preview page to be able to see the component
+- Enable smooth scrolling
 
 ### Removed
 
