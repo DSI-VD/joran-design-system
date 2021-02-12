@@ -44,6 +44,9 @@
    # Grid
    ----------------------------------- */
 
+/**
+ * FIXME: Gap in Flexbox is not supportet in Safari
+ */
 .c-footer__grid {
   @apply
     flex
