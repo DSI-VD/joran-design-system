@@ -15,6 +15,7 @@
   @apply
     flex /* [1] */
     items-center /* [1] */
+    flex-col
 
     text-white
 
@@ -54,22 +55,45 @@
     ;
 }
 
+.c-hero--with-image > * {
+  @apply
+    relative
+    z-20 /* [2] */
+    ;
+}
+
 /* -----------------------------------
  # Container
  ----------------------------------- */
+
+/***
+ * This is only used in the contained variants
+ */
 
 .c-hero__container {
   @apply
     flex
     flex-col
-    ;
+  ;
 }
 
-.c-hero--with-image .c-hero__container {
+/* -----------------------------------
+ # Top
+ ----------------------------------- */
+
+/***
+ * 1. Use the available space to push the button down
+ * 2. Center vertically
+ */
+
+.c-hero__top {
   @apply
-    relative
-    z-20 /* [2] */
-    ;
+    flex-grow /* [1] */
+    
+    flex /* [2] */
+    flex-col /* [2] */
+    place-content-center /* [2] */
+  ;
 }
 
 /* -----------------------------------
@@ -91,6 +115,19 @@
   .c-hero__heading {
     hyphens: none;
   }
+}
+
+/* -----------------------------------
+ # Caption
+ ----------------------------------- */
+
+/***
+ * 1. Put the caption before the title visually
+ */
+.c-hero__caption {
+  @apply
+    order-first
+  ;
 }
 
 /* -----------------------------------

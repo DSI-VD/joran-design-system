@@ -1,7 +1,10 @@
 <div class="c-hero{% if variantModifier %} {{ variantModifier }}{% endif %}"{% if image %} style="background-image: url({{ image }});"{% endif %}>
-    <div class="c-hero__container o-container">
+    <div class="c-hero__top o-container">
+        {% if title %}<h1 class="c-hero__heading">{{ heading }}</h1>
+        {% else %}<div class="c-hero__heading">{{ heading }}</div>{% endif %}
         <div class="c-hero__caption">{{ caption }}</div>
-        <div class="c-hero__heading">{{ heading }}</div>
+    </div>
+    <div class="c-hero__bottom">
         {% render '@arrow--down', { styleModifier: "c-hero__button" }, true %}
     </div>
 </div>

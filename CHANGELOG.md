@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add _breadcrumb_ component
 
+### Changed
+
+- Structure of the _hero_ as changed to push _button_ and _arrow_ at the bottom of the component and improve accessibility
+
 ### Fixed
 
 - Add a background on the preview of _logo_ to see it

@@ -13,7 +13,8 @@
       "name": "title",
       "label": "Page title",
       "context": {
-        "variantModifier": "c-hero--title"
+        "variantModifier": "c-hero--title",
+        "title": true
       }
     },
     {
@@ -21,7 +22,8 @@
       "label": "Page title with image",
       "context": {
         "variantModifier": "c-hero--title c-hero--with-image",
-        "image": "https://source.unsplash.com/daily"
+        "image": "https://source.unsplash.com/daily",
+        "title": true
       }
     },
     {
