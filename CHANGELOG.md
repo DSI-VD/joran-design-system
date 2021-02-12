@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Gradient on _quote_ display correctly on Safari
+- Fix gap between column not being supported in Safari
 
 ### Removed
 

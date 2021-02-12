@@ -45,30 +45,30 @@
    ----------------------------------- */
 
 /**
- * FIXME: Gap in Flexbox is not supportet in Safari
+ * 1. Align logo on the right
  */
 .c-footer__grid {
   @apply
-    flex
-    flex-wrap
-    gap-24
+    grid
+    grid-cols-2
+    gap-12
     ;
 }
 
-@screen md {
+@screen sm {
   .c-footer__grid {
     @apply
-      gap-48
+      grid-cols-3
+      gap-24
+      ;
+  }
+
+  .c-footer__grid div.c-footer__grid-item:last-of-type {
+      @apply
+          ml-auto /* [1] */
       ;
   }
 }
-
-.c-footer__grid .c-footer__grid-item:last-of-type {
-  @apply
-    ml-auto
-    ;
-}
-
 
 
 /* -------------------------------------
