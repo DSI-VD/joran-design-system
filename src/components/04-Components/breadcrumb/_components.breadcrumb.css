@@ -1,0 +1,41 @@
+/* ==========================================================================
+   # _components.breadcrumb.css
+   ========================================================================== */
+
+.c-breadcrumb__list {
+    @apply
+        flex
+        flex-row
+        flex-wrap
+        ;
+}
+
+.c-breadcrumb__link {
+    @apply
+        bg-gray-200
+        rounded
+        py-0.5
+        px-4
+        shadow
+        transition
+        text-sm
+    ;
+}
+
+.c-breadcrumb__link:hover {
+    @apply
+        bg-gray-400
+    ;
+}
+
+.c-breadcrumb__link:focus {
+    @apply
+        outline-focus
+    ;
+}
+
+.c-breadcrumb__list-item + .c-breadcrumb__list-item {
+    @apply
+        ml-4
+    ;
+}

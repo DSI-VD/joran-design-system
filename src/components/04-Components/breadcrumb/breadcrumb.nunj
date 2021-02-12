@@ -1,0 +1,12 @@
+<nav class="c-breadcrumb">
+  <h2 class="u-visually-hidden">Fil d'Arianie</h2>
+  <ul class="c-breadcrumb__list">
+    {% for item in items %}
+      <li class="c-breadcrumb__list-item">
+        <a class="c-breadcrumb__link" 
+           href="{{ item.href }}"
+           {% if loop.last %} aria-current="true"{% endif %} >{{ item.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
