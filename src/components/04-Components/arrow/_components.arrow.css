@@ -10,11 +10,11 @@
     text-center
     font-extrabold
     flex
-        items-center
-        justify-center
-        rounded-full
-        bg-white
-        bg-opacity-50
+    items-center
+    justify-center
+    rounded-full
+    bg-white
+    bg-opacity-50
         shadow
         transition
     ;
