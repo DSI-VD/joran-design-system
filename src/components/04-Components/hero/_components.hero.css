@@ -58,6 +58,13 @@
  # Container
  ----------------------------------- */
 
+.c-hero__container {
+    @apply
+        flex
+        flex-col
+    ;
+}
+
 .c-hero--with-image .c-hero__container {
   @apply
     relative
@@ -76,7 +83,14 @@
     uppercase
   ;
 
-  max-width: 35ch;
+    max-width: 35ch;
+    hyphens: auto;
+}
+
+@screen md {
+  .c-hero__heading {
+    hyphens: none;
+  }
 }
 
 /* -----------------------------------
@@ -86,5 +100,14 @@
 .c-hero__button {
   @apply
     mt-12
+    mx-auto;
   ;
+}
+
+@screen md {
+    .c-hero__button {
+    @apply
+        mx-0
+    ;
+}
 }

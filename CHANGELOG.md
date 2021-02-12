@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Add a background on the preview of _logo_ to see it
+- _arrow_ and _button_ is centered on mobile in an _hero_
 
 ## [0.0.5] - 2021-02-12
 
