@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Add a background on the preview of _logo_ to see it
+
 ## [0.0.5] - 2021-02-12
 
 ### Fixed
