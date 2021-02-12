@@ -15,7 +15,7 @@
   @apply
     flex /* [1] */
     items-center /* [1] */
-  
+
     text-white
 
     bg-cover
@@ -35,13 +35,13 @@
 /***
  * 2. If there's an image, an overlay is applied to darken it
  */
- 
+
 .c-hero--with-image {
-   @apply
-   relative /* [2] */
+  @apply
+    relative /* [2] */
    ;
- }
- 
+}
+
 .c-hero--with-image::before {
   content: "";
 
@@ -75,6 +75,7 @@
     text-5xl
     uppercase
   ;
+
   max-width: 35ch;
 }
 

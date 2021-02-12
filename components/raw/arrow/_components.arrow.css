@@ -3,38 +3,38 @@
    ====================================================================== */
 
 .c-arrow {
-    @apply
-        h-12
-        w-12
-        text-white
-        text-center
-        font-extrabold
-        flex
-        items-center
-        justify-center 
-        rounded-full
-        bg-white
-        bg-opacity-50
+  @apply
+    h-12
+    w-12
+    text-white
+    text-center
+    font-extrabold
+    flex
+    items-center
+    justify-center
+    rounded-full
+    bg-white
+    bg-opacity-50
         shadow
         transition
     ;
 }
 
 .c-arrow svg {
-    @apply
-        h-6
-        fill-current
+  @apply
+    h-6
+    fill-current
     ;
 }
 
 .c-arrow:hover {
-   @apply
-      bg-opacity-25
+  @apply
+    bg-opacity-25
    ;
 }
 
 .c-arrow:focus {
-   @apply
-      outline-focus
+  @apply
+    outline-focus
    ;
 }
