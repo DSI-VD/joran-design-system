@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.5] - 2021-02-12
+
 ### Fixed
 
 - Gradient on _quote_ display correctly on Safari
@@ -77,8 +79,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.4...HEAD
-[0.0.3]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.4...v0.0.3
-[0.0.3]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.3...v0.0.2
+[Unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.5...HEAD
+[0.0.5]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.4...v0.0.5
+[0.0.4]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.3...v0.0.4
+[0.0.3]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/DSI-VD/joran-design-system/releases/tag/v0.0.1
