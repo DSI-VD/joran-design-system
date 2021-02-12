@@ -11,7 +11,7 @@
     },
     {
       "name": "title",
-      "label": "Page title with image",
+      "label": "Page title",
       "context": {
         "variantModifier": "c-hero--title"
       }
