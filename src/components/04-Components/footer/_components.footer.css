@@ -64,8 +64,8 @@
   }
 
   .c-footer__grid div.c-footer__grid-item:last-of-type {
-      @apply
-          ml-auto /* [1] */
+    @apply
+      ml-auto /* [1] */
       ;
   }
 }
@@ -133,4 +133,3 @@
     fill-current
     ;
 }
-
