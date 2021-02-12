@@ -12,6 +12,10 @@
       {
         "name": "level 3 est un très long titre de page",
         "href": "#"
+      },
+      {
+        "name": "Une autre page",
+        "href": "#"
       }
     ]
   }

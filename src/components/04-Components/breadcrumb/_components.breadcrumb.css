@@ -10,6 +10,26 @@
         ;
 }
 
+/* -------------------------------------
+   # List-item
+   ------------------------------------- */
+
+.c-breadcrumb__list-item {
+    @apply
+        mb-2
+    ;
+}
+
+.c-breadcrumb__list-item + .c-breadcrumb__list-item {
+    @apply
+        ml-4
+    ;
+}
+
+/* -------------------------------------
+   # Link
+   ------------------------------------- */
+
 .c-breadcrumb__link {
     @apply
         bg-gray-200
@@ -19,12 +39,14 @@
         shadow
         transition
         text-sm
+        whitespace-nowrap
     ;
 }
 
 .c-breadcrumb__link:hover {
     @apply
-        bg-gray-400
+        bg-primary
+        text-white
     ;
 }
 
@@ -34,8 +56,3 @@
     ;
 }
 
-.c-breadcrumb__list-item + .c-breadcrumb__list-item {
-    @apply
-        ml-4
-    ;
-}

@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add _breadcrumb_ component
+
 ### Fixed
 
 - Add a background on the preview of _logo_ to see it
