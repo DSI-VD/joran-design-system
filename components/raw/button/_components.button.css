@@ -47,3 +47,22 @@
 
   height: 1em;
 }
+
+/* -----------------------------------
+ # Transparent variant
+ ----------------------------------- */
+ 
+.c-button.c-button--transparent {
+  @apply
+    text-primary
+    bg-transparent
+    shadow-none
+  ;
+}
+
+.c-button.c-button--transparent:hover,
+.c-button.c-button--transparent:active {
+  @apply
+    text-primary-light
+  ;
+}

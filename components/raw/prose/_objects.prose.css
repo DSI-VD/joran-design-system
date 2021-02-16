@@ -6,12 +6,30 @@
   @apply prose;
 }
 
+/* @screen md {
+  .o-prose {
+    @apply prose;
+  }
+} */
+
+@screen lg {
+  .o-prose {
+    @apply prose-lg;
+  }
+}
+
+@screen xl {
+  .o-prose {
+    @apply prose-xl;
+  }
+}
+
 /* -------------------------------------
-   # Customisation
+   # Customization
    ------------------------------------- */
 
 /**
- * There is other customisation in the Tailwind config file
+ * There is other customization in the Tailwind config file
  */
 
 .o-prose a {

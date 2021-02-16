@@ -185,7 +185,14 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-0d3e462470d8c0ef5984872727901b36-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+   <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button
+   </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">if</span></span> variantModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ variantModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">
+   </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+    </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">if</span></span> svg -%}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> -%}</span><span class="xml">
+    </span><span class="hljs-template-variable">{{ text }}</span><span class="xml">
+    </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">if</span></span> svg -%}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">polygon</span> <span class="hljs-attr">points</span>=<span class="hljs-string">&quot;16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> -%}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -277,7 +284,25 @@
 
   <span class="hljs-attribute">height</span>: <span class="hljs-number">1em</span>;
 }
-</pre>
+
+<span class="hljs-comment">/* -----------------------------------
+ # Transparent variant
+ ----------------------------------- */</span>
+ 
+<span class="hljs-selector-class">.c-button</span><span class="hljs-selector-class">.c-button--transparent</span> {
+  <span class="hljs-keyword">@apply</span>
+    text-primary
+    bg-transparent
+    shadow-none
+  ;
+}
+
+<span class="hljs-selector-class">.c-button</span><span class="hljs-selector-class">.c-button--transparent</span><span class="hljs-selector-pseudo">:hover</span>,
+<span class="hljs-selector-class">.c-button</span><span class="hljs-selector-class">.c-button--transparent</span><span class="hljs-selector-pseudo">:active</span> {
+  <span class="hljs-keyword">@apply</span>
+    text-primary-light
+  ;
+}</pre>
                             </code>
                             
                         </div>
@@ -293,7 +318,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">679 Bytes</span>
+                    <span class="Meta-value">1 KB</span>
                 </li>
             </ul>
         </div>
@@ -803,6 +828,32 @@
         
         
         
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="breadcrumb.html" data-role="tree-link" data-pjax data-handle="breadcrumb">
+                <span>Breadcrumb</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="button--default.html" data-role="tree-link" data-pjax data-handle="button">
                 <span>Button</span>
@@ -1198,7 +1249,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.5
+                            0.0.6
                         
                     </dd>
                 </div>
@@ -1207,8 +1258,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-12T09:45:29.314Z">
-                                12.02.2021 à 10:45:29
+                            <time datetime="2021-02-16T12:36:50.439Z">
+                                16.02.2021 à 13:36:50
                             </time>
                         
                     </dd>
@@ -1595,6 +1646,8 @@
         
     
         
+    
+        
             
             <div class="Navigation-group is-visible" data-role="variant-group" data-component="button">
                 
@@ -1641,8 +1694,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button--arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
-                <span>Arrow Right</span>
+            <a class="Tree-entityLink" href="button--default-arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Default Arrow Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--transparent.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Transparent</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--transparent-arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Transparent Arrow Right</span>
                 
 
 <div class="Status Status--unlabelled">

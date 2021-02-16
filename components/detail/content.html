@@ -376,10 +376,48 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-stack&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero c-hero--title c-hero--with-image&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(https://source.unsplash.com/daily);&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__container o-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero c-hero--title c-hero--with-image&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
+            <span class="hljs-selector-class">.c-hero--with-image</span> {
+                <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;https://source.unsplash.com/nPz8akkUmDI/320x580&#x27;</span>);
+            }
+
+            <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">320px</span>) {
+                <span class="hljs-selector-class">.c-hero--with-image</span> {
+                    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;https://source.unsplash.com/nPz8akkUmDI/640x640&#x27;</span>);
+                }
+            }
+
+            <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">640px</span>) {
+                <span class="hljs-selector-class">.c-hero--with-image</span> {
+                    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;https://source.unsplash.com/nPz8akkUmDI/800x600&#x27;</span>);
+                }
+            }
+
+            <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) {
+                <span class="hljs-selector-class">.c-hero--with-image</span> {
+                    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;https://source.unsplash.com/nPz8akkUmDI/1024x768&#x27;</span>);
+                }
+            }
+
+            <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1024px</span>) {
+                <span class="hljs-selector-class">.c-hero--with-image</span> {
+                    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;https://source.unsplash.com/nPz8akkUmDI/1280x960&#x27;</span>);
+                }
+            }
+
+            <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">1280px</span>) {
+                <span class="hljs-selector-class">.c-hero--with-image</span> {
+                    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;https://source.unsplash.com/nPz8akkUmDI/1280x960&#x27;</span>);
+                }
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__top o-container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span>[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span>[caption] caption<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span>[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__bottom o-container&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-arrow c-hero__button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Voir plus loin<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">polygon</span> <span class="hljs-attr">points</span>=<span class="hljs-string">&quot;9 16.172 2.929 10.101 1.515 11.515 10 20 10.707 19.293 18.485 11.515 17.071 10.101 11 16.172 11 0 9 0&quot;</span> /&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -1035,6 +1073,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="breadcrumb.html" data-role="tree-link" data-pjax data-handle="breadcrumb">
+                <span>Breadcrumb</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--default.html" data-role="tree-link" data-pjax data-handle="button">
                 <span>Button</span>
                 
@@ -1429,7 +1493,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.5
+                            0.0.6
                         
                     </dd>
                 </div>
@@ -1438,8 +1502,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-12T09:45:29.314Z">
-                                12.02.2021 à 10:45:29
+                            <time datetime="2021-02-16T12:36:50.439Z">
+                                16.02.2021 à 13:36:50
                             </time>
                         
                     </dd>
@@ -1826,6 +1890,8 @@
         
     
         
+    
+        
             
             <div class="Navigation-group" data-role="variant-group" data-component="button">
                 
@@ -1872,8 +1938,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button--arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
-                <span>Arrow Right</span>
+            <a class="Tree-entityLink" href="button--default-arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Default Arrow Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--transparent.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Transparent</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--transparent-arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Transparent Arrow Right</span>
                 
 
 <div class="Status Status--unlabelled">

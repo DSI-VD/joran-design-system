@@ -178,9 +178,11 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__container o-container&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span>[caption] caption<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__top o-container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span>[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span>[caption] caption<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__bottom o-container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-arrow c-hero__button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Voir plus loin<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">polygon</span> <span class="hljs-attr">points</span>=<span class="hljs-string">&quot;9 16.172 2.929 10.101 1.515 11.515 10 20 10.707 19.293 18.485 11.515 17.071 10.101 11 16.172 11 0 9 0&quot;</span> /&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -193,10 +195,45 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-afd6f21f75bd3b896e48cda08c3383a6-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> variantModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ variantModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> image %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">);&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag">&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__container o-container&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> variantModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ variantModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+    </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">if</span></span> image %}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
+        <span class="hljs-selector-class">.c-hero--with-image</span> {
+            <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml">/320x580&#x27;);
+        }
+        @media (min-width: 320px) { 
+            .c-hero--with-image {
+                background-image: url(&#x27;</span><span class="hljs-template-variable">{{ image }}</span><span class="xml">/640x640&#x27;);
+            }
+         }
+        @media (min-width: 640px) { 
+            .c-hero--with-image {
+                background-image: url(&#x27;</span><span class="hljs-template-variable">{{ image }}</span><span class="xml">/800x600&#x27;);
+            }
+         }
+        @media (min-width: 768px) {
+            .c-hero--with-image {
+                background-image: url(&#x27;</span><span class="hljs-template-variable">{{ image }}</span><span class="xml">/1024x768&#x27;);
+            }
+        }
+        @media (min-width: 1024px) {
+            .c-hero--with-image {
+                background-image: url(&#x27;</span><span class="hljs-template-variable">{{ image }}</span><span class="xml">/1280x960&#x27;);
+            }
+        }
+        @media (min-width: 1280px) {
+            .c-hero--with-image {
+                background-image: url(&#x27;</span><span class="hljs-template-variable">{{ image }}</span><span class="xml">/1280x960&#x27;);
+            }
+        }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> -%}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__top o-container&quot;</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> title %}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">else</span></span> %}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ caption }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__bottom o-container&quot;</span>&gt;</span>
         </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="arrow--down.html">@arrow--down</a>&#x27;, { styleModifier: &quot;c-hero__button&quot; }, true %}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
@@ -259,6 +296,7 @@
   <span class="hljs-keyword">@apply</span>
     flex /* [<span class="hljs-number">1</span>] */
     items-center /* [<span class="hljs-number">1</span>] */
+    flex-col
 
     text-white
 
@@ -298,15 +336,45 @@
     ;
 }
 
-<span class="hljs-comment">/* -----------------------------------
- # Container
- ----------------------------------- */</span>
-
-<span class="hljs-selector-class">.c-hero--with-image</span> <span class="hljs-selector-class">.c-hero__container</span> {
+<span class="hljs-selector-class">.c-hero--with-image</span> &gt; * {
   <span class="hljs-keyword">@apply</span>
     relative
     z-<span class="hljs-number">20</span> /* [<span class="hljs-number">2</span>] */
     ;
+}
+
+<span class="hljs-comment">/* -----------------------------------
+ # Container
+ ----------------------------------- */</span>
+
+<span class="hljs-comment">/***
+ * This is only used in the contained variants
+ */</span>
+
+<span class="hljs-selector-class">.c-hero__container</span> {
+  <span class="hljs-keyword">@apply</span>
+    flex
+    flex-col
+  ;
+}
+
+<span class="hljs-comment">/* -----------------------------------
+ # Top
+ ----------------------------------- */</span>
+
+<span class="hljs-comment">/***
+ * 1. Use the available space to push the button down
+ * 2. Center vertically
+ */</span>
+
+<span class="hljs-selector-class">.c-hero__top</span> {
+  <span class="hljs-keyword">@apply</span>
+    flex-grow /* [<span class="hljs-number">1</span>] */
+    
+    flex /* [<span class="hljs-number">2</span>] */
+    flex-col /* [<span class="hljs-number">2</span>] */
+    place-content-center /* [<span class="hljs-number">2</span>] */
+  ;
 }
 
 <span class="hljs-comment">/* -----------------------------------
@@ -321,6 +389,26 @@
   ;
 
   <span class="hljs-attribute">max-width</span>: <span class="hljs-number">35ch</span>;
+  <span class="hljs-attribute">hyphens</span>: auto;
+}
+
+<span class="hljs-keyword">@screen</span> md {
+  <span class="hljs-selector-class">.c-hero__heading</span> {
+    <span class="hljs-attribute">hyphens</span>: none;
+  }
+}
+
+<span class="hljs-comment">/* -----------------------------------
+ # Caption
+ ----------------------------------- */</span>
+
+<span class="hljs-comment">/***
+ * 1. Put the caption before the title visually
+ */</span>
+<span class="hljs-selector-class">.c-hero__caption</span> {
+  <span class="hljs-keyword">@apply</span>
+    order-first
+  ;
 }
 
 <span class="hljs-comment">/* -----------------------------------
@@ -330,7 +418,15 @@
 <span class="hljs-selector-class">.c-hero__button</span> {
   <span class="hljs-keyword">@apply</span>
     mt-<span class="hljs-number">12</span>
-  ;
+    mx-auto;
+}
+
+<span class="hljs-keyword">@screen</span> md {
+  <span class="hljs-selector-class">.c-hero__button</span> {
+    <span class="hljs-keyword">@apply</span>
+      mx-<span class="hljs-number">0</span>
+    ;
+  }
 }
 </pre>
                             </code>
@@ -348,7 +444,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">2.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -416,7 +512,18 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-afd6f21f75bd3b896e48cda08c3383a6-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">No notes defined.</p>
+        <h1 id="hero">Hero</h1>
+<h2 id="a-faire">A faire</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Inverser le caption et le titre pour des raisons d’accessibilité</li>
+<li><input checked="" disabled="" type="checkbox"> Utiliser un <code>h1</code> et non un <code>div</code> s’il s’agit d’un titre</li>
+</ul>
+<h2 id="questions">Questions</h2>
+<ul>
+<li>Est-ce que la flèche est un lien ou juste un indicateur graphique qui indique que quelque chose se trouve en-dessous ?</li>
+<li>Est-ce que le hero pour titre de page occupe toujours l’entier de la page ?</li>
+</ul>
+
         
     </div>
 </div>
@@ -866,6 +973,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="breadcrumb.html" data-role="tree-link" data-pjax data-handle="breadcrumb">
+                <span>Breadcrumb</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--default.html" data-role="tree-link" data-pjax data-handle="button">
                 <span>Button</span>
                 
@@ -1260,7 +1393,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.5
+                            0.0.6
                         
                     </dd>
                 </div>
@@ -1269,8 +1402,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-12T09:45:29.314Z">
-                                12.02.2021 à 10:45:29
+                            <time datetime="2021-02-16T12:36:50.439Z">
+                                16.02.2021 à 13:36:50
                             </time>
                         
                     </dd>
@@ -1657,6 +1790,8 @@
         
     
         
+    
+        
             
             <div class="Navigation-group" data-role="variant-group" data-component="button">
                 
@@ -1703,8 +1838,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button--arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
-                <span>Arrow Right</span>
+            <a class="Tree-entityLink" href="button--default-arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Default Arrow Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--transparent.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Transparent</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--transparent-arrow-right.html" data-role="tree-link" data-pjax data-handle="button">
+                <span>Transparent Arrow Right</span>
                 
 
 <div class="Status Status--unlabelled">

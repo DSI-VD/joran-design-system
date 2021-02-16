@@ -1,0 +1,57 @@
+/* ==========================================================================
+   # _components.breadcrumb.css
+   ========================================================================== */
+
+.c-breadcrumb__list {
+  @apply
+    flex
+    flex-row
+    flex-wrap
+        ;
+}
+
+/* -------------------------------------
+   # List-item
+   ------------------------------------- */
+
+.c-breadcrumb__list-item {
+  @apply
+    mb-2
+    ;
+}
+
+.c-breadcrumb__list-item + .c-breadcrumb__list-item {
+  @apply
+    ml-4
+    ;
+}
+
+/* -------------------------------------
+   # Link
+   ------------------------------------- */
+
+.c-breadcrumb__link {
+  @apply
+    bg-gray-200
+    rounded
+    py-0.5
+    px-4
+        shadow
+        transition
+        text-sm
+        whitespace-nowrap
+    ;
+}
+
+.c-breadcrumb__link:hover {
+  @apply
+    bg-primary
+    text-white
+    ;
+}
+
+.c-breadcrumb__link:focus {
+  @apply
+    outline-focus
+    ;
+}
