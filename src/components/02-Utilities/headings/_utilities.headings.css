@@ -2,6 +2,11 @@
  # _utilities.headings.css
  ====================================================================== */
 
+/***
+ * Take a look in `tailwind.config.js` for more typography settings
+ */
+
+
 /* -----------------------------------
   # Subhead
   ----------------------------------- */
@@ -22,9 +27,23 @@
   @apply
     text-primary
     font-bold
-    text-5xl
+    text-4xl
     uppercase
   ;
+}
+
+@screen lg {
+  .u-h1 {
+    font-size: 2.66667em
+  ;
+  }
+}
+
+@screen xl {
+  .u-h1 {
+    font-size: 2.8em
+  ;
+  }
 }
 
 /* -----------------------------------
@@ -35,8 +54,22 @@
   @apply
     text-primary
     font-bold
-    text-3xl
+    text-2xl
 ;
+}
+
+@screen lg {
+  .u-h2 {
+    font-size: 1.6666667em
+  ;
+  }
+}
+
+@screen xl {
+  .u-h2 {
+    font-size: 1.6666667em
+    ;
+  }
 }
 
 /* -----------------------------------
@@ -46,9 +79,23 @@
 .u-h3 {
   @apply
     text-primary
-    text-2xl
+    text-xl
     uppercase
 ;
+}
+
+@screen lg {
+  .u-h3 {
+    font-size: 1.3333333em
+  ;
+  }
+}
+
+@screen xl {
+  .u-h3 {
+    font-size: 1.5em
+  ;
+  }
 }
 
 /* -----------------------------------
@@ -58,7 +105,7 @@
 .u-h4 {
   @apply
     text-primary
-    text-xl
+    text-base
 ;
 }
 
@@ -69,7 +116,7 @@
 .u-h5 {
   @apply
     text-primary
-    text-lg
+    text-base
 ;
 }
 
@@ -80,5 +127,6 @@
 .u-h6 {
   @apply
     text-primary
+    text-base
 ;
 }

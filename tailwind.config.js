@@ -43,12 +43,10 @@ module.exports = {
         DEFAULT: {
           css: {
             h1: {
-              color: 'var(--color__primary)',
-              fontSize: '2.5em'
+              color: 'var(--color__primary)'
             },
             h2: {
-              color: 'var(--color__primary)',
-              fontSize: '2em'
+              color: 'var(--color__primary)'
             },
             h3: {
               color: 'var(--color__primary)',
@@ -62,12 +60,58 @@ module.exports = {
             },
             h5: {
               color: 'var(--color__primary)',
-              textTransform: 'uppercase',
               marginBottom: '0'
             },
             h6: {
               color: 'var(--color__primary)',
-              textTransform: 'uppercase',
+              marginBottom: '0'
+            }
+          }
+        },
+        lg: {
+          css: {
+            h3: {
+              marginBottom: '0'
+            },
+            h4: {
+              marginBottom: '0'
+            },
+            h5: {
+              marginBottom: '0'
+            },
+            h6: {
+              marginBottom: '0'
+            }
+          }
+        },
+        xl: {
+          css: {
+            h3: {
+              marginBottom: '0'
+            },
+            h4: {
+              marginBottom: '0'
+            },
+            h5: {
+              marginBottom: '0'
+            },
+            h6: {
+              marginBottom: '0'
+            }
+          }
+        },
+        '2xl': {
+          css: {
+            h3: {
+              marginBottom: '0'
+            },
+            h4: {
+              marginBottom: '0'
+            },
+            h5: {
+              marginBottom: '0'
+            },
+            h6: {
               marginBottom: '0'
             }
           }
