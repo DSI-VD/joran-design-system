@@ -4,7 +4,7 @@
         {% else %}<div class="c-hero__heading">{{ heading }}</div>{% endif %}
         <div class="c-hero__caption">{{ caption }}</div>
     </div>
-    <div class="c-hero__bottom">
+    <div class="c-hero__bottom o-container">
         {% render '@arrow--down', { styleModifier: "c-hero__button" }, true %}
     </div>
 </div>
