@@ -3,7 +3,46 @@
    ====================================================================== */
 
 @font-face {
-  font-family: 'intervar';
+  font-family: 'roboto';
   font-display: swap;
-  src: url("../fonts/inter-latin-ext-variable-full-normal.woff2") format("woff2");
+  src: url("../fonts/roboto-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-display: swap;
+  src: url("../fonts/roboto-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-display: swap;
+  src: url("../fonts/roboto-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-display: swap;
+  src: url("../fonts/roboto-latin-500-italic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-display: swap;
+  src: url("../fonts/roboto-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-display: swap;
+  src: url("../fonts/roboto-latin-700-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
 }

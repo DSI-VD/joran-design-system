@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - _figure_ component accept `srcset` to let the user agent select the best image depending of the viewport width
 
+### Fixed
+
+- Roboto is the default font
+
 ## [0.0.6] - 16-02-2021
 
 ### Added

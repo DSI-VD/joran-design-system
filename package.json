@@ -12,7 +12,7 @@
     "beautify:styles": "stylelint src/**/*.css --fix",
     "prebuild": "npm run clean",
     "build": "run-s build:*",
-    "build:fonts": "copyfiles node_modules/@fontsource/inter/files/inter-latin-ext-*.woff2 public/assets/fonts -f",
+    "build:fonts": "copyfiles node_modules/@fontsource/roboto/files/roboto-latin-?00-*.woff2 public/assets/fonts -f",
     "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
     "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
     "build:vectors": "copyfiles src/assets/vectors/**/*.* public/assets/vectors/ -f",
@@ -33,10 +33,8 @@
     "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial",
     "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial"
   },
-  "dependencies": {
-    "@fontsource/inter": "^4.2.0"
-  },
   "devDependencies": {
+    "@fontsource/roboto": "^4.2.1",
     "@frctl/fractal": "^1.5.3",
     "@frctl/nunjucks": "^2.0.7",
     "@tailwindcss/typography": "^0.4.0",

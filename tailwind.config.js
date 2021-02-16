@@ -6,7 +6,7 @@ module.exports = {
   darkMode: false, // Or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['intervar', 'system-ui', 'sans-serif']
+      sans: ['roboto', 'system-ui', 'sans-serif']
     },
     extend: {
       colors: {
@@ -43,20 +43,24 @@ module.exports = {
         DEFAULT: {
           css: {
             h1: {
-              color: 'var(--color__primary)'
+              color: 'var(--color__primary)',
+              fontWeight: 700
             },
             h2: {
-              color: 'var(--color__primary)'
+              color: 'var(--color__primary)',
+              fontWeight: 700
             },
             h3: {
               color: 'var(--color__primary)',
               textTransform: 'uppercase',
-              marginBottom: '0'
+              marginBottom: '0',
+              fontWeight: 500
             },
             h4: {
               color: 'var(--color__primary)',
               textTransform: 'uppercase',
-              marginBottom: '0'
+              marginBottom: '0',
+              fontWeight: 500
             },
             h5: {
               color: 'var(--color__primary)',
