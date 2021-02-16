@@ -2,11 +2,11 @@
     {%- if image %}
     <style scoped>
         .c-hero--with-image {
-            background-image: url('{{ image }}/320x240');
+            background-image: url('{{ image }}/320x580');
         }
         @media (min-width: 320px) { 
             .c-hero--with-image {
-                background-image: url('{{ image }}/640x480');
+                background-image: url('{{ image }}/640x640');
             }
          }
         @media (min-width: 640px) { 
