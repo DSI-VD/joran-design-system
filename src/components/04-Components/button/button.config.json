@@ -2,5 +2,31 @@
   "context": {
     "text": "Button",
     "url": "#"
-  }
+  },
+  "variants": [
+    {
+      "name": "default"
+    },
+    {
+      "name": "default arrow right",
+      "context": {
+        "svg": true
+      }
+    },
+    {
+      "name": "transparent",
+      "preview": "@preview",
+      "context": {
+        "variantModifier": "c-button--transparent"
+      }
+    },
+    {
+      "name": "transparent arrow right",
+      "preview": "@preview",
+      "context": {
+        "variantModifier": "c-button--transparent",
+        "svg": true
+      }
+    }
+  ]
 }
