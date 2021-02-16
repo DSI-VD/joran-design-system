@@ -22,7 +22,7 @@
       "label": "Page title with image",
       "context": {
         "variantModifier": "c-hero--title c-hero--with-image",
-        "image": "https://source.unsplash.com/daily",
+        "image": "https://source.unsplash.com/nPz8akkUmDI",
         "title": true
       }
     },
@@ -34,7 +34,7 @@
       "name": "contained-with-image",
       "context": {
         "variantModifier": "c-hero--with-image",
-        "image": "https://source.unsplash.com/daily"
+        "image": "https://source.unsplash.com/SUBNTil9beU"
       }
     }
   ]

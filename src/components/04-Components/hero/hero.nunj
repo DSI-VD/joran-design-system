@@ -1,4 +1,36 @@
-<div class="c-hero{% if variantModifier %} {{ variantModifier }}{% endif %}"{% if image %} style="background-image: url({{ image }});"{% endif %}>
+<div class="c-hero{% if variantModifier %} {{ variantModifier }}{% endif %}">
+    {%- if image %}
+    <style scoped>
+        .c-hero--with-image {
+            background-image: url('{{ image }}/320x240');
+        }
+        @media (min-width: 320px) { 
+            .c-hero--with-image {
+                background-image: url('{{ image }}/640x480');
+            }
+         }
+        @media (min-width: 640px) { 
+            .c-hero--with-image {
+                background-image: url('{{ image }}/800x600');
+            }
+         }
+        @media (min-width: 768px) {
+            .c-hero--with-image {
+                background-image: url('{{ image }}/1024x768');
+            }
+        }
+        @media (min-width: 1024px) {
+            .c-hero--with-image {
+                background-image: url('{{ image }}/1280x960');
+            }
+        }
+        @media (min-width: 1280px) {
+            .c-hero--with-image {
+                background-image: url('{{ image }}/1280x960');
+            }
+        }
+    </style>
+    {% endif -%}
     <div class="c-hero__top o-container">
         {% if title %}<h1 class="c-hero__heading">{{ heading }}</h1>
         {% else %}<div class="c-hero__heading">{{ heading }}</div>{% endif %}
