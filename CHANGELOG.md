@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- _arrow_ are presentation graphics and not a link
+
 ## [0.0.8] - 2021-02-17
 
 ### Changed
