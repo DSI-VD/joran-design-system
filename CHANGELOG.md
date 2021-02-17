@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Colors have been changed to match the design. You have to update the custom variables in `<head>`. Take a look at _color-inc_.
 - _arrow_ are presentation graphics and not a link
 
+### Fixed
+
+- Fine tune typography
+
 ## [0.0.8] - 2021-02-17
 
 ### Changed

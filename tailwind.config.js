@@ -44,6 +44,7 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
+            lineHeight: 1.5,
             h1: {
               color: 'var(--color__primary--900)',
               fontWeight: 700
@@ -76,6 +77,7 @@ module.exports = {
         },
         lg: {
           css: {
+            lineHeight: 1.55,
             h3: {
               marginBottom: '0'
             },
@@ -91,6 +93,7 @@ module.exports = {
           }
         },
         xl: {
+          lineHeight: 1.6,
           css: {
             h3: {
               marginBottom: '0'
@@ -108,6 +111,7 @@ module.exports = {
         },
         '2xl': {
           css: {
+            lineHeight: 1.5,
             h3: {
               marginBottom: '0'
             },
