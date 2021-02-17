@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.8] - 2021-02-17
+
 ### Changed
 
 - Add `role=contentinfo` on the _footer_ for accessibility
@@ -120,7 +122,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.7...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.4...v0.0.5
