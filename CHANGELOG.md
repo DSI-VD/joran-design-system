@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Refine structure of _quote_ and add schema.org metadata
 - Colors have been changed to match the design. You have to update the custom variables in `<head>`. Take a look at _color-inc_.
 - _arrow_ are presentation graphics and not a link
 

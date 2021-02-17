@@ -2,11 +2,24 @@
     <div class="o-container">
         <h3 class="c-quote__heading">Témoignage</h3>
         <blockquote>
-            <span class="c-quote__text">Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</span>
-            <cite class="c-quote__cite">
+            <span class="c-quote__text">{{ quote }}</span>
+            <footer class="c-quote__footer" itemscope itemtype="http://schema.org/Person">
                 {% render '@avatar' %}
-                <span class="c-quote__author"><span class="u-visually-hidden">Auteur: </span>Titre Prénom Nom <br>Fonction</span>
-            </cite>
+                {% if author and function %}
+                <span class="c-quote__author">
+                {% if author -%}
+                    <span class="c-quote__author-item">
+                    <span class="u-visually-hidden">Auteur: </span><span itemprop="name">{{ author }}</span>
+                    </span>
+                {%- endif %}
+                {% if function -%}
+                    <span class="c-quote__author-item">
+                    <span class="u-visually-hidden">, Fonction: </span><span itemprop="jobTitle">{{ function }}</span>
+                    </span>
+                {%- endif %}
+                </span>
+                {% endif %}
+            </footer>
         </blockquote>
     </div>
 </div>
