@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+
+- _hero--contained_ are removed because they are no more used
+
 ### Changed
 
 - _arrow_ are presentation graphics and not a link
