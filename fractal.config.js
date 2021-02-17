@@ -37,7 +37,28 @@ fractal.components.set('path', __dirname + '/src/components');
 fractal.components.engine('@frctl/nunjucks'); // Register the Nunjucks adapter for your components
 fractal.components.set('ext', '.nunj'); // Look for files with a .nunj file extension
 fractal.components.set('default.status', 'wip');
-
+fractal.components.set('statuses', {
+  prototype: {
+      label: "Prototype",
+      description: "Do not implement.",
+      color: "#FF3333"
+  },
+  wip: {
+      label: "WIP",
+      description: "Work in progress. Implement with caution.",
+      color: "#FF9233"
+  },
+  review: {
+    label: "Waiting for review",
+    description: "Waiting for BIC review",
+    color: "#a544ea"
+  },
+  ready: {
+      label: "Ready",
+      description: "Ready to implement.",
+      color: "#29CC29"
+  }
+});
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/src/docs');
 
