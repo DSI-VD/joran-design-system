@@ -13,11 +13,13 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         primary: {
-          lightest: 'var(--color__primary--lightest)',
-          lighter: 'var(--color__primary--lighter)',
-          light: 'var(--color__primary--light)',
-          DEFAULT: 'var(--color__primary)',
-          dark: 'var(--color__primary--dark)'
+          cta: 'var(--color__primary--cta)',
+          DEFAULT: 'var(--color__primary--900)',
+          800: 'var(--color__primary--800)',
+          600: 'var(--color__primary--600)',
+          400: 'var(--color__primary--400)',
+          200: 'var(--color__primary--200)',
+          100: 'var(--color__primary--100)'
         },
         white: {
           DEFAULT: '#ffffff'
@@ -43,31 +45,31 @@ module.exports = {
         DEFAULT: {
           css: {
             h1: {
-              color: 'var(--color__primary)',
+              color: 'var(--color__primary--900)',
               fontWeight: 700
             },
             h2: {
-              color: 'var(--color__primary)',
+              color: 'var(--color__primary--900)',
               fontWeight: 700
             },
             h3: {
-              color: 'var(--color__primary)',
+              color: 'var(--color__primary--900)',
               textTransform: 'uppercase',
               marginBottom: '0',
               fontWeight: 500
             },
             h4: {
-              color: 'var(--color__primary)',
+              color: 'var(--color__primary--900)',
               textTransform: 'uppercase',
               marginBottom: '0',
               fontWeight: 500
             },
             h5: {
-              color: 'var(--color__primary)',
+              color: 'var(--color__primary--900)',
               marginBottom: '0'
             },
             h6: {
-              color: 'var(--color__primary)',
+              color: 'var(--color__primary--900)',
               marginBottom: '0'
             }
           }

@@ -15,15 +15,7 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-    <style>
-      :root {
-        --color__primary--lightest: #ddd9f9;
-        --color__primary--lighter: #beb5f5;
-        --color__primary--light: #8577e5;
-        --color__primary: #6047e6;
-        --color__primary--dark: #3E1CF6;
-      }
-    </style>
+    {% render '@color.inc' %}
 
     <!-- Stylesheets -->
     <link
@@ -36,7 +28,7 @@
     <script src="{{ '/assets/scripts/alpine.js' | path  }}"></script>
   </head>
 
-  <body style="background-color: var(--color__primary);">
+  <body style="background-color: var(--color__primary--900);">
       {{ yield | safe }}
   </body>
 </html>
