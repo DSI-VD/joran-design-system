@@ -193,11 +193,13 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
         <span class="hljs-selector-pseudo">:root</span> {
-            --color__primary--lightest: <span class="hljs-number">#ddd9f9</span>;
-            --color__primary--lighter: <span class="hljs-number">#beb5f5</span>;
-            --color__primary--light: <span class="hljs-number">#8577e5</span>;
-            --color__primary: <span class="hljs-number">#6047e6</span>;
-            --color__primary--dark: <span class="hljs-number">#3E1CF6</span>;
+            --color__primary--<span class="hljs-number">100</span>: <span class="hljs-number">#f2f1fc</span>;
+            --color__primary--<span class="hljs-number">200</span>: <span class="hljs-number">#ddd9f9</span>;
+            --color__primary--<span class="hljs-number">400</span>: <span class="hljs-number">#beb5f5</span>;
+            --color__primary--<span class="hljs-number">600</span>: <span class="hljs-number">#9d90ee</span>;
+            --color__primary--<span class="hljs-number">800</span>: <span class="hljs-number">#7e6cea</span>;
+            --color__primary--<span class="hljs-number">900</span>: <span class="hljs-number">#5d49de</span>;
+            --color__primary--cta: <span class="hljs-number">#5d49de</span>
         }
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 
@@ -208,7 +210,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/scripts/alpine.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary);&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary--900);&quot;</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
@@ -237,15 +239,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;apple-touch-icon&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;icon.png&quot;</span> /&gt;</span>
     <span class="hljs-comment">&lt;!-- Place favicon.ico in the root directory --&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-      <span class="hljs-selector-pseudo">:root</span> {
-        --color__primary--lightest: <span class="hljs-number">#ddd9f9</span>;
-        --color__primary--lighter: <span class="hljs-number">#beb5f5</span>;
-        --color__primary--light: <span class="hljs-number">#8577e5</span>;
-        --color__primary: <span class="hljs-number">#6047e6</span>;
-        --color__primary--dark: <span class="hljs-number">#3E1CF6</span>;
-      }
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="color.html">@color</a>.inc&#x27; %}</span><span class="xml">
 
     <span class="hljs-comment">&lt;!-- Stylesheets --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span>
@@ -258,7 +252,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/scripts/alpine.js&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary);&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary--900);&quot;</span>&gt;</span>
       </span><span class="hljs-template-variable">{{ yield | safe }}</span><span class="xml">
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
@@ -311,6 +305,15 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src/components/_preview-bg.nunj</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="color.html">@<span>color</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
     </ul>
@@ -425,7 +428,33 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color.inc" data-role="tree-link" data-pjax data-handle="color.inc">
+                <span>Color Inc</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -725,7 +754,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -907,7 +936,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1011,7 +1040,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1188,7 +1217,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.8
+                            0.0.9
                         
                     </dd>
                 </div>
@@ -1197,8 +1226,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-17T07:27:09.946Z">
-                                17.02.2021 à 08:27:09
+                            <time datetime="2021-02-17T15:10:55.074Z">
+                                17.02.2021 à 16:10:55
                             </time>
                         
                     </dd>
@@ -1232,6 +1261,8 @@
                 Back
             </button>
         </div>
+        
+    
         
     
         
@@ -1485,7 +1516,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1511,7 +1542,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1537,7 +1568,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1563,7 +1594,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1749,7 +1780,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1775,59 +1806,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--contained.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Contained</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--contained-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Contained With Image</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>

@@ -26,15 +26,3 @@
     fill-current
     ;
 }
-
-.c-arrow:hover {
-  @apply
-    bg-opacity-25
-   ;
-}
-
-.c-arrow:focus {
-  @apply
-    outline-focus
-   ;
-}

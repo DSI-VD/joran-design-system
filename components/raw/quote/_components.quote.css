@@ -6,8 +6,8 @@
   @apply
     py-24
     bg-gradient-to-b
-    from-white
-    to-primary-lighter
+    from-primary-100
+    to-primary-400
     rounded
     text-center
     ;
@@ -51,10 +51,10 @@
 
 
 /* -----------------------------------
-   # Cite
+   # Footer
    ----------------------------------- */
 
-.c-quote__cite {
+.c-quote__footer {
   @apply
     mt-12
     flex
@@ -75,5 +75,11 @@
     text-xs
     uppercase
     not-italic
+  ;
+}
+
+.c-quote__author-item {
+  @apply
+    block
   ;
 }

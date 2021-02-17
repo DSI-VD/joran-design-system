@@ -33,7 +33,7 @@
  */
 
 .o-prose a {
-  text-decoration-color: var(--color__primary);
+  text-decoration-color: var(--color__primary--900);
   text-decoration-thickness: 0.1em;
 
   @apply
@@ -43,7 +43,7 @@
 
 .o-prose a:hover {
   @apply
-    bg-primary-lightest
+    bg-primary-200
     rounded-t
   ;
 }

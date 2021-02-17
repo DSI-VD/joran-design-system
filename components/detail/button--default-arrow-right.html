@@ -177,7 +177,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-11e169c275743180639405eaea28f518-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">polygon</span> <span class="hljs-attr">points</span>=<span class="hljs-string">&quot;16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
         
@@ -205,7 +205,7 @@
             
             <pre>{
   <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Button&quot;</span>,
-  <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>,
+  <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;#nowhere&quot;</span>,
   <span class="hljs-attr">&quot;svg&quot;</span>: <span class="hljs-literal">true</span>
 }</pre>
             
@@ -244,7 +244,7 @@
 
 <span class="hljs-selector-class">.c-button</span> {
   <span class="hljs-keyword">@apply</span>
-    bg-primary
+    bg-primary-cta
     text-white
     no-underline
     py-<span class="hljs-number">3</span>
@@ -269,7 +269,7 @@
 <span class="hljs-selector-class">.c-button</span><span class="hljs-selector-pseudo">:hover</span>,
 <span class="hljs-selector-class">.c-button</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-keyword">@apply</span>
-    bg-primary-light
+    bg-primary-<span class="hljs-number">600</span>
     shadow-lg
     ;
 }
@@ -303,7 +303,7 @@
 <span class="hljs-selector-class">.c-button</span><span class="hljs-selector-class">.c-button--transparent</span><span class="hljs-selector-pseudo">:hover</span>,
 <span class="hljs-selector-class">.c-button</span><span class="hljs-selector-class">.c-button--transparent</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-keyword">@apply</span>
-    text-primary-light
+    text-primary-<span class="hljs-number">600</span>
   ;
 }
 </pre>
@@ -488,7 +488,33 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="color.inc" data-role="tree-link" data-pjax data-handle="color.inc">
+                <span>Color Inc</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -788,7 +814,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -970,7 +996,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1074,7 +1100,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1251,7 +1277,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.8
+                            0.0.9
                         
                     </dd>
                 </div>
@@ -1260,8 +1286,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-17T07:27:09.946Z">
-                                17.02.2021 à 08:27:09
+                            <time datetime="2021-02-17T15:10:55.074Z">
+                                17.02.2021 à 16:10:55
                             </time>
                         
                     </dd>
@@ -1295,6 +1321,8 @@
                 Back
             </button>
         </div>
+        
+    
         
     
         
@@ -1548,7 +1576,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1574,7 +1602,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1600,7 +1628,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1626,7 +1654,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1812,7 +1840,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1838,59 +1866,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--contained.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Contained</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--contained-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Contained With Image</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>

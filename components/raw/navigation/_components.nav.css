@@ -12,7 +12,7 @@
  */
 .c-nav {
   @apply
-    bg-gray-lightest
+    bg-gray-200
     py-4
   ;
 }

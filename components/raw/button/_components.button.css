@@ -4,7 +4,7 @@
 
 .c-button {
   @apply
-    bg-primary
+    bg-primary-cta
     text-white
     no-underline
     py-3
@@ -29,7 +29,7 @@
 .c-button:hover,
 .c-button:active {
   @apply
-    bg-primary-light
+    bg-primary-600
     shadow-lg
     ;
 }
@@ -63,6 +63,6 @@
 .c-button.c-button--transparent:hover,
 .c-button.c-button--transparent:active {
   @apply
-    text-primary-light
+    text-primary-600
   ;
 }
