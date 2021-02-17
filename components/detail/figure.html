@@ -178,7 +178,7 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__media&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/daily&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Daily image from Unsplash&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__media&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Des basket et des fleurs&quot;</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__caption&quot;</span>&gt;</span>
         This is the caption
     <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
@@ -190,8 +190,16 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6b83d3c4960020fef9a3c4f7388dbd9e-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__media&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ src }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure</span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__media&quot;</span> 
+         <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ src }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> 
+         <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+         </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> srcset %}</span><span class="xml"><span class="hljs-tag">
+         <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;
+         </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">for</span></span> item <span class="hljs-keyword">in</span> srcset -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">
+         </span></span></span><span class="hljs-template-variable">{{ item.url}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{item.width}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">,
+         </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endfor</span></span> -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+         </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
     </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> caption -%}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__caption&quot;</span>&gt;</span>
         </span><span class="hljs-template-variable">{{ caption }}</span><span class="xml">
@@ -207,8 +215,30 @@
         
             
             <pre>{
-  <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/daily&quot;</span>,
-  <span class="hljs-attr">&quot;alt&quot;</span>: <span class="hljs-string">&quot;Daily image from Unsplash&quot;</span>,
+  <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU&quot;</span>,
+  <span class="hljs-attr">&quot;srcset&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU/320x210&quot;</span>,
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;320w&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU/540x360&quot;</span>,
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;540w&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU/720x480&quot;</span>,
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;720w&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU/960x640&quot;</span>,
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;960w&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU/1140x760&quot;</span>,
+      <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;1140w&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;alt&quot;</span>: <span class="hljs-string">&quot;Des basket et des fleurs&quot;</span>,
   <span class="hljs-attr">&quot;caption&quot;</span>: <span class="hljs-string">&quot;This is the caption&quot;</span>
 }</pre>
             
@@ -1200,7 +1230,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.6
+                            0.0.7
                         
                     </dd>
                 </div>
@@ -1209,8 +1239,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-16T12:37:10.958Z">
-                                16.02.2021 à 13:37:10
+                            <time datetime="2021-02-17T05:58:34.645Z">
+                                17.02.2021 à 06:58:34
                             </time>
                         
                     </dd>

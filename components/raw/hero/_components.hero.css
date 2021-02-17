@@ -89,7 +89,7 @@
 .c-hero__top {
   @apply
     flex-grow /* [1] */
-    
+
     flex /* [2] */
     flex-col /* [2] */
     place-content-center /* [2] */
