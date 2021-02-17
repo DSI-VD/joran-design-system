@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.7] - 2021-02-17
+
 ### Added
 
 - Add CSS rules that check if there is accessibility issue
@@ -19,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Roboto is the default font
 
-## [0.0.6] - 16-02-2021
+## [0.0.6] - 2021-02-16
 
 ### Added
 
@@ -110,6 +112,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.6...HEAD
 [unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.6...HEAD
 [0.0.6]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.4...v0.0.5
