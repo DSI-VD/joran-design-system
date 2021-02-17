@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Add `role=contentinfo` on the _footer_ for accessibility
+
 ### Fixed
 
 - Fixed accessibility issues with link to nowhere `#`
