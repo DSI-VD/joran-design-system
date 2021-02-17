@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add CSS rules that check if there is accessibility issue
+
 ### Changed
 
 - _figure_ component accept `srcset` to let the user agent select the best image depending of the viewport width
