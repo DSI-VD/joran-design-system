@@ -51,7 +51,7 @@
 /* -----------------------------------
  # Transparent variant
  ----------------------------------- */
- 
+
 .c-button.c-button--transparent {
   @apply
     text-primary

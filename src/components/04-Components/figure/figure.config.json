@@ -4,23 +4,23 @@
     "srcset": [
       {
         "url": "https://source.unsplash.com/QDHhz4lPnkU/320x210",
-        "width":"320w"
+        "width": "320w"
       },
       {
         "url": "https://source.unsplash.com/QDHhz4lPnkU/540x360",
-        "width":"540w"
+        "width": "540w"
       },
       {
         "url": "https://source.unsplash.com/QDHhz4lPnkU/720x480",
-        "width":"720w"
+        "width": "720w"
       },
       {
         "url": "https://source.unsplash.com/QDHhz4lPnkU/960x640",
-        "width":"960w"
+        "width": "960w"
       },
       {
         "url": "https://source.unsplash.com/QDHhz4lPnkU/1140x760",
-        "width":"1140w"
+        "width": "1140w"
       }
     ],
     "alt": "Des basket et des fleurs",
