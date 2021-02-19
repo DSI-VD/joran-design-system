@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.10]
+
 ### Changed
 
 - In _breadcrumb_, all items except the last two are hidden and all items except the last one are clamp to one line
@@ -142,7 +144,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.9...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.10...HEAD
+[0.0.10]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.6...v0.0.7
