@@ -2628,6 +2628,7 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
   border-radius: 0.25rem;
+  display: inline-block;
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding-left: 1rem;
@@ -2636,21 +2637,75 @@ html {
   padding-bottom: 0.125rem;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  white-space: nowrap;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.c-breadcrumb__link:hover {
+.c-breadcrumb__link:hover, .c-breadcrumb__link:active {
   background-color: var(--color__primary--900);
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .c-breadcrumb__link:focus {
+  background-color: var(--color__primary--900);
   outline: 3px solid #FFB703;
   outline-offset: 1px;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+/* -----------------------------------
+ # Link-text
+ ----------------------------------- */
+
+/***
+ * Hide all items except last two
+ */
+
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link {
+  display: inline;
+}
+
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  width: 1rem;
+}
+
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text, .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text, .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  display: inline-block;
+}
+
+/***
+ * Clamp all level except the last one
+ */
+
+.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link-text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:hover .c-breadcrumb__link-text, .c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:active .c-breadcrumb__link-text, .c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
+  -webkit-line-clamp: unset;
 }
 
 /* ======================================================================
