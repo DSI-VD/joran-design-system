@@ -2550,6 +2550,21 @@ html {
   margin-top: var(--stack-space);
 }
 
+/* ======================================================================
+   # _objects.grid-css
+   ====================================================================== */
+
+.c-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Components */
 
 /* ======================================================================
@@ -3189,6 +3204,24 @@ html {
   --tw-text-opacity: 1 !important;
   color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
   text-decoration: none !important;
+}
+
+/* ======================================================================
+   # _components.content.css
+   ====================================================================== */
+
+.c-content {
+  display: flex;
+  justify-content: center;
+}
+
+.c-content > * {
+  flex: 1 1 0%;
+  max-width: 65ch;
+}
+
+.c-content > * + * {
+  margin-left: 1rem;
 }
 
 /* ======================================================================
@@ -3881,6 +3914,12 @@ html {
   --tw-ring-color: rgba(59, 130, 246, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
+}
+
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .visible {
