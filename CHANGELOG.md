@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Add shema.org meta data to the _breadcrumb_
+
 ## [0.0.10]
 
 ### Changed
