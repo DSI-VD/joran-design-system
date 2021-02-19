@@ -62,17 +62,40 @@
  ----------------------------------- */
 
 /***
- * Hide all level except the two last
+ * Hide all items except last two
  */
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text{
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link {
+  @apply
+    inline
+  ;
+}
+
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
+  @apply
+    sr-only
+    w-4
+  ;
+}
+
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text {
+  @apply
+    not-sr-only
+    inline-block
+  ;
+}
+
+/***
+ * Clamp all level except the last one
+ */
+.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link-text{
   @apply
     line-clamp-1
   ;
 }
 
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
+.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:active .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
   @apply
     line-clamp-none
   ;
