@@ -5,13 +5,14 @@
 .c-content {
     @apply
         flex
-        justify-end
+        justify-center
     ;
 }
 
 .c-content > * {
     @apply
-        w-1/2
+        flex-1
+        max-w-prose
     ;
 }
 
