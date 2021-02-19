@@ -26,23 +26,6 @@
     ;
 }
 
-/***
- * Hide all level except the two last
- */
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text{
-  @apply
-    line-clamp-1
-  ;
-}
-
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
-  @apply
-    line-clamp-none
-  ;
-}
-
 /* -------------------------------------
    # Link
    ------------------------------------- */
@@ -72,4 +55,25 @@
   @apply
     outline-focus
     ;
+}
+
+/* -----------------------------------
+ # Link-text
+ ----------------------------------- */
+
+/***
+ * Hide all level except the two last
+ */
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text{
+  @apply
+    line-clamp-1
+  ;
+}
+
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
+  @apply
+    line-clamp-none
+  ;
 }
