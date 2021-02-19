@@ -53,6 +53,8 @@
 
 .c-breadcrumb__link:focus {
   @apply
+    bg-primary
+    text-white
     outline-focus
     ;
 }
@@ -77,7 +79,9 @@
   ;
 }
 
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text {
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
   @apply
     not-sr-only
     inline-block
