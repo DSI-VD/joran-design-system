@@ -5,7 +5,7 @@
     </div>
     {% endif %}
     
-    <div clas="c-content__content o-prose">
+    <div class="c-content__content o-prose">
         {{ content | safe }}
     </div>
 </div>
