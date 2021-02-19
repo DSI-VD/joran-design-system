@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- In _breadcrumb_, all items except the last two are hidden and all items except the last one are clamp to one line
+
 ## [0.0.9] - 2021-02-17
 
 ### Removed
