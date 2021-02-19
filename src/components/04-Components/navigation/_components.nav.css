@@ -12,9 +12,14 @@
  */
 .c-nav {
   @apply
-    bg-gray-200
+    bg-primary-600
+    text-white
     py-4
   ;
+}
+
+.c-nav--open {
+  height: 100vh;
 }
 
 
@@ -26,7 +31,10 @@
 .c-nav__container {
   @apply
     flex
-    flex-col
+    flex-wrap
+    justify-between
+    items-center
+    relative
   ;
 }
 
@@ -52,6 +60,23 @@
 /* -----------------------------------
  # c-nav__list
  ----------------------------------- */
+.c-nav__search-bar {
+  @apply
+    mt-6
+    mb-8
+  ;
+}
+
+
+
+/* -----------------------------------
+ # c-nav__list
+ ----------------------------------- */
+.c-nav__list-container {
+  @apply
+    flex-initial
+  ;
+}
 
 .c-nav__list {
   @apply
