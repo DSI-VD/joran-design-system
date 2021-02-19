@@ -5,7 +5,7 @@
       <li class="c-breadcrumb__list-item">
         <a class="c-breadcrumb__link" 
            href="{{ item.href }}"
-           {% if loop.last %} aria-current="true"{% endif %} >{{ item.name }}</a>
+           {% if loop.last %} aria-current="true"{% endif %}><span class="c-breadcrumb__link-text">{{ item.name }}</span></a>
       </li>
     {% endfor %}
   </ul>

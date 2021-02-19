@@ -26,12 +26,30 @@
     ;
 }
 
+/***
+ * Hide all level except the two last
+ */
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text{
+  @apply
+    line-clamp-1
+  ;
+}
+
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
+.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
+  @apply
+    line-clamp-none
+  ;
+}
+
 /* -------------------------------------
    # Link
    ------------------------------------- */
 
 .c-breadcrumb__link {
   @apply
+    inline-block
     bg-gray-200
     rounded
     py-0.5
@@ -39,11 +57,11 @@
     shadow
     transition
     text-sm
-    whitespace-nowrap
     ;
 }
 
-.c-breadcrumb__link:hover {
+.c-breadcrumb__link:hover,
+.c-breadcrumb__link:active {
   @apply
     bg-primary
     text-white
