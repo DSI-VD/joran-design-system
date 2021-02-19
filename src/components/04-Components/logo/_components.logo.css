@@ -5,5 +5,14 @@
 .c-logo {
   @apply
     w-12
+    flex
+    items-center
     ;
+}
+
+.c-logo__title {
+  @apply
+    uppercase
+    ml-3
+  ;
 }

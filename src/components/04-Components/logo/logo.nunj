@@ -1,4 +1,11 @@
-<object data="{{ '/assets/vectors/logo.svg' | path  }}" type="image/svg+xml" class="c-logo">
-  <img src="yourfallback.jpg" />
-</object>
+<div class="c-logo">
+  <object data="{{ '/assets/vectors/logo.svg' | path  }}" type="image/svg+xml" class="c-logo">
+    <img src="yourfallback.jpg" />
+  </object>
+  {% if title %}
+  <div class="c-logo__title">
+    {{ title }}
+  </div>
+  {% endif %}
+</div>
 
