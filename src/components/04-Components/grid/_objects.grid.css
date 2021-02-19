@@ -2,7 +2,7 @@
    # _objects.media-grid-css
    ====================================================================== */
    
-.c-media-grid {
+.c-grid {
     @apply
         grid
         gap-4
@@ -10,7 +10,7 @@
 }
 
 @screen md {
-    .c-media-grid {
+    .c-grid {
         @apply
             grid-cols-2
         ;
