@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- _content_ is on one column on mobile
+
 ## [0.0.12] - 2021-02-19
 
 ### Added

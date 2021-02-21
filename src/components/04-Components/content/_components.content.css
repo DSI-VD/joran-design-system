@@ -2,22 +2,25 @@
    # _components.content.css
    ====================================================================== */
 
-.c-content {
-    @apply
-        flex
-        justify-center
-    ;
-}
-
-.c-content > * {
-    @apply
-        flex-1
-        max-w-prose
-    ;
-}
-
-.c-content > * + * {
-    @apply
-        ml-4
-    ;
+@screen md {
+   .c-content {
+       @apply
+           flex
+           justify-center
+       ;
+   }
+   
+   
+   .c-content > * {
+       @apply
+           flex-1
+           max-w-prose
+       ;
+   }
+   
+   .c-content > * + * {
+       @apply
+           ml-4
+       ;
+   }
 }
