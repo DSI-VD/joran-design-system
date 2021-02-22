@@ -8,24 +8,38 @@
       <div class="c-nav__search-bar">
         {% render '@button' %}
       </div>
-      <ul class="c-nav__list c-nav__list--visible-desktop">
-        {% for level in levels %}
-        <li class="c-nav__list-item">
-          <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
-            {{ level.name }}
-          </a>
-          {% if level.levels %}
-          <ul class="c-nav__list c-nav__list--desktop-row">
-            {% for level in level.levels %}
-            <li class="c-nav__list-item c-nav__list-item--desktop-row">
-              <a href="#nowhere" class="c-nav__list-link">{{level.name }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </li>
-        {% endfor %}
+      <ul class="c-nav__level-indicator">
+        <li>First level</li>
       </ul>
+      <div class="c-nav__list-wrapper">
+        <ul class="c-nav__list">
+          {% for level in levels %}
+          <li class="c-nav__list-item">
+            <a href="#nowhere" class="c-nav__list-link">
+              {{ level.name }}
+            </a>
+            {% if level.levels %}
+            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+              {% for level in level.levels %}
+              <li class="c-nav__list-item">
+                <a href="#nowhere" class="c-nav__list-link">{{level.name}}</a>
+                {% if level.levels %}
+                <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                  {% for level in level.levels %}
+                  <li class="c-nav__list-item">
+                    <a href="#nowhere" class="c-nav__list-link">{{level.name}}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </nav>
 </div>

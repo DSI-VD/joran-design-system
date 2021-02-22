@@ -5,11 +5,6 @@
 /* -----------------------------------
    # c-nav
    ----------------------------------- */
-
-/***
- * 1. Fix navigation at top
- * 2. Make it pass over the header image
- */
 .c-nav {
   @apply
     bg-primary-600
@@ -27,7 +22,6 @@
 /* -----------------------------------
  # c-nav__container
  ----------------------------------- */
-
 .c-nav__container {
   @apply
     flex
@@ -38,12 +32,9 @@
   ;
 }
 
-
-
 /* -----------------------------------
  # c-nav__toggle
  ----------------------------------- */
-
 .c-nav__toggle {
   @apply
     ml-auto;
@@ -55,88 +46,89 @@
   ;
 }
 
-
-
 /* -----------------------------------
- # c-nav__list
+ # c-nav__search-bar
  ----------------------------------- */
 .c-nav__search-bar {
   @apply
     mt-6
-    mb-8
+    mb-4
   ;
 }
 
-
-
 /* -----------------------------------
- # c-nav__list
+ # c-nav__list-container
  ----------------------------------- */
 .c-nav__list-container {
   @apply
     flex-initial
+    w-full
   ;
 }
 
+.c-nav__list-wrapper {
+  @apply
+    relative
+  ;
+}
+
+/* -----------------------------------
+ # c-nav__list
+ ----------------------------------- */
 .c-nav__list {
   @apply
-    flex
-    flex-col
+    absolute
+    w-full
+    top-0
   ;
+
+  transition: transform 0.35s ease, opacity 0.25s ease 0.15s;
 }
 
-@screen md {
-  .c-nav__list--desktop-row {
-    @apply
-      flex-row
-      flex-wrap
-    ;
-  }
+.c-nav__list--level {
+  opacity: 0;
+  right: -100vw;
 }
 
-
-
-/* -----------------------------------
- # c-nav__list-item
- ----------------------------------- */
-
-.c-nav__list-item {
-  @apply
-    flex
-    flex-col
-  ;
+.c-nav__list--open {
+  opacity: 1;
 }
 
-@screen md {
-  .c-nav__list-item--desktop-row {
-    @apply
-      pr-8
-    ;
-  }
+.c-nav__list--hide {
+  transform: translateX(-100vw);
 }
-
-
 
 /* -----------------------------------
  # c-nav__list-link
  ----------------------------------- */
-
-.c-nav__list-link--level-1 {
-  @apply
-    text-xl
-    font-bold
-  ;
-}
-
-
-
-/* -----------------------------------
- # c-nav__list-link
- ----------------------------------- */
-
 .c-nav__list-link {
   @apply
     py-2
     uppercase
+    font-bold
+    tracking-wide
+    py-2
+    pr-4
+    block
+    relative
+  ;
+}
+
+.c-nav__list-link::after {
+  @apply
+    absolute
+    right-0
+    top-2
+  ;
+
+  content: ">";
+}
+
+/* -----------------------------------
+ # c-nav__level-indicator
+ ----------------------------------- */
+.c-nav__level-indicator {
+  @apply
+    mb-6
   ;
 }
