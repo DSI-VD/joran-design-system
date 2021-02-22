@@ -2,6 +2,16 @@
   "status": "wip",
   "context": {
     "previous": "Précédent",
-    "next": "Suivant"
-  }
+    "next": "Suivant",
+    "previous": false
+  },
+  "variants": [
+    {
+      "name": "Previous and next page",
+      "context": {
+        "previous": true,
+        "innerPageSet": true
+      }
+    }
+  ]
 }
