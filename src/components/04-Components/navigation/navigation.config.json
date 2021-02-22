@@ -1,14 +1,14 @@
 {
   "context": {
     "toggle": "Menu",
-    "levels": [
+    "firstLevelItems": [
       {
         "name": "Somaire",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Organigrame",
             "url": "#",
-            "levels": [
+            "thirdLevelItems": [
               {
                 "name": "Communication tactique",
                 "url": "#"
@@ -91,7 +91,7 @@
       },
       {
         "name": "Projets",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Communication tactique",
             "url": "#"
@@ -152,7 +152,7 @@
       },
       {
         "name": "Remerciement",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Menu 3.1",
             "url": "#"
@@ -169,7 +169,7 @@
       },
       {
         "name": "Où sommes-nous ?",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Menu 4.1",
             "url": "#"
@@ -210,7 +210,7 @@
       },
       {
         "name": "Menu 5 est passablement très très très très long",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Menu 5.1 très très très très très très très très très très très très long",
             "url": "#"

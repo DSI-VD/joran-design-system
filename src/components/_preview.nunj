@@ -26,9 +26,10 @@
 
     <!-- Scripts -->
     <script src="{{ '/assets/scripts/alpine.js' | path  }}"></script>
+    <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
   </head>
 
-  <body>
+  <body onload="init();">
       {{ yield | safe }}
   </body>
 </html>
