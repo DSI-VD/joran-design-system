@@ -14,7 +14,8 @@
 
 .c-pagination__navigation {
   @apply
-    relative z-0
+    relative 
+    z-0
     inline-flex
     rounded-md
     no-underline
@@ -22,7 +23,8 @@
 }
 
 .c-pagination__navigation a:hover,
-.c-pagination__navigation a:active {
+.c-pagination__navigation a:active,
+.c-pagination__navigation .current {
   @apply
     bg-primary-cta
     ;
@@ -61,13 +63,13 @@
 }
 .c-pagination__link {
   @apply
+    relative 
+    inline-flex 
     bg-primary-600
     text-white
     mr-4 
     ml-4
     rounded-md
-    relative 
-    inline-flex 
     items-center 
     px-4 
     py-2 
