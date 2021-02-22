@@ -1,0 +1,76 @@
+/* ======================================================================
+   # _components.pagination.css
+   ====================================================================== */
+
+.c-pagination {
+  @apply
+    py-8
+    bg-gradient-to-b
+    from-primary-100
+    to-primary-400
+    text-center
+    ;
+}
+
+.c-pagination__navigation {
+  @apply
+    relative z-0
+    inline-flex
+    rounded-md
+    no-underline
+}
+
+.c-pagination__navigation a:hover,
+.c-pagination__navigation a:active {
+  @apply
+    bg-primary-cta
+    ;
+}
+
+.c-pagination__navigation a:focus {
+  @apply
+    outline-focus
+   ;
+}
+
+.c-pagination__prev {
+  @apply
+    relative 
+    inline-flex 
+    items-center 
+    px-2 
+    py-2
+    mr-4
+    rounded-md
+    bg-primary-600
+    text-sm 
+    font-medium 
+    text-white
+}
+.c-pagination__next {
+  @apply
+    relative
+    inline-flex
+    items-center
+    px-2
+    py-2
+    rounded-md
+    bg-primary-600
+    text-sm
+    font-medium
+    text-white
+}
+.c-pagination__link {
+  @apply
+    bg-primary-600
+    text-white
+    mr-4 
+    ml-4
+    rounded-md
+    relative 
+    inline-flex 
+    items-center 
+    px-4 
+    py-2 
+    -ml-px
+}
