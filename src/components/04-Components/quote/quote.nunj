@@ -4,20 +4,23 @@
         <blockquote>
             <span class="c-quote__text">{{ quote }}</span>
             {% if reference %}
-            <footer class="c-quote__footer" itemscope itemtype="http://schema.org/Person">
+            <footer class="c-quote__footer">
                 {% if reference.avatar %}
                 {% render '@avatar' %}
                 {% endif %}
                 <span class="c-quote__reference">
                 {% if reference.author -%}
                     <span class="c-quote__reference-item">
-                    <span class="u-visually-hidden">Auteur: </span><span itemprop="name">{{ reference.author }}</span>
+                        <span class="u-visually-hidden">Auteur: </span>{{ reference.author }}
                     </span>
                 {%- endif %}
                 {% if reference.function -%}
                     <span class="c-quote__reference-item">
-                    <span class="u-visually-hidden">, Fonction: </span><span itemprop="jobTitle">{{ reference.function }}</span>
+                        <span class="u-visually-hidden">, Fonction: </span>{{ reference.function }}
                     </span>
+                {%- endif %}
+                {% if reference.cite -%}
+                <cite class="c-quote__reference-item">{{ reference.cite }}</cite>
                 {%- endif %}
                 </span>
             </footer>

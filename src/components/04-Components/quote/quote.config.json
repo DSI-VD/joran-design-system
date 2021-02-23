@@ -3,7 +3,8 @@
   "context": {
     "quote": "Si le chemin n'existe pas nous le créerons",
     "reference": {
-      "author": "Hannibal, la traversée des alpes, -212 AJC"
+      "type": "https://schema.org/Book",
+      "cite": "Hannibal, la traversée des alpes, -212 AJC"
     }
   },
   "variants": [
@@ -13,9 +14,11 @@
         "heading": "Témoignage",
         "quote": "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.",
         "reference": {
+          "type": "http://schema.org/Person",
           "avatar": true,
           "author": "Titre Prénom Nom",
-          "function": "Fonction"
+          "function": "Fonction",
+          "cite": false
         }
       }
     }
