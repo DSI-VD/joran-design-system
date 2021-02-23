@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Refactor _quotes_ component bay adding a variant for big quotes
+
 ### Fixed
 
 - _content_ is on one column on mobile
