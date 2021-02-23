@@ -69,7 +69,7 @@
  # Author
  ----------------------------------- */
 
-.c-quote__author {
+.c-quote__reference {
   @apply
     mt-4
     text-xs
@@ -78,7 +78,7 @@
   ;
 }
 
-.c-quote__author-item {
+.c-quote__reference-item {
   @apply
     block
   ;

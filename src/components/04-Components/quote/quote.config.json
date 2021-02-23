@@ -1,8 +1,23 @@
 {
   "status": "review",
   "context": {
-    "quote": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.",
-    "author": "Titre Prénom Nom",
-    "function": "Fonction"
-  }
+    "quote": "Si le chemin n'existe pas nous le créerons",
+    "reference": {
+      "author": "Hannibal, la traversée des alpes, -212 AJC"
+    }
+  },
+  "variants": [
+    {
+      "name": "big",
+      "context": {
+        "heading": "Témoignage",
+        "quote": "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.",
+        "reference": {
+          "avatar": true,
+          "author": "Titre Prénom Nom",
+          "function": "Fonction"
+        }
+      }
+    }
+  ]
 }
