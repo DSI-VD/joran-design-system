@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+
+- _text media_ has been removed. It is replaced by _grid_
+
+### Changed
+
+- _grid_ is now an object
+
 ### Fixed
 
 - _content_ is on one column on mobile
