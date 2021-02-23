@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.13] - 2021-02-23
+
 ### Removed
 
 - _text media_ has been removed. It is replaced by _grid_
@@ -171,8 +173,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.12...HEAD
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.11...v0.0.12
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.13...HEAD
+[0.0.13]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.12...v0.0.13
+[0.0.12]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.11...v0.0.12
 [0.0.11]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.10...v0.0.11
 [0.0.10]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.8...v0.0.9
