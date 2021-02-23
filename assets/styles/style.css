@@ -1582,6 +1582,47 @@ html {
 }
 
 /* ======================================================================
+   # _objects.grid-css
+   ====================================================================== */
+
+.o-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .o-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* -----------------------------------
+# Items
+----------------------------------- */
+
+.o-grid__item--self-center {
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .o-grid__item--left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .o-grid__item--right {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .o-grid__item--pushed {
+    grid-column-start: 2;
+  }
+}
+
+/* ======================================================================
    # _objects.list-inline.css
    ====================================================================== */
 
@@ -2550,21 +2591,6 @@ html {
   margin-top: var(--stack-space);
 }
 
-/* ======================================================================
-   # _objects.grid-css
-   ====================================================================== */
-
-.c-grid {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  .c-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 /* Components */
 
 /* ======================================================================
@@ -3210,18 +3236,24 @@ html {
    # _components.content.css
    ====================================================================== */
 
-.c-content {
-  display: flex;
-  justify-content: center;
+@media (min-width: 768px) {
+  .c-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-content > * {
+    flex: 1 1 0%;
+    max-width: 65ch;
+  }
+
+  .c-content > * + * {
+    margin-left: 1rem;
+  }
 }
 
-.c-content > * {
-  flex: 1 1 0%;
-  max-width: 65ch;
-}
-
-.c-content > * + * {
-  margin-left: 1rem;
+.c-content__heading {
+  margin-bottom: 1rem;
 }
 
 /* ======================================================================
@@ -3255,9 +3287,117 @@ html {
    ------------------------------------- */
 
 .c-footer__main {
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .c-footer__main {
+    flex-direction: row;
+  }
+}
+
+/* -----------------------------------
+ # Page
+ ----------------------------------- */
+
+.c-footer__page {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-footer__page {
+    margin-top: 0px;
+    width: 25%;
+  }
+}
+
+/***
+ * Liste page
+ */
+
+.c-footer__list-page {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .c-footer__list-page {
+    text-align: left;
+  }
+}
+
+.c-footer__list-page > li + li {
+  margin-top: 1rem;
+}
+
+/* -----------------------------------
+ # Social
+ ----------------------------------- */
+
+.c-footer__social {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-footer__social {
+    margin-top: 0px;
+    width: 25%;
+  }
+}
+
+/***
+ * Social link
+ */
+
+.c-footer__list-social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .c-footer__list-social {
+    justify-content: flex-start;
+  }
+}
+
+.c-footer__list-social > li {
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-footer__list-social > li {
+    padding: 0px;
+  }
+
+  .c-footer__list-social > li + li{
+    padding-left: 1rem;
+  }
+}
+
+/* -----------------------------------
+ # Logo
+ ----------------------------------- */
+
+.c-footer__logo {
+  order: -9999;
+}
+
+@media (min-width: 768px) {
+  .c-footer__logo {
+    order: 9999;
+    margin-left: auto;
+  }
+}
+
+.c-footer__logo > * {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -------------------------------------
@@ -3268,32 +3408,8 @@ html {
   font-size: 0.75rem;
   line-height: 1rem;
   margin-top: 3rem;
+  text-align: center;
   text-transform: uppercase;
-}
-
-/* -----------------------------------
-   # Grid
-   ----------------------------------- */
-
-/**
- * 1. Align logo on the right
- */
-
-.c-footer__grid {
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-@media (min-width: 640px) {
-  .c-footer__grid {
-    gap: 6rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .c-footer__grid div.c-footer__grid-item:last-of-type {
-    margin-left: auto;
-  }
 }
 
 /* -------------------------------------
@@ -3310,14 +3426,6 @@ html {
 
 .c-footer p {
   margin-bottom: 1.25rem;
-}
-
-/* -----------------------------------
-   # List
-   ----------------------------------- */
-
-.c-footer ul > li + li {
-  margin-top: 1rem;
 }
 
 /* -----------------------------------
@@ -3670,45 +3778,6 @@ html {
   display: block;
 }
 
-/* ======================================================================
-   # _components.text-media.css
-   ====================================================================== */
-
-.c-text-media {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-@media (min-width: 768px) {
-  .c-text-media {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .c-text-media__text {
-    grid-column: 1;
-    align-self: center;
-  }
-
-  .c-text-media__media {
-    grid-column: 2;
-  }
-}
-
-@media (min-width: 768px) {
-  .c-text-media--reverse .c-text-media__text {
-    grid-column: 2;
-    grid-row: 1;
-  }
-}
-
-@media (min-width: 768px) {
-  .c-text-media--reverse .c-text-media__media {
-    grid-column: 1;
-    grid-row: 1;
-  }
-}
-
 /* Vendors */
 
 /* Utilities */
@@ -3847,6 +3916,19 @@ html {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+@media (min-width: 768px) {
+  .md\:u-not-visually-hidden {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
 }
 
 /***
