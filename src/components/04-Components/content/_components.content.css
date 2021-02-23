@@ -24,3 +24,9 @@
        ;
    }
 }
+
+.c-content__heading {
+   @apply
+      mb-4
+   ;
+}
