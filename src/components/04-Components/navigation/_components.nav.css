@@ -60,6 +60,11 @@
 .c-nav__toggle {
   @apply
     ml-auto
+  ;
+}
+
+.c-nav__toggle:focus {
+  @apply
     outline-focus
   ;
 }
@@ -87,6 +92,12 @@
     rounded
     text-primary
     block
+  ;
+}
+
+.c-nav__search-bar .c-button--search:focus {
+  @apply
+    outline-focus
   ;
 }
 
@@ -161,6 +172,12 @@
     pr-6
     block
     relative
+  ;
+}
+
+.c-nav__list-link:focus {
+  @apply
+    outline-focus
   ;
 }
 
