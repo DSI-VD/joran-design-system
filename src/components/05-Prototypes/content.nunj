@@ -1,7 +1,3 @@
-<div>
-  header
-</div>
-
 {% render '@navigation' %}
 
 <main class="o-stack">

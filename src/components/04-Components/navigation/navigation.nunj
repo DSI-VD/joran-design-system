@@ -1,4 +1,4 @@
-<div class="c-nav c-nav--open">
+<div class="c-nav">
   <nav class="o-container c-nav__container">
     {% render '@logo', {title: 'Département'} %}
     <a class="c-nav__toggle" href="#nowhere">
