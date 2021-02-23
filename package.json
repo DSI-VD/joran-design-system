@@ -13,7 +13,7 @@
     "prebuild": "npm run clean",
     "build": "run-s build:*",
     "build:fonts": "copyfiles node_modules/@fontsource/roboto/files/roboto-latin-?00-*.woff2 public/assets/fonts -f",
-    "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
+    "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f && copyfiles src/**/*.js public/assets/scripts -f",
     "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
     "build:vectors": "copyfiles src/assets/vectors/**/*.* public/assets/vectors/ -f",
     "build:fractal": "npx fractal build",
