@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Adapt style of the _footer_ to the latest design
 - _grid_ is now an object
 
 ### Fixed
