@@ -20,8 +20,9 @@
    ----------------------------------- */
 .c-quote__heading {
   @apply
-    text-xs
+    text-sm
     uppercase
+    my-4
     ;
 }
 
