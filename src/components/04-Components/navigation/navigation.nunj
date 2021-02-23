@@ -8,8 +8,7 @@
       <div class="c-nav__search-bar">
         <a href="#nowhere" class="c-button--search">Rechercher</a>
       </div>
-      <ul class="c-nav__level-indicator">
-        <li><a href="#nowhere">Home</a></li>
+      <ul class="c-nav__level-indicator" tabindex="-1">
       </ul>
       <div class="c-nav__list-wrapper">
         <ul class="c-nav__list">

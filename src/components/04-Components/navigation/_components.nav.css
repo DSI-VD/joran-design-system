@@ -3,6 +3,13 @@
  ====================================================================== */
 
 /* -----------------------------------
+   # b-nav--open (class for body when nav is open)
+   ----------------------------------- */
+.b-nav--open {
+  overflow-y: hidden;
+}
+
+/* -----------------------------------
    # c-nav
    ----------------------------------- */
 .c-nav {
@@ -15,6 +22,9 @@
     w-full
     z-50
   ;
+
+  transition: background-color 0.15s ease-out;
+  will-change: background-color;
 }
 
 .c-nav--open {
@@ -23,6 +33,12 @@
   ;
 
   height: 100vh;
+}
+
+.c-nav--sticky {
+  @apply
+    bg-primary-600
+  ;
 }
 
 /* -----------------------------------
@@ -43,7 +59,9 @@
  ----------------------------------- */
 .c-nav__toggle {
   @apply
-    ml-auto;
+    ml-auto
+    outline-focus
+  ;
 }
 
 .c-nav__toggle svg {
@@ -153,6 +171,7 @@
     top-2
   ;
 
+  /* @todo change with correct icon */
   content: ">";
 }
 
@@ -163,10 +182,25 @@
   @apply
     mb-6
   ;
+
+  min-height: 28px;
 }
 
 .c-nav__level-indicator li {
   @apply
     inline
+    pl-3
+    mr-1
+    relative
   ;
+}
+
+.c-nav__level-indicator li::before {
+  @apply
+    absolute
+    left-0
+  ;
+
+  /* @todo change with correct icon */
+  content: "<";
 }
