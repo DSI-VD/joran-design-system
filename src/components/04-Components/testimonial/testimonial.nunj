@@ -1,0 +1,26 @@
+<div class="c-testimonial">
+    <div class="o-container">
+        <div class="flex flex-col md:flex-row"> 
+            <div class="c-testimonial__facecontainer">
+                <img class="c-testimonial__face" src="https://source.unsplash.com/180x180/?face" alt="This is someone" itemprop="image">
+            </div>
+            <div class="c-testimonial__textcontainer">
+                <div class="c-testimonial__author">
+                    {% if author and function %}
+                    {% if author -%}
+                        <span class="u-visually-hidden">Auteur: </span>{{ author }}</span>
+                    {%- endif %}
+                    {% if function -%}
+                        <span class="u-visually-hidden">, Fonction: </span>{{ function }}</span>
+                    {%- endif %}
+                    {% endif %}
+                </div>
+                <h3 class="c-testimonial__header">{{ header }}</h3>
+                <div class="c-testimonial__text">{{ testimonial }}</div>
+                {% if more %}
+                <div class="c-testimonial__next"><p class="link"><a href="#nowhere">{{ more }}</a></p></div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
