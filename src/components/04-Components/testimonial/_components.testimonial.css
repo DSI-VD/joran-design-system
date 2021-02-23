@@ -1,0 +1,89 @@
+.c-testimonial {
+    @apply
+      py-10
+      bg-gradient-to-b
+      from-primary-100
+      to-primary-400
+      rounded
+      ;
+  }
+
+  .c-testimonial__facecontainer {
+    @apply
+      w-1/4 
+      align-top
+      max-w-lg
+      ;
+  }
+
+  .c-testimonial__textcontainer {
+    @apply
+      w-3/4
+      pr-6
+      max-w-lg
+      ;
+  }
+
+  .c-testimonial__face {
+    @apply
+      rounded-full
+      h-48
+      w-48
+      flex
+      items-center
+      justify-center
+      shadow
+      bg-primary-600
+      ;
+  }
+  
+  .c-testimonial__header {
+    @apply
+      text-3xl
+      uppercase
+      font-bold
+      ;
+  }
+
+  /* -----------------------------------
+     # Heading
+     ----------------------------------- */
+  .c-testimonial__author {
+    @apply
+      text-lg
+      text-left
+      uppercase
+    ;
+  }
+  
+  /* -----------------------------------
+     # Text
+     ----------------------------------- */
+  .c-testimonial__text {
+    @apply
+      text-lg
+      mt-1.5
+      my-4
+      ;
+  }
+
+  .c-testimonial__next a {
+    @apply
+      uppercase
+      text-lg
+      text-indigo-600
+      ;
+  }
+
+  .c-testimonial__next a::before {
+    @apply
+      content: ">";
+      display:inline-block
+      ;
+  }
+
+ .c-testimonial__next a:hover {
+   @apply
+    tracking-wider
+    ;
+ }
