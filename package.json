@@ -15,7 +15,7 @@
     "build:fonts": "copyfiles node_modules/@fontsource/roboto/files/roboto-latin-?00-*.woff2 public/assets/fonts -f",
     "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
     "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
-    "build:vectors": "copyfiles src/assets/vectors/**/*.* public/assets/vectors/ -f",
+    "build:vectors": "svgo -f src/assets/vectors/ -o public/assets/vectors/",
     "build:images": "imagemin src/assets/images/* --out-dir=public/assets/images/",
     "build:fractal": "npx fractal build",
     "clean": "rimraf build public",
@@ -53,6 +53,7 @@
     "rimraf": "^3.0.2",
     "stylelint": "^13.9.0",
     "stylelint-config-standard": "^20.0.0",
+    "svgo": "^1.3.2",
     "tailwindcss": "^2.0.3",
     "xo": "^0.37.1"
   }
