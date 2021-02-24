@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Make _highlight_ more accessible
 - Get the right SVG file and fallback image for _logo_
 
 ## [0.0.13] - 2021-02-23
