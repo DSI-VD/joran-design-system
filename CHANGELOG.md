@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add a build process for non vectors images
+
+### Changed
+
+- Get the right SVG file and fallback image for _logo_
+
 ## [0.0.13] - 2021-02-23
 
 ### Removed

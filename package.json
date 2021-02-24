@@ -16,6 +16,7 @@
     "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
     "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
     "build:vectors": "copyfiles src/assets/vectors/**/*.* public/assets/vectors/ -f",
+    "build:images": "imagemin src/assets/images/* --out-dir=public/assets/images/",
     "build:fractal": "npx fractal build",
     "clean": "rimraf build public",
     "predeploy": "npm run build",

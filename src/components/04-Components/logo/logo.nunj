@@ -1,4 +1,4 @@
 <object data="{{ '/assets/vectors/logo.svg' | path  }}" type="image/svg+xml" class="c-logo{% if styleModifier %} {{ styleModifier }}{% endif %}">
-  <img src="yourfallback.jpg" />
+  <img src="{{ '/assets/images/logo.png' | path  }}" />
 </object>
 
