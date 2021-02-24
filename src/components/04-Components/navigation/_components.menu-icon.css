@@ -5,7 +5,7 @@
   color: transparent;
 }
 
-.c-menu-icon:focus {
+.c-nav__toggle:focus {
   @apply
     outline-focus
   ;
@@ -40,12 +40,10 @@
   transform: translateY(6px);
 }
 
-.c-menu-icon:focus span::before,
 .c-menu-icon:hover span::before {
   transform: translateY(-8px);
 }
 
-.c-menu-icon:focus span::after,
 .c-menu-icon:hover span::after {
   transform: translateY(8px);
 }
@@ -64,17 +62,6 @@
   transition: background 0.35s, transform 0.35s;
 }
 
-.c-menu-icon--cross svg {
-  position: relative;
-  z-index: 1;
-  fill: #052b23;
-  stroke-width: 1px;
-  stroke: #fff;
-  stroke-dasharray: 170;
-  stroke-dashoffset: 170;
-  transition: stroke-dashoffset 0.35s, transform 0.35s;
-}
-
 .c-menu-icon--cross.js-c-menu-icon--open {
   transform: rotate(180deg);
 }
@@ -89,9 +76,4 @@
 
 .c-menu-icon--cross.js-c-menu-icon--open span::after {
   transform: translateY(0) rotate(-45deg);
-}
-
-.c-menu-icon--cross.js-c-menu-icon--open svg {
-  transform: rotate(-180deg);
-  stroke-dashoffset: 0;
 }

@@ -1,8 +1,10 @@
 <div class="c-nav">
   <nav class="o-container c-nav__container">
     {% render '@logo', {title: 'Département'} %}
-    <a class="c-menu-icon c-menu-icon--cross" href="#nowhere">
+    <a class="c-nav__toggle" href="#nowhere">
+      <div class="c-menu-icon c-menu-icon--cross">
         <span>Open menu</span>
+      </div>
     </a>
     <div class="c-nav__list-container">
       <div class="c-nav__search-bar">
