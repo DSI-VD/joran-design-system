@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Refactor _quotes_ component bay adding a variant for big quotes
+
 ### Added
 
 - Added support for [CSS Extend Rule](https://github.com/csstools/postcss-extend-rule).

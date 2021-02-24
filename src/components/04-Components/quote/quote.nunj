@@ -1,25 +1,30 @@
 <div class="c-quote">
     <div class="o-container">
-        <h3 class="c-quote__heading">Témoignage</h3>
+        {% if heading %}<h3 class="c-quote__heading">Témoignage</h3>{% endif %}
         <blockquote>
             <span class="c-quote__text">{{ quote }}</span>
-            <footer class="c-quote__footer" itemscope itemtype="http://schema.org/Person">
+            {% if reference %}
+            <footer class="c-quote__footer">
+                {% if reference.avatar %}
                 {% render '@avatar' %}
-                {% if author and function %}
-                <span class="c-quote__author">
-                {% if author -%}
-                    <span class="c-quote__author-item">
-                    <span class="u-visually-hidden">Auteur: </span><span itemprop="name">{{ author }}</span>
+                {% endif %}
+                <span class="c-quote__reference">
+                {% if reference.author -%}
+                    <span class="c-quote__reference-item">
+                        <span class="u-visually-hidden">Auteur: </span>{{ reference.author }}
                     </span>
                 {%- endif %}
-                {% if function -%}
-                    <span class="c-quote__author-item">
-                    <span class="u-visually-hidden">, Fonction: </span><span itemprop="jobTitle">{{ function }}</span>
+                {% if reference.function -%}
+                    <span class="c-quote__reference-item">
+                        <span class="u-visually-hidden">, Fonction: </span>{{ reference.function }}
                     </span>
+                {%- endif %}
+                {% if reference.cite -%}
+                <cite class="c-quote__reference-item">{{ reference.cite }}</cite>
                 {%- endif %}
                 </span>
-                {% endif %}
             </footer>
+            {% endif %}
         </blockquote>
     </div>
 </div>
