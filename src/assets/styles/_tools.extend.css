@@ -32,6 +32,7 @@
         font-bold
         text-2xl
     ;
+    line-height: 1.3333;
     
     @screen lg {
         font-size: 1.6666667em;
@@ -49,7 +50,8 @@
         uppercase
         font-medium
     ;
-    
+    line-height: 1.6
+
     @screen lg {
         font-size: 1.3333333em;
     }
@@ -64,6 +66,7 @@
         text-primary
         text-base
     ;
+    line-height: 1.5;
 }
 
 %h5 {
