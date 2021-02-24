@@ -20,6 +20,7 @@
     rounded-md
     no-underline
     text-sm
+    flex
 }
 
 .c-pagination__navigation a:hover,
@@ -43,7 +44,7 @@
     items-center 
     px-2 
     py-2
-    mr-4
+    mr-3
     rounded-md
     bg-primary-600 
     font-medium 
@@ -67,8 +68,8 @@
     inline-flex 
     bg-primary-600
     text-white
-    mr-4 
-    ml-4
+    mr-3 
+    ml-3
     rounded-md
     items-center 
     px-4 
