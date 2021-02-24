@@ -72,18 +72,16 @@
       uppercase
       text-lg
       text-indigo-600
+      inline-block
       ;
+  }
+
+  .c-testimonial__next a:hover {
+    @apply
+     tracking-wider
+     ;
   }
 
   .c-testimonial__next a::before {
-    @apply
-      content: ">";
-      display:inline-block
-      ;
+    content: "> \00a0";
   }
-
- .c-testimonial__next a:hover {
-   @apply
-    tracking-wider
-    ;
- }
