@@ -14,6 +14,8 @@
 
 
 
+
+
 /* -------------------------------------
    # Main
    ------------------------------------- */
@@ -21,9 +23,163 @@
 .c-footer__main {
   @apply
     font-bold
-    text-sm
+    text-base
+    uppercase
+    
+    flex
+    flex-col
     ;
 }
+
+@screen md {
+  .c-footer__main {
+    @apply
+      flex-row
+    ;
+  }
+}
+
+
+
+
+
+/* -----------------------------------
+ # Page
+ ----------------------------------- */
+
+.c-footer__page {
+  @apply
+    mt-4
+  ;
+}
+
+@screen md {
+  .c-footer__page {
+    @apply
+      mt-0
+      w-1/4
+    ;
+  }
+}
+
+
+
+/***
+ * Liste page
+ */
+.c-footer__list-page {
+  @apply
+    text-center
+  ;
+}
+
+@screen md {
+  .c-footer__list-page {
+    @apply
+      text-left
+    ;
+  }
+}
+
+.c-footer__list-page > li + li {
+  @apply
+    mt-4
+  ;
+}
+
+
+
+
+
+/* -----------------------------------
+ # Social
+ ----------------------------------- */
+ 
+.c-footer__social {
+  @apply
+    mt-4
+  ;
+}
+
+@screen md {
+  .c-footer__social {
+    @apply
+      mt-0
+      w-1/4
+    ;
+  }
+}
+
+
+
+/***
+ * Social link
+ */
+
+.c-footer__list-social {
+  @apply
+    flex
+    flex-row
+    flex-wrap
+    
+    justify-center
+  ;
+}
+
+@screen md {
+  .c-footer__list-social {
+    @apply
+      justify-start
+    ;
+  }
+}
+
+.c-footer__list-social > li {
+  @apply
+    p-2
+  ;
+}
+
+@screen md {
+  .c-footer__list-social > li {
+    @apply
+      p-0
+    ;
+  }
+  
+  .c-footer__list-social > li + li{
+    @apply
+      pl-4
+    ;
+  }
+}
+
+/* -----------------------------------
+ # Logo
+ ----------------------------------- */
+
+.c-footer__logo {
+  @apply
+    order-first
+  ;
+}
+
+@screen md {
+  .c-footer__logo {
+    @apply
+      order-last
+      ml-auto
+    ;
+  }
+}
+
+.c-footer__logo > * {
+  @apply
+    mx-auto
+  ;
+}
+
+
 
 
 
@@ -33,6 +189,7 @@
 
 .c-footer__secondary {
   @apply
+    text-center
     mt-12
     text-xs
     uppercase
@@ -41,35 +198,6 @@
 
 
 
-/* -----------------------------------
-   # Grid
-   ----------------------------------- */
-
-/**
- * 1. Align logo on the right
- */
-.c-footer__grid {
-  @apply
-    grid
-    grid-cols-2
-    gap-12
-    ;
-}
-
-@screen sm {
-  .c-footer__grid {
-    @apply
-      grid-cols-3
-      gap-24
-      ;
-  }
-
-  .c-footer__grid div.c-footer__grid-item:last-of-type {
-    @apply
-      ml-auto /* [1] */
-      ;
-  }
-}
 
 
 /* -------------------------------------
@@ -82,6 +210,10 @@
     ;
 }
 
+
+
+
+
 /* -----------------------------------
    # Paragraph
    ----------------------------------- */
@@ -93,16 +225,6 @@
 }
 
 
-
-/* -----------------------------------
-   # List
-   ----------------------------------- */
-
-.c-footer ul > li + li {
-  @apply
-    mt-4
-    ;
-}
 
 
 
