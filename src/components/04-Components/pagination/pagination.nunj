@@ -44,6 +44,6 @@
           </a>
         </li>
         {% endif %}
-      </nav>
+      </ul>
     </div>
 </div>
