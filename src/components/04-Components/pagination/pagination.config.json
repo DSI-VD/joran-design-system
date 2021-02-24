@@ -1,16 +1,28 @@
 {
   "status": "wip",
   "context": {
-    "previous": "Précédent",
-    "next": "Suivant",
-    "previous": false
+    "previousLabel": "Précédent",
+    "abbrPrevLabel": "Préc.",
+    "nextLabel": "Suivant",
+    "abbrNextLabel": "Suiv.",
+    "previous": false,
+    "browsePages": false,
+    "next": true
   },
   "variants": [
+    {
+      "name": "Previous and next result",
+      "context": {
+        "previous": true,
+        "innerPageSet": true
+      }
+    },
     {
       "name": "Previous and next page",
       "context": {
         "previous": true,
-        "innerPageSet": true
+        "innerPageSet": false,
+        "browsePages": true
       }
     }
   ]
