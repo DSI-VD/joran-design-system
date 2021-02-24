@@ -29,7 +29,7 @@
     "test": "npm run lint",
     "watch": "npm run build && run-p watch:*",
     "watch:fractal": "npx fractal start --sync",
-    "watch:scripts": "chokidar \"src/assets/**/*.js\" -c \"npm run build:scripts\" --initial",
+    "watch:scripts": "chokidar \"src/**/*.js\" -c \"npm run build:scripts\" --initial",
     "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial",
     "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial"
   },

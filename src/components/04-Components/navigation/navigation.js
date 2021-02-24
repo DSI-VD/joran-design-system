@@ -5,6 +5,7 @@ init = () => {
     let nav = document.querySelector('.c-nav');
     let navOpen = false;
     let currentLevel = 0;
+    let navToggle = document.querySelector('.c-menu-icon');
 
     const closeAllTabs = (event) => {
         document.querySelectorAll('.c-nav__list').forEach(item => {
@@ -68,13 +69,15 @@ init = () => {
     });
 
     // Open navigation
-    document.querySelector('.c-nav__toggle').addEventListener('click', event => {
+    navToggle.addEventListener('click', event => {
         if (!navOpen) {
             document.body.classList.add('js-b-nav--open');
+            navToggle.classList.add('js-c-menu-icon--open');
             nav.classList.add('js-c-nav--open');
             navOpen = true;
         } else {
             document.body.classList.remove('js-b-nav--open');
+            navToggle.classList.remove('js-c-menu-icon--open');
             nav.classList.remove('js-c-nav--open');
             closeAllTabs(event);
             navOpen = false;

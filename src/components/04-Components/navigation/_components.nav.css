@@ -55,27 +55,6 @@
 }
 
 /* -----------------------------------
- # c-nav__toggle
- ----------------------------------- */
-.c-nav__toggle {
-  @apply
-    ml-auto
-  ;
-}
-
-.c-nav__toggle:focus {
-  @apply
-    outline-focus
-  ;
-}
-
-.c-nav__toggle svg {
-  @apply
-    h-4
-  ;
-}
-
-/* -----------------------------------
  # c-nav__search-bar
  ----------------------------------- */
 .c-nav__search-bar {
@@ -156,7 +135,7 @@
 }
 
 .js-c-nav__list--hide {
-  transform: translateX(-100vw);
+  transform: translate3d(-100vw, 0, 0);
 }
 
 /* -----------------------------------
@@ -206,13 +185,18 @@
 .c-nav__level-indicator li {
   @apply
     inline
+  ;
+}
+
+.c-nav__level-indicator a {
+  @apply
     pl-3
     mr-1
     relative
   ;
 }
 
-.c-nav__level-indicator li::before {
+.c-nav__level-indicator a::before {
   @apply
     absolute
     left-0
