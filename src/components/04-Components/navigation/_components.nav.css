@@ -5,7 +5,7 @@
 /* -----------------------------------
    # b-nav--open (class for body when nav is open)
    ----------------------------------- */
-.b-nav--open {
+.js-b-nav--open {
   overflow-y: hidden;
 }
 
@@ -27,7 +27,7 @@
   will-change: background-color;
 }
 
-.c-nav--open {
+.js-c-nav--open {
   @apply
     bg-primary-600
   ;
@@ -35,7 +35,7 @@
   height: 100vh;
 }
 
-.c-nav--sticky {
+.js-c-nav--sticky {
   @apply
     bg-primary-600
   ;
@@ -113,7 +113,7 @@
   ;
 }
 
-.c-nav--open .c-nav__list-container {
+.js-c-nav--open .c-nav__list-container {
   @apply
     visible
     block
@@ -148,14 +148,14 @@
   z-index: 0;
 }
 
-.c-nav__list--open {
+.js-c-nav__list--open {
   opacity: 1;
   visibility: visible;
   display: block;
   z-index: 100;
 }
 
-.c-nav__list--hide {
+.js-c-nav__list--hide {
   transform: translateX(-100vw);
 }
 

@@ -8,8 +8,8 @@ init = () => {
 
     const closeAllTabs = (event) => {
         document.querySelectorAll('.c-nav__list').forEach(item => {
-            item.classList.remove('c-nav__list--open');
-            item.classList.remove('c-nav__list--hide');
+            item.classList.remove('js-c-nav__list--open');
+            item.classList.remove('js-c-nav__list--hide');
             levelIndicator.querySelectorAll('li').forEach(item => {
                 levelIndicator.removeChild(item)
             })
@@ -17,15 +17,15 @@ init = () => {
         currentLevel = 0;
     };
 
-    const closeSecondLevelTabs = (event) => {
-        document.querySelectorAll('.c-nav__list--level-1').forEach(item => {
-            item.classList.remove('c-nav__list--hide');
+    const closeLevelTabs = (event, level) => {
+        document.querySelectorAll('.c-nav__list--level-' + (level - 1)).forEach(item => {
+            item.classList.remove('js-c-nav__list--hide');
         });
-        document.querySelectorAll('.c-nav__list--level-2').forEach(item => {
-            item.classList.remove('c-nav__list--open');
+        document.querySelectorAll('.c-nav__list--level-' + level).forEach(item => {
+            item.classList.remove('js-c-nav__list--open');
         });
-        let secondLevel = levelIndicator.querySelector('li:nth-child(2)');
-        levelIndicator.removeChild(secondLevel);
+        let levelElement = levelIndicator.querySelector('li:nth-child(' + level + ')');
+        levelIndicator.removeChild(levelElement);
         currentLevel = 1;
     };
 
@@ -37,7 +37,7 @@ init = () => {
         levelLink.appendChild(levelText);
         if (target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
             levelLink.addEventListener('click', event => {
-                closeSecondLevelTabs(event)
+                closeLevelTabs(event, 2)
             })
         } else {
             levelLink.addEventListener('click', event => {
@@ -54,12 +54,12 @@ init = () => {
         item.addEventListener('click', event => {
             if (currentLevel === parseInt(event.target.parentNode.dataset.level)) {
                 levelIndicator.appendChild(createLevelIndicator(event.target));
-                event.target.closest('.c-nav__list').classList.add('c-nav__list--hide');
-                event.target.parentNode.querySelector('.c-nav__list').classList.add('c-nav__list--open');
+                event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
+                event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
                 currentLevel++;
             } else {
                 if (event.target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
-                    closeSecondLevelTabs(event)
+                    closeLevelTabs(event, 2)
                 } else {
                     closeAllTabs(event)
                 }
@@ -70,12 +70,12 @@ init = () => {
     // Open navigation
     document.querySelector('.c-nav__toggle').addEventListener('click', event => {
         if (!navOpen) {
-            document.body.classList.add('b-nav--open');
-            nav.classList.add('c-nav--open');
+            document.body.classList.add('js-b-nav--open');
+            nav.classList.add('js-c-nav--open');
             navOpen = true;
         } else {
-            document.body.classList.remove('b-nav--open');
-            nav.classList.remove('c-nav--open');
+            document.body.classList.remove('js-b-nav--open');
+            nav.classList.remove('js-c-nav--open');
             closeAllTabs(event);
             navOpen = false;
         }
@@ -87,9 +87,9 @@ init = () => {
         if (!ticking) {
             window.requestAnimationFrame(() => {
                 if (lastScrollPos > 50) {
-                    nav.classList.add('c-nav--sticky')
+                    nav.classList.add('js-c-nav--sticky')
                 } else {
-                    nav.classList.remove('c-nav--sticky')
+                    nav.classList.remove('js-c-nav--sticky')
                 }
                 ticking = false;
             });
