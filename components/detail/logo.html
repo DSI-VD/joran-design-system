@@ -83,7 +83,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
 
 </div>
 
@@ -177,9 +177,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-03d3a03cf88325dba57a8e8a903f0fb5-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">object</span> <span class="hljs-attr">data</span>=<span class="hljs-string">&quot;../../assets/vectors/logo.svg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/svg+xml&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;yourfallback.jpg&quot;</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">object</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/vectors/logo.svg&quot;</span> /&gt;</span></pre>
         
     </code>
 </div>
@@ -187,9 +185,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-03d3a03cf88325dba57a8e8a903f0fb5-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">object</span> <span class="hljs-attr">data</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/vectors/logo.svg&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;image/svg+xml&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;yourfallback.jpg&quot;</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">object</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/vectors/logo.svg&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> /&gt;</span></span></pre>
     </code>
 </div>
 
@@ -235,7 +231,7 @@
 
 <span class="hljs-selector-class">.c-logo</span> {
   <span class="hljs-keyword">@apply</span>
-    w-<span class="hljs-number">12</span>
+    w-<span class="hljs-number">8</span>
     ;
 }
 </pre>
@@ -254,7 +250,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">222 Bytes</span>
+                    <span class="Meta-value">221 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -924,7 +920,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1028,7 +1024,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1054,7 +1050,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1257,7 +1253,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.13
+                            0.0.14
                         
                     </dd>
                 </div>
@@ -1266,8 +1262,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-23T14:47:57.938Z">
-                                23.02.2021 à 15:47:57
+                            <time datetime="2021-02-24T09:55:17.924Z">
+                                24.02.2021 à 10:55:17
                             </time>
                         
                     </dd>
@@ -1591,8 +1587,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--pushed.html" data-role="tree-link" data-pjax data-handle="grid">
-                <span>Pushed</span>
+            <a class="Tree-entityLink" href="grid--item-centered-reverse.html" data-role="tree-link" data-pjax data-handle="grid">
+                <span>Item Centered Reverse</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1617,8 +1613,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--reverse.html" data-role="tree-link" data-pjax data-handle="grid">
-                <span>Reverse</span>
+            <a class="Tree-entityLink" href="grid--pushed.html" data-role="tree-link" data-pjax data-handle="grid">
+                <span>Pushed</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1945,7 +1941,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
@@ -1971,7 +1967,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
