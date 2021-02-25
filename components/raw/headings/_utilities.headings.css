@@ -12,11 +12,7 @@
   ----------------------------------- */
 
 .u-subhead {
-  @apply
-    text-primary
-    text-2xl
-    uppercase
-  ;
+  @extend %subhead;
 }
 
 /* -----------------------------------
@@ -24,24 +20,7 @@
  ----------------------------------- */
 
 .u-h1 {
-  @apply
-    text-primary
-    font-bold
-    text-4xl
-    uppercase
-  ;
-}
-
-@screen lg {
-  .u-h1 {
-    font-size: 2.66667em;
-  }
-}
-
-@screen xl {
-  .u-h1 {
-    font-size: 2.8em;
-  }
+  @extend %h1;
 }
 
 /* -----------------------------------
@@ -49,23 +28,7 @@
  ----------------------------------- */
 
 .u-h2 {
-  @apply
-    text-primary
-    font-bold
-    text-2xl
-;
-}
-
-@screen lg {
-  .u-h2 {
-    font-size: 1.6666667em;
-  }
-}
-
-@screen xl {
-  .u-h2 {
-    font-size: 1.6666667em;
-  }
+  @extend %h2;
 }
 
 /* -----------------------------------
@@ -73,24 +36,7 @@
  ----------------------------------- */
 
 .u-h3 {
-  @apply
-    text-primary
-    text-xl
-    uppercase
-    font-medium
-;
-}
-
-@screen lg {
-  .u-h3 {
-    font-size: 1.3333333em;
-  }
-}
-
-@screen xl {
-  .u-h3 {
-    font-size: 1.5em;
-  }
+  @extend %h3;
 }
 
 /* -----------------------------------
@@ -98,10 +44,7 @@
  ----------------------------------- */
 
 .u-h4 {
-  @apply
-    text-primary
-    text-base
-;
+  @extend %h4;
 }
 
 /* -----------------------------------
@@ -109,10 +52,7 @@
  ----------------------------------- */
 
 .u-h5 {
-  @apply
-    text-primary
-    text-base
-;
+  @extend %h5;
 }
 
 /* -----------------------------------
@@ -120,8 +60,5 @@
  ----------------------------------- */
 
 .u-h6 {
-  @apply
-    text-primary
-    text-base
-;
+  @extend %h6;
 }

@@ -91,7 +91,7 @@
 /***
  * Clamp all level except the last one
  */
-.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link-text{
+.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link-text {
   @apply
     line-clamp-1
   ;
