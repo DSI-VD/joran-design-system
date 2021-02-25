@@ -8,30 +8,34 @@
       ;
   }
 
+  .c-testimonial__row {
+    @apply
+      flex
+      flex-wrap
+      ;
+  }
+
   .c-testimonial__facecontainer {
     @apply
-      w-1/4 
       align-top
       max-w-lg
+      w-full
+      text-center
+      sd:m-auto
       ;
   }
 
   .c-testimonial__textcontainer {
     @apply
-      w-3/4
       pr-6
       max-w-lg
+      w-full
       ;
   }
 
   .c-testimonial__face {
     @apply
       rounded-full
-      h-48
-      w-48
-      flex
-      items-center
-      justify-center
       shadow
       bg-primary-600
       ;
