@@ -17,7 +17,7 @@
     flex-nowrap
     items-center
     gap-2
-    max-w-min
+    max-w-max
     transition
     ;
 }
