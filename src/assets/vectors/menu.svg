@@ -1,6 +1,1 @@
-<svg id="Groupe_5" data-name="Groupe 5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <path id="Tracé_2" data-name="Tracé 2" d="M0,0H24V24H0Z" fill="none"/>
-  <line id="Ligne_3" data-name="Ligne 3" x2="16" transform="translate(4 6)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-  <line id="Ligne_4" data-name="Ligne 4" x2="16" transform="translate(4 12)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-  <line id="Ligne_5" data-name="Ligne 5" x2="16" transform="translate(4 18)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-</svg>
+<svg data-name="Groupe 5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path data-name="Tracé 2" d="M0 0h24v24H0z" fill="none"/><path data-name="Ligne 3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16"/><path data-name="Ligne 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16"/><path data-name="Ligne 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 18h16"/></svg>

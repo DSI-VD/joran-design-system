@@ -5,9 +5,9 @@
       "hidden": true
     },
     {
-      "name": "arrow-down",
+      "name": "arrow-up",
       "context": {
-        "src": "/assets/vectors/arrow-down.svg"
+        "src": "/assets/vectors/arrow-up.svg"
       }
     },
     {
@@ -17,9 +17,45 @@
       }
     },
     {
+      "name": "arrow-down",
+      "context": {
+        "src": "/assets/vectors/arrow-down.svg"
+      }
+    },
+    {
+      "name": "arrow-left",
+      "context": {
+        "src": "/assets/vectors/arrow-left.svg"
+      }
+    },
+    {
+      "name": "arrow-right",
+      "context": {
+        "src": "/assets/vectors/arrow-right.svg"
+      }
+    },
+    {
+      "name": "chevron-up",
+      "context": {
+        "src": "/assets/vectors/chevron-up.svg"
+      }
+    },
+    {
+      "name": "chevron-right",
+      "context": {
+        "src": "/assets/vectors/chevron-right.svg"
+      }
+    },
+    {
       "name": "chevron-down",
       "context": {
         "src": "/assets/vectors/chevron-down.svg"
+      }
+    },
+    {
+      "name": "chevron-left",
+      "context": {
+        "src": "/assets/vectors/chevron-left.svg"
       }
     },
     {
