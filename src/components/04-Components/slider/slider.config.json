@@ -1,0 +1,70 @@
+{
+  "context": {
+    "title": "slider",
+    "items": [
+      {
+        "title": "Zombie ipsum reversus ab viral inferno",
+        "url": "#nowhere",
+        "date": "12.12.2021",
+        "image": {
+          "src": "https://source.unsplash.com/whli_m_1Iek",
+          "alt": "text alternatif"
+        }
+      },
+      {
+        "title": "Nam rick grimes malum cerebro",
+        "url": "#nowhere",
+        "date": "12.12.2021",
+        "image": {
+          "src": "https://source.unsplash.com/J6DGlnyOzuI",
+          "alt": "text alternatif 2"
+        }
+      },
+      {
+        "title": "De carne lumbering morbo vel maleficia gorger omero mindless mortuis soulless",
+        "url": "#nowhere",
+        "date": "12.12.2021",
+        "image": {
+          "src": "https://source.unsplash.com/a8r2KKLSntA",
+          "alt": "text alternatif 3"
+        }
+      },
+      {
+        "title": "Animata corpora quaeritis",
+        "url": "#nowhere",
+        "date": "12.12.2021",
+        "image": {
+          "src": "https://source.unsplash.com/Tr55sj841Fg",
+          "alt": "text alternatif"
+        }
+      },
+      {
+        "title": "Summus brains sit​​, morbo vel maleficia?",
+        "url": "#nowhere",
+        "date": "12.12.2021",
+        "image": {
+          "src": "https://source.unsplash.com/VFOFgSNy2E0",
+          "alt": "text alternatif"
+        }
+      },
+      {
+        "title": "De apocalypsi gorger omero undead survivor dictum mauris",
+        "url": "#nowhere",
+        "date": "12.12.2021",
+        "image": {
+          "src": "https://source.unsplash.com/x6i4Ozqj1Xs",
+          "alt": "text alternatif"
+        }
+      },
+      {
+        "title": "Hi mindless mortuis soulless creaturas",
+        "url": "#nowhere",
+        "date": "12.12.2021",
+        "image": {
+          "src": "https://source.unsplash.com/v0_COzkLwWM",
+          "alt": "text alternatif"
+        }
+      }
+    ]
+  }
+}

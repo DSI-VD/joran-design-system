@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Added _slider_ component with basic style
 - Added support for [CSS Extend Rule](https://github.com/csstools/postcss-extend-rule).
 
 ## [0.0.14] - 2021-02-24
