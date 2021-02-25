@@ -39,24 +39,24 @@ fractal.components.set('ext', '.nunj'); // Look for files with a .nunj file exte
 fractal.components.set('default.status', 'wip');
 fractal.components.set('statuses', {
   prototype: {
-      label: "Prototype",
-      description: "Do not implement.",
-      color: "#FF3333"
+    label: 'Prototype',
+    description: 'Do not implement.',
+    color: '#FF3333'
   },
   wip: {
-      label: "WIP",
-      description: "Work in progress. Implement with caution.",
-      color: "#FF9233"
+    label: 'WIP',
+    description: 'Work in progress. Implement with caution.',
+    color: '#FF9233'
   },
   review: {
-    label: "Waiting for review",
-    description: "Waiting for BIC review",
-    color: "#a544ea"
+    label: 'Waiting for review',
+    description: 'Waiting for BIC review',
+    color: '#a544ea'
   },
   ready: {
-      label: "Ready",
-      description: "Ready to implement.",
-      color: "#29CC29"
+    label: 'Ready',
+    description: 'Ready to implement.',
+    color: '#29CC29'
   }
 });
 /* Tell Fractal where the documentation pages will live */
