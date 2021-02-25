@@ -25,7 +25,7 @@
     font-bold
     text-base
     uppercase
-    
+
     flex
     flex-col
     ;
@@ -94,7 +94,7 @@
 /* -----------------------------------
  # Social
  ----------------------------------- */
- 
+
 .c-footer__social {
   @apply
     mt-4
@@ -121,7 +121,7 @@
     flex
     flex-row
     flex-wrap
-    
+
     justify-center
   ;
 }
@@ -146,8 +146,8 @@
       p-0
     ;
   }
-  
-  .c-footer__list-social > li + li{
+
+  .c-footer__list-social > li + li {
     @apply
       pl-4
     ;

@@ -9,11 +9,13 @@ module.exports = {
           'apply',
           'variants',
           'responsive',
-          'screen'
+          'screen',
+          'extend'
         ]
       }
     ],
     'declaration-block-trailing-semicolon': null,
     'no-descending-specificity': null
-  }
+  },
+  ignoreFiles: ['src/assets/styles/_elements.a11y.css']
 };
