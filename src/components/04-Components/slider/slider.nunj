@@ -2,6 +2,7 @@
     <div class="o-container">
         <h2 class="c-slider__heading">{{ title }}</h2>
         {% if items %}
+        <div class="c-slider__container">
         <ul class="c-slider__list">
             {% for item in items %}
             <li class="c-slider__list-item">
@@ -16,5 +17,6 @@
             {% endfor %}
         </ul>
         {% endif %}
+        </div>
     </div>
 </div>
