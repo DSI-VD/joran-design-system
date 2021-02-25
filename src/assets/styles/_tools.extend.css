@@ -50,7 +50,7 @@
         uppercase
         font-medium
     ;
-    line-height: 1.6
+    line-height: 1.6;
 
     @screen lg {
         font-size: 1.3333333em;
