@@ -1,0 +1,68 @@
+.c-timeline {
+  @apply
+    py-24
+  ;
+
+  background-image: linear-gradient(180deg, #5d50db 0%, #463d9d 100%);
+  color: #fcfcfc;
+}
+
+.c-timeline h2 {
+  color: #fcfcfc;
+  letter-spacing: -0.010625rem;
+  font-size: 2.125rem;
+  margin-bottom: 0.6875rem;
+}
+
+.c-timeline__link {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.05625rem;
+  line-height: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.c-timeline__items {
+  @apply
+    flex
+    mt-12
+  ;
+}
+
+.c-timeline__item {
+  @apply
+    flex
+  ;
+}
+
+.c-timeline__control {
+  @apply
+    flex
+    justify-center
+    mt-12
+    lg:justify-start
+  ;
+}
+
+.c-timeline__indicator {
+  @apply
+    order-1
+    lg:order-first
+    lg:flex-grow
+  ;
+}
+
+.c-timeline__navigation--left {
+  @apply
+    order-first
+    lg:order-2
+  ;
+}
+
+.c-timeline__navigation--right {
+  @apply
+    order-last
+  ;
+}
