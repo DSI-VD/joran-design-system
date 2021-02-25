@@ -126,6 +126,9 @@ module.exports = {
             }
           }
         }
+      },
+      screens: {
+        'print': {'raw': 'print'}
       }
     }
   },
