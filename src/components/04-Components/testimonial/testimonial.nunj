@@ -1,6 +1,6 @@
 <div class="c-testimonial">
     <div class="o-container">
-        <div class="flex flex-col md:flex-row"> 
+        <div class="c-testimonial__row"> 
             <div class="c-testimonial__facecontainer">
                 <img class="c-testimonial__face" src="https://source.unsplash.com/180x180/?face" alt="This is someone" itemprop="image">
             </div>
