@@ -6,10 +6,11 @@
           <ul class="c-pagination__list">
               <li>
                   <a href="#nowhere" class="c-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                      <style type="text/css">* { fill: #fff }</style>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
                       <g>
-                        <polygon points="168.5,256.2 405.4,481 376.1,512 106.6,256.2 376.1,0 405.4,31 	"/>
+                        <g transform="rotate(90 4 7)">
+                          <path fill="none" stroke="#fffffe" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="1.5" d="M-2 4v0l6 6v0l6-6v0"/>
+                        </g>
                       </g>
                     </svg>
                     <span>{{ abbrPrevLabel }}</span>
@@ -20,10 +21,11 @@
                   <a href="#nowhere" class="c-button">
                     <span>{{ abbrNextLabel }}</span>
                     <span class="sr-only">:</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                      <style type="text/css">* { fill: #fff }</style>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
                       <g>
-                        <polygon points="343.8,255.8 106.1,31 135.5,0 405.9,255.8 135.5,512 106.1,481 	"/>
+                        <g transform="rotate(-90 4 7)">
+                          <path fill="none" stroke="#fffffe" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="1.5" d="M-2 4v0l6 6v0l6-6v0"/>
+                        </g>
                       </g>
                     </svg>
                   </a>
