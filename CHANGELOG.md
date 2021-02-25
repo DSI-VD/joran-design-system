@@ -11,9 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Change how _button_ are styled. Now, you have to add `.c-button--default` to have the default style
 - Refactor _quotes_ component bay adding a variant for big quotes
+- Change icons in _footer_, _arrow_ and _hero_
 
 ### Added
 
+- New SVG components with all icons
 - New _button--transparent-alt_ variant
 - Added _slider_ component with basic style
 - Added support for [CSS Extend Rule](https://github.com/csstools/postcss-extend-rule).
