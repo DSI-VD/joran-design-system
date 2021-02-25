@@ -1,0 +1,6 @@
+<svg id="Groupe_3" data-name="Groupe 3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Tracé_1" data-name="Tracé 1" d="M0,0H24V24H0Z" fill="none"/>
+  <circle id="Ellipse_4" data-name="Ellipse 4" cx="9" cy="9" r="9" transform="translate(3 3)" fill="none" stroke="#5d50db" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <line id="Ligne_1" data-name="Ligne 1" y2="4" transform="translate(12 8)" fill="none" stroke="#5d50db" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <line id="Ligne_2" data-name="Ligne 2" x2="0.01" transform="translate(12 16)" fill="none" stroke="#5d50db" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+</svg>
