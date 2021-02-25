@@ -25,9 +25,6 @@
       <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim.</p>
     </div>
   </div>
-  <div class="o-container">
-    {% render '@text-media' %}
-  </div>
 
   <div class="o-container">
     <div class="o-prose">
