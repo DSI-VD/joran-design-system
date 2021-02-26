@@ -437,16 +437,24 @@
       block
       
       right-<span class="hljs-number">0</span>
-      top-<span class="hljs-number">0</span>
+      -top-<span class="hljs-number">2</span>
       
-      h-full
-      w-<span class="hljs-number">5</span>
+      w-<span class="hljs-number">2</span>
       
-      bg-gradient-to-r
-      from-transparent
+      /* bg-gradient-to-r
+      from-transparent */
       /* to-black */
-      bg-opacity-<span class="hljs-number">20</span>
+      /* bg-opacity-<span class="hljs-number">20</span> */
    ;
+   --tw-gradient-<span class="hljs-selector-tag">from</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+   --tw-gradient-<span class="hljs-selector-tag">to</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
+   --tw-gradient-stops: <span class="hljs-built_in">var</span>(--tw-gradient-from), <span class="hljs-built_in">var</span>(--tw-gradient-to, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>));
+   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(to right, <span class="hljs-built_in">var</span>(--tw-gradient-stops));
+   
+   <span class="hljs-attribute">border-top-left-radius</span>: <span class="hljs-number">100%</span> <span class="hljs-number">30%</span>;
+   <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">100%</span> <span class="hljs-number">30%</span>;
+     
+   <span class="hljs-attribute">height</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">100%</span> - <span class="hljs-number">3rem</span>);
    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
    
 }
@@ -570,7 +578,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">2.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -2044,8 +2052,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-25T15:39:58.568Z">
-                                25.02.2021 à 16:39:58
+                            <time datetime="2021-02-26T13:42:25.977Z">
+                                26.02.2021 à 14:42:25
                             </time>
                         
                     </dd>
