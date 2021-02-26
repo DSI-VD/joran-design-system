@@ -74,7 +74,7 @@
         overflow-x-scroll
    ;
     
-   scrollbar-color: white var(--color__primary--900);
+   scrollbar-color: #fcfcfc var(--color__primary--900);
 }
 
 

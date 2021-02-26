@@ -22,7 +22,7 @@ module.exports = {
           100: 'var(--color__primary--100)'
         },
         white: {
-          DEFAULT: '#ffffff'
+          DEFAULT: '#fcfcfc'
         },
         black: {
           DEFAULT: '#000000'
