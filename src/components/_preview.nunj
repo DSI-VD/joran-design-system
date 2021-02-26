@@ -27,6 +27,7 @@
     <!-- Scripts -->
     <script src="{{ '/assets/scripts/alpine.js' | path  }}"></script>
     <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
+    <script src="{{ '/assets/scripts/timeline.js' | path  }}"></script>
   </head>
 
   <body onload="init();">

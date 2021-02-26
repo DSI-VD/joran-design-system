@@ -3,6 +3,7 @@
     py-24
   ;
 
+  overflow-x: hidden;
   background-image: linear-gradient(180deg, #5d50db 0%, #463d9d 100%);
   color: #fcfcfc;
 }
@@ -26,15 +27,69 @@
 
 .c-timeline__items {
   @apply
-    flex
+    relative
     mt-12
   ;
+
+  transition: transform 0.35s ease-in-out;
 }
 
 .c-timeline__item {
+  width: 282px;
+  display: block;
+  position: absolute;
+}
+
+.c-timeline__item h3 {
+  color: #fcfcfc;
+  font-size: 2.125rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.010625rem;
+  line-height: 2.375rem;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  will-change: letter-spacing;
+  transition: letter-spacing 0.15s ease-in-out;
+}
+
+.c-timeline__item p {
+  color: #dddaf8;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.000625rem;
+  line-height: 24px;
+  text-align: left;
+  position: relative;
+}
+
+.c-timeline__item-content {
   @apply
-    flex
+    relative
   ;
+}
+
+.c-timeline__item:hover img {
+  opacity: 1;
+}
+
+.c-timeline__item:hover h3 {
+  letter-spacing: 0.03125rem;
+}
+
+.c-timeline__item-content img {
+  @apply
+    absolute
+  ;
+
+  border-radius: 5px;
+  top: -166%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.55s linear;
+  will-change: opacity;
 }
 
 .c-timeline__control {
@@ -42,6 +97,7 @@
     flex
     justify-center
     mt-12
+    items-center
     lg:justify-start
   ;
 }
@@ -58,11 +114,13 @@
   @apply
     order-first
     lg:order-2
+    mr-5
   ;
 }
 
 .c-timeline__navigation--right {
   @apply
     order-last
+    ml-5
   ;
 }

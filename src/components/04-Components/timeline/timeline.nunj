@@ -2,47 +2,77 @@
     <div class="o-container">
         <h2 class="u-h2">Dates clés</h2>
         <a href="#nowhere" class="c-timeline__link">Lire la suite</a>
-        <div class="c-timeline__items">
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
-            <div class="c-timeline__item">
-                <h3>XX.XX – XX.XX</h3>
-                <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-            </div>
+        <div class="c-timeline__items" id="timeline1">
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
+            <a href="#nowhere" class="c-timeline__item">
+                <div class="c-timeline__item-content">
+                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <h3>XX.XX – XX.XX</h3>
+                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                </div>
+            </a>
         </div>
         <div class="c-timeline__control">
             <div class="c-timeline__indicator">indicateur</div>
