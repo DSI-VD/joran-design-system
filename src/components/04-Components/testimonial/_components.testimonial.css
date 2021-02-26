@@ -16,12 +16,12 @@
   }
 
   .c-testimonial__facecontainer {
+    padding-left: 6.375rem;
     @apply
       align-top
       max-w-lg
       w-full
       text-center
-      sd:m-auto
       ;
   }
 
