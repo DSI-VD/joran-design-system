@@ -27,16 +27,24 @@
       block
       
       right-0
-      top-0
+      -top-2
       
-      h-full
-      w-5
+      w-2
       
-      bg-gradient-to-r
-      from-transparent
+      /* bg-gradient-to-r
+      from-transparent */
       /* to-black */
-      bg-opacity-20
+      /* bg-opacity-20 */
    ;
+   --tw-gradient-from: rgba(0, 0, 0, 0);
+   --tw-gradient-to: rgba(0, 0, 0, 0.2);
+   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+   
+   border-top-left-radius: 100% 30%;
+   border-bottom-left-radius: 100% 30%;
+     
+   height: calc(100% - 3rem);
    content: "";
    
 }
