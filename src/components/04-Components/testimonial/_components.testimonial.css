@@ -84,13 +84,20 @@
     ;
   }
 
+  /* -----------------------------------
+     # Function
+     ----------------------------------- */
   .c-testimonial__author--function {
     @apply
       block
       lg:inline
       ;
   }
-  
+
+  .c-testimonial__author--function::before {
+    content: "";
+  }
+
   /* -----------------------------------
      # Text
      ----------------------------------- */
@@ -119,4 +126,10 @@
 
   .c-testimonial__next a::before {
     content: "> \00a0";
+  }
+
+  @screen lg {
+    .c-testimonial__author--function::before {
+      content: " — ";
+    }
   }
