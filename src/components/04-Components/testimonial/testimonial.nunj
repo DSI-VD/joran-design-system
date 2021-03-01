@@ -8,10 +8,10 @@
                 <div class="c-testimonial__author">
                     {% if author and function %}
                     {% if author -%}
-                        <span class="u-visually-hidden">Auteur: </span>{{ author }}</span>
+                        <span class="u-visually-hidden">Auteur: </span><span>{{ author }}</span>
                     {%- endif %}
-                    {% if function -%}
-                        <span class="u-visually-hidden">, Fonction: </span>{{ function }}</span>
+                    {% if function %}
+                        <span class="u-visually-hidden">, Fonction: </span> <span class="c-testimonial__author--function">{{ function }}</span>
                     {%- endif %}
                     {% endif %}
                 </div>
