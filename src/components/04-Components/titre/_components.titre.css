@@ -1,0 +1,45 @@
+/* ======================================================================
+   # _components.title.css
+   ====================================================================== */
+
+.c-title__content {
+  @apply
+  max-w-prose
+  space-x-4
+  justify-center
+  ;
+}
+
+.c-title__content h2 {
+  line-height: 3.25rem;
+  letter-spacing: -0.03rem;
+  @apply
+  text-5xl
+  uppercase
+  m-4
+  ;
+}
+
+.c-title__content--content {
+  @apply
+  font-normal
+  m-4
+  ;
+}
+
+.c-title__content--more {
+  @apply
+  pt-7
+  ;
+}
+
+.c-title__content--svg {
+  transform: rotate(180deg);
+}
+
+.c-title__content--more-btn {
+  @apply
+    ml-5
+    mr-4
+    ;
+}
