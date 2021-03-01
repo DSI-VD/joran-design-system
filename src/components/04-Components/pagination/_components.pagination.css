@@ -37,6 +37,18 @@
     ;
 }
 
+.c-pagination_nav--left {
+  @apply
+    ml-5
+    ;
+}
+
+.c-pagination_nav--right {
+  @apply
+    mr-5
+    ;
+}
+
 .c-pagination__list {
   @apply
     flex
