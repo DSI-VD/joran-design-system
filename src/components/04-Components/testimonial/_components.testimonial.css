@@ -8,28 +8,28 @@
       ;
   }
 
+  /* -----------------------------------
+     # Main row
+     ----------------------------------- */
   .c-testimonial__row {
     @apply
       flex
       flex-wrap
+      pt-16
       ;
   }
 
+  /* -----------------------------------
+     # Image
+     ----------------------------------- */
   .c-testimonial__facecontainer {
-    padding-left: 6.375rem;
     @apply
       align-top
-      max-w-lg
+      max-w-md
       w-full
       text-center
-      ;
-  }
-
-  .c-testimonial__textcontainer {
-    @apply
-      pr-6
-      max-w-lg
-      w-full
+      mb-6
+      lg:px-24
       ;
   }
 
@@ -38,26 +38,57 @@
       rounded-full
       shadow
       bg-primary-600
-      ;
-  }
-  
-  .c-testimonial__header {
-    @apply
-      text-3xl
-      uppercase
-      font-bold
+      inline
+      lg:block
       ;
   }
 
   /* -----------------------------------
-     # Heading
+     # Header before text
+     ----------------------------------- */
+  .c-testimonial__header {
+    @apply
+      text-5xl
+      pb-5
+      uppercase
+      font-bold
+      text-center
+      lg:text-left
+      ;
+  }
+
+  /* -----------------------------------
+     # Text
+     ----------------------------------- */
+  .c-testimonial__textcontainer {
+    @apply
+      lg:pr-6
+      max-w-md
+      w-full
+      text-center
+      lg:text-left
+      ;
+  }
+
+  /* -----------------------------------
+     # Author
      ----------------------------------- */
   .c-testimonial__author {
     @apply
       text-lg
-      text-left
+      text-center
+      mb-16
+      lg:text-left
+      lg:mb-1.5
       uppercase
     ;
+  }
+
+  .c-testimonial__author--function {
+    @apply
+      block
+      lg:inline
+      ;
   }
   
   /* -----------------------------------
