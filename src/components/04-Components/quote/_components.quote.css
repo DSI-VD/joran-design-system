@@ -19,10 +19,12 @@
    # Heading
    ----------------------------------- */
 .c-quote__heading {
+  @extend %caption;
+
   @apply
-    text-sm
-    uppercase
     my-4
+    uppercase
+    text-black
     ;
 }
 
@@ -36,11 +38,12 @@
  * Size has to be the same as `u-h2`
  */
 .c-quote__text {
+  @extend %h2;
+
   @apply
     inline-block
-    font-bold
-    text-3xl
     max-w-prose
+    text-black
     ;
 }
 
