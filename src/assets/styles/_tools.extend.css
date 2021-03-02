@@ -78,6 +78,7 @@
   @apply
     text-primary
     text-lg
+    uppercase
     ;
   line-height: 1.3333;
 }
