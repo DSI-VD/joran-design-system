@@ -2,7 +2,7 @@
     <div class="o-container">
         <div class="c-testimonial__row"> 
             <div class="c-testimonial__facecontainer">
-                <img class="c-testimonial__face" src="https://source.unsplash.com/180x180/?face" alt="This is someone" itemprop="image">
+                {% render '@avatar--responsive', { styleModifier: "c-testimonial__face" }, true %}
             </div>
             <div class="c-testimonial__textcontainer">
                 <div class="c-testimonial__author">
