@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Refine _slider_ design. The scroll shadow on the right is smaller and more realistic
+- Refine _headings_ sizes
 
 ## [0.0.15] - 2021-02-25
 
