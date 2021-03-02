@@ -1,0 +1,154 @@
+/* ======================================================================
+   # _components.testimonial.css
+   ====================================================================== */
+
+.c-testimonial {
+    @apply
+      py-24
+      bg-gradient-to-b
+      from-primary-100
+      to-primary-400
+      rounded
+      ;
+  }
+
+  /* -----------------------------------
+     # Main row
+     ----------------------------------- */
+  .c-testimonial__flex {
+    @apply
+      flex
+      flex-col
+  }
+  
+  @screen md {
+    .c-testimonial__flex {
+      @apply
+        flex-row
+    }
+  }
+
+  /* -----------------------------------
+     # Image
+     ----------------------------------- */
+  .c-testimonial__facecontainer {
+    @apply
+      flex
+      flex-row
+      justify-center
+    ;
+  }
+  
+  @screen md {
+    .c-testimonial__facecontainer {
+      @apply
+        justify-start
+        w-1/3
+      ;
+    }
+  }
+
+  .c-testimonial__face {
+    @apply
+      mb-4
+    ;
+  }
+
+  /* -----------------------------------
+     # Header before text
+     ----------------------------------- */
+  .c-testimonial__header {
+    @extend %h1;
+    @apply
+      text-black
+      pb-5
+      text-center
+      md:text-left
+      ;
+  }
+
+  /* -----------------------------------
+     # Text
+     ----------------------------------- */
+  .c-testimonial__textcontainer {
+    @apply
+      text-center
+      ;
+  }
+  
+  @screen md {
+    .c-testimonial__textcontainer {
+      @apply
+        text-left
+        w-2/3
+        ;
+    }
+  }
+
+  /* -----------------------------------
+     # Author
+     ----------------------------------- */
+  .c-testimonial__author {
+    @extend %h4;
+    @apply
+      text-black
+      text-center
+      mb-16
+      md:text-left
+      md:mb-1.5
+    ;
+  }
+
+  /* -----------------------------------
+     # Function
+     ----------------------------------- */
+  .c-testimonial__author--function {
+    @apply
+      block
+      md:inline
+      ;
+  }
+
+  .c-testimonial__author--function::before {
+    content: "";
+  }
+
+@screen md {
+  .c-testimonial__author--function::before {
+    content: " — ";
+  }
+}
+
+
+
+  /* -----------------------------------
+     # Text
+     ----------------------------------- */
+
+  .c-testimonial__text {
+    @apply
+      mt-1.5
+      my-4
+      ;
+  }
+
+/* -----------------------------------
+ # link
+ ----------------------------------- */
+ 
+  .c-testimonial__link {
+    @apply
+      flex
+      justify-center
+    ;
+  }
+  
+  @screen md {
+    .c-testimonial__link {
+      @apply
+        justify-start
+      ;
+    }
+  }
+  
+  

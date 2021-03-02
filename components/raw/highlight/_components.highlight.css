@@ -4,6 +4,7 @@
 
 .c-highlight {
   @extend %h2;
+
   @apply
     py-24
     bg-primary-200

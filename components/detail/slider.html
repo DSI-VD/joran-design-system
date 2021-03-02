@@ -411,11 +411,11 @@
                                 <pre><span class="hljs-comment">/* ======================================================================
    # _components.slider.css
    ====================================================================== */</span>
- 
+
 <span class="hljs-selector-class">.c-slider</span> {
-    <span class="hljs-keyword">@apply</span>
-        bg-primary
-        py-<span class="hljs-number">16</span>
+  <span class="hljs-keyword">@apply</span>
+    bg-primary
+    py-<span class="hljs-number">16</span>
     ;
 }
 
@@ -426,36 +426,36 @@
 ----------------------------------- */</span>
 
 <span class="hljs-selector-class">.c-slider__container</span> {
-   <span class="hljs-keyword">@apply</span>
-      relative
+  <span class="hljs-keyword">@apply</span>
+    relative
    ;
 }
+
 <span class="hljs-selector-class">.c-slider__container</span><span class="hljs-selector-pseudo">::after</span> {
-   <span class="hljs-keyword">@apply</span>
-      absolute
-      block
-      
-      right-<span class="hljs-number">0</span>
-      -top-<span class="hljs-number">2</span>
-      
-      w-<span class="hljs-number">2</span>
-      
+  <span class="hljs-keyword">@apply</span>
+    absolute
+    block
+
+    right-<span class="hljs-number">0</span>
+    -top-<span class="hljs-number">2</span>
+
+    w-<span class="hljs-number">2</span>    
+
       /* bg-gradient-to-r
       from-transparent */
       /* to-black */
       /* bg-opacity-<span class="hljs-number">20</span> */
    ;
-   --tw-gradient-<span class="hljs-selector-tag">from</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
-   --tw-gradient-<span class="hljs-selector-tag">to</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
-   --tw-gradient-stops: <span class="hljs-built_in">var</span>(--tw-gradient-from), <span class="hljs-built_in">var</span>(--tw-gradient-to, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>));
-   <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(to right, <span class="hljs-built_in">var</span>(--tw-gradient-stops));
-   
-   <span class="hljs-attribute">border-top-left-radius</span>: <span class="hljs-number">100%</span> <span class="hljs-number">30%</span>;
-   <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">100%</span> <span class="hljs-number">30%</span>;
-     
-   <span class="hljs-attribute">height</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">100%</span> - <span class="hljs-number">2rem</span>);
-   <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
-   
+
+  --tw-gradient-<span class="hljs-selector-tag">from</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+  --tw-gradient-<span class="hljs-selector-tag">to</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
+  --tw-gradient-stops: <span class="hljs-built_in">var</span>(--tw-gradient-from), <span class="hljs-built_in">var</span>(--tw-gradient-to, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>));
+
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">linear-gradient</span>(to right, <span class="hljs-built_in">var</span>(--tw-gradient-stops));
+  <span class="hljs-attribute">border-top-left-radius</span>: <span class="hljs-number">100%</span> <span class="hljs-number">30%</span>;
+  <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">100%</span> <span class="hljs-number">30%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">100%</span> - <span class="hljs-number">2rem</span>);
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
 }
 
 
@@ -465,10 +465,11 @@
    ----------------------------------- */</span>
 
 <span class="hljs-selector-class">.c-slider__heading</span> {
-    <span class="hljs-keyword">@extend</span> %h2;
-    <span class="hljs-keyword">@apply</span> 
-        text-white
-        mb-<span class="hljs-number">4</span>
+  <span class="hljs-keyword">@extend</span> %h2;
+
+  <span class="hljs-keyword">@apply</span>
+    text-white
+    mb-<span class="hljs-number">4</span>
     ;
 }
 
@@ -477,14 +478,14 @@
    ----------------------------------- */</span>
 
 <span class="hljs-selector-class">.c-slider__list</span> {
-    <span class="hljs-keyword">@apply</span>
-        flex
-        flex-row
-        
-        overflow-x-scroll
+  <span class="hljs-keyword">@apply</span>
+    flex
+    flex-row
+
+    overflow-x-scroll
    ;
-    
-   scrollbar-<span class="hljs-attribute">color</span>: <span class="hljs-number">#fcfcfc</span> <span class="hljs-built_in">var</span>(--color__primary--<span class="hljs-number">900</span>);
+
+  scrollbar-<span class="hljs-attribute">color</span>: <span class="hljs-number">#fcfcfc</span> <span class="hljs-built_in">var</span>(--color__primary--<span class="hljs-number">900</span>);
 }
 
 
@@ -494,13 +495,14 @@
    ----------------------------------- */</span>
 
 <span class="hljs-selector-class">.c-slider__list-item</span> {
-    <span class="hljs-keyword">@apply</span>
-        max-w-sm
-        mr-<span class="hljs-number">4</span>
+  <span class="hljs-keyword">@apply</span>
+    max-w-sm
+    mr-<span class="hljs-number">4</span>
     ;
-    <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
-    <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">75vw</span>;
+
+  <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">75vw</span>;
 }
 
 
@@ -508,60 +510,54 @@
 <span class="hljs-comment">/* -----------------------------------
    # Article
    ----------------------------------- */</span>
-   
+
 <span class="hljs-selector-class">.c-slider__article</span> {
-    <span class="hljs-keyword">@apply</span>
-        flex
-        flex-col
-        
-        h-<span class="hljs-number">96</span>
-        
-        mb-<span class="hljs-number">8</span>
+  <span class="hljs-keyword">@apply</span>
+    flex
+    flex-col
+
+    h-<span class="hljs-number">96</span>
+
+    mb-<span class="hljs-number">8</span>
     ;
 }
-
-
 
 <span class="hljs-selector-class">.c-slider__article-heading</span> {
-    <span class="hljs-keyword">@extend</span> %h3;
-    <span class="hljs-keyword">@apply</span>
-        text-white
-        flex-initial
+  <span class="hljs-keyword">@extend</span> %h3;
+
+  <span class="hljs-keyword">@apply</span>
+    text-white
+    flex-initial
     ;
 }
-
-
 
 <span class="hljs-selector-class">.c-slider__article-button</span> {
-    <span class="hljs-keyword">@apply</span>
-        text-white
-        flex-initial
+  <span class="hljs-keyword">@apply</span>
+    text-white
+    flex-initial
     ;
 }
-
-
 
 <span class="hljs-selector-class">.c-slider__article-figure</span> {
-    <span class="hljs-keyword">@apply</span>
-        order-first
-        bg-primary-<span class="hljs-number">800</span>
-        
-        bg-cover
-        bg-center
-        
-        rounded
-        
-        flex-<span class="hljs-number">1</span>
+  <span class="hljs-keyword">@apply</span>
+    order-first
+    bg-primary-<span class="hljs-number">800</span>
+
+    bg-cover
+    bg-center
+
+    rounded
+
+    flex-<span class="hljs-number">1</span>
     ;
 }
 
-
-
 <span class="hljs-selector-class">.c-slider__article-image</span> {
-    <span class="hljs-keyword">@apply</span>
-        sr-only
+  <span class="hljs-keyword">@apply</span>
+    sr-only
     ;
-}</pre>
+}
+</pre>
                             </code>
                             
                         </div>
@@ -577,7 +573,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.3 KB</span>
+                    <span class="Meta-value">2.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -1570,7 +1566,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="avatar.html" data-role="tree-link" data-pjax data-handle="avatar">
+            <a class="Tree-entityLink" href="avatar--default.html" data-role="tree-link" data-pjax data-handle="avatar">
                 <span>Avatar</span>
                 
 
@@ -1903,6 +1899,32 @@
         </li>
         
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="testimonial.html" data-role="tree-link" data-pjax data-handle="testimonial">
+                <span>Testimonial</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
                 </ul>
             </li>
@@ -2051,8 +2073,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-02T08:23:19.585Z">
-                                02.03.2021 à 09:23:19
+                            <time datetime="2021-03-02T13:39:41.901Z">
+                                02.03.2021 à 14:39:41
                             </time>
                         
                     </dd>
@@ -2600,6 +2622,79 @@
         
     
         
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="avatar">
+                
+<div class="Tree" data-behaviour="tree" id="tree-avatar-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Avatar Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="avatar--default.html" data-role="tree-link" data-pjax data-handle="avatar">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="avatar--responsive.html" data-role="tree-link" data-pjax data-handle="avatar">
+                <span>Responsive</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
     
         
     
@@ -3017,6 +3112,8 @@
 </div>
 
             </div>
+        
+    
         
     
         
