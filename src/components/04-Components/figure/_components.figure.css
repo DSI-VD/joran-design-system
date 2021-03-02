@@ -10,7 +10,5 @@
 }
 
 .c-figure__caption {
-  @apply
-    text-sm
-        ;
+  @extend %caption;
 }
