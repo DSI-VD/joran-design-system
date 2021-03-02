@@ -16,9 +16,11 @@
                     {% endif %}
                 </div>
                 <h3 class="c-testimonial__header">{{ header }}</h3>
-                <div class="c-testimonial__text">{{ testimonial }}</div>
+                <div class="c-testimonial__text o-prose">{{ testimonial }}</div>
                 {% if more %}
-                <div class="c-testimonial__next"><p class="link"><a href="#nowhere">{{ more }}</a></p></div>
+                <div class="c-testimonial__link">
+                {% render '@button--transparent-arrow-right', { text: "lire la suite" }, true %}
+                </div>
                 {% endif %}
             </div>
         </div>
