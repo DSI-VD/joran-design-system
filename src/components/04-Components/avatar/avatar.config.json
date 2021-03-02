@@ -1,3 +1,15 @@
 {
-  "status": "ready"
+  "status": "ready",
+  "context": {
+    "src": "https://source.unsplash.com/100x100/?face"
+  },
+  "variants": [
+    {
+      "name": "big",
+      "context": {
+        "variantModifier": "c-avatar--big",
+        "src": "https://source.unsplash.com/200x200/?face"
+      }
+    }
+  ]
 }
