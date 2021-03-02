@@ -18,9 +18,12 @@
 /* -----------------------------------
  # Variants
  ----------------------------------- */
-.c-avatar.c-avatar--big {
-  @apply
-    h-48
-    w-48
-  ;
+
+@screen md {
+  .c-avatar.c-avatar--responsive {
+    @apply
+      h-48
+      w-48
+    ;
+  }
 }

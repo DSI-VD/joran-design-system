@@ -5,9 +5,9 @@
   },
   "variants": [
     {
-      "name": "big",
+      "name": "responsive",
       "context": {
-        "variantModifier": "c-avatar--big",
+        "variantModifier": "c-avatar--responsive",
         "src": "https://source.unsplash.com/200x200/?face"
       }
     }

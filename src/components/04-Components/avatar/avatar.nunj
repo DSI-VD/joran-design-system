@@ -1,1 +1,1 @@
-<img class="c-avatar{% if variantModifier %} {{ variantModifier }}{% endif %}" src="{{ src }}" alt="This is an avatar" itemprop="image">
+<img class="c-avatar{% if variantModifier %} {{ variantModifier }}{% endif %}{% if styleModifier %} {{ styleModifier }}{% endif %}" src="{{ src }}" alt="This is an avatar" itemprop="image">
