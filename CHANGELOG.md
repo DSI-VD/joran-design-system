@@ -13,7 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
-- REfine typography in _hero_
+- Refine typography in _hero_
+- Refine typography in _footer_
 
 ## [0.0.16] - 2021-03-02
 

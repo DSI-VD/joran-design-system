@@ -21,7 +21,6 @@
 
 .c-footer__main {
   @apply
-    font-bold
     text-base
     uppercase
 
