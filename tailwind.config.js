@@ -47,17 +47,23 @@ module.exports = {
             lineHeight: 1.5,
             h1: {
               color: 'var(--color__primary--900)',
-              fontWeight: 700
+              fontWeight: 700,
+              lineHeight: '1.05',
+              fontSize: '2.375rem'
             },
             h2: {
               color: 'var(--color__primary--900)',
-              fontWeight: 700
+              fontWeight: 700,
+              lineHeight: '1.1429',
+              fontSize: '1.75rem'
             },
             h3: {
               color: 'var(--color__primary--900)',
               textTransform: 'uppercase',
               marginBottom: '0',
-              fontWeight: 500
+              fontWeight: 500,
+              lineHeight: '1.3',
+              fontSize: '1.25rem'
             },
             h4: {
               color: 'var(--color__primary--900)',
@@ -78,45 +84,22 @@ module.exports = {
         lg: {
           css: {
             lineHeight: 1.55,
+            h1: {
+              lineHeight: '1.0833',
+              fontSize: '3rem', 
+            },
+            h2: {
+              lineHeight: '1.1176',
+              fontSize: '2.125rem'
+            },
             h3: {
-              marginBottom: '0'
+              marginBottom: '0',
+              lineHeight: '1.3',
+              fontSize: '1.25rem'
             },
             h4: {
-              marginBottom: '0'
-            },
-            h5: {
-              marginBottom: '0'
-            },
-            h6: {
-              marginBottom: '0'
-            }
-          }
-        },
-        xl: {
-          lineHeight: 1.6,
-          css: {
-            h3: {
-              marginBottom: '0'
-            },
-            h4: {
-              marginBottom: '0'
-            },
-            h5: {
-              marginBottom: '0'
-            },
-            h6: {
-              marginBottom: '0'
-            }
-          }
-        },
-        '2xl': {
-          css: {
-            lineHeight: 1.5,
-            h3: {
-              marginBottom: '0'
-            },
-            h4: {
-              marginBottom: '0'
+              marginBottom: '0',
+              lineHeight: '1.3333'
             },
             h5: {
               marginBottom: '0'
