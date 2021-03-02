@@ -10,14 +10,16 @@
   ;
 }
 
-.c-title__content h2 {
-  line-height: 3.25rem;
-  letter-spacing: -0.03rem;
+.c-title__content--heading {
+  @extend %h2;
   @apply
   text-5xl
+  text-black
   uppercase
   m-4
   ;
+  line-height: 3.25rem;
+  letter-spacing: -0.03rem;
 }
 
 .c-title__content--content {

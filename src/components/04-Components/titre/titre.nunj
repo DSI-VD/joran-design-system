@@ -1,6 +1,6 @@
 <div class="c-title__content">
     {% if heading %}
-    <h2>{{ heading }}</h2>
+    <h2 class="c-title__content--heading">{{ heading }}</h2>
     {% endif %}
 
     {% if content %}
