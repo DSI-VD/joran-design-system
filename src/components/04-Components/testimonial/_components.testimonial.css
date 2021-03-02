@@ -4,7 +4,7 @@
 
 .c-testimonial {
     @apply
-      py-10
+      py-24
       bg-gradient-to-b
       from-primary-100
       to-primary-400
@@ -15,12 +15,17 @@
   /* -----------------------------------
      # Main row
      ----------------------------------- */
-  .c-testimonial__row {
+  .c-testimonial__flex {
     @apply
       flex
-      flex-wrap
-      pt-16
-      ;
+      flex-col
+  }
+  
+  @screen md {
+    .c-testimonial__flex {
+      @apply
+        flex-row
+    }
   }
 
   /* -----------------------------------
@@ -28,23 +33,25 @@
      ----------------------------------- */
   .c-testimonial__facecontainer {
     @apply
-      align-top
-      max-w-md
-      w-full
-      text-center
-      mb-6
-      lg:px-24
+      flex
+      flex-row
+      justify-center
+    ;
+  }
+  
+  @screen md {
+    .c-testimonial__facecontainer {
+      @apply
+        justify-start
+        w-1/3
       ;
+    }
   }
 
   .c-testimonial__face {
     @apply
-      rounded-full
-      shadow
-      bg-primary-600
-      inline
-      lg:block
-      ;
+      mb-4
+    ;
   }
 
   /* -----------------------------------
@@ -56,7 +63,7 @@
       text-black
       pb-5
       text-center
-      lg:text-left
+      md:text-left
       ;
   }
 
@@ -65,12 +72,17 @@
      ----------------------------------- */
   .c-testimonial__textcontainer {
     @apply
-      lg:pr-6
-      max-w-md
-      w-full
       text-center
-      lg:text-left
       ;
+  }
+  
+  @screen md {
+    .c-testimonial__textcontainer {
+      @apply
+        text-left
+        w-2/3
+        ;
+    }
   }
 
   /* -----------------------------------
@@ -82,8 +94,8 @@
       text-black
       text-center
       mb-16
-      lg:text-left
-      lg:mb-1.5
+      md:text-left
+      md:mb-1.5
     ;
   }
 
@@ -93,7 +105,7 @@
   .c-testimonial__author--function {
     @apply
       block
-      lg:inline
+      md:inline
       ;
   }
 
@@ -101,7 +113,7 @@
     content: "";
   }
 
-@screen lg {
+@screen md {
   .c-testimonial__author--function::before {
     content: " — ";
   }
