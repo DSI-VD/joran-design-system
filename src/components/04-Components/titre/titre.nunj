@@ -2,10 +2,12 @@
     {% if heading %}
     <h2>{{ heading }}</h2>
     {% endif %}
-    
+
+    {% if content %}
     <div class="c-title__content--content">
         {{ content | safe }}
     </div>
+    {% endif %}
 
     {% if more %}
     <div class="c-title__content--more">
