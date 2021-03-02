@@ -3460,13 +3460,25 @@ html {
    ====================================================================== */
 
 .c-highlight {
-  background-color: var(--color__primary--200);
   font-weight: 700;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  color: var(--color__primary--900);
+  font-size: 1.75rem; /* [2] */
+  line-height: 1.1429;
+}
+
+@media (min-width: 768px) {
+
+.c-highlight {
+    font-size: 2.125rem; /* [1] */
+
+    line-height: 1.1176;
+}
+  }
+
+.c-highlight {
+  background-color: var(--color__primary--200);
   padding-top: 6rem;
   padding-bottom: 6rem;
-  color: var(--color__primary--900);
 }
 
 .c-highlight__text {
@@ -3596,8 +3608,14 @@ html {
 .c-quote__heading {
   font-size: 0.875rem;
   line-height: 1.25rem;
+  line-height: 1.3333;
+}
+
+.c-quote__heading {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
   text-transform: uppercase;
 }
 
@@ -3610,11 +3628,26 @@ html {
  */
 
 .c-quote__text {
-  display: inline-block;
   font-weight: 700;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  color: var(--color__primary--900);
+  font-size: 1.75rem; /* [2] */
+  line-height: 1.1429;
+}
+
+@media (min-width: 768px) {
+
+.c-quote__text {
+    font-size: 2.125rem; /* [1] */
+
+    line-height: 1.1176;
+}
+  }
+
+.c-quote__text {
+  display: inline-block;
   max-width: 65ch;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .c-quote__text::before,
