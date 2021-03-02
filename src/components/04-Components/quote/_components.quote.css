@@ -60,23 +60,27 @@
 
 .c-quote__footer {
   @apply
-    mt-12
+    mt-4
     flex
     flex-col
     items-center
     ;
 }
 
-
+.c-quote__avatar {
+  @apply
+    mt-8
+  ;
+}
 
 /* -----------------------------------
  # Reference
  ----------------------------------- */
 
 .c-quote__reference {
+  @extend %caption;
   @apply
     mt-4
-    text-xs
     uppercase
     not-italic
   ;
