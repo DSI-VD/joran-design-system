@@ -20,6 +20,7 @@
     font-bold
     uppercase
   ;
+
   font-size: 2.375rem; /* [2] */
   line-height: 1.05;
 
@@ -27,6 +28,7 @@
     @apply
       text-5xl /* [1] */
     ;
+
     line-height: 1.0833;
   }
 }
@@ -42,6 +44,7 @@
     text-primary
     font-bold
     ;
+
   font-size: 1.75rem; /* [2] */
   line-height: 1.1429;
 
@@ -80,6 +83,7 @@
     text-lg
     uppercase
     ;
+
   line-height: 1.3333;
 }
 
@@ -133,5 +137,6 @@
   @apply
     text-sm
     ;
+
   line-height: 1.3333;
 }

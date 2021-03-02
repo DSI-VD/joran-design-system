@@ -20,6 +20,7 @@
    ----------------------------------- */
 .c-quote__heading {
   @extend %caption;
+
   @apply
     my-4
     uppercase
@@ -38,6 +39,7 @@
  */
 .c-quote__text {
   @extend %h2;
+
   @apply
     inline-block
     max-w-prose

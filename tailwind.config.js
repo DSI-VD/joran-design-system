@@ -86,7 +86,7 @@ module.exports = {
             lineHeight: 1.55,
             h1: {
               lineHeight: '1.0833',
-              fontSize: '3rem', 
+              fontSize: '3rem'
             },
             h2: {
               lineHeight: '1.1176',
@@ -111,7 +111,7 @@ module.exports = {
         }
       },
       screens: {
-        'print': {'raw': 'print'}
+        print: {raw: 'print'}
       }
     }
   },

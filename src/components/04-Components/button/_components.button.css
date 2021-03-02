@@ -6,14 +6,14 @@
   @apply
     no-underline
     uppercase
-    
+
     flex
     flex-row
     flex-nowrap
     items-center
-    
+
     max-w-max
-    
+
     transition
     ;
 }
@@ -37,16 +37,16 @@
 /***
  * Default
  */
- 
+
 .c-button--default {
-    @apply
-      bg-primary-cta
-      text-white
-      
-      py-3
-      px-6
-      rounded
-      shadow
+  @apply
+    bg-primary-cta
+    text-white
+
+    py-3
+    px-6
+    rounded
+    shadow
     ;
 }
 
@@ -71,7 +71,7 @@
 .c-button--transparent {
   @apply
     text-primary-cta
-    
+
     py-3
     px-6
   ;
@@ -93,7 +93,7 @@
 .c-button--transparent-alt {
   @apply
     text-white
-    
+
     py-3
   ;
 }
@@ -104,5 +104,3 @@
     text-primary-200
   ;
 }
-
-

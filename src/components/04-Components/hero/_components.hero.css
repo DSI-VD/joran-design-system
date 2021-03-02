@@ -102,6 +102,7 @@
 
 .c-hero__heading {
   @extend %h1;
+
   @apply
     text-white
   ;
@@ -125,6 +126,7 @@
  */
 .c-hero__caption {
   @extend %h4;
+
   @apply
     order-first
     text-white
