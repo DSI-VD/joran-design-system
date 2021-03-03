@@ -1,0 +1,1 @@
+<img class="c-logo-vd{% if styleModifier %} {{ styleModifier }}{% endif %}" src="{{ '/assets/vectors/logo.svg' | path  }}" />

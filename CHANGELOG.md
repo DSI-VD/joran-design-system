@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+- _logo_ as been renamed in _logo-vd_ because there will be two logo
+
+### Removed
+
 - Removed _card_ component
 
 ### Fixes
