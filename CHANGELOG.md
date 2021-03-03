@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Social logo are arranged in column on desktop
   - The copyright is align left on desktop
   - The component is ready
+- _button_ are ready
 
 ## [0.0.16] - 2021-03-02
 
