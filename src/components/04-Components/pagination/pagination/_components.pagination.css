@@ -16,12 +16,15 @@
     justify-between
 }
 
-.c-pagination_list-item-previous {
-
+.c-pagination_list-item-previous,
+.c-pagination_list-item-next {
+  @apply
+    mb-4
+  ;
 }
 
 /***
- * FIXME: Le bouton de droite sort du viewport
+ * FIXME: Le bouton de droite sort du viewport sur Firefox
  */
 .c-pagination_list-item-next {
   @apply
