@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - The copyright is align left on desktop
   - The component is ready
 - _button_ are ready
+- Use guillemets in _quotes_ and set the component as ready
 
 ## [0.0.16] - 2021-03-02
 
