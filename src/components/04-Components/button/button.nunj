@@ -1,8 +1,10 @@
-<a href="{{ url }}"
-   class="c-button
+<a
+  href="{{ url }}"
+  class="c-button
    {%- if variantModifier %} {{ variantModifier }}{% endif %}
-   {%- if styleModifier %} {{ styleModifier }}{% endif -%}">
-    {%- if svg -%}<span>{%- endif -%}
-    {{ text }}
-    {%- if svg -%}</span>{% render '@svg-chevron-right' %}{%- endif -%}
+   {%- if styleModifier %} {{ styleModifier }}{% endif -%}"
+>
+  {%- if svg.before -%}{% render '@svg-chevron-left' %}{%- endif -%} {%- if svg
+  -%}<span>{%- endif -%} {{ text }} {%- if svg -%}</span>{%- endif -%} {%- if
+  svg.after -%}{% render '@svg-chevron-right' %}{%- endif -%}
 </a>

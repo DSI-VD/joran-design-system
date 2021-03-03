@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added _logo-entity_ components with corresponding assets
+- Added _button--default-arrow-left_ component for pagination
 
 ### Changed
 
