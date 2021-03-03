@@ -1,4 +1,4 @@
-<div {% if browsePages %} class="c-pagination--w" {% else %}} class="c-pagination"{% endif %}>
+<div {% if browsePages %} class="c-pagination--w" {% else %} class="c-pagination"{% endif %}>
     
       <nav class="c-pagination_nav" aria-label="Pagination">
       {% if browsePages %}
