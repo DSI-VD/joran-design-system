@@ -2,21 +2,26 @@
   "status": "wip",
   "context": {
     "previousLabel": "Précédent",
-    "abbrPrevLabel": "Préc.",
     "nextLabel": "Suivant",
-    "abbrNextLabel": "Suiv.",
-    "previous": false,
+    "previous": true,
+    "items": [
+      {
+        "text": 5
+      },
+      {
+        "text": 6,
+        "current": true
+      },
+      {
+        "text": 7
+      },
+      {
+        "text": 8
+      }
+    ],
     "next": true
   },
   "variants": [
-    {
-      "name": "default",
-      "context": {
-        "previous": true,
-        "innerPageSet": false,
-        "browsePages": true
-      }
-    },
     {
       "name": "first page",
       "context": {

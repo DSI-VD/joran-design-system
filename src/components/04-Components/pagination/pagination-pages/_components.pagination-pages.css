@@ -5,44 +5,6 @@
 .c-pagination-pages {
   @apply
     py-12
-    text-center
-    ;
-}
-
-.c-pagination-pages--w {
-  @apply
-   py-12
-   text-center
-   ;
-}
-
-.c-pagination-pages_nav {
-  @apply
-    mb-12
-    ;
-}
-
-.c-pagination-pages__navigation {
-  @apply
-    flex
-    relative 
-    z-0
-    inline-flex
-    rounded-md
-    no-underline
-    text-sm
-    ;
-}
-
-.c-pagination-pages_nav--left {
-  @apply
-    ml-5
-    ;
-}
-
-.c-pagination-pages_nav--right {
-  @apply
-    mr-5
     ;
 }
 
@@ -50,86 +12,57 @@
   @apply
     flex
     flex-wrap
-    list-none
-    pl-0
-    justify-between
-    items-center
+    justify-center
+    
+    rounded-md
+    no-underline
+    text-sm
     ;
 }
 
-.c-pagination-pages__list li {
+.c-pagination-pages__list-item {
   @apply
-    flex
-    ;
+    mb-4
+    mx-2
+  ;
 }
 
-.c-pagination-pages__item {
-  flex: 0 1 auto;
+/***
+ * 1. Center content
+ * 2. If there more than one digit
+ */
+
+.c-pagination-pages__link {
+  @extend %caption;
+  
   @apply
-    p-1
-    mt-4
-    ;
+    flex /* [1] */
+    items-center /* [1] */
+    justify-center /* [1] */
+    
+    text-white
+    bg-primary-400
+    rounded
+    shadow
+    
+    inline-block
+    h-8
+    px-2 /* [2] */
+  ;
+  
+  min-width: 2rem;
 }
 
-.c-pagination-pages__item--next {
-  @apply
-    text-right
-    ;
-}
-
-.c-pagination-pages__navigation a:hover,
-.c-pagination-pages__navigation a:active,
-.c-pagination-pages__navigation .current {
+.c-pagination-pages__link:hover,
+.c-pagination-pages__link:active,
+.c-pagination-pages__link[aria-current="page"] {
   @apply
     bg-primary-cta
-    ;
+  ;
 }
 
-.c-pagination-pages__navigation a:focus {
+.c-pagination-pages__link:focus {
   @apply
     outline-focus
-   ;
-}
-
-.c-pagination-pages__prev {
-  @apply
-    relative 
-    inline-flex 
-    items-center 
-    px-2 
-    py-2
-    mr-3
-    rounded-md
-    bg-primary-600 
-    font-medium 
-    text-white
-    ;
-}
-.c-pagination-pages__next {
-  @apply
-    relative
-    inline-flex
-    items-center
-    px-2
-    py-2
-    rounded-md
-    bg-primary-600
-    font-medium
-    text-white
-    ;
-}
-.c-pagination-pages__link {
-  @apply
-    relative 
-    inline-flex 
-    bg-primary-600
-    text-white
-    mr-3 
-    ml-3
-    rounded-md
-    items-center 
-    px-4 
-    py-2 
-    -ml-px
-    ;
+  ;
 }

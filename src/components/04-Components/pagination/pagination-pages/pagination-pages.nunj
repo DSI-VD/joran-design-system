@@ -1,50 +1,43 @@
-<div {% if browsePages %} class="c-pagination--w" {% else %} class="c-pagination"{% endif %}>
-    
-      <nav class="c-pagination_nav" aria-label="Pagination">
-
-        <ul class="c-pagination__navigation" aria-label="Pagination">
-          {% if previous %}
-          <li>
-            <a href="#nowhere" class="c-pagination__prev">
-              <span class="sr-only">{{ previousLabel }}</span>
-              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#nowhere" class="c-pagination__link" aria-label="Page 1">1</a>
-          </li>
-          {% else %}
-          <li>
-            <span class="c-pagination__link current" aria-label="Current Page, Page 1" aria-current="page">1</span>
-          </li>
-          {% endif %}
-          {% if innerPageSet %}
-          <li>
-            <span class="c-pagination__link current" aria-label="Current Page, Page 2" aria-current="page">2</span>
-          </li>
-          {% else %}
-          <li>
-            <a href="#nowhere" class="c-pagination__link" aria-label="Page 2">2</a>
-          </li>
-          {% endif %}
-          <li>
-            <a href="#nowhere" class="c-pagination__link" aria-label="Page 3">3</a>
-          </li>
-          <li>
-            <a href="#nowhere" class="c-pagination__link" aria-label="Page 4">4</a>
-          </li>
-          {% if next %}
-          <li>
-            <a href="#nowhere" class="c-pagination__next">
-              <span class="sr-only">{{ nextLabel }}</span>
-              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-          {% endif %}
-        </ul>
-      </nav>
+<div class="c-pagination-pages">
+  <nav aria-labelledby="pagination-title">
+    <h2 id="pagination-title" class="u-visually-hidden">Pagination</h2>
+    <ul class="c-pagination-pages__list" aria-label="Pagination">
+      {% if previous %}
+      <li class="c-pagination-pages__list-item">
+        <a href="#nowhere" class="c-pagination-pages__link">
+          <span class="sr-only">{{ previousLabel }}</span>
+          {% render '@svg-arrow-left' %}
+        </a>
+      </li>
+      {% endif %} {% for item in items %}
+      <li class="c-pagination-pages__list-item">
+        {% if item.current %}
+        <span 
+        class="c-pagination-pages__link"
+        aria-label="Page {{ item.text }}"
+        aria-current="page">
+        {% else %}
+        <a
+          href="#nowhere"
+          class="c-pagination-pages__link"
+          aria-label="Page {{ item.text }}">
+        {% endif %}
+       {{ item.text }}
+       {% if item.current %}
+       </span>
+       {% else %}
+       </a>
+       {% endif %}
+      </li>
+      {% endfor %}
+      {% if next %}
+      <li class="c-pagination-pages__list-item">
+        <a href="#nowhere" class="c-pagination-pages__link">
+          <span class="sr-only">{{ nextLabel }}</span>
+          {% render '@svg-arrow-right' %}
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
 </div>
