@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add _testimonial_ component
 
+### Removed
+
+- Removed _card_ component
+
 ### Fixes
 
 - Refine typography in _hero_
