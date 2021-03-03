@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - _footer_ has _logo-entity_ and not _logo-vd_
 
+### Fixes
+
+- _highlight_ is ready
+
 ## [0.0.17] - 2021-03-03
 
 ### Added
