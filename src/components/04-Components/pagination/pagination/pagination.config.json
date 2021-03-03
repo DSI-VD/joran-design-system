@@ -2,9 +2,7 @@
   "status": "wip",
   "context": {
     "previousLabel": "Précédent",
-    "abbrPrevLabel": "Préc.",
     "nextLabel": "Suivant",
-    "abbrNextLabel": "Suiv.",
     "previous": false,
     "next": true
   },
