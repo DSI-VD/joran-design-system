@@ -12,5 +12,18 @@
     justify-center
     shadow
     bg-primary-600
-        ;
+  ;
+}
+
+/* -----------------------------------
+ # Variants
+ ----------------------------------- */
+
+@screen md {
+  .c-avatar.c-avatar--responsive {
+    @apply
+      h-48
+      w-48
+    ;
+  }
 }

@@ -7,9 +7,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added _logo-entity_ components with corresponding assets
+
+### Changed
+
+- _footer_ has _logo-entity_ and not _logo-vd_
+
+### Fixes
+
+- _highlight_ is ready
+
+## [0.0.17] - 2021-03-03
+
+### Added
+
+- Add _testimonial_ component
+
+### Removed
+
+- _logo_ as been renamed in _logo-vd_ because there will be two logo
+- Removed _card_ component
+
+### Fixes
+
+- Refine typography in _hero_
+- Refine typography in _footer_
+- Refine margin in _quotes_
+- Remove hover color in _button--transparent_ and _button--transparent-alternate_
+- _content_ is ready
+- Refine _footer_
+  - Social logo are arranged in column on desktop
+  - The copyright is align left on desktop
+  - The component is ready
+- _button_ are ready
+- Use guillemets in _quotes_ and set the component as ready
+
+## [0.0.16] - 2021-03-02
+
 ### Fixed
 
 - Refine _slider_ design. The scroll shadow on the right is smaller and more realistic
+- Refine _headings_ sizes
+- Refine typography in _hero_
+- Refine typography in _quotes_
+- Refine typography in _highlight_
 
 ## [0.0.15] - 2021-02-25
 
@@ -207,7 +250,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.15...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.17...HEAD
+[0.0.17]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.16...0.0.17
+[0.0.16]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.15...0.0.16
 [0.0.15]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.14...v0.0.15
 [0.0.14]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.13...v0.0.14
 [0.0.13]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.12...v0.0.13

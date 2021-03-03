@@ -101,13 +101,13 @@
  ----------------------------------- */
 
 .c-hero__heading {
+  @extend %h1;
+
   @apply
-    font-bold
-    text-5xl
-    uppercase
+    text-white
   ;
 
-  max-width: 35ch;
+  max-width: 25ch;
   hyphens: auto;
 }
 
@@ -125,8 +125,12 @@
  * 1. Put the caption before the title visually
  */
 .c-hero__caption {
+  @extend %h4;
+
   @apply
     order-first
+    text-white
+    mb-4
   ;
 }
 

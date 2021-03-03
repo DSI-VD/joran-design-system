@@ -21,7 +21,6 @@
 
 .c-footer__main {
   @apply
-    font-bold
     text-base
     uppercase
 
@@ -128,6 +127,7 @@
 @screen md {
   .c-footer__list-social {
     @apply
+      flex-col
       justify-start
     ;
   }
@@ -148,7 +148,7 @@
 
   .c-footer__list-social > li + li {
     @apply
-      pl-4
+      pt-4
     ;
   }
 }
@@ -195,6 +195,13 @@
     ;
 }
 
+@screen md {
+  .c-footer__secondary {
+    @apply
+      text-left
+    ;
+  }
+}
 
 
 
@@ -251,7 +258,7 @@
 
 .c-footer svg {
   @apply
-    h-5
+    h-6
     fill-current
     ;
 }

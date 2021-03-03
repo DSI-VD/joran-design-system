@@ -6,14 +6,14 @@
   @apply
     no-underline
     uppercase
-    
+
     flex
     flex-row
     flex-nowrap
     items-center
-    
+
     max-w-max
-    
+
     transition
     ;
 }
@@ -37,16 +37,16 @@
 /***
  * Default
  */
- 
+
 .c-button--default {
-    @apply
-      bg-primary-cta
-      text-white
-      
-      py-3
-      px-6
-      rounded
-      shadow
+  @apply
+    bg-primary-cta
+    text-white
+
+    py-3
+    px-6
+    rounded
+    shadow
     ;
 }
 
@@ -71,16 +71,15 @@
 .c-button--transparent {
   @apply
     text-primary-cta
-    
+
     py-3
-    px-6
   ;
 }
 
 .c-button--transparent:hover,
 .c-button--transparent:active {
   @apply
-    text-primary-600
+    tracking-wider
   ;
 }
 
@@ -93,7 +92,7 @@
 .c-button--transparent-alt {
   @apply
     text-white
-    
+
     py-3
   ;
 }
@@ -101,8 +100,6 @@
 .c-button--transparent-alt:hover,
 .c-button--transparent-alt:active {
   @apply
-    text-primary-200
+    tracking-wider
   ;
 }
-
-

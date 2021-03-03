@@ -6,7 +6,7 @@
             {% if reference %}
             <footer class="c-quote__footer">
                 {% if reference.avatar %}
-                {% render '@avatar' %}
+                {% render '@avatar', { styleModifier: "c-quote__avatar" }, true %}
                 {% endif %}
                 <span class="c-quote__reference">
                 {% if reference.author -%}
