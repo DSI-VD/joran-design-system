@@ -10,10 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added _logo-entity_ components with corresponding assets
+- Added _button--default-arrow-left_ component for pagination
+- Added _pagination_ component
+- Added _pagination-pages_ component
 
 ### Changed
 
 - _footer_ has _logo-entity_ and not _logo-vd_
+
+### Fixes
+
+- _highlight_ is ready
 
 ## [0.0.17] - 2021-03-03
 

@@ -1,0 +1,32 @@
+{
+  "status": "review",
+  "context": {
+    "previousLabel": "Précédent",
+    "nextLabel": "Suivant",
+    "previous": false,
+    "next": true
+  },
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "previous": true,
+        "next": true
+      }
+    },
+    {
+      "name": "first page",
+      "context": {
+        "previous": false,
+        "next": true
+      }
+    },
+    {
+      "name": "last page",
+      "context": {
+        "previous": true,
+        "next": false
+      }
+    }
+  ]
+}

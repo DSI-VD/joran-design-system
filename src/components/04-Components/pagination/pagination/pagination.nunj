@@ -1,0 +1,22 @@
+<div class="c-pagination">
+  <nav aria-labelledby="pagination-title">
+    <h2 id="pagination-title" class="u-visually-hidden">Pagination</h2>
+    <ul class="c-pagination__list">
+      {% if previous %}
+      <li class="c-pagination_list-item-previous">
+        <a href="#nowhere">
+          <!-- prettier-ignore -->
+          {% render '@button--default-arrow-left', {text: previousLabel }, true %}
+          <span class="u-visually-hidden">: Page X sur Y</span>
+        </a>
+      </li>
+      {% endif %} {% if next %}
+      <li class="c-pagination_list-item-next">
+        <!-- prettier-ignore -->
+        {% render '@button--default-arrow-right', {text: nextLabel }, true %}
+        <span class="u-visually-hidden">: Page X sur Y</span>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>
