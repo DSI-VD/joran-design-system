@@ -47,9 +47,11 @@
     ;
 }
 
-.c-quote__text::before,
+.c-quote__text::before {
+  content: "« ";
+}
 .c-quote__text::after {
-  content: "\"";
+  content: " »";
 }
 
 

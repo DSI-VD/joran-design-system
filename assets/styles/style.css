@@ -3250,9 +3250,12 @@ html {
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
-.c-quote__text::before,
+.c-quote__text::before {
+  content: "« ";
+}
+
 .c-quote__text::after {
-  content: "\"";
+  content: " »";
 }
 
 /* -----------------------------------
