@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added _logo-entity_ components with corresponding assets
+
+### Changed
+
+- _footer_ has _logo-entity_ and not _logo-vd_
+
 ## [0.0.17] - 2021-03-03
 
 ### Added
@@ -16,9 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - _logo_ as been renamed in _logo-vd_ because there will be two logo
-
-### Removed
-
 - Removed _card_ component
 
 ### Fixes

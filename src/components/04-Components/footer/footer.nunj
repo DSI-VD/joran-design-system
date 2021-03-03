@@ -23,8 +23,8 @@
       </div>
       
       <div class="c-footer__logo">
-        <h3 class="u-visually-hidden">Logo</h3>
-        {% render '@logo-vd' %}
+        <h3 class="u-visually-hidden">Logo de l'entité</h3>
+        {% render '@logo-entity' %}
       </div>
       
     </div>
