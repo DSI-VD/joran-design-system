@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refine typography in _hero_
 - Refine typography in _footer_
 - Refine margin in _quotes_
+- Remove hover color in _button--transparent_ and _button--transparent-alternate_
 
 ## [0.0.16] - 2021-03-02
 
