@@ -6,23 +6,28 @@
     "nextLabel": "Suivant",
     "abbrNextLabel": "Suiv.",
     "previous": false,
-    "browsePages": false,
     "next": true
   },
   "variants": [
     {
-      "name": "Previous and next result",
+      "name": "default",
       "context": {
         "previous": true,
-        "innerPageSet": true
+        "next": true
       }
     },
     {
-      "name": "Previous and next page",
+      "name": "first page",
+      "context": {
+        "previous": false,
+        "next": true
+      }
+    },
+    {
+      "name": "last page",
       "context": {
         "previous": true,
-        "innerPageSet": false,
-        "browsePages": true
+        "next": false
       }
     }
   ]

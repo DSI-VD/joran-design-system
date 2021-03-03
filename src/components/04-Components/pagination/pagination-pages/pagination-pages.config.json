@@ -1,0 +1,39 @@
+{
+  "status": "wip",
+  "context": {
+    "previousLabel": "Précédent",
+    "abbrPrevLabel": "Préc.",
+    "nextLabel": "Suivant",
+    "abbrNextLabel": "Suiv.",
+    "previous": false,
+    "next": true
+  },
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "previous": true,
+        "innerPageSet": false,
+        "browsePages": true
+      }
+    },
+    {
+      "name": "first page",
+      "context": {
+        "previous": false,
+        "next": true,
+        "innerPageSet": false,
+        "browsePages": true
+      }
+    },
+    {
+      "name": "last page",
+      "context": {
+        "previous": true,
+        "next": false,
+        "innerPageSet": false,
+        "browsePages": true
+      }
+    }
+  ]
+}

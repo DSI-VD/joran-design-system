@@ -1,0 +1,37 @@
+<div {% if browsePages %} class="c-pagination--w" {% else %} class="c-pagination"{% endif %}>
+    
+      <nav class="c-pagination_nav" aria-label="Pagination">      
+          <ul class="c-pagination__list">
+              {% if previous %}
+              <li>
+                  <a href="#nowhere" class="c-button c-button--default">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
+                      <g>
+                        <g transform="rotate(90 4 7)">
+                          <path fill="none" stroke="#fffffe" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="1.5" d="M-2 4v0l6 6v0l6-6v0"/>
+                        </g>
+                      </g>
+                    </svg>
+                    <span class="c-pagination_nav--left">{{ abbrPrevLabel }}</span>
+                    <span class="sr-only">:</span>
+                  </a>
+              </li>
+              {% endif %}
+              {% if next %}
+              <li>
+                  <a href="#nowhere" class="c-button c-button--default">
+                    <span class="c-pagination_nav--right">{{ abbrNextLabel }}</span>
+                    <span class="sr-only">:</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
+                      <g>
+                        <g transform="rotate(-90 4 7)">
+                          <path fill="none" stroke="#fffffe" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="1.5" d="M-2 4v0l6 6v0l6-6v0"/>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+              </li>
+              {% endif %}
+          </ul>
+      </nav>
+</div>

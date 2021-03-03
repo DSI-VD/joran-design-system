@@ -1,0 +1,135 @@
+/* ======================================================================
+   # _components.pagination.css
+   ====================================================================== */
+
+.c-pagination {
+  @apply
+    py-12
+    text-center
+    ;
+}
+
+.c-pagination--w {
+  @apply
+   py-12
+   text-center
+   ;
+}
+
+.c-pagination_nav {
+  @apply
+    mb-12
+    ;
+}
+
+.c-pagination__navigation {
+  @apply
+    flex
+    relative 
+    z-0
+    inline-flex
+    rounded-md
+    no-underline
+    text-sm
+    ;
+}
+
+.c-pagination_nav--left {
+  @apply
+    ml-5
+    ;
+}
+
+.c-pagination_nav--right {
+  @apply
+    mr-5
+    ;
+}
+
+.c-pagination__list {
+  @apply
+    flex
+    flex-wrap
+    list-none
+    pl-0
+    justify-between
+    items-center
+    ;
+}
+
+.c-pagination__list li {
+  @apply
+    flex
+    ;
+}
+
+.c-pagination__item {
+  flex: 0 1 auto;
+  @apply
+    p-1
+    mt-4
+    ;
+}
+
+.c-pagination__item--next {
+  @apply
+    text-right
+    ;
+}
+
+.c-pagination__navigation a:hover,
+.c-pagination__navigation a:active,
+.c-pagination__navigation .current {
+  @apply
+    bg-primary-cta
+    ;
+}
+
+.c-pagination__navigation a:focus {
+  @apply
+    outline-focus
+   ;
+}
+
+.c-pagination__prev {
+  @apply
+    relative 
+    inline-flex 
+    items-center 
+    px-2 
+    py-2
+    mr-3
+    rounded-md
+    bg-primary-600 
+    font-medium 
+    text-white
+    ;
+}
+.c-pagination__next {
+  @apply
+    relative
+    inline-flex
+    items-center
+    px-2
+    py-2
+    rounded-md
+    bg-primary-600
+    font-medium
+    text-white
+    ;
+}
+.c-pagination__link {
+  @apply
+    relative 
+    inline-flex 
+    bg-primary-600
+    text-white
+    mr-3 
+    ml-3
+    rounded-md
+    items-center 
+    px-4 
+    py-2 
+    -ml-px
+    ;
+}
