@@ -1,5 +1,5 @@
 {
-  "status": "wip",
+  "status": "review",
   "context": {
     "previousLabel": "Précédent",
     "nextLabel": "Suivant",
@@ -26,18 +26,14 @@
       "name": "first page",
       "context": {
         "previous": false,
-        "next": true,
-        "innerPageSet": false,
-        "browsePages": true
+        "next": true
       }
     },
     {
       "name": "last page",
       "context": {
         "previous": true,
-        "next": false,
-        "innerPageSet": false,
-        "browsePages": true
+        "next": false
       }
     }
   ]
