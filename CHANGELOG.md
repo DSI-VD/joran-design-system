@@ -22,6 +22,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refine margin in _quotes_
 - Remove hover color in _button--transparent_ and _button--transparent-alternate_
 - _content_ is ready
+- Refine _footer_
+  - Social logo are arranged in column on desktop
+  - The copyright is align left on desktop
+  - The component is ready
 
 ## [0.0.16] - 2021-03-02
 
