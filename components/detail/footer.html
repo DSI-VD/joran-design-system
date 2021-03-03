@@ -18,9 +18,9 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.8.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.8.1" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.8.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.8.1" type="text/css">
 
 
 <title>Footer | Joran design system</title>
@@ -83,7 +83,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #a544ea; border-color: #a544ea;">Waiting for review</label>
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
 
 </div>
 
@@ -327,7 +327,6 @@
 
 <span class="hljs-selector-class">.c-footer__main</span> {
   <span class="hljs-keyword">@apply</span>
-    font-bold
     text-base
     uppercase
 
@@ -434,6 +433,7 @@
 <span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-footer__list-social</span> {
     <span class="hljs-keyword">@apply</span>
+      flex-col
       justify-start
     ;
   }
@@ -454,7 +454,7 @@
 
   <span class="hljs-selector-class">.c-footer__list-social</span> &gt; <span class="hljs-selector-tag">li</span> + <span class="hljs-selector-tag">li</span> {
     <span class="hljs-keyword">@apply</span>
-      pl-<span class="hljs-number">4</span>
+      pt-<span class="hljs-number">4</span>
     ;
   }
 }
@@ -501,6 +501,13 @@
     ;
 }
 
+<span class="hljs-keyword">@screen</span> md {
+  <span class="hljs-selector-class">.c-footer__secondary</span> {
+    <span class="hljs-keyword">@apply</span>
+      text-left
+    ;
+  }
+}
 
 
 
@@ -557,7 +564,7 @@
 
 <span class="hljs-selector-class">.c-footer</span> svg {
   <span class="hljs-keyword">@apply</span>
-    h-<span class="hljs-number">5</span>
+    h-<span class="hljs-number">6</span>
     fill-current
     ;
 }
@@ -577,7 +584,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.7 KB</span>
+                    <span class="Meta-value">2.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -1620,7 +1627,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1663,32 +1670,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="card.html" data-role="tree-link" data-pjax data-handle="card">
-                <span>Card</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="content--default.html" data-role="tree-link" data-pjax data-handle="content">
                 <span>Content</span>
                 
@@ -1698,7 +1679,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1750,7 +1731,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1776,7 +1757,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2092,8 +2073,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-02T13:59:54.405Z">
-                                02.03.2021 à 14:59:54
+                            <time datetime="2021-03-03T06:18:42.259Z">
+                                03.03.2021 à 07:18:42
                             </time>
                         
                     </dd>
@@ -2897,8 +2878,6 @@
         
     
         
-    
-        
             
             <div class="Navigation-group" data-role="variant-group" data-component="content">
                 
@@ -2928,7 +2907,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2954,7 +2933,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3007,7 +2986,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3033,7 +3012,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3157,7 +3136,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.8.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.8.1"></script>
 
 
 

@@ -18,9 +18,9 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.8.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.8.1" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.8.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.8.1" type="text/css">
 
 
 <title>Quote: Big | Joran design system</title>
@@ -185,7 +185,7 @@
 
             <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__footer&quot;</span>&gt;</span>
 
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-avatar&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/100x100/?face&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;This is an avatar&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-avatar c-quote__avatar&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/100x100/?face&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;This is an avatar&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;image&quot;</span>&gt;</span>
 
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__reference&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__reference-item&quot;</span>&gt;</span>
@@ -216,7 +216,7 @@
             </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> reference %}</span><span class="xml">
             <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__footer&quot;</span>&gt;</span>
                 </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> reference.avatar %}</span><span class="xml">
-                </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="avatar.html">@avatar</a>&#x27; %}</span><span class="xml">
+                </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="avatar.html">@avatar</a>&#x27;, { styleModifier: &quot;c-quote__avatar&quot; }, true %}</span><span class="xml">
                 </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__reference&quot;</span>&gt;</span>
                 </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> reference.author -%}</span><span class="xml">
@@ -349,23 +349,27 @@
 
 <span class="hljs-selector-class">.c-quote__footer</span> {
   <span class="hljs-keyword">@apply</span>
-    mt-<span class="hljs-number">12</span>
+    mt-<span class="hljs-number">4</span>
     flex
     flex-col
     items-center
     ;
 }
 
-
+<span class="hljs-selector-class">.c-quote__avatar</span> {
+  <span class="hljs-keyword">@apply</span>
+    mt-<span class="hljs-number">8</span>
+  ;
+}
 
 <span class="hljs-comment">/* -----------------------------------
  # Reference
  ----------------------------------- */</span>
 
 <span class="hljs-selector-class">.c-quote__reference</span> {
+  <span class="hljs-keyword">@extend</span> %caption;
   <span class="hljs-keyword">@apply</span>
     mt-<span class="hljs-number">4</span>
-    text-xs
     uppercase
     not-italic
   ;
@@ -392,7 +396,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -1422,7 +1426,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1465,32 +1469,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="card.html" data-role="tree-link" data-pjax data-handle="card">
-                <span>Card</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="content--default.html" data-role="tree-link" data-pjax data-handle="content">
                 <span>Content</span>
                 
@@ -1500,7 +1478,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1552,7 +1530,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1578,7 +1556,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1894,8 +1872,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-02T13:59:54.405Z">
-                                02.03.2021 à 14:59:54
+                            <time datetime="2021-03-03T06:18:42.259Z">
+                                03.03.2021 à 07:18:42
                             </time>
                         
                     </dd>
@@ -2699,8 +2677,6 @@
         
     
         
-    
-        
             
             <div class="Navigation-group" data-role="variant-group" data-component="content">
                 
@@ -2730,7 +2706,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2756,7 +2732,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2809,7 +2785,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2835,7 +2811,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2959,7 +2935,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.8.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.8.1"></script>
 
 
 

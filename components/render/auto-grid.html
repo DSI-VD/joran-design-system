@@ -1,108 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+<style>
+    :root {
+        
+        
+        
+    }
+</style>
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.8.1" type="text/css">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.8.1" type="text/css">
 
 
-<ul class="o-auto-grid">
-    
-    <li>
-        <article class="c-card o-stack">
-    
-    <figure>
-        <img src="https://source.unsplash.com/WLUHO9A_xik" alt="A random image from Unsplash"/>
-    </figure>
-    
-    <h3 class="c-card__heading">This is a card title</h3>
-    <div class="c-card__content">
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+<title>Error rendering component auto-grid | Joran design system</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame Frame--full" id="frame">
+
+
+<div class="Error Error--render">
+    <h4 class="Error-title">Error rendering component</h4>
+    <div class="Error-message Prose">
+        <p>(unknown path)
+  Error: Could not render component &#39;@card&#39; - component not found.</p>
+
     </div>
     
-</article>
+    <code class="Error-stack">
+        <pre>Template render error: (unknown path)
+  Error: Could not render component '@card' - component not found.
+    at Object._prettifyError (/Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/environment.js:561:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/environment.js:631:18), <anonymous>:39:3)
+    at Template.render (/Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/environment.js:550:10)
+    at Environment.renderString (/Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/environment.js:378:17)
+    at Environment.tryCatcher (/Users/cedricaellen/Projects/joran-design-system/node_modules/bluebird/js/release/util.js:16:23)
+    at Environment.ret [as renderStringAsync] (eval at makeNodePromisifiedEval (/Users/cedricaellen/Projects/joran-design-system/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at NunjucksAdapter.render (/Users/cedricaellen/Projects/joran-design-system/node_modules/@frctl/nunjucks/src/adapter.js:96:28)
+    at ComponentSource._renderVariant (/Users/cedricaellen/Projects/joran-design-system/node_modules/@frctl/fractal/src/api/components/source.js:212:30)
+    at _renderVariant.next (<anonymous>)
+    at onFulfilled (/Users/cedricaellen/Projects/joran-design-system/node_modules/co/index.js:65:19)</pre>
+    </code>
+    
+</div>
 
-    </li>
-    
-    <li>
-        <article class="c-card o-stack">
-    
-    <figure>
-        <img src="https://source.unsplash.com/uReASzIJDBs" alt="A random image from Unsplash"/>
-    </figure>
-    
-    <h3 class="c-card__heading">This is a very very very very long card title</h3>
-    <div class="c-card__content">
-        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.
-    </div>
-    
-</article>
 
-    </li>
-    
-    <li>
-        <article class="c-card o-stack">
-    
-    <h3 class="c-card__heading">Card title</h3>
-    <div class="c-card__content">
-        Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
-    </div>
-    
-</article>
+</div>
 
-    </li>
-    
-    <li>
-        <article class="c-card o-stack">
-    
-    <figure>
-        <img src="https://source.unsplash.com/rpig3nMmtt4" alt="A random image from Unsplash"/>
-    </figure>
-    
-    <h3 class="c-card__heading">Card title</h3>
-    <div class="c-card__content">
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-    </div>
-    
-    <div>
-        <a href="#nowhere"
-   class="c-button c-button--default">Button</a>
-    </div>
-    
-</article>
 
-    </li>
-    
-    <li>
-        <article class="c-card o-stack">
-    
-    <figure>
-        <img src="https://source.unsplash.com/huSG9s2KBu8" alt="A random image from Unsplash"/>
-    </figure>
-    
-    <h3 class="c-card__heading">Card title</h3>
-    <div class="c-card__content">
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-    </div>
-    
-    <div>
-        <a href="#nowhere"
-   class="c-button c-button--default">Button</a>
-    </div>
-    
-</article>
 
-    </li>
-    
-    <li>
-        <article class="c-card o-stack">
-    
-    <figure>
-        <img src="https://source.unsplash.com/VZQE7H_bywI" alt="A random image from Unsplash"/>
-    </figure>
-    
-    <h3 class="c-card__heading">Card title</h3>
-    <div class="c-card__content">
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-    </div>
-    
-</article>
 
-    </li>
-    
-</ul>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.8.1"></script>
 
+
+
+</body>
+</html>
