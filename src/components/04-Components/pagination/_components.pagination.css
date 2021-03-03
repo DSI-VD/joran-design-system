@@ -4,10 +4,7 @@
 
 .c-pagination {
   @apply
-    py-8
-    bg-gradient-to-b
-    from-primary-100
-    to-primary-400
+    py-12
     text-center
     ;
 }
