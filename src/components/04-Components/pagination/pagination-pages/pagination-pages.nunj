@@ -4,7 +4,7 @@
     <ul class="c-pagination-pages__list" aria-label="Pagination">
       {% if previous %}
       <li class="c-pagination-pages__list-item">
-        <a href="#nowhere" class="c-pagination-pages__link">
+        <a href="#nowhere" class="c-pagination-pages__link" aria-label="Page précédente">
           <span class="sr-only">{{ previousLabel }}</span>
           {% render '@svg-chevron-left' %}
         </a>
@@ -32,7 +32,7 @@
       {% endfor %}
       {% if next %}
       <li class="c-pagination-pages__list-item">
-        <a href="#nowhere" class="c-pagination-pages__link">
+        <a href="#nowhere" class="c-pagination-pages__link" aria-label="Page suivante">
           <span class="sr-only">{{ nextLabel }}</span>
           {% render '@svg-chevron-right' %}
         </a>
