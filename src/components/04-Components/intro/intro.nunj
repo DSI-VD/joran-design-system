@@ -1,4 +1,4 @@
-<div class="o-stack o-region c-intro">
+<div class="o-container o-stack o-region c-intro">
   {% if heading %}
   <h2 class="c-intro__heading">{{ heading }}</h2>
   {% endif %} {% if content %}

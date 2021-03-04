@@ -1,4 +1,4 @@
-<div class="o-region c-pagination">
+<div class="o-container o-region c-pagination">
   <nav aria-labelledby="pagination-title">
     <h2 id="pagination-title" class="u-visually-hidden">Pagination</h2>
     <ul class="c-pagination__list">

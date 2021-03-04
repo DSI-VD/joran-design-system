@@ -1,4 +1,4 @@
-<div class="c-content">
+<div class="o-container c-content">
     {% if heading %}
     <div class="c-content__heading">
         <h2 class="c-content__heading-text u-h2">{{ heading }}</h2>
