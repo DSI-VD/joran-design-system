@@ -1,276 +1,9 @@
 
 
-<div class="c-nav">
-  <nav class="o-container c-nav__container" x-data="{ open: false }">
-    <a class="c-nav__toggle" href="#nowhere" @click.prevent="open = !open">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-    </a>
-    <ul
-      class="c-nav__list c-nav__list--visible-desktop"
-      x-show.transition="open"
-    >
-      
-      <li class="c-nav__list-item"
-          x-data="{ open: false }">
-        <a href="#nowhere"
-           class="c-nav__list-link c-nav__list-link--level-1"
-           @click.prevent="open = !open">Somaire</a>
-        
-        <ul
-          class="c-nav__list c-nav__list--desktop-row"
-          x-show.transition="open"
-          @click.away="open = false"
-        >
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Organigrame</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">La police en chiffres</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Finances</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Objectifs 2020</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Valorisation des colabirateurs</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Témoignages</a>
-          </li>
-          
-        </ul>
-        
-      </li>
-      
-      <li class="c-nav__list-item"
-          x-data="{ open: false }">
-        <a href="#nowhere"
-           class="c-nav__list-link c-nav__list-link--level-1"
-           @click.prevent="open = !open">Projets</a>
-        
-        <ul
-          class="c-nav__list c-nav__list--desktop-row"
-          x-show.transition="open"
-          @click.away="open = false"
-        >
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Communication tactique</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Bilderberg</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Facebook live</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Paléo Festival</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Visite du président indien</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Attaques fourgons blindés</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Fermeture de l&#39;autoroute A12</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Bol d&#39;Or</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Inauguration CIO</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Montreux Jazz Festival</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Fête des Vignerons</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Cérémonie du souvenir</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Escrocrie à la caisse de chômage</a>
-          </li>
-          
-        </ul>
-        
-      </li>
-      
-      <li class="c-nav__list-item"
-          x-data="{ open: false }">
-        <a href="#nowhere"
-           class="c-nav__list-link c-nav__list-link--level-1"
-           @click.prevent="open = !open">Remerciement</a>
-        
-        <ul
-          class="c-nav__list c-nav__list--desktop-row"
-          x-show.transition="open"
-          @click.away="open = false"
-        >
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 3.1</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 3.2</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 3.3</a>
-          </li>
-          
-        </ul>
-        
-      </li>
-      
-      <li class="c-nav__list-item"
-          x-data="{ open: false }">
-        <a href="#nowhere"
-           class="c-nav__list-link c-nav__list-link--level-1"
-           @click.prevent="open = !open">Où sommes-nous ?</a>
-        
-        <ul
-          class="c-nav__list c-nav__list--desktop-row"
-          x-show.transition="open"
-          @click.away="open = false"
-        >
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.1</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.2</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.3</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.4</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.5</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.6</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.7</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.8</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 4.9</a>
-          </li>
-          
-        </ul>
-        
-      </li>
-      
-      <li class="c-nav__list-item"
-          x-data="{ open: false }">
-        <a href="#nowhere"
-           class="c-nav__list-link c-nav__list-link--level-1"
-           @click.prevent="open = !open">Menu 5 est passablement très très très très long</a>
-        
-        <ul
-          class="c-nav__list c-nav__list--desktop-row"
-          x-show.transition="open"
-          @click.away="open = false"
-        >
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 5.1 très très très très très très très très très très très très long</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 5.2</a>
-          </li>
-          
-          <li class="c-nav__list-item c-nav__list-item--desktop-row">
-            <a href="#nowhere"
-               class="c-nav__list-link">Menu 5.3</a>
-          </li>
-          
-        </ul>
-        
-      </li>
-      
-    </ul>
-  </nav>
-</div>
+<div class="o-stack o-stack--big">
 
-<main class="o-stack o-stack--big">
-  <div class="c-hero c-hero--title c-hero--with-image">
+  <main class="o-stack o-stack--big">
+    <div class="c-hero c-hero--title c-hero--with-image">
     <style scoped>
         .c-hero--with-image {
             background-image: url('https://source.unsplash.com/nPz8akkUmDI/320x580');
@@ -310,8 +43,8 @@
         <span class="c-arrow c-hero__button" role="presentation"><svg aria-hidden="true" data-name="Groupe 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path data-name="Tracé 3" d="M0 0h24v24H0z" fill="none"/><path data-name="Ligne 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 5v14"/><path data-name="Ligne 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 13l-6 6"/><path data-name="Ligne 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 13l6 6"/></svg></span>
     </div>
 </div>
-  
-  <div class="o-container c-content">
+    
+    <div class="o-container c-content">
     
     <div class="c-content__heading">
         <h2 class="c-content__heading-text u-h2">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
@@ -322,8 +55,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
     </div>
 </div>
-  
-  <div class="o-container c-quote">
+    
+    <div class="o-container c-quote">
     <div class="o-box">
         
         <blockquote>
@@ -341,22 +74,22 @@
         </blockquote>
     </div>
 </div>
-
-  <div class="c-highlight" aria-label="Contenu mis en évidence">
+  
+    <div class="c-highlight" aria-label="Contenu mis en évidence">
     <div class="o-container"><div class=" c-highlight__text">
 [H2] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor orci mauris, solicitudin rhoncus enim dictum eu. Nunc risus ligula, vehicula eu nisi non, commodo</div>
     </div>
 </div>
-  
-  <div class="o-container c-content">
+    
+    <div class="o-container c-content">
     
     
     <div class="c-content__content o-prose">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
     </div>
 </div>
-  
-  <div class="o-container c-testimonial">
+    
+    <div class="o-container c-testimonial">
     <div class="o-box">
         <div class="c-testimonial__flex"> 
             <div class="c-testimonial__facecontainer">
@@ -388,17 +121,18 @@
         </div>
     </div>
 </div>
-  
-  <div class="o-container c-content">
+    
+    <div class="o-container c-content">
     
     
     <div class="c-content__content o-prose">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
     </div>
 </div>
+    
+  </main>
   
-</main>
-<footer class="c-footer" aria-label="Pied de page" role="contentinfo">
+  <footer class="o-region c-footer" aria-label="Pied de page" role="contentinfo">
   <div class="o-container">
     <h2 class="u-visually-hidden">Pied de page</h2>
     
@@ -434,4 +168,6 @@
   </div>
 </footer>
 
+  
+</div>
 

@@ -2792,8 +2792,6 @@ html {
 
 .c-footer {
   background-color: var(--color__primary--900);
-  padding-bottom: 1.75rem;
-  padding-top: 6rem;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
 }
