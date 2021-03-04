@@ -1,0 +1,30 @@
+/* ======================================================================
+   # _objects.box.css
+   ====================================================================== */
+   
+.o-box {
+  @apply
+    bg-gradient-to-b
+    from-primary-100
+    to-primary-400
+    rounded
+    
+    mx-2
+  ;
+}
+
+@screen md {
+    .o-box {
+        @apply
+        mx-8
+    ;
+    }
+}
+
+@screen lg {
+    .o-box {
+        @apply
+        mx-16
+    ;
+    }
+}

@@ -5,10 +5,6 @@
 .c-quote {
   @apply
     py-24
-    bg-gradient-to-b
-    from-primary-100
-    to-primary-400
-    rounded
     text-center
     ;
 }
