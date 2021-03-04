@@ -14,9 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added _pagination_ component
 - Added _pagination-pages_ component
 - Added _intro_ component
+- Added _box_ object for box with background color and negative margin
+- Add more variant of _stack_ object
 
 ### Changed
 
+- Change HTML in all component with a `.c-container` class
+- Set horizontal spacing in container for pages
 - _footer_ has _logo-entity_ and not _logo-vd_
 
 ### Fixes
