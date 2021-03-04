@@ -3087,6 +3087,39 @@ html {
 }
 
 /* ======================================================================
+   # _components.intro.css
+   ====================================================================== */
+
+.c-intro__heading {
+  font-weight: 700;
+  color: var(--color__primary--900);
+  text-transform: uppercase;
+  font-size: 2.375rem; /* [2] */
+  line-height: 1.05;
+}
+
+@media (min-width: 768px) {
+
+.c-intro__heading {
+    line-height: 1.0833;
+
+    font-size: 3rem;
+
+    line-height: 1;
+}
+  }
+
+.c-intro__heading {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.c-intro__more-btn {
+  margin-right: 1rem;
+  margin-left: 1.25rem;
+}
+
+/* ======================================================================
    # _components.logo-entity.css
    ====================================================================== */
 
