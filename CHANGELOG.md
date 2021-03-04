@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added _button--default-arrow-left_ component for pagination
 - Added _pagination_ component
 - Added _pagination-pages_ component
+- Added _intro_ component
 
 ### Changed
 
