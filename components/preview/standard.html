@@ -1,67 +1,489 @@
+
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-    window.frctl = {
-        env: 'static'
-    };
-    </script>
-    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
-<style>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jorant preview</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    
+    <style>
     :root {
         
+        --color__primary--100: #f2f1fc;
         
+        --color__primary--200: #ddd9f9;
+        
+        --color__primary--400: #beb5f5;
+        
+        --color__primary--600: #9d90ee;
+        
+        --color__primary--800: #7e6cea;
+        
+        --color__primary--900: #5d49de;
+        
+        --color__primary--cta: #5d49de
         
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.8.1" type="text/css">
+    <!-- Stylesheets -->
+    <link
+      media="all"
+      rel="stylesheet"
+      href="../../assets/styles/style.css"
+    />
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.8.1" type="text/css">
+    <!-- Scripts -->
+    <script src="../../assets/scripts/alpine.js"></script>
+  </head>
 
+  <body>
+      <div class="c-nav">
+  <nav class="o-container c-nav__container" x-data="{ open: false }">
+    <a class="c-nav__toggle" href="#nowhere" @click.prevent="open = !open">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </a>
+    <ul
+      class="c-nav__list c-nav__list--visible-desktop"
+      x-show.transition="open"
+    >
+      
+      <li class="c-nav__list-item"
+          x-data="{ open: false }">
+        <a href="#nowhere"
+           class="c-nav__list-link c-nav__list-link--level-1"
+           @click.prevent="open = !open">Somaire</a>
+        
+        <ul
+          class="c-nav__list c-nav__list--desktop-row"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Organigrame</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">La police en chiffres</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Finances</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Objectifs 2020</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Valorisation des colabirateurs</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Témoignages</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__list-item"
+          x-data="{ open: false }">
+        <a href="#nowhere"
+           class="c-nav__list-link c-nav__list-link--level-1"
+           @click.prevent="open = !open">Projets</a>
+        
+        <ul
+          class="c-nav__list c-nav__list--desktop-row"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Communication tactique</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Bilderberg</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Facebook live</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Paléo Festival</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Visite du président indien</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Attaques fourgons blindés</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Fermeture de l&#39;autoroute A12</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Bol d&#39;Or</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Inauguration CIO</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Montreux Jazz Festival</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Fête des Vignerons</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Cérémonie du souvenir</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Escrocrie à la caisse de chômage</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__list-item"
+          x-data="{ open: false }">
+        <a href="#nowhere"
+           class="c-nav__list-link c-nav__list-link--level-1"
+           @click.prevent="open = !open">Remerciement</a>
+        
+        <ul
+          class="c-nav__list c-nav__list--desktop-row"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 3.1</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 3.2</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 3.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__list-item"
+          x-data="{ open: false }">
+        <a href="#nowhere"
+           class="c-nav__list-link c-nav__list-link--level-1"
+           @click.prevent="open = !open">Où sommes-nous ?</a>
+        
+        <ul
+          class="c-nav__list c-nav__list--desktop-row"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.1</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.2</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.3</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.4</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.5</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.6</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.7</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.8</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 4.9</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="c-nav__list-item"
+          x-data="{ open: false }">
+        <a href="#nowhere"
+           class="c-nav__list-link c-nav__list-link--level-1"
+           @click.prevent="open = !open">Menu 5 est passablement très très très très long</a>
+        
+        <ul
+          class="c-nav__list c-nav__list--desktop-row"
+          x-show.transition="open"
+          @click.away="open = false"
+        >
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 5.1 très très très très très très très très très très très très long</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 5.2</a>
+          </li>
+          
+          <li class="c-nav__list-item c-nav__list-item--desktop-row">
+            <a href="#nowhere"
+               class="c-nav__list-link">Menu 5.3</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+  </nav>
+</div>
 
-<title>Error rendering component standard | Joran design system</title>
-
-</head>
-<body>
-
-
-
-<div class="Frame Frame--full" id="frame">
-
-
-<div class="Error Error--render">
-    <h4 class="Error-title">Error rendering component</h4>
-    <div class="Error-message Prose">
-        <p>(unknown path)
-  Error: Could not render component &#39;@text-media&#39; - component not found.</p>
-
+<main class="o-stack o-stack--big">
+  <div class="c-hero c-hero--title c-hero--with-image">
+    <style scoped>
+        .c-hero--with-image {
+            background-image: url('https://source.unsplash.com/nPz8akkUmDI/320x580');
+        }
+        @media (min-width: 320px) { 
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/nPz8akkUmDI/640x640');
+            }
+         }
+        @media (min-width: 640px) { 
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/nPz8akkUmDI/800x600');
+            }
+         }
+        @media (min-width: 768px) {
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/nPz8akkUmDI/1024x768');
+            }
+        }
+        @media (min-width: 1024px) {
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/nPz8akkUmDI/1280x960');
+            }
+        }
+        @media (min-width: 1280px) {
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/nPz8akkUmDI/1280x960');
+            }
+        }
+    </style>
+    <div class="c-hero__top o-container">
+        <h1 class="c-hero__heading">[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</h1>
+        
+        <div class="c-hero__caption">[H4] caption</div>
+    </div>
+    <div class="c-hero__bottom o-container">
+        <span class="c-arrow c-hero__button" role="presentation"><svg aria-hidden="true" data-name="Groupe 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path data-name="Tracé 3" d="M0 0h24v24H0z" fill="none"/><path data-name="Ligne 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 5v14"/><path data-name="Ligne 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 13l-6 6"/><path data-name="Ligne 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 13l6 6"/></svg></span>
+    </div>
+</div>
+  
+  <div class="o-container c-content">
+    
+    <div class="c-content__heading">
+        <h2 class="c-content__heading-text u-h2">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
     </div>
     
-    <code class="Error-stack">
-        <pre>Template render error: (unknown path)
-  Error: Could not render component '@text-media' - component not found.
-    at Object._prettifyError (/Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/lib.js:36:11)
-    at /Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/environment.js:561:19
-    at eval (eval at _compile (/Users/cedricaellen/Projects/joran-design-system/node_modules/nunjucks/src/environment.js:631:18), <anonymous>:22:11)
-    at /Users/cedricaellen/Projects/joran-design-system/node_modules/@frctl/nunjucks/src/extensions/render.js:47:25
-    at processTicksAndRejections (node:internal/process/task_queues:93:5)</pre>
-    </code>
     
+    <div class="c-content__content o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+    </div>
+</div>
+  
+  <div class="o-container c-quote">
+    <div class="o-box">
+        
+        <blockquote>
+            <span class="c-quote__text">Si le chemin n&#39;existe pas nous le créerons</span>
+            
+            <footer class="c-quote__footer">
+                
+                <span class="c-quote__reference">
+                
+                
+                <cite class="c-quote__reference-item">Hannibal, la traversée des alpes, -212 AJC</cite>
+                </span>
+            </footer>
+            
+        </blockquote>
+    </div>
 </div>
 
-
+  <div class="c-highlight" aria-label="Contenu mis en évidence">
+    <div class="o-container"><div class=" c-highlight__text">
+[H2] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor orci mauris, solicitudin rhoncus enim dictum eu. Nunc risus ligula, vehicula eu nisi non, commodo</div>
+    </div>
 </div>
+  
+  <div class="o-container c-content">
+    
+    
+    <div class="c-content__content o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+    </div>
+</div>
+  
+  <div class="o-container c-testimonial">
+    <div class="o-box">
+        <div class="c-testimonial__flex"> 
+            <div class="c-testimonial__facecontainer">
+                <img class="c-avatar c-avatar--responsive c-testimonial__face" src="https://source.unsplash.com/200x200/?face" alt="This is an avatar" itemprop="image">
+            </div>
+            <div class="o-stack c-testimonial__textcontainer">
+                <div class="o-stack o-stack--small">
+                <div class="c-testimonial__author">
+                    
+                    <span class="u-visually-hidden">Auteur: </span><span>MME Prénom Nom</span>
+                    
+                        <span class="u-visually-hidden">, Fonction: </span> <span class="c-testimonial__author--function">Fonction</span>
+                    
+                </div>
+                <h3 class="c-testimonial__header">[H1] Lorem ipsum dolor sit amet</h3>
+                </div>
+                
+                <div class="c-testimonial__text o-prose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus maximus blandit. Donec dui enim, finibus ut mi vel, gravida rutrum est. Donec sed lectus fringilla, ultricies metus sed, lobortis ligula. Nullam vitae fermentum sem. Proin sollicitudin varius ante at faucibus. Suspendisse ut tellus lectus. Ut non leo vel ipsum facilisis fermentum. Morbi molestie ornare nibh, nec iaculis augue sodales et. Fusce molestie convallis interdum. Nullam sit amet luctus quam, eget hendrerit mi. Aenean lorem diam, pellentesque ac vestibulum a, dapibus sed felis. Nam rutrum leo quis dignissim eleifend.</div>
+                
+                <div class="c-testimonial__link">
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent"
+><span>lire la suite</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <div class="o-container c-content">
+    
+    
+    <div class="c-content__content o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+    </div>
+</div>
+  
+</main>
+<footer class="c-footer" aria-label="Pied de page" role="contentinfo">
+  <div class="o-container">
+    <h2 class="u-visually-hidden">Pied de page</h2>
+    
+    <div class="c-footer__main">
+      
+      <div class="c-footer__page">
+        <h3 class="u-visually-hidden">Liens connexes</h3>
+        <ul class="c-footer__list-page">
+          <li><a href="#nowhere">Mentions légales</a></li>
+          <li><a href="#nowhere">Plan du site</a></li>
+          <li><a href="#nowhere">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="c-footer__social">
+        <h3 class="u-visually-hidden md:u-not-visually-hidden">Partager</h3>
+        <ul class="c-footer__list-social">
+          <li><a href="#nowhere"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Groupe 42"><path data-name="Tracé 8" d="M12 .003a12 12 0 00-12 12 12 12 0 0012 12 12 12 0 0012-12 12 12 0 00-12-12zm6.027 9.725q.009.186.008.374a8.175 8.175 0 01-8.231 8.231 8.19 8.19 0 01-4.434-1.3 5.884 5.884 0 00.69.04 5.805 5.805 0 003.593-1.238 2.9 2.9 0 01-2.7-2.009 2.89 2.89 0 00.544.052 2.9 2.9 0 00.763-.1 2.894 2.894 0 01-2.321-2.836v-.037a2.872 2.872 0 001.31.362 2.891 2.891 0 01-1.287-2.408 2.883 2.883 0 01.392-1.454 8.213 8.213 0 005.963 3.022 2.885 2.885 0 01-.075-.66 2.893 2.893 0 012.893-2.893 2.89 2.89 0 012.112.914 5.8 5.8 0 001.837-.7 2.9 2.9 0 01-1.272 1.6 5.776 5.776 0 001.661-.455 5.885 5.885 0 01-1.446 1.492z" fill="currentColor"/></g></svg></a></li>
+          <li><a href="#nowhere"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path data-name="Tracé 9" d="M24.001 12a12 12 0 00-12-12 12 12 0 00-12 12 12 12 0 0010.125 11.854v-8.385H7.079V12h3.047V9.356c0-3.008 1.792-4.669 4.533-4.669a18.456 18.456 0 012.686.234v2.953h-1.513a1.734 1.734 0 00-1.956 1.874v2.251h3.328l-.532 3.469h-2.8v8.385A12 12 0 0024.001 12z" fill="currentColor"/></svg></a></li>
+          <li><a href="#nowhere"><svg aria-hidden="true" data-name="Groupe 44" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path data-name="Tracé 11" d="M0 0h24v24H0z" fill="none"/><path data-name="Ligne 9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 14L21 3"/><path data-name="Tracé 12" d="M21 3l-6.5 18a.55.55 0 01-1 0L10 14l-7-3.5a.55.55 0 010-1L21 3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></a></li>
+        </ul>
+      </div>
+      
+      <div class="c-footer__logo">
+        <h3 class="u-visually-hidden">Logo de l'entité</h3>
+        <img class="c-logo-entity" src="../../assets/images/logo-entity.png" />
+      </div>
+      
+    </div>
+    <div class="c-footer__secondary">
+      &copy; Name of the service - 2021
+    </div>
+  </div>
+</footer>
 
 
-
-
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.8.1"></script>
-
-
-
-</body>
+  </body>
 </html>
+

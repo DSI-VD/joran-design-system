@@ -2,12 +2,6 @@
    # _components.pagination.css
    ====================================================================== */
 
-.c-pagination {
-  @apply
-    py-12
-    ;
-}
-
 .c-pagination__list {
   @apply
     flex

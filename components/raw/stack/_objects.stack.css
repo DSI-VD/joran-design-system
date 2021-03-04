@@ -10,6 +10,14 @@
   justify-content: flex-start;
 }
 
+.o-stack--big {
+  --stack-space: 3rem;
+}
+
+.o-stack--small {
+  --stack-space: 0.5rem;
+}
+
 .o-stack > * {
   margin-top: 0;
   margin-bottom: 0;

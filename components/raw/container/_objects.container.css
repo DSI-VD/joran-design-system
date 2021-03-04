@@ -9,3 +9,35 @@
     px-4
     ;
 }
+
+@screen md {
+  .o-container {
+    @apply
+      px-8
+      ;
+  }
+}
+
+@screen lg {
+  .o-container {
+    @apply
+      px-16
+      ;
+  }
+}
+
+@screen xl {
+  .o-container {
+    @apply
+      px-32
+      ;
+  }
+}
+
+@screen 2xl {
+  .o-container {
+    @apply
+      px-64
+      ;
+  }
+}
