@@ -4,7 +4,8 @@
             <div class="c-testimonial__facecontainer">
                 {% render '@avatar--responsive', { styleModifier: "c-testimonial__face" }, true %}
             </div>
-            <div class="c-testimonial__textcontainer">
+            <div class="o-stack c-testimonial__textcontainer">
+                <div class="o-stack o-stack--small">
                 <div class="c-testimonial__author">
                     {% if author and function %}
                     {% if author -%}
@@ -16,6 +17,8 @@
                     {% endif %}
                 </div>
                 <h3 class="c-testimonial__header">{{ header }}</h3>
+                </div>
+                
                 <div class="c-testimonial__text o-prose">{{ testimonial }}</div>
                 {% if more %}
                 <div class="c-testimonial__link">
