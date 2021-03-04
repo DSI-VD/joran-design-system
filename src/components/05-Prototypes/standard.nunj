@@ -1,18 +1,22 @@
-{% render '@navigation' %}
-<main class="o-stack o-stack--big">
-  {% render '@hero--title-with-image' %}
-  
-  {% render '@content--with-heading' %}
-  
-  {% render '@quote' %}
+<div class="o-stack o-stack--big">
 
-  {% render '@highlight' %}
+  <main class="o-stack o-stack--big">
+    {% render '@hero--title-with-image' %}
+    
+    {% render '@content--with-heading' %}
+    
+    {% render '@quote' %}
   
-  {% render '@content--default' %}
+    {% render '@highlight' %}
+    
+    {% render '@content--default' %}
+    
+    {% render '@testimonial' %}
+    
+    {% render '@content--default' %}
+    
+  </main>
   
-  {% render '@testimonial' %}
+  {% render '@footer' %}
   
-  {% render '@content--default' %}
-  
-</main>
-{% render '@footer' %}
+</div>
