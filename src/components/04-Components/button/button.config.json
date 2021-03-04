@@ -1,4 +1,5 @@
 {
+  "status": "ready",
   "context": {
     "text": "Button",
     "url": "#nowhere"
@@ -13,7 +14,20 @@
     {
       "name": "default arrow right",
       "context": {
-        "svg": true,
+        "svg": {
+          "after": true
+        },
+        "variantModifier": "c-button--default"
+      }
+    },
+    {
+      "name": "default arrow left",
+      "status": "wip",
+      "context": {
+        "svg": {
+          "before": true
+        },
+        "svgBefore": true,
         "variantModifier": "c-button--default"
       }
     },
@@ -29,7 +43,9 @@
       "preview": "@preview",
       "context": {
         "variantModifier": "c-button--transparent",
-        "svg": true
+        "svg": {
+          "after": true
+        }
       }
     },
     {
@@ -44,7 +60,9 @@
       "preview": "@preview-bg",
       "context": {
         "variantModifier": "c-button--transparent-alt",
-        "svg": true
+        "svg": {
+          "after": true
+        }
       }
     }
   ]

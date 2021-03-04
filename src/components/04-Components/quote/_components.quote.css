@@ -19,10 +19,12 @@
    # Heading
    ----------------------------------- */
 .c-quote__heading {
+  @extend %caption;
+
   @apply
-    text-sm
-    uppercase
     my-4
+    uppercase
+    text-black
     ;
 }
 
@@ -36,17 +38,20 @@
  * Size has to be the same as `u-h2`
  */
 .c-quote__text {
+  @extend %h2;
+
   @apply
     inline-block
-    font-bold
-    text-3xl
     max-w-prose
+    text-black
     ;
 }
 
-.c-quote__text::before,
+.c-quote__text::before {
+  content: "« ";
+}
 .c-quote__text::after {
-  content: "\"";
+  content: " »";
 }
 
 
@@ -57,23 +62,27 @@
 
 .c-quote__footer {
   @apply
-    mt-12
+    mt-4
     flex
     flex-col
     items-center
     ;
 }
 
-
+.c-quote__avatar {
+  @apply
+    mt-8
+  ;
+}
 
 /* -----------------------------------
  # Reference
  ----------------------------------- */
 
 .c-quote__reference {
+  @extend %caption;
   @apply
     mt-4
-    text-xs
     uppercase
     not-italic
   ;

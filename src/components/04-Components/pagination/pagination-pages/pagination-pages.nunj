@@ -1,0 +1,43 @@
+<div class="c-pagination-pages">
+  <nav aria-labelledby="pagination-title">
+    <h2 id="pagination-title" class="u-visually-hidden">Pagination</h2>
+    <ul class="c-pagination-pages__list" aria-label="Pagination">
+      {% if previous %}
+      <li class="c-pagination-pages__list-item">
+        <a href="#nowhere" class="c-pagination-pages__link">
+          <span class="sr-only">{{ previousLabel }}</span>
+          {% render '@svg-chevron-left' %}
+        </a>
+      </li>
+      {% endif %} {% for item in items %}
+      <li class="c-pagination-pages__list-item">
+        {% if item.current -%}
+        <span 
+        class="c-pagination-pages__link"
+        aria-label="Page {{ item.text }}"
+        aria-current="page">
+        {%- else -%}
+        <a
+          href="#nowhere"
+          class="c-pagination-pages__link"
+          aria-label="Page {{ item.text }}">
+        {%- endif -%}
+       {{- item.text -}}
+       {%- if item.current -%}
+       </span>
+       {%- else -%}
+       </a>
+       {%- endif -%}
+      </li>
+      {% endfor %}
+      {% if next %}
+      <li class="c-pagination-pages__list-item">
+        <a href="#nowhere" class="c-pagination-pages__link">
+          <span class="sr-only">{{ nextLabel }}</span>
+          {% render '@svg-chevron-right' %}
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>

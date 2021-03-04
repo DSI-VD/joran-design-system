@@ -1,0 +1,70 @@
+{
+  "status": "review",
+  "context": {
+    "previousLabel": "Précédent",
+    "nextLabel": "Suivant",
+    "previous": true,
+    "items": [
+      {
+        "text": 5
+      },
+      {
+        "text": 6,
+        "current": true
+      },
+      {
+        "text": 7
+      },
+      {
+        "text": 8
+      }
+    ],
+    "next": true
+  },
+  "variants": [
+    {
+      "name": "first page",
+      "context": {
+        "previous": false,
+        "items": [
+          {
+            "text": 1,
+            "current": true
+          },
+          {
+            "text": 2
+          },
+          {
+            "text": 3
+          },
+          {
+            "text": 4
+          }
+        ],
+        "next": true
+      }
+    },
+    {
+      "name": "last page",
+      "context": {
+        "previous": true,
+        "items": [
+          {
+            "text": 29
+          },
+          {
+            "text": 30
+          },
+          {
+            "text": 31
+          },
+          {
+            "text": 32,
+            "current": true
+          }
+        ],
+        "next": false
+      }
+    }
+  ]
+}

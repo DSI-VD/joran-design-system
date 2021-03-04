@@ -1,14 +1,8 @@
 /* ======================================================================
-   # _components.figure.css
+   # _components.logo-entity.css
    ====================================================================== */
-
-.c-figure__media {
-  @apply
-    rounded
-    bg-primary-600
-    ;
-}
-
-.c-figure__caption {
-  @extend %caption;
+   
+.c-logo-entity {
+    max-height: 4rem;
+    max-width: 4rem;
 }

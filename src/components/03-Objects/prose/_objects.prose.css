@@ -6,21 +6,9 @@
   @apply prose;
 }
 
-/* @screen md {
-  .o-prose {
-    @apply prose;
-  }
-} */
-
-@screen lg {
+@screen md {
   .o-prose {
     @apply prose-lg;
-  }
-}
-
-@screen xl {
-  .o-prose {
-    @apply prose-xl;
   }
 }
 

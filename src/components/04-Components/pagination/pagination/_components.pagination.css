@@ -1,0 +1,33 @@
+/* ======================================================================
+   # _components.pagination.css
+   ====================================================================== */
+
+.c-pagination {
+  @apply
+    py-12
+    ;
+}
+
+.c-pagination__list {
+  @apply
+    flex
+    flex-row
+    flex-wrap
+    justify-between
+}
+
+.c-pagination_list-item-previous,
+.c-pagination_list-item-next {
+  @apply
+    mb-4
+  ;
+}
+
+/***
+ * FIXME: Le bouton de droite sort du viewport sur Firefox
+ */
+.c-pagination_list-item-next {
+  @apply
+    ml-auto
+    ;
+}

@@ -1,0 +1,72 @@
+/* ======================================================================
+   # _components.pagination.css
+   ====================================================================== */
+
+.c-pagination-pages {
+  @apply
+    py-12
+    ;
+}
+
+.c-pagination-pages__list {
+  @apply
+    flex
+    flex-wrap
+    justify-center
+    
+    rounded-md
+    no-underline
+    text-sm
+    ;
+}
+
+.c-pagination-pages__list-item {
+  @apply
+    mb-4
+    mx-2
+  ;
+}
+
+/***
+ * 1. Center content
+ * 2. If there more than one digit
+ */
+
+.c-pagination-pages__link {
+  @extend %caption;
+  
+  @apply
+    flex /* [1] */
+    items-center /* [1] */
+    justify-center /* [1] */
+    
+    text-white
+    bg-primary-400
+    rounded
+    shadow
+    
+    inline-block
+    h-8
+    px-2 /* [2] */
+  ;
+  
+  min-width: 2rem;
+}
+
+.c-pagination-pages__link svg {
+  height: 1em;
+}
+
+.c-pagination-pages__link:hover,
+.c-pagination-pages__link:active,
+.c-pagination-pages__link[aria-current="page"] {
+  @apply
+    bg-primary-cta
+  ;
+}
+
+.c-pagination-pages__link:focus {
+  @apply
+    outline-focus
+  ;
+}
