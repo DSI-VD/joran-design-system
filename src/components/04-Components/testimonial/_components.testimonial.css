@@ -38,7 +38,6 @@
   @screen md {
     .c-testimonial__facecontainer {
       @apply
-        justify-start
         w-1/3
       ;
     }
