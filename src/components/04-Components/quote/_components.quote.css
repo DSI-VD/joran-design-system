@@ -4,7 +4,6 @@
 
 .c-quote {
   @apply
-    py-24
     text-center
     ;
 }

@@ -9,22 +9,35 @@
     to-primary-400
     rounded
     
-    mx-2
+    py-24
+    px-2
+    -mx-2
   ;
 }
 
 @screen md {
-    .o-box {
-        @apply
-        mx-8
+  .o-box {
+    @apply
+      px-4
+      -mx-4
     ;
-    }
+  }
 }
 
 @screen lg {
-    .o-box {
-        @apply
-        mx-16
+  .o-box {
+    @apply
+      px-8
+      -mx-8
     ;
-    }
+  }
+}
+
+@screen xl {
+  .o-box {
+    @apply
+      px-16
+      -mx-16
+    ;
+  }
 }

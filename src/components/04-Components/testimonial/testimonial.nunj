@@ -1,5 +1,5 @@
-<div class="o-box c-testimonial">
-    <div class="o-container">
+<div class="o-container c-testimonial">
+    <div class="o-box">
         <div class="c-testimonial__flex"> 
             <div class="c-testimonial__facecontainer">
                 {% render '@avatar--responsive', { styleModifier: "c-testimonial__face" }, true %}
