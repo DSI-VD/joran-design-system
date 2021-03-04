@@ -53,6 +53,10 @@
   min-width: 2rem;
 }
 
+.c-pagination-pages__link svg {
+  height: 1em;
+}
+
 .c-pagination-pages__link:hover,
 .c-pagination-pages__link:active,
 .c-pagination-pages__link[aria-current="page"] {
