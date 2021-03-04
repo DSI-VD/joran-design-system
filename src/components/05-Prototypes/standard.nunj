@@ -1,5 +1,5 @@
 {% render '@navigation' %}
-<main class="o-stack">
+<main class="o-stack o-stack--big">
   {% render '@hero--title-with-image' %}
   
   {% render '@content--with-heading' %}
