@@ -1622,8 +1622,8 @@ html {
   .o-box {
     margin-left: -1rem;
     margin-right: -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -1631,8 +1631,8 @@ html {
   .o-box {
     margin-left: -2rem;
     margin-right: -2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
@@ -1640,8 +1640,8 @@ html {
   .o-box {
     margin-left: -4rem;
     margin-right: -4rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
@@ -2471,14 +2471,6 @@ html {
   justify-content: flex-start;
 }
 
-.o-stack--big {
-  --stack-space: 3rem;
-}
-
-.o-stack--small {
-  --stack-space: 0.5rem;
-}
-
 .o-stack > * {
   margin-top: 0;
   margin-bottom: 0;
@@ -2486,6 +2478,34 @@ html {
 
 .o-stack > * + * {
   margin-top: var(--stack-space);
+}
+
+/* -----------------------------------
+ # Big
+ ----------------------------------- */
+
+.o-stack--big {
+  --stack-space: 3rem;
+}
+
+@media (min-width: 768px) {
+  .o-stack--big {
+    --stack-space: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-stack--big {
+    --stack-space: 9rem;
+  }
+}
+
+/* -----------------------------------
+ # Small
+ ----------------------------------- */
+
+.o-stack--small {
+  --stack-space: 0.5rem;
 }
 
 /* Components */
@@ -2768,7 +2788,7 @@ html {
 }
 
 .c-content__heading {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* ======================================================================
@@ -3203,8 +3223,13 @@ html {
    ====================================================================== */
 
 .c-logo-entity {
-  max-height: 4rem;
   max-width: 4rem;
+}
+
+@media (min-width: 768px) {
+  .c-logo-entity {
+    max-width: 8rem;
+  }
 }
 
 /* ==========================================================================
@@ -3423,6 +3448,7 @@ html {
 
 /***
  * Size has to be the same as `u-h2`
+ * 1. add an unbreakable space
  */
 
 .c-quote__text {
@@ -3449,11 +3475,13 @@ html {
 }
 
 .c-quote__text::before {
-  content: "« ";
+  content: "«";
+  margin-right: 0.25rem;
 }
 
 .c-quote__text::after {
-  content: " »";
+  content: "»";
+  margin-left: 0.25rem;
 }
 
 /* -----------------------------------
@@ -3658,6 +3686,7 @@ html {
 
 @media (min-width: 768px) {
   .c-testimonial__facecontainer {
+    justify-content: flex-start;
     width: 33.333333%;
   }
 }
@@ -3765,17 +3794,18 @@ html {
 }
 
 /* -----------------------------------
- # link
+ # Button
  ----------------------------------- */
 
-.c-testimonial__link {
-  display: flex;
-  justify-content: center;
+.c-testimonial__button {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
-  .c-testimonial__link {
-    justify-content: flex-start;
+  .c-testimonial__button {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -3958,6 +3988,10 @@ html {
 
 .contents {
   display: contents;
+}
+
+.hidden {
+  display: none;
 }
 
 .flex-row {

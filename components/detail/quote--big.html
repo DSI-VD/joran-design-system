@@ -320,6 +320,7 @@
 
 <span class="hljs-comment">/***
  * Size has to be the same as `u-h2`
+ * 1. add an unbreakable space
  */</span>
 <span class="hljs-selector-class">.c-quote__text</span> {
   <span class="hljs-keyword">@extend</span> %h2;
@@ -332,10 +333,16 @@
 }
 
 <span class="hljs-selector-class">.c-quote__text</span><span class="hljs-selector-pseudo">::before</span> {
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;« &quot;</span>;
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;«&quot;</span>;
+  <span class="hljs-keyword">@apply</span>
+    mr-<span class="hljs-number">1</span> /* [<span class="hljs-number">1</span>] */
+  ;
 }
 <span class="hljs-selector-class">.c-quote__text</span><span class="hljs-selector-pseudo">::after</span> {
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot; »&quot;</span>;
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;»&quot;</span>;
+  <span class="hljs-keyword">@apply</span>
+    ml-<span class="hljs-number">1</span> /* [<span class="hljs-number">1</span>] */
+  ;
 }
 
 
@@ -393,7 +400,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -1553,7 +1560,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1631,7 +1638,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1769,7 +1776,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1795,7 +1802,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1879,7 +1886,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2004,7 +2011,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.17
+                            0.0.18
                         
                     </dd>
                 </div>
@@ -2013,8 +2020,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-05T07:48:46.740Z">
-                                05.03.2021 à 08:48:46
+                            <time datetime="2021-03-05T13:37:20.615Z">
+                                05.03.2021 à 14:37:20
                             </time>
                         
                     </dd>
@@ -3031,7 +3038,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3057,7 +3064,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3083,7 +3090,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3109,7 +3116,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3164,7 +3171,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3190,7 +3197,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3216,7 +3223,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3265,7 +3272,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3291,7 +3298,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3317,7 +3324,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

@@ -31,6 +31,7 @@
 
 /***
  * Size has to be the same as `u-h2`
+ * 1. add an unbreakable space
  */
 .c-quote__text {
   @extend %h2;
@@ -43,10 +44,16 @@
 }
 
 .c-quote__text::before {
-  content: "« ";
+  content: "«";
+  @apply
+    mr-1 /* [1] */
+  ;
 }
 .c-quote__text::after {
-  content: " »";
+  content: "»";
+  @apply
+    ml-1 /* [1] */
+  ;
 }
 
 

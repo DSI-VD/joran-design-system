@@ -3,6 +3,11 @@
    ====================================================================== */
    
 .c-logo-entity {
-    max-height: 4rem;
     max-width: 4rem;
+}
+
+@screen md {
+   .c-logo-entity {
+       max-width: 8rem;
+   }
 }

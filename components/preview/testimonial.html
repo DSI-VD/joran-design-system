@@ -43,44 +43,54 @@
       rel="stylesheet"
       href="../../assets/styles/style.css"
     />
-
-    <!-- Scripts -->
-    <script src="../../assets/scripts/alpine.js"></script>
   </head>
 
   <body>
       <div class="o-container c-testimonial">
     <div class="o-box">
         <div class="c-testimonial__flex"> 
+            
             <div class="c-testimonial__facecontainer">
                 <img class="c-avatar c-avatar--responsive c-testimonial__face" src="https://source.unsplash.com/200x200/?face" alt="This is an avatar" itemprop="image">
             </div>
+            
             <div class="o-stack c-testimonial__textcontainer">
                 <div class="o-stack o-stack--small">
-                <div class="c-testimonial__author">
+                    <div class="c-testimonial__author">
+                        
+                        <span class="u-visually-hidden">Auteur: </span><span>MME Prénom Nom</span>
+                        
+                            <span class="u-visually-hidden">, Fonction: </span> <span class="c-testimonial__author--function">Fonction</span>
+                        
+                    </div>
                     
-                    <span class="u-visually-hidden">Auteur: </span><span>MME Prénom Nom</span>
-                    
-                        <span class="u-visually-hidden">, Fonction: </span> <span class="c-testimonial__author--function">Fonction</span>
-                    
-                </div>
-                <h3 class="c-testimonial__header">[H1] Lorem ipsum dolor sit amet</h3>
+                    <h3 class="c-testimonial__header">[H1] Lorem ipsum dolor sit amet</h3>
                 </div>
                 
-                <div class="c-testimonial__text o-prose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus maximus blandit. Donec dui enim, finibus ut mi vel, gravida rutrum est. Donec sed lectus fringilla, ultricies metus sed, lobortis ligula. Nullam vitae fermentum sem. Proin sollicitudin varius ante at faucibus. Suspendisse ut tellus lectus. Ut non leo vel ipsum facilisis fermentum. Morbi molestie ornare nibh, nec iaculis augue sodales et. Fusce molestie convallis interdum. Nullam sit amet luctus quam, eget hendrerit mi. Aenean lorem diam, pellentesque ac vestibulum a, dapibus sed felis. Nam rutrum leo quis dignissim eleifend.</div>
-                
-                <div class="c-testimonial__link">
-                <a
-  href="#nowhere"
-  class="c-button c-button--transparent"
-><span>lire la suite</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-
+                <div class="c-testimonial__text o-prose">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus maximus blandit. Donec dui enim, finibus ut mi vel, gravida rutrum est. Donec sed lectus fringilla, ultricies metus sed, lobortis ligula. Nullam vitae fermentum sem. Proin sollicitudin varius ante at faucibus. Suspendisse ut tellus lectus. Ut non leo vel ipsum facilisis fermentum. Morbi molestie ornare nibh, nec iaculis augue sodales et. Fusce molestie convallis interdum. Nullam sit amet luctus quam, eget hendrerit mi. Aenean lorem diam, pellentesque ac vestibulum a, dapibus sed felis. Nam rutrum leo quis dignissim eleifend.
                 </div>
+                
+            
+                    <div id="js-more-1" class="js-testimonial__fulltext o-prose">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus maximus blandit. Donec dui enim, finibus ut mi vel, gravida rutrum est. Donec sed lectus fringilla, ultricies metus sed, lobortis ligula. Nullam vitae fermentum sem. Proin sollicitudin varius ante at faucibus. Suspendisse ut tellus lectus. Ut non leo vel ipsum facilisis fermentum. Morbi molestie ornare nibh, nec iaculis augue sodales et. Fusce molestie convallis interdum. Nullam sit amet luctus quam, eget hendrerit mi. Aenean lorem diam, pellentesque ac vestibulum a, dapibus sed felis. Nam rutrum leo quis dignissim eleifend.</p><p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+                    </div>
+                
+                    <button aria-expanded="false"
+                            aria-controls="js-more-1"
+                            aria-pressed="false"
+                            class="c-button c-button--transparent c-testimonial__button js-testimonial__toggle-btn"
+                            hidden>
+                        <span class="js-testimonial__toggle-btn-text">Lire la suite</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                
                 
             </div>
         </div>
     </div>
 </div>
+      <!-- Scripts -->
+      <script src="../../assets/scripts/testimonial.js"></script>
   </body>
 </html>
 

@@ -18,7 +18,7 @@
 @screen md {
   .o-box {
     @apply
-      px-4
+      px-8
       -mx-4
     ;
   }
@@ -27,7 +27,7 @@
 @screen lg {
   .o-box {
     @apply
-      px-8
+      px-16
       -mx-8
     ;
   }
@@ -36,7 +36,7 @@
 @screen xl {
   .o-box {
     @apply
-      px-16
+      px-32
       -mx-16
     ;
   }
