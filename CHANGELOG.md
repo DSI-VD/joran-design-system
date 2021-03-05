@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- _footer_ is ready
 - _highlight_ is ready
 - Spaces before guillemets in _quotes_ are unbreakable
 
