@@ -28,17 +28,14 @@
   height: 1em;
 }
 
-.c-button span + svg {
+.c-button span + svg,
+.c-button svg + span {
   @apply
-    ml-1
+    ml-4
   ;
 }
 
-.c-button svg + span {
-  @apply
-    ml-1
-  ;
-}
+
 
 
 /* -----------------------------------
