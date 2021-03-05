@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Change _footer_ padding
+- REFINE _logo_entite_ width
 - Change structure in _standard_ prototype to add margin before the footer
 - Change HTML in all component with a `.c-container` class
 - Set horizontal spacing in container for pages
