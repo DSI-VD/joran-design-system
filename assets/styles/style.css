@@ -3820,9 +3820,9 @@ html {
 .c-title {
 }
 
-.o-stack > .c-title + * {
-  --stack-space: 3rem;
-}
+/* .o-stack > .c-title + * {
+    --stack-space: 3rem;
+} */
 
 /* Vendors */
 
