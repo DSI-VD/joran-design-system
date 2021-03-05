@@ -106,22 +106,15 @@
 }
 
 /* -----------------------------------
- # link
+ # Button
  ----------------------------------- */
- 
-  .c-testimonial__link {
-    @apply
-      flex
-      justify-center
-    ;
+
+.c-testimonial__button {
+  @apply mx-auto;
+}
+
+@screen md {
+  .c-testimonial__button {
+    @apply mx-0;
   }
-  
-  @screen md {
-    .c-testimonial__link {
-      @apply
-        justify-start
-      ;
-    }
-  }
-  
-  
+}

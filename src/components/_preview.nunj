@@ -23,12 +23,11 @@
       rel="stylesheet"
       href="{{ '/assets/styles/style.css' | path }}"
     />
-
-    <!-- Scripts -->
-    <script src="{{ '/assets/scripts/alpine.js' | path  }}"></script>
   </head>
 
   <body>
       {{ yield | safe }}
+      <!-- Scripts -->
+      <script src="{{ '/assets/scripts/testimonial.js' | path  }}"></script>
   </body>
 </html>
