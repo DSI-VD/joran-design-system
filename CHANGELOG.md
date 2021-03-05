@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.18] - 2021-03-05
+
 ### Added
 
 - Added _logo-entity_ components with corresponding assets
@@ -25,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change HTML in all component with a `.c-container` class
 - Set horizontal spacing in container for pages
 - _footer_ has _logo-entity_ and not _logo-vd_
-- Text can be expended in _testimonial_
+- Text can be expended in _testimonial_ and columns size has been refine
 
 ### Fixes
 
@@ -33,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - _pagination-pages_ is ready
 - _footer_ is ready
 - _highlight_ is ready
+- _intro_ is ready
 - Spaces before guillemets in _quotes_ are unbreakable
 
 ## [0.0.17] - 2021-03-03
@@ -266,9 +269,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.17...HEAD
-[0.0.17]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.16...0.0.17
-[0.0.16]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.15...0.0.16
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.18...HEAD
+[0.0.18]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.17...v0.0.18
+[0.0.17]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.16...v0.0.17
+[0.0.16]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.15...v0.0.16
 [0.0.15]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.14...v0.0.15
 [0.0.14]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.13...v0.0.14
 [0.0.13]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.12...v0.0.13
