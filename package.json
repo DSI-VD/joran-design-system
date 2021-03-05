@@ -13,7 +13,7 @@
     "prebuild": "npm run clean",
     "build": "run-s build:*",
     "build:fonts": "copyfiles node_modules/@fontsource/roboto/files/roboto-latin-?00-*.woff2 public/assets/fonts -f",
-    "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f",
+    "build:scripts": "copyfiles node_modules/alpinejs/dist/alpine.js public/assets/scripts -f && copyfiles src/**/*.js public/assets/scripts -f",
     "build:styles": "postcss src/assets/styles/style.css -o public/assets/styles/style.css --config postcss.config.js",
     "build:vectors": "svgo -f src/assets/vectors/ -o public/assets/vectors/",
     "build:images": "imagemin src/assets/images/* --out-dir=public/assets/images/",
@@ -30,7 +30,7 @@
     "test": "npm run lint",
     "watch": "npm run build && run-p watch:*",
     "watch:fractal": "npx fractal start --sync",
-    "watch:scripts": "chokidar \"src/assets/**/*.js\" -c \"npm run build:scripts\" --initial",
+    "watch:scripts": "chokidar \"src/**/*.js\" -c \"npm run build:scripts\" --initial",
     "watch:styles": "chokidar \"src/**/*.css\" -c \"npm run build:styles\" --initial",
     "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial"
   },
