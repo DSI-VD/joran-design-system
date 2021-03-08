@@ -4,33 +4,17 @@
 
 .c-button {
   @apply
-    bg-primary-cta
-    text-white
     no-underline
-    py-3
-    px-6
-    rounded
     uppercase
-    shadow
-    flex
+
+    inline-flex
     flex-row
     flex-nowrap
     items-center
-    gap-2
+
     max-w-max
+
     transition
-    ;
-}
-
-.prose .c-button {
-  @apply no-underline text-white !important;
-}
-
-.c-button:hover,
-.c-button:active {
-  @apply
-    bg-primary-600
-    shadow-lg
     ;
 }
 
@@ -41,28 +25,89 @@
 }
 
 .c-button svg {
-  @apply
-    fill-current
-  ;
-
   height: 1em;
 }
 
-/* -----------------------------------
- # Transparent variant
- ----------------------------------- */
-
-.c-button.c-button--transparent {
+.c-button span + svg,
+.c-button svg + span {
   @apply
-    text-primary
-    bg-transparent
-    shadow-none
+    ml-4
   ;
 }
 
-.c-button.c-button--transparent:hover,
-.c-button.c-button--transparent:active {
+
+
+
+/* -----------------------------------
+ # Variants
+ ----------------------------------- */
+
+/***
+ * Default
+ */
+
+.c-button--default {
   @apply
-    text-primary-600
+    bg-primary-cta
+    text-white
+
+    py-3
+    px-6
+    rounded
+    shadow
+    ;
+}
+
+.c-button--default:hover,
+.c-button--default:active {
+  @apply
+    bg-primary-600
+    shadow-lg
+    ;
+}
+
+.prose .c-button-default {
+  @apply no-underline text-white !important;
+}
+
+
+
+/***
+ * Transparent
+ */
+
+.c-button--transparent {
+  @apply
+    text-primary-cta
+
+    py-3
+  ;
+}
+
+.c-button--transparent:hover,
+.c-button--transparent:active {
+  @apply
+    tracking-wider
+  ;
+}
+
+
+
+/***
+ * Transparent alt
+ */
+
+.c-button--transparent-alt {
+  @apply
+    text-white
+
+    py-3
+  ;
+}
+
+.c-button--transparent-alt:hover,
+.c-button--transparent-alt:active {
+  @apply
+    tracking-wider
   ;
 }

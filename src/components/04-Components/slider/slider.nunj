@@ -1,0 +1,22 @@
+<div class="c-slider">
+    <div class="o-container">
+        <h2 class="c-slider__heading">{{ title }}</h2>
+        {% if items %}
+        <div class="c-slider__container">
+        <ul class="c-slider__list">
+            {% for item in items %}
+            <li class="c-slider__list-item">
+                <article class="c-slider__article">
+                    <h3 class="c-slider__article-heading">{{ item.title }}</h3>
+                    {% render '@button--transparent-alternate-arrow-right', {styleModifier: 'c-slider__article-button', text: 'lire la suite'}, true %}
+                    <figure class="c-slider__article-figure" style="background-image: url('{{ item.image.src }}/640x480');">
+                        <img class="c-slider__article-image" src="{{ item.image.src }}/640x480" alt="{{ item.image.alt }}">
+                    </figure>
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        </div>
+    </div>
+</div>

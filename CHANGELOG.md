@@ -7,12 +7,93 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
+### Added
 
-- Refactor _quotes_ component bay adding a variant for big quotes
+- Added _title_ component
+
+### Fixes
+
+- Fix SVG to make margin consistent in _button_
+
+## [0.0.18] - 2021-03-05
 
 ### Added
 
+- Added _logo-entity_ components with corresponding assets
+- Added _button--default-arrow-left_ component for pagination
+- Added _pagination_ component
+- Added _pagination-pages_ component
+- Added _intro_ component
+- Added _box_ object for box with background color and negative margin
+- Add more variant of _stack_ object
+
+### Changed
+
+- Change _footer_ padding
+- Refine _logo_entite_ width
+- Change structure in _standard_ prototype to add margin before the footer
+- Change HTML in all component with a `.c-container` class
+- Set horizontal spacing in container for pages
+- _footer_ has _logo-entity_ and not _logo-vd_
+- Text can be expended in _testimonial_ and columns size has been refine
+
+### Fixes
+
+- _pagination_ is ready
+- _pagination-pages_ is ready
+- _footer_ is ready
+- _highlight_ is ready
+- _intro_ is ready
+- Spaces before guillemets in _quotes_ are unbreakable
+
+## [0.0.17] - 2021-03-03
+
+### Added
+
+- Add _testimonial_ component
+
+### Removed
+
+- _logo_ as been renamed in _logo-vd_ because there will be two logo
+- Removed _card_ component
+
+### Fixes
+
+- Refine typography in _hero_
+- Refine typography in _footer_
+- Refine margin in _quotes_
+- Remove hover color in _button--transparent_ and _button--transparent-alternate_
+- _content_ is ready
+- Refine _footer_
+  - Social logo are arranged in column on desktop
+  - The copyright is align left on desktop
+  - The component is ready
+- _button_ are ready
+- Use guillemets in _quotes_ and set the component as ready
+
+## [0.0.16] - 2021-03-02
+
+### Fixed
+
+- Refine _slider_ design. The scroll shadow on the right is smaller and more realistic
+- Refine _headings_ sizes
+- Refine typography in _hero_
+- Refine typography in _quotes_
+- Refine typography in _highlight_
+
+## [0.0.15] - 2021-02-25
+
+### Changed
+
+- Change how _button_ are styled. Now, you have to add `.c-button--default` to have the default style
+- Refactor _quotes_ component bay adding a variant for big quotes
+- Change icons in _footer_, _arrow_ and _hero_
+
+### Added
+
+- New SVG components with all icons
+- New _button--transparent-alt_ variant
+- Added _slider_ component with basic style
 - Added support for [CSS Extend Rule](https://github.com/csstools/postcss-extend-rule).
 
 ### Fixed
@@ -196,7 +277,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.14...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.18...HEAD
+[0.0.18]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.17...v0.0.18
+[0.0.17]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.16...v0.0.17
+[0.0.16]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.15...v0.0.16
+[0.0.15]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.14...v0.0.15
 [0.0.14]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.13...v0.0.14
 [0.0.13]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.12...v0.0.13
 [0.0.12]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.11...v0.0.12

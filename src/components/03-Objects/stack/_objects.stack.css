@@ -18,3 +18,29 @@
 .o-stack > * + * {
   margin-top: var(--stack-space);
 }
+
+/* -----------------------------------
+ # Big
+ ----------------------------------- */
+.o-stack--big {
+  --stack-space: 3rem;
+}
+
+@screen md {
+  .o-stack--big {
+    --stack-space: 6rem;
+  }
+}
+
+@screen lg {
+  .o-stack--big {
+    --stack-space: 9rem;
+  }
+}
+
+/* -----------------------------------
+ # Small
+ ----------------------------------- */
+.o-stack--small {
+  --stack-space: 0.5rem;
+}

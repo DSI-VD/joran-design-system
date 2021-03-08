@@ -1,38 +1,30 @@
-{% render '@navigation' %}
-<main class="o-stack">
-  {% render '@hero--title-with-image' %}
-  <div class="o-container">
-    <div class="o-prose">
-      <h2>Heading 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus tellus in sem feugiat, a accumsan leo placerat. Donec mollis vitae tellus id facilisis. Donec tincidunt metus at tellus dictum imperdiet. Duis at risus accumsan, gravida sem sit amet, ultrices augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. In congue lobortis lorem sit amet rutrum. Etiam dictum, diam vel scelerisque pulvinar, nisl sapien rutrum magna, vitae finibus mauris neque sit amet turpis. Praesent eu auctor ante. Nulla facilisi. Fusce tincidunt erat ac malesuada ullamcorper.</p>
+<div class="o-stack o-stack--big">
 
-      <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim.</p>
-    </div>
-  </div>
+  <main class="o-stack o-stack--big">
+    {% render '@hero--title-with-image' %}
+    
+    {% render '@content--with-heading' %}
+    
+    {% render '@quote' %}
   
-  <div class="o-container">
-  {% render '@quote' %}
-  </div>
+    {% render '@highlight' %}
+    
+    {% render '@content--default' %}
+    
+    {% render '@testimonial' %}
+    
+    {% render '@content--default' %}
+    
+    {% render '@slider' %}
+    
+    {% render '@content--default' %}
+    
+    {% render '@title' %}
+    
+    {% render '@content--default' %}
+    
+  </main>
   
-  {% render '@highlight' %}
-  
+  {% render '@footer' %}
 
-  <div class="o-container">
-    <div class="o-prose">
-      <h2>Heading 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus tellus in sem feugiat, a accumsan leo placerat. Donec mollis vitae tellus id facilisis. Donec tincidunt metus at tellus dictum imperdiet. Duis at risus accumsan, gravida sem sit amet, ultrices augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. In congue lobortis lorem sit amet rutrum. Etiam dictum, diam vel scelerisque pulvinar, nisl sapien rutrum magna, vitae finibus mauris neque sit amet turpis. Praesent eu auctor ante. Nulla facilisi. Fusce tincidunt erat ac malesuada ullamcorper.</p>
-
-      <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim.</p>
-    </div>
-  </div>
-
-  <div class="o-container">
-    <div class="o-prose">
-      <h2>Heading 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus tellus in sem feugiat, a accumsan leo placerat. Donec mollis vitae tellus id facilisis. Donec tincidunt metus at tellus dictum imperdiet. Duis at risus accumsan, gravida sem sit amet, ultrices augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. In congue lobortis lorem sit amet rutrum. Etiam dictum, diam vel scelerisque pulvinar, nisl sapien rutrum magna, vitae finibus mauris neque sit amet turpis. Praesent eu auctor ante. Nulla facilisi. Fusce tincidunt erat ac malesuada ullamcorper.</p>
-
-      <p>Vivamus porta eleifend massa ac ultrices. Maecenas tempor efficitur fermentum. Nam eu scelerisque orci, mattis interdum ex. Cras maximus massa orci, sed scelerisque risus vulputate sed. Etiam at aliquam nisi. In eu blandit orci. Aliquam ut dignissim sapien, euismod faucibus felis. Donec pulvinar feugiat ante sit amet malesuada. Duis vel sapien enim.</p>
-    </div>
-  </div>
-</main>
-{% render '@footer' %}
+</div>

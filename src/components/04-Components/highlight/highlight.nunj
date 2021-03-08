@@ -1,5 +1,5 @@
 <div class="c-highlight" aria-label="Contenu mis en évidence">
-    <div class="o-container c-highlight__text">
-[H2] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor orci mauris, solicitudin rhoncus enim dictum eu. Nunc risus ligula, vehicula eu nisi non, commodo
+    <div class="o-container"><div class=" c-highlight__text">
+[H2] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor orci mauris, solicitudin rhoncus enim dictum eu. Nunc risus ligula, vehicula eu nisi non, commodo</div>
     </div>
 </div>

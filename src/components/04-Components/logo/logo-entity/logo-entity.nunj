@@ -1,0 +1,1 @@
+<img class="c-logo-entity{% if styleModifier %} {{ styleModifier }}{% endif %}" src="{{ '/assets/images/logo-entity.png' | path  }}" />

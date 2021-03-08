@@ -1,12 +1,12 @@
-<div class="c-quote">
-    <div class="o-container">
+<div class="o-container c-quote">
+    <div class="o-box">
         {% if heading %}<h3 class="c-quote__heading">Témoignage</h3>{% endif %}
         <blockquote>
             <span class="c-quote__text">{{ quote }}</span>
             {% if reference %}
             <footer class="c-quote__footer">
                 {% if reference.avatar %}
-                {% render '@avatar' %}
+                {% render '@avatar', { styleModifier: "c-quote__avatar" }, true %}
                 {% endif %}
                 <span class="c-quote__reference">
                 {% if reference.author -%}
