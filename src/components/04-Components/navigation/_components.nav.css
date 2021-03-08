@@ -42,6 +42,23 @@
   ;
 }
 
+.c-nav__logo {
+  @apply
+    flex
+    items-center
+  ;
+}
+
+.c-nav__logo-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.05625rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 1.125rem;
+}
+
 /* -----------------------------------
  # c-nav__container
  ----------------------------------- */

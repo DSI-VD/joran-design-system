@@ -1,6 +1,9 @@
 <div class="c-nav">
   <nav class="o-container c-nav__container">
-    {% render '@logo', {title: 'Département'} %}
+    <div class="c-nav__logo">
+      {% render '@logo-vd' %}
+      <span class="c-nav__logo-text">Département</span>
+    </div>
     <a class="c-nav__toggle" href="#nowhere">
       <div class="c-menu-icon c-menu-icon--cross">
         <span>Open menu</span>
