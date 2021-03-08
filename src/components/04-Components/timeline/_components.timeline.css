@@ -13,6 +13,8 @@
   letter-spacing: -0.010625rem;
   font-size: 2.125rem;
   margin-bottom: 0.6875rem;
+  position: relative;
+  z-index: 20;
 }
 
 .c-timeline__link {
@@ -23,21 +25,44 @@
   line-height: 1.5rem;
   text-align: left;
   text-transform: uppercase;
+  position: relative;
+  z-index: 20;
+}
+
+.c-timeline__link:focus {
+  @apply
+    outline-focus
+  ;
+}
+
+.c-timeline__wrap {
+  padding-left: 0;
+}
+
+@screen lg {
+  .c-timeline__wrap {
+    padding-left: 20rem;
+  }
 }
 
 .c-timeline__items {
   @apply
     relative
-    mt-12
+    flex
   ;
 
-  transition: transform 0.35s ease-in-out;
+  margin-top: 5rem;
+  transition: transform 1.55s cubic-bezier(.44,.12,.53,.81);
 }
 
 .c-timeline__item {
-  width: 282px;
+  flex: 0 0 282px;
   display: block;
-  position: absolute;
+}
+
+.c-timeline__item:nth-child(2n) {
+  margin-top: 220px;
+  margin-left: -80px;
 }
 
 .c-timeline__item h3 {
@@ -52,6 +77,7 @@
   position: relative;
   will-change: letter-spacing;
   transition: letter-spacing 0.15s ease-in-out;
+  margin-bottom: 0.5rem;
 }
 
 .c-timeline__item p {
@@ -71,10 +97,18 @@
   ;
 }
 
+.c-timeline__item:focus {
+  @apply
+    outline-focus
+  ;
+}
+
+.c-timeline__item:focus img,
 .c-timeline__item:hover img {
   opacity: 1;
 }
 
+.c-timeline__item:focus h3,
 .c-timeline__item:hover h3 {
   letter-spacing: 0.03125rem;
 }
@@ -96,10 +130,11 @@
   @apply
     flex
     justify-center
-    mt-12
     items-center
     lg:justify-start
   ;
+
+  margin-top: 8rem;
 }
 
 .c-timeline__indicator {
@@ -108,6 +143,11 @@
     lg:order-first
     lg:flex-grow
   ;
+}
+
+.c-timeline__navigation--hidden {
+  display: none;
+  visibility: hidden;
 }
 
 .c-timeline__navigation--left {
