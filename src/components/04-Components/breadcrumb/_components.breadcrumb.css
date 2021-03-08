@@ -2,6 +2,10 @@
    # _components.breadcrumb.css
    ========================================================================== */
 
+.c-breadcrumb {
+  margin-top: 1.4375rem;
+}
+
 .c-breadcrumb__list {
   @apply
     flex
