@@ -19,7 +19,7 @@
 
 .c-footer__main {
   @apply
-    text-base
+    text-tiny
     uppercase
 
     flex
