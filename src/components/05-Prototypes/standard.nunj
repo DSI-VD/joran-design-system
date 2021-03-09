@@ -20,7 +20,19 @@
     
     {% render '@content--default' %}
     
+    <!-- 
+      TODO: refactorize to put the o-container in the component
+    -->
+    <div class="o-container">
     {% render '@grid--item-centered' %}
+    </div>
+    
+    <!-- 
+      TODO: refactorize to put the o-container in the component
+    -->
+    <div class="o-container">
+    {% render '@figure' %}
+    </div>
     
 <!--    {% render '@slider' %}-->
     
