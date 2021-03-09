@@ -1,13 +1,72 @@
 {
+  "preview": "@preview-bg",
   "context": {
     "toggle": "Menu",
-    "levels": [
+    "firstLevelItems": [
       {
         "name": "Somaire",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Organigrame",
-            "url": "#"
+            "url": "#",
+            "thirdLevelItems": [
+              {
+                "name": "Communication tactique",
+                "url": "#"
+              },
+              {
+                "name": "Bilderberg",
+                "url": "#"
+              },
+              {
+                "name": "Facebook live",
+                "url": "#"
+              },
+              {
+                "name": "Paléo Festival",
+                "url": "#"
+              },
+              {
+                "name": "Visite du président indien",
+                "url": "#"
+              },
+              {
+                "name": "Attaques fourgons blindés",
+                "url": "#"
+              },
+              {
+                "name": "100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes",
+                "url": "#"
+              },
+              {
+                "name": "Fermeture de l'autoroute A12",
+                "url": "#"
+              },
+              {
+                "name": "Bol d'Or",
+                "url": "#"
+              },
+              {
+                "name": "Inauguration CIO",
+                "url": "#"
+              },
+              {
+                "name": "Montreux Jazz Festival",
+                "url": "#"
+              },
+              {
+                "name": "Fête des Vignerons",
+                "url": "#"
+              },
+              {
+                "name": "Cérémonie du souvenir",
+                "url": "#"
+              },
+              {
+                "name": "Escrocrie à la caisse de chômage",
+                "url": "#"
+              }
+            ]
           },
           {
             "name": "La police en chiffres",
@@ -33,7 +92,7 @@
       },
       {
         "name": "Projets",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Communication tactique",
             "url": "#"
@@ -93,25 +152,11 @@
         ]
       },
       {
-        "name": "Remerciement",
-        "levels": [
-          {
-            "name": "Menu 3.1",
-            "url": "#"
-          },
-          {
-            "name": "Menu 3.2",
-            "url": "#"
-          },
-          {
-            "name": "Menu 3.3",
-            "url": "#"
-          }
-        ]
+        "name": "Remerciement"
       },
       {
         "name": "Où sommes-nous ?",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Menu 4.1",
             "url": "#"
@@ -152,7 +197,7 @@
       },
       {
         "name": "Menu 5 est passablement très très très très long",
-        "levels": [
+        "secondLevelItems": [
           {
             "name": "Menu 5.1 très très très très très très très très très très très très long",
             "url": "#"

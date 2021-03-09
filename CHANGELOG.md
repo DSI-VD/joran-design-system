@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added _title_ component
+- Added _navigation_ component
 
 ### Fixes
 
+- Remove AlpineJS
 - Fix SVG to make margin consistent in _button_
 
 ## [0.0.18] - 2021-03-05

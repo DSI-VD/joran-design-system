@@ -1,8 +1,11 @@
+{% render '@navigation' %}
 <div class="o-stack o-stack--big">
 
   <main class="o-stack o-stack--big">
     {% render '@hero--title-with-image' %}
-    
+
+    {% render '@breadcrumb' %}
+
     {% render '@content--with-heading' %}
     
     {% render '@quote' %}
@@ -15,7 +18,7 @@
     
     {% render '@content--default' %}
     
-    {% render '@slider' %}
+<!--    {% render '@slider' %}-->
     
     {% render '@content--default' %}
     
@@ -26,5 +29,5 @@
   </main>
   
   {% render '@footer' %}
-  
+
 </div>
