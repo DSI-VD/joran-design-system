@@ -1,0 +1,31 @@
+{
+  "status": "ready",
+  "context": {
+    "heading": "Integer sit amet mi massa",
+    "content": "<p>Praesent fringilla est at venenatis egestas. Proin sed tortor ipsum. Donec mattis at quam quis semper. Ut at finibus dolor. Curabitur dapibus nunc vehicula nisi blandit euismod. Fusce consectetur elit velit, in semper nulla vestibulum sed. Aliquam odio sapien, hendrerit scelerisque orci eu, imperdiet tristique diam. Morbi risus tellus, facilisis in elit eu, porta faucibus tortor. Nullam id nunc erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>",
+    "more": "Lire la suite"
+  },
+  "variants": [
+    {
+      "name": "heading text",
+      "label": "Heading and text",
+      "context": {
+        "more": false
+      }
+    },
+    {
+      "name": "heading link",
+      "label": "Heading and link",
+      "context": {
+        "content": false
+      }
+    },
+    {
+      "name": "text link",
+      "label": "Text and link",
+      "context": {
+        "heading": false
+      }
+    }
+  ]
+}

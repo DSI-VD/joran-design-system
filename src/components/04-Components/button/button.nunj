@@ -1,8 +1,10 @@
-<a href="{{ url }}"
-   class="c-button
+<a
+  href="{{ url }}"
+  class="c-button
    {%- if variantModifier %} {{ variantModifier }}{% endif %}
-   {%- if styleModifier %} {{ styleModifier }}{% endif -%}">
-    {%- if svg -%}<span>{%- endif -%}
-    {{ text }}
-    {%- if svg -%}</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>{%- endif -%}
+   {%- if styleModifier %} {{ styleModifier }}{% endif -%}"
+>
+  {%- if svg.before -%}{% render '@svg-chevron-left' %}{%- endif -%} {%- if svg
+  -%}<span>{%- endif -%} {{ text }} {%- if svg -%}</span>{%- endif -%} {%- if
+  svg.after -%}{% render '@svg-chevron-right' %}{%- endif -%}
 </a>

@@ -23,13 +23,12 @@
       rel="stylesheet"
       href="{{ '/assets/styles/style.css' | path }}"
     />
-
-    <!-- Scripts -->
-    <script src="{{ '/assets/scripts/alpine.js' | path  }}"></script>
-    <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
   </head>
 
-  <body style="background-color: var(--color__primary--900);">
-      {{ yield | safe }}
+  <body onload="init();" style="background-color: var(--color__primary--900)">
+    {{ yield | safe }}
+    <!-- Scripts -->
+    <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
+    <script src="{{ '/assets/scripts/testimonial.js' | path  }}"></script>
   </body>
 </html>

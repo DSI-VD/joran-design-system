@@ -26,6 +26,6 @@
 
 .c-content__heading {
   @apply
-    mb-4
+    mb-8
    ;
 }

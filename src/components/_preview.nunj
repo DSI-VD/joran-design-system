@@ -14,7 +14,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
-    
+
     {% render '@color.inc' %}
 
     <!-- Stylesheets -->
@@ -23,14 +23,13 @@
       rel="stylesheet"
       href="{{ '/assets/styles/style.css' | path }}"
     />
-
-    <!-- Scripts -->
-    <script src="{{ '/assets/scripts/alpine.js' | path  }}"></script>
-    <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
-    <script src="{{ '/assets/scripts/timeline.js' | path  }}"></script>
   </head>
 
   <body onload="init();">
-      {{ yield | safe }}
+    {{ yield | safe }}
+    <!-- Scripts -->
+    <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
+    <script src="{{ '/assets/scripts/testimonial.js' | path  }}"></script>
+    <script src="{{ '/assets/scripts/timeline.js' | path  }}"></script>
   </body>
 </html>

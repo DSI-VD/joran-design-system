@@ -1,8 +1,0 @@
-<div class="c-logo{% if styleModifier %} {{ styleModifier }}{% endif %}">
-  <img src="{{ '/assets/vectors/logo.svg' | path  }}" />
-  {% if title %}
-  <div class="c-logo__title">
-    {{ title }}
-  </div>
-  {% endif %}
-</div>

@@ -1,16 +1,34 @@
 {
+  "status": "ready",
   "context": {
     "text": "Button",
     "url": "#nowhere"
   },
   "variants": [
     {
-      "name": "default"
+      "name": "default",
+      "context": {
+        "variantModifier": "c-button--default"
+      }
     },
     {
       "name": "default arrow right",
       "context": {
-        "svg": true
+        "svg": {
+          "after": true
+        },
+        "variantModifier": "c-button--default"
+      }
+    },
+    {
+      "name": "default arrow left",
+      "status": "wip",
+      "context": {
+        "svg": {
+          "before": true
+        },
+        "svgBefore": true,
+        "variantModifier": "c-button--default"
       }
     },
     {
@@ -25,7 +43,26 @@
       "preview": "@preview",
       "context": {
         "variantModifier": "c-button--transparent",
-        "svg": true
+        "svg": {
+          "after": true
+        }
+      }
+    },
+    {
+      "name": "transparent alternate",
+      "preview": "@preview-bg",
+      "context": {
+        "variantModifier": "c-button--transparent-alt"
+      }
+    },
+    {
+      "name": "transparent alternate arrow right",
+      "preview": "@preview-bg",
+      "context": {
+        "variantModifier": "c-button--transparent-alt",
+        "svg": {
+          "after": true
+        }
       }
     }
   ]

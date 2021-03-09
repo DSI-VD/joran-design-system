@@ -1,0 +1,46 @@
+<div class="o-container c-testimonial">
+    <div class="o-box">
+        <div class="c-testimonial__flex"> 
+            
+            <div class="c-testimonial__facecontainer">
+                {% render '@avatar--responsive', { styleModifier: "c-testimonial__face" }, true %}
+            </div>
+            
+            <div class="o-stack c-testimonial__textcontainer">
+                <div class="o-stack o-stack--small">
+                    <div class="c-testimonial__author">
+                        {% if author and function %}
+                        {% if author -%}
+                            <span class="u-visually-hidden">Auteur: </span><span>{{ author }}</span>
+                        {%- endif %}
+                        {% if function %}
+                            <span class="u-visually-hidden">, Fonction: </span> <span class="c-testimonial__author--function">{{ function }}</span>
+                        {%- endif %}
+                        {% endif %}
+                    </div>
+                    
+                    <h3 class="c-testimonial__header">{{ header }}</h3>
+                </div>
+                
+                <div class="c-testimonial__text o-prose">
+                    {{ text }}
+                </div>
+                {% if fulltext %}
+            
+                    <div id="js-more-1" class="js-testimonial__fulltext o-prose">
+                        {{ fulltext | safe }}
+                    </div>
+                
+                    <button aria-expanded="false"
+                            aria-controls="js-more-1"
+                            aria-pressed="false"
+                            class="c-button c-button--transparent c-testimonial__button js-testimonial__toggle-btn"
+                            hidden>
+                        <span class="js-testimonial__toggle-btn-text">Lire la suite</span>{% render '@svg-chevron-right' %}
+                    </button>
+                
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

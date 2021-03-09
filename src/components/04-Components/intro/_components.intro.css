@@ -1,24 +1,17 @@
 /* ======================================================================
-   # _components.card.css
+   # _components.intro.css
    ====================================================================== */
 
-.c-card {
+.c-intro__heading {
+  @extend %h1;
   @apply
-    p-4
-    shadow
-    bg-gray-200
-    ;
+    text-black
+  ;
 }
 
-.c-card__heading {
+.c-intro__more-btn {
   @apply
-    text-xl
-    font-bold
-    ;
-}
-
-.c-card__content {
-  @apply
-    prose
+    ml-5
+    mr-4
     ;
 }
