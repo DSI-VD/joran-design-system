@@ -9,6 +9,20 @@ module.exports = {
       sans: ['roboto', 'system-ui', 'sans-serif']
     },
     extend: {
+      fontSize: {
+        'xs': '1rem',
+        'sm': '1.125rem',
+        'tiny': '1.125rem',
+        'base': '1.25rem',
+        'lg': '1.5rem',
+        'xl': '1.75rem',
+        '2xl': '2.125rem',
+        '3xl': '2.375rem',
+        '4xl': '3rem',
+        '5xl': '4rem',
+        '6xl': '5rem',
+        '7xl': '6rem'
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -78,7 +92,8 @@ module.exports = {
             h6: {
               color: 'var(--color__primary--900)',
               marginBottom: '0'
-            }
+            },
+            
           }
         },
         lg: {
