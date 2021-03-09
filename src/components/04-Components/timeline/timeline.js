@@ -9,12 +9,12 @@ class Timeline {
         this.currentItem = 0;
         this.slidesVisible = 3;
         this.slidesToScroll = 2;
-        this.setStyle()
-        this.createNavigation()
+        this.setStyle();
+        this.createNavigation();
     }
 
     translate (percent) {
-        this.timeline.style.transform = 'translate3d(' + percent + '%, 0, 0)'
+        this.timeline.style.transform = 'translate3d(' + percent + '%, 0, 0)';
     }
 
     /**
@@ -27,24 +27,24 @@ class Timeline {
         prevButton.addEventListener('click', this.prev.bind(this));
         this.onMove(index => {
             if (index === 0) {
-                prevButton.classList.add('c-timeline__navigation--hidden')
+                prevButton.classList.add('c-timeline__navigation--hidden');
             } else {
-                prevButton.classList.remove('c-timeline__navigation--hidden')
+                prevButton.classList.remove('c-timeline__navigation--hidden');
             }
             if (this.items[this.currentItem + this.slidesVisible] === undefined) {
-                nextButton.classList.add('c-timeline__navigation--hidden')
+                nextButton.classList.add('c-timeline__navigation--hidden');
             } else {
-                nextButton.classList.remove('c-timeline__navigation--hidden')
+                nextButton.classList.remove('c-timeline__navigation--hidden');
             }
         })
     }
 
     next () {
-        this.gotoItem(this.currentItem + this.slidesToScroll)
+        this.gotoItem(this.currentItem + this.slidesToScroll);
     }
 
     prev () {
-        this.gotoItem(this.currentItem - this.slidesToScroll)
+        this.gotoItem(this.currentItem - this.slidesToScroll);
     }
 
     /**
@@ -54,9 +54,9 @@ class Timeline {
      */
     gotoItem (index, animation = true) {
         if (index < 0) {
-            return
+            return;
         } else if (index >= this.items.length || (this.items[this.currentItem + this.slidesVisible] === undefined && index > this.currentItem)) {
-            return
+            return;
         }
         let translateX = index * -100 / this.items.length;
         this.translate(translateX);

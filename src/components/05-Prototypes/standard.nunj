@@ -20,8 +20,10 @@
     
 <!--    {% render '@slider' %}-->
     
+    {% render '@timeline' %}
+
     {% render '@content--default' %}
-    
+
     {% render '@title' %}
     
     {% render '@content--default' %}
