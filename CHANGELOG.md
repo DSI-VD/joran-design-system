@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Add a `alt` attribut on _logo-entity_
+
 ## [0.0.19] - 2021-03-09
 
 ### Added
