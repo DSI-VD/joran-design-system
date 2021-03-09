@@ -5,9 +5,23 @@
   },
   "variants": [
     {
+      "name": "heading only",
+      "context": {
+        "heading": "Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless",
+        "content": false
+      }
+    },
+    {
       "name": "with heading",
       "context": {
         "heading": "Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless"
+      }
+    },
+    {
+      "name": "with heading left",
+      "context": {
+        "heading": "Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless",
+        "styleVariant": "c-content--heading-left"
       }
     }
   ]

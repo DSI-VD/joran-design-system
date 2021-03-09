@@ -7,10 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- New variants for _content_ with heading on the left
+
 ### Changed
 
 - Add a `alt` attribut on _logo-entity_
 - Clean _svg_ markup
+
+### Removed
+
+- Remove _title_ component. _content_ will be used instead
 
 ### Fixes
 

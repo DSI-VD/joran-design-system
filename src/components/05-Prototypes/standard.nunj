@@ -6,13 +6,15 @@
 
     {% render '@breadcrumb' %}
 
-    {% render '@content--with-heading' %}
+    {% render '@content--with-heading-left' %}
     
     {% render '@quote' %}
   
     {% render '@highlight' %}
     
     {% render '@content--default' %}
+    
+    {% render '@content--with-heading' %}
     
     {% render '@testimonial' %}
     
@@ -21,8 +23,6 @@
 <!--    {% render '@slider' %}-->
     
     {% render '@content--default' %}
-    
-    {% render '@title' %}
     
     {% render '@content--default' %}
     
