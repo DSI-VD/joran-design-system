@@ -3871,6 +3871,33 @@ html {
 }
 
 /* ======================================================================
+   # _components.table.css
+   ====================================================================== */
+
+.c-table {
+  background-color: var(--color__primary--100);
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  width: 100%;
+}
+
+.c-table thead, .c-table tfoot {
+  background-color: var(--color__primary--200);
+  font-weight: 700;
+  color: var(--color__primary--900);
+  text-transform: uppercase;
+}
+
+.c-table th, .c-table td {
+  padding: 1rem;
+}
+
+.c-table tr + tr {
+  border-color: var(--color__primary--200);
+  border-top-width: 1px;
+}
+
+/* ======================================================================
    # _components.testimonial.css
    ====================================================================== */
 
