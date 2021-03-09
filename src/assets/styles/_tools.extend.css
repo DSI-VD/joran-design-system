@@ -41,13 +41,13 @@
   @apply
     text-primary
     font-bold
-    text-2xl
+    text-xl
   ;
   line-height: 1.1429;
 
   @screen md {
     @apply
-      text-xl
+      text-2xl
     ;
     line-height: 1.1176;
   }
