@@ -1,0 +1,36 @@
+/* ======================================================================
+   # _components.table.css
+   ====================================================================== */
+   
+.c-table {
+    @apply
+        bg-primary-100
+        text-tiny
+        rounded
+        w-full
+    ;
+}
+
+.c-table thead,
+.c-table tfoot {
+    @apply
+        bg-primary-200
+        text-primary
+        font-bold
+        uppercase
+    ;
+}
+
+.c-table th,
+.c-table td {
+    @apply
+        p-4
+    ;
+}
+
+.c-table tr + tr {
+    @apply
+        border-primary-200
+    ;
+    border-top-width: 1px;
+}
