@@ -2,7 +2,7 @@
   <nav class="o-container c-nav__container">
     <div class="c-nav__logo">
       {% render '@logo-vd' %}
-      <span class="c-nav__logo-text">Département</span>
+      <span class="c-nav__logo-text">Entité</span>
     </div>
     <a class="c-nav__toggle" href="#nowhere">
       <div class="c-menu-icon c-menu-icon--cross">
@@ -13,25 +13,33 @@
       <div class="c-nav__search-bar">
         <a href="#nowhere" class="c-button--search">Rechercher</a>
       </div>
-      <ul class="c-nav__level-indicator">
-      </ul>
+      <ul class="c-nav__level-indicator"></ul>
       <div class="c-nav__list-wrapper">
         <ul class="c-nav__list">
           {% for firstLevelItem in firstLevelItems %}
           <li class="c-nav__list-item" data-level="0">
-            <a href="#nowhere" class="c-nav__list-link{% if firstLevelItem.secondLevelItems %} c-nav__list-link--w-children{% endif %}">
+            <a
+              href="#nowhere"
+              class="c-nav__list-link{% if firstLevelItem.secondLevelItems %} c-nav__list-link--w-children{% endif %}"
+            >
               {{ firstLevelItem.name }}
             </a>
             {% if firstLevelItem.secondLevelItems %}
             <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
               {% for secondLevelItem in firstLevelItem.secondLevelItems %}
               <li class="c-nav__list-item" data-level="1">
-                <a href="#nowhere" class="c-nav__list-link{% if secondLevelItem.thirdLevelItems %} c-nav__list-link--w-children{% endif %}">{{secondLevelItem.name}}</a>
+                <a
+                  href="#nowhere"
+                  class="c-nav__list-link{% if secondLevelItem.thirdLevelItems %} c-nav__list-link--w-children{% endif %}"
+                  >{{secondLevelItem.name}}</a
+                >
                 {% if secondLevelItem.thirdLevelItems %}
                 <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
                   {% for thirdLevelItem in secondLevelItem.thirdLevelItems %}
                   <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link">{{thirdLevelItem.name}}</a>
+                    <a href="#nowhere" class="c-nav__list-link"
+                      >{{thirdLevelItem.name}}</a
+                    >
                   </li>
                   {% endfor %}
                 </ul>
