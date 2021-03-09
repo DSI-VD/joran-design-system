@@ -59,6 +59,7 @@ module.exports = {
         DEFAULT: {
           css: {
             lineHeight: 1.5,
+            fontSize: '1.25rem',
             h1: {
               color: 'var(--color__primary--900)',
               fontWeight: 700,
@@ -99,6 +100,7 @@ module.exports = {
         lg: {
           css: {
             lineHeight: 1.55,
+            fontSize: '1.25rem',
             h1: {
               lineHeight: '1.0833',
               fontSize: '3rem'
