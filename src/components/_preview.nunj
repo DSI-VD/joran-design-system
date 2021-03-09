@@ -25,7 +25,7 @@
     />
   </head>
 
-  <body onload="init();">
+  <body onload="init();"{% if styleModifier %} {{ styleModifier }}{% endif %}>
     {{ yield | safe }}
     <!-- Scripts -->
     <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>

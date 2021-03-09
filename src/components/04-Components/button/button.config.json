@@ -50,14 +50,14 @@
     },
     {
       "name": "transparent alternate",
-      "preview": "@preview-bg",
+      "preview": "@preview--bg",
       "context": {
         "variantModifier": "c-button--transparent-alt"
       }
     },
     {
       "name": "transparent alternate arrow right",
-      "preview": "@preview-bg",
+      "preview": "@preview--bg",
       "context": {
         "variantModifier": "c-button--transparent-alt",
         "svg": {

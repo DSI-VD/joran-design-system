@@ -1,5 +1,5 @@
 {
-  "preview": "@preview-bg",
+  "preview": "@preview--bg",
   "context": {
     "toggle": "Menu",
     "firstLevelItems": [
