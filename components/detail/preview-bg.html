@@ -205,14 +205,12 @@
 
     <span class="hljs-comment">&lt;!-- Stylesheets --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;../../assets/styles/style.css&quot;</span> /&gt;</span>
-
-    <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/scripts/alpine.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary--900);&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">&quot;init();&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary--900)&quot;</span>&gt;</span>
 
     <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/scripts/navigation.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/scripts/testimonial.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
@@ -249,14 +247,12 @@
       <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>
       <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/styles/style.css&#x27; | path }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
     /&gt;</span>
-
-    <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/scripts/alpine.js&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary--900);&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">&quot;init();&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: var(--color__primary--900)&quot;</span>&gt;</span>
     </span><span class="hljs-template-variable">{{ yield | safe }}</span><span class="xml">
     <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/scripts/navigation.js&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/scripts/testimonial.js&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
@@ -1905,7 +1901,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.18
+                            0.0.19
                         
                     </dd>
                 </div>
@@ -1914,8 +1910,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-05T15:15:18.906Z">
-                                05.03.2021 à 16:15:18
+                            <time datetime="2021-03-09T09:40:55.267Z">
+                                09.03.2021 à 10:40:55
                             </time>
                         
                     </dd>

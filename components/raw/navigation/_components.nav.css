@@ -3,115 +3,223 @@
  ====================================================================== */
 
 /* -----------------------------------
+   # b-nav--open (class for body when nav is open)
+   ----------------------------------- */
+.js-b-nav--open {
+  overflow-y: hidden;
+}
+
+/* -----------------------------------
    # c-nav
    ----------------------------------- */
-
-/***
- * 1. Fix navigation at top
- * 2. Make it pass over the header image
- */
 .c-nav {
   @apply
-    bg-gray-200
+    text-white
     py-4
+    overflow-x-hidden
+    fixed
+    top-0
+    w-full
+    z-50
+  ;
+
+  transition: background-color 0.15s ease-out;
+  will-change: background-color;
+}
+
+.js-c-nav--open {
+  @apply
+    bg-primary-600
+  ;
+
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.js-c-nav--sticky {
+  @apply
+    bg-primary-600
   ;
 }
 
+.c-nav__logo {
+  @apply
+    flex
+    items-center
+  ;
+}
 
+.c-nav__logo-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.05625rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 1.125rem;
+}
 
 /* -----------------------------------
  # c-nav__container
  ----------------------------------- */
-
 .c-nav__container {
   @apply
     flex
-    flex-col
+    flex-wrap
+    justify-between
+    items-center
+    relative
   ;
 }
-
-
 
 /* -----------------------------------
- # c-nav__toggle
+ # c-nav__search-bar
  ----------------------------------- */
-
-.c-nav__toggle {
+.c-nav__search-bar {
   @apply
-    ml-auto;
-}
-
-.c-nav__toggle svg {
-  @apply
-    h-4
+    mt-6
+    mb-4
   ;
 }
 
+.c-nav__search-bar .c-button--search {
+  @apply
+    p-4
+    bg-white
+    rounded
+    text-primary
+    block
+  ;
+}
 
+.c-nav__search-bar .c-button--search:focus {
+  @apply
+    outline-focus
+  ;
+}
+
+/* -----------------------------------
+ # c-nav__list-container
+ ----------------------------------- */
+.c-nav__list-container {
+  @apply
+    flex-initial
+    w-full
+    invisible
+    hidden
+  ;
+}
+
+.js-c-nav--open .c-nav__list-container {
+  @apply
+    visible
+    block
+  ;
+}
+
+.c-nav__list-wrapper {
+  @apply
+    relative
+  ;
+}
 
 /* -----------------------------------
  # c-nav__list
  ----------------------------------- */
-
 .c-nav__list {
   @apply
-    flex
-    flex-col
+    absolute
+    w-full
+    top-0
+    pb-10
   ;
+
+  transition: transform 0.35s ease, opacity 0.25s ease 0.15s;
 }
 
-@screen md {
-  .c-nav__list--desktop-row {
-    @apply
-      flex-row
-      flex-wrap
-    ;
-  }
+.c-nav__list--level {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  right: -100vw;
+  z-index: 0;
 }
 
-
-
-/* -----------------------------------
- # c-nav__list-item
- ----------------------------------- */
-
-.c-nav__list-item {
-  @apply
-    flex
-    flex-col
-  ;
+.js-c-nav__list--open {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  z-index: 100;
 }
 
-@screen md {
-  .c-nav__list-item--desktop-row {
-    @apply
-      pr-8
-    ;
-  }
+.js-c-nav__list--hide {
+  transform: translate3d(-100vw, 0, 0);
 }
-
-
 
 /* -----------------------------------
  # c-nav__list-link
  ----------------------------------- */
-
-.c-nav__list-link--level-1 {
-  @apply
-    text-xl
-    font-bold
-  ;
-}
-
-
-
-/* -----------------------------------
- # c-nav__list-link
- ----------------------------------- */
-
 .c-nav__list-link {
   @apply
     py-2
     uppercase
+    font-bold
+    tracking-wide
+    py-2
+    pr-6
+    block
+    relative
   ;
+}
+
+.c-nav__list-link:focus {
+  @apply
+    outline-focus
+  ;
+}
+
+.c-nav__list-link--w-children::after {
+  @apply
+    absolute
+    right-0
+    top-2
+  ;
+
+  /* @todo change with correct icon */
+  content: ">";
+}
+
+/* -----------------------------------
+ # c-nav__level-indicator
+ ----------------------------------- */
+.c-nav__level-indicator {
+  @apply
+    mb-6
+  ;
+
+  min-height: 28px;
+}
+
+.c-nav__level-indicator li {
+  @apply
+    inline
+  ;
+}
+
+.c-nav__level-indicator a {
+  @apply
+    pl-3
+    mr-1
+    relative
+  ;
+}
+
+.c-nav__level-indicator a::before {
+  @apply
+    absolute
+    left-0
+  ;
+
+  /* @todo change with correct icon */
+  content: "<";
 }

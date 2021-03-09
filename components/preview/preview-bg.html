@@ -16,7 +16,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
-    
+
     <style>
     :root {
         
@@ -45,8 +45,8 @@
     />
   </head>
 
-  <body>
-      <!DOCTYPE html>
+  <body onload="init();">
+    <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -89,20 +89,19 @@
       rel="stylesheet"
       href="../../assets/styles/style.css"
     />
-
-    <!-- Scripts -->
-    <script src="../../assets/scripts/alpine.js"></script>
   </head>
 
-  <body style="background-color: var(--color__primary--900);">
+  <body onload="init();" style="background-color: var(--color__primary--900)">
     
     <!-- Scripts -->
+    <script src="../../assets/scripts/navigation.js"></script>
     <script src="../../assets/scripts/testimonial.js"></script>
   </body>
 </html>
 
-      <!-- Scripts -->
-      <script src="../../assets/scripts/testimonial.js"></script>
+    <!-- Scripts -->
+    <script src="../../assets/scripts/navigation.js"></script>
+    <script src="../../assets/scripts/testimonial.js"></script>
   </body>
 </html>
 

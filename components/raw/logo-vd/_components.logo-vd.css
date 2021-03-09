@@ -4,6 +4,15 @@
 
 .c-logo-vd {
   @apply
-    w-8
+    w-6
+    flex
+    items-center
     ;
+}
+
+.c-logo__title {
+  @apply
+    uppercase
+    ml-3
+  ;
 }

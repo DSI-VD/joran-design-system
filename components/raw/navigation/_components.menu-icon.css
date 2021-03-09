@@ -1,0 +1,79 @@
+.c-menu-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  color: transparent;
+}
+
+.c-nav__toggle:focus {
+  @apply
+    outline-focus
+  ;
+}
+
+.c-menu-icon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.c-menu-icon span::before,
+.c-menu-icon span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateY(-6px);
+  transition: transform 0.35s;
+}
+
+.c-menu-icon span::after {
+  transform: translateY(6px);
+}
+
+.c-menu-icon:hover span::before {
+  transform: translateY(-8px);
+}
+
+.c-menu-icon:hover span::after {
+  transform: translateY(8px);
+}
+
+.c-menu-icon--cross {
+  transition: transform 0.35s;
+}
+
+.c-menu-icon--cross span::before,
+.c-menu-icon--cross span::after {
+  transform-origin: 50% 50%;
+}
+
+.c-menu-icon--cross span {
+  z-index: 2;
+  transition: background 0.35s, transform 0.35s;
+}
+
+.c-menu-icon--cross.js-c-menu-icon--open {
+  transform: rotate(180deg);
+}
+
+.c-menu-icon--cross.js-c-menu-icon--open span {
+  background: transparent;
+}
+
+.c-menu-icon--cross.js-c-menu-icon--open span::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.c-menu-icon--cross.js-c-menu-icon--open span::after {
+  transform: translateY(0) rotate(-45deg);
+}
