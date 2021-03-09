@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Add a `alt` attribut on _logo-entity_
+- Clean _svg_ markup
 
 ## [0.0.19] - 2021-03-09
 
