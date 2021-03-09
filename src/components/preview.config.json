@@ -1,0 +1,16 @@
+{
+    "variants": [
+        {
+            "name": "bg",
+            "context": {
+                "styleAttr": "background-color: var(--color__primary--900)"
+            }
+        },
+        {
+            "name": "prototype",
+            "context": {
+                "styleModifier": "c-page"
+            }
+        }
+    ]
+}
