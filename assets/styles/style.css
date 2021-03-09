@@ -2572,7 +2572,7 @@ html {
    ========================================================================== */
 
 .c-breadcrumb {
-  margin-top: 1.4375rem;
+  --stack-space: 1.4375rem;
 }
 
 .c-breadcrumb__list {
@@ -2586,6 +2586,7 @@ html {
    ------------------------------------- */
 
 .c-breadcrumb__list-item {
+  display: flex;
   margin-bottom: 0.5rem;
 }
 
@@ -2780,24 +2781,37 @@ html {
    # _components.content.css
    ====================================================================== */
 
+.c-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-content > * {
+  flex: 1 1 0%;
+}
+
 @media (min-width: 768px) {
-  .c-content {
-    display: flex;
-    justify-content: center;
-  }
-
-  .c-content > * {
-    flex: 1 1 0%;
-    max-width: 65ch;
-  }
-
-  .c-content > * + * {
-    margin-left: 1rem;
+  @media (min-width: 768px) {
+    .c-content > * {
+      width: 66.666667%;
+    }
   }
 }
 
 .c-content__heading {
   margin-bottom: 2rem;
+}
+
+/* -----------------------------------
+ # Content heading left
+ ----------------------------------- */
+
+@media (min-width: 768px) {
+  .c-content--heading-left {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 /* ======================================================================
@@ -3992,17 +4006,6 @@ html {
     margin-right: 0px;
   }
 }
-
-/* ======================================================================
-   # _component.title.css
-   ====================================================================== */
-
-.c-title {
-}
-
-/* .o-stack > .c-title + * {
-    --stack-space: 3rem;
-} */
 
 /* Vendors */
 

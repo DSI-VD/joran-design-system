@@ -184,6 +184,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Inter-titre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -192,16 +193,16 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-68c1034df5e7dc2754b69b6dd4f4a084-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-content&quot;</span>&gt;</span>
-    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> heading %}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text u-h2&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
-    
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__content o-prose&quot;</span>&gt;</span>
-        </span><span class="hljs-template-variable">{{ content | safe }}</span><span class="xml">
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-content</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleVariant %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleVariant }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+&gt;</span>
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> heading %}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text u-h2&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"> </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> content %}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__content o-prose&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ content | safe }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -248,34 +249,47 @@
    # _components.content.css
    ====================================================================== */</span>
 
-<span class="hljs-keyword">@screen</span> md {
-  <span class="hljs-selector-class">.c-content</span> {
-    <span class="hljs-keyword">@apply</span>
-      flex
-      justify-center
-       ;
-  }
 
+<span class="hljs-selector-class">.c-content</span> {
+  <span class="hljs-keyword">@apply</span>
+    flex
+    flex-col
+    items-center
+  ;
+}
+
+<span class="hljs-selector-class">.c-content</span> &gt; * {
+  <span class="hljs-keyword">@apply</span>
+    flex-<span class="hljs-number">1</span>
+  ;
+}
+
+<span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-content</span> &gt; * {
     <span class="hljs-keyword">@apply</span>
-      flex-<span class="hljs-number">1</span>
-      max-w-prose
-       ;
-  }
-
-  <span class="hljs-selector-class">.c-content</span> &gt; * + * {
-    <span class="hljs-keyword">@apply</span>
-      ml-<span class="hljs-number">4</span>
-       ;
+      <span class="hljs-attribute">md</span>:w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
+    ;
   }
 }
 
 <span class="hljs-selector-class">.c-content__heading</span> {
   <span class="hljs-keyword">@apply</span>
     mb-<span class="hljs-number">8</span>
-   ;
+  ;
 }
-</pre>
+
+<span class="hljs-comment">/* -----------------------------------
+ # Content heading left
+ ----------------------------------- */</span>
+
+<span class="hljs-keyword">@screen</span> md {
+  <span class="hljs-selector-class">.c-content--heading-left</span> {
+    <span class="hljs-keyword">@apply</span>
+      flex-row
+      items-start
+    ;
+  }
+}</pre>
                             </code>
                             
                         </div>
@@ -291,7 +305,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">449 Bytes</span>
+                    <span class="Meta-value">613 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1789,32 +1803,6 @@
         </li>
         
     
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="title.html" data-role="tree-link" data-pjax data-handle="title">
-                <span>Title</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
 
                 </ul>
             </li>
@@ -1937,8 +1925,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-09T09:42:07.007Z">
-                                09.03.2021 à 10:42:07
+                            <time datetime="2021-03-09T13:15:59.444Z">
+                                09.03.2021 à 14:15:59
                             </time>
                         
                     </dd>
@@ -2816,8 +2804,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content--heading-only.html" data-role="tree-link" data-pjax data-handle="content">
+                <span>Heading Only</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="content--with-heading.html" data-role="tree-link" data-pjax data-handle="content">
                 <span>With Heading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content--with-heading-left.html" data-role="tree-link" data-pjax data-handle="content">
+                <span>With Heading Left</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3333,8 +3373,6 @@
 </div>
 
             </div>
-        
-    
         
     
         

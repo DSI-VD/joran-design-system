@@ -2,30 +2,44 @@
    # _components.content.css
    ====================================================================== */
 
-@screen md {
-  .c-content {
-    @apply
-      flex
-      justify-center
-       ;
-  }
 
+.c-content {
+  @apply
+    flex
+    flex-col
+    items-center
+  ;
+}
+
+.c-content > * {
+  @apply
+    flex-1
+  ;
+}
+
+@screen md {
   .c-content > * {
     @apply
-      flex-1
-      max-w-prose
-       ;
-  }
-
-  .c-content > * + * {
-    @apply
-      ml-4
-       ;
+      md:w-2/3
+    ;
   }
 }
 
 .c-content__heading {
   @apply
     mb-8
-   ;
+  ;
+}
+
+/* -----------------------------------
+ # Content heading left
+ ----------------------------------- */
+
+@screen md {
+  .c-content--heading-left {
+    @apply
+      flex-row
+      items-start
+    ;
+  }
 }

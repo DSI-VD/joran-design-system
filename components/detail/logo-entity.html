@@ -177,7 +177,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-d1b7b248f918ed8707bc51b9266dc007-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-entity&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/images/logo-entity.png&quot;</span> /&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-entity&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/images/logo-entity.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;logo de l&#x27;entité&quot;</span> /&gt;</span></pre>
         
     </code>
 </div>
@@ -185,7 +185,11 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d1b7b248f918ed8707bc51b9266dc007-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-entity</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/images/logo-entity.png&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> /&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-entity</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/images/logo-entity.png&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;logo de l&#x27;entité&quot;</span>
+/&gt;</span></span></pre>
     </code>
 </div>
 
@@ -1749,32 +1753,6 @@
         </li>
         
     
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="title.html" data-role="tree-link" data-pjax data-handle="title">
-                <span>Title</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
 
                 </ul>
             </li>
@@ -1897,8 +1875,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-09T09:42:07.007Z">
-                                09.03.2021 à 10:42:07
+                            <time datetime="2021-03-09T13:15:59.444Z">
+                                09.03.2021 à 14:15:59
                             </time>
                         
                     </dd>
@@ -2776,8 +2754,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content--heading-only.html" data-role="tree-link" data-pjax data-handle="content">
+                <span>Heading Only</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="content--with-heading.html" data-role="tree-link" data-pjax data-handle="content">
                 <span>With Heading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content--with-heading-left.html" data-role="tree-link" data-pjax data-handle="content">
+                <span>With Heading Left</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3293,8 +3323,6 @@
 </div>
 
             </div>
-        
-    
         
     
         
