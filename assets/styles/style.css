@@ -2787,19 +2787,19 @@ html {
   align-items: center;
 }
 
-.c-content > * {
+.c-content .c-content__item {
   flex: 1 1 0%;
 }
 
 @media (min-width: 768px) {
   @media (min-width: 768px) {
-    .c-content > * {
+    .c-content .c-content__item {
       width: 66.666667%;
     }
   }
 }
 
-.c-content__heading {
+.c-content__heading-text {
   margin-bottom: 2rem;
 }
 
@@ -2808,7 +2808,7 @@ html {
  ----------------------------------- */
 
 @media (min-width: 768px) {
-  .c-content--heading-left {
+  .c-content--2-col {
     flex-direction: row;
     align-items: flex-start;
   }
@@ -3536,6 +3536,20 @@ html {
   left: 0px;
   /* @todo change with correct icon */
   content: "<";
+}
+
+/* ======================================================================
+   # _components.page.css
+   ====================================================================== */
+
+.c-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.c-page__main {
+  flex-grow: 1;
 }
 
 /* ======================================================================
