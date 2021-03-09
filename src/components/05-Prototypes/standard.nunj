@@ -20,6 +20,8 @@
     
     {% render '@content--default' %}
     
+    {% render '@grid--item-centered' %}
+    
 <!--    {% render '@slider' %}-->
     
     {% render '@content--default' %}

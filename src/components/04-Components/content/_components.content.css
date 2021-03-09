@@ -11,21 +11,21 @@
   ;
 }
 
-.c-content > * {
+.c-content .c-content__item {
   @apply
     flex-1
   ;
 }
 
 @screen md {
-  .c-content > * {
+  .c-content .c-content__item {
     @apply
       md:w-2/3
     ;
   }
 }
 
-.c-content__heading {
+.c-content__heading-text {
   @apply
     mb-8
   ;
@@ -36,7 +36,7 @@
  ----------------------------------- */
 
 @screen md {
-  .c-content--heading-left {
+  .c-content--2-col {
     @apply
       flex-row
       items-start
