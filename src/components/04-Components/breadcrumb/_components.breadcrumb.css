@@ -11,7 +11,7 @@
     flex
     flex-row
     flex-wrap
-        ;
+  ;
 }
 
 /* -------------------------------------
@@ -24,9 +24,9 @@
     ;
 }
 
-.c-breadcrumb__list-item + .c-breadcrumb__list-item {
+.c-breadcrumb__list-item:not(:last-child) {
   @apply
-    ml-4
+    mr-4
     ;
 }
 
@@ -39,9 +39,8 @@
     inline-block
     bg-gray-200
     rounded
-    py-0.5
+    py-1
     px-4
-    shadow
     transition
     text-sm
     ;
@@ -72,8 +71,10 @@
  */
 .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link {
   @apply
-    inline
+    inline-block
   ;
+
+  height: 100%;
 }
 
 .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
@@ -89,22 +90,5 @@
   @apply
     not-sr-only
     inline-block
-  ;
-}
-
-/***
- * Clamp all level except the last one
- */
-.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link-text {
-  @apply
-    line-clamp-1
-  ;
-}
-
-.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:active .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:last-child) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
-  @apply
-    line-clamp-none
   ;
 }
