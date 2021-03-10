@@ -40,6 +40,10 @@
     
     {% render '@content--default' %}
     
+    {% render '@video' %}
+    
+    {% render '@content--default' %}
+    
   </main>
   
   {% render '@footer' %}

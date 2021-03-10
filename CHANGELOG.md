@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add preview for color theme
 - Add _table_ component
+- Add _video_ component
+- Add _ratio_ utility
 - Add _page_ component to put the footer at the bottom
 - New variants for _content_ with heading on the left
 

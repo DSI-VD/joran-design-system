@@ -1,0 +1,1 @@
+<div class="o-container">{% render '@ratio--16x9' %}</div>
