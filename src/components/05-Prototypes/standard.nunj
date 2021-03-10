@@ -38,11 +38,11 @@
     
     {% render '@content--default' %}
     
-    {% render '@content--default' %}
+    {% render '@content--with-heading' %}
     
     {% render '@video' %}
     
-    {% render '@content--default' %}
+    {% render '@content--with-heading' %}
     
   </main>
   
