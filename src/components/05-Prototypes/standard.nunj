@@ -8,6 +8,8 @@
 
     {% render '@content--with-heading-left' %}
     
+    {% render '@table' %}
+    
     {% render '@quote' %}
   
     {% render '@highlight' %}
