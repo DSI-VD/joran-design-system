@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./src/**/*.html', './src/**/*.nunj', './src/**/*.js']
+    content: ['./src/**/*.html', './src/**/*.nunj', './src/**/*.js', './src/**/*.json']
   },
   darkMode: false, // Or 'media' or 'class'
   theme: {
@@ -138,6 +138,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/aspect-ratio')
   ]
 };

@@ -1,0 +1,26 @@
+{
+  "variants": [
+    {
+      "name": "default",
+      "hidden": true
+    },
+    {
+      "name": "1x1",
+      "context": {
+        "variantModifier": "aspect-w-1 aspect-h-1"
+      }
+    },
+    {
+      "name": "4x3",
+      "context": {
+        "variantModifier": "aspect-w-4 aspect-h-3"
+      }
+    },
+    {
+      "name": "16x9",
+      "context": {
+        "variantModifier": "aspect-w-16 aspect-h-9"
+      }
+    }
+  ]
+}
