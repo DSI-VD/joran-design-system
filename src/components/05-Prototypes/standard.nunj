@@ -12,7 +12,7 @@
     
     {% render '@quote' %}
   
-    {% render '@highlight' %}
+    {% render '@highlight--heading-only' %}
     
     {% render '@content--default' %}
     
@@ -43,6 +43,8 @@
     {% render '@video' %}
     
     {% render '@content--with-heading' %}
+    
+    {% render '@highlight--with-heading' %}
     
   </main>
   

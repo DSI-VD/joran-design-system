@@ -3,17 +3,8 @@
    ====================================================================== */
 
 .c-highlight {
-  @extend %h2;
-
   @apply
     py-24
     bg-primary-100
-    ;
-}
-
-.c-highlight__text {
-  @apply
-    max-w-prose
-    text-center
     ;
 }

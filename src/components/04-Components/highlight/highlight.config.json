@@ -1,3 +1,20 @@
 {
-  "status": "ready"
+  "status": "ready",
+  "context": {
+    "content": "@content"
+  },
+  "variants": [
+    {
+      "name": "heading only",
+      "context": {
+        "content": "@content--heading-only"
+      }
+    },
+    {
+      "name": "with heading",
+      "context": {
+        "content": "@content--with-heading"
+      }
+    }
+  ]
 }

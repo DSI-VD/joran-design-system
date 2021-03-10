@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- _highlight_ can have any content
 - Add a `alt` attribut on _logo-entity_
 - Clean _svg_ markup
 
