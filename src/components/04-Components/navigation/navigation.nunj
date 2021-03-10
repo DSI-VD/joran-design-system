@@ -1,5 +1,5 @@
 <div class="c-nav">
-  <nav class="o-container c-nav__container">
+  <nav class="o-container o-container--large c-nav__container">
     <div class="c-nav__logo">
       {% render '@logo-vd' %}
       <span class="c-nav__logo-text">Entité</span>

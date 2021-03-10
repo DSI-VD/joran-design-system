@@ -1,4 +1,4 @@
-<div class="o-container c-quote">
+<div class="o-container o-container--large c-quote">
     <div class="o-box">
         {% if heading %}<h3 class="c-quote__heading">Témoignage</h3>{% endif %}
         <blockquote>
