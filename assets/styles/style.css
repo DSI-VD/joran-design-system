@@ -2799,7 +2799,6 @@ html {
 .c-button--default {
   background-color: var(--color__primary--cta);
   border-radius: 0.25rem;
-  font-weight: 700;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
@@ -3597,6 +3596,10 @@ html {
    ====================================================================== */
 
 .c-page {
+  min-height: 100vh;
+}
+
+.c-page__content {
   display: flex;
   flex-direction: column;
   min-height: 100vh;

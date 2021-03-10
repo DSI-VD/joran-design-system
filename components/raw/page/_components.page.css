@@ -4,10 +4,16 @@
 
 .c-page {
   @apply
+    min-h-screen
+    ;
+}
+
+.c-page__content {
+  @apply
     flex
     flex-col
     min-h-screen
-    ;
+  ;
 }
 
 .c-page__main {
