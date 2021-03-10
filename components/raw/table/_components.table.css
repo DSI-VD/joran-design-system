@@ -1,18 +1,25 @@
 /* ======================================================================
    # _components.table.css
    ====================================================================== */
-   
+
 .c-table {
+   @apply
+      overflow-x-auto
+      rounded
+   ;
+}
+
+.c-table__table {
     @apply
         bg-primary-100
         text-tiny
         rounded
-        w-full
+        min-w-full
     ;
 }
 
-.c-table thead,
-.c-table tfoot {
+.c-table__table thead,
+.c-table__table tfoot {
     @apply
         bg-primary-200
         text-primary
@@ -21,14 +28,14 @@
     ;
 }
 
-.c-table th,
-.c-table td {
+.c-table__table th,
+.c-table__table td {
     @apply
         p-4
     ;
 }
 
-.c-table tr + tr {
+.c-table__table tr + tr {
     @apply
         border-primary-200
     ;
