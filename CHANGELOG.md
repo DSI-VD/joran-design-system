@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Change structure of _page_. A `<div class="c-page__content>` has been added to fix the footer not being at the bottom.
+
 ## [0.0.20] - 2021-03-10
 
 ### Added

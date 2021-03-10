@@ -1,5 +1,9 @@
-<main class="c-page__main">
-The footer is at the bottom even if there is nothing in the page
-</main>
+<div class="c-page__content">
 
-{% render '@footer' %}
+    <main class="c-page__main">
+    The footer is at the bottom even if there is nothing in the page
+    </main>
+    
+    {% render '@footer' %}
+
+</div>
