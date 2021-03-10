@@ -21,12 +21,14 @@
     uppercase
     text-3xl
   ;
+
   line-height: 1.05;
 
   @screen md {
     @apply
       text-4xl
     ;
+
     line-height: 1.0833;
   }
 }
@@ -43,12 +45,14 @@
     font-bold
     text-xl
   ;
+
   line-height: 1.1429;
 
   @screen md {
     @apply
       text-2xl
     ;
+
     line-height: 1.1176;
   }
 }
@@ -66,6 +70,7 @@
     uppercase
     font-medium
     ;
+
   line-height: 1.3;
 }
 

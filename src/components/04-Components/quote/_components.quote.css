@@ -45,12 +45,15 @@
 
 .c-quote__text::before {
   content: "«";
+
   @apply
     mr-1 /* [1] */
   ;
 }
+
 .c-quote__text::after {
   content: "»";
+
   @apply
     ml-1 /* [1] */
   ;
@@ -83,6 +86,7 @@
 
 .c-quote__reference {
   @extend %caption;
+
   @apply
     mt-4
     uppercase

@@ -7,7 +7,7 @@
     flex
     flex-wrap
     justify-center
-    
+
     rounded-md
     no-underline
     text-sm
@@ -28,22 +28,22 @@
 
 .c-pagination-pages__link {
   @extend %caption;
-  
+
   @apply
     flex /* [1] */
     items-center /* [1] */
     justify-center /* [1] */
-    
+
     text-white
     bg-primary-400
     rounded
     shadow
-    
+
     inline-block
     h-8
     px-2 /* [2] */
   ;
-  
+
   min-width: 2rem;
 }
 
