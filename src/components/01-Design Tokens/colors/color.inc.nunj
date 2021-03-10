@@ -1,7 +1,0 @@
-<style>
-    :root {
-        {% for name, value in primary %}
-        --color__primary--{{ name }}: {{ value}}{% if not loop.last %};{% endif %}
-        {% endfor %}
-    }
-</style>
