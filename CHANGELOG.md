@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- _testimonial_ and _highlight_ background are not a gradient
 - Hidden breadcrumb item have the same height as an non hidden one
 
 ## [0.0.19] - 2021-03-09
