@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Add `.o-container--large` class on _breadcrumb_, _footer_, _pagination_, _quote_ and _testimonial_
+- Add `.o-container--large` class on _breadcrumb_, _footer_, _pagination_, _quote_, _navigation_ and _testimonial_
 - _highlight_ can have any content
 - Add a `alt` attribut on _logo-entity_
 - Clean _svg_ markup
