@@ -9,15 +9,13 @@
     
     py-24
     px-2
-    -mx-2
   ;
 }
 
 @screen md {
   .o-box {
     @apply
-      px-8
-      -mx-4
+      px-4
     ;
   }
 }
@@ -25,8 +23,7 @@
 @screen lg {
   .o-box {
     @apply
-      px-16
-      -mx-8
+      px-12
     ;
   }
 }
@@ -34,8 +31,7 @@
 @screen xl {
   .o-box {
     @apply
-      px-32
-      -mx-16
+      px-24
     ;
   }
 }

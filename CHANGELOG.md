@@ -15,9 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add _ratio_ utility
 - Add _page_ component to put the footer at the bottom
 - New variants for _content_ with heading on the left
+- Add _o-container--large_ variants
 
 ### Changed
 
+- Add `.o-container--large` class on _breadcrumb_, _footer_, _pagination_, _quote_ and _testimonial_
 - _highlight_ can have any content
 - Add a `alt` attribut on _logo-entity_
 - Clean _svg_ markup
@@ -28,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Remove negative padding on _o-box_. It's handle by _container--big_
 - _testimonial_ and _highlight_ background are not a gradient
 - Hidden breadcrumb item have the same height as an non hidden one
 
