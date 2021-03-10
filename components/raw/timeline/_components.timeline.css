@@ -1,0 +1,166 @@
+.c-timeline {
+  @apply
+    py-24
+  ;
+
+  overflow-x: hidden;
+  background-image: linear-gradient(180deg, #5d50db 0%, #463d9d 100%);
+  color: #fcfcfc;
+}
+
+.c-timeline h2 {
+  color: #fcfcfc;
+  letter-spacing: -0.010625rem;
+  font-size: 2.125rem;
+  margin-bottom: 0.6875rem;
+  position: relative;
+  z-index: 20;
+}
+
+.c-timeline__link {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.05625rem;
+  line-height: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 20;
+}
+
+.c-timeline__link:focus {
+  @apply
+    outline-focus
+  ;
+}
+
+.c-timeline__wrap {
+  padding-left: 0;
+}
+
+@screen lg {
+  .c-timeline__wrap {
+    padding-left: 20rem;
+  }
+}
+
+.c-timeline__items {
+  @apply
+    relative
+    flex
+  ;
+
+  margin-top: 5rem;
+  transition: transform 1.55s cubic-bezier(.44,.12,.53,.81);
+}
+
+.c-timeline__item {
+  flex: 0 0 282px;
+  display: block;
+}
+
+.c-timeline__item:nth-child(2n) {
+  margin-top: 220px;
+  margin-left: -80px;
+}
+
+.c-timeline__item h3 {
+  color: #fcfcfc;
+  font-size: 2.125rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.010625rem;
+  line-height: 2.375rem;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  will-change: letter-spacing;
+  transition: letter-spacing 0.15s ease-in-out;
+  margin-bottom: 0.5rem;
+}
+
+.c-timeline__item p {
+  color: #dddaf8;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.000625rem;
+  line-height: 24px;
+  text-align: left;
+  position: relative;
+}
+
+.c-timeline__item-content {
+  @apply
+    relative
+  ;
+}
+
+.c-timeline__item:focus {
+  @apply
+    outline-focus
+  ;
+}
+
+.c-timeline__item:focus img,
+.c-timeline__item:hover img {
+  opacity: 1;
+}
+
+.c-timeline__item:focus h3,
+.c-timeline__item:hover h3 {
+  letter-spacing: 0.03125rem;
+}
+
+.c-timeline__item-content img {
+  @apply
+    absolute
+  ;
+
+  border-radius: 5px;
+  top: -166%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.55s linear;
+  will-change: opacity;
+}
+
+.c-timeline__control {
+  @apply
+    flex
+    justify-center
+    items-center
+    lg:justify-start
+  ;
+
+  margin-top: 8rem;
+}
+
+.c-timeline__indicator {
+  @apply
+    order-1
+    lg:order-first
+    lg:flex-grow
+  ;
+}
+
+.c-timeline__navigation--hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.c-timeline__navigation--left {
+  @apply
+    order-first
+    lg:order-2
+    mr-5
+  ;
+}
+
+.c-timeline__navigation--right {
+  @apply
+    order-last
+    ml-5
+  ;
+}
