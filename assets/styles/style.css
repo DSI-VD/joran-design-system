@@ -1650,8 +1650,6 @@ html {
 .o-box {
   background-color: var(--color__primary--100);
   border-radius: 0.25rem;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 6rem;
@@ -1660,28 +1658,22 @@ html {
 
 @media (min-width: 768px) {
   .o-box {
-    margin-left: -1rem;
-    margin-right: -1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
   .o-box {
-    margin-left: -2rem;
-    margin-right: -2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
   .o-box {
-    margin-left: -4rem;
-    margin-right: -4rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -1755,6 +1747,38 @@ html {
   .o-container {
     padding-left: 16rem;
     padding-right: 16rem;
+  }
+}
+
+/* -----------------------------------
+ # Container large
+ ----------------------------------- */
+
+@media (min-width: 768px) {
+  .o-container.o-container--large {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-container.o-container--large {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .o-container.o-container--large {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .o-container.o-container--large {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 

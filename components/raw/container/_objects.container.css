@@ -41,3 +41,39 @@
       ;
   }
 }
+
+/* -----------------------------------
+ # Container large
+ ----------------------------------- */
+
+@screen md {
+  .o-container.o-container--large {
+    @apply
+      px-2
+    ;
+  }
+}
+
+@screen lg {
+  .o-container.o-container--large {
+    @apply
+      px-4
+    ;
+  }
+}
+
+@screen xl {
+  .o-container.o-container--large {
+    @apply
+      px-8
+    ;
+  }
+}
+
+@screen 2xl {
+  .o-container.o-container--large {
+    @apply
+      px-16
+      ;
+  }
+}
