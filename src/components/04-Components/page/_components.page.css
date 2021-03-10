@@ -1,11 +1,17 @@
 /* ======================================================================
-   # _component.title.css
+   # _components.page.css
    ====================================================================== */
    
-.c-title {
-    
+.c-page {
+    @apply
+        flex
+        flex-col
+        min-h-screen
+    ;
 }
 
-/* .o-stack > .c-title + * {
-    --stack-space: 3rem;
-} */
+.c-page__main {
+    @apply
+        flex-grow
+    ;
+}

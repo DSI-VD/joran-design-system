@@ -1,0 +1,13 @@
+{
+  "preview": "@preview--prototype",
+  "variants": [
+    {
+      "preview": "@preview--prototype-blue",
+      "name": "theme blue"
+    },
+    {
+      "preview": "@preview--prototype-orange",
+      "name": "theme orange"
+    }
+  ]
+}

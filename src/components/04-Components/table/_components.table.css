@@ -1,0 +1,43 @@
+/* ======================================================================
+   # _components.table.css
+   ====================================================================== */
+
+.c-table {
+   @apply
+      overflow-x-auto
+      rounded
+   ;
+}
+
+.c-table__table {
+    @apply
+        bg-primary-100
+        text-tiny
+        rounded
+        min-w-full
+    ;
+}
+
+.c-table__table thead,
+.c-table__table tfoot {
+    @apply
+        bg-primary-200
+        text-primary
+        font-bold
+        uppercase
+    ;
+}
+
+.c-table__table th,
+.c-table__table td {
+    @apply
+        p-4
+    ;
+}
+
+.c-table__table tr + tr {
+    @apply
+        border-primary-200
+    ;
+    border-top-width: 1px;
+}

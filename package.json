@@ -1,6 +1,6 @@
 {
   "name": "@dsivd/joran",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Joran Design System",
   "license": "MIT",
   "author": "Etat de Vaud - DGNSI",
@@ -38,6 +38,7 @@
     "@fontsource/roboto": "^4.2.1",
     "@frctl/fractal": "^1.5.4",
     "@frctl/nunjucks": "^2.0.8",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/line-clamp": "^0.2.0",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.4",

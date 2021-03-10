@@ -1,11 +1,11 @@
-<div class="o-container c-content">
-    {% if heading %}
-    <div class="c-content__heading">
-        <h2 class="c-content__heading-text u-h2">{{ heading }}</h2>
-    </div>
-    {% endif %}
-    
-    <div class="c-content__content o-prose">
-        {{ content | safe }}
-    </div>
+<div
+  class="o-container c-content{% if styleVariant %} {{ styleVariant }}{% endif %}"
+>
+  {% if heading %}
+  <div class="c-content__item">
+    <h2 class="c-content__heading-text u-h2">{{ heading }}</h2>
+  </div>
+  {% endif %} {% if content %}
+  <div class="c-content__item o-prose">{{ content | safe }}</div>
+  {% endif %}
 </div>

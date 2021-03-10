@@ -4,9 +4,7 @@
    
 .o-box {
   @apply
-    bg-gradient-to-b
-    from-primary-100
-    to-primary-400
+    bg-primary-100
     rounded
     
     py-24

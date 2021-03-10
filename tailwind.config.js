@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./src/**/*.html', './src/**/*.nunj', './src/**/*.js']
+    content: ['./src/**/*.html', './src/**/*.nunj', './src/**/*.js', './src/**/*.json']
   },
   darkMode: false, // Or 'media' or 'class'
   theme: {
@@ -9,6 +9,20 @@ module.exports = {
       sans: ['roboto', 'system-ui', 'sans-serif']
     },
     extend: {
+      fontSize: {
+        'xs': '1rem',
+        'sm': '1.125rem',
+        'tiny': '1.125rem',
+        'base': '1.25rem',
+        'lg': '1.5rem',
+        'xl': '1.75rem',
+        '2xl': '2.125rem',
+        '3xl': '2.375rem',
+        '4xl': '3rem',
+        '5xl': '4rem',
+        '6xl': '5rem',
+        '7xl': '6rem'
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -45,6 +59,7 @@ module.exports = {
         DEFAULT: {
           css: {
             lineHeight: 1.5,
+            fontSize: '1.25rem',
             h1: {
               color: 'var(--color__primary--900)',
               fontWeight: 700,
@@ -78,12 +93,14 @@ module.exports = {
             h6: {
               color: 'var(--color__primary--900)',
               marginBottom: '0'
-            }
+            },
+            
           }
         },
         lg: {
           css: {
             lineHeight: 1.55,
+            fontSize: '1.25rem',
             h1: {
               lineHeight: '1.0833',
               fontSize: '3rem'
@@ -120,6 +137,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp')
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio')
   ]
 };

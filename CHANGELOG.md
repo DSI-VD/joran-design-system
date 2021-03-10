@@ -9,12 +9,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add preview for color theme
+- Add _table_ component
+- Add _video_ component
+- Add _ratio_ utility
+- Add _page_ component to put the footer at the bottom
+- New variants for _content_ with heading on the left
+
+### Changed
+
+- Add a `alt` attribut on _logo-entity_
+- Clean _svg_ markup
+
+### Removed
+
+- Remove _title_ component. _content_ will be used instead
+
+### Fixes
+
+- _testimonial_ and _highlight_ background are not a gradient
+- Hidden breadcrumb item have the same height as an non hidden one
+
+## [0.0.19] - 2021-03-09
+
+### Added
+
 - Added _title_ component
 - Added _navigation_ component
 
 ### Fixes
 
 - Remove AlpineJS
+- Fix typography. Font size in body, _footer_ and _button_ were not the right one
 - Fix SVG to make margin consistent in _button_
 
 ## [0.0.18] - 2021-03-05
@@ -279,7 +305,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.18...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.19...HEAD
+[0.0.19]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.18...v0.0.19
 [0.0.18]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.17...v0.0.18
 [0.0.17]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.16...v0.0.17
 [0.0.16]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.15...v0.0.16

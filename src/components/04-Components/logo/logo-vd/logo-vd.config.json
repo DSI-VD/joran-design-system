@@ -1,6 +1,6 @@
 {
   "status": "ready",
-  "preview": "@preview-bg",
+  "preview": "@preview--bg",
   "context": {
     "title": ""
   }

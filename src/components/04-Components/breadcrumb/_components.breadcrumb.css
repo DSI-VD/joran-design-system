@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .c-breadcrumb {
-  margin-top: 1.4375rem;
+  --stack-space: 1.4375rem;
 }
 
 .c-breadcrumb__list {
@@ -20,6 +20,7 @@
 
 .c-breadcrumb__list-item {
   @apply
+    flex
     mb-2
     ;
 }

@@ -1,0 +1,9 @@
+<style>
+:root {
+{% for name, value in colors -%}
+{% for colorname, colorvalue in value -%}
+    --color__{{ name }}--{{ colorname }}: {{ colorvalue }}{% if not loop.last %};{% endif %}
+{% endfor %}
+{%- endfor %}
+}
+</style>

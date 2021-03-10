@@ -1,7 +1,8 @@
 <ul class="o-auto-grid">
     {% for item in items %}
     <li>
-        {% render '@card', { image:item.image, title:item.title, content:item.content, button:item.button } %}
+        {% if item.title %}<h2 class="u-h2">{{ item.title }}</h2>{% endif %}
+        {% if item.content %}<p>{{ item.content }}</p>{% endif %}
     </li>
     {% endfor %}
 </ul>
