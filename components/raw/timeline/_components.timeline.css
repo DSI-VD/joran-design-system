@@ -52,7 +52,7 @@
   ;
 
   margin-top: 5rem;
-  transition: transform 1.55s cubic-bezier(.44,.12,.53,.81);
+  transition: transform 1.55s cubic-bezier(0.44, 0.12, 0.53, 0.81);
 }
 
 .c-timeline__item {

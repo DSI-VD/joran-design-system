@@ -474,7 +474,7 @@
   ;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">5rem</span>;
-  <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">1.55s</span> <span class="hljs-built_in">cubic-bezier</span>(.<span class="hljs-number">44</span>,.<span class="hljs-number">12</span>,.<span class="hljs-number">53</span>,.<span class="hljs-number">81</span>);
+  <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">1.55s</span> <span class="hljs-built_in">cubic-bezier</span>(<span class="hljs-number">0.44</span>, <span class="hljs-number">0.12</span>, <span class="hljs-number">0.53</span>, <span class="hljs-number">0.81</span>);
 }
 
 <span class="hljs-selector-class">.c-timeline__item</span> {
@@ -602,7 +602,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.4 KB</span>
+                    <span class="Meta-value">2.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -616,92 +616,100 @@
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Timeline</span> </span>{
-    <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">timeline</span>)</span> {
-        <span class="hljs-built_in">this</span>.timeline = timeline;
-        <span class="hljs-built_in">this</span>.moveCallbacks = [];
-        <span class="hljs-keyword">let</span> children = [].slice.call(timeline.children);
-        <span class="hljs-built_in">this</span>.items = children.map(<span class="hljs-function">(<span class="hljs-params">child</span>) =&gt;</span> {
-            <span class="hljs-keyword">return</span> child
-        });
-        <span class="hljs-built_in">this</span>.currentItem = <span class="hljs-number">0</span>;
-        <span class="hljs-built_in">this</span>.slidesVisible = <span class="hljs-number">3</span>;
-        <span class="hljs-built_in">this</span>.slidesToScroll = <span class="hljs-number">2</span>;
-        <span class="hljs-built_in">this</span>.setStyle();
-        <span class="hljs-built_in">this</span>.createNavigation();
-    }
+  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">timeline</span>)</span> {
+    <span class="hljs-built_in">this</span>.timeline = timeline;
+    <span class="hljs-built_in">this</span>.moveCallbacks = [];
+    <span class="hljs-keyword">const</span> children = [].slice.call(timeline.children);
+    <span class="hljs-built_in">this</span>.items = children.map(<span class="hljs-function"><span class="hljs-params">child</span> =&gt;</span> {
+      <span class="hljs-keyword">return</span> child;
+    });
+    <span class="hljs-built_in">this</span>.currentItem = <span class="hljs-number">0</span>;
+    <span class="hljs-built_in">this</span>.slidesVisible = <span class="hljs-number">3</span>;
+    <span class="hljs-built_in">this</span>.slidesToScroll = <span class="hljs-number">2</span>;
+    <span class="hljs-built_in">this</span>.setStyle();
+    <span class="hljs-built_in">this</span>.createNavigation();
+  }
 
-    translate (percent) {
-        <span class="hljs-built_in">this</span>.timeline.style.transform = <span class="hljs-string">&#x27;translate3d(&#x27;</span> + percent + <span class="hljs-string">&#x27;%, 0, 0)&#x27;</span>;
-    }
+  <span class="hljs-function"><span class="hljs-title">translate</span>(<span class="hljs-params">percent</span>)</span> {
+    <span class="hljs-built_in">this</span>.timeline.style.transform = <span class="hljs-string">&#x27;translate3d(&#x27;</span> + percent + <span class="hljs-string">&#x27;%, 0, 0)&#x27;</span>;
+  }
 
-    <span class="hljs-comment">/**
+  <span class="hljs-comment">/**
      * Crée les flêches de navigation dans le DOM
      */</span>
-    createNavigation () {
-        <span class="hljs-keyword">let</span> nextButton = <span class="hljs-built_in">this</span>.timeline.parentNode.parentNode.querySelector(<span class="hljs-string">&#x27;.c-timeline__navigation--right&#x27;</span>);
-        <span class="hljs-keyword">let</span> prevButton = <span class="hljs-built_in">this</span>.timeline.parentNode.parentNode.querySelector(<span class="hljs-string">&#x27;.c-timeline__navigation--left&#x27;</span>);
-        nextButton.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-built_in">this</span>.next.bind(<span class="hljs-built_in">this</span>));
-        prevButton.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-built_in">this</span>.prev.bind(<span class="hljs-built_in">this</span>));
-        <span class="hljs-built_in">this</span>.onMove(<span class="hljs-function"><span class="hljs-params">index</span> =&gt;</span> {
-            <span class="hljs-keyword">if</span> (index === <span class="hljs-number">0</span>) {
-                prevButton.classList.add(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
-            } <span class="hljs-keyword">else</span> {
-                prevButton.classList.remove(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
-            }
-            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.items[<span class="hljs-built_in">this</span>.currentItem + <span class="hljs-built_in">this</span>.slidesVisible] === <span class="hljs-literal">undefined</span>) {
-                nextButton.classList.add(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
-            } <span class="hljs-keyword">else</span> {
-                nextButton.classList.remove(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
-            }
-        })
-    }
+  <span class="hljs-function"><span class="hljs-title">createNavigation</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">const</span> nextButton = <span class="hljs-built_in">this</span>.timeline.parentNode.parentNode.querySelector(<span class="hljs-string">&#x27;.c-timeline__navigation--right&#x27;</span>);
+    <span class="hljs-keyword">const</span> previousButton = <span class="hljs-built_in">this</span>.timeline.parentNode.parentNode.querySelector(<span class="hljs-string">&#x27;.c-timeline__navigation--left&#x27;</span>);
+    nextButton.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-built_in">this</span>.next.bind(<span class="hljs-built_in">this</span>));
+    previousButton.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-built_in">this</span>.prev.bind(<span class="hljs-built_in">this</span>));
+    <span class="hljs-built_in">this</span>.onMove(<span class="hljs-function"><span class="hljs-params">index</span> =&gt;</span> {
+      <span class="hljs-keyword">if</span> (index === <span class="hljs-number">0</span>) {
+        previousButton.classList.add(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
+      } <span class="hljs-keyword">else</span> {
+        previousButton.classList.remove(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
+      }
 
-    next () {
-        <span class="hljs-built_in">this</span>.gotoItem(<span class="hljs-built_in">this</span>.currentItem + <span class="hljs-built_in">this</span>.slidesToScroll);
-    }
+      <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.items[<span class="hljs-built_in">this</span>.currentItem + <span class="hljs-built_in">this</span>.slidesVisible] === <span class="hljs-literal">undefined</span>) {
+        nextButton.classList.add(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
+      } <span class="hljs-keyword">else</span> {
+        nextButton.classList.remove(<span class="hljs-string">&#x27;c-timeline__navigation--hidden&#x27;</span>);
+      }
+    });
+  }
 
-    prev () {
-        <span class="hljs-built_in">this</span>.gotoItem(<span class="hljs-built_in">this</span>.currentItem - <span class="hljs-built_in">this</span>.slidesToScroll);
-    }
+  <span class="hljs-function"><span class="hljs-title">next</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-built_in">this</span>.gotoItem(<span class="hljs-built_in">this</span>.currentItem + <span class="hljs-built_in">this</span>.slidesToScroll);
+  }
 
-    <span class="hljs-comment">/**
+  <span class="hljs-function"><span class="hljs-title">prev</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-built_in">this</span>.gotoItem(<span class="hljs-built_in">this</span>.currentItem - <span class="hljs-built_in">this</span>.slidesToScroll);
+  }
+
+  <span class="hljs-comment">/**
      * Déplace le carousel vers l&#x27;élément ciblé
      * <span class="hljs-doctag">@param <span class="hljs-type">{number}</span> <span class="hljs-variable">index</span></span>
      * <span class="hljs-doctag">@param <span class="hljs-type">{boolean}</span> </span>[animation = true]
      */</span>
-    gotoItem (index, animation = <span class="hljs-literal">true</span>) {
-        <span class="hljs-keyword">if</span> (index &lt; <span class="hljs-number">0</span>) {
-            <span class="hljs-keyword">return</span>;
-        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (index &gt;= <span class="hljs-built_in">this</span>.items.length || (<span class="hljs-built_in">this</span>.items[<span class="hljs-built_in">this</span>.currentItem + <span class="hljs-built_in">this</span>.slidesVisible] === <span class="hljs-literal">undefined</span> &amp;&amp; index &gt; <span class="hljs-built_in">this</span>.currentItem)) {
-            <span class="hljs-keyword">return</span>;
-        }
-        <span class="hljs-keyword">let</span> translateX = index * -<span class="hljs-number">100</span> / <span class="hljs-built_in">this</span>.items.length;
-        <span class="hljs-built_in">this</span>.translate(translateX);
-        <span class="hljs-built_in">this</span>.timeline.offsetHeight; <span class="hljs-comment">// force repaint</span>
-        <span class="hljs-built_in">this</span>.currentItem = index;
-        <span class="hljs-built_in">this</span>.moveCallbacks.forEach(<span class="hljs-function"><span class="hljs-params">cb</span> =&gt;</span> cb(index));
+  <span class="hljs-function"><span class="hljs-title">gotoItem</span>(<span class="hljs-params">index, animation = <span class="hljs-literal">true</span></span>)</span> {
+    <span class="hljs-keyword">if</span> (index &lt; <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span>;
     }
 
-    <span class="hljs-comment">/**
+    <span class="hljs-keyword">if</span> (index &gt;= <span class="hljs-built_in">this</span>.items.length || (<span class="hljs-built_in">this</span>.items[<span class="hljs-built_in">this</span>.currentItem + <span class="hljs-built_in">this</span>.slidesVisible] === <span class="hljs-literal">undefined</span> &amp;&amp; index &gt; <span class="hljs-built_in">this</span>.currentItem)) {
+      <span class="hljs-keyword">return</span>;
+    }
+
+    <span class="hljs-keyword">const</span> translateX = index * -<span class="hljs-number">100</span> / <span class="hljs-built_in">this</span>.items.length;
+    <span class="hljs-built_in">this</span>.translate(translateX);
+    <span class="hljs-built_in">this</span>.timeline.offsetHeight; <span class="hljs-comment">// Force repaint</span>
+    <span class="hljs-built_in">this</span>.currentItem = index;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> cb <span class="hljs-keyword">of</span> <span class="hljs-built_in">this</span>.moveCallbacks) {
+      cb(index);
+    }
+  }
+
+  <span class="hljs-comment">/**
      * Rajoute un écouteur qui écoute le déplacement du carousel
      * <span class="hljs-doctag">@param <span class="hljs-type">{moveCallback}</span> <span class="hljs-variable">cb</span></span>
      */</span>
-    onMove (cb) {
-        <span class="hljs-built_in">this</span>.moveCallbacks.push(cb);
-    }
+  <span class="hljs-function"><span class="hljs-title">onMove</span>(<span class="hljs-params">cb</span>)</span> {
+    <span class="hljs-built_in">this</span>.moveCallbacks.push(cb);
+  }
 
-    <span class="hljs-comment">/**
+  <span class="hljs-comment">/**
      * Applique les bonnes dimensions aux éléments du carousel
      */</span>
-    setStyle () {
-        <span class="hljs-keyword">let</span> ratio = <span class="hljs-built_in">this</span>.items.length / <span class="hljs-built_in">this</span>.slidesVisible;
-        <span class="hljs-built_in">this</span>.timeline.style.width = (ratio * <span class="hljs-number">100</span>) + <span class="hljs-string">&quot;%&quot;</span>;
-        <span class="hljs-built_in">this</span>.items.forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.style.width = ((<span class="hljs-number">100</span> / <span class="hljs-built_in">this</span>.slidesVisible) / ratio) + <span class="hljs-string">&quot;%&quot;</span>);
+  <span class="hljs-function"><span class="hljs-title">setStyle</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">const</span> ratio = <span class="hljs-built_in">this</span>.items.length / <span class="hljs-built_in">this</span>.slidesVisible;
+    <span class="hljs-built_in">this</span>.timeline.style.width = (ratio * <span class="hljs-number">100</span>) + <span class="hljs-string">&#x27;%&#x27;</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> <span class="hljs-built_in">this</span>.items) {
+      item.style.width = ((<span class="hljs-number">100</span> / <span class="hljs-built_in">this</span>.slidesVisible) / ratio) + <span class="hljs-string">&#x27;%&#x27;</span>;
     }
+  }
 }
 
-<span class="hljs-keyword">let</span> onReady = <span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-keyword">new</span> Timeline(<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;#timeline1&#x27;</span>));
+<span class="hljs-keyword">const</span> onReady = <span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">new</span> Timeline(<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;#timeline1&#x27;</span>));
 };
 
 <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&#x27;DOMContentLoaded&#x27;</span>, onReady);
@@ -721,7 +729,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3 KB</span>
+                    <span class="Meta-value">2.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -2501,7 +2509,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.19
+                            0.0.20
                         
                     </dd>
                 </div>
@@ -2510,8 +2518,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-10T12:58:30.931Z">
-                                10.03.2021 à 13:58:30
+                            <time datetime="2021-03-10T13:21:41.232Z">
+                                10.03.2021 à 14:21:41
                             </time>
                         
                     </dd>

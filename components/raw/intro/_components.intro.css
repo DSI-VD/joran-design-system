@@ -4,6 +4,7 @@
 
 .c-intro__heading {
   @extend %h1;
+
   @apply
     text-black
   ;

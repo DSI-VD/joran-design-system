@@ -1157,107 +1157,110 @@
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre>init = <span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-keyword">let</span> levelIndicator = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.c-nav__level-indicator&#x27;</span>);
-    <span class="hljs-keyword">let</span> lastScrollPos = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">let</span> ticking = <span class="hljs-literal">false</span>;
-    <span class="hljs-keyword">let</span> nav = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.c-nav&#x27;</span>);
-    <span class="hljs-keyword">let</span> navOpen = <span class="hljs-literal">false</span>;
-    <span class="hljs-keyword">let</span> currentLevel = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">let</span> navToggle = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.c-nav__toggle&#x27;</span>);
+  <span class="hljs-keyword">const</span> levelIndicator = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.c-nav__level-indicator&#x27;</span>);
+  <span class="hljs-keyword">let</span> lastScrollPos = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">let</span> ticking = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">const</span> nav = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.c-nav&#x27;</span>);
+  <span class="hljs-keyword">let</span> navOpen = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">let</span> currentLevel = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">const</span> navToggle = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.c-nav__toggle&#x27;</span>);
 
-    <span class="hljs-keyword">const</span> closeAllTabs = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
-        <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>).forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
-            item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
-            item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
-            levelIndicator.querySelectorAll(<span class="hljs-string">&#x27;li&#x27;</span>).forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
-                levelIndicator.removeChild(item)
-            })
-        });
-        currentLevel = <span class="hljs-number">0</span>;
-    };
+  <span class="hljs-keyword">const</span> closeAllTabs = <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>)) {
+      item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
+      item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> levelIndicator.querySelectorAll(<span class="hljs-string">&#x27;li&#x27;</span>)) {
+        item.remove();
+      }
+    }
 
-    <span class="hljs-keyword">const</span> closeLevelTabs = <span class="hljs-function">(<span class="hljs-params">event, level</span>) =&gt;</span> {
-        <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list--level-&#x27;</span> + (level - <span class="hljs-number">1</span>)).forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
-            item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
-        });
-        <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list--level-&#x27;</span> + level).forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
-            item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
-        });
-        <span class="hljs-keyword">let</span> levelElement = levelIndicator.querySelector(<span class="hljs-string">&#x27;li:nth-child(&#x27;</span> + level + <span class="hljs-string">&#x27;)&#x27;</span>);
-        levelIndicator.removeChild(levelElement);
-        currentLevel = <span class="hljs-number">1</span>;
-    };
+    currentLevel = <span class="hljs-number">0</span>;
+  };
 
-    <span class="hljs-keyword">const</span> createLevelIndicator = <span class="hljs-function">(<span class="hljs-params">target</span>) =&gt;</span> {
-        <span class="hljs-keyword">let</span> levelLink = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;a&#x27;</span>);
-        levelLink.setAttribute(<span class="hljs-string">&#x27;href&#x27;</span>, <span class="hljs-string">&#x27;#nowhere&#x27;</span>);
-        levelLink.setAttribute(<span class="hljs-string">&#x27;tabindex&#x27;</span>, <span class="hljs-string">&#x27;-1&#x27;</span>);
-        <span class="hljs-keyword">let</span> levelText = <span class="hljs-built_in">document</span>.createTextNode(target.text);
-        levelLink.appendChild(levelText);
-        <span class="hljs-keyword">if</span> (target.parentNode.parentNode.matches(<span class="hljs-string">&#x27;.c-nav__list--level-1&#x27;</span>)) {
-            levelLink.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
-                closeLevelTabs(event, <span class="hljs-number">2</span>)
-            })
+  <span class="hljs-keyword">const</span> closeLevelTabs = <span class="hljs-function">(<span class="hljs-params">event, level</span>) =&gt;</span> {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list--level-&#x27;</span> + (level - <span class="hljs-number">1</span>))) {
+      item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list--level-&#x27;</span> + level)) {
+      item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
+    }
+
+    <span class="hljs-keyword">const</span> levelElement = levelIndicator.querySelector(<span class="hljs-string">&#x27;li:nth-child(&#x27;</span> + level + <span class="hljs-string">&#x27;)&#x27;</span>);
+    levelElement.remove();
+    currentLevel = <span class="hljs-number">1</span>;
+  };
+
+  <span class="hljs-keyword">const</span> createLevelIndicator = <span class="hljs-function"><span class="hljs-params">target</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> levelLink = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;a&#x27;</span>);
+    levelLink.setAttribute(<span class="hljs-string">&#x27;href&#x27;</span>, <span class="hljs-string">&#x27;#nowhere&#x27;</span>);
+    levelLink.setAttribute(<span class="hljs-string">&#x27;tabindex&#x27;</span>, <span class="hljs-string">&#x27;-1&#x27;</span>);
+    <span class="hljs-keyword">const</span> levelText = <span class="hljs-built_in">document</span>.createTextNode(target.text);
+    levelLink.append(levelText);
+    <span class="hljs-keyword">if</span> (target.parentNode.parentNode.matches(<span class="hljs-string">&#x27;.c-nav__list--level-1&#x27;</span>)) {
+      levelLink.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+        closeLevelTabs(event, <span class="hljs-number">2</span>);
+      });
+    } <span class="hljs-keyword">else</span> {
+      levelLink.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+        closeAllTabs(event);
+      });
+    }
+
+    <span class="hljs-keyword">const</span> level = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;li&#x27;</span>);
+    level.append(levelLink);
+    <span class="hljs-keyword">return</span> level;
+  };
+
+  <span class="hljs-comment">// Open menu tab</span>
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list-link--w-children&#x27;</span>)) {
+    item.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+      <span class="hljs-keyword">if</span> (currentLevel === <span class="hljs-built_in">Number</span>.parseInt(event.target.parentNode.dataset.level)) {
+        levelIndicator.append(createLevelIndicator(event.target));
+        event.target.closest(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
+        event.target.parentNode.querySelector(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
+        currentLevel++;
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (event.target.parentNode.parentNode.matches(<span class="hljs-string">&#x27;.c-nav__list--level-1&#x27;</span>)) {
+        closeLevelTabs(event, <span class="hljs-number">2</span>);
+      } <span class="hljs-keyword">else</span> {
+        closeAllTabs(event);
+      }
+    });
+  }
+
+  <span class="hljs-comment">// Open navigation</span>
+  navToggle.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+    <span class="hljs-keyword">if</span> (!navOpen) {
+      <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">&#x27;js-b-nav--open&#x27;</span>);
+      navToggle.querySelector(<span class="hljs-string">&#x27;.c-menu-icon&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-menu-icon--open&#x27;</span>);
+      nav.classList.add(<span class="hljs-string">&#x27;js-c-nav--open&#x27;</span>);
+      navOpen = <span class="hljs-literal">true</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">&#x27;js-b-nav--open&#x27;</span>);
+      navToggle.querySelector(<span class="hljs-string">&#x27;.c-menu-icon&#x27;</span>).classList.remove(<span class="hljs-string">&#x27;js-c-menu-icon--open&#x27;</span>);
+      nav.classList.remove(<span class="hljs-string">&#x27;js-c-nav--open&#x27;</span>);
+      closeAllTabs(event);
+      navOpen = <span class="hljs-literal">false</span>;
+    }
+  });
+
+  <span class="hljs-comment">// Sticky nav</span>
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&#x27;scroll&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
+    lastScrollPos = <span class="hljs-built_in">window</span>.scrollY;
+    <span class="hljs-keyword">if</span> (!ticking) {
+      <span class="hljs-built_in">window</span>.requestAnimationFrame(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-keyword">if</span> (lastScrollPos &gt; <span class="hljs-number">50</span>) {
+          nav.classList.add(<span class="hljs-string">&#x27;js-c-nav--sticky&#x27;</span>);
         } <span class="hljs-keyword">else</span> {
-            levelLink.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
-                closeAllTabs(event)
-            })
-        }
-        <span class="hljs-keyword">let</span> level = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;li&#x27;</span>);
-        level.appendChild(levelLink);
-        <span class="hljs-keyword">return</span> level;
-    };
-
-    <span class="hljs-comment">// Open menu tab</span>
-    <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list-link--w-children&#x27;</span>).forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
-        item.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
-            <span class="hljs-keyword">if</span> (currentLevel === <span class="hljs-built_in">parseInt</span>(event.target.parentNode.dataset.level)) {
-                levelIndicator.appendChild(createLevelIndicator(event.target));
-                event.target.closest(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
-                event.target.parentNode.querySelector(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
-                currentLevel++;
-            } <span class="hljs-keyword">else</span> {
-                <span class="hljs-keyword">if</span> (event.target.parentNode.parentNode.matches(<span class="hljs-string">&#x27;.c-nav__list--level-1&#x27;</span>)) {
-                    closeLevelTabs(event, <span class="hljs-number">2</span>)
-                } <span class="hljs-keyword">else</span> {
-                    closeAllTabs(event)
-                }
-            }
-        })
-    });
-
-    <span class="hljs-comment">// Open navigation</span>
-    navToggle.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
-        <span class="hljs-keyword">if</span> (!navOpen) {
-            <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">&#x27;js-b-nav--open&#x27;</span>);
-            navToggle.querySelector(<span class="hljs-string">&#x27;.c-menu-icon&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-menu-icon--open&#x27;</span>);
-            nav.classList.add(<span class="hljs-string">&#x27;js-c-nav--open&#x27;</span>);
-            navOpen = <span class="hljs-literal">true</span>;
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-built_in">document</span>.body.classList.remove(<span class="hljs-string">&#x27;js-b-nav--open&#x27;</span>);
-            navToggle.querySelector(<span class="hljs-string">&#x27;.c-menu-icon&#x27;</span>).classList.remove(<span class="hljs-string">&#x27;js-c-menu-icon--open&#x27;</span>);
-            nav.classList.remove(<span class="hljs-string">&#x27;js-c-nav--open&#x27;</span>);
-            closeAllTabs(event);
-            navOpen = <span class="hljs-literal">false</span>;
-        }
-    });
-
-    <span class="hljs-comment">// sticky nav</span>
-    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&#x27;scroll&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
-        lastScrollPos = <span class="hljs-built_in">window</span>.scrollY;
-        <span class="hljs-keyword">if</span> (!ticking) {
-            <span class="hljs-built_in">window</span>.requestAnimationFrame(<span class="hljs-function">() =&gt;</span> {
-                <span class="hljs-keyword">if</span> (lastScrollPos &gt; <span class="hljs-number">50</span>) {
-                    nav.classList.add(<span class="hljs-string">&#x27;js-c-nav--sticky&#x27;</span>)
-                } <span class="hljs-keyword">else</span> {
-                    nav.classList.remove(<span class="hljs-string">&#x27;js-c-nav--sticky&#x27;</span>)
-                }
-                ticking = <span class="hljs-literal">false</span>;
-            });
+          nav.classList.remove(<span class="hljs-string">&#x27;js-c-nav--sticky&#x27;</span>);
         }
 
-        ticking = <span class="hljs-literal">true</span>;
-    });
+        ticking = <span class="hljs-literal">false</span>;
+      });
+    }
+
+    ticking = <span class="hljs-literal">true</span>;
+  });
 };
 </pre>
                             </code>
@@ -1275,7 +1278,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.9 KB</span>
+                    <span class="Meta-value">3.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -3053,7 +3056,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.19
+                            0.0.20
                         
                     </dd>
                 </div>
@@ -3062,8 +3065,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-10T12:58:30.931Z">
-                                10.03.2021 à 13:58:30
+                            <time datetime="2021-03-10T13:21:41.232Z">
+                                10.03.2021 à 14:21:41
                             </time>
                         
                     </dd>

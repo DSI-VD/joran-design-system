@@ -323,103 +323,107 @@
    # _components.testimonial.css
    ====================================================================== */</span>
 
-  <span class="hljs-comment">/* -----------------------------------
-     # Main row
-     ----------------------------------- */</span>
+<span class="hljs-comment">/* -----------------------------------
+   # Main row
+   ----------------------------------- */</span>
+<span class="hljs-selector-class">.c-testimonial__flex</span> {
+  <span class="hljs-keyword">@apply</span>
+    flex
+    flex-col
+    ;
+}
+
+<span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-testimonial__flex</span> {
     <span class="hljs-keyword">@apply</span>
-      flex
-      flex-col
-  }
-  
-  @screen md {
-    <span class="hljs-selector-class">.c-testimonial__flex</span> {
-      <span class="hljs-keyword">@apply</span>
-        flex-row
-    }
-  }
-
-  /* -----------------------------------
-     # Image
-     ----------------------------------- */
-  .c-testimonial__facecontainer {
-    <span class="hljs-keyword">@apply</span>
-      flex
       flex-row
-      justify-center
-    ;
-  }
-  
-  <span class="hljs-keyword">@screen</span> md {
-    <span class="hljs-selector-class">.c-testimonial__facecontainer</span> {
-      <span class="hljs-keyword">@apply</span>
-        w-<span class="hljs-number">1</span>/<span class="hljs-number">3</span>
-        justify-start
-      ;
-    }
-  }
-
-  <span class="hljs-selector-class">.c-testimonial__face</span> {
-    <span class="hljs-keyword">@apply</span>
-      mb-<span class="hljs-number">4</span>
-    ;
-  }
-
-  <span class="hljs-comment">/* -----------------------------------
-     # Header before text
-     ----------------------------------- */</span>
-  <span class="hljs-selector-class">.c-testimonial__header</span> {
-    <span class="hljs-keyword">@extend</span> %h1;
-    <span class="hljs-keyword">@apply</span>
-      text-black
-      text-center
-      <span class="hljs-attribute">md</span>:text-left
       ;
   }
+}
 
-  <span class="hljs-comment">/* -----------------------------------
-     # Text
-     ----------------------------------- */</span>
+<span class="hljs-comment">/* -----------------------------------
+   # Image
+   ----------------------------------- */</span>
+<span class="hljs-selector-class">.c-testimonial__facecontainer</span> {
+  <span class="hljs-keyword">@apply</span>
+    flex
+    flex-row
+    justify-center
+    ;
+}
+
+<span class="hljs-keyword">@screen</span> md {
+  <span class="hljs-selector-class">.c-testimonial__facecontainer</span> {
+    <span class="hljs-keyword">@apply</span>
+      w-<span class="hljs-number">1</span>/<span class="hljs-number">3</span>
+      justify-start
+      ;
+  }
+}
+
+<span class="hljs-selector-class">.c-testimonial__face</span> {
+  <span class="hljs-keyword">@apply</span>
+    mb-<span class="hljs-number">4</span>
+    ;
+}
+
+<span class="hljs-comment">/* -----------------------------------
+  # Header before text
+  ----------------------------------- */</span>
+<span class="hljs-selector-class">.c-testimonial__header</span> {
+  <span class="hljs-keyword">@extend</span> %h1;
+
+  <span class="hljs-keyword">@apply</span>
+    text-black
+    text-center
+    <span class="hljs-attribute">md</span>:text-left
+      ;
+}
+
+<span class="hljs-comment">/* -----------------------------------
+   # Text
+   ----------------------------------- */</span>
+<span class="hljs-selector-class">.c-testimonial__textcontainer</span> {
+  <span class="hljs-keyword">@apply</span>
+    text-center
+      ;
+}
+
+<span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-testimonial__textcontainer</span> {
     <span class="hljs-keyword">@apply</span>
-      text-center
-      ;
-  }
-  
-  <span class="hljs-keyword">@screen</span> md {
-    <span class="hljs-selector-class">.c-testimonial__textcontainer</span> {
-      <span class="hljs-keyword">@apply</span>
-        text-left
-        w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
+      text-left
+      w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
         ;
-    }
   }
+}
 
-  <span class="hljs-comment">/* -----------------------------------
-     # Author
-     ----------------------------------- */</span>
-  <span class="hljs-selector-class">.c-testimonial__author</span> {
-    <span class="hljs-keyword">@extend</span> %h4;
-    <span class="hljs-keyword">@apply</span>
-      text-black
-      text-center
-      <span class="hljs-attribute">md</span>:text-left
+<span class="hljs-comment">/* -----------------------------------
+   # Author
+   ----------------------------------- */</span>
+<span class="hljs-selector-class">.c-testimonial__author</span> {
+  <span class="hljs-keyword">@extend</span> %h4;
+
+  <span class="hljs-keyword">@apply</span>
+    text-black
+    text-center
+    <span class="hljs-attribute">md</span>:text-left
     ;
-  }
+}
 
-  <span class="hljs-comment">/* -----------------------------------
-     # Function
-     ----------------------------------- */</span>
-  <span class="hljs-selector-class">.c-testimonial__author--function</span> {
-    <span class="hljs-keyword">@apply</span>
-      block
-      <span class="hljs-attribute">md</span>:inline
+<span class="hljs-comment">/* -----------------------------------
+   # Function
+   ----------------------------------- */</span>
+<span class="hljs-selector-class">.c-testimonial__author--function</span> {
+  <span class="hljs-keyword">@apply</span>
+    block
+    <span class="hljs-attribute">md</span>:inline
       ;
-  }
+}
 
-  <span class="hljs-selector-class">.c-testimonial__author--function</span><span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
-  }
+<span class="hljs-selector-class">.c-testimonial__author--function</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+}
 
 <span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-testimonial__author--function</span><span class="hljs-selector-pseudo">::before</span> {
@@ -428,8 +432,8 @@
 }
 
 <span class="hljs-comment">/* -----------------------------------
- # Button
- ----------------------------------- */</span>
+   # Button
+   ----------------------------------- */</span>
 
 <span class="hljs-selector-class">.c-testimonial__button</span> {
   <span class="hljs-keyword">@apply</span> mx-auto;
@@ -439,7 +443,8 @@
   <span class="hljs-selector-class">.c-testimonial__button</span> {
     <span class="hljs-keyword">@apply</span> mx-<span class="hljs-number">0</span>;
   }
-}</pre>
+}
+</pre>
                             </code>
                             
                         </div>
@@ -455,7 +460,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.1 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -2303,7 +2308,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.19
+                            0.0.20
                         
                     </dd>
                 </div>
@@ -2312,8 +2317,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-10T12:58:30.931Z">
-                                10.03.2021 à 13:58:30
+                            <time datetime="2021-03-10T13:21:41.232Z">
+                                10.03.2021 à 14:21:41
                             </time>
                         
                     </dd>

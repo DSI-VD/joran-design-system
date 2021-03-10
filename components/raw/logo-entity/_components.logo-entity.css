@@ -1,13 +1,13 @@
 /* ======================================================================
    # _components.logo-entity.css
    ====================================================================== */
-   
+
 .c-logo-entity {
-    max-width: 4rem;
+  max-width: 4rem;
 }
 
 @screen md {
-   .c-logo-entity {
-       max-width: 8rem;
-   }
+  .c-logo-entity {
+    max-width: 8rem;
+  }
 }

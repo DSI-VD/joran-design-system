@@ -3673,7 +3673,7 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .c-pagination_list-item-previous, .c-pagination_list-item-next {
@@ -3961,23 +3961,23 @@ html {
    ====================================================================== */
 
 /* -----------------------------------
-     # Main row
-     ----------------------------------- */
+   # Main row
+   ----------------------------------- */
 
 .c-testimonial__flex {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
   .c-testimonial__flex {
-    flex-direction: row
+    flex-direction: row;
   }
 }
 
 /* -----------------------------------
-     # Image
-     ----------------------------------- */
+   # Image
+   ----------------------------------- */
 
 .c-testimonial__facecontainer {
   display: flex;
@@ -3997,8 +3997,8 @@ html {
 }
 
 /* -----------------------------------
-     # Header before text
-     ----------------------------------- */
+  # Header before text
+  ----------------------------------- */
 
 .c-testimonial__header {
   font-weight: 700;
@@ -4030,8 +4030,8 @@ html {
 }
 
 /* -----------------------------------
-     # Text
-     ----------------------------------- */
+   # Text
+   ----------------------------------- */
 
 .c-testimonial__textcontainer {
   text-align: center;
@@ -4045,8 +4045,8 @@ html {
 }
 
 /* -----------------------------------
-     # Author
-     ----------------------------------- */
+   # Author
+   ----------------------------------- */
 
 .c-testimonial__author {
   font-size: 1.125rem;
@@ -4068,8 +4068,8 @@ html {
 }
 
 /* -----------------------------------
-     # Function
-     ----------------------------------- */
+   # Function
+   ----------------------------------- */
 
 .c-testimonial__author--function {
   display: block;
@@ -4092,8 +4092,8 @@ html {
 }
 
 /* -----------------------------------
- # Button
- ----------------------------------- */
+   # Button
+   ----------------------------------- */
 
 .c-testimonial__button {
   margin-left: auto;
@@ -4155,7 +4155,7 @@ html {
   display: flex;
   position: relative;
   margin-top: 5rem;
-  transition: transform 1.55s cubic-bezier(.44,.12,.53,.81);
+  transition: transform 1.55s cubic-bezier(0.44, 0.12, 0.53, 0.81);
 }
 
 .c-timeline__item {
@@ -4500,11 +4500,6 @@ html {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 * {
