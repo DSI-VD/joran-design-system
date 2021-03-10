@@ -38,10 +38,8 @@
     
 <!--    {% render '@slider' %}-->
     
-    {% render '@content--default' %}
-    
-    {% render '@content--with-heading' %}
-    
+    {% render '@timeline' %}
+
     {% render '@video' %}
     
     {% render '@content--with-heading' %}
