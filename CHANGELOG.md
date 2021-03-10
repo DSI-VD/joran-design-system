@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.20] - 2021-03-10
+
 ### Added
 
 - Add preview for color theme
@@ -309,7 +311,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.19...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.20...HEAD
+[0.0.20]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.19...v0.0.20
 [0.0.19]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.18...v0.0.19
 [0.0.18]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.17...v0.0.18
 [0.0.17]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.16...v0.0.17
