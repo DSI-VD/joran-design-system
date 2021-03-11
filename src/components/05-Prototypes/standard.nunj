@@ -22,6 +22,8 @@
     
     {% render '@content--default' %}
     
+    {% render '@slider' %}
+    
     <!-- 
       TODO: refactorize to put the o-container in the component
     -->

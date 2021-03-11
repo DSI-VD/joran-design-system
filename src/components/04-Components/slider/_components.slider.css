@@ -11,44 +11,6 @@
 
 
 
-/* -----------------------------------
-# Container
------------------------------------ */
-
-.c-slider__container {
-  @apply
-    relative
-   ;
-}
-
-.c-slider__container::after {
-  @apply
-    absolute
-    block
-
-    right-0
-    -top-2
-
-    w-2    
-
-      /* bg-gradient-to-r
-      from-transparent */
-      /* to-black */
-      /* bg-opacity-20 */
-   ;
-
-  --tw-gradient-from: rgba(0, 0, 0, 0);
-  --tw-gradient-to: rgba(0, 0, 0, 0.2);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
-
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  border-top-left-radius: 100% 30%;
-  border-bottom-left-radius: 100% 30%;
-  height: calc(100% - 2rem);
-  content: "";
-}
-
-
 
 /* -----------------------------------
    # Heading
@@ -74,16 +36,37 @@
 
     overflow-x-scroll
    ;
-
+  
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #fcfcfc;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--color__primary--900);
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: var(--color__primary--900);
+  }
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  -ms-overflow-style: auto;
   scrollbar-color: #fcfcfc var(--color__primary--900);
-}
+  scrollbar-width: thin;
 
+}
 
 
 /* -----------------------------------
    # List item
    ----------------------------------- */
 
+/***
+ * FIXME: margin-right on the last element is not applied
+ * 1. Calculate the margin to align the first element of the list with the container
+ */
 .c-slider__list-item {
   @apply
     max-w-sm
@@ -93,7 +76,38 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 75vw;
+  
+  --c-slider__margin: 1rem; /* [1] */
+  --c-slider__container-width: 100%; /* [1] */
+  
+  @screen sm {
+    --c-slider__container-width: 640px; /* [1] */
+  }
+  @screen md {
+    --c-slider__margin: 2rem; /* [1] */
+    --c-slider__container-width: 768px; /* [1] */
+  }
+  @screen lg {
+    --c-slider__margin: 4rem; /* [1] */
+    --c-slider__container-width: 1024px; /* [1] */
+  }
+  @screen xl {
+    --c-slider__margin: 8rem; /* [1] */
+    --c-slider__container-width: 1280px; /* [1] */
+  }
+  @screen 2xl {
+    --c-slider__margin: 16rem; /* [1] */
+    --c-slider__container-width: 1536px; /* [1] */
+  }
 }
+
+.c-slider__list .c-slider__list-item:first-child {
+  margin-left: calc( calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin)); /* [1] */
+}
+
+/* .c-slider__list .c-slider__list-item:last-child{
+  padding-right: calc( calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin));
+} */
 
 
 
