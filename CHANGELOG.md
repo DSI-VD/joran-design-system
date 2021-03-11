@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add aria-haspopup, aria-expanded on main navigation
 - Add aria-label on menu toggle
 
+### Fixes
+
+- Fix _button_ typography. Font weight is medium and there is a wider tracking.
+
 ## [0.0.20] - 2021-03-10
 
 ### Added
