@@ -133,11 +133,25 @@
     ;
 }
 
+.c-slider__article-text-container {
+  @apply
+    flex
+    flex-col
+  ;
+  
+  @screen md {
+    @apply
+      border-l
+      border-white
+      pl-4
+    ;
+  }
+}
+
 .c-slider__article-heading {
   @extend %h3;
 
   @apply
-  order-3
     text-white
     flex-initial
     ;
@@ -146,15 +160,16 @@
 .c-slider__article-date {
   @extend %caption;
   @apply
-    order-2
+    order-first
     text-primary-100
     flex-initial
+    
+    mb-1
   ;
 }
 
 .c-slider__article-button {
   @apply
-  order-4
     text-white
     flex-initial
     ;
@@ -162,13 +177,14 @@
 
 .c-slider__article-figure {
   @apply
-    order-1
+    order-first
     bg-primary-800
 
     bg-cover
     bg-center
 
     rounded
+    mb-2
 
     flex-1
     ;
