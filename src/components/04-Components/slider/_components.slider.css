@@ -9,11 +9,22 @@
 .c-slider {
   @apply
     bg-primary
+    
     py-16
+    h-screen
     
     overflow-x-hidden
     relative /* [1] */
     ;
+    
+    min-height: 40rem;
+    max-height: 64rem;
+}
+
+.c-slider__container {
+  @apply
+    h-full
+  ;
 }
 
 
@@ -42,8 +53,11 @@
     flex-row
 
     overflow-x-auto
+    
+    mb-16
    ;
   
+  height: calc(100% - 4rem);
   
   &::-webkit-scrollbar-thumb {
     background-color: #fcfcfc;
@@ -76,7 +90,7 @@
  */
 .c-slider__list-item {
   @apply
-    max-w-sm
+    max-w-md
     mr-4
     ;
 
@@ -130,11 +144,9 @@
   @apply
     flex /* [1] */
     flex-col /* [1] */
-
-    h-96
-
-    mb-8
     ;
+    
+    height: calc(100% - 4rem);
 }
 
 .c-slider__article-text-container {
