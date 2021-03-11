@@ -2,10 +2,17 @@
    # _components.slider.css
    ====================================================================== */
 
+/***
+ * 1. Prevent the page for being the same width as the overflow element on iOS/Safari
+ */
+
 .c-slider {
   @apply
     bg-primary
     py-16
+    
+    overflow-x-hidden
+    relative /* [1] */
     ;
 }
 
@@ -34,7 +41,7 @@
     flex
     flex-row
 
-    overflow-x-scroll
+    overflow-x-auto
    ;
   
   
