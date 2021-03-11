@@ -122,10 +122,14 @@
    # Article
    ----------------------------------- */
 
+/***
+ * 1. Reorder figure and text element vertically
+ * 2. Reorder text vertically to put the date first
+ */
 .c-slider__article {
   @apply
-    flex
-    flex-col
+    flex /* [1] */
+    flex-col /* [1] */
 
     h-96
 
@@ -135,8 +139,8 @@
 
 .c-slider__article-text-container {
   @apply
-    flex
-    flex-col
+    flex /* [2] */
+    flex-col /* [2] */
   ;
   
   @screen md {
@@ -160,7 +164,7 @@
 .c-slider__article-date {
   @extend %caption;
   @apply
-    order-first
+    order-first /* [2] */
     text-primary-100
     flex-initial
     
@@ -177,7 +181,7 @@
 
 .c-slider__article-figure {
   @apply
-    order-first
+    order-first /* [1] */
     bg-primary-800
 
     bg-cover
