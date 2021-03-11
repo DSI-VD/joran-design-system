@@ -6,20 +6,24 @@
       
       <div class="c-footer__page">
         <h3 class="u-visually-hidden">Liens connexes</h3>
-        <ul class="c-footer__list-page">
-          <li><a href="#nowhere">Mentions légales</a></li>
-          <li><a href="#nowhere">Plan du site</a></li>
-          <li><a href="#nowhere">Contact</a></li>
-        </ul>
+        <nav aria-label="Navigation pied de page">
+          <ul class="c-footer__list-page">
+            <li><a href="#nowhere">Mentions légales</a></li>
+            <li><a href="#nowhere">Plan du site</a></li>
+            <li><a href="#nowhere">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       
       <div class="c-footer__social">
         <h3 class="u-visually-hidden md:u-not-visually-hidden">Partager</h3>
-        <ul class="c-footer__list-social">
-          <li><a href="#nowhere">{% render '@svg-social-twitter' %}</a></li>
-          <li><a href="#nowhere">{% render '@svg-social-facebook' %}</a></li>
-          <li><a href="#nowhere">{% render '@svg-mail' %}</a></li>
-        </ul>
+        <nav aria-label="Navigation réseaux sociaux">
+          <ul class="c-footer__list-social">
+            <li><a href="#nowhere">{% render '@svg-social-twitter' %}</a></li>
+            <li><a href="#nowhere">{% render '@svg-social-facebook' %}</a></li>
+            <li><a href="#nowhere">{% render '@svg-mail' %}</a></li>
+          </ul>
+        </nav>
       </div>
       
       <div class="c-footer__logo">

@@ -1,52 +1,56 @@
 <div class="c-nav">
-  <nav class="o-container o-container--large c-nav__container">
+  <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
     <div class="c-nav__logo">
       {% render '@logo-vd' %}
       <span class="c-nav__logo-text">Entité</span>
     </div>
-    <a class="c-nav__toggle" href="#nowhere">
-      <div class="c-menu-icon c-menu-icon--cross">
-        <span>Open menu</span>
-      </div>
-    </a>
+    <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="c-menu-icon c-menu-icon--cross">
+        <span>Ouvrir le menu</span>
+      </span>
+    </button>
     <div class="c-nav__list-container">
       <div class="c-nav__search-bar">
         <a href="#nowhere" class="c-button--search">Rechercher</a>
       </div>
-      <ul class="c-nav__level-indicator"></ul>
+      <ul class="c-nav__level-indicator">
+      </ul>
       <div class="c-nav__list-wrapper">
         <ul class="c-nav__list">
           {% for firstLevelItem in firstLevelItems %}
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link{% if firstLevelItem.secondLevelItems %} c-nav__list-link--w-children{% endif %}"
-            >
-              {{ firstLevelItem.name }}
-            </a>
             {% if firstLevelItem.secondLevelItems %}
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              {% for secondLevelItem in firstLevelItem.secondLevelItems %}
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link{% if secondLevelItem.thirdLevelItems %} c-nav__list-link--w-children{% endif %}"
-                  >{{secondLevelItem.name}}</a
-                >
-                {% if secondLevelItem.thirdLevelItems %}
-                <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
-                  {% for thirdLevelItem in secondLevelItem.thirdLevelItems %}
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >{{thirdLevelItem.name}}</a
-                    >
-                  </li>
-                  {% endfor %}
-                </ul>
-                {% endif %}
-              </li>
-              {% endfor %}
-            </ul>
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                {{ firstLevelItem.name }}
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+                {% for secondLevelItem in firstLevelItem.secondLevelItems %}
+                <li class="c-nav__list-item" data-level="1">
+                  {% if secondLevelItem.thirdLevelItems %}
+                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                      {{ secondLevelItem.name }}
+                    </button>
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      {% for thirdLevelItem in secondLevelItem.thirdLevelItems %}
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          {{ thirdLevelItem.name }}
+                        </a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    <a href="#nowhere" class="c-nav__list-link">
+                      {{ secondLevelItem.name }}
+                    </a>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <a href="#nowhere" class="c-nav__list-link">
+                {{ firstLevelItem.name }}
+              </a>
             {% endif %}
           </li>
           {% endfor %}
