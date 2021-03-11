@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - _slider_ can be scroll on all the width of the viewport. It's no more hidden behind the container
-- Scrollbar in _slider_ is white in Safari, Chrome too
+- Add missing dates in _slider_
 - Change structure of _page_. A `<div class="c-page__content>` has been added to fix the footer not being at the bottom.
 - Add aria-label on various navigation (footer, breadcrumb and main navigation)
 - Add aria-haspopup, aria-expanded on main navigation
@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix _button_ typography. Font weight is medium and there is a wider tracking
 - Align headers in _table_ on the left
+- Scrollbar in _slider_ is white in Safari, Chrome too
 
 ## [0.0.20] - 2021-03-10
 
