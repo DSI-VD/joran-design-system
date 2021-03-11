@@ -38,8 +38,6 @@
     {% render '@figure' %}
     </div>
     
-<!--    {% render '@slider' %}-->
-    
     {% render '@timeline' %}
 
     {% render '@video' %}
