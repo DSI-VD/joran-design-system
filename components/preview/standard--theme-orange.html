@@ -40,464 +40,418 @@
 
   <body onload="init();" class="c-page">
     <div class="c-nav">
-  <nav class="o-container o-container--large c-nav__container">
+  <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
     <div class="c-nav__logo">
       <img class="c-logo-vd" src="../../assets/vectors/logo.svg" />
 
       <span class="c-nav__logo-text">Entité</span>
     </div>
-    <a class="c-nav__toggle" href="#nowhere">
-      <div class="c-menu-icon c-menu-icon--cross">
-        <span>Open menu</span>
-      </div>
-    </a>
+    <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="c-menu-icon c-menu-icon--cross">
+        <span>Ouvrir le menu</span>
+      </span>
+    </button>
     <div class="c-nav__list-container">
       <div class="c-nav__search-bar">
         <a href="#nowhere" class="c-button--search">Rechercher</a>
       </div>
-      <ul class="c-nav__level-indicator"></ul>
+      <ul class="c-nav__level-indicator">
+      </ul>
       <div class="c-nav__list-wrapper">
         <ul class="c-nav__list">
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Somaire
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link c-nav__list-link--w-children"
-                  >Organigrame</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Somaire
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-                <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                <li class="c-nav__list-item" data-level="1">
                   
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Communication tactique</a
-                    >
-                  </li>
+                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                      Organigrame
+                    </button>
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Communication tactique
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bilderberg
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Facebook live
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Paléo Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Visite du président indien
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Attaques fourgons blindés
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Fermeture de l&#39;autoroute A12
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bol d&#39;Or
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Inauguration CIO
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Montreux Jazz Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Fête des Vignerons
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Cérémonie du souvenir
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Escrocrie à la caisse de chômage
+                        </a>
+                      </li>
+                      
+                    </ul>
                   
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Bilderberg</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Facebook live</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Paléo Festival</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Visite du président indien</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Attaques fourgons blindés</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Fermeture de l&#39;autoroute A12</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Bol d&#39;Or</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Inauguration CIO</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Montreux Jazz Festival</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Fête des Vignerons</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Cérémonie du souvenir</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Escrocrie à la caisse de chômage</a
-                    >
-                  </li>
-                  
-                </ul>
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >La police en chiffres</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      La police en chiffres
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Finances</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Finances
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Objectifs 2020</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Objectifs 2020
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Valorisation des colabirateurs</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Valorisation des colabirateurs
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Témoignages</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Témoignages
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+              </ul>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Projets
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Communication tactique</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Projets
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Bilderberg</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Communication tactique
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Facebook live</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Bilderberg
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Paléo Festival</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Facebook live
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Visite du président indien</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Paléo Festival
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Attaques fourgons blindés</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Visite du président indien
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Attaques fourgons blindés
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Fermeture de l&#39;autoroute A12</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Bol d&#39;Or</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Fermeture de l&#39;autoroute A12
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Inauguration CIO</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Bol d&#39;Or
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Montreux Jazz Festival</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Inauguration CIO
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Fête des Vignerons</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Montreux Jazz Festival
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Cérémonie du souvenir</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Fête des Vignerons
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Escrocrie à la caisse de chômage</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Cérémonie du souvenir
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Escrocrie à la caisse de chômage
+                    </a>
+                  
+                </li>
+                
+              </ul>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link"
-            >
-              Remerciement
-            </a>
+            
+              <a href="#nowhere" class="c-nav__list-link">
+                Remerciement
+              </a>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Où sommes-nous ?
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.1</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Où sommes-nous ?
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.2</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.1
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.3</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.2
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.4</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.3
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.5</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.4
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.6</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.5
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.7</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.6
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.8</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.7
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.9</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.8
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.9
+                    </a>
+                  
+                </li>
+                
+              </ul>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Menu 5 est passablement très très très très long
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 5.1 très très très très très très très très très très très très long</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Menu 5 est passablement très très très très long
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 5.2</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.1 très très très très très très très très très très très très long
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 5.3</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.2
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.3
+                    </a>
+                  
+                </li>
+                
+              </ul>
             
           </li>
           
@@ -561,7 +515,7 @@
     </div>
 </div>
 
-    <nav class="o-container o-container--large c-breadcrumb">
+    <nav class="o-container o-container--large c-breadcrumb" aria-label="Fil d'Ariane">
   <h2 class="u-visually-hidden">Fil d'Arianie</h2>
   <ul
     class="c-breadcrumb__list"
@@ -849,6 +803,192 @@
 </div>
 
     
+    <div class="c-slider">
+    <div class="o-container">
+        <h2 class="c-slider__heading">Slider</h2>
+    </div>
+    
+    <ul class="c-slider__list">
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Zombie ipsum reversus ab viral inferno</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/whli_m_1Iek/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/whli_m_1Iek/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Nam rick grimes malum cerebro</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/J6DGlnyOzuI/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/J6DGlnyOzuI/640x480" alt="text alternatif 2">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">De carne lumbering morbo vel maleficia gorger omero mindless mortuis soulless</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/a8r2KKLSntA/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/a8r2KKLSntA/640x480" alt="text alternatif 3">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Animata corpora quaeritis</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/Tr55sj841Fg/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/Tr55sj841Fg/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Summus brains sit​​, morbo vel maleficia?</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/VFOFgSNy2E0/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/VFOFgSNy2E0/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">De apocalypsi gorger omero undead survivor dictum mauris</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/x6i4Ozqj1Xs/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/x6i4Ozqj1Xs/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Hi mindless mortuis soulless creaturas</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/v0_COzkLwWM/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/v0_COzkLwWM/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+    </ul>
+    
+</div>
+    
     <!-- 
       TODO: refactorize to put the o-container in the component
     -->
@@ -890,182 +1030,187 @@
 <!--    <div class="c-slider">
     <div class="o-container">
         <h2 class="c-slider__heading">Slider</h2>
-        
-        <div class="c-slider__container">
-        <ul class="c-slider__list">
-            
-            <li class="c-slider__list-item">
-                <article class="c-slider__article">
-                    <h3 class="c-slider__article-heading">Zombie ipsum reversus ab viral inferno</h3>
-                    <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-                    <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/whli_m_1Iek/640x480');">
-                        <img class="c-slider__article-image" src="https://source.unsplash.com/whli_m_1Iek/640x480" alt="text alternatif">
-                    </figure>
-                </article>
-            </li>
-            
-            <li class="c-slider__list-item">
-                <article class="c-slider__article">
-                    <h3 class="c-slider__article-heading">Nam rick grimes malum cerebro</h3>
-                    <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-                    <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/J6DGlnyOzuI/640x480');">
-                        <img class="c-slider__article-image" src="https://source.unsplash.com/J6DGlnyOzuI/640x480" alt="text alternatif 2">
-                    </figure>
-                </article>
-            </li>
-            
-            <li class="c-slider__list-item">
-                <article class="c-slider__article">
-                    <h3 class="c-slider__article-heading">De carne lumbering morbo vel maleficia gorger omero mindless mortuis soulless</h3>
-                    <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-                    <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/a8r2KKLSntA/640x480');">
-                        <img class="c-slider__article-image" src="https://source.unsplash.com/a8r2KKLSntA/640x480" alt="text alternatif 3">
-                    </figure>
-                </article>
-            </li>
-            
-            <li class="c-slider__list-item">
-                <article class="c-slider__article">
-                    <h3 class="c-slider__article-heading">Animata corpora quaeritis</h3>
-                    <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-                    <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/Tr55sj841Fg/640x480');">
-                        <img class="c-slider__article-image" src="https://source.unsplash.com/Tr55sj841Fg/640x480" alt="text alternatif">
-                    </figure>
-                </article>
-            </li>
-            
-            <li class="c-slider__list-item">
-                <article class="c-slider__article">
-                    <h3 class="c-slider__article-heading">Summus brains sit​​, morbo vel maleficia?</h3>
-                    <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-                    <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/VFOFgSNy2E0/640x480');">
-                        <img class="c-slider__article-image" src="https://source.unsplash.com/VFOFgSNy2E0/640x480" alt="text alternatif">
-                    </figure>
-                </article>
-            </li>
-            
-            <li class="c-slider__list-item">
-                <article class="c-slider__article">
-                    <h3 class="c-slider__article-heading">De apocalypsi gorger omero undead survivor dictum mauris</h3>
-                    <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-                    <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/x6i4Ozqj1Xs/640x480');">
-                        <img class="c-slider__article-image" src="https://source.unsplash.com/x6i4Ozqj1Xs/640x480" alt="text alternatif">
-                    </figure>
-                </article>
-            </li>
-            
-            <li class="c-slider__list-item">
-                <article class="c-slider__article">
-                    <h3 class="c-slider__article-heading">Hi mindless mortuis soulless creaturas</h3>
-                    <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-                    <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/v0_COzkLwWM/640x480');">
-                        <img class="c-slider__article-image" src="https://source.unsplash.com/v0_COzkLwWM/640x480" alt="text alternatif">
-                    </figure>
-                </article>
-            </li>
-            
-        </ul>
-        
-        </div>
     </div>
+    
+    <ul class="c-slider__list">
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Zombie ipsum reversus ab viral inferno</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/whli_m_1Iek/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/whli_m_1Iek/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Nam rick grimes malum cerebro</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/J6DGlnyOzuI/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/J6DGlnyOzuI/640x480" alt="text alternatif 2">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">De carne lumbering morbo vel maleficia gorger omero mindless mortuis soulless</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/a8r2KKLSntA/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/a8r2KKLSntA/640x480" alt="text alternatif 3">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Animata corpora quaeritis</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/Tr55sj841Fg/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/Tr55sj841Fg/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Summus brains sit​​, morbo vel maleficia?</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/VFOFgSNy2E0/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/VFOFgSNy2E0/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">De apocalypsi gorger omero undead survivor dictum mauris</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/x6i4Ozqj1Xs/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/x6i4Ozqj1Xs/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+        <li class="c-slider__list-item">
+            <article class="c-slider__article o-stack o-stack--small">
+                <h3 class="c-slider__article-heading">Hi mindless mortuis soulless creaturas</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>12.12.2021</div>
+                <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+                <figure class="c-slider__article-figure" style="background-image: url('https://source.unsplash.com/v0_COzkLwWM/640x480');">
+                    <img class="c-slider__article-image" src="https://source.unsplash.com/v0_COzkLwWM/640x480" alt="text alternatif">
+                </figure>
+            </article>
+        </li>
+        
+    </ul>
+    
 </div>-->
     
     <div class="c-timeline">
@@ -1219,29 +1364,32 @@
       
       <div class="c-footer__page">
         <h3 class="u-visually-hidden">Liens connexes</h3>
-        <ul class="c-footer__list-page">
-          <li><a href="#nowhere">Mentions légales</a></li>
-          <li><a href="#nowhere">Plan du site</a></li>
-          <li><a href="#nowhere">Contact</a></li>
-        </ul>
+        <nav aria-label="Navigation pied de page">
+          <ul class="c-footer__list-page">
+            <li><a href="#nowhere">Mentions légales</a></li>
+            <li><a href="#nowhere">Plan du site</a></li>
+            <li><a href="#nowhere">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       
       <div class="c-footer__social">
         <h3 class="u-visually-hidden md:u-not-visually-hidden">Partager</h3>
-        <ul class="c-footer__list-social">
-          <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+        <nav aria-label="Navigation réseaux sociaux">
+          <ul class="c-footer__list-social">
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
   <path
     d="M12.5.5C5.9.5.5 5.9.5 12.5s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm6 9.7v.4c0 4.5-3.6 8.2-8.1 8.2h-.1c-1.6 0-3.1-.5-4.4-1.3h.7c1.3 0 2.6-.4 3.6-1.2-1.2 0-2.3-.8-2.7-2 .2 0 .4.1.5.1.3 0 .5 0 .8-.1-1.3-.3-2.3-1.5-2.3-2.8.4.2.9.3 1.3.4-.8-.5-1.3-1.4-1.3-2.4 0-.5.1-1 .4-1.5 1.5 1.8 3.6 2.9 6 3-.1-.2-.1-.4-.1-.7 0-1.6 1.3-2.9 2.9-2.9.8 0 1.6.3 2.1.9.6-.1 1.3-.4 1.8-.7-.2.7-.7 1.2-1.3 1.6.6-.1 1.1-.2 1.7-.5-.4.6-.9 1.1-1.5 1.5z"
   />
 </svg>
 </a></li>
-          <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
   <path
     d="M24.5 12.6c0-6.7-5.4-12.1-12-12.1S.5 5.9.5 12.6c0 5.9 4.3 11 10.1 11.9v-8.4h-3v-3.5h3V9.9c0-3 1.8-4.7 4.5-4.7.9 0 1.8.1 2.7.2v3h-1.5c-.9-.1-1.8.5-1.9 1.5V12.6h3.3l-.5 3.5h-2.8v8.4c5.8-.9 10.1-6 10.1-11.9z"
   />
 </svg>
 </a></li>
-          <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
   <path
     d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
     fill="none"
@@ -1252,7 +1400,8 @@
   />
 </svg>
 </a></li>
-        </ul>
+          </ul>
+        </nav>
       </div>
       
       <div class="c-footer__logo">

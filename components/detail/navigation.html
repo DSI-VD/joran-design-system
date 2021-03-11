@@ -178,91 +178,122 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-nav__container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-nav__container&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Navigation principale&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__logo&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-vd&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/vectors/logo.svg&quot;</span> /&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__logo-text&quot;</span>&gt;</span>Entité<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__toggle&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-menu-icon c-menu-icon--cross&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Open menu<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__toggle&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Ouvrir le menu&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-menu-icon c-menu-icon--cross&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Ouvrir le menu<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-container&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__search-bar&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button--search&quot;</span>&gt;</span>Rechercher<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__level-indicator&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__level-indicator&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-wrapper&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list&quot;</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Somaire
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Somaire
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>Organigrame<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                                    Organigrame
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-2&quot;</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Communication tactique<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Communication tactique
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bilderberg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Bilderberg
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Facebook live<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Facebook live
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Paléo Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Paléo Festival
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Visite du président indien<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Visite du président indien
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Attaques fourgons blindés<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Attaques fourgons blindés
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bol d<span class="hljs-symbol">&amp;#39;</span>Or<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Bol d<span class="hljs-symbol">&amp;#39;</span>Or
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Inauguration CIO<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Inauguration CIO
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Montreux Jazz Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Montreux Jazz Festival
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fête des Vignerons<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Fête des Vignerons
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Cérémonie du souvenir<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Cérémonie du souvenir
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Escrocrie à la caisse de chômage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Escrocrie à la caisse de chômage
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
@@ -270,27 +301,42 @@
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>La police en chiffres<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    La police en chiffres
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Finances<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Finances
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Objectifs 2020<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Objectifs 2020
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Valorisation des colabirateurs<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Valorisation des colabirateurs
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Témoignages<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Témoignages
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -299,79 +345,121 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Projets
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Projets
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Communication tactique<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Communication tactique
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bilderberg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Bilderberg
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Facebook live<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Facebook live
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Paléo Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Paléo Festival
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Visite du président indien<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Visite du président indien
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Attaques fourgons blindés<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Attaques fourgons blindés
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bol d<span class="hljs-symbol">&amp;#39;</span>Or<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Bol d<span class="hljs-symbol">&amp;#39;</span>Or
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Inauguration CIO<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Inauguration CIO
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Montreux Jazz Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Montreux Jazz Festival
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fête des Vignerons<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Fête des Vignerons
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Cérémonie du souvenir<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Cérémonie du souvenir
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Escrocrie à la caisse de chômage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Escrocrie à la caisse de chômage
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -380,6 +468,7 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+
                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
                             Remerciement
                         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -387,54 +476,81 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Où sommes-nous ?
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Où sommes-nous ?
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.1
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.2
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.3
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.4
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.5
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.6<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.6
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.7<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.7
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.8<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.8
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.9<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.9
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -443,24 +559,33 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Menu 5 est passablement très très très très long
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Menu 5 est passablement très très très très long
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 5.1 très très très très très très très très très très très très long<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 5.1 très très très très très très très très très très très très long
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 5.2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 5.2
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 5.3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 5.3
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -481,54 +606,58 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1c0eae4c1e6f03f8dc8da27f30216df2-panel-view">
     <code class="Code Code--lang-django hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-nav__container&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-nav__container&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Navigation principale&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__logo&quot;</span>&gt;</span>
       </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="logo-vd.html">@logo-vd</a>&#x27; %}</span><span class="xml">
       <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__logo-text&quot;</span>&gt;</span>Entité<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__toggle&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-menu-icon c-menu-icon--cross&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Open menu<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__toggle&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Ouvrir le menu&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-menu-icon c-menu-icon--cross&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Ouvrir le menu<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-container&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__search-bar&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button--search&quot;</span>&gt;</span>Rechercher<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__level-indicator&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__level-indicator&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-wrapper&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list&quot;</span>&gt;</span>
           </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> firstLevelItem <span class="hljs-keyword">in</span> firstLevelItems %}</span><span class="xml">
           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-              <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>
-              <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> firstLevelItem.secondLevelItems %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> c-nav__list-link--w-children</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-            &gt;</span>
-              </span><span class="hljs-template-variable">{{ firstLevelItem.name }}</span><span class="xml">
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> firstLevelItem.secondLevelItems %}</span><span class="xml">
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
-              </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> secondLevelItem <span class="hljs-keyword">in</span> firstLevelItem.secondLevelItems %}</span><span class="xml">
-              <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-                  <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>
-                  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> secondLevelItem.thirdLevelItems %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> c-nav__list-link--w-children</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-                  &gt;</span></span><span class="hljs-template-variable">{{secondLevelItem.name}}</span><span class="xml">&lt;/a
-                &gt;
-                </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> secondLevelItem.thirdLevelItems %}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-2&quot;</span>&gt;</span>
-                  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> thirdLevelItem <span class="hljs-keyword">in</span> secondLevelItem.thirdLevelItems %}</span><span class="xml">
-                  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>
-                      &gt;</span></span><span class="hljs-template-variable">{{thirdLevelItem.name}}</span><span class="xml">&lt;/a
-                    &gt;
-                  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span><span class="xml">
-                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
-              <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-              </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span><span class="xml">
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                </span><span class="hljs-template-variable">{{ firstLevelItem.name }}</span><span class="xml">
+              <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
+                </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> secondLevelItem <span class="hljs-keyword">in</span> firstLevelItem.secondLevelItems %}</span><span class="xml">
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
+                  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> secondLevelItem.thirdLevelItems %}</span><span class="xml">
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                      </span><span class="hljs-template-variable">{{ secondLevelItem.name }}</span><span class="xml">
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-2&quot;</span>&gt;</span>
+                      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> thirdLevelItem <span class="hljs-keyword">in</span> secondLevelItem.thirdLevelItems %}</span><span class="xml">
+                      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                          </span><span class="hljs-template-variable">{{ thirdLevelItem.name }}</span><span class="xml">
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span><span class="xml">
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">else</span></span> %}</span><span class="xml">
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                      </span><span class="hljs-template-variable">{{ secondLevelItem.name }}</span><span class="xml">
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span><span class="xml">
+              <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">else</span></span> %}</span><span class="xml">
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                </span><span class="hljs-template-variable">{{ firstLevelItem.name }}</span><span class="xml">
+              <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
           </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span><span class="xml">
@@ -1002,6 +1131,11 @@
   ;
 }
 
+<span class="hljs-selector-class">.c-nav__toggle</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
+}
+
 <span class="hljs-comment">/* -----------------------------------
  # c-nav__list-container
  ----------------------------------- */</span>
@@ -1074,6 +1208,9 @@
     block
     relative
   ;
+
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">text-align</span>: left;
 }
 
 <span class="hljs-selector-class">.c-nav__list-link</span><span class="hljs-selector-pseudo">:focus</span> {
@@ -1110,15 +1247,15 @@
   ;
 }
 
-<span class="hljs-selector-class">.c-nav__level-indicator</span> <span class="hljs-selector-tag">a</span> {
+<span class="hljs-selector-class">.c-nav__level-indicator</span> <span class="hljs-selector-tag">button</span> {
   <span class="hljs-keyword">@apply</span>
     pl-<span class="hljs-number">3</span>
-    mr-<span class="hljs-number">1</span>
+    mr-<span class="hljs-number">4</span>
     relative
   ;
 }
 
-<span class="hljs-selector-class">.c-nav__level-indicator</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">::before</span> {
+<span class="hljs-selector-class">.c-nav__level-indicator</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">::before</span> {
   <span class="hljs-keyword">@apply</span>
     absolute
     left-<span class="hljs-number">0</span>
@@ -1143,7 +1280,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.3 KB</span>
+                    <span class="Meta-value">3.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -1169,6 +1306,9 @@
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>)) {
       item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
       item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> button <span class="hljs-keyword">of</span> item.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list-link--w-children&#x27;</span>)) {
+        button.setAttribute(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>, <span class="hljs-literal">false</span>);
+      }
       <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> levelIndicator.querySelectorAll(<span class="hljs-string">&#x27;li&#x27;</span>)) {
         item.remove();
       }
@@ -1184,6 +1324,7 @@
 
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> item <span class="hljs-keyword">of</span> <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.c-nav__list--level-&#x27;</span> + level)) {
       item.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
+      item.parentNode.querySelector(<span class="hljs-string">&#x27;.c-nav__list-link--w-children&#x27;</span>).setAttribute(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>, <span class="hljs-literal">false</span>);
     }
 
     <span class="hljs-keyword">const</span> levelElement = levelIndicator.querySelector(<span class="hljs-string">&#x27;li:nth-child(&#x27;</span> + level + <span class="hljs-string">&#x27;)&#x27;</span>);
@@ -1192,10 +1333,9 @@
   };
 
   <span class="hljs-keyword">const</span> createLevelIndicator = <span class="hljs-function"><span class="hljs-params">target</span> =&gt;</span> {
-    <span class="hljs-keyword">const</span> levelLink = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;a&#x27;</span>);
-    levelLink.setAttribute(<span class="hljs-string">&#x27;href&#x27;</span>, <span class="hljs-string">&#x27;#nowhere&#x27;</span>);
+    <span class="hljs-keyword">const</span> levelLink = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;button&#x27;</span>);
     levelLink.setAttribute(<span class="hljs-string">&#x27;tabindex&#x27;</span>, <span class="hljs-string">&#x27;-1&#x27;</span>);
-    <span class="hljs-keyword">const</span> levelText = <span class="hljs-built_in">document</span>.createTextNode(target.text);
+    <span class="hljs-keyword">const</span> levelText = <span class="hljs-built_in">document</span>.createTextNode(target.innerHTML);
     levelLink.append(levelText);
     <span class="hljs-keyword">if</span> (target.parentNode.parentNode.matches(<span class="hljs-string">&#x27;.c-nav__list--level-1&#x27;</span>)) {
       levelLink.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
@@ -1219,6 +1359,7 @@
         levelIndicator.append(createLevelIndicator(event.target));
         event.target.closest(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-nav__list--hide&#x27;</span>);
         event.target.parentNode.querySelector(<span class="hljs-string">&#x27;.c-nav__list&#x27;</span>).classList.add(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
+        item.setAttribute(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>, <span class="hljs-literal">true</span>);
         currentLevel++;
       } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (event.target.parentNode.parentNode.matches(<span class="hljs-string">&#x27;.c-nav__list--level-1&#x27;</span>)) {
         closeLevelTabs(event, <span class="hljs-number">2</span>);
@@ -1242,6 +1383,7 @@
       closeAllTabs(event);
       navOpen = <span class="hljs-literal">false</span>;
     }
+    navToggle.setAttribute(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>, navOpen);
   });
 
   <span class="hljs-comment">// Sticky nav</span>
@@ -1278,7 +1420,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.4 KB</span>
+                    <span class="Meta-value">3.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -2743,7 +2885,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2769,7 +2911,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3065,8 +3207,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-10T14:54:48.548Z">
-                                10.03.2021 à 15:54:48
+                            <time datetime="2021-03-11T11:10:17.223Z">
+                                11.03.2021 à 12:10:17
                             </time>
                         
                     </dd>
@@ -4472,7 +4614,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4498,7 +4640,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4524,7 +4666,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4573,7 +4715,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4599,7 +4741,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4625,7 +4767,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

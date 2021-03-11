@@ -40,464 +40,418 @@
 
   <body onload="init();" style="background-color: var(--color__primary--900)">
     <div class="c-nav">
-  <nav class="o-container o-container--large c-nav__container">
+  <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
     <div class="c-nav__logo">
       <img class="c-logo-vd" src="../../assets/vectors/logo.svg" />
 
       <span class="c-nav__logo-text">Entité</span>
     </div>
-    <a class="c-nav__toggle" href="#nowhere">
-      <div class="c-menu-icon c-menu-icon--cross">
-        <span>Open menu</span>
-      </div>
-    </a>
+    <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="c-menu-icon c-menu-icon--cross">
+        <span>Ouvrir le menu</span>
+      </span>
+    </button>
     <div class="c-nav__list-container">
       <div class="c-nav__search-bar">
         <a href="#nowhere" class="c-button--search">Rechercher</a>
       </div>
-      <ul class="c-nav__level-indicator"></ul>
+      <ul class="c-nav__level-indicator">
+      </ul>
       <div class="c-nav__list-wrapper">
         <ul class="c-nav__list">
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Somaire
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link c-nav__list-link--w-children"
-                  >Organigrame</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Somaire
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-                <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                <li class="c-nav__list-item" data-level="1">
                   
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Communication tactique</a
-                    >
-                  </li>
+                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                      Organigrame
+                    </button>
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Communication tactique
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bilderberg
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Facebook live
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Paléo Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Visite du président indien
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Attaques fourgons blindés
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Fermeture de l&#39;autoroute A12
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bol d&#39;Or
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Inauguration CIO
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Montreux Jazz Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Fête des Vignerons
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Cérémonie du souvenir
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Escrocrie à la caisse de chômage
+                        </a>
+                      </li>
+                      
+                    </ul>
                   
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Bilderberg</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Facebook live</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Paléo Festival</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Visite du président indien</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Attaques fourgons blindés</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Fermeture de l&#39;autoroute A12</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Bol d&#39;Or</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Inauguration CIO</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Montreux Jazz Festival</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Fête des Vignerons</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Cérémonie du souvenir</a
-                    >
-                  </li>
-                  
-                  <li class="c-nav__list-item" data-level="2">
-                    <a href="#nowhere" class="c-nav__list-link"
-                      >Escrocrie à la caisse de chômage</a
-                    >
-                  </li>
-                  
-                </ul>
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >La police en chiffres</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      La police en chiffres
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Finances</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Finances
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Objectifs 2020</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Objectifs 2020
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Valorisation des colabirateurs</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Valorisation des colabirateurs
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Témoignages</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Témoignages
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+              </ul>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Projets
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Communication tactique</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Projets
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Bilderberg</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Communication tactique
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Facebook live</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Bilderberg
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Paléo Festival</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Facebook live
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Visite du président indien</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Paléo Festival
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Attaques fourgons blindés</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Visite du président indien
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Attaques fourgons blindés
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Fermeture de l&#39;autoroute A12</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Bol d&#39;Or</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Fermeture de l&#39;autoroute A12
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Inauguration CIO</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Bol d&#39;Or
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Montreux Jazz Festival</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Inauguration CIO
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Fête des Vignerons</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Montreux Jazz Festival
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Cérémonie du souvenir</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Fête des Vignerons
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Escrocrie à la caisse de chômage</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Cérémonie du souvenir
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Escrocrie à la caisse de chômage
+                    </a>
+                  
+                </li>
+                
+              </ul>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link"
-            >
-              Remerciement
-            </a>
+            
+              <a href="#nowhere" class="c-nav__list-link">
+                Remerciement
+              </a>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Où sommes-nous ?
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.1</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Où sommes-nous ?
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.2</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.1
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.3</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.2
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.4</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.3
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.5</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.4
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.6</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.5
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.7</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.6
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.8</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.7
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 4.9</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.8
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.9
+                    </a>
+                  
+                </li>
+                
+              </ul>
             
           </li>
           
           <li class="c-nav__list-item" data-level="0">
-            <a
-              href="#nowhere"
-              class="c-nav__list-link c-nav__list-link--w-children"
-            >
-              Menu 5 est passablement très très très très long
-            </a>
             
-            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 5.1 très très très très très très très très très très très très long</a
-                >
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Menu 5 est passablement très très très très long
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 5.2</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.1 très très très très très très très très très très très très long
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-              <li class="c-nav__list-item" data-level="1">
-                <a
-                  href="#nowhere"
-                  class="c-nav__list-link"
-                  >Menu 5.3</a
-                >
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.2
+                    </a>
+                  
+                </li>
                 
-              </li>
-              
-            </ul>
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.3
+                    </a>
+                  
+                </li>
+                
+              </ul>
             
           </li>
           

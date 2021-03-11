@@ -99,6 +99,11 @@
   ;
 }
 
+.c-nav__toggle {
+  width: 30px;
+  height: 30px;
+}
+
 /* -----------------------------------
  # c-nav__list-container
  ----------------------------------- */
@@ -171,6 +176,9 @@
     block
     relative
   ;
+
+  width: 100%;
+  text-align: left;
 }
 
 .c-nav__list-link:focus {
@@ -207,15 +215,15 @@
   ;
 }
 
-.c-nav__level-indicator a {
+.c-nav__level-indicator button {
   @apply
     pl-3
-    mr-1
+    mr-4
     relative
   ;
 }
 
-.c-nav__level-indicator a::before {
+.c-nav__level-indicator button::before {
   @apply
     absolute
     left-0

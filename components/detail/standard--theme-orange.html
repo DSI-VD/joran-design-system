@@ -172,91 +172,122 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-nav__container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-nav__container&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Navigation principale&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__logo&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-vd&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/vectors/logo.svg&quot;</span> /&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__logo-text&quot;</span>&gt;</span>Entité<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__toggle&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-menu-icon c-menu-icon--cross&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Open menu<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__toggle&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Ouvrir le menu&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-menu-icon c-menu-icon--cross&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Ouvrir le menu<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-container&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__search-bar&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button--search&quot;</span>&gt;</span>Rechercher<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__level-indicator&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__level-indicator&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-wrapper&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list&quot;</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Somaire
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Somaire
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>Organigrame<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                                    Organigrame
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-2&quot;</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Communication tactique<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Communication tactique
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bilderberg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Bilderberg
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Facebook live<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Facebook live
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Paléo Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Paléo Festival
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Visite du président indien<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Visite du président indien
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Attaques fourgons blindés<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Attaques fourgons blindés
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bol d<span class="hljs-symbol">&amp;#39;</span>Or<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Bol d<span class="hljs-symbol">&amp;#39;</span>Or
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Inauguration CIO<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Inauguration CIO
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Montreux Jazz Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Montreux Jazz Festival
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fête des Vignerons<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Fête des Vignerons
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Cérémonie du souvenir<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Cérémonie du souvenir
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Escrocrie à la caisse de chômage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                            Escrocrie à la caisse de chômage
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
@@ -264,27 +295,42 @@
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>La police en chiffres<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    La police en chiffres
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Finances<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Finances
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Objectifs 2020<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Objectifs 2020
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Valorisation des colabirateurs<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Valorisation des colabirateurs
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Témoignages<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Témoignages
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -293,79 +339,121 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Projets
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Projets
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Communication tactique<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Communication tactique
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bilderberg<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Bilderberg
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Facebook live<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Facebook live
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Paléo Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Paléo Festival
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Visite du président indien<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Visite du président indien
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Attaques fourgons blindés<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Attaques fourgons blindés
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Fermeture de l<span class="hljs-symbol">&amp;#39;</span>autoroute A12
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Bol d<span class="hljs-symbol">&amp;#39;</span>Or<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Bol d<span class="hljs-symbol">&amp;#39;</span>Or
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Inauguration CIO<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Inauguration CIO
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Montreux Jazz Festival<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Montreux Jazz Festival
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Fête des Vignerons<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Fête des Vignerons
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Cérémonie du souvenir<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Cérémonie du souvenir
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Escrocrie à la caisse de chômage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Escrocrie à la caisse de chômage
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -374,6 +462,7 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+
                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
                             Remerciement
                         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -381,54 +470,81 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Où sommes-nous ?
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Où sommes-nous ?
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.1
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.2
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.3
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.4
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.5
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.6<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.6
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.7<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.7
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.8<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.8
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 4.9<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 4.9
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -437,24 +553,33 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span>&gt;</span>
-                            Menu 5 est passablement très très très très long
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link c-nav__list-link--w-children&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                            Menu 5 est passablement très très très très long
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list c-nav__list--level c-nav__list--level-1&quot;</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 5.1 très très très très très très très très très très très très long<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 5.1 très très très très très très très très très très très très long
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 5.2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 5.2
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-item&quot;</span> <span class="hljs-attr">data-level</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>Menu 5.3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-nav__list-link&quot;</span>&gt;</span>
+                                    Menu 5.3
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
@@ -520,7 +645,7 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-breadcrumb&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container o-container--large c-breadcrumb&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Fil d&#x27;Ariane&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Fil d&#x27;Arianie<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-breadcrumb__list&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;https://schema.org/BreadcrumbList&quot;</span>&gt;</span>
 
@@ -737,6 +862,122 @@
 
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__heading&quot;</span>&gt;</span>Slider<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article o-stack o-stack--small&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-heading&quot;</span>&gt;</span>Zombie ipsum reversus ab viral inferno<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-date&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Date:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>12.12.2021<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent-alt c-slider__article-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 8 14&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1 1l6 6-6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-figure&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://source.unsplash.com/whli_m_1Iek/640x480&#x27;);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/whli_m_1Iek/640x480&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;text alternatif&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article o-stack o-stack--small&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-heading&quot;</span>&gt;</span>Nam rick grimes malum cerebro<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-date&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Date:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>12.12.2021<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent-alt c-slider__article-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 8 14&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1 1l6 6-6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-figure&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://source.unsplash.com/J6DGlnyOzuI/640x480&#x27;);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/J6DGlnyOzuI/640x480&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;text alternatif 2&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article o-stack o-stack--small&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-heading&quot;</span>&gt;</span>De carne lumbering morbo vel maleficia gorger omero mindless mortuis soulless<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-date&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Date:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>12.12.2021<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent-alt c-slider__article-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 8 14&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1 1l6 6-6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-figure&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://source.unsplash.com/a8r2KKLSntA/640x480&#x27;);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/a8r2KKLSntA/640x480&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;text alternatif 3&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article o-stack o-stack--small&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-heading&quot;</span>&gt;</span>Animata corpora quaeritis<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-date&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Date:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>12.12.2021<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent-alt c-slider__article-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 8 14&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1 1l6 6-6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-figure&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://source.unsplash.com/Tr55sj841Fg/640x480&#x27;);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/Tr55sj841Fg/640x480&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;text alternatif&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article o-stack o-stack--small&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-heading&quot;</span>&gt;</span>Summus brains sit​​, morbo vel maleficia?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-date&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Date:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>12.12.2021<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent-alt c-slider__article-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 8 14&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1 1l6 6-6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-figure&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://source.unsplash.com/VFOFgSNy2E0/640x480&#x27;);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/VFOFgSNy2E0/640x480&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;text alternatif&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article o-stack o-stack--small&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-heading&quot;</span>&gt;</span>De apocalypsi gorger omero undead survivor dictum mauris<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-date&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Date:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>12.12.2021<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent-alt c-slider__article-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 8 14&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1 1l6 6-6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-figure&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://source.unsplash.com/x6i4Ozqj1Xs/640x480&#x27;);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/x6i4Ozqj1Xs/640x480&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;text alternatif&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__list-item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article o-stack o-stack--small&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-heading&quot;</span>&gt;</span>Hi mindless mortuis soulless creaturas<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-date&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Date:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>12.12.2021<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent-alt c-slider__article-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>lire la suite<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 8 14&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M1 1l6 6-6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-figure&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(&#x27;https://source.unsplash.com/v0_COzkLwWM/640x480&#x27;);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-slider__article-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/v0_COzkLwWM/640x480&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;text alternatif&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
         <span class="hljs-comment">&lt;!-- 
       <span class="hljs-doctag">TODO:</span> refactorize to put the o-container in the component
     --&gt;</span>
@@ -770,182 +1011,187 @@
         <span class="hljs-comment">&lt;!--    &lt;div class=&quot;c-slider&quot;&gt;
     &lt;div class=&quot;o-container&quot;&gt;
         &lt;h2 class=&quot;c-slider__heading&quot;&gt;Slider&lt;/h2&gt;
-        
-        &lt;div class=&quot;c-slider__container&quot;&gt;
-        &lt;ul class=&quot;c-slider__list&quot;&gt;
-            
-            &lt;li class=&quot;c-slider__list-item&quot;&gt;
-                &lt;article class=&quot;c-slider__article&quot;&gt;
-                    &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Zombie ipsum reversus ab viral inferno&lt;/h3&gt;
-                    &lt;a
-  href=&quot;#nowhere&quot;
-  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
-&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
-  &lt;path
-    d=&quot;M1 1l6 6-6 6&quot;
-    fill=&quot;none&quot;
-    stroke=&quot;currentColor&quot;
-    stroke-width=&quot;1.5&quot;
-    stroke-linecap=&quot;round&quot;
-    stroke-linejoin=&quot;round&quot;
-  /&gt;
-&lt;/svg&gt;
-&lt;/a&gt;
-
-                    &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/whli_m_1Iek/640x480&#x27;);&quot;&gt;
-                        &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/whli_m_1Iek/640x480&quot; alt=&quot;text alternatif&quot;&gt;
-                    &lt;/figure&gt;
-                &lt;/article&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;c-slider__list-item&quot;&gt;
-                &lt;article class=&quot;c-slider__article&quot;&gt;
-                    &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Nam rick grimes malum cerebro&lt;/h3&gt;
-                    &lt;a
-  href=&quot;#nowhere&quot;
-  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
-&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
-  &lt;path
-    d=&quot;M1 1l6 6-6 6&quot;
-    fill=&quot;none&quot;
-    stroke=&quot;currentColor&quot;
-    stroke-width=&quot;1.5&quot;
-    stroke-linecap=&quot;round&quot;
-    stroke-linejoin=&quot;round&quot;
-  /&gt;
-&lt;/svg&gt;
-&lt;/a&gt;
-
-                    &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/J6DGlnyOzuI/640x480&#x27;);&quot;&gt;
-                        &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/J6DGlnyOzuI/640x480&quot; alt=&quot;text alternatif 2&quot;&gt;
-                    &lt;/figure&gt;
-                &lt;/article&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;c-slider__list-item&quot;&gt;
-                &lt;article class=&quot;c-slider__article&quot;&gt;
-                    &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;De carne lumbering morbo vel maleficia gorger omero mindless mortuis soulless&lt;/h3&gt;
-                    &lt;a
-  href=&quot;#nowhere&quot;
-  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
-&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
-  &lt;path
-    d=&quot;M1 1l6 6-6 6&quot;
-    fill=&quot;none&quot;
-    stroke=&quot;currentColor&quot;
-    stroke-width=&quot;1.5&quot;
-    stroke-linecap=&quot;round&quot;
-    stroke-linejoin=&quot;round&quot;
-  /&gt;
-&lt;/svg&gt;
-&lt;/a&gt;
-
-                    &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/a8r2KKLSntA/640x480&#x27;);&quot;&gt;
-                        &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/a8r2KKLSntA/640x480&quot; alt=&quot;text alternatif 3&quot;&gt;
-                    &lt;/figure&gt;
-                &lt;/article&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;c-slider__list-item&quot;&gt;
-                &lt;article class=&quot;c-slider__article&quot;&gt;
-                    &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Animata corpora quaeritis&lt;/h3&gt;
-                    &lt;a
-  href=&quot;#nowhere&quot;
-  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
-&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
-  &lt;path
-    d=&quot;M1 1l6 6-6 6&quot;
-    fill=&quot;none&quot;
-    stroke=&quot;currentColor&quot;
-    stroke-width=&quot;1.5&quot;
-    stroke-linecap=&quot;round&quot;
-    stroke-linejoin=&quot;round&quot;
-  /&gt;
-&lt;/svg&gt;
-&lt;/a&gt;
-
-                    &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/Tr55sj841Fg/640x480&#x27;);&quot;&gt;
-                        &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/Tr55sj841Fg/640x480&quot; alt=&quot;text alternatif&quot;&gt;
-                    &lt;/figure&gt;
-                &lt;/article&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;c-slider__list-item&quot;&gt;
-                &lt;article class=&quot;c-slider__article&quot;&gt;
-                    &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Summus brains sit​​, morbo vel maleficia?&lt;/h3&gt;
-                    &lt;a
-  href=&quot;#nowhere&quot;
-  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
-&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
-  &lt;path
-    d=&quot;M1 1l6 6-6 6&quot;
-    fill=&quot;none&quot;
-    stroke=&quot;currentColor&quot;
-    stroke-width=&quot;1.5&quot;
-    stroke-linecap=&quot;round&quot;
-    stroke-linejoin=&quot;round&quot;
-  /&gt;
-&lt;/svg&gt;
-&lt;/a&gt;
-
-                    &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/VFOFgSNy2E0/640x480&#x27;);&quot;&gt;
-                        &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/VFOFgSNy2E0/640x480&quot; alt=&quot;text alternatif&quot;&gt;
-                    &lt;/figure&gt;
-                &lt;/article&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;c-slider__list-item&quot;&gt;
-                &lt;article class=&quot;c-slider__article&quot;&gt;
-                    &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;De apocalypsi gorger omero undead survivor dictum mauris&lt;/h3&gt;
-                    &lt;a
-  href=&quot;#nowhere&quot;
-  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
-&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
-  &lt;path
-    d=&quot;M1 1l6 6-6 6&quot;
-    fill=&quot;none&quot;
-    stroke=&quot;currentColor&quot;
-    stroke-width=&quot;1.5&quot;
-    stroke-linecap=&quot;round&quot;
-    stroke-linejoin=&quot;round&quot;
-  /&gt;
-&lt;/svg&gt;
-&lt;/a&gt;
-
-                    &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/x6i4Ozqj1Xs/640x480&#x27;);&quot;&gt;
-                        &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/x6i4Ozqj1Xs/640x480&quot; alt=&quot;text alternatif&quot;&gt;
-                    &lt;/figure&gt;
-                &lt;/article&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;c-slider__list-item&quot;&gt;
-                &lt;article class=&quot;c-slider__article&quot;&gt;
-                    &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Hi mindless mortuis soulless creaturas&lt;/h3&gt;
-                    &lt;a
-  href=&quot;#nowhere&quot;
-  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
-&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
-  &lt;path
-    d=&quot;M1 1l6 6-6 6&quot;
-    fill=&quot;none&quot;
-    stroke=&quot;currentColor&quot;
-    stroke-width=&quot;1.5&quot;
-    stroke-linecap=&quot;round&quot;
-    stroke-linejoin=&quot;round&quot;
-  /&gt;
-&lt;/svg&gt;
-&lt;/a&gt;
-
-                    &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/v0_COzkLwWM/640x480&#x27;);&quot;&gt;
-                        &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/v0_COzkLwWM/640x480&quot; alt=&quot;text alternatif&quot;&gt;
-                    &lt;/figure&gt;
-                &lt;/article&gt;
-            &lt;/li&gt;
-            
-        &lt;/ul&gt;
-        
-        &lt;/div&gt;
     &lt;/div&gt;
+    
+    &lt;ul class=&quot;c-slider__list&quot;&gt;
+        
+        &lt;li class=&quot;c-slider__list-item&quot;&gt;
+            &lt;article class=&quot;c-slider__article o-stack o-stack--small&quot;&gt;
+                &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Zombie ipsum reversus ab viral inferno&lt;/h3&gt;
+                &lt;div class=&quot;c-slider__article-date&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;Date:&lt;/span&gt;12.12.2021&lt;/div&gt;
+                &lt;a
+  href=&quot;#nowhere&quot;
+  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
+&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
+  &lt;path
+    d=&quot;M1 1l6 6-6 6&quot;
+    fill=&quot;none&quot;
+    stroke=&quot;currentColor&quot;
+    stroke-width=&quot;1.5&quot;
+    stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;
+  /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+                &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/whli_m_1Iek/640x480&#x27;);&quot;&gt;
+                    &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/whli_m_1Iek/640x480&quot; alt=&quot;text alternatif&quot;&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&quot;c-slider__list-item&quot;&gt;
+            &lt;article class=&quot;c-slider__article o-stack o-stack--small&quot;&gt;
+                &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Nam rick grimes malum cerebro&lt;/h3&gt;
+                &lt;div class=&quot;c-slider__article-date&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;Date:&lt;/span&gt;12.12.2021&lt;/div&gt;
+                &lt;a
+  href=&quot;#nowhere&quot;
+  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
+&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
+  &lt;path
+    d=&quot;M1 1l6 6-6 6&quot;
+    fill=&quot;none&quot;
+    stroke=&quot;currentColor&quot;
+    stroke-width=&quot;1.5&quot;
+    stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;
+  /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+                &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/J6DGlnyOzuI/640x480&#x27;);&quot;&gt;
+                    &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/J6DGlnyOzuI/640x480&quot; alt=&quot;text alternatif 2&quot;&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&quot;c-slider__list-item&quot;&gt;
+            &lt;article class=&quot;c-slider__article o-stack o-stack--small&quot;&gt;
+                &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;De carne lumbering morbo vel maleficia gorger omero mindless mortuis soulless&lt;/h3&gt;
+                &lt;div class=&quot;c-slider__article-date&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;Date:&lt;/span&gt;12.12.2021&lt;/div&gt;
+                &lt;a
+  href=&quot;#nowhere&quot;
+  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
+&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
+  &lt;path
+    d=&quot;M1 1l6 6-6 6&quot;
+    fill=&quot;none&quot;
+    stroke=&quot;currentColor&quot;
+    stroke-width=&quot;1.5&quot;
+    stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;
+  /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+                &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/a8r2KKLSntA/640x480&#x27;);&quot;&gt;
+                    &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/a8r2KKLSntA/640x480&quot; alt=&quot;text alternatif 3&quot;&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&quot;c-slider__list-item&quot;&gt;
+            &lt;article class=&quot;c-slider__article o-stack o-stack--small&quot;&gt;
+                &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Animata corpora quaeritis&lt;/h3&gt;
+                &lt;div class=&quot;c-slider__article-date&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;Date:&lt;/span&gt;12.12.2021&lt;/div&gt;
+                &lt;a
+  href=&quot;#nowhere&quot;
+  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
+&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
+  &lt;path
+    d=&quot;M1 1l6 6-6 6&quot;
+    fill=&quot;none&quot;
+    stroke=&quot;currentColor&quot;
+    stroke-width=&quot;1.5&quot;
+    stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;
+  /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+                &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/Tr55sj841Fg/640x480&#x27;);&quot;&gt;
+                    &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/Tr55sj841Fg/640x480&quot; alt=&quot;text alternatif&quot;&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&quot;c-slider__list-item&quot;&gt;
+            &lt;article class=&quot;c-slider__article o-stack o-stack--small&quot;&gt;
+                &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Summus brains sit​​, morbo vel maleficia?&lt;/h3&gt;
+                &lt;div class=&quot;c-slider__article-date&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;Date:&lt;/span&gt;12.12.2021&lt;/div&gt;
+                &lt;a
+  href=&quot;#nowhere&quot;
+  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
+&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
+  &lt;path
+    d=&quot;M1 1l6 6-6 6&quot;
+    fill=&quot;none&quot;
+    stroke=&quot;currentColor&quot;
+    stroke-width=&quot;1.5&quot;
+    stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;
+  /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+                &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/VFOFgSNy2E0/640x480&#x27;);&quot;&gt;
+                    &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/VFOFgSNy2E0/640x480&quot; alt=&quot;text alternatif&quot;&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&quot;c-slider__list-item&quot;&gt;
+            &lt;article class=&quot;c-slider__article o-stack o-stack--small&quot;&gt;
+                &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;De apocalypsi gorger omero undead survivor dictum mauris&lt;/h3&gt;
+                &lt;div class=&quot;c-slider__article-date&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;Date:&lt;/span&gt;12.12.2021&lt;/div&gt;
+                &lt;a
+  href=&quot;#nowhere&quot;
+  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
+&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
+  &lt;path
+    d=&quot;M1 1l6 6-6 6&quot;
+    fill=&quot;none&quot;
+    stroke=&quot;currentColor&quot;
+    stroke-width=&quot;1.5&quot;
+    stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;
+  /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+                &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/x6i4Ozqj1Xs/640x480&#x27;);&quot;&gt;
+                    &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/x6i4Ozqj1Xs/640x480&quot; alt=&quot;text alternatif&quot;&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+        
+        &lt;li class=&quot;c-slider__list-item&quot;&gt;
+            &lt;article class=&quot;c-slider__article o-stack o-stack--small&quot;&gt;
+                &lt;h3 class=&quot;c-slider__article-heading&quot;&gt;Hi mindless mortuis soulless creaturas&lt;/h3&gt;
+                &lt;div class=&quot;c-slider__article-date&quot;&gt;&lt;span class=&quot;u-visually-hidden&quot;&gt;Date:&lt;/span&gt;12.12.2021&lt;/div&gt;
+                &lt;a
+  href=&quot;#nowhere&quot;
+  class=&quot;c-button c-button--transparent-alt c-slider__article-button&quot;
+&gt;&lt;span&gt;lire la suite&lt;/span&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 8 14&quot;&gt;
+  &lt;path
+    d=&quot;M1 1l6 6-6 6&quot;
+    fill=&quot;none&quot;
+    stroke=&quot;currentColor&quot;
+    stroke-width=&quot;1.5&quot;
+    stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;
+  /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+                &lt;figure class=&quot;c-slider__article-figure&quot; style=&quot;background-image: url(&#x27;https://source.unsplash.com/v0_COzkLwWM/640x480&#x27;);&quot;&gt;
+                    &lt;img class=&quot;c-slider__article-image&quot; src=&quot;https://source.unsplash.com/v0_COzkLwWM/640x480&quot; alt=&quot;text alternatif&quot;&gt;
+                &lt;/figure&gt;
+            &lt;/article&gt;
+        &lt;/li&gt;
+        
+    &lt;/ul&gt;
+    
 &lt;/div&gt;--&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-timeline&quot;</span>&gt;</span>
@@ -1087,29 +1333,33 @@
 
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__page&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Liens connexes<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__list-page&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>Mentions légales<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>Plan du site<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Navigation pied de page&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__list-page&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>Mentions légales<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>Plan du site<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__social&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden md:u-not-visually-hidden&quot;</span>&gt;</span>Partager<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__list-social&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 25 25&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M12.5.5C5.9.5.5 5.9.5 12.5s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm6 9.7v.4c0 4.5-3.6 8.2-8.1 8.2h-.1c-1.6 0-3.1-.5-4.4-1.3h.7c1.3 0 2.6-.4 3.6-1.2-1.2 0-2.3-.8-2.7-2 .2 0 .4.1.5.1.3 0 .5 0 .8-.1-1.3-.3-2.3-1.5-2.3-2.8.4.2.9.3 1.3.4-.8-.5-1.3-1.4-1.3-2.4 0-.5.1-1 .4-1.5 1.5 1.8 3.6 2.9 6 3-.1-.2-.1-.4-.1-.7 0-1.6 1.3-2.9 2.9-2.9.8 0 1.6.3 2.1.9.6-.1 1.3-.4 1.8-.7-.2.7-.7 1.2-1.3 1.6.6-.1 1.1-.2 1.7-.5-.4.6-.9 1.1-1.5 1.5z&quot;</span> /&gt;</span>
-                                <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 25 25&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M24.5 12.6c0-6.7-5.4-12.1-12-12.1S.5 5.9.5 12.6c0 5.9 4.3 11 10.1 11.9v-8.4h-3v-3.5h3V9.9c0-3 1.8-4.7 4.5-4.7.9 0 1.8.1 2.7.2v3h-1.5c-.9-.1-1.8.5-1.9 1.5V12.6h3.3l-.5 3.5h-2.8v8.4c5.8-.9 10.1-6 10.1-11.9z&quot;</span> /&gt;</span>
-                                <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
-                                <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Navigation réseaux sociaux&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__list-social&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 25 25&quot;</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M12.5.5C5.9.5.5 5.9.5 12.5s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm6 9.7v.4c0 4.5-3.6 8.2-8.1 8.2h-.1c-1.6 0-3.1-.5-4.4-1.3h.7c1.3 0 2.6-.4 3.6-1.2-1.2 0-2.3-.8-2.7-2 .2 0 .4.1.5.1.3 0 .5 0 .8-.1-1.3-.3-2.3-1.5-2.3-2.8.4.2.9.3 1.3.4-.8-.5-1.3-1.4-1.3-2.4 0-.5.1-1 .4-1.5 1.5 1.8 3.6 2.9 6 3-.1-.2-.1-.4-.1-.7 0-1.6 1.3-2.9 2.9-2.9.8 0 1.6.3 2.1.9.6-.1 1.3-.4 1.8-.7-.2.7-.7 1.2-1.3 1.6.6-.1 1.1-.2 1.7-.5-.4.6-.9 1.1-1.5 1.5z&quot;</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 25 25&quot;</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M24.5 12.6c0-6.7-5.4-12.1-12-12.1S.5 5.9.5 12.6c0 5.9 4.3 11 10.1 11.9v-8.4h-3v-3.5h3V9.9c0-3 1.8-4.7 4.5-4.7.9 0 1.8.1 2.7.2v3h-1.5c-.9-.1-1.8.5-1.9 1.5V12.6h3.3l-.5 3.5h-2.8v8.4c5.8-.9 10.1-6 10.1-11.9z&quot;</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#nowhere&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-footer__logo&quot;</span>&gt;</span>
@@ -1156,6 +1406,8 @@
     </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="testimonial.html">@testimonial</a>&#x27; %}</span><span class="xml">
     
     </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="content--default.html">@content--default</a>&#x27; %}</span><span class="xml">
+    
+    </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="slider.html">@slider</a>&#x27; %}</span><span class="xml">
     
     <span class="hljs-comment">&lt;!-- 
       <span class="hljs-doctag">TODO:</span> refactorize to put the o-container in the component
@@ -1258,11 +1510,11 @@
             
                 <a href="testimonial.html">@<span>testimonial</span></a>, 
             
+                <a href="slider.html">@<span>slider</span></a>, 
+            
                 <a href="grid--item-centered.html">@<span>grid--item-centered</span></a>, 
             
                 <a href="figure.html">@<span>figure</span></a>, 
-            
-                <a href="slider.html">@<span>slider</span></a>, 
             
                 <a href="timeline.html">@<span>timeline</span></a>, 
             
@@ -2680,7 +2932,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2706,7 +2958,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3002,8 +3254,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-10T14:54:48.548Z">
-                                10.03.2021 à 15:54:48
+                            <time datetime="2021-03-11T11:10:17.223Z">
+                                11.03.2021 à 12:10:17
                             </time>
                         
                     </dd>
@@ -4409,7 +4661,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4435,7 +4687,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4461,7 +4713,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4510,7 +4762,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4536,7 +4788,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4562,7 +4814,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

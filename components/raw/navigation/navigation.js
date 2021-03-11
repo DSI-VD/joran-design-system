@@ -11,6 +11,9 @@ init = () => {
     for (const item of document.querySelectorAll('.c-nav__list')) {
       item.classList.remove('js-c-nav__list--open');
       item.classList.remove('js-c-nav__list--hide');
+      for (const button of item.querySelectorAll('.c-nav__list-link--w-children')) {
+        button.setAttribute('aria-expanded', false);
+      }
       for (const item of levelIndicator.querySelectorAll('li')) {
         item.remove();
       }
@@ -26,6 +29,7 @@ init = () => {
 
     for (const item of document.querySelectorAll('.c-nav__list--level-' + level)) {
       item.classList.remove('js-c-nav__list--open');
+      item.parentNode.querySelector('.c-nav__list-link--w-children').setAttribute('aria-expanded', false);
     }
 
     const levelElement = levelIndicator.querySelector('li:nth-child(' + level + ')');
@@ -34,10 +38,9 @@ init = () => {
   };
 
   const createLevelIndicator = target => {
-    const levelLink = document.createElement('a');
-    levelLink.setAttribute('href', '#nowhere');
+    const levelLink = document.createElement('button');
     levelLink.setAttribute('tabindex', '-1');
-    const levelText = document.createTextNode(target.text);
+    const levelText = document.createTextNode(target.innerHTML);
     levelLink.append(levelText);
     if (target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
       levelLink.addEventListener('click', event => {
@@ -61,6 +64,7 @@ init = () => {
         levelIndicator.append(createLevelIndicator(event.target));
         event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
         event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
+        item.setAttribute('aria-expanded', true);
         currentLevel++;
       } else if (event.target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
         closeLevelTabs(event, 2);
@@ -84,6 +88,7 @@ init = () => {
       closeAllTabs(event);
       navOpen = false;
     }
+    navToggle.setAttribute('aria-expanded', navOpen);
   });
 
   // Sticky nav
