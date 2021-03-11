@@ -3805,10 +3805,16 @@ html {
    # _components.slider.css
    ====================================================================== */
 
+/***
+ * 1. Prevent the page for being the same width as the overflow element on iOS/Safari
+ */
+
 .c-slider {
   background-color: var(--color__primary--900);
+  overflow-x: hidden;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
 }
 
 /* -----------------------------------
@@ -3844,7 +3850,7 @@ html {
 .c-slider__list {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .c-slider__list::-webkit-scrollbar-thumb {
