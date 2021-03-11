@@ -16,7 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
-- Fix _button_ typography. Font weight is medium and there is a wider tracking.
+- Fix _button_ typography. Font weight is medium and there is a wider tracking
+- Align headers in _table_ on the left
 
 ## [0.0.20] - 2021-03-10
 
