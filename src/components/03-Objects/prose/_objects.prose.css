@@ -20,6 +20,10 @@
  * There is other customization in the Tailwind config file
  */
 
+/***
+ * Anchors
+ */
+
 .o-prose a {
   text-decoration-color: var(--color__primary--900);
   text-decoration-thickness: 0.1em;
