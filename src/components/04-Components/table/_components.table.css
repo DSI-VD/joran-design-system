@@ -2,9 +2,13 @@
    # _components.table.css
    ====================================================================== */
 
+/***
+ * 1. Make table responsive
+ */
+
 .c-table {
   @apply
-    overflow-x-auto
+    overflow-x-auto /* [1] */
     rounded
    ;
 }
