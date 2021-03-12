@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- To style table, you only need to put it inside a `<div class="c-table>`. There's no more class on the `<table>` element
 - Improve _slider_
   - It can be scroll on all the width of the viewport. It's no more hidden behind the container
   - Add dates
