@@ -145,6 +145,37 @@
   ;
 }
 
+.c-timeline__indicator-line {
+  @apply
+    flex
+  ;
+
+  width: 282px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #16427c;
+  position: relative;
+}
+
+.c-timeline__indicator-button {
+  flex: 1;
+  height: 3px;
+  overflow: hidden;
+}
+
+.c-timeline__indicator-lift {
+  @apply
+    sr-only
+  ;
+
+  clip: auto;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  position: absolute;
+  transition: transform 0.35s ease;
+}
+
 .c-timeline__navigation--hidden {
   display: none;
   visibility: hidden;
