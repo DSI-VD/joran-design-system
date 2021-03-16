@@ -177,7 +177,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-9dc43a9f282c58429da6c99e60b6690c-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-highlight&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Contenu mis en évidence&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-highlight o-stack&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Contenu mis en évidence&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-content&quot;</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item o-prose&quot;</span>&gt;</span>
@@ -196,8 +196,15 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-9dc43a9f282c58429da6c99e60b6690c-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-highlight&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Contenu mis en évidence&quot;</span>&gt;</span>
-    </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="content--with-heading.html">@content--with-heading</a>&#x27;, content %}</span><span class="xml">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-highlight o-stack&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Contenu mis en évidence&quot;</span>&gt;</span>
+  </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="content--with-heading.html">@content--with-heading</a>&#x27;, content %}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> button %}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item&quot;</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="button--default-arrow-right.html">@button--default-arrow-right</a>&#x27; %}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -309,10 +316,12 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(2)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
-                <a href="content--with-heading.html">@<span>content--with-heading</span></a>
+                <a href="content--with-heading.html">@<span>content--with-heading</span></a>, 
+            
+                <a href="button--default-arrow-right.html">@<span>button--default-arrow-right</span></a>
             
             </span>
         </li class="Meta-item">
@@ -2194,8 +2203,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-16T09:55:50.743Z">
-                                16.03.2021 à 10:55:50
+                            <time datetime="2021-03-16T10:32:03.896Z">
+                                16.03.2021 à 11:32:03
                             </time>
                         
                     </dd>
@@ -3472,6 +3481,32 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="highlight--with-button.html" data-role="tree-link" data-pjax data-handle="highlight">
+                <span>With Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
 
 
 </div>
