@@ -57,6 +57,20 @@
         "styleModifier": "u-h6",
         "text": "[H6] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
       }
+    },
+    {
+      "name": "caption",
+      "context": {
+        "styleModifier": "u-caption",
+        "text": "[caption] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
+    },
+    {
+      "name": "cta",
+      "context": {
+        "styleModifier": "u-cta",
+        "text": "[cta] Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless."
+      }
     }
   ]
 }

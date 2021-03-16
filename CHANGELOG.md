@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add `.u-bg--gradient` utility
+- Add `.u-caption` utility
+- Add `.u-cta`utility
+- Add `.u-mt--big` utility
+- Add _search-input_ component
+- Add _search-result-item_ component
+- Add _search-result-list_ component
+- Add _search-page_ prototype
+
 ### Changed
 
 - To style table, you only need to put it inside a `<div class="c-table>`. There's no more class on the `<table>` element
@@ -21,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Refactor _button_ components
 - Fix _button_ typography. Font weight is medium and there is a wider tracking
 - Align headers in _table_ on the left
 - Scrollbar in _slider_ is white in Safari, Chrome too

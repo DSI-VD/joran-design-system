@@ -3,13 +3,8 @@
    ====================================================================== */
 
 .c-button {
+  @extend %cta;
   @apply
-    no-underline
-    uppercase
-    text-tiny
-    font-medium
-    tracking-wider
-
     inline-flex
     flex-row
     flex-nowrap

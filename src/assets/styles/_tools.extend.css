@@ -133,13 +133,26 @@
 /***
  * Caption
  *
- * font size desktop: 18px => 1.125rem
- * font size mobile: idem
  */
 %caption {
   @apply
     text-tiny
     ;
 
+  line-height: 1.3333;
+}
+
+/***
+ * CTA
+ *
+ */
+%cta {
+  @apply
+    no-underline
+    uppercase
+    text-tiny
+    font-medium
+    tracking-wider
+    ;
   line-height: 1.3333;
 }

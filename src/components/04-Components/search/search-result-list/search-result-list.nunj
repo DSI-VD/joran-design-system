@@ -1,0 +1,11 @@
+<div class="o-container o-stack o-stack--big c-result-list">
+    <h2 class="c-search-result-list__heading">Résultats de la recherche</h2>
+    
+    <ol class="o-stack">
+        {% for result in results %}
+        <li>
+            {% render '@search-result-item', result, true %}
+        </li>
+        {% endfor %}
+    </ol>
+</div>

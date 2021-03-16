@@ -1,0 +1,16 @@
+<article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">{{ title }}</a></h3>
+    <div class="c-search-result-item__content">{{ content | safe }}</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    {% for item in breadcrumb %}
+                    <li class="c-search-result-item__breadcrumb-item">{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
