@@ -1,25 +1,27 @@
 <div class="c-slider">
-    <div class="c-slider__container">
-    <div class="o-container">
-        <h2 class="c-slider__heading">{{ title }}</h2>
+  <div class="o-container c-slider__container">
+    <h2 class="c-slider__heading">{{ title }}</h2>
+    <div class="c-slider__sidebar">
+        This is the menu
     </div>
     {% if items %}
-    <ul class="c-slider__list">
+      <ul class="c-slider__list">
         {% for item in items %}
-        <li class="c-slider__list-item">
+          <li class="c-slider__list-item">
             <article class="c-slider__article">
-                <div class="c-slider__article-text-container">
-                    <h3 class="c-slider__article-heading">{{ item.title }}</h3>
-                    <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>{{ item.date }}</div>
-                    {% render '@button--transparent-alternate-arrow-right', {styleModifier: 'c-slider__article-button', text: 'lire la suite'}, true %}
-                </div>
-                <figure class="c-slider__article-figure" style="background-image: url('{{ item.image.src }}/640x480');">
-                    <img class="c-slider__article-image" src="{{ item.image.src }}/640x480" alt="{{ item.image.alt }}">
-                </figure>
+              <div class="c-slider__article-text-container">
+                <h3 class="c-slider__article-heading">{{ item.title }}</h3>
+                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>{{ item.date }}</div>
+                {% render '@button--transparent-alternate-arrow-right', {styleModifier: 'c-slider__article-button', text: 'lire la suite'}, true %}
+              </div>
+              <figure class="c-slider__article-figure" style="background-image: url('{{ item.image.src }}/640x480');">
+                <img class="c-slider__article-image" src="{{ item.image.src }}/640x480" alt="{{ item.image.alt }}">
+              </figure>
             </article>
-        </li>
+          </li>
         {% endfor %}
-    </ul>
+      </ul>
     {% endif %}
-    </div>
+  </div>
+</div>
 </div>
