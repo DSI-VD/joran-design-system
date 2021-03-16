@@ -3,9 +3,9 @@
    ====================================================================== */
 
 .u-bg--gradient {
-    @apply
-        bg-gradient-to-b
-        from-primary-400
+  @apply
+    bg-gradient-to-b
+    from-primary-400
         to-primary-100
     ;
 }

@@ -18,7 +18,6 @@ class Timeline {
     this.timeline.style.transform = 'translate3d(' + percent + '%, 0, 0)';
   }
 
-
   /**
    * Création de l'ascenseur
    */
