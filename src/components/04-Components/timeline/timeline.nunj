@@ -77,7 +77,11 @@
             </div>
         </div>
         <div class="c-timeline__control">
-            <div class="c-timeline__indicator">indicateur</div>
+            <div class="c-timeline__indicator">
+                <div class="c-timeline__indicator-line">
+                    <span class="c-timeline__indicator-lift">Ascenseur</span>
+                </div>
+            </div>
             <button class="c-timeline__navigation--left c-timeline__navigation--hidden" tabindex="-1">{% render '@arrow--left' %}</button>
             <button class="c-timeline__navigation--right" tabindex="-1">{% render '@arrow--right' %}</button>
         </div>
