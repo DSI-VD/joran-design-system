@@ -179,7 +179,7 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-table&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-table__table&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>The Very Best Eggnog<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
@@ -256,7 +256,7 @@
     <code class="Code Code--lang-django hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-table&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-table__table&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>The Very Best Eggnog<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
@@ -367,14 +367,18 @@
    # _components.table.css
    ====================================================================== */</span>
 
+<span class="hljs-comment">/***
+ * 1. Make table responsive
+ */</span>
+
 <span class="hljs-selector-class">.c-table</span> {
   <span class="hljs-keyword">@apply</span>
-    overflow-x-auto
+    overflow-x-auto /* [<span class="hljs-number">1</span>] */
     rounded
    ;
 }
 
-<span class="hljs-selector-class">.c-table__table</span> {
+<span class="hljs-selector-class">.c-table</span> <span class="hljs-selector-tag">table</span> {
   <span class="hljs-keyword">@apply</span>
     bg-primary-<span class="hljs-number">100</span>
     text-tiny
@@ -383,8 +387,8 @@
     ;
 }
 
-<span class="hljs-selector-class">.c-table__table</span> <span class="hljs-selector-tag">thead</span>,
-<span class="hljs-selector-class">.c-table__table</span> <span class="hljs-selector-tag">tfoot</span> {
+<span class="hljs-selector-class">.c-table</span> <span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">thead</span>,
+<span class="hljs-selector-class">.c-table</span> <span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">tfoot</span> {
   <span class="hljs-keyword">@apply</span>
     bg-primary-<span class="hljs-number">200</span>
     text-primary
@@ -393,15 +397,15 @@
     ;
 }
 
-<span class="hljs-selector-class">.c-table__table</span> <span class="hljs-selector-tag">th</span>,
-<span class="hljs-selector-class">.c-table__table</span> <span class="hljs-selector-tag">td</span> {
+<span class="hljs-selector-class">.c-table</span> <span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">th</span>,
+<span class="hljs-selector-class">.c-table</span> <span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">td</span> {
   <span class="hljs-keyword">@apply</span>
     text-left
     p-<span class="hljs-number">4</span>
     ;
 }
 
-<span class="hljs-selector-class">.c-table__table</span> <span class="hljs-selector-tag">tr</span> + <span class="hljs-selector-tag">tr</span> {
+<span class="hljs-selector-class">.c-table</span> <span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">tr</span> + <span class="hljs-selector-tag">tr</span> {
   <span class="hljs-keyword">@apply</span>
     border-primary-<span class="hljs-number">200</span>
     ;
@@ -424,7 +428,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">637 Bytes</span>
+                    <span class="Meta-value">679 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -2202,8 +2206,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-11T13:59:01.920Z">
-                                11.03.2021 à 14:59:01
+                            <time datetime="2021-03-16T08:01:14.017Z">
+                                16.03.2021 à 09:01:14
                             </time>
                         
                     </dd>

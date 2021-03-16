@@ -9,11 +9,22 @@
 .c-slider {
   @apply
     bg-primary
+    
     py-16
+    h-screen
     
     overflow-x-hidden
     relative /* [1] */
     ;
+    
+    min-height: 40rem;
+    max-height: 64rem;
+}
+
+.c-slider__container {
+  @apply
+    h-full
+  ;
 }
 
 
@@ -42,8 +53,11 @@
     flex-row
 
     overflow-x-auto
+    
+    mb-16
    ;
   
+  height: calc(100% - 4rem);
   
   &::-webkit-scrollbar-thumb {
     background-color: #fcfcfc;
@@ -76,7 +90,7 @@
  */
 .c-slider__list-item {
   @apply
-    max-w-sm
+    max-w-md
     mr-4
     ;
 
@@ -122,22 +136,38 @@
    # Article
    ----------------------------------- */
 
+/***
+ * 1. Reorder figure and text element vertically
+ * 2. Reorder text vertically to put the date first
+ */
 .c-slider__article {
   @apply
-    flex
-    flex-col
-
-    h-96
-
-    mb-8
+    flex /* [1] */
+    flex-col /* [1] */
     ;
+    
+    height: calc(100% - 4rem);
+}
+
+.c-slider__article-text-container {
+  @apply
+    flex /* [2] */
+    flex-col /* [2] */
+  ;
+  
+  @screen md {
+    @apply
+      border-l
+      border-white
+      pl-4
+    ;
+  }
 }
 
 .c-slider__article-heading {
   @extend %h3;
 
   @apply
-  order-3
     text-white
     flex-initial
     ;
@@ -146,15 +176,16 @@
 .c-slider__article-date {
   @extend %caption;
   @apply
-    order-2
+    order-first /* [2] */
     text-primary-100
     flex-initial
+    
+    mb-1
   ;
 }
 
 .c-slider__article-button {
   @apply
-  order-4
     text-white
     flex-initial
     ;
@@ -162,13 +193,14 @@
 
 .c-slider__article-figure {
   @apply
-    order-1
+    order-first /* [1] */
     bg-primary-800
 
     bg-cover
     bg-center
 
     rounded
+    mb-2
 
     flex-1
     ;

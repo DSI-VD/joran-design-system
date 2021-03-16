@@ -2,14 +2,18 @@
    # _components.table.css
    ====================================================================== */
 
+/***
+ * 1. Make table responsive
+ */
+
 .c-table {
   @apply
-    overflow-x-auto
+    overflow-x-auto /* [1] */
     rounded
    ;
 }
 
-.c-table__table {
+.c-table table {
   @apply
     bg-primary-100
     text-tiny
@@ -18,8 +22,8 @@
     ;
 }
 
-.c-table__table thead,
-.c-table__table tfoot {
+.c-table table thead,
+.c-table table tfoot {
   @apply
     bg-primary-200
     text-primary
@@ -28,15 +32,15 @@
     ;
 }
 
-.c-table__table th,
-.c-table__table td {
+.c-table table th,
+.c-table table td {
   @apply
     text-left
     p-4
     ;
 }
 
-.c-table__table tr + tr {
+.c-table table tr + tr {
   @apply
     border-primary-200
     ;

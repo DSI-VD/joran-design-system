@@ -11,10 +11,33 @@ class Timeline {
     this.slidesToScroll = 2;
     this.setStyle();
     this.createNavigation();
+    this.createLift();
   }
 
   translate(percent) {
     this.timeline.style.transform = 'translate3d(' + percent + '%, 0, 0)';
+  }
+
+
+  /**
+   * Création de l'ascenseur
+   */
+  createLift() {
+    const lift = this.timeline.parentNode.parentNode.querySelector('.c-timeline__indicator-lift');
+    const line = this.timeline.parentNode.parentNode.querySelector('.c-timeline__indicator-line');
+    const levels = Math.ceil(this.items.length / this.slidesVisible);
+    lift.style.width = (100 / levels) + '%';
+    for (let i = 0; i < levels; i++) {
+      const level = document.createElement('button');
+      level.setAttribute('tabindex', '-1');
+      level.classList.add('c-timeline__indicator-button');
+      const levelText = document.createTextNode(i + 1);
+      level.append(levelText);
+      level.addEventListener('click', event => {
+        this.gotoItem(i * this.slidesVisible);
+      });
+      line.append(level);
+    }
   }
 
   /**
@@ -63,6 +86,10 @@ class Timeline {
     }
 
     const translateX = index * -100 / this.items.length;
+    const lift = this.timeline.parentNode.parentNode.querySelector('.c-timeline__indicator-lift');
+    console.log(index);
+    const liftPos = (Math.ceil(index / this.slidesVisible) * lift.offsetWidth);
+    lift.style.transform = 'translate3d(' + liftPos + 'px, 0, 0)';
     this.translate(translateX);
     this.timeline.offsetHeight; // Force repaint
     this.currentItem = index;

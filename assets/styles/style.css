@@ -2488,6 +2488,10 @@ html {
  * There is other customization in the Tailwind config file
  */
 
+/***
+ * Anchors
+ */
+
 .o-prose a {
   -webkit-text-decoration-color: var(--color__primary--900);
           text-decoration-color: var(--color__primary--900);
@@ -3321,6 +3325,7 @@ html {
   width: 40px;
   height: 40px;
   color: transparent;
+  overflow: hidden;
 }
 
 .c-nav__toggle:focus {
@@ -3811,10 +3816,17 @@ html {
 
 .c-slider {
   background-color: var(--color__primary--900);
+  height: 100vh;
   overflow-x: hidden;
   padding-top: 4rem;
   padding-bottom: 4rem;
   position: relative;
+  min-height: 40rem;
+  max-height: 64rem;
+}
+
+.c-slider__container {
+  height: 100%;
 }
 
 /* -----------------------------------
@@ -3850,7 +3862,9 @@ html {
 .c-slider__list {
   display: flex;
   flex-direction: row;
+  margin-bottom: 4rem;
   overflow-x: auto;
+  height: calc(100% - 4rem);
 }
 
 .c-slider__list::-webkit-scrollbar-thumb {
@@ -3887,7 +3901,7 @@ html {
 
 .c-slider__list-item {
   margin-right: 1rem;
-  max-width: 24rem;
+  max-width: 28rem;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 75vw;
@@ -3952,12 +3966,34 @@ html {
    # Article
    ----------------------------------- */
 
+/***
+ * 1. Reorder figure and text element vertically
+ * 2. Reorder text vertically to put the date first
+ */
+
 .c-slider__article {
   display: flex;
   flex-direction: column;
-  height: 24rem;
-  margin-bottom: 2rem;
+  height: calc(100% - 4rem);
 }
+
+.c-slider__article-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+.c-slider__article-text-container {
+    --tw-border-opacity: 1;
+
+    border-color: rgba(252, 252, 252, var(--tw-border-opacity));
+
+    border-left-width: 1px;
+
+    padding-left: 1rem
+}
+  }
 
 .c-slider__article-heading {
   font-weight: 500;
@@ -3969,7 +4005,6 @@ html {
 
 .c-slider__article-heading {
   flex: 0 1 auto;
-  order: 3;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
 }
@@ -3981,13 +4016,13 @@ html {
 
 .c-slider__article-date {
   flex: 0 1 auto;
-  order: 2;
+  order: -9999;
+  margin-bottom: 0.25rem;
   color: var(--color__primary--100);
 }
 
 .c-slider__article-button {
   flex: 0 1 auto;
-  order: 4;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
 }
@@ -3998,7 +4033,8 @@ html {
   background-size: cover;
   border-radius: 0.25rem;
   flex: 1 1 0%;
-  order: 1;
+  order: -9999;
+  margin-bottom: 0.5rem;
 }
 
 .c-slider__article-image {
@@ -4017,31 +4053,35 @@ html {
    # _components.table.css
    ====================================================================== */
 
+/***
+ * 1. Make table responsive
+ */
+
 .c-table {
   border-radius: 0.25rem;
   overflow-x: auto;
 }
 
-.c-table__table {
+.c-table table {
   background-color: var(--color__primary--100);
   border-radius: 0.25rem;
   font-size: 1.125rem;
   min-width: 100%;
 }
 
-.c-table__table thead, .c-table__table tfoot {
+.c-table table thead, .c-table table tfoot {
   background-color: var(--color__primary--200);
   font-weight: 700;
   color: var(--color__primary--900);
   text-transform: uppercase;
 }
 
-.c-table__table th, .c-table__table td {
+.c-table table th, .c-table table td {
   padding: 1rem;
   text-align: left;
 }
 
-.c-table__table tr + tr {
+.c-table table tr + tr {
   border-color: var(--color__primary--200);
   border-top-width: 1px;
 }
@@ -4338,6 +4378,39 @@ html {
     flex-grow: 1;
     order: -9999;
   }
+}
+
+.c-timeline__indicator-line {
+  display: flex;
+  width: 282px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #16427c;
+  position: relative;
+}
+
+.c-timeline__indicator-button {
+  flex: 1;
+  height: 3px;
+  overflow: hidden;
+}
+
+.c-timeline__indicator-lift {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  clip: auto;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  position: absolute;
+  transition: transform 0.35s ease;
 }
 
 .c-timeline__navigation--hidden {
