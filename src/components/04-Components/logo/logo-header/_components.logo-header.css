@@ -1,0 +1,29 @@
+/* ==========================================================================
+   # _components.logo-header.css
+   ========================================================================== */
+
+.c-logo-header {
+    @apply
+        flex
+        flex-row
+    ;
+}
+
+.c-logo-header__logo {
+    @apply
+        pr-2
+        border-r
+    ;
+}
+
+.c-logo-header__text {
+    @apply
+        text-white
+
+        ml-2
+
+        flex
+        flex-col
+        justify-center
+    ;
+}

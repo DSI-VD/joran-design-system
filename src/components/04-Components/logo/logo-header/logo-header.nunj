@@ -1,0 +1,11 @@
+<div class="c-logo-header">
+  <div class="c-logo-header__logo">
+    {% render '@logo-vd' %}
+  </div>
+  <div class="c-logo-header__text">
+    {% for item in text %}
+      <div>{{ item }}</div>
+    {% endfor %}
+  </div>
+</div>
+
