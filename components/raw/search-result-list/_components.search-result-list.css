@@ -2,10 +2,11 @@
    # _components.search-result-list
    ========================================================================== */
 
-.c-search-result-list__heading{
-    @extend %h1;
-    @apply
-        text-black
-        mb-16
+.c-search-result-list__heading {
+  @extend %h1;
+
+  @apply
+    text-black
+    mb-16
     ;
 }

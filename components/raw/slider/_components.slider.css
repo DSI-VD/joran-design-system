@@ -9,16 +9,16 @@
 .c-slider {
   @apply
     bg-primary
-    
+
     py-16
     h-screen
-    
+
     overflow-x-hidden
     relative /* [1] */
     ;
-    
-    min-height: 40rem;
-    max-height: 64rem;
+
+  min-height: 40rem;
+  max-height: 64rem;
 }
 
 .c-slider__container {
@@ -53,30 +53,32 @@
     flex-row
 
     overflow-x-auto
-    
+
     mb-16
    ;
-  
+
   height: calc(100% - 4rem);
-  
+
   &::-webkit-scrollbar-thumb {
     background-color: #fcfcfc;
   }
+
   &::-webkit-scrollbar-track {
     background-color: var(--color__primary--900);
   }
+
   &::-webkit-scrollbar-corner {
     background-color: var(--color__primary--900);
   }
+
   &::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
   }
-  
+
   -ms-overflow-style: auto;
   scrollbar-color: #fcfcfc var(--color__primary--900);
   scrollbar-width: thin;
-
 }
 
 
@@ -97,25 +99,29 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 75vw;
-  
+
   --c-slider__margin: 1rem; /* [1] */
   --c-slider__container-width: 100%; /* [1] */
-  
+
   @screen sm {
     --c-slider__container-width: 640px; /* [1] */
   }
+
   @screen md {
     --c-slider__margin: 2rem; /* [1] */
     --c-slider__container-width: 768px; /* [1] */
   }
+
   @screen lg {
     --c-slider__margin: 4rem; /* [1] */
     --c-slider__container-width: 1024px; /* [1] */
   }
+
   @screen xl {
     --c-slider__margin: 8rem; /* [1] */
     --c-slider__container-width: 1280px; /* [1] */
   }
+
   @screen 2xl {
     --c-slider__margin: 16rem; /* [1] */
     --c-slider__container-width: 1536px; /* [1] */
@@ -123,7 +129,7 @@
 }
 
 .c-slider__list .c-slider__list-item:first-child {
-  margin-left: calc( calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin)); /* [1] */
+  margin-left: calc(calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin)); /* [1] */
 }
 
 /* .c-slider__list .c-slider__list-item:last-child{
@@ -145,8 +151,8 @@
     flex /* [1] */
     flex-col /* [1] */
     ;
-    
-    height: calc(100% - 4rem);
+
+  height: calc(100% - 4rem);
 }
 
 .c-slider__article-text-container {
@@ -154,7 +160,7 @@
     flex /* [2] */
     flex-col /* [2] */
   ;
-  
+
   @screen md {
     @apply
       border-l
@@ -175,11 +181,12 @@
 
 .c-slider__article-date {
   @extend %caption;
+
   @apply
     order-first /* [2] */
     text-primary-100
     flex-initial
-    
+
     mb-1
   ;
 }

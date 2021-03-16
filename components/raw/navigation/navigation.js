@@ -14,6 +14,7 @@ init = () => {
       for (const button of item.querySelectorAll('.c-nav__list-link--w-children')) {
         button.setAttribute('aria-expanded', false);
       }
+
       for (const item of levelIndicator.querySelectorAll('li')) {
         item.remove();
       }
@@ -88,6 +89,7 @@ init = () => {
       closeAllTabs(event);
       navOpen = false;
     }
+
     navToggle.setAttribute('aria-expanded', navOpen);
   });
 

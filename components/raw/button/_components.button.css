@@ -4,6 +4,7 @@
 
 .c-button {
   @extend %cta;
+
   @apply
     inline-flex
     flex-row
