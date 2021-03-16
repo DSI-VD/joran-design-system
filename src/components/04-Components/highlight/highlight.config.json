@@ -15,6 +15,13 @@
       "context": {
         "content": "@content--with-heading"
       }
+    },
+    {
+      "name": "with button",
+      "status": "review",
+      "context": {
+        "button": "@button"
+      }
     }
   ]
 }

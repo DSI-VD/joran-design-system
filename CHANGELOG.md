@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
+- Add _highlight--with-button_ components variant
 - Add `.u-bg--gradient` utility
 - Add `.u-caption` utility
 - Add `.u-cta`utility
