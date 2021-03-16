@@ -101,24 +101,28 @@
 
     mb-16
    ;
-
-  /* margin-left: calc(calc(100vw - var(--c-slider__container-width)) / -2 - var(--c-slider__margin));*/
-  margin: auto
-      calc(
+  
+  /* FIXME: Have to do a media query because 100vw != 100% */
+  margin: auto calc(var(--c-slider__margin) * -1); /* [3] */
+  
+  @screen md {
+    margin: auto
         calc(
           calc(
             calc(
-              100vw - var(--c-slider__container-width)
+              calc(
+                100vw - var(--c-slider__container-width)
+              )
+              /
+              2
             )
-            /
-            2
+            +
+            var(--c-slider__margin)
           )
-          +
-          var(--c-slider__margin)
-        )
-        *
-        -1
-      ); /* [3] */
+          *
+          -1
+        ); /* [3] */
+  }
 
   height: calc(100% - 4rem);
 
