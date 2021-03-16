@@ -1,0 +1,888 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jorant preview</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <style>
+:root {
+--color__primary--100: #FFF4EB;
+--color__primary--200: #FFD5AD;
+--color__primary--400: #FFAB5C;
+--color__primary--600: #B95900;
+--color__primary--800: #8F4500;
+--color__primary--900: #663100;
+--color__primary--cta: #CC6300
+
+}
+</style>
+
+    <!-- Stylesheets -->
+    <link
+      media="all"
+      rel="stylesheet"
+      href="../../assets/styles/style.css"
+    />
+  </head>
+
+  <body onload="init();" class="c-page">
+    <div class="c-nav">
+  <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
+    <div class="c-nav__logo">
+      <img class="c-logo-vd" src="../../assets/vectors/logo.svg" />
+
+      <span class="c-nav__logo-text">Entité</span>
+    </div>
+    <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="c-menu-icon c-menu-icon--cross">
+        <span>Ouvrir le menu</span>
+      </span>
+    </button>
+    <div class="c-nav__list-container">
+      <div class="c-nav__search-bar">
+        <a href="#nowhere" class="c-button--search">Rechercher</a>
+      </div>
+      <ul class="c-nav__level-indicator">
+      </ul>
+      <div class="c-nav__list-wrapper">
+        <ul class="c-nav__list">
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Somaire
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                      Organigrame
+                    </button>
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Communication tactique
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bilderberg
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Facebook live
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Paléo Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Visite du président indien
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Attaques fourgons blindés
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Fermeture de l&#39;autoroute A12
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bol d&#39;Or
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Inauguration CIO
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Montreux Jazz Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Fête des Vignerons
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Cérémonie du souvenir
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Escrocrie à la caisse de chômage
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      La police en chiffres
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Finances
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Objectifs 2020
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Valorisation des colabirateurs
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Témoignages
+                    </a>
+                  
+                </li>
+                
+              </ul>
+            
+          </li>
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Projets
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Communication tactique
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Bilderberg
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Facebook live
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Paléo Festival
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Visite du président indien
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Attaques fourgons blindés
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Fermeture de l&#39;autoroute A12
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Bol d&#39;Or
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Inauguration CIO
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Montreux Jazz Festival
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Fête des Vignerons
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Cérémonie du souvenir
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Escrocrie à la caisse de chômage
+                    </a>
+                  
+                </li>
+                
+              </ul>
+            
+          </li>
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <a href="#nowhere" class="c-nav__list-link">
+                Remerciement
+              </a>
+            
+          </li>
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Où sommes-nous ?
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.1
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.2
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.3
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.4
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.5
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.6
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.7
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.8
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 4.9
+                    </a>
+                  
+                </li>
+                
+              </ul>
+            
+          </li>
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                Menu 5 est passablement très très très très long
+              </button>
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.1 très très très très très très très très très très très très long
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.2
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Menu 5.3
+                    </a>
+                  
+                </li>
+                
+              </ul>
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="c-page__content o-stack o-stack--big u-bg--gradient">
+
+  <main class="c-page__main o-stack">
+    
+    
+    <h1 class="u-visually-hidden">Titre de la page</h1>
+    
+    
+<div class="o-container">
+  <form class="c-search-input u-mt--big" 
+        action="#">
+        <label for="search" class="u-visually-hidden">Recherche</label>
+        <input id="search" class="c-search-input__field" type="text">
+        <button type="submit" class="c-search-input__button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <circle
+    cx="8"
+    cy="8"
+    r="7"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M19 19l-6-6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+        </button>
+    </form>
+</div>
+
+    
+    <div class="o-container o-stack o-stack--big c-result-list">
+    <h2 class="c-search-result-list__heading">Résultats de la recherche</h2>
+    
+    <ol class="o-stack">
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">aut eum asperiores</a></h3>
+    <div class="c-search-result-item__content">Perferendis ut aut voluptate velit. Dolorem eligendi et eligendi aperiam autem.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">deserunt earum vel</a></h3>
+    <div class="c-search-result-item__content">Aut ea architecto fugiat sit adipisci commodi sit. Adipisci nihil optio corporis id sunt quia architecto. Pariatur illum enim placeat enim ea quia similique. Iure et dolor tempora fugiat numquam.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">cupiditate dolorum similique</a></h3>
+    <div class="c-search-result-item__content">Quo et nesciunt eligendi quia perferendis omnis esse. Nisi et ut et quia illum.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">quo maiores quos</a></h3>
+    <div class="c-search-result-item__content">Ducimus fuga fugit minima earum rerum saepe. Velit officiis explicabo ut et nulla. Cum ipsum molestiae veritatis illum nostrum rerum dolor delectus. Voluptatem voluptas possimus omnis. Reiciendis aliquid accusantium.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">officia inventore delectus</a></h3>
+    <div class="c-search-result-item__content">Similique explicabo ullam quis id ea. Placeat aut amet aut corporis est iure pariatur consequatur rerum. Rerum quidem nemo mollitia sunt. Et soluta temporibus vero sit cumque non maxime recusandae.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">nihil voluptate pariatur</a></h3>
+    <div class="c-search-result-item__content">Nihil enim repellat. Blanditiis earum ad labore. Sit id rem commodi odit laborum aut dolor. Eaque culpa dolor saepe maxime doloremque voluptatibus.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">dolorum at voluptatem</a></h3>
+    <div class="c-search-result-item__content">Eos ut cupiditate minima eius assumenda est dolorem fugiat. Tenetur explicabo eveniet.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">est consequatur eos</a></h3>
+    <div class="c-search-result-item__content">Voluptates quaerat impedit aut. Laboriosam molestias magni molestias nihil mollitia. Harum numquam labore aspernatur. Quos nesciunt natus et tempore vel ipsam velit. Id tenetur eligendi.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">eligendi illo nihil</a></h3>
+    <div class="c-search-result-item__content">Aut neque dolorem doloremque error et assumenda dolores sunt. Recusandae qui quod provident temporibus.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+        <li>
+            <article class="c-search-result-item">
+    <h3 class="c-search-result-item__title"><a href="#nowhere">officia et sunt</a></h3>
+    <div class="c-search-result-item__content">Placeat voluptas aliquam eaque commodi sint expedita. Voluptatem eum quis id unde tempore. Aliquid nulla molestiae facere eos sed iure. Omnis et possimus. Ut inventore velit facilis et non distinctio enim nobis. Est laborum dolorum illum nihil.</div>
+    <footer class="c-search-result-item__breadcrumb">
+        <dl>
+            <dt class="u-visually-hidden">Emplacement</dt>
+            <dd>
+                <ul class="c-search-result-item__breadcrumb-list">
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 1</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 2</li>
+                    
+                    <li class="c-search-result-item__breadcrumb-item">page 3</li>
+                    
+                </ul>
+            </dd>
+        </dl>
+    </footer>
+</article>
+        </li>
+        
+    </ol>
+</div>
+
+    
+    <div class="o-container o-region c-pagination-pages">
+  <nav aria-labelledby="pagination-title">
+    <h2 id="pagination-title" class="u-visually-hidden">Pagination</h2>
+    <ul class="c-pagination-pages__list" aria-label="Pagination">
+      
+      <li class="c-pagination-pages__list-item">
+        <a href="#nowhere" class="c-pagination-pages__link" aria-label="Page précédente">
+          <span class="sr-only">Précédent</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M7 1L1 7l6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+        </a>
+      </li>
+       
+      <li class="c-pagination-pages__list-item">
+        <a
+          href="#nowhere"
+          class="c-pagination-pages__link"
+          aria-label="Page 5">5</a></li>
+      
+      <li class="c-pagination-pages__list-item">
+        <span 
+        class="c-pagination-pages__link"
+        aria-label="Page 6"
+        aria-current="page">6</span></li>
+      
+      <li class="c-pagination-pages__list-item">
+        <a
+          href="#nowhere"
+          class="c-pagination-pages__link"
+          aria-label="Page 7">7</a></li>
+      
+      <li class="c-pagination-pages__list-item">
+        <a
+          href="#nowhere"
+          class="c-pagination-pages__link"
+          aria-label="Page 8">8</a></li>
+      
+      
+      <li class="c-pagination-pages__list-item">
+        <a href="#nowhere" class="c-pagination-pages__link" aria-label="Page suivante">
+          <span class="sr-only">Suivant</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</div>
+
+    
+  </main>
+  
+  <footer class="o-region c-footer" aria-label="Pied de page" role="contentinfo">
+  <div class="o-container o-container--large">
+    <h2 class="u-visually-hidden">Pied de page</h2>
+    
+    <div class="c-footer__main">
+      
+      <div class="c-footer__page">
+        <h3 class="u-visually-hidden">Liens connexes</h3>
+        <nav aria-label="Navigation pied de page">
+          <ul class="c-footer__list-page">
+            <li><a href="#nowhere">Mentions légales</a></li>
+            <li><a href="#nowhere">Plan du site</a></li>
+            <li><a href="#nowhere">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="c-footer__social">
+        <h3 class="u-visually-hidden md:u-not-visually-hidden">Partager</h3>
+        <nav aria-label="Navigation réseaux sociaux">
+          <ul class="c-footer__list-social">
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <path
+    d="M12.5.5C5.9.5.5 5.9.5 12.5s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm6 9.7v.4c0 4.5-3.6 8.2-8.1 8.2h-.1c-1.6 0-3.1-.5-4.4-1.3h.7c1.3 0 2.6-.4 3.6-1.2-1.2 0-2.3-.8-2.7-2 .2 0 .4.1.5.1.3 0 .5 0 .8-.1-1.3-.3-2.3-1.5-2.3-2.8.4.2.9.3 1.3.4-.8-.5-1.3-1.4-1.3-2.4 0-.5.1-1 .4-1.5 1.5 1.8 3.6 2.9 6 3-.1-.2-.1-.4-.1-.7 0-1.6 1.3-2.9 2.9-2.9.8 0 1.6.3 2.1.9.6-.1 1.3-.4 1.8-.7-.2.7-.7 1.2-1.3 1.6.6-.1 1.1-.2 1.7-.5-.4.6-.9 1.1-1.5 1.5z"
+  />
+</svg>
+</a></li>
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <path
+    d="M24.5 12.6c0-6.7-5.4-12.1-12-12.1S.5 5.9.5 12.6c0 5.9 4.3 11 10.1 11.9v-8.4h-3v-3.5h3V9.9c0-3 1.8-4.7 4.5-4.7.9 0 1.8.1 2.7.2v3h-1.5c-.9-.1-1.8.5-1.9 1.5V12.6h3.3l-.5 3.5h-2.8v8.4c5.8-.9 10.1-6 10.1-11.9z"
+  />
+</svg>
+</a></li>
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="c-footer__logo">
+        <h3 class="u-visually-hidden">Logo de l'entité</h3>
+        <img
+  class="c-logo-entity"
+  src="../../assets/images/logo-entity.png"
+  alt="logo de l'entité"
+/>
+
+      </div>
+      
+    </div>
+    <div class="c-footer__secondary">
+      &copy; Name of the service - 2021
+    </div>
+  </div>
+</footer>
+
+
+</div>
+
+    <!-- Scripts -->
+    <script src="../../assets/scripts/navigation.js"></script>
+    <script src="../../assets/scripts/testimonial.js"></script>
+    <script src="../../assets/scripts/timeline.js"></script>
+  </body>
+</html>
+

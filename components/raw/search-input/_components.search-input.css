@@ -1,0 +1,48 @@
+/* ======================================================================
+   # _components.search-input.css
+   ====================================================================== */
+
+/**
+ *  1. Place the magnifier
+ */
+
+.c-search-input {
+    @apply
+        relative /* [1] */
+        text-base
+    ;
+  }
+
+.c-search-input__field {
+    @apply
+      shadow 
+      appearance-none 
+      border 
+      rounded 
+      w-full 
+      py-4 
+      px-6 
+      text-gray-700 
+      leading-tight 
+
+      pl-16
+      text-primary
+
+    focus:outline-focus
+    ;
+}
+
+.c-search-input__button {
+    @apply
+        absolute /* [1] */
+        left-0 /* [1] */
+        top-0 /* [1] */
+        mt-5 /* [1] */
+        ml-6 /* [1] */
+        text-primary
+
+    ;
+    svg {
+        height: 1em;
+    }
+}

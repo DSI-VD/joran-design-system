@@ -277,7 +277,8 @@ Correct the inability to style clickable types in iOS and Safari.
 */
 
 button,
-[type='button'] {
+[type='button'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -318,6 +319,11 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
 
 /**
 Remove the inner padding in Chrome and Safari on macOS.
@@ -1063,8 +1069,11 @@ video {
 /***
  * Caption
  *
- * font size desktop: 18px => 1.125rem
- * font size mobile: idem
+ */
+
+/***
+ * CTA
+ *
  */
 
 /* Generic */
@@ -2764,18 +2773,22 @@ html {
    ====================================================================== */
 
 .c-button {
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  line-height: 1.3333;
+}
+
+.c-button {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  font-weight: 500;
-  font-size: 1.125rem;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.05em;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -3807,6 +3820,149 @@ html {
 }
 
 /* ======================================================================
+   # _components.search-input.css
+   ====================================================================== */
+
+/**
+ *  1. Place the magnifier
+ */
+
+.c-search-input {
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.c-search-input__field {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  line-height: 1.25;
+}
+
+.c-search-input__field:focus {
+  outline: 3px solid #FFB703;
+  outline-offset: 1px;
+}
+
+.c-search-input__field {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 4rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+  color: var(--color__primary--900);
+  width: 100%;
+}
+
+.c-search-input__button {
+  margin-top: 1.25rem;
+  margin-left: 1.5rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: var(--color__primary--900);
+}
+
+.c-search-input__button svg {
+    height: 1em;
+  }
+
+/* ======================================================================
+   # _components.search-result-item.css
+   ====================================================================== */
+
+.c-search-result-item {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-search-result-item {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-search-result-item {
+    padding: 1.5rem;
+  }
+}
+
+.c-search-result-item__title {
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  line-height: 1.3333;
+}
+
+.c-search-result-item__title {
+  color: var(--color__primary--cta);
+}
+
+.c-search-result-item__breadcrumb {
+  font-size: 1.125rem;
+  line-height: 1.3333;
+}
+
+.c-search-result-item__breadcrumb {
+  order: -9999;
+  margin-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.c-search-result-item__breadcrumb-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+.c-search-result-item__breadcrumb-item + .c-search-result-item__breadcrumb-item::before {
+  content: ">";
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+/* ==========================================================================
+   # _components.search-result-list
+   ========================================================================== */
+
+.c-search-result-list__heading{
+  font-weight: 700;
+  font-size: 2.375rem;
+  color: var(--color__primary--900);
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+@media (min-width: 768px) {
+
+.c-search-result-list__heading{
+    line-height: 1.0833;
+
+    font-size: 3rem;
+}
+  }
+
+.c-search-result-list__heading{
+  margin-bottom: 4rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+/* ======================================================================
    # _components.slider.css
    ====================================================================== */
 
@@ -4439,6 +4595,17 @@ html {
 /* Utilities */
 
 /* ======================================================================
+   # _background.utilities.css
+   ====================================================================== */
+
+.u-bg--gradient {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: var(--color__primary--400);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  --tw-gradient-to: var(--color__primary--100);
+}
+
+/* ======================================================================
  # _utilities.headings.css
  ====================================================================== */
 
@@ -4536,6 +4703,42 @@ html {
 .u-h6 {
   font-size: 1.125rem;
   color: var(--color__primary--900);
+}
+
+/* -----------------------------------
+ # Caption
+ ----------------------------------- */
+
+.u-caption {
+  font-size: 1.125rem;
+  line-height: 1.3333;
+}
+
+/* -----------------------------------
+ # CTA
+ ----------------------------------- */
+
+.u-cta {
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  line-height: 1.3333;
+}
+
+/* ==========================================================================
+   # _utilities.margins.css
+   ========================================================================== */
+
+.u-mt--big {
+  margin-top: 8rem;
+}
+
+@media (min-width: 1024px) {
+  .u-mt--big {
+    margin-top: 16rem;
+  }
 }
 
 /* ======================================================================
