@@ -230,9 +230,9 @@
   @apply
     flex /* [1] */
     flex-col /* [1] */
-    ;
+  ;
 
-      height: calc(100% - 4rem);
+  height: calc(100% - 4rem);
 }
 
 .c-slider__article-text-container {
