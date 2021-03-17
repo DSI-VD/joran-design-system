@@ -64,6 +64,11 @@
           <td>1 quart</td>
           <td>2 quart</td>
         </tr>
+        <tr>
+          <td><a href="#nowhere">This is a link</a></td>
+          <td><strong>This is strong</strong></td>
+          <td><em>This is emphasis</em></td>
+        </tr>
       </tbody>
     </table>
   </div>

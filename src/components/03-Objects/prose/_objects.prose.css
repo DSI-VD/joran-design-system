@@ -25,17 +25,5 @@
  */
 
 .o-prose a {
-  text-decoration-color: var(--color__primary--900);
-  text-decoration-thickness: 0.1em;
-
-  @apply
-    transition-all
-  ;
-}
-
-.o-prose a:hover {
-  @apply
-    bg-primary-200
-    rounded-t
-  ;
+  @extend %anchor;
 }

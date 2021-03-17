@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add sidebar in _slider_ and refine design
 
+### Fixes
+
+- Fix link in _table_ not displaying correctly
+
 ## [0.0.21] - 2021-03-17
 
 ### Added
