@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add [flickity](https://flickity.metafizzy.co/) library
+
 ### Changed
 
 - Add sidebar in _slider_ and refine design
