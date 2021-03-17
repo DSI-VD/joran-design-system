@@ -105,13 +105,25 @@
 
 .c-slider__sidebar {
     @apply
-        sr-only
-        lg:not-sr-only
+      hidden
     ;
+    
+    @screen lg {
+      @apply
+        block
+        overflow-y-auto
+        mr-8
+        pr-8
+      ;
+      
+      max-height: calc(100% - 10rem);
+    }
 }
 
 .c-slider__sidebar-list {
-
+  @apply
+    mb-4
+  ;
 }
 
 .c-slider__sidebar-list-item {
