@@ -1,42 +1,52 @@
 <div class="c-slider">
-  
   <div class="o-container c-slider__container">
-    
     <div class="c-slider__container-left">
       <h2 class="c-slider__heading">{{ title }}</h2>
-      
+
       <div class="c-slider__sidebar" aria-hidden="true">
-          <ul class="c-slider__sidebar-list o-stack o-stack--small">
-            {% for article in articles %}
-            <li class="c-slider__sidebar-list-item"><a href="#nowhere">{{ article.title }}</a></li>
-            {% endfor %}
-          </ul>
-      </div><!-- /.c-slider__sidebar -->
-    
-    </div><!-- /.c-slider__container-left -->
+        <ul class="c-slider__sidebar-list">
+          {% for article in articles %}
+          <li class="c-slider__sidebar-list-item">
+            <a href="#nowhere">{{ article.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- /.c-slider__sidebar -->
+    </div>
+    <!-- /.c-slider__container-left -->
 
     {% if articles %}
-      <ul class="c-slider__container-right c-slider__list">
-        {% for article in articles %}
-          <li class="c-slider__list-item">
-            <article class="c-slider__article">
-              
-              <div class="c-slider__article-text-container">
-                <h3 class="c-slider__article-heading">{{ article.title }}</h3>
-                <div class="c-slider__article-date"><span class="u-visually-hidden">Date:</span>{{ article.date }}</div>
-                {% render '@button--transparent-alternate-arrow-right', {styleModifier: 'c-slider__article-button', text: 'lire la suite'}, true %}
-              </div>
-              
-              <figure class="c-slider__article-figure" style="background-image: url('{{ article.image.src }}/640x480');">
-                <img class="c-slider__article-image" src="{{ article.image.src }}/640x480" alt="{{ article.image.alt }}">
-              </figure>
-              
-            </article>
-          </li>
-        {% endfor %}
-      </ul>
+    <ul class="c-slider__container-right c-slider__list">
+      {% for article in articles %}
+      <li class="c-slider__list-item">
+        <article class="c-slider__article">
+          <div class="c-slider__article-text-container">
+            <h3 class="c-slider__article-heading">{{ article.title }}</h3>
+            <div class="c-slider__article-date">
+              <span class="u-visually-hidden">Date:</span>{{ article.date }}
+            </div>
+            {% render '@button--transparent-alternate-arrow-right',
+            {styleModifier: 'c-slider__article-button', text: 'lire la suite'},
+            true %}
+          </div>
+
+          <figure
+            class="c-slider__article-figure"
+            style="background-image: url('{{ article.image.src }}/640x480');"
+          >
+            <img
+              class="c-slider__article-image"
+              src="{{ article.image.src }}/640x480"
+              alt="{{ article.image.alt }}"
+            />
+          </figure>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
     {% endif %}
-    
-  </div><!-- /.c-slider__container -->
-  
-</div><!-- /.c-slider -->
+  </div>
+  <!-- /.c-slider__container -->
+</div>
+<!-- /.c-slider -->

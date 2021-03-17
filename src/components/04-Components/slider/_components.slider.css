@@ -78,7 +78,7 @@
 
 .c-slider__container-right {
   @screen lg {
-    flex: 2;
+    flex: 3;
   }
 }
 
@@ -131,8 +131,10 @@
 .c-slider__sidebar-list-item {
   @extend %caption;
   @apply
-    text-primary-100
+    text-primary-200
+    mb-4
   ;
+  max-width: 20ch;
 }
 
 
