@@ -25,6 +25,8 @@
 }
 
 .c-content__heading-text {
+  @extend %h2;
+  
   @apply
     mb-8
   ;
@@ -41,4 +43,15 @@
       items-start
     ;
   }
+}
+
+/* -----------------------------------
+ # Untro
+ ----------------------------------- */
+ 
+.c-content--intro .c-content__heading-text {
+  @extend %h1;
+  @apply
+    text-black
+  ;
 }

@@ -3,9 +3,12 @@
 >
   {% if heading %}
   <div class="c-content__item">
-    <h2 class="c-content__heading-text u-h2">{{ heading }}</h2>
+    <h2 class="c-content__heading-text">{{ heading }}</h2>
   </div>
   {% endif %} {% if content %}
-  <div class="c-content__item o-prose">{{ content | safe }}</div>
+  <div class="c-content__item o-prose">
+    {{ content | safe }}
+    {% if button %}{% render '@button--default-arrow-right', button, true %}{% endif %}
+  </div>
   {% endif %}
 </div>

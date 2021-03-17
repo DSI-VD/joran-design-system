@@ -1,8 +1,0 @@
-<div class="o-container o-stack o-region c-intro">
-  {% if heading %}
-  <h2 class="c-intro__heading">{{ heading }}</h2>
-  {% endif %} {% if content %}
-  <div class="o-prose">{{ content | safe }}</div>
-  {% endif %} {% if more %} {% render '@button--default-arrow-right', {text:
-  more}, true %} {% endif %}
-</div>
