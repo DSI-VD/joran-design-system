@@ -89,11 +89,11 @@
    ----------------------------------- */
 
 .c-slider__heading {
-  @extend %h2;
+  @extend %h1;
 
   @apply
     text-white
-    mb-4
+    mb-8
     ;
 }
 
@@ -104,6 +104,8 @@
    ------------------------------------- */
 
 .c-slider__sidebar {
+    @extend %scrollbar;
+    
     @apply
       hidden
     ;
@@ -116,7 +118,7 @@
         pr-8
       ;
       
-      max-height: calc(100% - 7rem);
+      max-height: calc(100% - 9rem);
     }
 }
 
@@ -140,6 +142,8 @@
    ----------------------------------- */
 
 .c-slider__list {
+  @extend %scrollbar;
+  
   @apply
     flex
     flex-row
@@ -179,26 +183,6 @@
     ;
   }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: #fcfcfc;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: var(--color__primary--900);
-  }
-
-  &::-webkit-scrollbar-corner {
-    background-color: var(--color__primary--900);
-  }
-
-  &::-webkit-scrollbar {
-    width: 0.5rem;
-    height: 0.5rem;
-  }
-
-  -ms-overflow-style: auto;
-  scrollbar-color: #fcfcfc var(--color__primary--900);
-  scrollbar-width: thin;
 }
 
 

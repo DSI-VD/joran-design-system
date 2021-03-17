@@ -157,3 +157,32 @@
 
   line-height: 1.3333;
 }
+
+
+
+/* -----------------------------------
+ # Scrollbar
+ ----------------------------------- */
+ 
+%scrollbar {
+  &::-webkit-scrollbar-thumb {
+    background-color: #fcfcfc;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color__primary--900);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: var(--color__primary--900);
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  -ms-overflow-style: auto;
+  scrollbar-color: #fcfcfc var(--color__primary--900);
+  scrollbar-width: thin;
+}
