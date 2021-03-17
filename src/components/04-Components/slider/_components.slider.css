@@ -216,9 +216,10 @@
   }
 }
 
-/* .c-slider__list .c-slider__list-item:last-child{
+/* .c-slider__list .c-slider__list-item:last-child::after {
+  content: "coucou";
   padding-right: calc( calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin));
-} */ /* [5] */
+} */ /* [5] */ 
 
 
 
