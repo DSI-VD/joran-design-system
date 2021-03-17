@@ -6,7 +6,7 @@ const articleData = [];
 
 for (var i = 0; i < articleCount; i++) {
     articleData.push({
-        title: faker.lorem.words(),
+        title: faker.lorem.sentence(),
         url: faker.internet.url(),
         date: faker.date.past(),
         image: {
