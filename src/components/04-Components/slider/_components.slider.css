@@ -116,7 +116,7 @@
         pr-8
       ;
       
-      max-height: calc(100% - 10rem);
+      max-height: calc(100% - 7rem);
     }
 }
 
@@ -147,8 +147,9 @@
     overflow-x-auto
 
     mb-16
+    
+    h-full
   ;
-  height: calc(100% - 4rem);
   margin: auto calc(var(--c-slider__margin) * -1); /* [3] */
   
   @screen md {
