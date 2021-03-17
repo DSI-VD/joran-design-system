@@ -18,7 +18,7 @@ for (var i = 0; i < articleCount; i++) {
 
 module.exports = {
     context: {
-        title: "Slider",
+        title: "Projets",
         articles: articleData // use our generated list of articles as context data for our template.
     }
 };
