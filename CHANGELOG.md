@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Fix link in _table_ not displaying correctly
+- Set _highlight--with-button_ as ready
 
 ## [0.0.21] - 2021-03-17
 
