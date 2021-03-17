@@ -6,6 +6,12 @@
  * 1. Prevent the page for being the same width as the overflow element on iOS/Safari
  * 2. Calculate the margin to align the first element of the list with the container
  * 3. Make the list item 100% of the screen to make the item scroll side to side
+ *    FIXME: Have to do a media query because 100vw != 100%
+ * 4. Calculate the margin to align the first element of the list with the container
+ *    when not on two columns
+ * 5. FIXME: margin-right on the last element is not applied
+ * 6. Reorder article item's figure and text element vertically
+ * 7. Reorder article item's text vertically to put the date first
  */
 
 .c-slider {
@@ -55,8 +61,26 @@
   @apply
     h-full
   ;
+  
+  @screen lg {
+    @apply
+      flex
+      flex-row
+    ;
+  }
 }
 
+.c-slider__container-left {
+  @screen lg {
+    flex: 1;
+  }
+}
+
+.c-slider__container-right {
+  @screen lg {
+    flex: 2;
+  }
+}
 
 
 
@@ -82,8 +106,19 @@
 .c-slider__sidebar {
     @apply
         sr-only
-          lg:not-sr-only
+        lg:not-sr-only
     ;
+}
+
+.c-slider__sidebar-list {
+
+}
+
+.c-slider__sidebar-list-item {
+  @extend %caption;
+  @apply
+    text-primary-100
+  ;
 }
 
 
@@ -100,9 +135,8 @@
     overflow-x-auto
 
     mb-16
-   ;
-  
-  /* FIXME: Have to do a media query because 100vw != 100% */
+  ;
+  height: calc(100% - 4rem);
   margin: auto calc(var(--c-slider__margin) * -1); /* [3] */
   
   @screen md {
@@ -123,8 +157,14 @@
           -1
         ); /* [3] */
   }
-
-  height: calc(100% - 4rem);
+  
+  @screen lg {
+    @apply
+      ml-0
+      mt-0
+      mb-0
+    ;
+  }
 
   &::-webkit-scrollbar-thumb {
     background-color: #fcfcfc;
@@ -143,20 +183,17 @@
     height: 0.5rem;
   }
 
-    -ms-overflow-style: auto;
+  -ms-overflow-style: auto;
   scrollbar-color: #fcfcfc var(--color__primary--900);
   scrollbar-width: thin;
 }
+
 
 
 /* -----------------------------------
    # List item
    ----------------------------------- */
 
-/***
- * FIXME: margin-right on the last element is not applied
- * 1. Calculate the margin to align the first element of the list with the container
- */
 .c-slider__list-item {
   @apply
     max-w-md
@@ -171,12 +208,18 @@
 }
 
 .c-slider__list .c-slider__list-item:first-child {
-  margin-left: calc(calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin)); /* [2] */ 
+  margin-left: calc(calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin)); /* [4] */ 
+  
+  @screen lg {
+    @apply
+      ml-0 /* [4] */
+    ;
+  }
 }
 
 /* .c-slider__list .c-slider__list-item:last-child{
   padding-right: calc( calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin));
-} */
+} */ /* [5] */
 
 
 
@@ -184,10 +227,6 @@
    # Article
    ----------------------------------- */
 
-/***
- * 1. Reorder figure and text element vertically
- * 2. Reorder text vertically to put the date first
- */
 .c-slider__article {
   @apply
     flex /* [1] */
@@ -199,8 +238,8 @@
 
 .c-slider__article-text-container {
   @apply
-    flex /* [2] */
-    flex-col /* [2] */
+    flex /* [7] */
+    flex-col /* [7] */
   ;
 
   @screen md {
@@ -225,7 +264,7 @@
   @extend %caption;
 
   @apply
-    order-first /* [2] */
+    order-first /* [7] */
     text-primary-100
     flex-initial
 
@@ -242,7 +281,7 @@
 
 .c-slider__article-figure {
   @apply
-    order-first /* [1] */
+    order-first /* [6] */
     bg-primary-800
 
     bg-cover
