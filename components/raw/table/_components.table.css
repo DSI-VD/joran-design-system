@@ -47,3 +47,7 @@
 
   border-top-width: 1px;
 }
+
+.c-table a {
+  @extend %anchor;
+}
