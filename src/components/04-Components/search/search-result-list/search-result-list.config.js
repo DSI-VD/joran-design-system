@@ -14,7 +14,7 @@ for (let i = 0; i < resultCount; i++) {
 
 module.exports = {
   preview: '@preview--bg',
-  status: 'review',
+  status: 'ready',
   context: {
     results: resultData // Use our generated list of results as context data for our template.
   }

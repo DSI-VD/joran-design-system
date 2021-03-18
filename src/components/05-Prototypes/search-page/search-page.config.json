@@ -1,5 +1,6 @@
 {
   "preview": "@preview--prototype",
+  "status": "ready",
   "variants": [
     {
       "preview": "@preview--prototype-blue",
