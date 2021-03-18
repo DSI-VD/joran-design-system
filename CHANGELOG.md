@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Set _search-input_ as ready
+- Set _search-item_ as ready
 - Fix link in _table_ not displaying correctly
 - Set _highlight--with-button_ as ready
 
