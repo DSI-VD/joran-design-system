@@ -4,7 +4,7 @@
 
 /***
  * 1. Prevent the page for being the same width as the overflow element on iOS/Safari
- * 2. Calculate the margin to align the first element of the list with the container
+ * 2. Calculate the margin to align the first element of the list with the container. Those values should be map with `.o-container--large`
  * 3. Make the list item 100% of the screen to make the item scroll side to side
  *    FIXME: Have to do a media query because 100vw != 100%
  * 4. Calculate the margin to align the first element of the list with the container
@@ -24,22 +24,22 @@
   }
 
   @screen md {
-    --c-slider__margin: 2rem; /* [2] */
+    --c-slider__margin: 0.5rem; /* [2] */
     --c-slider__container-width: 768px; /* [2] */
   }
 
   @screen lg {
-    --c-slider__margin: 4rem; /* [2] */
+    --c-slider__margin: 1rem; /* [2] */
     --c-slider__container-width: 1024px; /* [2] */
   }
 
   @screen xl {
-    --c-slider__margin: 8rem; /* [2] */
+    --c-slider__margin: 2rem; /* [2] */
     --c-slider__container-width: 1280px; /* [2] */
   }
 
   @screen 2xl {
-    --c-slider__margin: 16rem; /* [2] */
+    --c-slider__margin: 4rem; /* [2] */
     --c-slider__container-width: 1536px; /* [2] */
   }
 
@@ -79,6 +79,9 @@
 .c-slider__container-right {
   @screen lg {
     flex: 3;
+  }
+  @screen xl {
+    flex: 4;
   }
 }
 
