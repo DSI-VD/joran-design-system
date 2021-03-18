@@ -2249,12 +2249,6 @@ html {
   margin-bottom: 0;
 }
 
-.o-prose .c-button-default {
-  --tw-text-opacity: 1 !important;
-  color: rgba(252, 252, 252, var(--tw-text-opacity)) !important;
-  text-decoration: none !important;
-}
-
 @media (min-width: 768px) {
   .o-prose {
     font-size: 1.25rem;
@@ -2844,7 +2838,7 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.prose .c-button-default {
+.o-prose .c-button--default {
   --tw-text-opacity: 1 !important;
   color: rgba(252, 252, 252, var(--tw-text-opacity)) !important;
   text-decoration: none !important;
@@ -2902,6 +2896,22 @@ html {
 }
 
 .c-content__heading-text {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--color__primary--900);
+  line-height: 1.1429;
+}
+
+@media (min-width: 768px) {
+
+.c-content__heading-text {
+    line-height: 1.1176;
+
+    font-size: 2.125rem;
+}
+  }
+
+.c-content__heading-text {
   margin-bottom: 2rem;
 }
 
@@ -2914,6 +2924,51 @@ html {
     flex-direction: row;
     align-items: flex-start;
   }
+}
+
+/* -----------------------------------
+ # Intro
+ ----------------------------------- */
+
+.c-content--intro {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .c-content--intro {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-content--intro {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.c-content--intro .c-content__heading-text {
+  font-weight: 700;
+  font-size: 2.375rem;
+  color: var(--color__primary--900);
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+@media (min-width: 768px) {
+
+.c-content--intro .c-content__heading-text {
+    line-height: 1.0833;
+
+    font-size: 3rem;
+}
+  }
+
+.c-content--intro .c-content__heading-text {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 /* ======================================================================
@@ -3281,37 +3336,6 @@ html {
   background-color: var(--color__primary--100);
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-/* ======================================================================
-   # _components.intro.css
-   ====================================================================== */
-
-.c-intro__heading {
-  font-weight: 700;
-  font-size: 2.375rem;
-  color: var(--color__primary--900);
-  text-transform: uppercase;
-  line-height: 1.05;
-}
-
-@media (min-width: 768px) {
-
-.c-intro__heading {
-    line-height: 1.0833;
-
-    font-size: 3rem;
-}
-  }
-
-.c-intro__heading {
-  --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
-}
-
-.c-intro__more-btn {
-  margin-right: 1rem;
-  margin-left: 1.25rem;
 }
 
 /* ======================================================================

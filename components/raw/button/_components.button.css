@@ -65,7 +65,7 @@
     ;
 }
 
-.prose .c-button-default {
+.o-prose .c-button--default {
   @apply no-underline text-white !important;
 }
 

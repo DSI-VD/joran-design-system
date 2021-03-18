@@ -180,7 +180,7 @@
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-content&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text u-h2&quot;</span>&gt;</span>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text&quot;</span>&gt;</span>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -196,10 +196,13 @@
 &gt;</span>
   </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> heading %}</span><span class="xml">
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text u-h2&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"> </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> content %}</span><span class="xml">
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item o-prose&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ content | safe }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item o-prose&quot;</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{ content | safe }}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> button %}</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="button--default-arrow-right.html">@button--default-arrow-right</a>&#x27;, button, true %}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
@@ -271,6 +274,8 @@
 }
 
 <span class="hljs-selector-class">.c-content__heading-text</span> {
+  <span class="hljs-keyword">@extend</span> %h2;
+  
   <span class="hljs-keyword">@apply</span>
     mb-<span class="hljs-number">8</span>
   ;
@@ -288,7 +293,25 @@
     ;
   }
 }
-</pre>
+
+<span class="hljs-comment">/* -----------------------------------
+ # Intro
+ ----------------------------------- */</span>
+ 
+<span class="hljs-selector-class">.c-content--intro</span> {
+  <span class="hljs-keyword">@apply</span>
+    py-<span class="hljs-number">8</span>
+    <span class="hljs-attribute">md</span>:py-<span class="hljs-number">16</span>
+    <span class="hljs-attribute">lg</span>:py-<span class="hljs-number">32</span>
+  ;
+} 
+ 
+<span class="hljs-selector-class">.c-content--intro</span> <span class="hljs-selector-class">.c-content__heading-text</span> {
+  <span class="hljs-keyword">@extend</span> %h1;
+  <span class="hljs-keyword">@apply</span>
+    text-black
+  ;
+}</pre>
                             </code>
                             
                         </div>
@@ -304,7 +327,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">637 Bytes</span>
+                    <span class="Meta-value">908 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -343,6 +366,15 @@
             <strong class="Meta-key">Filesystem Path:</strong>
             <span class="Meta-value">src/components/04-Components/content/content.nunj</span>
         </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="button--default-arrow-right.html">@<span>button--default-arrow-right</span></a>
+            
+            </span>
+        </li class="Meta-item">
         
         
     </ul>
@@ -1599,32 +1631,6 @@
     
         
         
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="intro--default.html" data-role="tree-link" data-pjax data-handle="intro">
-                <span>Intro</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
             
             
             <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-logo">
@@ -2247,8 +2253,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-18T07:18:13.280Z">
-                                18.03.2021 à 08:18:13
+                            <time datetime="2021-03-18T09:50:50.240Z">
+                                18.03.2021 à 10:50:50
                             </time>
                         
                     </dd>
@@ -3356,6 +3362,32 @@
         </li>
         
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content--intro.html" data-role="tree-link" data-pjax data-handle="content">
+                <span>Intro</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
     </ul>
 </div>
@@ -3543,133 +3575,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="highlight--with-button.html" data-role="tree-link" data-pjax data-handle="highlight">
                 <span>With Button</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-    </ul>
-</div>
-
-            </div>
-        
-    
-        
-            
-            <div class="Navigation-group" data-role="variant-group" data-component="intro">
-                
-<div class="Tree" data-behaviour="tree" id="tree-intro-variants">
-    <div class="Tree-header">
-        <h3 class="Tree-title">Intro Variants</h3>
-
-        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
-
-        </button>
-    </div>
-    <ul class="Tree-items Tree-depth-1">
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="intro--default.html" data-role="tree-link" data-pjax data-handle="intro">
-                <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="intro--heading-text.html" data-role="tree-link" data-pjax data-handle="intro">
-                <span>Heading and text</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="intro--heading-link.html" data-role="tree-link" data-pjax data-handle="intro">
-                <span>Heading and link</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="intro--text-link.html" data-role="tree-link" data-pjax data-handle="intro">
-                <span>Text and link</span>
                 
 
 <div class="Status Status--unlabelled">
