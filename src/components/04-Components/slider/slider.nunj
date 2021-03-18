@@ -1,5 +1,5 @@
 <div class="c-slider">
-  <div class="o-container c-slider__container">
+  <div class="o-container o-container--large c-slider__container">
     <div class="c-slider__container-left">
       <h2 class="c-slider__heading">{{ title }}</h2>
 

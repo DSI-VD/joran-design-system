@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Use a larger container to display _slider_
 - Add sidebar in _slider_ and refine design
 - Fix input type in _search-input_
 
