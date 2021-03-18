@@ -1,0 +1,52 @@
+<div class="c-slider-js">
+  <div class="o-container o-container--large c-slider-js__container">
+    <div class="c-slider-js__container-left">
+      <h2 class="c-slider-js__heading">{{ title }}</h2>
+
+      <div class="c-slider-js__sidebar" aria-hidden="true">
+        <ul class="c-slider-js__sidebar-list">
+          {% for article in articles %}
+          <li class="c-slider-js__sidebar-list-item">
+            <a href="#nowhere">{{ article.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- /.c-slider-js__sidebar -->
+    </div>
+    <!-- /.c-slider-js__container-left -->
+
+    {% if articles %}
+    <div class="c-slider-js__container-right c-slider-js__carousel">
+      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "pageDots": false, "contain": true, "freeScroll": true }'>
+        {% for article in articles %}
+          <article class="c-slider-js__article carousel-cell">
+            <div class="c-slider-js__article-text-container">
+              <h3 class="c-slider-js__article-heading">{{ article.title }}</h3>
+              <div class="c-slider-js__article-date">
+                <span class="u-visually-hidden">Date:</span>{{ article.date }}
+              </div>
+              {% render '@button--transparent-alternate-arrow-right',
+              {styleModifier: 'c-slider-js__article-button', text: 'lire la suite'},
+              true %}
+            </div>
+  
+            <figure
+              class="c-slider-js__article-figure"
+              style="background-image: url('{{ article.image.src }}/640x480');"
+            >
+              <img
+                class="c-slider-js__article-image"
+                src="{{ article.image.src }}/640x480"
+                alt="{{ article.image.alt }}"
+              />
+            </figure>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  <!-- /.c-slider-js__container -->
+</div>
+<!-- /.c-slider-js -->

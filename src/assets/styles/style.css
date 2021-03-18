@@ -22,6 +22,7 @@
 
 /* Vendors */
 @import "./_vendors.*.css";
+@import "../../../node_modules/flickity/css/flickity.css";
 
 /* Utilities */
 @import "../../components/**/_utilities.*.css";

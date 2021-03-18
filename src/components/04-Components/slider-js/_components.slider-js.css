@@ -1,0 +1,210 @@
+/* ======================================================================
+   # _components.slider.css
+   ====================================================================== */
+
+/***
+ * 1. Prevent the page for being the same width as the overflow element on iOS/Safari
+ * 2. Calculate the margin to align the first element of the list with the container. Those values should be map with `.o-container--large`
+ * 3. Make the list item 100% of the screen to make the item scroll side to side
+ *    FIXME: Have to do a media query because 100vw != 100%
+ * 4. Calculate the margin to align the first element of the list with the container
+ *    when not on two columns
+ * 5. FIXME: margin-right on the last element is not applied
+ * 6. Reorder article item's figure and text element vertically
+ * 7. Reorder article item's text vertically to put the date first
+ */
+
+.c-slider-js {
+  @apply
+    bg-primary
+
+    py-16
+    h-screen
+
+    overflow-x-hidden
+    relative /* [1] */
+    ;
+
+  min-height: 40rem;
+  max-height: 64rem;
+}
+
+.c-slider-js__container {
+  @apply
+    flex
+    flex-row
+  ;
+}
+
+.c-slider-js__container-left {
+  @apply
+    hidden
+  ;
+  
+  @screen lg {
+    @apply
+      block
+      overflow-y-auto
+      mr-8
+      pr-8
+    ;
+    
+    flex: 1;
+  }
+}
+
+.c-slider-js__container-right {
+  @apply
+    w-full
+  ;
+  flex: 3;
+}
+
+
+
+/* -----------------------------------
+ # Heading
+ ----------------------------------- */
+
+.c-slider-js__heading {
+@extend %h1;
+
+@apply
+  text-white
+  mb-8
+  ;
+}
+
+
+
+/* -----------------------------------
+ # Sidebar
+ ----------------------------------- */
+
+.c-slider-js__sidebar-list {
+  @apply
+    mb-4
+  ;
+}
+
+.c-slider-js__sidebar-list-item {
+  @extend %caption;
+  @apply
+    text-primary-200
+    mb-4
+  ;
+}
+
+/* -----------------------------------
+ # Article
+ ----------------------------------- */
+ 
+/*
+article
+┌─────────────────────────────────────────┐
+│  article-figure                         │
+│ ┌─────────────────────────────────────┐ │
+│ │                                     │ │
+│ │                                     │ │
+│ │                                     │ │
+│ │                                     │ │
+│ │                                     │ │
+│ └─────────────────────────────────────┘ │
+│  article-text-container                 │
+│ ┌─────────────────────────────────────┐ │
+│ │  article-date                       │ │
+│ │ ┌─────────────────────────────────┐ │ │
+│ │ │                                 │ │ │
+│ │ └─────────────────────────────────┘ │ │
+│ │  article-heading                    │ │
+│ │ ┌─────────────────────────────────┐ │ │
+│ │ │                                 │ │ │
+│ │ └─────────────────────────────────┘ │ │
+│ │  article-button                     │ │
+│ │ ┌─────────────────────────────────┐ │ │
+│ │ │                                 │ │ │
+│ │ └─────────────────────────────────┘ │ │
+│ │                                     │ │
+│ └─────────────────────────────────────┘ │
+│                                         │
+└─────────────────────────────────────────┘
+*/
+
+.c-slider-js__article {
+  width: 20rem;
+  max-width: 75vw;
+  height: 30rem;
+  @apply
+    flex
+    flex-col
+    mr-4
+  ;
+}
+
+
+
+.c-slider-js__article-figure {
+  @apply
+    order-first
+    bg-primary-800
+
+    bg-cover
+    bg-center
+
+    rounded
+    mb-2
+    
+    flex-1
+  ;
+}
+
+.c-slider-js__article-image {
+  @apply
+    sr-only
+    ;
+}
+
+
+
+.c-slider-js__article-text-container {
+  @apply
+    flex /* [7] */
+    flex-col /* [7] */
+  ;
+
+  @screen md {
+    @apply
+      border-l
+      border-white
+      pl-4
+    ;
+  }
+}
+
+.c-slider-js__article-heading {
+  @extend %h3;
+
+  @apply
+    text-white
+    flex-initial
+    ;
+}
+
+.c-slider-js__article-date {
+  @extend %caption;
+
+  @apply
+    order-first /* [7] */
+    text-primary-100
+    flex-initial
+
+    mb-1
+  ;
+}
+
+.c-slider-js__article-button {
+  @apply
+    text-white
+    flex-initial
+    ;
+}
