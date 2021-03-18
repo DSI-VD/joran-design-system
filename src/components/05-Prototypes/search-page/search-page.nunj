@@ -3,7 +3,6 @@
 
   <main class="c-page__main o-stack">
     
-    
     <h1 class="u-visually-hidden">Titre de la page</h1>
     
     {% render '@search-input',  { styleModifier: "u-mt--big" }, true %}
