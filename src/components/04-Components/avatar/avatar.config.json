@@ -1,5 +1,6 @@
 {
   "status": "ready",
+  "preview": "@preview--bg",
   "context": {
     "src": "https://source.unsplash.com/100x100/?face"
   },

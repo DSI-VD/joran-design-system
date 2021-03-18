@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Increase shadow of _avatar_
 - Fix _search-list_ margin of title
 - Set _search-input_ as ready
 - Set _search-item_ as ready
