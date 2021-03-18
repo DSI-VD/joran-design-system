@@ -4,14 +4,13 @@
 
 .c-avatar {
   @apply
+    inline-block
     rounded-full
     h-24
     w-24
-    flex
-    items-center
-    justify-center
-    shadow
+    shadow-md
     bg-primary-600
+    
   ;
 }
 

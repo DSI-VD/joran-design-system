@@ -2654,11 +2654,9 @@ html {
 .c-avatar {
   background-color: var(--color__primary--600);
   border-radius: 9999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   height: 6rem;
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   width: 6rem;
 }
@@ -2793,7 +2791,7 @@ html {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2855,7 +2853,7 @@ html {
 }
 
 .c-button--transparent:hover, .c-button--transparent:active {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
 /***
@@ -2870,7 +2868,7 @@ html {
 }
 
 .c-button--transparent-alt:hover, .c-button--transparent-alt:active {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
 /* ======================================================================
@@ -4014,9 +4012,21 @@ html {
   }
 
 .c-search-result-list__heading {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .c-search-result-list__heading {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-search-result-list__heading {
+    margin-bottom: 4rem;
+  }
 }
 
 /* ======================================================================
