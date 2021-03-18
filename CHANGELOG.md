@@ -14,9 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Add sidebar in _slider_ and refine design
+- Fix input type in _search-input_
 
 ### Fixes
 
+- Set _search-input_ as ready
 - Fix link in _table_ not displaying correctly
 - Set _highlight--with-button_ as ready
 

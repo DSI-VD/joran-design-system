@@ -3,7 +3,7 @@
   <form class="c-search-input{% if styleModifier %} {{ styleModifier }}{% endif %}" 
         action="#">
         <label for="search" class="u-visually-hidden">Recherche</label>
-        <input id="search" class="c-search-input__field" type="text">
+        <input id="search" class="c-search-input__field" type="search">
         <button type="submit" class="c-search-input__button">
           {% render '@svg-search' %}
         </button>
