@@ -10,11 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add [flickity](https://flickity.metafizzy.co/) library
+- Add _content--intro_ component to replace _intro_ and fix some design aspects
 
 ### Changed
 
 - Add sidebar in _slider_ and refine design
 - Fix input type in _search-input_
+
+### Removed
+
+- _intro_ component has been removed and replaced with _content--intro_
 
 ### Fixes
 

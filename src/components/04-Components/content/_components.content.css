@@ -25,6 +25,8 @@
 }
 
 .c-content__heading-text {
+  @extend %h2;
+  
   @apply
     mb-8
   ;
@@ -41,4 +43,23 @@
       items-start
     ;
   }
+}
+
+/* -----------------------------------
+ # Intro
+ ----------------------------------- */
+ 
+.c-content--intro {
+  @apply
+    py-8
+    md:py-16
+    lg:py-32
+  ;
+} 
+ 
+.c-content--intro .c-content__heading-text {
+  @extend %h1;
+  @apply
+    text-black
+  ;
 }
