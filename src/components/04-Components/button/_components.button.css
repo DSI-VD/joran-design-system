@@ -13,7 +13,7 @@
 
     max-w-max
 
-    transition
+    transition-all
     ;
 }
 
@@ -86,7 +86,7 @@
 .c-button--transparent:hover,
 .c-button--transparent:active {
   @apply
-    tracking-wider
+    tracking-widest
   ;
 }
 
@@ -107,6 +107,6 @@
 .c-button--transparent-alt:hover,
 .c-button--transparent-alt:active {
   @apply
-    tracking-wider
+    tracking-widest
   ;
 }
