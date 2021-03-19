@@ -102,7 +102,7 @@
     xl:border-l
     xl:border-white
     xl:rounded-none
-    xl:px-4
+    xl:px-3
     xl:py-2
   ;
 }
@@ -191,11 +191,14 @@
 }
 
 .c-nav__list--level {
-  opacity: 0;
-  visibility: hidden;
-  display: none;
+  @apply
+    opacity-0
+    invisible
+    hidden
+    z-0
+  ;
+
   right: -100vw;
-  z-index: 0;
 }
 
 .js-c-nav__list--open {
