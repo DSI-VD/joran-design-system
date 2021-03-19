@@ -11,7 +11,7 @@
     </button>
     <div class="c-nav__list-container">
       <div class="c-nav__search-bar">
-        <a href="#nowhere" class="c-button--search">Rechercher</a>
+        <a href="#nowhere" class="c-button--search">{% render '@svg-search' %} <span>Rechercher</span></a>
       </div>
       <ul class="c-nav__level-indicator">
       </ul>

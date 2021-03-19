@@ -52,13 +52,15 @@
 }
 
 .c-nav__logo-text {
-  font-size: 1.125rem;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0.05625rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  margin-left: 1.125rem;
+  @apply
+    not-italic
+    uppercase
+    font-medium
+    ml-4
+    leading-6
+    text-base
+    tracking-wider
+  ;
 }
 
 /* -----------------------------------
@@ -93,7 +95,30 @@
     bg-white
     rounded
     text-primary
-    block
+    flex
+    items-center
+    xl:bg-transparent
+    xl:text-white
+    xl:border-l
+    xl:border-white
+    xl:rounded-none
+    xl:px-4
+    xl:py-2
+  ;
+}
+
+.c-nav__search-bar .c-button--search svg {
+  @apply
+    h-full
+    w-5
+    mr-4
+    xl:mr-0
+  ;
+}
+
+.c-nav__search-bar .c-button--search span {
+  @apply
+    xl:sr-only
   ;
 }
 
@@ -175,7 +200,7 @@
 
 .js-c-nav__list--open {
   @apply
-    opacity-0
+    opacity-100
     z-50
     visible
     block
