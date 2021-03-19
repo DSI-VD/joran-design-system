@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add _slider-js_ component
 - Add [flickity](https://flickity.metafizzy.co/) library
 - Add _content--intro_ component to replace _intro_ and fix some design aspects
 
