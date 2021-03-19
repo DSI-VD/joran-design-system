@@ -6,7 +6,9 @@
    # b-nav--open (class for body when nav is open)
    ----------------------------------- */
 .js-b-nav--open {
-  overflow-y: hidden;
+  @apply
+    overflow-y-hidden
+  ;
 }
 
 /* -----------------------------------
@@ -21,9 +23,9 @@
     top-0
     w-full
     z-50
+    overflow-y-hidden
   ;
 
-  overflow-y: hidden;
   transition: background-color 0.15s ease-out;
   will-change: background-color;
 }
@@ -31,10 +33,9 @@
 .js-c-nav--open {
   @apply
     bg-primary-600
+    h-screen
+    overflow-y-scroll
   ;
-
-  overflow-y: scroll;
-  height: 100vh;
 }
 
 .js-c-nav--sticky {
@@ -70,6 +71,7 @@
     justify-between
     items-center
     relative
+    xl:flex-nowrap
   ;
 }
 
@@ -80,6 +82,8 @@
   @apply
     mt-6
     mb-4
+    xl:order-last
+    xl:m-0
   ;
 }
 
@@ -100,8 +104,12 @@
 }
 
 .c-nav__toggle {
-  width: 30px;
-  height: 30px;
+  @apply
+    w-7
+    h-7
+    xl:hidden
+    xl:invisible
+  ;
 }
 
 /* -----------------------------------
@@ -113,6 +121,10 @@
     w-full
     invisible
     hidden
+    xl:flex
+    xl:visible
+    xl:w-auto
+    xl:items-center
   ;
 }
 
@@ -138,9 +150,19 @@
     w-full
     top-0
     pb-10
+    xl:static
+    xl:pb-0
+    xl:flex
   ;
 
   transition: transform 0.35s ease, opacity 0.25s ease 0.15s;
+}
+
+.c-nav__list-item {
+  @apply
+    xl:flex
+    xl:self-center
+  ;
 }
 
 .c-nav__list--level {
@@ -152,10 +174,12 @@
 }
 
 .js-c-nav__list--open {
-  opacity: 1;
-  visibility: visible;
-  display: block;
-  z-index: 100;
+  @apply
+    opacity-0
+    z-50
+    visible
+    block
+  ;
 }
 
 .js-c-nav__list--hide {
@@ -175,10 +199,11 @@
     pr-6
     block
     relative
+    w-full
+    text-left
+    xl:w-auto
+    xl:px-3
   ;
-
-  width: 100%;
-  text-align: left;
 }
 
 .c-nav__list-link:focus {
@@ -192,6 +217,8 @@
     absolute
     right-0
     top-2
+    xl:invisible
+    xl:hidden
   ;
 
   /* @todo change with correct icon */
