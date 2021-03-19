@@ -15,6 +15,8 @@
  */
 
 .c-slider-js {
+  --c-slider-js__height: 75vh;
+  
   @apply
     bg-primary
 
@@ -35,10 +37,17 @@
     flex-col
     lg:flex-row
   ;
+  
+  height: var(--c-slider-js__height);
 }
 
 .c-slider-js__container-left {
     flex: 1;
+    
+    @apply
+      flex
+      flex-col
+    ;
 }
 
 .c-slider-js__container-right {
@@ -68,6 +77,18 @@
 /* -----------------------------------
  # Sidebar
  ----------------------------------- */
+
+.c-slider-js__sidebar {
+  @extend %scrollbar;
+  
+  @apply
+    max-h-full
+    overflow-y-auto
+    
+    mr-8
+    pr-8
+  ;
+}
 
 .c-slider-js__sidebar-list {
   @apply
@@ -131,7 +152,7 @@ article
 .c-slider-js__article {
   width: 20rem;
   max-width: 75vw;
-  height: 75vh;
+  height: var(--c-slider-js__height);
   @apply
     flex
     flex-col
