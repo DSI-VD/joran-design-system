@@ -259,6 +259,8 @@
 .c-nav__level-indicator {
   @apply
     mb-6
+    xl:invisible
+    xl:hidden
   ;
 
   min-height: 28px;
