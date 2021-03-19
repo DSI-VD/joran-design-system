@@ -32,25 +32,13 @@
 .c-slider-js__container {
   @apply
     flex
-    flex-row
+    flex-col
+    lg:flex-row
   ;
 }
 
 .c-slider-js__container-left {
-  @apply
-    hidden
-  ;
-  
-  @screen lg {
-    @apply
-      block
-      overflow-y-auto
-      mr-8
-      pr-8
-    ;
-    
     flex: 1;
-  }
 }
 
 .c-slider-js__container-right {
@@ -84,7 +72,17 @@
 .c-slider-js__sidebar-list {
   @apply
     mb-4
+    hidden
   ;
+
+  @screen lg {
+    @apply
+      block
+      overflow-y-auto
+      mr-8
+      pr-8
+    ;
+  }
 }
 
 .c-slider-js__sidebar-list-item {
