@@ -157,13 +157,20 @@
 .c-slider-js__sidebar-list-link {
   @extend %caption;
   @apply
-    text-primary-400
+    text-primary-200
     transition-colors
   ;
   
-  &:hover {
+  &:hover,
+  &:active {
     @apply
       text-white
+    ;
+  }
+  
+  &:focus {
+    @apply
+      outline-focus
     ;
   }
 }
