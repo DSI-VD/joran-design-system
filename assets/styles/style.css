@@ -1646,6 +1646,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* -----------------------------------
+ # Body
+ ----------------------------------- */
+
+body {
+  min-height: 100vh;
+}
+
 /* Objects */
 
 /* ======================================================================
@@ -4035,12 +4043,67 @@ html {
    # _components.slider.css
    ====================================================================== */
 
+/***
+ * 1. Make the list item 100% of the screen to make the item scroll side to side
+ * 2. Prevent the page for being the same width as the overflow element on iOS/Safari
+ */
+
 .c-slider-js {
   --c-slider-js__min-height: 25rem;
   --c-slider__prev-next-position: -6.4rem;
   --c-slider__dots-position: -4rem;
   --c-slider-js__padding: 4rem;
   --c-slider-js__height: 75vh; /* Do not work with `%` because slider can't calculate height */
+  --c-slider__margin: 1rem; /* [1] */
+  --c-slider__container-width: 100%;
+}
+
+/* [1] */
+
+@media (min-width: 640px) {
+
+.c-slider-js {
+    --c-slider__container-width: 640px; /* [1] */
+}
+  }
+
+@media (min-width: 768px) {
+
+.c-slider-js {
+    --c-slider__margin: 0.5rem; /* [1] */
+
+    --c-slider__container-width: 768px; /* [1] */
+}
+  }
+
+@media (min-width: 1024px) {
+
+.c-slider-js {
+    --c-slider__margin: 1rem; /* [1] */
+
+    --c-slider__container-width: 1024px; /* [1] */
+}
+  }
+
+@media (min-width: 1280px) {
+
+.c-slider-js {
+    --c-slider__margin: 2rem; /* [1] */
+
+    --c-slider__container-width: 1280px; /* [1] */
+}
+  }
+
+@media (min-width: 1536px) {
+
+.c-slider-js {
+    --c-slider__margin: 4rem; /* [1] */
+
+    --c-slider__container-width: 1536px; /* [1] */
+}
+  }
+
+.c-slider-js {
   background-color: var(--color__primary--900);
   height: 100vh;
   overflow-x: hidden;
@@ -4072,9 +4135,33 @@ html {
 }
 
 .c-slider-js__container-right {
-  width: 100%;
   flex: 3;
+  margin-right: calc(var(--c-slider__margin) * -1);
 }
+
+/* [2] */
+
+@media (min-width: 640px) {
+
+.c-slider-js__container-right {
+    margin-right:
+      calc(
+        calc(
+          calc(
+            calc(
+              100vw - var(--c-slider__container-width)
+            )
+            /
+            2
+          )
+          +
+          var(--c-slider__margin)
+        )
+        *
+        -1
+      ) /* [2] */
+}
+  }
 
 /* -----------------------------------
  # Heading
@@ -4156,13 +4243,29 @@ html {
   }
 
 .c-slider-js__sidebar-list-item {
-  font-size: 1.125rem;
-  line-height: 1.3333;
+  margin-bottom: 1rem;
 }
 
-.c-slider-js__sidebar-list-item {
-  margin-bottom: 1rem;
+.c-slider-js__sidebar-list-link {
+  font-size: 1.125rem;
+  line-height: 1.3333
+}
+
+.c-slider-js__sidebar-list-link {
   color: var(--color__primary--200);
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.c-slider-js__sidebar-list-link:hover, .c-slider-js__sidebar-list-link:active {
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+}
+
+.c-slider-js__sidebar-list-link:focus {
+  outline: 3px solid #FFB703;
+  outline-offset: 1px;
 }
 
 /* -----------------------------------
@@ -4325,6 +4428,14 @@ article
 .c-slider-js .flickity-prev-next-button.previous,
 .c-slider-js .flickity-prev-next-button.next {
   bottom: var(--c-slider__prev-next-position); /* [3] */
+}
+
+.c-slider-js .flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.c-slider-js .flickity-prev-next-button.next {
+  right: var(--c-slider__margin);
 }
 
 /* ======================================================================
