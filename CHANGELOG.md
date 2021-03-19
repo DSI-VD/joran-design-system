@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Scoped Revenge CSS. You need to put `.debug` class on the `<body>` to lint accessibility issues
 - Fix transition for hovered transparent button
 - Increase tracking when a transparent button is hovered
 - Increase shadow of _avatar_
