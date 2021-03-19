@@ -2,32 +2,24 @@
    # _components.slider.css
    ====================================================================== */
 
-/***
- * 1. Prevent the page for being the same width as the overflow element on iOS/Safari
- * 2. Calculate the margin to align the first element of the list with the container. Those values should be map with `.o-container--large`
- * 3. Make the list item 100% of the screen to make the item scroll side to side
- *    FIXME: Have to do a media query because 100vw != 100%
- * 4. Calculate the margin to align the first element of the list with the container
- *    when not on two columns
- * 5. FIXME: margin-right on the last element is not applied
- * 6. Reorder article item's figure and text element vertically
- * 7. Reorder article item's text vertically to put the date first
- */
-
 .c-slider-js {
-  --c-slider-js__height: 75vh; /* Do not work with `px` because slider can't calculate height */
   --c-slider-js__min-height: 25rem;
+  --c-slider__prev-next-position: -6.4rem;
+  --c-slider__dots-position: -4rem;
+  --c-slider-js__padding: 4rem;
+  --c-slider-js__height: 75vh; /* Do not work with `%` because slider can't calculate height */
   
   @apply
     bg-primary
-
-    py-16
+    
     h-screen
 
     overflow-x-hidden
     relative /* [1] */
     ;
-
+  
+  padding-top: var(--c-slider-js__padding);
+  padding-bottom: var(--c-slider-js__padding);
   min-height: var(--c-slider-js__min-height);
 }
 
@@ -149,14 +141,23 @@ article
 └─────────────────────────────────────────┘
 */
 
+/***
+ * 1. Put image visually before text
+ * 2. Image take all available space and push the text at the bottom
+ * 3. Hide `<img>` tag and make it visible only for print and screen reader
+ * 4. Reorder text content. Date first then heading and finally the button
+ * 5. Add a line ont the left of the text when on desktop
+ */
+
+
 .c-slider-js__article {
   min-width: 20rem;
   width: 25vw;
   max-width: 75vw;
   height: var(--c-slider-js__height);
   @apply
-    flex
-    flex-col
+    flex /* [1] */
+    flex-col /* [1] */
     mr-4
   ;
 }
@@ -165,7 +166,7 @@ article
 
 .c-slider-js__article-figure {
   @apply
-    order-first
+    order-first /* [1] */
     bg-primary-800
 
     bg-cover
@@ -174,13 +175,13 @@ article
     rounded
     mb-2
     
-    flex-1
+    flex-1 /* [2] */
   ;
 }
 
 .c-slider-js__article-image {
   @apply
-    sr-only
+    sr-only /* [3] */
     ;
 }
 
@@ -188,15 +189,15 @@ article
 
 .c-slider-js__article-text-container {
   @apply
-    flex /* [7] */
-    flex-col /* [7] */
+    flex /* [4] */
+    flex-col /* [4] */
   ;
 
   @screen md {
     @apply
-      border-l
-      border-white
-      pl-4
+      border-l /* [5] */
+      border-white /* [5] */
+      pl-4 /* [5] */
     ;
   }
 }
@@ -206,7 +207,6 @@ article
 
   @apply
     text-white
-    flex-initial
     ;
 }
 
@@ -214,9 +214,8 @@ article
   @extend %caption;
 
   @apply
-    order-first /* [7] */
+    order-first /* [1] */
     text-primary-100
-    flex-initial
 
     mb-1
   ;
@@ -225,6 +224,46 @@ article
 .c-slider-js__article-button {
   @apply
     text-white
-    flex-initial
-    ;
+  ;
+}
+
+/* -----------------------------------
+ # Flickity
+ ----------------------------------- */
+ 
+ 
+/***
+ * 1. Position dots
+ * 2. Transform dots into lines
+ * 3. Position prev & next button
+ * 4. Fix dots line being over prev and next button and making them not 
+ *    100% clickable
+ */
+
+.c-slider-js .flickity-page-dots {
+  bottom: var(--c-slider__dots-position); /* [1] */
+}
+
+/* dots are lines */
+.c-slider-js .flickity-page-dots .dot {
+  height: .25rem; /* [2] */
+  width: 1.5vw; /* [2] */
+  margin: 0; /* [2] */
+  border-radius: 0; /* [2] */
+}
+
+.c-slider-js .flickity-page-dots .dot.is-selected {
+  @apply
+    bg-white
+  ;
+}
+
+.c-slider-js .flickity-prev-next-button {
+  top: auto; /* [3] */
+  z-index: 20; /* [4] */
+}
+
+.c-slider-js .flickity-prev-next-button.previous,
+.c-slider-js .flickity-prev-next-button.next {
+  bottom: var(--c-slider__prev-next-position); /* [3] */
 }
