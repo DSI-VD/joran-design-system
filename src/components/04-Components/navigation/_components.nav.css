@@ -157,12 +157,14 @@
   @apply
     visible
     block
+    xl:flex
   ;
 }
 
 .c-nav__list-wrapper {
   @apply
     relative
+    xl:static
   ;
 }
 
@@ -183,19 +185,13 @@
   transition: transform 0.35s ease, opacity 0.25s ease 0.15s;
 }
 
-.c-nav__list-item {
-  @apply
-    xl:flex
-    xl:self-center
-  ;
-}
-
 .c-nav__list--level {
   @apply
     opacity-0
     invisible
     hidden
     z-0
+    xl:flex-wrap
   ;
 
   right: -100vw;
@@ -207,6 +203,32 @@
     z-50
     visible
     block
+    xl:absolute
+    xl:top-40
+    xl:left-14
+    xl:flex
+  ;
+}
+
+.js-c-nav__list--open .c-nav__list {
+  @apply
+    xl:block
+    xl:visible
+    xl:opacity-100
+  ;
+}
+
+.c-nav__list--level-1:not(.c-nav_list--level-2) > .c-nav__list-item {
+  @apply
+    lg:w-80
+    lg:mb-10
+  ;
+}
+
+.c-nav__list--level-1:not(.c-nav_list--level-2) > .c-nav__list-item > .c-nav__list-link {
+  @apply
+    xl:normal-case
+    xl:font-normal
   ;
 }
 

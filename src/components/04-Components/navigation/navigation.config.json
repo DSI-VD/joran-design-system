@@ -70,7 +70,17 @@
           },
           {
             "name": "La police en chiffres",
-            "url": "#"
+            "url": "#",
+            "thirdLevelItems": [
+              {
+                "name": "Communication tactique",
+                "url": "#"
+              },
+              {
+                "name": "Bilderberg",
+                "url": "#"
+              }
+            ]
           },
           {
             "name": "Finances",
