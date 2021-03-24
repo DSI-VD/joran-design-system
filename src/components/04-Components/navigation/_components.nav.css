@@ -33,6 +33,7 @@
 .js-c-nav--open {
   @apply
     bg-primary-600
+    bg-opacity-95
     h-screen
     overflow-y-scroll
   ;
@@ -41,6 +42,7 @@
 .js-c-nav--sticky {
   @apply
     bg-primary-600
+    bg-opacity-95
   ;
 }
 
@@ -220,8 +222,8 @@
 
 .c-nav__list--level-1:not(.c-nav_list--level-2) > .c-nav__list-item {
   @apply
-    lg:w-80
-    lg:mb-10
+    xl:w-80
+    xl:mb-10
   ;
 }
 

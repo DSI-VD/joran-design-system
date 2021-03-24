@@ -106,6 +106,7 @@ class DesktopNavigation {
           this.close();
         } else {
           this.close();
+          event.target.setAttribute('aria-expanded', true);
           event.target.classList.add('js-c-nav__list-link--active');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
           document.body.classList.add('js-b-nav--open');
@@ -118,8 +119,11 @@ class DesktopNavigation {
   close() {
     document.body.classList.remove('js-b-nav--open');
     this.nav.classList.remove('js-c-nav--open');
-    for (const itemOpen of this.nav.querySelectorAll('.js-c-nav__list-link--active, .js-c-nav__list--open')) {
+    for (const itemOpen of this.nav.querySelectorAll('.js-c-nav__list-link--active')) {
       itemOpen.classList.remove('js-c-nav__list-link--active');
+      itemOpen.setAttribute('aria-expanded', false);
+    }
+    for (const itemOpen of this.nav.querySelectorAll('.js-c-nav__list--open')) {
       itemOpen.classList.remove('js-c-nav__list--open');
     }
   }

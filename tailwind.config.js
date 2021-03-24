@@ -27,13 +27,13 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         primary: {
-          cta: 'var(--color__primary--cta)',
-          DEFAULT: 'var(--color__primary--900)',
-          800: 'var(--color__primary--800)',
-          600: 'var(--color__primary--600)',
-          400: 'var(--color__primary--400)',
-          200: 'var(--color__primary--200)',
-          100: 'var(--color__primary--100)'
+          cta: 'rgb(var(--color__primary--cta))',
+          DEFAULT: 'rgb(var(--color__primary--900))',
+          800: 'rgb(var(--color__primary--800))',
+          600: 'rgb(var(--color__primary--600))',
+          400: 'rgb(var(--color__primary--400))',
+          200: 'rgb(var(--color__primary--200))',
+          100: 'rgb(var(--color__primary--100))'
         },
         white: {
           DEFAULT: '#fcfcfc'
@@ -138,6 +138,31 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/aspect-ratio')
+    require('@tailwindcss/aspect-ratio'),
+    function ({ addUtilities, theme, variants }) {
+      const fn = (prefix, key, prop, opacity) => {
+        const t = theme(prop);
+
+        addUtilities(Object.keys(t)
+            .reduce((_o, _k) => ({
+              ..._o,
+              ...Object.keys(t[_k])
+                  .filter(x => /^rgb\(.*\)$/i.test(t[_k][x]))
+                  .reduce((o, k) => ({
+                    ...o,
+                    [`.${prefix}-${_k}-${k}`]: {
+                      [key]: t[_k][k].replace(/^rgb\((.*)\)$/i, `rgba($1, var(${opacity})) !important`)
+                    }
+                  }), {})
+            }), {}), {
+          respectImportant: false,
+          variants: variants(prop)
+        });
+      };
+
+      // add more utils here...
+      fn('bg', 'background-color', 'backgroundColor', '--tw-bg-opacity');
+      fn('text', 'color', 'textColor', '--tw-text-opacity');
+    }
   ]
 };
