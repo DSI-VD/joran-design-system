@@ -1,10 +1,10 @@
 <div class="o-container">
-    <div class="c-carousel main-carousel" data-flickity='{ "contain": true, "accessibility": true, "pageDots": true }'>
-        <h2 class="u-visually-hidden">{{ title }}</h2>
-        {% for article in articles %}
-        <div class="c-carousel__cell carousel-cell">
-            {% render '@figure', article.image, true %}
-        </div>
-        {% endfor %}
-    </div>
+  <div class="c-carousel main-carousel" data-flickity='{ "contain": true, "accessibility": true, "pageDots": true }'>
+    <h2 class="u-visually-hidden">{{ title }}</h2>
+    {% for article in articles %}
+      <div class="c-carousel__cell carousel-cell">
+        {% render '@figure', article.image, true %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
