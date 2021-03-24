@@ -2,3 +2,17 @@
    # _components.carousel.css
    ====================================================================== */
 
+.c-carousel__cell {
+    @apply
+        rounded
+        w-full
+        h-96
+        mr-4
+    ;
+}
+
+.c-carousel__figure {
+@apply
+    rounded
+;
+}
