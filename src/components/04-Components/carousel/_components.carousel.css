@@ -6,13 +6,72 @@
     @apply
         rounded
         w-full
-        h-96
+        h-48
         mr-4
     ;
+
+    @screen sm {
+        @apply
+            h-72
+        ;
+    }
+
+    @screen md {
+        @apply
+            h-96
+        ;
+    }
 }
 
 .c-carousel__figure {
-@apply
-    rounded
-;
+    @apply
+        rounded
+    ;
+}
+
+.carousel__figure > img {
+    @apply
+        aspect-w-16
+        aspect-h-9
+    ;
+}
+
+/* -----------------------------------
+   # Flickity components
+   ----------------------------------- */
+
+/* position dots up a bit */
+.c-carousel .flickity-page-dots {
+  bottom: 1rem;
+}
+/* dots are lines */
+.c-carousel .flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 3px;
+
+  @apply
+    bg-white
+    opacity-0
+  ;
+
+  &.is-selected {
+
+  }
+}
+
+.c-carousel .flickity-prev-next-button {
+
+    &.previous {
+        @apply
+          lg:-left-16
+        ;
+    }
+
+    &.next {
+        @apply
+          lg:-right-16
+        ;
+    }
 }
