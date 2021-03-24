@@ -15,8 +15,10 @@
                  src="{{ article.image.src }}"
                  alt="{{ article.image.alt }}">
           </div>
+          {% if article.image.caption -%}
           <figcaption
             class="c-carousel__figcaption">{{ article.image.caption }}</figcaption>
+          {%- endif %}
         </figure>
       </li>
     {% endfor %}
