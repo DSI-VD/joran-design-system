@@ -9,7 +9,7 @@ for (var i = 0; i < articleCount; i++) {
   articleData.push({
     image: {
       styleModifier: 'c-carousel__figure',
-      src: faker.image.unsplash.image('800','450', randomWord),
+      src: faker.image.unsplash.image('1024','576', randomWord),
       alt: faker.lorem.words(),
       caption: faker.lorem.sentence(),
       srcset: [

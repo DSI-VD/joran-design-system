@@ -4,7 +4,6 @@
 
 .c-carousel__cell {
     @apply
-        rounded
         w-full
         h-48
         mr-4
@@ -25,11 +24,27 @@
 
 .c-carousel__figure {
     @apply
-        rounded
+        flex
+        flex-col
+        h-full
     ;
 }
 
-.carousel__figure > img {
+.c-carousel__img-container {
+  flex:1;
+  @apply
+    rounded
+    ;
+}
+
+.c-carousel__img {
+    @apply
+        sr-only
+    ;
+}
+
+.c-carousel__figcaption {
+    @extend %caption;
 }
 
 /* -----------------------------------
@@ -38,7 +53,7 @@
 
 /* position dots up a bit */
 .c-carousel .flickity-page-dots {
-  bottom: 1rem;
+  bottom: 2rem;
 }
 /* dots are lines */
 .c-carousel .flickity-page-dots .dot {
