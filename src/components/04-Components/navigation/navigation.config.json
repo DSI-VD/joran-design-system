@@ -11,14 +11,6 @@
             "url": "#",
             "thirdLevelItems": [
               {
-                "name": "Communication tactique",
-                "url": "#"
-              },
-              {
-                "name": "Bilderberg",
-                "url": "#"
-              },
-              {
                 "name": "Facebook live",
                 "url": "#"
               },
@@ -49,22 +41,6 @@
               {
                 "name": "Inauguration CIO",
                 "url": "#"
-              },
-              {
-                "name": "Montreux Jazz Festival",
-                "url": "#"
-              },
-              {
-                "name": "Fête des Vignerons",
-                "url": "#"
-              },
-              {
-                "name": "Cérémonie du souvenir",
-                "url": "#"
-              },
-              {
-                "name": "Escrocrie à la caisse de chômage",
-                "url": "#"
               }
             ]
           },
@@ -88,11 +64,31 @@
           },
           {
             "name": "Objectifs 2020",
-            "url": "#"
+            "url": "#",
+            "thirdLevelItems": [
+              {
+                "name": "Montreux Jazz Festival",
+                "url": "#"
+              },
+              {
+                "name": "Fête des Vignerons",
+                "url": "#"
+              }
+            ]
           },
           {
             "name": "Valorisation des colabirateurs",
-            "url": "#"
+            "url": "#",
+            "thirdLevelItems": [
+              {
+                "name": "Cérémonie du souvenir",
+                "url": "#"
+              },
+              {
+                "name": "Escrocrie à la caisse de chômage",
+                "url": "#"
+              }
+            ]
           },
           {
             "name": "Témoignages",

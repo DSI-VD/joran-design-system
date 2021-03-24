@@ -103,12 +103,15 @@ class DesktopNavigation {
     // Open menu tab
     for (const item of document.querySelectorAll('.c-nav__list:not(.c-nav__list--level) > .c-nav__list-item > .c-nav__list-link--w-children')) {
       item.addEventListener('click', event => {
-        event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
         if (!this.navOpen) {
+          event.target.classList.add('js-c-nav__list-link--active');
+          event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
           document.body.classList.add('js-b-nav--open');
           this.nav.classList.add('js-c-nav--open');
           this.navOpen = true;
         } else {
+          event.target.classList.remove('js-c-nav__list-link--active');
+          event.target.parentNode.querySelector('.c-nav__list').classList.remove('js-c-nav__list--open');
           document.body.classList.remove('js-b-nav--open');
           this.nav.classList.remove('js-c-nav--open');
           this.navOpen = false;
