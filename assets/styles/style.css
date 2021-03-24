@@ -1644,6 +1644,7 @@ body.debug [data-toggle="dropdown"]:not([aria-haspopup])::after {
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 /* -----------------------------------
@@ -1651,7 +1652,7 @@ html {
  ----------------------------------- */
 
 body {
-  min-height: 100vh;
+  height: 100%;
 }
 
 /* Objects */
@@ -2882,6 +2883,95 @@ body {
 }
 
 /* ======================================================================
+   # _components.carousel.css
+   ====================================================================== */
+
+.c-carousel__cell {
+  height: 12rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+
+.c-carousel__cell {
+    height: 18rem
+}
+  }
+
+@media (min-width: 768px) {
+
+.c-carousel__cell {
+    height: 24rem
+}
+  }
+
+.c-carousel__figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.c-carousel__img-container {
+  flex:1;
+  border-radius: 0.25rem;
+}
+
+.c-carousel__img {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.c-carousel__figcaption {
+  font-size: 1.125rem;
+  line-height: 1.3333;
+}
+
+/* -----------------------------------
+   # Flickity components
+   ----------------------------------- */
+
+/* position dots up a bit */
+
+.c-carousel .flickity-page-dots {
+  bottom: 2rem;
+}
+
+/* dots are lines */
+
+.c-carousel .flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 3px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
+  opacity: 0;
+}
+
+.c-carousel .flickity-page-dots .dot.is-selected {
+  }
+
+@media (min-width: 1024px) {
+    .c-carousel .flickity-prev-next-button.previous {
+      left: -4rem;
+    }
+  }
+
+@media (min-width: 1024px) {
+    .c-carousel .flickity-prev-next-button.next {
+      right: -4rem;
+    }
+  }
+
+/* ======================================================================
    # _components.content.css
    ====================================================================== */
 
@@ -4052,8 +4142,9 @@ body {
   --c-slider-js__min-height: 25rem;
   --c-slider__prev-next-position: -6.4rem;
   --c-slider__dots-position: -4rem;
+  --c-slider-js__height: 100%;
   --c-slider-js__padding: 4rem;
-  --c-slider-js__height: 75vh; /* Do not work with `%` because slider can't calculate height */
+  --c-slider-js__container-height: 100%; /* Do not work with `%` because slider can't calculate height */
   --c-slider__margin: 1rem; /* [1] */
   --c-slider__container-width: 100%;
 }
@@ -4105,12 +4196,12 @@ body {
 
 .c-slider-js {
   background-color: var(--color__primary--900);
-  height: 100vh;
   overflow-x: hidden;
   position: relative;
   padding-top: var(--c-slider-js__padding);
   padding-bottom: var(--c-slider-js__padding);
   min-height: var(--c-slider-js__min-height);
+  height: var(--c-slider-js__height);
 }
 
 .c-slider-js__container {
@@ -4125,7 +4216,7 @@ body {
 }
 
 .c-slider-js__container {
-  height: var(--c-slider-js__height);
+  height: var(--c-slider-js__container-height);
 }
 
 .c-slider-js__container-left {
@@ -4315,7 +4406,7 @@ article
   min-width: 20rem;
   width: 25vw;
   max-width: 75vw;
-  height: var(--c-slider-js__height);
+  height: var(--c-slider-js__container-height);
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
