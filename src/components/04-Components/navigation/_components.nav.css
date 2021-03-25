@@ -9,6 +9,8 @@
   @apply
     overflow-y-hidden
   ;
+
+  touch-action: none;
 }
 
 /* -----------------------------------

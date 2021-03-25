@@ -29,11 +29,13 @@ class MobileNavigation {
 
   toggle(event) {
     if (!this.navOpen) {
+      document.documentElement.style.overflow = 'hidden';
       document.body.classList.add('js-b-nav--open');
       this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
       this.nav.classList.add('js-c-nav--open');
       this.navOpen = true;
     } else {
+      document.documentElement.style.overflow = 'auto';
       document.body.classList.remove('js-b-nav--open');
       this.navToggle.querySelector('.c-menu-icon').classList.remove('js-c-menu-icon--open');
       this.nav.classList.remove('js-c-nav--open');
@@ -109,6 +111,7 @@ class DesktopNavigation {
           event.target.setAttribute('aria-expanded', true);
           event.target.classList.add('js-c-nav__list-link--active');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
+          document.documentElement.style.overflow = 'hidden';
           document.body.classList.add('js-b-nav--open');
           this.nav.classList.add('js-c-nav--open');
         }
@@ -117,6 +120,7 @@ class DesktopNavigation {
   }
 
   close() {
+    document.documentElement.style.overflow = 'auto';
     document.body.classList.remove('js-b-nav--open');
     this.nav.classList.remove('js-c-nav--open');
     for (const itemOpen of this.nav.querySelectorAll('.js-c-nav__list-link--active')) {
