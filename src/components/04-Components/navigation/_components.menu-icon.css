@@ -6,12 +6,6 @@
   overflow: hidden;
 }
 
-.c-nav__toggle:focus {
-  @apply
-    outline-focus
-  ;
-}
-
 .c-menu-icon span {
   position: absolute;
   top: 50%;

@@ -46,6 +46,12 @@
   ;
 }
 
+.c-nav__toggle:focus {
+  @apply
+    outline-focus
+  ;
+}
+
 .c-nav__logo {
   @apply
     flex
