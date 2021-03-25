@@ -2,25 +2,56 @@
    # _components.slider.css
    ====================================================================== */
 
+/***
+ * 1. Make the list item 100% of the screen to make the item scroll side to side
+ * 2. Prevent the page for being the same width as the overflow element on iOS/Safari
+ */
+
 .c-slider-js {
   --c-slider-js__min-height: 25rem;
   --c-slider__prev-next-position: -6.4rem;
   --c-slider__dots-position: -4rem;
+  --c-slider-js__height: 100%;
   --c-slider-js__padding: 4rem;
-  --c-slider-js__height: 75vh; /* Do not work with `%` because slider can't calculate height */
+  --c-slider-js__container-height: 75vh; /* Do not work with `%` because slider can't calculate height */
+  
+  --c-slider__margin: 1rem; /* [1] */
+  --c-slider__container-width: 100%; /* [1] */
+
+  @screen sm {
+    --c-slider__container-width: 640px; /* [1] */
+  }
+
+  @screen md {
+    --c-slider__margin: 0.5rem; /* [1] */
+    --c-slider__container-width: 768px; /* [1] */
+  }
+
+  @screen lg {
+    --c-slider__margin: 1rem; /* [1] */
+    --c-slider__container-width: 1024px; /* [1] */
+  }
+
+  @screen xl {
+    --c-slider__margin: 2rem; /* [1] */
+    --c-slider__container-width: 1280px; /* [1] */
+  }
+
+  @screen 2xl {
+    --c-slider__margin: 4rem; /* [1] */
+    --c-slider__container-width: 1536px; /* [1] */
+  }
   
   @apply
     bg-primary
-    
-    h-screen
-
     overflow-x-hidden
-    relative /* [1] */
+    relative /* [2] */
     ;
-  
+
   padding-top: var(--c-slider-js__padding);
   padding-bottom: var(--c-slider-js__padding);
   min-height: var(--c-slider-js__min-height);
+  height: var(--c-slider-js__height);
 }
 
 .c-slider-js__container {
@@ -30,7 +61,7 @@
     lg:flex-row
   ;
   
-  height: var(--c-slider-js__height);
+  height: var(--c-slider-js__container-height);
 }
 
 .c-slider-js__container-left {
@@ -43,10 +74,28 @@
 }
 
 .c-slider-js__container-right {
-  @apply
-    w-full
-  ;
+
   flex: 3;
+  
+  margin-right: calc(var(--c-slider__margin) * -1); /* [2] */
+  @screen sm {
+    margin-right:
+      calc(
+        calc(
+          calc(
+            calc(
+              100vw - var(--c-slider__container-width)
+            )
+            /
+            2
+          )
+          +
+          var(--c-slider__margin)
+        )
+        *
+        -1
+      ); /* [2] */
+  }
 }
 
 
@@ -99,11 +148,30 @@
 }
 
 .c-slider-js__sidebar-list-item {
+  @apply
+    mb-4
+  ;
+}
+
+.c-slider-js__sidebar-list-link {
   @extend %caption;
   @apply
     text-primary-200
-    mb-4
+    transition-colors
   ;
+  
+  &:hover,
+  &:active {
+    @apply
+      text-white
+    ;
+  }
+  
+  &:focus {
+    @apply
+      outline-focus
+    ;
+  }
 }
 
 /* -----------------------------------
@@ -154,7 +222,7 @@ article
   min-width: 20rem;
   width: 25vw;
   max-width: 75vw;
-  height: var(--c-slider-js__height);
+  height: var(--c-slider-js__container-height);
   @apply
     flex /* [1] */
     flex-col /* [1] */
@@ -266,4 +334,12 @@ article
 .c-slider-js .flickity-prev-next-button.previous,
 .c-slider-js .flickity-prev-next-button.next {
   bottom: var(--c-slider__prev-next-position); /* [3] */
+}
+
+.c-slider-js .flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.c-slider-js .flickity-prev-next-button.next {
+  right: var(--c-slider__margin);
 }

@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add _carousel_ component
+
+## [0.0.22] - 2021-03-19
+
+### Added
+
 - Add _slider-js_ component
 - Add [flickity](https://flickity.metafizzy.co/) library
 - Add _content--intro_ component to replace _intro_ and fix some design aspects
@@ -25,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Scoped Revenge CSS. You need to put `.debug` class on the `<body>` to lint accessibility issues
 - Fix transition for hovered transparent button
 - Increase tracking when a transparent button is hovered
 - Increase shadow of _avatar_
@@ -372,7 +379,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.21...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.22...HEAD
+[0.0.22]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.21...v0.0.22
 [0.0.21]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.20...v0.0.21
 [0.0.20]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.19...v0.0.20
 [0.0.19]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.18...v0.0.19

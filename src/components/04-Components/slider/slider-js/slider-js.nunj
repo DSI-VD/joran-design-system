@@ -7,7 +7,9 @@
         <ul class="c-slider-js__sidebar-list">
           {% for article in articles %}
           <li class="c-slider-js__sidebar-list-item">
-            <a href="#nowhere">{{ article.title }}</a>
+            <a href="#nowhere" class="c-slider-js__sidebar-list-link"
+              >{{ article.title }}</a
+            >
           </li>
           {% endfor %}
         </ul>
