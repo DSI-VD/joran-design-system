@@ -205,7 +205,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;../../assets/styles/style.css&quot;</span> /&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">&quot;init();&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-page&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-page&quot;</span>&gt;</span>
 
     <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/scripts/flickity.pkgd.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -249,7 +249,7 @@
     /&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">&quot;init();&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleAttr %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleAttr }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag">&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleAttr %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleAttr }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag">&gt;</span>
     </span><span class="hljs-template-variable">{{ yield | safe }}</span><span class="xml">
     <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/scripts/flickity.pkgd.min.js&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -1456,32 +1456,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="carousel.html" data-role="tree-link" data-pjax data-handle="carousel">
-                <span>Carousel</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="content--default.html" data-role="tree-link" data-pjax data-handle="content">
                 <span>Content</span>
                 
@@ -2268,7 +2242,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.22
+                            0.0.21
                         
                     </dd>
                 </div>
@@ -2277,8 +2251,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-24T14:34:57.068Z">
-                                24.03.2021 à 15:34:57
+                            <time datetime="2021-03-25T10:32:47.233Z">
+                                25.03.2021 à 11:32:47
                             </time>
                         
                     </dd>
@@ -3264,8 +3238,6 @@
 </div>
 
             </div>
-        
-    
         
     
         
