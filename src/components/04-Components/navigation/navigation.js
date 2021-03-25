@@ -79,7 +79,6 @@ class MobileNavigation {
 
   createLevelIndicator(target) {
     const levelLink = document.createElement('button');
-    levelLink.setAttribute('tabindex', '-1');
     const levelText = document.createTextNode(target.innerHTML);
     levelLink.append(levelText);
     if (target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
