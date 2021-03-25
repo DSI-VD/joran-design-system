@@ -13,10 +13,10 @@
       <div class="c-nav__search-bar">
         <a href="#nowhere" class="c-button--search">{% render '@svg-search' %} <span>Rechercher</span></a>
       </div>
-      <ul class="c-nav__level-indicator">
+      <ul class="c-nav__level-indicator" aria-hidden="true">
       </ul>
       <div class="c-nav__list-wrapper">
-        <ul class="c-nav__list">
+        <ul class="c-nav__list" aria-label="Arborescence des pages">
           {% for firstLevelItem in firstLevelItems %}
           <li class="c-nav__list-item" data-level="0">
             {% if firstLevelItem.secondLevelItems %}
