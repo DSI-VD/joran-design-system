@@ -3,6 +3,7 @@
 {% for name, value in colors -%}
 {% for colorname, colorvalue in value -%}
     --color__{{ name }}--{{ colorname }}: rgb({{ colorvalue }}){% if not loop.last %};{% endif %}
+    --color-raw__{{ name }}--{{ colorname }}: {{ colorvalue }}{% if not loop.last %};{% endif %}
 {% endfor %}
 {%- endfor %}
 }

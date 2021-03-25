@@ -27,13 +27,13 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         primary: {
-          cta: 'rgb(var(--color__primary--cta))',
-          DEFAULT: 'rgb(var(--color__primary--900))',
-          800: 'rgb(var(--color__primary--800))',
-          600: 'rgb(var(--color__primary--600))',
-          400: 'rgb(var(--color__primary--400))',
-          200: 'rgb(var(--color__primary--200))',
-          100: 'rgb(var(--color__primary--100))'
+          cta: 'rgb(var(--color-raw__primary--cta))',
+          DEFAULT: 'rgb(var(--color-raw__primary--900))',
+          800: 'rgb(var(--color-raw__primary--800))',
+          600: 'rgb(var(--color-raw__primary--600))',
+          400: 'rgb(var(--color-raw__primary--400))',
+          200: 'rgb(var(--color-raw__primary--200))',
+          100: 'rgb(var(--color-raw__primary--100))'
         },
         white: {
           DEFAULT: '#fcfcfc'
