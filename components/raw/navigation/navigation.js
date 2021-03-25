@@ -1,50 +1,13 @@
-class MobileNavigation {
-  constructor(nav) {
-    this.levelIndicator = document.querySelector('.c-nav__level-indicator');
-    this.nav = nav;
-    this.navOpen = false;
-    this.currentLevel = 0;
-    this.navToggle = document.querySelector('.c-nav__toggle');
+init = () => {
+  const levelIndicator = document.querySelector('.c-nav__level-indicator');
+  let lastScrollPos = 0;
+  let ticking = false;
+  const nav = document.querySelector('.c-nav');
+  let navOpen = false;
+  let currentLevel = 0;
+  const navToggle = document.querySelector('.c-nav__toggle');
 
-    // Open menu tab
-    for (const item of document.querySelectorAll('.c-nav__list-link--w-children')) {
-      item.addEventListener('click', event => {
-        if (this.currentLevel === Number.parseInt(event.target.parentNode.dataset.level)) {
-          this.levelIndicator.append(this.createLevelIndicator(event.target));
-          event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
-          event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
-          item.setAttribute('aria-expanded', true);
-          this.currentLevel++;
-        } else if (event.target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
-          this.closeLevelTabs(event, 2);
-        } else {
-          this.closeAllTabs(event);
-        }
-      });
-    }
-
-    // Open navigation
-    this.navToggle.addEventListener('click', (event) => this.toggle(event));
-  }
-
-  toggle(event) {
-    if (!this.navOpen) {
-      document.body.classList.add('js-b-nav--open');
-      this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
-      this.nav.classList.add('js-c-nav--open');
-      this.navOpen = true;
-    } else {
-      document.body.classList.remove('js-b-nav--open');
-      this.navToggle.querySelector('.c-menu-icon').classList.remove('js-c-menu-icon--open');
-      this.nav.classList.remove('js-c-nav--open');
-      this.closeAllTabs(event);
-      this.navOpen = false;
-    }
-
-    this.navToggle.setAttribute('aria-expanded', this.navOpen);
-  }
-
-  closeAllTabs(event) {
+  const closeAllTabs = event => {
     for (const item of document.querySelectorAll('.c-nav__list')) {
       item.classList.remove('js-c-nav__list--open');
       item.classList.remove('js-c-nav__list--hide');
@@ -52,15 +15,15 @@ class MobileNavigation {
         button.setAttribute('aria-expanded', false);
       }
 
-      for (const item of this.levelIndicator.querySelectorAll('li')) {
+      for (const item of levelIndicator.querySelectorAll('li')) {
         item.remove();
       }
     }
 
-    this.currentLevel = 0;
-  }
+    currentLevel = 0;
+  };
 
-  closeLevelTabs(event, level) {
+  const closeLevelTabs = (event, level) => {
     for (const item of document.querySelectorAll('.c-nav__list--level-' + (level - 1))) {
       item.classList.remove('js-c-nav__list--hide');
     }
@@ -70,23 +33,23 @@ class MobileNavigation {
       item.parentNode.querySelector('.c-nav__list-link--w-children').setAttribute('aria-expanded', false);
     }
 
-    const levelElement = this.levelIndicator.querySelector('li:nth-child(' + level + ')');
+    const levelElement = levelIndicator.querySelector('li:nth-child(' + level + ')');
     levelElement.remove();
-    this.currentLevel = 1;
-  }
+    currentLevel = 1;
+  };
 
-  createLevelIndicator(target) {
+  const createLevelIndicator = target => {
     const levelLink = document.createElement('button');
     levelLink.setAttribute('tabindex', '-1');
     const levelText = document.createTextNode(target.innerHTML);
     levelLink.append(levelText);
     if (target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
       levelLink.addEventListener('click', event => {
-        this.closeLevelTabs(event, 2);
+        closeLevelTabs(event, 2);
       });
     } else {
       levelLink.addEventListener('click', event => {
-        this.closeAllTabs(event);
+        closeAllTabs(event);
       });
     }
 
@@ -94,77 +57,57 @@ class MobileNavigation {
     level.append(levelLink);
     return level;
   };
-}
 
-class DesktopNavigation {
-  constructor(nav) {
-    this.nav = nav;
-    // Open menu tab
-    for (const item of document.querySelectorAll('.c-nav__list:not(.c-nav__list--level) > .c-nav__list-item > .c-nav__list-link--w-children')) {
-      item.addEventListener('click', event => {
-        if (event.target.classList.contains('js-c-nav__list-link--active')) {
-          this.close();
-        } else {
-          this.close();
-          event.target.setAttribute('aria-expanded', true);
-          event.target.classList.add('js-c-nav__list-link--active');
-          event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
-          document.body.classList.add('js-b-nav--open');
-          this.nav.classList.add('js-c-nav--open');
-        }
-      });
-    }
+  // Open menu tab
+  for (const item of document.querySelectorAll('.c-nav__list-link--w-children')) {
+    item.addEventListener('click', event => {
+      if (currentLevel === Number.parseInt(event.target.parentNode.dataset.level)) {
+        levelIndicator.append(createLevelIndicator(event.target));
+        event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
+        event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
+        item.setAttribute('aria-expanded', true);
+        currentLevel++;
+      } else if (event.target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
+        closeLevelTabs(event, 2);
+      } else {
+        closeAllTabs(event);
+      }
+    });
   }
 
-  close() {
-    document.body.classList.remove('js-b-nav--open');
-    this.nav.classList.remove('js-c-nav--open');
-    for (const itemOpen of this.nav.querySelectorAll('.js-c-nav__list-link--active')) {
-      itemOpen.classList.remove('js-c-nav__list-link--active');
-      itemOpen.setAttribute('aria-expanded', false);
-    }
-    for (const itemOpen of this.nav.querySelectorAll('.js-c-nav__list--open')) {
-      itemOpen.classList.remove('js-c-nav__list--open');
-    }
-  }
-}
-
-class StickyNavigation {
-  constructor(nav) {
-    this.lastScrollPos = 0;
-    this.ticking = false;
-    this.nav = nav;
-    window.addEventListener('scroll', (event) => this.sticky(event));
-  }
-
-  sticky(event) {
-    this.lastScrollPos = window.scrollY;
-    if (!this.ticking) {
-      window.requestAnimationFrame(() => {
-        if (this.lastScrollPos > 50) {
-          this.nav.classList.add('js-c-nav--sticky');
-        } else {
-          this.nav.classList.remove('js-c-nav--sticky');
-        }
-
-        this.ticking = false;
-      });
-    }
-
-    this.ticking = true;
-  }
-}
-
-const initNavigation = () => {
-  new StickyNavigation(document.querySelector('.c-nav'));
-  const init = event => {
-    if (window.innerWidth < 1280) {
-      new MobileNavigation(document.querySelector('.c-nav'));
+  // Open navigation
+  navToggle.addEventListener('click', event => {
+    if (!navOpen) {
+      document.body.classList.add('js-b-nav--open');
+      navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
+      nav.classList.add('js-c-nav--open');
+      navOpen = true;
     } else {
-      new DesktopNavigation(document.querySelector('.c-nav'));
+      document.body.classList.remove('js-b-nav--open');
+      navToggle.querySelector('.c-menu-icon').classList.remove('js-c-menu-icon--open');
+      nav.classList.remove('js-c-nav--open');
+      closeAllTabs(event);
+      navOpen = false;
     }
-  };
-  init();
-};
 
-document.addEventListener('DOMContentLoaded', initNavigation);
+    navToggle.setAttribute('aria-expanded', navOpen);
+  });
+
+  // Sticky nav
+  window.addEventListener('scroll', event => {
+    lastScrollPos = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        if (lastScrollPos > 50) {
+          nav.classList.add('js-c-nav--sticky');
+        } else {
+          nav.classList.remove('js-c-nav--sticky');
+        }
+
+        ticking = false;
+      });
+    }
+
+    ticking = true;
+  });
+};

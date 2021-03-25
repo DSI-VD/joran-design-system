@@ -19,13 +19,13 @@
 
     <style>
 :root {
---color__primary--100: 242, 241, 252;
---color__primary--200: 221, 216, 249;
---color__primary--400: 190, 181, 245;
---color__primary--600: 157, 144, 238;
---color__primary--800: 126, 108, 234;
---color__primary--900: 93, 73, 222;
---color__primary--cta: 93, 73, 222
+--color__primary--100: #f2f1fc;
+--color__primary--200: #ddd9f9;
+--color__primary--400: #beb5f5;
+--color__primary--600: #9d90ee;
+--color__primary--800: #7e6cea;
+--color__primary--900: #5d49de;
+--color__primary--cta: #5d49de
 
 }
 </style>
@@ -38,7 +38,7 @@
     />
   </head>
 
-  <body  style="background-color: var(--color__primary--900)">
+  <body onload="init();" style="background-color: var(--color__primary--900)">
     <div class="c-nav">
   <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
     <div class="c-nav__logo">
@@ -53,27 +53,7 @@
     </button>
     <div class="c-nav__list-container">
       <div class="c-nav__search-bar">
-        <a href="#nowhere" class="c-button--search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-  <circle
-    cx="8"
-    cy="8"
-    r="7"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M19 19l-6-6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
- <span>Rechercher</span></a>
+        <a href="#nowhere" class="c-button--search">Rechercher</a>
       </div>
       <ul class="c-nav__level-indicator">
       </ul>
@@ -93,6 +73,18 @@
                       Organigrame
                     </button>
                     <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Communication tactique
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bilderberg
+                        </a>
+                      </li>
                       
                       <li class="c-nav__list-item" data-level="2">
                         <a href="#nowhere" class="c-nav__list-link">
@@ -142,48 +134,6 @@
                         </a>
                       </li>
                       
-                    </ul>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
-                      La police en chiffres
-                    </button>
-                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
-                      
-                      <li class="c-nav__list-item" data-level="2">
-                        <a href="#nowhere" class="c-nav__list-link">
-                          Communication tactique
-                        </a>
-                      </li>
-                      
-                      <li class="c-nav__list-item" data-level="2">
-                        <a href="#nowhere" class="c-nav__list-link">
-                          Bilderberg
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <a href="#nowhere" class="c-nav__list-link">
-                      Finances
-                    </a>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
-                      Objectifs 2020
-                    </button>
-                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
-                      
                       <li class="c-nav__list-item" data-level="2">
                         <a href="#nowhere" class="c-nav__list-link">
                           Montreux Jazz Festival
@@ -195,17 +145,6 @@
                           Fête des Vignerons
                         </a>
                       </li>
-                      
-                    </ul>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
-                      Valorisation des colabirateurs
-                    </button>
-                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
                       
                       <li class="c-nav__list-item" data-level="2">
                         <a href="#nowhere" class="c-nav__list-link">
@@ -220,6 +159,38 @@
                       </li>
                       
                     </ul>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      La police en chiffres
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Finances
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Objectifs 2020
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Valorisation des colabirateurs
+                    </a>
                   
                 </li>
                 

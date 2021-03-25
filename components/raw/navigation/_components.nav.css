@@ -6,9 +6,7 @@
    # b-nav--open (class for body when nav is open)
    ----------------------------------- */
 .js-b-nav--open {
-  @apply
-    overflow-y-hidden
-  ;
+  overflow-y: hidden;
 }
 
 /* -----------------------------------
@@ -23,9 +21,9 @@
     top-0
     w-full
     z-50
-    overflow-y-hidden
   ;
 
+  overflow-y: hidden;
   transition: background-color 0.15s ease-out;
   will-change: background-color;
 }
@@ -33,16 +31,15 @@
 .js-c-nav--open {
   @apply
     bg-primary-600
-    bg-opacity-95
-    h-screen
-    overflow-y-scroll
   ;
+
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .js-c-nav--sticky {
   @apply
     bg-primary-600
-    bg-opacity-95
   ;
 }
 
@@ -54,15 +51,13 @@
 }
 
 .c-nav__logo-text {
-  @apply
-    not-italic
-    uppercase
-    font-medium
-    ml-4
-    leading-6
-    text-base
-    tracking-wider
-  ;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.05625rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 1.125rem;
 }
 
 /* -----------------------------------
@@ -75,7 +70,6 @@
     justify-between
     items-center
     relative
-    xl:flex-nowrap
   ;
 }
 
@@ -86,8 +80,6 @@
   @apply
     mt-6
     mb-4
-    xl:order-last
-    xl:m-0
   ;
 }
 
@@ -97,30 +89,7 @@
     bg-white
     rounded
     text-primary
-    flex
-    items-center
-    xl:bg-transparent
-    xl:text-white
-    xl:border-l
-    xl:border-white
-    xl:rounded-none
-    xl:px-3
-    xl:py-2
-  ;
-}
-
-.c-nav__search-bar .c-button--search svg {
-  @apply
-    h-full
-    w-5
-    mr-4
-    xl:mr-0
-  ;
-}
-
-.c-nav__search-bar .c-button--search span {
-  @apply
-    xl:sr-only
+    block
   ;
 }
 
@@ -131,12 +100,8 @@
 }
 
 .c-nav__toggle {
-  @apply
-    w-7
-    h-7
-    xl:hidden
-    xl:invisible
-  ;
+  width: 30px;
+  height: 30px;
 }
 
 /* -----------------------------------
@@ -148,10 +113,6 @@
     w-full
     invisible
     hidden
-    xl:flex
-    xl:visible
-    xl:w-auto
-    xl:items-center
   ;
 }
 
@@ -159,14 +120,12 @@
   @apply
     visible
     block
-    xl:flex
   ;
 }
 
 .c-nav__list-wrapper {
   @apply
     relative
-    xl:static
   ;
 }
 
@@ -179,59 +138,24 @@
     w-full
     top-0
     pb-10
-    xl:static
-    xl:pb-0
-    xl:flex
   ;
 
   transition: transform 0.35s ease, opacity 0.25s ease 0.15s;
 }
 
 .c-nav__list--level {
-  @apply
-    opacity-0
-    invisible
-    hidden
-    z-0
-    xl:flex-wrap
-  ;
-
+  opacity: 0;
+  visibility: hidden;
+  display: none;
   right: -100vw;
+  z-index: 0;
 }
 
 .js-c-nav__list--open {
-  @apply
-    opacity-100
-    z-50
-    visible
-    block
-    xl:absolute
-    xl:top-40
-    xl:left-14
-    xl:flex
-  ;
-}
-
-.js-c-nav__list--open .c-nav__list {
-  @apply
-    xl:block
-    xl:visible
-    xl:opacity-100
-  ;
-}
-
-.c-nav__list--level-1:not(.c-nav_list--level-2) > .c-nav__list-item {
-  @apply
-    xl:w-80
-    xl:mb-10
-  ;
-}
-
-.c-nav__list--level-1:not(.c-nav_list--level-2) > .c-nav__list-item > .c-nav__list-link {
-  @apply
-    xl:normal-case
-    xl:font-normal
-  ;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  z-index: 100;
 }
 
 .js-c-nav__list--hide {
@@ -251,20 +175,10 @@
     pr-6
     block
     relative
-    w-full
-    text-left
-    xl:w-auto
-    xl:px-3
-    rounded-md
   ;
 
-  transition: background-color 0.35s ease;
-  will-change: background-color;
-}
-
-.c-nav__list-item--active,
-.js-c-nav__list-link--active {
-  background-color: rgba(252, 252, 252, 0.25);
+  width: 100%;
+  text-align: left;
 }
 
 .c-nav__list-link:focus {
@@ -278,8 +192,6 @@
     absolute
     right-0
     top-2
-    xl:invisible
-    xl:hidden
   ;
 
   /* @todo change with correct icon */
@@ -292,8 +204,6 @@
 .c-nav__level-indicator {
   @apply
     mb-6
-    xl:invisible
-    xl:hidden
   ;
 
   min-height: 28px;
