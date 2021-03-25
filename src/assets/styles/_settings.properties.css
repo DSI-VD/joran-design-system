@@ -1,0 +1,28 @@
+:root {
+    --c-slider__margin: 1rem; /* [2] */
+    --c-slider__container-width: 100%; /* [2] */
+
+    @screen sm {
+        --c-slider__container-width: 640px; /* [2] */
+    }
+
+    @screen md {
+        --c-slider__margin: 0.5rem; /* [2] */
+        --c-slider__container-width: 768px; /* [2] */
+    }
+
+    @screen lg {
+        --c-slider__margin: 1rem; /* [2] */
+        --c-slider__container-width: 1024px; /* [2] */
+    }
+
+    @screen xl {
+        --c-slider__margin: 2rem; /* [2] */
+        --c-slider__container-width: 1280px; /* [2] */
+    }
+
+    @screen 2xl {
+        --c-slider__margin: 4rem; /* [2] */
+        --c-slider__container-width: 1536px; /* [2] */
+    }
+}

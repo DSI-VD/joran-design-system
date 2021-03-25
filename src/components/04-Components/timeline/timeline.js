@@ -118,7 +118,7 @@ class Timeline {
 }
 
 const onReady = () => {
-  new Timeline(document.querySelector('#timeline1'));
+  // new Timeline(document.querySelector('#timeline1'));
 };
 
 document.addEventListener('DOMContentLoaded', onReady);
