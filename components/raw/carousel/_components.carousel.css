@@ -5,20 +5,18 @@
 .c-carousel__cell {
     @apply
         w-full
-        h-48
+        h-72
         mr-4
     ;
-
-    @screen sm {
-        @apply
-            h-72
-        ;
-    }
 
     @screen md {
         @apply
             h-96
         ;
+    }
+
+    @screen lg {
+        height: 36rem;
     }
 }
 

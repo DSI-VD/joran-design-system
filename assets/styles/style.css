@@ -2887,22 +2887,22 @@ body {
    ====================================================================== */
 
 .c-carousel__cell {
-  height: 12rem;
+  height: 18rem;
   margin-right: 1rem;
   width: 100%;
 }
-
-@media (min-width: 640px) {
-
-.c-carousel__cell {
-    height: 18rem
-}
-  }
 
 @media (min-width: 768px) {
 
 .c-carousel__cell {
     height: 24rem
+}
+  }
+
+@media (min-width: 1024px) {
+
+.c-carousel__cell {
+    height: 36rem
 }
   }
 
