@@ -2948,13 +2948,34 @@ body {
 
 .c-carousel .flickity-page-dots .dot {
   height: 4px;
-  width: 40px;
   margin: 0;
   border-radius: 3px;
   --tw-bg-opacity: 1;
   background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
   opacity: 0;
+  width: 1rem;
 }
+
+@media (min-width: 640px) {
+
+.c-carousel .flickity-page-dots .dot {
+    width: 1.5rem
+}
+  }
+
+@media (min-width: 768px) {
+
+.c-carousel .flickity-page-dots .dot {
+    width: 2rem
+}
+  }
+
+@media (min-width: 1024px) {
+
+.c-carousel .flickity-page-dots .dot {
+    width: 2.5rem
+}
+  }
 
 .c-carousel .flickity-page-dots .dot.is-selected {
   }

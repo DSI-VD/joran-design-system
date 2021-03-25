@@ -16,7 +16,7 @@
     }
 
     @screen lg {
-        height: 36rem;
+      height: 36rem;
     }
 }
 
@@ -56,14 +56,26 @@
 /* dots are lines */
 .c-carousel .flickity-page-dots .dot {
   height: 4px;
-  width: 40px;
   margin: 0;
   border-radius: 3px;
 
   @apply
     bg-white
     opacity-0
+    w-4
   ;
+
+  @screen sm {
+    @apply w-6
+  }
+
+  @screen md {
+    @apply w-8;
+  }
+
+  @screen lg {
+    @apply w-10;
+  }
 
   &.is-selected {
 
