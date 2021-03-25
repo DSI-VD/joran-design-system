@@ -13,7 +13,7 @@
   --c-slider__dots-position: -4rem;
   --c-slider-js__height: 100%;
   --c-slider-js__padding: 4rem;
-  --c-slider-js__container-height: 100%; /* Do not work with `%` because slider can't calculate height */
+  --c-slider-js__container-height: 75vh; /* Do not work with `%` because slider can't calculate height */
   
   --c-slider__margin: 1rem; /* [1] */
   --c-slider__container-width: 100%; /* [1] */
