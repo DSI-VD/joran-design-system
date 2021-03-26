@@ -1,6 +1,5 @@
 <style>
 :root {
---tw-bg-opacity: 1;
 {% for name, value in colors -%}
 {% for colorname, colorvalue in value -%}
     --color__{{ name }}--{{ colorname }}: rgb({{ colorvalue }});
