@@ -19,16 +19,24 @@
 
     <style>
 :root {
---color__primary--100: #FFF4EB;
---color__primary--200: #FFD5AD;
---color__primary--400: #FFAB5C;
---color__primary--600: #B95900;
---color__primary--800: #8F4500;
---color__primary--900: #663100;
---color__primary--cta: #CC6300
+--color__primary--100: rgb(255, 244, 235);
+    --color-raw__primary--100: 255, 244, 235;
+--color__primary--200: rgb(255, 213, 173);
+    --color-raw__primary--200: 255, 213, 173;
+--color__primary--400: rgb(255, 171, 92);
+    --color-raw__primary--400: 255, 171, 92;
+--color__primary--600: rgb(185, 89, 0);
+    --color-raw__primary--600: 185, 89, 0;
+--color__primary--800: rgb(143, 69, 0);
+    --color-raw__primary--800: 143, 69, 0;
+--color__primary--900: rgb(102, 49, 0);
+    --color-raw__primary--900: 102, 49, 0;
+--color__primary--cta: rgb(204, 99, 0);
+    --color-raw__primary--cta: 204, 99, 0;
 
 }
 </style>
+
 
     <!-- Stylesheets -->
     <link
@@ -38,7 +46,7 @@
     />
   </head>
 
-  <body onload="init();" class="c-page">
+  <body  class="c-page">
     
     <!-- Scripts -->
     <script src="../../assets/scripts/flickity.pkgd.min.js"></script>

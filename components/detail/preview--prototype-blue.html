@@ -191,13 +191,20 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
         <span class="hljs-selector-pseudo">:root</span> {
-            --color__primary--<span class="hljs-number">100</span>: <span class="hljs-number">#EBF1F7</span>;
-            --color__primary--<span class="hljs-number">200</span>: <span class="hljs-number">#CCDCEA</span>;
-            --color__primary--<span class="hljs-number">400</span>: <span class="hljs-number">#99B9D5</span>;
-            --color__primary--<span class="hljs-number">600</span>: <span class="hljs-number">#6696C0</span>;
-            --color__primary--<span class="hljs-number">800</span>: <span class="hljs-number">#3373AB</span>;
-            --color__primary--<span class="hljs-number">900</span>: <span class="hljs-number">#005096</span>;
-            --color__primary--cta: <span class="hljs-number">#00A5DC</span>
+            --color__primary--<span class="hljs-number">100</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">235</span>, <span class="hljs-number">241</span>, <span class="hljs-number">247</span>);
+            --<span class="hljs-attribute">color</span>-raw__primary--<span class="hljs-number">100</span>: <span class="hljs-number">235</span>, <span class="hljs-number">241</span>, <span class="hljs-number">247</span>;
+            --color__primary--<span class="hljs-number">200</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">204</span>, <span class="hljs-number">220</span>, <span class="hljs-number">234</span>);
+            --<span class="hljs-attribute">color</span>-raw__primary--<span class="hljs-number">200</span>: <span class="hljs-number">204</span>, <span class="hljs-number">220</span>, <span class="hljs-number">234</span>;
+            --color__primary--<span class="hljs-number">400</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">153</span>, <span class="hljs-number">185</span>, <span class="hljs-number">213</span>);
+            --<span class="hljs-attribute">color</span>-raw__primary--<span class="hljs-number">400</span>: <span class="hljs-number">153</span>, <span class="hljs-number">185</span>, <span class="hljs-number">213</span>;
+            --color__primary--<span class="hljs-number">600</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">102</span>, <span class="hljs-number">150</span>, <span class="hljs-number">192</span>);
+            --<span class="hljs-attribute">color</span>-raw__primary--<span class="hljs-number">600</span>: <span class="hljs-number">102</span>, <span class="hljs-number">150</span>, <span class="hljs-number">192</span>;
+            --color__primary--<span class="hljs-number">800</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">51</span>, <span class="hljs-number">115</span>, <span class="hljs-number">171</span>);
+            --<span class="hljs-attribute">color</span>-raw__primary--<span class="hljs-number">800</span>: <span class="hljs-number">51</span>, <span class="hljs-number">115</span>, <span class="hljs-number">171</span>;
+            --color__primary--<span class="hljs-number">900</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">80</span>, <span class="hljs-number">150</span>);
+            --<span class="hljs-attribute">color</span>-raw__primary--<span class="hljs-number">900</span>: <span class="hljs-number">0</span>, <span class="hljs-number">80</span>, <span class="hljs-number">150</span>;
+            --color__primary--cta: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span>, <span class="hljs-number">165</span>, <span class="hljs-number">120</span>);
+            --<span class="hljs-attribute">color</span>-raw__primary--cta: <span class="hljs-number">0</span>, <span class="hljs-number">165</span>, <span class="hljs-number">120</span>;
         }
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 
@@ -205,7 +212,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;../../assets/styles/style.css&quot;</span> /&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">&quot;init();&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-page&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-page&quot;</span>&gt;</span>
 
     <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/scripts/flickity.pkgd.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -249,7 +256,7 @@
     /&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">onload</span>=<span class="hljs-string">&quot;init();&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleAttr %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleAttr }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag">&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span> </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleAttr %}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ styleAttr }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag">&gt;</span>
     </span><span class="hljs-template-variable">{{ yield | safe }}</span><span class="xml">
     <span class="hljs-comment">&lt;!-- Scripts --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ &#x27;/assets/scripts/flickity.pkgd.min.js&#x27; | path  }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -270,13 +277,13 @@
   <span class="hljs-attr">&quot;colors&quot;</span>: {
     <span class="hljs-attr">&quot;colors&quot;</span>: {
       <span class="hljs-attr">&quot;primary&quot;</span>: {
-        <span class="hljs-attr">&quot;100&quot;</span>: <span class="hljs-string">&quot;#EBF1F7&quot;</span>,
-        <span class="hljs-attr">&quot;200&quot;</span>: <span class="hljs-string">&quot;#CCDCEA&quot;</span>,
-        <span class="hljs-attr">&quot;400&quot;</span>: <span class="hljs-string">&quot;#99B9D5&quot;</span>,
-        <span class="hljs-attr">&quot;600&quot;</span>: <span class="hljs-string">&quot;#6696C0&quot;</span>,
-        <span class="hljs-attr">&quot;800&quot;</span>: <span class="hljs-string">&quot;#3373AB&quot;</span>,
-        <span class="hljs-attr">&quot;900&quot;</span>: <span class="hljs-string">&quot;#005096&quot;</span>,
-        <span class="hljs-attr">&quot;cta&quot;</span>: <span class="hljs-string">&quot;#00A5DC&quot;</span>
+        <span class="hljs-attr">&quot;100&quot;</span>: <span class="hljs-string">&quot;235, 241, 247&quot;</span>,
+        <span class="hljs-attr">&quot;200&quot;</span>: <span class="hljs-string">&quot;204, 220, 234&quot;</span>,
+        <span class="hljs-attr">&quot;400&quot;</span>: <span class="hljs-string">&quot;153, 185, 213&quot;</span>,
+        <span class="hljs-attr">&quot;600&quot;</span>: <span class="hljs-string">&quot;102, 150, 192&quot;</span>,
+        <span class="hljs-attr">&quot;800&quot;</span>: <span class="hljs-string">&quot;51, 115, 171&quot;</span>,
+        <span class="hljs-attr">&quot;900&quot;</span>: <span class="hljs-string">&quot;0, 80, 150&quot;</span>,
+        <span class="hljs-attr">&quot;cta&quot;</span>: <span class="hljs-string">&quot;0, 165, 120&quot;</span>
       }
     }
   },
@@ -2268,7 +2275,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.22
+                            0.0.23
                         
                     </dd>
                 </div>
@@ -2277,8 +2284,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-25T14:26:38.521Z">
-                                25.03.2021 à 15:26:38
+                            <time datetime="2021-03-26T12:22:36.270Z">
+                                3/26/2021, 1:22:36 PM
                             </time>
                         
                     </dd>

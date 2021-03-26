@@ -19,16 +19,24 @@
 
     <style>
 :root {
---color__primary--100: #f2f1fc;
---color__primary--200: #ddd9f9;
---color__primary--400: #beb5f5;
---color__primary--600: #9d90ee;
---color__primary--800: #7e6cea;
---color__primary--900: #5d49de;
---color__primary--cta: #5d49de
+--color__primary--100: rgb(242, 241, 252);
+    --color-raw__primary--100: 242, 241, 252;
+--color__primary--200: rgb(221, 216, 249);
+    --color-raw__primary--200: 221, 216, 249;
+--color__primary--400: rgb(190, 181, 245);
+    --color-raw__primary--400: 190, 181, 245;
+--color__primary--600: rgb(157, 144, 238);
+    --color-raw__primary--600: 157, 144, 238;
+--color__primary--800: rgb(126, 108, 234);
+    --color-raw__primary--800: 126, 108, 234;
+--color__primary--900: rgb(93, 73, 222);
+    --color-raw__primary--900: 93, 73, 222;
+--color__primary--cta: rgb(93, 73, 222);
+    --color-raw__primary--cta: 93, 73, 222;
 
 }
 </style>
+
 
     <!-- Stylesheets -->
     <link
@@ -38,7 +46,7 @@
     />
   </head>
 
-  <body onload="init();">
+  <body >
     <div class="o-container">
   <h2 class="u-visually-hidden">Carouel</h2>
   <ul class="c-carousel main-carousel" data-flickity='{ "contain": true, "accessibility": true, "pageDots": true }'>
@@ -47,17 +55,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?Liaison');
+                      background-image: url('https://source.unsplash.com/1024x576?Shores');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?Liaison"
-                 alt="ad fugiat rerum">
+                 src="https://source.unsplash.com/1024x576?Shores"
+                 alt="quis recusandae et">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Accusantium et earum dolorem nemo.</figcaption>
+            class="c-carousel__figcaption">Autem quisquam nostrum quibusdam et alias.</figcaption>
         </figure>
       </li>
     
@@ -65,17 +73,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?Cheese');
+                      background-image: url('https://source.unsplash.com/1024x576?American');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?Cheese"
-                 alt="molestiae aperiam minus">
+                 src="https://source.unsplash.com/1024x576?American"
+                 alt="laborum ducimus sequi">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Exercitationem distinctio est sunt reiciendis.</figcaption>
+            class="c-carousel__figcaption">Eveniet veniam fugiat tempora consequatur ut.</figcaption>
         </figure>
       </li>
     
@@ -83,17 +91,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?copying');
+                      background-image: url('https://source.unsplash.com/1024x576?California');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?copying"
-                 alt="sed voluptate exercitationem">
+                 src="https://source.unsplash.com/1024x576?California"
+                 alt="et sapiente et">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Saepe autem ea impedit.</figcaption>
+            class="c-carousel__figcaption">Eligendi et delectus tempore quasi et nulla veritatis distinctio tempore.</figcaption>
         </figure>
       </li>
     
@@ -101,17 +109,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?Principal');
+                      background-image: url('https://source.unsplash.com/1024x576?Jewelery');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?Principal"
-                 alt="illum enim quas">
+                 src="https://source.unsplash.com/1024x576?Jewelery"
+                 alt="aut nihil laudantium">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Ut pariatur fugiat est.</figcaption>
+            class="c-carousel__figcaption">Qui distinctio sunt aut nemo ut vel.</figcaption>
         </figure>
       </li>
     
@@ -119,17 +127,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?withdrawal');
+                      background-image: url('https://source.unsplash.com/1024x576?Lock');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?withdrawal"
-                 alt="quidem quae dignissimos">
+                 src="https://source.unsplash.com/1024x576?Lock"
+                 alt="praesentium quia at">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Dolore autem quisquam repellendus nobis.</figcaption>
+            class="c-carousel__figcaption">Incidunt excepturi fugit.</figcaption>
         </figure>
       </li>
     
@@ -137,17 +145,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?Kentucky');
+                      background-image: url('https://source.unsplash.com/1024x576?Investor');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?Kentucky"
-                 alt="aut aut voluptas">
+                 src="https://source.unsplash.com/1024x576?Investor"
+                 alt="earum ut temporibus">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Molestiae voluptatem consequatur laborum.</figcaption>
+            class="c-carousel__figcaption">Sunt quo ea dolor illum nesciunt aut voluptas cupiditate porro.</figcaption>
         </figure>
       </li>
     
@@ -155,17 +163,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?solid');
+                      background-image: url('https://source.unsplash.com/1024x576?driver');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?solid"
-                 alt="tempore veniam nihil">
+                 src="https://source.unsplash.com/1024x576?driver"
+                 alt="ratione beatae mollitia">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Veritatis mollitia voluptatibus facere provident hic nemo quasi ut.</figcaption>
+            class="c-carousel__figcaption">Esse similique fuga consequatur.</figcaption>
         </figure>
       </li>
     
@@ -173,17 +181,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?Trail');
+                      background-image: url('https://source.unsplash.com/1024x576?benchmark');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?Trail"
-                 alt="eveniet dolor reiciendis">
+                 src="https://source.unsplash.com/1024x576?benchmark"
+                 alt="accusamus atque voluptas">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Atque quaerat fugiat ipsam ratione laborum quae error.</figcaption>
+            class="c-carousel__figcaption">Esse facere fugiat soluta animi.</figcaption>
         </figure>
       </li>
     
@@ -191,17 +199,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576');
+                      background-image: url('https://source.unsplash.com/1024x576?concept');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576"
-                 alt="a quae ex">
+                 src="https://source.unsplash.com/1024x576?concept"
+                 alt="autem laboriosam atque">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Id fugit incidunt accusantium sed vel debitis dolorem.</figcaption>
+            class="c-carousel__figcaption">Et facilis commodi et corporis quam dolorem ipsam.</figcaption>
         </figure>
       </li>
     
@@ -209,17 +217,17 @@
         <figure class="c-carousel__figure">
           <div class="c-carousel__img-container"
                style="
-                      background-image: url('https://source.unsplash.com/1024x576?Rustic');
+                      background-image: url('https://source.unsplash.com/1024x576?Granite');
                       background-repeat: no-repeat;
                       background-position: center center;
                       background-size: cover;
                       ">
             <img class="c-carousel__img"
-                 src="https://source.unsplash.com/1024x576?Rustic"
-                 alt="consectetur delectus assumenda">
+                 src="https://source.unsplash.com/1024x576?Granite"
+                 alt="autem odit accusantium">
           </div>
           <figcaption
-            class="c-carousel__figcaption">Corporis sint in impedit accusantium enim et molestiae quis quia.</figcaption>
+            class="c-carousel__figcaption">Odit molestiae non.</figcaption>
         </figure>
       </li>
     

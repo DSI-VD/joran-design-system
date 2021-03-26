@@ -19,16 +19,24 @@
 
     <style>
 :root {
---color__primary--100: #f2f1fc;
---color__primary--200: #ddd9f9;
---color__primary--400: #beb5f5;
---color__primary--600: #9d90ee;
---color__primary--800: #7e6cea;
---color__primary--900: #5d49de;
---color__primary--cta: #5d49de
+--color__primary--100: rgb(242, 241, 252);
+    --color-raw__primary--100: 242, 241, 252;
+--color__primary--200: rgb(221, 216, 249);
+    --color-raw__primary--200: 221, 216, 249;
+--color__primary--400: rgb(190, 181, 245);
+    --color-raw__primary--400: 190, 181, 245;
+--color__primary--600: rgb(157, 144, 238);
+    --color-raw__primary--600: 157, 144, 238;
+--color__primary--800: rgb(126, 108, 234);
+    --color-raw__primary--800: 126, 108, 234;
+--color__primary--900: rgb(93, 73, 222);
+    --color-raw__primary--900: 93, 73, 222;
+--color__primary--cta: rgb(93, 73, 222);
+    --color-raw__primary--cta: 93, 73, 222;
 
 }
 </style>
+
 
     <!-- Stylesheets -->
     <link
@@ -38,7 +46,7 @@
     />
   </head>
 
-  <body onload="init();" class="c-page">
+  <body  class="c-page">
     <div class="c-nav">
   <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
     <div class="c-nav__logo">
@@ -53,12 +61,32 @@
     </button>
     <div class="c-nav__list-container">
       <div class="c-nav__search-bar">
-        <a href="#nowhere" class="c-button--search">Rechercher</a>
+        <a href="#nowhere" class="c-button--search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <circle
+    cx="8"
+    cy="8"
+    r="7"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M19 19l-6-6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ <span>Rechercher</span></a>
       </div>
-      <ul class="c-nav__level-indicator">
+      <ul class="c-nav__level-indicator" aria-hidden="true">
       </ul>
       <div class="c-nav__list-wrapper">
-        <ul class="c-nav__list">
+        <ul class="c-nav__list" aria-label="Arborescence des pages">
           
           <li class="c-nav__list-item" data-level="0">
             
@@ -73,18 +101,6 @@
                       Organigrame
                     </button>
                     <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
-                      
-                      <li class="c-nav__list-item" data-level="2">
-                        <a href="#nowhere" class="c-nav__list-link">
-                          Communication tactique
-                        </a>
-                      </li>
-                      
-                      <li class="c-nav__list-item" data-level="2">
-                        <a href="#nowhere" class="c-nav__list-link">
-                          Bilderberg
-                        </a>
-                      </li>
                       
                       <li class="c-nav__list-item" data-level="2">
                         <a href="#nowhere" class="c-nav__list-link">
@@ -134,6 +150,48 @@
                         </a>
                       </li>
                       
+                    </ul>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                      La police en chiffres
+                    </button>
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Communication tactique
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        <a href="#nowhere" class="c-nav__list-link">
+                          Bilderberg
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link">
+                      Finances
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                      Objectifs 2020
+                    </button>
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
                       <li class="c-nav__list-item" data-level="2">
                         <a href="#nowhere" class="c-nav__list-link">
                           Montreux Jazz Festival
@@ -145,6 +203,17 @@
                           Fête des Vignerons
                         </a>
                       </li>
+                      
+                    </ul>
+                  
+                </li>
+                
+                <li class="c-nav__list-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                      Valorisation des colabirateurs
+                    </button>
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
                       
                       <li class="c-nav__list-item" data-level="2">
                         <a href="#nowhere" class="c-nav__list-link">
@@ -159,38 +228,6 @@
                       </li>
                       
                     </ul>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <a href="#nowhere" class="c-nav__list-link">
-                      La police en chiffres
-                    </a>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <a href="#nowhere" class="c-nav__list-link">
-                      Finances
-                    </a>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <a href="#nowhere" class="c-nav__list-link">
-                      Objectifs 2020
-                    </a>
-                  
-                </li>
-                
-                <li class="c-nav__list-item" data-level="1">
-                  
-                    <a href="#nowhere" class="c-nav__list-link">
-                      Valorisation des colabirateurs
-                    </a>
                   
                 </li>
                 
@@ -861,83 +898,83 @@
         <ul class="c-slider__sidebar-list">
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Aut quis ut autem inventore quae optio.</a>
+            <a href="#nowhere">Cum officiis quod numquam deserunt enim.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Suscipit quia omnis repellendus adipisci voluptas delectus impedit cumque.</a>
+            <a href="#nowhere">Esse ratione perspiciatis sed hic est non aut.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Excepturi aut distinctio accusamus autem est architecto repellat nihil voluptatibus.</a>
+            <a href="#nowhere">Quia ut ipsum odio sit ea nihil accusantium nesciunt.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Doloremque nam qui.</a>
+            <a href="#nowhere">Et totam sit velit quia aut corrupti error quod ut.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Ex laudantium facilis totam.</a>
+            <a href="#nowhere">Qui non ab omnis neque natus aliquam voluptatum.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Mollitia quia non pariatur omnis et voluptas qui esse error.</a>
+            <a href="#nowhere">Omnis et aut velit quo sed.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Voluptas quisquam et fugiat debitis.</a>
+            <a href="#nowhere">Et amet est nobis tempore necessitatibus aut cum sit ullam.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Dolorem voluptatem impedit.</a>
+            <a href="#nowhere">Veritatis magnam animi tenetur in numquam enim laudantium.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Voluptatem consequatur ullam distinctio impedit est aspernatur expedita explicabo asperiores.</a>
+            <a href="#nowhere">Nesciunt unde quibusdam qui.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Inventore natus quis ipsum.</a>
+            <a href="#nowhere">Et eum repellendus exercitationem autem iusto.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Sapiente commodi natus eum sunt ipsam fugiat.</a>
+            <a href="#nowhere">Repudiandae saepe non quod fuga qui dicta rerum.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Ut tenetur vitae.</a>
+            <a href="#nowhere">Et adipisci est voluptatem.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Rerum in officiis architecto est facilis laboriosam qui alias vero.</a>
+            <a href="#nowhere">Et unde fugiat esse.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Soluta excepturi vitae aliquam reiciendis aspernatur.</a>
+            <a href="#nowhere">Aspernatur et laudantium voluptas aut sapiente dolores id laboriosam amet.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Temporibus non sunt molestiae magnam voluptatem ipsam.</a>
+            <a href="#nowhere">Repellat nobis voluptates velit similique.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Est vero pariatur vero.</a>
+            <a href="#nowhere">Atque laborum nobis veniam consequuntur dolor totam voluptatem expedita.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Nostrum nemo facere corrupti id quos nihil illum et.</a>
+            <a href="#nowhere">Tenetur quibusdam laborum repudiandae.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Accusamus sit enim.</a>
+            <a href="#nowhere">Quidem perferendis non nihil.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Quia rem fugiat est sit vel.</a>
+            <a href="#nowhere">Quia dolorem veniam reprehenderit accusamus tempora magnam nobis id.</a>
           </li>
           
           <li class="c-slider__sidebar-list-item">
-            <a href="#nowhere">Aut nam quisquam sunt adipisci soluta voluptatem.</a>
+            <a href="#nowhere">Placeat deserunt quos.</a>
           </li>
           
         </ul>
@@ -952,9 +989,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Aut quis ut autem inventore quae optio.</h3>
+            <h3 class="c-slider__article-heading">Cum officiis quod numquam deserunt enim.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>22 janvier 2021
+              <span class="u-visually-hidden">Date:</span>July 3, 2020
             </div>
             <a
   href="#nowhere"
@@ -975,12 +1012,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Maine/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?bifurcated/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Maine/640x480"
-              alt="quibusdam dolore ut"
+              src="https://source.unsplash.com/500x500?bifurcated/640x480"
+              alt="ad id maiores"
             />
           </figure>
         </article>
@@ -989,9 +1026,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Suscipit quia omnis repellendus adipisci voluptas delectus impedit cumque.</h3>
+            <h3 class="c-slider__article-heading">Esse ratione perspiciatis sed hic est non aut.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>20 août 2020
+              <span class="u-visually-hidden">Date:</span>April 16, 2020
             </div>
             <a
   href="#nowhere"
@@ -1012,12 +1049,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?New/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?bus/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?New/640x480"
-              alt="labore quae doloremque"
+              src="https://source.unsplash.com/500x500?bus/640x480"
+              alt="tenetur aspernatur eaque"
             />
           </figure>
         </article>
@@ -1026,9 +1063,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Excepturi aut distinctio accusamus autem est architecto repellat nihil voluptatibus.</h3>
+            <h3 class="c-slider__article-heading">Quia ut ipsum odio sit ea nihil accusantium nesciunt.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>10 mars 2021
+              <span class="u-visually-hidden">Date:</span>August 10, 2020
             </div>
             <a
   href="#nowhere"
@@ -1049,12 +1086,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?SAS/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?infrastructures/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?SAS/640x480"
-              alt="eveniet numquam sit"
+              src="https://source.unsplash.com/500x500?infrastructures/640x480"
+              alt="aspernatur sint sunt"
             />
           </figure>
         </article>
@@ -1063,9 +1100,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Doloremque nam qui.</h3>
+            <h3 class="c-slider__article-heading">Et totam sit velit quia aut corrupti error quod ut.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>16 septembre 2020
+              <span class="u-visually-hidden">Date:</span>October 26, 2020
             </div>
             <a
   href="#nowhere"
@@ -1086,12 +1123,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Jewelery/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?up/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Jewelery/640x480"
-              alt="ipsam odio numquam"
+              src="https://source.unsplash.com/500x500?up/640x480"
+              alt="exercitationem eos ut"
             />
           </figure>
         </article>
@@ -1100,9 +1137,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Ex laudantium facilis totam.</h3>
+            <h3 class="c-slider__article-heading">Qui non ab omnis neque natus aliquam voluptatum.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>17 octobre 2020
+              <span class="u-visually-hidden">Date:</span>January 28, 2021
             </div>
             <a
   href="#nowhere"
@@ -1123,12 +1160,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Spurs/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Health/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Spurs/640x480"
-              alt="autem fugiat praesentium"
+              src="https://source.unsplash.com/500x500?Health/640x480"
+              alt="sint et quos"
             />
           </figure>
         </article>
@@ -1137,9 +1174,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Mollitia quia non pariatur omnis et voluptas qui esse error.</h3>
+            <h3 class="c-slider__article-heading">Omnis et aut velit quo sed.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>25 juin 2020
+              <span class="u-visually-hidden">Date:</span>May 10, 2020
             </div>
             <a
   href="#nowhere"
@@ -1160,12 +1197,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Usability/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Overpass/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Usability/640x480"
-              alt="sunt rerum repellendus"
+              src="https://source.unsplash.com/500x500?Overpass/640x480"
+              alt="quibusdam est illo"
             />
           </figure>
         </article>
@@ -1174,9 +1211,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Voluptas quisquam et fugiat debitis.</h3>
+            <h3 class="c-slider__article-heading">Et amet est nobis tempore necessitatibus aut cum sit ullam.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>2 août 2020
+              <span class="u-visually-hidden">Date:</span>June 15, 2020
             </div>
             <a
   href="#nowhere"
@@ -1197,12 +1234,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?index/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?protocol/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?index/640x480"
-              alt="et maiores maxime"
+              src="https://source.unsplash.com/500x500?protocol/640x480"
+              alt="aut quam cumque"
             />
           </figure>
         </article>
@@ -1211,9 +1248,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Dolorem voluptatem impedit.</h3>
+            <h3 class="c-slider__article-heading">Veritatis magnam animi tenetur in numquam enim laudantium.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>29 juillet 2020
+              <span class="u-visually-hidden">Date:</span>May 10, 2020
             </div>
             <a
   href="#nowhere"
@@ -1234,12 +1271,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Accounts/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?flexibility/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Accounts/640x480"
-              alt="illum aut saepe"
+              src="https://source.unsplash.com/500x500?flexibility/640x480"
+              alt="fugiat earum in"
             />
           </figure>
         </article>
@@ -1248,9 +1285,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Voluptatem consequatur ullam distinctio impedit est aspernatur expedita explicabo asperiores.</h3>
+            <h3 class="c-slider__article-heading">Nesciunt unde quibusdam qui.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>24 juillet 2020
+              <span class="u-visually-hidden">Date:</span>April 21, 2020
             </div>
             <a
   href="#nowhere"
@@ -1271,12 +1308,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?B2B/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Estate/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?B2B/640x480"
-              alt="explicabo voluptas quod"
+              src="https://source.unsplash.com/500x500?Estate/640x480"
+              alt="sunt voluptatem adipisci"
             />
           </figure>
         </article>
@@ -1285,9 +1322,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Inventore natus quis ipsum.</h3>
+            <h3 class="c-slider__article-heading">Et eum repellendus exercitationem autem iusto.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>24 juillet 2020
+              <span class="u-visually-hidden">Date:</span>August 2, 2020
             </div>
             <a
   href="#nowhere"
@@ -1308,12 +1345,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?invoice/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Stravenue/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?invoice/640x480"
-              alt="et dolorum quaerat"
+              src="https://source.unsplash.com/500x500?Stravenue/640x480"
+              alt="eaque est modi"
             />
           </figure>
         </article>
@@ -1322,9 +1359,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Sapiente commodi natus eum sunt ipsam fugiat.</h3>
+            <h3 class="c-slider__article-heading">Repudiandae saepe non quod fuga qui dicta rerum.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>7 février 2021
+              <span class="u-visually-hidden">Date:</span>January 12, 2021
             </div>
             <a
   href="#nowhere"
@@ -1345,12 +1382,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Bedfordshire/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Branding/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Bedfordshire/640x480"
-              alt="iure iure perferendis"
+              src="https://source.unsplash.com/500x500?Branding/640x480"
+              alt="qui nihil et"
             />
           </figure>
         </article>
@@ -1359,9 +1396,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Ut tenetur vitae.</h3>
+            <h3 class="c-slider__article-heading">Et adipisci est voluptatem.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>25 juillet 2020
+              <span class="u-visually-hidden">Date:</span>June 16, 2020
             </div>
             <a
   href="#nowhere"
@@ -1382,12 +1419,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?interface/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500/640x480"
-              alt="recusandae qui quos"
+              src="https://source.unsplash.com/500x500?interface/640x480"
+              alt="et reprehenderit dolorem"
             />
           </figure>
         </article>
@@ -1396,9 +1433,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Rerum in officiis architecto est facilis laboriosam qui alias vero.</h3>
+            <h3 class="c-slider__article-heading">Et unde fugiat esse.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>5 octobre 2020
+              <span class="u-visually-hidden">Date:</span>December 23, 2020
             </div>
             <a
   href="#nowhere"
@@ -1419,12 +1456,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Nebraska/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Cotton/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Nebraska/640x480"
-              alt="illo quia eum"
+              src="https://source.unsplash.com/500x500?Cotton/640x480"
+              alt="iste fugiat porro"
             />
           </figure>
         </article>
@@ -1433,83 +1470,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Soluta excepturi vitae aliquam reiciendis aspernatur.</h3>
+            <h3 class="c-slider__article-heading">Aspernatur et laudantium voluptas aut sapiente dolores id laboriosam amet.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>5 décembre 2020
-            </div>
-            <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-          </div>
-
-          <figure
-            class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?calculating/640x480');"
-          >
-            <img
-              class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?calculating/640x480"
-              alt="a quam in"
-            />
-          </figure>
-        </article>
-      </li>
-      
-      <li class="c-slider__list-item">
-        <article class="c-slider__article">
-          <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Temporibus non sunt molestiae magnam voluptatem ipsam.</h3>
-            <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>27 mai 2020
-            </div>
-            <a
-  href="#nowhere"
-  class="c-button c-button--transparent-alt c-slider__article-button"
-><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
-  <path
-    d="M1 1l6 6-6 6"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>
-</a>
-
-          </div>
-
-          <figure
-            class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Cambridgeshire/640x480');"
-          >
-            <img
-              class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Cambridgeshire/640x480"
-              alt="debitis earum dolor"
-            />
-          </figure>
-        </article>
-      </li>
-      
-      <li class="c-slider__list-item">
-        <article class="c-slider__article">
-          <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Est vero pariatur vero.</h3>
-            <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>25 avril 2020
+              <span class="u-visually-hidden">Date:</span>April 10, 2020
             </div>
             <a
   href="#nowhere"
@@ -1535,7 +1498,7 @@
             <img
               class="c-slider__article-image"
               src="https://source.unsplash.com/500x500?Computer/640x480"
-              alt="dolore quae quis"
+              alt="iste odio alias"
             />
           </figure>
         </article>
@@ -1544,9 +1507,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Nostrum nemo facere corrupti id quos nihil illum et.</h3>
+            <h3 class="c-slider__article-heading">Repellat nobis voluptates velit similique.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>12 mars 2021
+              <span class="u-visually-hidden">Date:</span>October 11, 2020
             </div>
             <a
   href="#nowhere"
@@ -1567,12 +1530,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Communications/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Drive/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Communications/640x480"
-              alt="dolor blanditiis magnam"
+              src="https://source.unsplash.com/500x500?Drive/640x480"
+              alt="et voluptates dicta"
             />
           </figure>
         </article>
@@ -1581,9 +1544,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Accusamus sit enim.</h3>
+            <h3 class="c-slider__article-heading">Atque laborum nobis veniam consequuntur dolor totam voluptatem expedita.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>9 mai 2020
+              <span class="u-visually-hidden">Date:</span>April 8, 2020
             </div>
             <a
   href="#nowhere"
@@ -1604,12 +1567,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?Slovenia/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?Outdoors/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?Slovenia/640x480"
-              alt="facilis sit aliquid"
+              src="https://source.unsplash.com/500x500?Outdoors/640x480"
+              alt="est ut quibusdam"
             />
           </figure>
         </article>
@@ -1618,9 +1581,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Quia rem fugiat est sit vel.</h3>
+            <h3 class="c-slider__article-heading">Tenetur quibusdam laborum repudiandae.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>16 août 2020
+              <span class="u-visually-hidden">Date:</span>March 20, 2021
             </div>
             <a
   href="#nowhere"
@@ -1641,12 +1604,12 @@
 
           <figure
             class="c-slider__article-figure"
-            style="background-image: url('https://source.unsplash.com/500x500?overriding/640x480');"
+            style="background-image: url('https://source.unsplash.com/500x500?purple/640x480');"
           >
             <img
               class="c-slider__article-image"
-              src="https://source.unsplash.com/500x500?overriding/640x480"
-              alt="dicta qui beatae"
+              src="https://source.unsplash.com/500x500?purple/640x480"
+              alt="non temporibus velit"
             />
           </figure>
         </article>
@@ -1655,9 +1618,9 @@
       <li class="c-slider__list-item">
         <article class="c-slider__article">
           <div class="c-slider__article-text-container">
-            <h3 class="c-slider__article-heading">Aut nam quisquam sunt adipisci soluta voluptatem.</h3>
+            <h3 class="c-slider__article-heading">Quidem perferendis non nihil.</h3>
             <div class="c-slider__article-date">
-              <span class="u-visually-hidden">Date:</span>1 février 2021
+              <span class="u-visually-hidden">Date:</span>May 29, 2020
             </div>
             <a
   href="#nowhere"
@@ -1683,7 +1646,81 @@
             <img
               class="c-slider__article-image"
               src="https://source.unsplash.com/500x500/640x480"
-              alt="iusto aut qui"
+              alt="quis quia laborum"
+            />
+          </figure>
+        </article>
+      </li>
+      
+      <li class="c-slider__list-item">
+        <article class="c-slider__article">
+          <div class="c-slider__article-text-container">
+            <h3 class="c-slider__article-heading">Quia dolorem veniam reprehenderit accusamus tempora magnam nobis id.</h3>
+            <div class="c-slider__article-date">
+              <span class="u-visually-hidden">Date:</span>June 11, 2020
+            </div>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+
+          <figure
+            class="c-slider__article-figure"
+            style="background-image: url('https://source.unsplash.com/500x500?backing/640x480');"
+          >
+            <img
+              class="c-slider__article-image"
+              src="https://source.unsplash.com/500x500?backing/640x480"
+              alt="vitae soluta tenetur"
+            />
+          </figure>
+        </article>
+      </li>
+      
+      <li class="c-slider__list-item">
+        <article class="c-slider__article">
+          <div class="c-slider__article-text-container">
+            <h3 class="c-slider__article-heading">Placeat deserunt quos.</h3>
+            <div class="c-slider__article-date">
+              <span class="u-visually-hidden">Date:</span>July 20, 2020
+            </div>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+
+          <figure
+            class="c-slider__article-figure"
+            style="background-image: url('https://source.unsplash.com/500x500?challenge/640x480');"
+          >
+            <img
+              class="c-slider__article-image"
+              src="https://source.unsplash.com/500x500?challenge/640x480"
+              alt="sunt distinctio fugit"
             />
           </figure>
         </article>
