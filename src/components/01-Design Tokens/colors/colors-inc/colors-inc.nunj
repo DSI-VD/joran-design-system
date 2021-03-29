@@ -2,7 +2,8 @@
 :root {
 {% for name, value in colors -%}
 {% for colorname, colorvalue in value -%}
-    --color__{{ name }}--{{ colorname }}: {{ colorvalue }}{% if not loop.last %};{% endif %}
+    --color__{{ name }}--{{ colorname }}: rgb({{ colorvalue }});
+    --color-raw__{{ name }}--{{ colorname }}: {{ colorvalue }};
 {% endfor %}
 {%- endfor %}
 }

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add _carousel_ component
+- Display nav correctly on desktop
+
+### Breaking change
+
+- Colors are now added with RGB values, it will require a major change on TYPO3.
+
 ## [0.0.22] - 2021-03-19
 
 ### Added
