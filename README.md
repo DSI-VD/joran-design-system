@@ -26,6 +26,12 @@ All changes are documented in [CHANGELOG.md](https://github.com/DSI-VD/joran-des
 ## New version
 
 1. Update `CHANGELOG.md` and commit
-2. `npm version [new version]`
-3. Push on all remotes `git push GitHub && git push GitHub --tags && git push && git push --tags`
-4. Deploy on gh-branches: `npm run deploy` (you can do it twice to kill cahe on gh-pages).
+`$ git commit -m "bump for version [new version]"`
+2. Create a new version and generate a new tag
+`$ npm version [new version]`
+3. Push on all Git remotes
+`$ git push GitHub && git push GitHub --tags && git push && git push --tags` (adapt this command to your remotes)
+4. Deploy on gh-branches
+`$ npm run deploy` (you can do it twice to kill cache on gh-page).
+5. Publish on npmjs.com
+`$ npm publish --tag latest`
