@@ -2,6 +2,7 @@
   @apply
     py-24
     text-white
+    overflow-hidden
   ;
 
   background-image: linear-gradient(180deg, #5d50db 0%, #463d9d 100%);
@@ -67,6 +68,41 @@
   color: #ddd9f9;
 }
 
+.c-timeline__items {
+  @apply
+    lg:pl-52
+  ;
+}
+
+.c-timeline__items .flickity-viewport {
+  @apply
+    overflow-visible
+  ;
+}
+
+.c-timeline__items .flickity-button {
+  @apply
+    top-full
+  ;
+}
+
+.c-timeline__items .flickity-button.previous {
+  left: auto;
+  right: 75px;
+}
+
+.c-timeline__items .flickity-page-dots {
+  width: auto;
+  left: 0;
+}
+
+.c-timeline__items .flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
 .c-timeline__item-content {
   @apply
     relative
@@ -81,13 +117,7 @@
 }
 
 .c-timeline__item:nth-child(2n) {
-  @apply
-    mt-96
-  ;
-}
-
-.c-timeline__item:first-child {
-  margin-left: calc(calc(100% - var(--c-slider__container-width)) / 2 + var(--c-slider__margin));
+  margin-top: 27rem;
 }
 
 .c-timeline__item:focus {

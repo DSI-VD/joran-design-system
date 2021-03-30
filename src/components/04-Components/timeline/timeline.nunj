@@ -2,10 +2,8 @@
     <div class="o-container">
         <h2 class="u-h2">Dates clés</h2>
         <a href="#nowhere" class="c-timeline__link">Lire la suite</a>
-    </div>
 
-    <div class="c-timeline__wrap">
-        <div class="c-timeline__items o-container" data-flickity='{ "cellAlign": "left", "contain": true, "groupCells": 2 }'>
+        <div class="c-timeline__items">
             <a href="#nowhere" class="c-timeline__item">
                 <div class="c-timeline__item-content">
                     <img src="https://source.unsplash.com/280x373" alt="">
