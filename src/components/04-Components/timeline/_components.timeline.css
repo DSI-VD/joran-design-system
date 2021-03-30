@@ -68,6 +68,12 @@
   color: #ddd9f9;
 }
 
+.c-timeline__item svg {
+  position: absolute;
+  left: -30px;
+  top: 17px;
+}
+
 .c-timeline__items {
   @apply
     lg:pl-52
