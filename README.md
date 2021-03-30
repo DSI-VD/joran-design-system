@@ -27,3 +27,5 @@ All changes are documented in [CHANGELOG.md](https://github.com/DSI-VD/joran-des
 
 1. Update `CHANGELOG.md` and commit
 2. `npm version [new version]`
+3. Push on all remotes `git push GitHub && git push GitHub --tags && git push && git push --tags`
+4. Deploy on gh-branches
