@@ -25,6 +25,8 @@ All changes are documented in [CHANGELOG.md](https://github.com/DSI-VD/joran-des
 
 ## New version
 
+Here's how to tag, build, publish and deploy a new version
+
 1. Update `CHANGELOG.md` and commit
 `$ git commit -m "bump for version [new version]"`
 2. Create a new version and generate a new tag
