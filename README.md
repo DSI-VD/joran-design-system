@@ -21,3 +21,9 @@ $ npm run deploy
 ## Changelog
 
 All changes are documented in [CHANGELOG.md](https://github.com/DSI-VD/joran-design-system/blob/master/CHANGELOG.md) file.
+
+
+## New version
+
+1. Update `CHANGELOG.md` and commit
+2. `npm version [new version]`
