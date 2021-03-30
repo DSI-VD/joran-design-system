@@ -2,7 +2,8 @@
   "status": "ready",
   "preview": "@preview--bg",
   "context": {
-    "src": "https://source.unsplash.com/100x100/?face"
+    "src": "https://source.unsplash.com/100x100/?face",
+    "alt": "This is an avatar"
   },
   "variants": [
     {
