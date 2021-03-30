@@ -2,7 +2,7 @@
   {% for name, value in primary %}
   <div
     class="h-48 w-48 block rounded-full p-6 m-4 shadow"
-    style="background-color: {{ value }};"
+    style="background-color: rgb({{ value }});"
   >
     color__primary--{{ name }}: <code>rgb({{ value }})</code>
   </div>
