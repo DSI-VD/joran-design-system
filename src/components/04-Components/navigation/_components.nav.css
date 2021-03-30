@@ -24,7 +24,7 @@
     fixed
     top-0
     w-full
-    z-50
+    z-30
     overflow-y-hidden
   ;
 
@@ -210,7 +210,7 @@
 .js-c-nav__list--open {
   @apply
     opacity-100
-    z-50
+    z-30
     visible
     block
     xl:absolute

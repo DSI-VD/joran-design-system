@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add _alert_ component
+
+### Changed
+
+- There's a new JavaScript file to include `alert.js` see _preview_ component
+  for more info
+
 ## [0.0.24] - 2021-03-30
 
 ### Fixes

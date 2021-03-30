@@ -1,3 +1,4 @@
+{% render '@alert' %}
 {% render '@navigation' %}
 <div class="c-page__content o-stack o-stack--big">
 

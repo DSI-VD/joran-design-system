@@ -32,5 +32,6 @@
     <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
     <script src="{{ '/assets/scripts/testimonial.js' | path  }}"></script>
     <script src="{{ '/assets/scripts/timeline.js' | path  }}"></script>
+    <script src="{{ '/assets/scripts/alert.js' | path  }}"></script>
   </body>
 </html>
