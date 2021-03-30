@@ -24,7 +24,7 @@
 }
 
 .c-button svg {
-  height: 1em;
+  height: 0.85em;
 }
 
 .c-button span + svg,
@@ -81,13 +81,8 @@
 
     py-3
   ;
-}
 
-.c-button--transparent:hover,
-.c-button--transparent:active {
-  @apply
-    tracking-widest
-  ;
+  font-weight: 100;
 }
 
 
@@ -102,11 +97,6 @@
 
     py-3
   ;
-}
 
-.c-button--transparent-alt:hover,
-.c-button--transparent-alt:active {
-  @apply
-    tracking-widest
-  ;
+  font-weight: 100;
 }

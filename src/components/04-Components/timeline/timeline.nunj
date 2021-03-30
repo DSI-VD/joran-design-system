@@ -1,7 +1,9 @@
 <div class="c-timeline">
     <div class="o-container">
         <h2 class="u-h2">Dates clés</h2>
-        <a href="#nowhere" class="c-timeline__link">Lire la suite</a>
+        {% render '@button--transparent-alternate-arrow-right',
+        {styleModifier: 'c-slider__article-button', text: 'lire la suite'},
+        true %}
 
         <div class="c-timeline__items">
             <a href="#nowhere" class="c-timeline__item">
