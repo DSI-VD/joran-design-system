@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Refine style of alert
 - _logo-header_ is set as ready
 
 ## [0.0.24] - 2021-03-30

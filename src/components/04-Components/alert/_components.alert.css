@@ -26,16 +26,26 @@
     ;
 }
 
-.c-alert__heading {
+.c-alert__heading h2,
+.c-alert__heading h3,
+.c-alert__heading h4,
+.c-alert__heading h5,
+.c-alert__heading h6 {
   @apply
-    text-xl
-    font-bold
+    text-black !important
     ;
 }
 
 .c-alert__heading + .c-alert__content {
   @apply
     mt-4
+    ;
+}
+
+.c-alert__content,
+.c-alert__heading {
+    @apply
+        prose
     ;
 }
 
