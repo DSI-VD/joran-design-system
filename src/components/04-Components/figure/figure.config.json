@@ -26,5 +26,15 @@
     ],
     "alt": "Des basket et des fleurs",
     "caption": "This is the caption"
-  }
+  },
+  "variants": [
+    {
+      "name": "link",
+      "context": {
+        "link": {
+          "url": "https://www.vd.ch/"
+        }
+      }
+    }
+  ]
 }

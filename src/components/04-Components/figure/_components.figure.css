@@ -12,3 +12,49 @@
 .c-figure__caption {
   @extend %caption;
 }
+
+.c-figure__link {
+    @apply
+        rounded
+        inline-block
+        ring-1
+        ring-inset
+        ring-primary
+        ring-opacity-50
+        bg-primary-100
+    ;
+    
+
+    .c-figure__media {
+    @apply
+        transition
+        transform
+        scale-95
+    ;
+    }
+
+    &:hover .c-figure__media {
+        @apply
+            scale-100
+        ;
+    }
+
+    &:active {
+        @apply
+            bg-primary-800
+        ;
+
+        .c-figure__media {
+            @apply
+                duration-75
+                scale-95
+            ;
+        }
+    }
+
+    &:focus {
+        @apply
+            outline-focus
+        ;
+    }
+}
