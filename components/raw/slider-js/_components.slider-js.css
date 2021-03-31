@@ -14,7 +14,6 @@
   --c-slider-js__height: 100%;
   --c-slider-js__padding: 4rem;
   --c-slider-js__container-height: 75vh; /* Do not work with `%` because slider can't calculate height */
-  
   --c-slider__margin: 1rem; /* [1] */
   --c-slider__container-width: 100%; /* [1] */
 
@@ -41,7 +40,7 @@
     --c-slider__margin: 4rem; /* [1] */
     --c-slider__container-width: 1536px; /* [1] */
   }
-  
+
   @apply
     bg-primary
     overflow-x-hidden
@@ -60,24 +59,23 @@
     flex-col
     lg:flex-row
   ;
-  
+
   height: var(--c-slider-js__container-height);
 }
 
 .c-slider-js__container-left {
-    flex: 1;
-    
-    @apply
-      flex
-      flex-col
+  flex: 1;
+
+  @apply
+    flex
+    flex-col
     ;
 }
 
 .c-slider-js__container-right {
-
   flex: 3;
-  
   margin-right: calc(var(--c-slider__margin) * -1); /* [2] */
+
   @screen sm {
     margin-right:
       calc(
@@ -105,11 +103,11 @@
  ----------------------------------- */
 
 .c-slider-js__heading {
-@extend %h1;
+  @extend %h1;
 
-@apply
-  text-white
-  mb-8
+  @apply
+    text-white
+    mb-8
   ;
 }
 
@@ -121,11 +119,11 @@
 
 .c-slider-js__sidebar {
   @extend %scrollbar;
-  
+
   @apply
     max-h-full
     overflow-y-auto
-    
+
     mr-8
     pr-8
   ;
@@ -155,18 +153,19 @@
 
 .c-slider-js__sidebar-list-link {
   @extend %caption;
+
   @apply
     text-primary-200
     transition-colors
   ;
-  
+
   &:hover,
   &:active {
     @apply
       text-white
     ;
   }
-  
+
   &:focus {
     @apply
       outline-focus
@@ -177,7 +176,7 @@
 /* -----------------------------------
  # Article
  ----------------------------------- */
- 
+
 /*
 article
 ┌─────────────────────────────────────────┐
@@ -217,20 +216,18 @@ article
  * 5. Add a line ont the left of the text when on desktop
  */
 
-
 .c-slider-js__article {
   min-width: 20rem;
   width: 25vw;
   max-width: 75vw;
   height: var(--c-slider-js__container-height);
+
   @apply
     flex /* [1] */
     flex-col /* [1] */
     mr-4
   ;
 }
-
-
 
 .c-slider-js__article-figure {
   @apply
@@ -242,7 +239,7 @@ article
 
     rounded
     mb-2
-    
+
     flex-1 /* [2] */
   ;
 }
@@ -252,8 +249,6 @@ article
     sr-only /* [3] */
     ;
 }
-
-
 
 .c-slider-js__article-text-container {
   @apply
@@ -298,13 +293,13 @@ article
 /* -----------------------------------
  # Flickity
  ----------------------------------- */
- 
- 
+
+
 /***
  * 1. Position dots
  * 2. Transform dots into lines
  * 3. Position prev & next button
- * 4. Fix dots line being over prev and next button and making them not 
+ * 4. Fix dots line being over prev and next button and making them not
  *    100% clickable
  */
 
@@ -314,7 +309,7 @@ article
 
 /* dots are lines */
 .c-slider-js .flickity-page-dots .dot {
-  height: .25rem; /* [2] */
+  height: 0.25rem; /* [2] */
   width: 1.5vw; /* [2] */
   margin: 0; /* [2] */
   border-radius: 0; /* [2] */

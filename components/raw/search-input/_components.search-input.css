@@ -8,7 +8,7 @@
 
 .c-search-input {
   @apply
-    relative 
+    relative
     text-base
     ;
 }
@@ -17,9 +17,9 @@
   @apply
     shadow
     appearance-none
-      border
-      rounded
-      w-full
+    border
+    rounded
+    w-full
       py-4
       px-6
       text-gray-700
@@ -34,11 +34,11 @@
 
 .c-search-input__button {
   @apply
-    absolute 
-    left-0 
-        top-0 
-        mt-5 
-        ml-6 
+    absolute
+    left-0
+    top-0
+    mt-5
+    ml-6
         text-primary
 
     ;
