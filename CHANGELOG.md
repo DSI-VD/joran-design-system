@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.25] - 2021-03-31
+
 ### Added
 
 - Add _alert_ component
@@ -409,7 +411,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.24...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.25...HEAD
+[0.0.25]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.24...v0.0.25
 [0.0.24]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.22...v0.0.23
 [0.0.22]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.21...v0.0.22
