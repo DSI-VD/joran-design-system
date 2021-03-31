@@ -4,7 +4,11 @@
   </div>
   <div class="c-logo-header__text">
     {% for item in text %}
-      <div>{{ item }}</div>
+      {% if loop.last %}
+        {{ item }}
+      {%- else -%}
+        {{ item }}<br>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

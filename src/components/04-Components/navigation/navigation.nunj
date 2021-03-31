@@ -1,8 +1,7 @@
 <div class="c-nav">
   <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
     <div class="c-nav__logo">
-      {% render '@logo-vd' %}
-      <span class="c-nav__logo-text">Entité</span>
+      {% render '@logo-header' %}
     </div>
     <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
       <span class="c-menu-icon c-menu-icon--cross">
