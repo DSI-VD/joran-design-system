@@ -3100,7 +3100,7 @@ body {
     height: 1rem;
   }
 
-.c-alert__close::focus {
+.c-alert__close:focus {
     outline: 3px solid #FFB703;
     outline-offset: 1px;
   }
@@ -3450,9 +3450,6 @@ body {
 .c-carousel .flickity-page-dots .dot {
     width: 2.5rem
 }
-  }
-
-.c-carousel .flickity-page-dots .dot.is-selected {
   }
 
 @media (min-width: 1024px) {

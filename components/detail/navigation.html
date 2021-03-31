@@ -1439,7 +1439,7 @@
     }
 
     <span class="hljs-comment">// Open navigation</span>
-    <span class="hljs-built_in">this</span>.navToggle.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.toggle(event));
+    <span class="hljs-built_in">this</span>.navToggle.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> <span class="hljs-built_in">this</span>.toggle(event));
   }
 
   <span class="hljs-function"><span class="hljs-title">toggle</span>(<span class="hljs-params">event</span>)</span> {
@@ -1509,7 +1509,7 @@
     <span class="hljs-keyword">const</span> level = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;li&#x27;</span>);
     level.append(levelLink);
     <span class="hljs-keyword">return</span> level;
-  };
+  }
 }
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DesktopNavigation</span> </span>{
@@ -1541,6 +1541,7 @@
       itemOpen.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list-link--active&#x27;</span>);
       itemOpen.setAttribute(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>, <span class="hljs-literal">false</span>);
     }
+
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> itemOpen <span class="hljs-keyword">of</span> <span class="hljs-built_in">this</span>.nav.querySelectorAll(<span class="hljs-string">&#x27;.js-c-nav__list--open&#x27;</span>)) {
       itemOpen.classList.remove(<span class="hljs-string">&#x27;js-c-nav__list--open&#x27;</span>);
     }
@@ -1552,7 +1553,7 @@
     <span class="hljs-built_in">this</span>.lastScrollPos = <span class="hljs-number">0</span>;
     <span class="hljs-built_in">this</span>.ticking = <span class="hljs-literal">false</span>;
     <span class="hljs-built_in">this</span>.nav = nav;
-    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&#x27;scroll&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.sticky(event));
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&#x27;scroll&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> <span class="hljs-built_in">this</span>.sticky(event));
   }
 
   <span class="hljs-function"><span class="hljs-title">sticky</span>(<span class="hljs-params">event</span>)</span> {
@@ -1582,6 +1583,7 @@
       <span class="hljs-keyword">new</span> DesktopNavigation(<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.c-nav&#x27;</span>));
     }
   };
+
   init();
 };
 
@@ -3645,8 +3647,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-31T13:37:45.283Z">
-                                31.03.2021, 15:37:45
+                            <time datetime="2021-03-31T13:40:49.927Z">
+                                31.03.2021, 15:40:49
                             </time>
                         
                     </dd>

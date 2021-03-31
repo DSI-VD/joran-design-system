@@ -1,11 +1,11 @@
 const onReady = () => {
-  // new Timeline(document.querySelector('#timeline1'));
+  // New Timeline(document.querySelector('#timeline1'));
   for (const item of document.querySelectorAll('.c-timeline__items')) {
     new Flickity(item, {
       groupCells: 2,
       contain: true,
       freeScroll: true,
-      percentPosition: true,
+      percentPosition: true
     });
   }
 };

@@ -20,9 +20,9 @@
     bg-yellow-100
     rounded
     border
-      border-yellow-400
-      px-4
-      py-2
+    border-yellow-400
+    px-4
+    py-2
     ;
 }
 
@@ -62,7 +62,7 @@
     height: 1rem;
   }
 
-  &::focus {
+  &:focus {
     @apply
       outline-focus
         ;

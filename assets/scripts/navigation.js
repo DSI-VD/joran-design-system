@@ -24,7 +24,7 @@ class MobileNavigation {
     }
 
     // Open navigation
-    this.navToggle.addEventListener('click', (event) => this.toggle(event));
+    this.navToggle.addEventListener('click', event => this.toggle(event));
   }
 
   toggle(event) {
@@ -94,7 +94,7 @@ class MobileNavigation {
     const level = document.createElement('li');
     level.append(levelLink);
     return level;
-  };
+  }
 }
 
 class DesktopNavigation {
@@ -126,6 +126,7 @@ class DesktopNavigation {
       itemOpen.classList.remove('js-c-nav__list-link--active');
       itemOpen.setAttribute('aria-expanded', false);
     }
+
     for (const itemOpen of this.nav.querySelectorAll('.js-c-nav__list--open')) {
       itemOpen.classList.remove('js-c-nav__list--open');
     }
@@ -137,7 +138,7 @@ class StickyNavigation {
     this.lastScrollPos = 0;
     this.ticking = false;
     this.nav = nav;
-    window.addEventListener('scroll', (event) => this.sticky(event));
+    window.addEventListener('scroll', event => this.sticky(event));
   }
 
   sticky(event) {
@@ -167,6 +168,7 @@ const initNavigation = () => {
       new DesktopNavigation(document.querySelector('.c-nav'));
     }
   };
+
   init();
 };
 
