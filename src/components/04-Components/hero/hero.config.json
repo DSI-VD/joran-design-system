@@ -9,7 +9,7 @@
     {
       "name": "full",
       "context": {
-        "variantModifier": "c-hero--title",
+        "variantModifier": "c-hero--full",
         "title": true,
         "arrow": true
       }
@@ -17,7 +17,7 @@
     {
       "name": "full-with-image",
       "context": {
-        "variantModifier": "c-hero--title c-hero--with-image",
+        "variantModifier": "c-hero--full c-hero--with-image",
         "image": "https://source.unsplash.com/nPz8akkUmDI",
         "title": true,
         "arrow": true

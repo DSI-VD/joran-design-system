@@ -27,7 +27,7 @@
     ;
 }
 
-.c-hero--title {
+.c-hero--full {
   @apply
     min-h-screen
   ;
