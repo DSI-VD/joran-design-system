@@ -36,7 +36,7 @@
                             aria-pressed="false"
                             class="c-button c-button--transparent c-testimonial__button js-testimonial__toggle-btn"
                             hidden>
-                        <span class="js-testimonial__toggle-btn-text">Lire la suite</span>{% render '@svg-chevron-right' %}
+                        <span class="js-testimonial__toggle-btn-text">Afficher plus</span>{% render '@svg-chevron-right' %}
                     </button>
                 
                 {% endif %}
