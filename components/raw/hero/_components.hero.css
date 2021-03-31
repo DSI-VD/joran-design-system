@@ -23,11 +23,11 @@
     bg-center
     bg-primary
 
-    py-24
+    py-28
     ;
 }
 
-.c-hero--title {
+.c-hero--full {
   @apply
     min-h-screen
   ;

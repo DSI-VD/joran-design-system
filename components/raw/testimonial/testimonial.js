@@ -24,7 +24,7 @@ if ('querySelector' in document &&
       // Change attributes and text if full text is shown/hidden
       console.log(fullTextWrapper.hasAttribute('hidden'));
       if (!fullTextWrapper.hasAttribute('hidden')) {
-        toggleButtonText.textContent = 'Lire la suite';
+        toggleButtonText.textContent = 'Afficher plus';
         fullTextWrapper.setAttribute('hidden', true);
         toggleButton.setAttribute('aria-expanded', false);
         toggleButton.setAttribute('aria-pressed', false);

@@ -1,17 +1,29 @@
 
 
-<!--
-    TODO: close button on alert
-    TODO: comme l'afficher dans la page
--->
-
 <div class="c-alert" role="alert">
-    <div class="c-alert__heading">
+  <div class="o-container">
+    <div class="o-container c-alert__container">
+      <div class="c-alert__heading">
         <h2>Cookies sur publications.vd.ch</h2>
-    </div>
-    <div class="c-alert__content o-stack o-stack--small">
-        <p>Nous utilisons certains cookies essentiels pour faire fonctionner ce site Web.</p>
+      </div>
+      <div class="c-alert__content">
+        <p>Nous utilisons certains cookies essentiels pour faire fonctionner <a
+          href="https://www.vd.ch">ce site web </a>.</p>
         <p>Nous souhaitons définir des cookies supplémentaires pour comprendre comment vous utilisez publications.vd.ch, mémoriser vos paramètres et améliorer les services gouvernementaux.</p>
         <p>Nous utilisons également des cookies définis par d'autres sites pour nous aider à diffuser le contenu de leurs services.</p>
+      </div>
+      <button class="c-alert__close" onclick="closeAlert(event)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+  <path
+    d="M13 1L1 13M1 1l12 12"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+<span class="u-visually-hidden">Fermer</span></button>
     </div>
+  </div>
 </div>
+

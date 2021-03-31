@@ -83,7 +83,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #a544ea; border-color: #a544ea;">Waiting for review</label>
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
 
 </div>
 
@@ -184,9 +184,9 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-header__text&quot;</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Direction générale de l<span class="hljs-symbol">&amp;#39;</span>enfance<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        Direction générale de l<span class="hljs-symbol">&amp;#39;</span>enfance<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>et de la jeunesse<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        et de la jeunesse
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -203,7 +203,11 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-logo-header__text&quot;</span>&gt;</span>
     </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> item <span class="hljs-keyword">in</span> text %}</span><span class="xml">
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-template-variable">{{ item }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> loop.last %}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{ item }}</span><span class="xml">
+      </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">else</span></span> -%}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{ item }}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
     </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endfor</span></span> %}</span><span class="xml">
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
@@ -1378,7 +1382,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1603,7 +1607,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--title.html" data-role="tree-link" data-pjax data-handle="hero">
+            <a class="Tree-entityLink" href="hero--default.html" data-role="tree-link" data-pjax data-handle="hero">
                 <span>Hero</span>
                 
 
@@ -1704,7 +1708,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2320,8 +2324,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-30T08:10:56.541Z">
-                                30.03.2021 à 10:10:56
+                            <time datetime="2021-03-31T13:37:06.155Z">
+                                31.03.2021, 15:37:06
                             </time>
                         
                     </dd>
@@ -3491,8 +3495,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--title.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Page title</span>
+            <a class="Tree-entityLink" href="hero--default.html" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3517,8 +3521,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--title-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Page title with image</span>
+            <a class="Tree-entityLink" href="hero--full.html" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Full</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--full-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Full With Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Default with image</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3704,7 +3760,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3730,7 +3786,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3756,7 +3812,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

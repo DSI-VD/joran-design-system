@@ -182,12 +182,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span>[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span>[H4] caption<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__bottom o-container&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-arrow c-hero__button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;presentation&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 14 16&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M7 1v14m6-6l-6 6M1 9l6 6&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -234,9 +229,11 @@
         </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">else</span></span> %}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ caption }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> arrow -%}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__bottom o-container&quot;</span>&gt;</span>
         </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="arrow--down.html">@arrow--down</a>&#x27;, { styleModifier: &quot;c-hero__button&quot; }, true %}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -305,11 +302,11 @@
     bg-center
     bg-primary
 
-    py-<span class="hljs-number">24</span>
+    py-<span class="hljs-number">28</span>
     ;
 }
 
-<span class="hljs-selector-class">.c-hero--title</span> {
+<span class="hljs-selector-class">.c-hero--full</span> {
   <span class="hljs-keyword">@apply</span>
     min-h-screen
   ;
@@ -1531,7 +1528,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1756,7 +1753,7 @@
         
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="hero--title.html" data-role="tree-link" data-pjax data-handle="hero">
+            <a class="Tree-entityLink" href="" data-role="tree-link" data-pjax data-handle="hero">
                 <span>Hero</span>
                 
 
@@ -1857,7 +1854,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2473,8 +2470,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-30T08:10:56.541Z">
-                                30.03.2021 à 10:10:56
+                            <time datetime="2021-03-31T13:37:06.155Z">
+                                31.03.2021, 15:37:06
                             </time>
                         
                     </dd>
@@ -3643,9 +3640,9 @@
         
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--title.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Page title</span>
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3670,8 +3667,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero--title-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
-                <span>Page title with image</span>
+            <a class="Tree-entityLink" href="hero--full.html" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Full</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--full-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Full With Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-with-image.html" data-role="tree-link" data-pjax data-handle="hero">
+                <span>Default with image</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3857,7 +3906,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3883,7 +3932,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3909,7 +3958,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #a544ea;" title="Waiting for review"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

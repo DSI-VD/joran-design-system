@@ -2,21 +2,37 @@
    # _components.alert.css
    ====================================================================== */
 
+/**
+ *  1. Position of the close button
+ */
 .c-alert {
   @apply
-    bg-yellow-100
-    rounded
-    border
-    border-yellow-400
-    px-4
-    py-2
+    fixed
+    bottom-0
+    z-50
+    w-full
     ;
 }
 
-.c-alert__heading {
+.c-alert__container {
+    @apply
+        relative /* [1] */
+      bg-yellow-100
+      rounded
+      border
+      border-yellow-400
+      px-4
+      py-2
+    ;
+}
+
+.c-alert__heading h2,
+.c-alert__heading h3,
+.c-alert__heading h4,
+.c-alert__heading h5,
+.c-alert__heading h6 {
   @apply
-    text-xl
-    font-bold
+    text-black !important
     ;
 }
 
@@ -25,3 +41,33 @@
     mt-4
     ;
 }
+
+.c-alert__content,
+.c-alert__heading {
+    @apply
+        prose
+    ;
+}
+
+.c-alert__close {
+    @apply
+        h-4
+
+        absolute /* [1] */
+        top-4 /* [1] */
+        right-4 /* [1] */
+    ;
+
+    svg {
+      height: 1rem;
+    }
+
+    &::focus {
+        @apply
+            outline-focus
+        ;
+    }
+ }
+
+
+

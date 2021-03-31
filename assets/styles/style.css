@@ -2663,7 +2663,18 @@ body {
    # _components.alert.css
    ====================================================================== */
 
+/**
+ *  1. Position of the close button
+ */
+
 .c-alert {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 50;
+}
+
+.c-alert__container {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
   --tw-border-opacity: 1;
@@ -2674,16 +2685,425 @@ body {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  position: relative;
 }
 
-.c-alert__heading {
-  font-weight: 700;
-  font-size: 1.75rem;
+.c-alert__heading h2, .c-alert__heading h3, .c-alert__heading h4, .c-alert__heading h5, .c-alert__heading h6 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(0, 0, 0, var(--tw-text-opacity)) !important;
 }
 
 .c-alert__heading + .c-alert__content {
   margin-top: 1rem;
 }
+
+.c-alert__content, .c-alert__heading {
+  color: #374151;
+  max-width: 65ch;
+}
+
+.c-alert__content [class~="lead"], .c-alert__heading [class~="lead"] {
+  color: #4b5563;
+  font-size: 1.25em;
+  line-height: 1.6;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.c-alert__content a, .c-alert__heading a {
+  color: #111827;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.c-alert__content strong, .c-alert__heading strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.c-alert__content ol[type="A"], .c-alert__heading ol[type="A"] {
+  --list-counter-style: upper-alpha;
+}
+
+.c-alert__content ol[type="a"], .c-alert__heading ol[type="a"] {
+  --list-counter-style: lower-alpha;
+}
+
+.c-alert__content ol[type="A s"], .c-alert__heading ol[type="A s"] {
+  --list-counter-style: upper-alpha;
+}
+
+.c-alert__content ol[type="a s"], .c-alert__heading ol[type="a s"] {
+  --list-counter-style: lower-alpha;
+}
+
+.c-alert__content ol[type="I"], .c-alert__heading ol[type="I"] {
+  --list-counter-style: upper-roman;
+}
+
+.c-alert__content ol[type="i"], .c-alert__heading ol[type="i"] {
+  --list-counter-style: lower-roman;
+}
+
+.c-alert__content ol[type="I s"], .c-alert__heading ol[type="I s"] {
+  --list-counter-style: upper-roman;
+}
+
+.c-alert__content ol[type="i s"], .c-alert__heading ol[type="i s"] {
+  --list-counter-style: lower-roman;
+}
+
+.c-alert__content ol[type="1"], .c-alert__heading ol[type="1"] {
+  --list-counter-style: decimal;
+}
+
+.c-alert__content ol > li, .c-alert__heading ol > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.c-alert__content ol > li::before, .c-alert__heading ol > li::before {
+  content: counter(list-item, var(--list-counter-style, decimal)) ".";
+  position: absolute;
+  font-weight: 400;
+  color: #6b7280;
+  left: 0;
+}
+
+.c-alert__content ul > li, .c-alert__heading ul > li {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.c-alert__content ul > li::before, .c-alert__heading ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  width: 0.375em;
+  height: 0.375em;
+  top: calc(0.875em - 0.1875em);
+  left: 0.25em;
+}
+
+.c-alert__content hr, .c-alert__heading hr {
+  border-color: #e5e7eb;
+  border-top-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.c-alert__content blockquote, .c-alert__heading blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: #111827;
+  border-left-width: 0.25rem;
+  border-left-color: #e5e7eb;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+.c-alert__content blockquote p:first-of-type::before, .c-alert__heading blockquote p:first-of-type::before {
+  content: open-quote;
+}
+
+.c-alert__content blockquote p:last-of-type::after, .c-alert__heading blockquote p:last-of-type::after {
+  content: close-quote;
+}
+
+.c-alert__content h1, .c-alert__heading h1 {
+  color: var(--color__primary--900);
+  font-weight: 700;
+  font-size: 2.375rem;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.05;
+}
+
+.c-alert__content h2, .c-alert__heading h2 {
+  color: var(--color__primary--900);
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.1429;
+}
+
+.c-alert__content h3, .c-alert__heading h3 {
+  color: var(--color__primary--900);
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-top: 1.6em;
+  margin-bottom: 0;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.c-alert__content h4, .c-alert__heading h4 {
+  color: var(--color__primary--900);
+  font-weight: 500;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.c-alert__content figure figcaption, .c-alert__heading figure figcaption {
+  color: #6b7280;
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+}
+
+.c-alert__content code, .c-alert__heading code {
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+.c-alert__content code::before, .c-alert__heading code::before {
+  content: "`";
+}
+
+.c-alert__content code::after, .c-alert__heading code::after {
+  content: "`";
+}
+
+.c-alert__content a code, .c-alert__heading a code {
+  color: #111827;
+}
+
+.c-alert__content pre, .c-alert__heading pre {
+  color: #e5e7eb;
+  background-color: #1f2937;
+  overflow-x: auto;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+  border-radius: 0.375rem;
+  padding-top: 0.8571429em;
+  padding-right: 1.1428571em;
+  padding-bottom: 0.8571429em;
+  padding-left: 1.1428571em;
+}
+
+.c-alert__content pre code, .c-alert__heading pre code {
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 400;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.c-alert__content pre code::before, .c-alert__heading pre code::before {
+  content: none;
+}
+
+.c-alert__content pre code::after, .c-alert__heading pre code::after {
+  content: none;
+}
+
+.c-alert__content table, .c-alert__heading table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+}
+
+.c-alert__content thead, .c-alert__heading thead {
+  color: #111827;
+  font-weight: 600;
+  border-bottom-width: 1px;
+  border-bottom-color: #d1d5db;
+}
+
+.c-alert__content thead th, .c-alert__heading thead th {
+  vertical-align: bottom;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.c-alert__content tbody tr, .c-alert__heading tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: #e5e7eb;
+}
+
+.c-alert__content tbody tr:last-child, .c-alert__heading tbody tr:last-child {
+  border-bottom-width: 0;
+}
+
+.c-alert__content tbody td, .c-alert__heading tbody td {
+  vertical-align: top;
+  padding-top: 0.5714286em;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.c-alert__content, .c-alert__heading {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.c-alert__content p, .c-alert__heading p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.c-alert__content img, .c-alert__heading img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.c-alert__content video, .c-alert__heading video {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.c-alert__content figure, .c-alert__heading figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.c-alert__content figure > *, .c-alert__heading figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c-alert__content h2 code, .c-alert__heading h2 code {
+  font-size: 0.875em;
+}
+
+.c-alert__content h3 code, .c-alert__heading h3 code {
+  font-size: 0.9em;
+}
+
+.c-alert__content ol, .c-alert__heading ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.c-alert__content ul, .c-alert__heading ul {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.c-alert__content li, .c-alert__heading li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.c-alert__content > ul > li p, .c-alert__heading > ul > li p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.c-alert__content > ul > li > *:first-child, .c-alert__heading > ul > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.c-alert__content > ul > li > *:last-child, .c-alert__heading > ul > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.c-alert__content > ol > li > *:first-child, .c-alert__heading > ol > li > *:first-child {
+  margin-top: 1.25em;
+}
+
+.c-alert__content > ol > li > *:last-child, .c-alert__heading > ol > li > *:last-child {
+  margin-bottom: 1.25em;
+}
+
+.c-alert__content ul ul, .c-alert__heading ul ul, .c-alert__content ul ol, .c-alert__heading ul ol, .c-alert__content ol ul, .c-alert__heading ol ul, .c-alert__content ol ol, .c-alert__heading ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.prose ul ul, .prose ul ul, .prose ul ol, .prose ul ol, .prose ol ul, .prose ol ul, .prose ol ol, .prose ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.c-alert__content hr + *, .c-alert__heading hr + * {
+  margin-top: 0;
+}
+
+.c-alert__content h2 + *, .c-alert__heading h2 + * {
+  margin-top: 0;
+}
+
+.c-alert__content h3 + *, .c-alert__heading h3 + * {
+  margin-top: 0;
+}
+
+.c-alert__content h4 + *, .c-alert__heading h4 + * {
+  margin-top: 0;
+}
+
+.c-alert__content thead th:first-child, .c-alert__heading thead th:first-child {
+  padding-left: 0;
+}
+
+.c-alert__content thead th:last-child, .c-alert__heading thead th:last-child {
+  padding-right: 0;
+}
+
+.c-alert__content tbody td:first-child, .c-alert__heading tbody td:first-child {
+  padding-left: 0;
+}
+
+.c-alert__content tbody td:last-child, .c-alert__heading tbody td:last-child {
+  padding-right: 0;
+}
+
+.c-alert__content > :first-child, .c-alert__heading > :first-child {
+  margin-top: 0;
+}
+
+.c-alert__content > :last-child, .c-alert__heading > :last-child {
+  margin-bottom: 0;
+}
+
+.c-alert__content h5, .c-alert__heading h5 {
+  color: var(--color__primary--900);
+  margin-bottom: 0;
+}
+
+.c-alert__content h6, .c-alert__heading h6 {
+  color: var(--color__primary--900);
+  margin-bottom: 0;
+}
+
+.c-alert__close {
+  height: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.c-alert__close svg {
+    height: 1rem;
+  }
+
+.c-alert__close::focus {
+    outline: 3px solid #FFB703;
+    outline-offset: 1px;
+  }
 
 /* ======================================================================
    # _components.arrow.css
@@ -3361,13 +3781,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
 }
 
-.c-hero--title {
+.c-hero--full {
   min-height: 100vh;
 }
 
@@ -3668,7 +4088,7 @@ body {
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
   width: 100%;
-  z-index: 50;
+  z-index: 30;
   transition: background-color 0.15s ease-out;
   will-change: background-color;
 }
@@ -3895,7 +4315,7 @@ body {
   display: block;
   opacity: 1;
   visibility: visible;
-  z-index: 50;
+  z-index: 30;
 }
 
 @media (min-width: 1280px) {
