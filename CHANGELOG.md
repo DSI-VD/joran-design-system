@@ -17,7 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - _hero--default_ is now the small hero and _hero--full_ the big one.
 - There's a new JavaScript file to include `alert.js` see _preview_ component
   for more info
-  
 - Update the "Lire la suite" link to "Afficher plus" for introduction and preabule components, both with accordeon
 
 ### Fixes
