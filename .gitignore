@@ -7,3 +7,6 @@ build
 # IDE files
 .nova
 .idea
+.swp
+.swo
+.swn

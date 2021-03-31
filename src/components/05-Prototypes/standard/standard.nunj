@@ -3,7 +3,7 @@
 <div class="c-page__content o-stack o-stack--big">
 
   <main class="c-page__main o-stack o-stack--big">
-    {% render '@hero--title-with-image' %}
+    {% render '@hero--default-with-image' %}
 
     {% render '@breadcrumb' %}
 
