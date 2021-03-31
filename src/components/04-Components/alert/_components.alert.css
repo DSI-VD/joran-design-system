@@ -15,14 +15,14 @@
 }
 
 .c-alert__container {
-    @apply
-        relative /* [1] */
-      bg-yellow-100
-      rounded
-      border
-      border-yellow-400
-      px-4
-      py-2
+  @apply
+    relative
+    bg-yellow-100
+    rounded
+    border
+    border-yellow-400
+    px-4
+    py-2
     ;
 }
 
@@ -44,30 +44,27 @@
 
 .c-alert__content,
 .c-alert__heading {
-    @apply
-        prose
+  @apply
+    prose
     ;
 }
 
 .c-alert__close {
-    @apply
-        h-4
+  @apply
+    h-4
 
-        absolute /* [1] */
-        top-4 /* [1] */
-        right-4 /* [1] */
+    absolute
+    top-4
+    right-4 /* [1] */
     ;
 
-    svg {
-      height: 1rem;
-    }
+  svg {
+    height: 1rem;
+  }
 
-    &::focus {
-        @apply
-            outline-focus
+  &:focus {
+    @apply
+      outline-focus
         ;
-    }
- }
-
-
-
+  }
+}

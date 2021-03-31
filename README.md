@@ -22,18 +22,17 @@ $ npm run deploy
 
 All changes are documented in [CHANGELOG.md](https://github.com/DSI-VD/joran-design-system/blob/master/CHANGELOG.md) file.
 
-
 ## New version
 
 Here's how to tag, build, publish and deploy a new version
 
 1. Update `CHANGELOG.md` and commit
-`$ git commit -m "bump for version [new version]"`
+   `$ git commit -m "bump for version [new version]"`
 2. Create a new version and generate a new tag
-`$ npm version [new version]`
+   `$ npm version [new version]`
 3. Push on all Git remotes
-`$ git push GitHub && git push GitHub --tags && git push && git push --tags` (adapt this command to your remotes)
+   `$ git push GitHub && git push GitHub --tags && git push && git push --tags` (adapt this command to your remotes)
 4. Deploy on gh-branches
-`$ npm run deploy` (you can do it twice to kill cache on gh-page).
+   `$ npm run deploy` (you can do it twice to kill cache on gh-page).
 5. Publish on npmjs.com
-`$ npm publish --tag latest`
+   `$ npm publish --tag latest`

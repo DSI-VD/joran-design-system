@@ -2,27 +2,22 @@
   "status": "ready",
   "preview": "@preview--bg",
   "context": {
-    "text": [
-      "Tribunal des baux"
-    ]
+    "text": ["Tribunal des baux"]
   },
   "variants": [
     {
       "name": "2 lines",
       "context": {
-        "text": [
-          "Direction générale de l'enfance",
-          "et de la jeunesse"
-        ]
+        "text": ["Direction générale de l'enfance", "et de la jeunesse"]
       }
     },
     {
       "name": "3 lines",
       "context": {
         "text": [
-      "Secrétariat générale du département",
-      "des infrastructures et des",
-      "ressources humaines"
+          "Secrétariat générale du département",
+          "des infrastructures et des",
+          "ressources humaines"
         ]
       }
     }

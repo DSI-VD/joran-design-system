@@ -168,15 +168,15 @@
   text-decoration-color: var(--color__primary--900);
   text-decoration-thickness: 0.1em;
   text-decoration-line: underline;
-  
+
   @apply
     transition-all
   ;
-  
+
   &:hover {
     @apply
-    bg-primary-200
-    rounded-t
+      bg-primary-200
+      rounded-t
   ;
   }
 }
@@ -186,7 +186,7 @@
 /* -----------------------------------
  # Scrollbar
  ----------------------------------- */
- 
+
 %scrollbar {
   &::-webkit-scrollbar-thumb {
     background-color: #fcfcfc;

@@ -3,46 +3,47 @@
    ====================================================================== */
 
 .c-carousel__cell {
-    @apply
-        w-full
-        h-72
-        mr-4
+  @apply
+    w-full
+    h-72
+    mr-4
     ;
 
-    @screen md {
-        @apply
-            h-96
+  @screen md {
+    @apply
+      h-96
         ;
-    }
+  }
 
-    @screen lg {
-      height: 36rem;
-    }
+  @screen lg {
+    height: 36rem;
+  }
 }
 
 .c-carousel__figure {
-    @apply
-        flex
-        flex-col
-        h-full
+  @apply
+    flex
+    flex-col
+    h-full
     ;
 }
 
 .c-carousel__img-container {
-  flex:1;
+  flex: 1;
+
   @apply
     rounded
     ;
 }
 
 .c-carousel__img {
-    @apply
-        sr-only
+  @apply
+    sr-only
     ;
 }
 
 .c-carousel__figcaption {
-    @extend %caption;
+  @extend %caption;
 }
 
 /* -----------------------------------
@@ -53,6 +54,7 @@
 .c-carousel .flickity-page-dots {
   bottom: 2rem;
 }
+
 /* dots are lines */
 .c-carousel .flickity-page-dots .dot {
   height: 4px;
@@ -66,7 +68,7 @@
   ;
 
   @screen sm {
-    @apply w-6
+    @apply w-6;
   }
 
   @screen md {
@@ -76,23 +78,18 @@
   @screen lg {
     @apply w-10;
   }
-
-  &.is-selected {
-
-  }
 }
 
 .c-carousel .flickity-prev-next-button {
-
-    &.previous {
-        @apply
-          lg:-left-16
+  &.previous {
+    @apply
+      lg:-left-16
         ;
-    }
+  }
 
-    &.next {
-        @apply
-          lg:-right-16
+  &.next {
+    @apply
+      lg:-right-16
         ;
-    }
+  }
 }
