@@ -10,7 +10,8 @@
       "name": "full",
       "context": {
         "variantModifier": "c-hero--title",
-        "title": true
+        "title": true,
+        "arrow": true
       }
     },
     {
@@ -18,7 +19,8 @@
       "context": {
         "variantModifier": "c-hero--title c-hero--with-image",
         "image": "https://source.unsplash.com/nPz8akkUmDI",
-        "title": true
+        "title": true,
+        "arrow": true
       }
     },
     {
