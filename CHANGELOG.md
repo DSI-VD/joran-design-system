@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add _alert_ component
+- add _hero--full_ component
 
 ### Changed
 
+- _hero--default_ is now the small hero and _hero--full_ the big one.
 - There's a new JavaScript file to include `alert.js` see _preview_ component
   for more info
 
