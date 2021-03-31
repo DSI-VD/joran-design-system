@@ -7,20 +7,14 @@
   },
   "variants": [
     {
-      "name": "default",
-      "hidden": true
-    },
-    {
-      "name": "title",
-      "label": "Page title",
+      "name": "full",
       "context": {
         "variantModifier": "c-hero--title",
         "title": true
       }
     },
     {
-      "name": "title-with-image",
-      "label": "Page title with image",
+      "name": "full-with-image",
       "context": {
         "variantModifier": "c-hero--title c-hero--with-image",
         "image": "https://source.unsplash.com/nPz8akkUmDI",
@@ -28,11 +22,8 @@
       }
     },
     {
-      "name": "contained",
-      "context": {}
-    },
-    {
-      "name": "contained-with-image",
+      "name": "default-with-image",
+      "label": "Default with image",
       "context": {
         "variantModifier": "c-hero--with-image",
         "image": "https://source.unsplash.com/SUBNTil9beU"
