@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - There's a new JavaScript file to include `alert.js` see _preview_ component
   for more info
 
+### Fixes
+
+- _logo-header_ is set as ready
+
 ## [0.0.24] - 2021-03-30
 
 ### Fixes
