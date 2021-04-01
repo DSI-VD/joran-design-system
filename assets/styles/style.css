@@ -3772,16 +3772,49 @@ body {
  */
 
 .c-hero {
+  --c-hero__nav-height: 6rem;
+  --c-hero__padding: 3rem;
+}
+
+@media (min-width: 768px) {
+
+.c-hero {
+    --c-hero__padding: 4rem;
+}
+  }
+
+@media (min-width: 1024px) {
+
+.c-hero {
+    --c-hero__padding: 5rem;
+}
+  }
+
+@media (min-width: 1280px) {
+
+.c-hero {
+    --c-hero__padding: 6rem;
+}
+  }
+
+@media (min-width: 1536px) {
+
+.c-hero {
+    --c-hero__padding: 7rem;
+}
+  }
+
+.c-hero {
   background-color: rgb(var(--color-raw__primary--900));
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
+  padding-top: calc(var(--c-hero__nav-height) + var(--c-hero__padding));
+  padding-bottom: var(--c-hero__padding);
 }
 
 .c-hero--full {
@@ -6171,6 +6204,49 @@ https://flickity.metafizzy.co
   letter-spacing: 0.05em;
   line-height: 1.3333;
 }
+
+/* ==========================================================================
+   # _utilities.image-link.css
+   ========================================================================== */
+
+.u-image-link {
+  border-color: rgb(var(--color-raw__primary--900));
+  --tw-border-opacity: 0.5;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  display: inline-block;
+}
+
+.u-image-link > * {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+.u-image-link:hover > *, .u-image-link:active > * {
+      --tw-scale-x: .95;
+      --tw-scale-y: .95;
+    }
+
+.u-image-link:active {
+    background-color: rgb(var(--color-raw__primary--100));
+    background-color: rgba(var(--color-raw__primary--100), var(--tw-bg-opacity));
+  }
+
+.u-image-link:focus {
+    outline: 3px solid #FFB703;
+    outline-offset: 1px;
+  }
 
 /* ==========================================================================
    # _utilities.margins.css

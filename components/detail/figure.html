@@ -178,7 +178,9 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure&quot;</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__media&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Des basket et des fleurs&quot;</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,&quot;</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__caption&quot;</span>&gt;</span>
         This is the caption
     <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
@@ -191,19 +193,25 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6b83d3c4960020fef9a3c4f7388dbd9e-panel-view">
     <code class="Code Code--lang-django hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure</span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__media&quot;</span> 
-         <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ src }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> 
-         <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-         </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> srcset %}</span><span class="xml"><span class="hljs-tag">
-         <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;
-         </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">for</span></span> item <span class="hljs-keyword">in</span> srcset -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">
-         </span></span></span><span class="hljs-template-variable">{{ item.url}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{item.width}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">,
-         </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endfor</span></span> -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
-         </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> link -%}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-image-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ link.url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+  </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__media&quot;</span> 
+           <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ src }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> 
+           <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+           </span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> srcset %}</span><span class="xml"><span class="hljs-tag">
+             <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;
+                     </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">for</span></span> item <span class="hljs-keyword">in</span> srcset -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">
+                     </span></span></span><span class="hljs-template-variable">{{ item.url}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{item.width}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">,
+                     </span></span></span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endfor</span></span> -%}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+           </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> link -%}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
     </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> caption -%}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__caption&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-figure__caption&quot;</span>&gt;</span>
         </span><span class="hljs-template-variable">{{ caption }}</span><span class="xml">
-    <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
     </span><span class="hljs-template-tag">{%- <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></span></pre>
     </code>
@@ -393,9 +401,11 @@
 
     
     
+        
+    
 
 
-<nav class="Navigation" data-behaviour="navigation">
+<nav class="Navigation in-variants-panel" data-behaviour="navigation">
     <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
     
         <div class="Navigation-group Navigation-search">
@@ -587,6 +597,52 @@
 
             </a>
         </li>
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-link">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-link-items">
+                    Link
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-link-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image-link.html" data-role="tree-link" data-pjax data-handle="image-link">
+                <span>Image Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         
@@ -1564,7 +1620,7 @@
         
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-role="tree-link" data-pjax data-handle="figure">
+            <a class="Tree-entityLink" href="figure--default.html" data-role="tree-link" data-pjax data-handle="figure">
                 <span>Figure</span>
                 
 
@@ -2333,8 +2389,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-31T13:48:04.404Z">
-                                31.03.2021, 15:48:04
+                            <time datetime="2021-04-01T08:51:43.822Z">
+                                01.04.2021, 10:51:43
                             </time>
                         
                     </dd>
@@ -2357,7 +2413,7 @@
     
     </div>
 
-    <div class="Navigation-panel Navigation-panel--variants" data-role="variant-panel">
+    <div class="Navigation-panel Navigation-panel--variants is-visible" data-role="variant-panel">
         <div class="Navigation-backButtonWrapper">
             <button class="Navigation-backButton" data-role="back" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -2631,6 +2687,8 @@
 </div>
 
             </div>
+        
+    
         
     
         
@@ -3479,6 +3537,79 @@
             </div>
         
     
+        
+            
+            <div class="Navigation-group is-visible" data-role="variant-group" data-component="figure">
+                
+<div class="Tree" data-behaviour="tree" id="tree-figure-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Figure Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="figure--default.html" data-role="tree-link" data-pjax data-handle="figure">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="figure--link.html" data-role="tree-link" data-pjax data-handle="figure">
+                <span>Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
         
     
         
