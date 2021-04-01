@@ -107,6 +107,14 @@
   }
 }
 
+/* -------------------------------------
+   # Carousel item with a link
+   ------------------------------------- */
+
+/**
+ *Make sure to map the style with .u-image-link
+ */
+
 .c-carousel__link {
   .c-carousel__img-container {
       /*@extend .u-image-link;*/
