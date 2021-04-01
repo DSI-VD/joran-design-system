@@ -1,16 +1,22 @@
 <figure class="c-figure{%- if styleModifier %} {{ styleModifier }}{% endif -%}">
-    <img class="c-figure__media" 
-         src="{{ src }}" 
-         alt="{{ alt }}"
-         {% if srcset %}
-         srcset="
-         {%- for item in srcset -%}
-         {{ item.url}} {{item.width}},
-         {%- endfor -%}">
-         {%- endif %}
+  {% if link -%}
+    <a class="u-image-link" href="{{ link.url }}">
+  {%- endif %}
+      <img class="c-figure__media" 
+           src="{{ src }}" 
+           alt="{{ alt }}"
+           {% if srcset %}
+             srcset="
+                     {%- for item in srcset -%}
+                     {{ item.url}} {{item.width}},
+                     {%- endfor -%}">
+           {%- endif %}
+    {% if link -%}
+      </a>
+    {%- endif %}
     {% if caption -%}
-    <figcaption class="c-figure__caption">
+      <figcaption class="c-figure__caption">
         {{ caption }}
-    </figcaption>
+      </figcaption>
     {%- endif %}
 </figure>
