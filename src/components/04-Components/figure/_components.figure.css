@@ -17,39 +17,32 @@
     @apply
         rounded
         inline-block
-        ring-1
-        ring-inset
-        ring-primary
-        ring-opacity-50
-        bg-primary-100
+        border-2
+        border-primary
+        border-opacity-50
     ;
-    
-
     .c-figure__media {
-    @apply
-        transition
-        transform
-        scale-95
-    ;
-    }
-
-    &:hover .c-figure__media {
         @apply
+            transform
+            transition
             scale-100
         ;
     }
 
+    &:hover,
     &:active {
-        @apply
-            bg-primary-800
-        ;
 
         .c-figure__media {
             @apply
-                duration-75
                 scale-95
             ;
         }
+    }
+
+    &:active {
+        @apply
+            bg-primary-100
+        ;
     }
 
     &:focus {
