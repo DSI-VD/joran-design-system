@@ -11,11 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add _link-image_ utility to put a link around an image
 - Add _alert_ component
 - add _hero--full_ component
 
 ### Changed
 
+- Add _figure--link_ variant that show a `<figure>` with a link in it
 - _hero--default_ is now the small hero and _hero--full_ the big one.
 - There's a new JavaScript file to include `alert.js` see _preview_ component
   for more info

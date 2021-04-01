@@ -1,6 +1,6 @@
 <figure class="c-figure{%- if styleModifier %} {{ styleModifier }}{% endif -%}">
   {% if link -%}
-    <a class="c-figure__link" href="{{ link.url }}">
+    <a class="u-image-link" href="{{ link.url }}">
   {%- endif %}
       <img class="c-figure__media" 
            src="{{ src }}" 
