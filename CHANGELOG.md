@@ -7,18 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.0.25] - 2021-03-31
+## [0.0.26] - 2021-04-01
 
 ### Added
 
 - Add _link-image_ utility to put a link around an image
-- Add _alert_ component
-- add _hero--full_ component
 
 ### Changed
 
 - _carousel_ items can have a link
 - Add _figure--link_ variant that show a `<figure>` with a link in it
+
+### Fixes
+- Fine tune padding of _hero_ and _hero--full_
+
+
+## [0.0.25] - 2021-03-31
+
+### Added
+
+- Add _alert_ component
+- add _hero--full_ component
+
+### Changed
+
 - _hero--default_ is now the small hero and _hero--full_ the big one.
 - There's a new JavaScript file to include `alert.js` see _preview_ component
   for more info
@@ -26,7 +38,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
-- Fine tune padding of _hero_ and _hero--full_
 - Refine style of alert
 - _logo-header_ is set as ready
 
@@ -415,7 +426,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.25...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.26...HEAD
+[0.0.26]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.25...v.0.0.26
 [0.0.25]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.24...v0.0.25
 [0.0.24]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.22...v0.0.23
