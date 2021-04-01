@@ -3413,22 +3413,27 @@ body {
    # Flickity components
    ----------------------------------- */
 
+/**
+ *  1. Avoid to see rounded corner
+ */
+
 /* position dots up a bit */
 
 .c-carousel .flickity-page-dots {
-  bottom: 2rem;
+  bottom: -1rem;
 }
 
 /* dots are lines */
 
 .c-carousel .flickity-page-dots .dot {
   height: 4px;
-  margin: 0;
+  margin-right: -2px; /* [1] */
+  margin-left: -2px; /* [1] */
   border-radius: 3px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
-  opacity: 0;
+  background-color: rgb(var(--color-raw__primary--200));
+  opacity: 1;
   width: 1rem;
+  background-color: rgba(var(--color-raw__primary--200), var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -3452,6 +3457,12 @@ body {
 }
   }
 
+.c-carousel .flickity-page-dots .dot.is-selected {
+    background-color: rgb(var(--color-raw__primary--900));
+    position: relative;
+    z-index: 10;
+  }
+
 @media (min-width: 1024px) {
     .c-carousel .flickity-prev-next-button.previous {
       left: -4rem;
@@ -3462,6 +3473,46 @@ body {
     .c-carousel .flickity-prev-next-button.next {
       right: -4rem;
     }
+  }
+
+/* -------------------------------------
+   # Carousel item with a link
+   ------------------------------------- */
+
+/**
+ *Make sure to map the style with .u-image-link
+ */
+
+.c-carousel__link .c-carousel__img-container {
+    /*@extend .u-image-link;*/
+    border-color: rgb(var(--color-raw__primary--900));
+    --tw-border-opacity: 0.5;
+    border-radius: 0.25rem;
+    border-width: 2px;
+    display: inline-block;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+.c-carousel__link:hover .c-carousel__img-container, .c-carousel__link:active .c-carousel__img-container {
+      --tw-scale-x: .95;
+      --tw-scale-y: .95;
+    }
+
+.c-carousel__link:focus {
+    outline: 3px solid #FFB703;
+    outline-offset: 1px;
   }
 
 /* ======================================================================
