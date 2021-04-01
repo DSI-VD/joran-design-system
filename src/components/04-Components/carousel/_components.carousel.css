@@ -50,20 +50,25 @@
    # Flickity components
    ----------------------------------- */
 
+/**
+ *  1. Avoid to see rounded corner
+ */
+
 /* position dots up a bit */
 .c-carousel .flickity-page-dots {
-  bottom: 2rem;
+  bottom: -1rem;
 }
 
 /* dots are lines */
 .c-carousel .flickity-page-dots .dot {
   height: 4px;
-  margin: 0;
+  margin-right: -2px; /* [1] */ 
+  margin-left: -2px; /* [1] */  
   border-radius: 3px;
 
   @apply
-    bg-white
-    opacity-0
+    bg-primary-200
+    opacity-100
     w-4
   ;
 
@@ -77,6 +82,14 @@
 
   @screen lg {
     @apply w-10;
+  }
+
+  &.is-selected {
+    @apply
+        bg-primary
+        z-10 /* [1] */
+        relative /* [1] */
+    ;
   }
 }
 
@@ -94,6 +107,38 @@
   }
 }
 
-.c-carousel__link .c-carousel__img-container {
-    @extend .u-image-link;
+.c-carousel__link {
+  .c-carousel__img-container {
+      /*@extend .u-image-link;*/
+
+    @apply
+        rounded
+        inline-block
+        border-2
+        border-primary
+        border-opacity-50
+
+        transform
+        transition
+        scale-100
+    ;
+
+  }
+
+  &:hover,
+  &:active {
+    .c-carousel__img-container {
+        @apply
+            scale-95
+        ;
+    }
+  }
+
+  &:focus {
+    @apply
+        outline-focus
+    ;
+  }
+
+
 }
