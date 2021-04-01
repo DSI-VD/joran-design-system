@@ -93,3 +93,7 @@
         ;
   }
 }
+
+.c-carousel__link .c-carousel__img-container {
+    @extend .u-image-link;
+}

@@ -3,23 +3,27 @@
   <ul class="c-carousel main-carousel" data-flickity='{ "contain": true, "accessibility": true, "pageDots": true }'>
     {% for article in articles %}
       <li class="c-carousel__cell carousel-cell">
-        <figure class="c-carousel__figure">
-          <div class="c-carousel__img-container"
-               style="
-                      background-image: url('{{ article.image.src }}');
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                      background-size: cover;
-                      ">
-            <img class="c-carousel__img"
-                 src="{{ article.image.src }}"
-                 alt="{{ article.image.alt }}">
-          </div>
-          {% if article.image.caption -%}
-          <figcaption
-            class="c-carousel__figcaption">{{ article.image.caption }}</figcaption>
-          {%- endif %}
-        </figure>
+        {% if article.link -%}
+          <a href="https://www.vd.ch" class="c-carousel__link">
+        {%- endif %}
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('{{ article.image.src }}');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="{{ article.image.src }}"
+                  alt="{{ article.image.alt }}">
+            </div>
+            {% if article.image.caption -%}
+            <figcaption
+              class="c-carousel__figcaption">{{ article.image.caption }}</figcaption>
+            {%- endif %}
+          </figure>
+        {% if article.link -%}</a>{%- endif %}
       </li>
     {% endfor %}
   </ul>
