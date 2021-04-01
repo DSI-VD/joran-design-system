@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Fine tune padding of _hero_ and _hero--full_
 - Refine style of alert
 - _logo-header_ is set as ready
 
