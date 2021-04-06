@@ -23,6 +23,8 @@
     
     {% render '@testimonial' %}
     
+    {% render '@promo-list' %}
+
     {% render '@content--default' %}
     
     {% render '@slider' %}

@@ -1,0 +1,19 @@
+{
+  "context": {
+    "text": "Ceci est un text ou chiffre mis en évidence"
+  },
+  "variants": [
+    {
+        "name": "col",
+        "context": {
+          "variantModifier": "c-promo-card--col"
+        }
+    },
+    {
+      "name": "row",
+      "context": {
+        "variantModifier": "c-promo-card--row"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+/* ==========================================================================
+   # _settings.promo-list.css
+   ========================================================================== */
+
+.c-promo-list {
+    @apply
+        bg-primary
+        text-white
+
+        rounded
+    ;
+}
+
+.c-promo-list__grid {
+    @apply
+        flex
+        flex-row
+        flex-wrap
+    ;
+}
+
+.c-promo-list__grid > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30rem;
+    max-width: 40rem;
+}

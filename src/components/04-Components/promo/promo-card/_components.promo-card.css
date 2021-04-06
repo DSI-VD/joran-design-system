@@ -1,0 +1,68 @@
+/* ==========================================================================
+   # _components.promo-card.css
+   ========================================================================== */
+
+.c-promo-card {
+    @apply
+        bg-primary
+        text-white
+
+        flex
+    ;
+
+    a {
+        @apply
+            underline
+        ;
+
+        &:hover {
+            @apply
+                no-underline
+            ;
+        }
+    }
+}
+
+/* -------------------------------------
+   # Col
+   ------------------------------------- */
+
+.c-promo-card--col {
+    @apply
+        flex-col
+    ;
+}
+
+/* -------------------------------------
+   # Row
+   ------------------------------------- */
+
+.c-promo-card--row {
+    @apply
+      flex-col
+      sm:flex-row
+    ;
+}
+
+/* -------------------------------------
+   # Item
+   ------------------------------------- */
+
+.c-promo-card__item {
+    @extend %h3;
+    @apply
+        text-center
+        sm:text-left
+        text-white
+        self-center
+        p-4
+    ;
+}
+
+.c-promo-card__item.c-promo-card__item--big {
+    @extend %h2;
+    @apply
+        text-white
+        text-center
+    ;
+}

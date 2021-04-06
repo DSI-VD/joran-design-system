@@ -1,0 +1,9 @@
+<article class="c-promo-card{% if variantModifier %} {{ variantModifier }}{% endif %}"> 
+  <div class="c-promo-card__item c-promo-card__item--big">
+    {# {% render '@svg-important' %} #}
+    23'000
+  </div>
+  <div class="c-promo-card__item">
+    {{ text }}
+  </div>
+</article>
