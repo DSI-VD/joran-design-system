@@ -16,6 +16,14 @@
       </ul>
       <div class="c-nav__list-wrapper">
         <ul class="c-nav__list" aria-label="Arborescence des pages">
+          <li class="c-nav__list-item c-nav__list-item-project">
+            <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+              Projets
+            </button>
+            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+            {% render '@slider-js' %}
+            </ul>
+          </li>
           {% for firstLevelItem in firstLevelItems %}
           <li class="c-nav__list-item" data-level="0">
             {% if firstLevelItem.secondLevelItems %}
