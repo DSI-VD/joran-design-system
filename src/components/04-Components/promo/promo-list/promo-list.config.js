@@ -14,6 +14,9 @@ function populate(outputData, itemNumber) {
       image: {
         src: faker.image.unsplash.image('500', '500', faker.random.word()),
         alt: faker.lorem.words()
+      },
+      link: {
+        url: faker.internet.url()
       }
     });
   }
