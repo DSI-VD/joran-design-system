@@ -6,6 +6,7 @@
     @apply
         bg-primary
         text-white
+        rounded
 
         flex
     ;
@@ -64,5 +65,34 @@
     @apply
         text-white
         text-center
+    ;
+}
+
+/* -------------------------------------
+   #Link
+   ------------------------------------- */
+
+.c-promo-card--link {
+    @apply
+        relative
+        ring-4
+        ring-white
+        ring-inset
+        ring-opacity-50
+        transition
+    ;
+
+    &:hover {
+        @apply
+            ring-opacity-100
+        ;
+    }
+}
+
+.c-promo-card__link::after {
+    content: "";
+    @apply
+        absolute
+        inset-0
     ;
 }

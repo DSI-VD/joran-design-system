@@ -6,4 +6,9 @@
   <div class="c-promo-card__item">
     {{ text }}
   </div>
+  {% if link %}
+    <a class="c-promo-card__link" href="{{ link.url }}">
+      <span class="u-visually-hidden">Lire la suite</span>
+    </a>
+  {% endif %}
 </article>

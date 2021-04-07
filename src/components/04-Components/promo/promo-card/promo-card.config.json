@@ -4,10 +4,10 @@
   },
   "variants": [
     {
-        "name": "col",
-        "context": {
-          "variantModifier": "c-promo-card--col"
-        }
+      "name": "col",
+      "context": {
+        "variantModifier": "c-promo-card--col"
+      }
     },
     {
       "name": "row",
@@ -17,10 +17,12 @@
     },
     {
       "name": "link",
-        "context": {
-          "variantModifier": "c-promo-card--col",
-          "link": "https://www.vd.ch"
+      "context": {
+        "variantModifier": "c-promo-card--col c-promo-card--link",
+        "link": {
+          "url": "https://www.vd.ch"
         }
+      }
     }
   ]
 }
