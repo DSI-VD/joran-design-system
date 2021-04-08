@@ -2,9 +2,9 @@
   <h2 class="u-visually-hidden">{{ title }}</h2>
   <ul class="c-promo-list__grid">
     {% for promo in promos %}
-      <li>
+      <li class="c-promo-list__grid-item">
         {% render '@promo-card--row', promo, true %}
-    </li>
+      </li>
     {% endfor %}
   </ul>
 </div>

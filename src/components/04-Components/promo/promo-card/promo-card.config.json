@@ -41,7 +41,7 @@
     {
       "name": "link",
       "context": {
-        "variantModifier": "c-promo-card--col c-promo-card--link",
+        "variantModifier": "c-promo-card--col",
         "link": {
           "url": "https://www.vd.ch"
         }
