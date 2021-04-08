@@ -14,7 +14,7 @@ for (let i = 0; i < articleCount; i++) {
       alt: faker.lorem.words(),
       caption: faker.lorem.sentence(),
     },
-    link: faker.random.boolean()
+    link: faker.datatype.boolean()
   });
 }
 
