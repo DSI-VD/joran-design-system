@@ -7,9 +7,19 @@
   },
   "variants": [
     {
-      "name": "image",
+      "name": "image row",
       "context": {
         "variantModifier": "c-promo-card--row",
+        "promote": {
+          "text": false,
+          "image": true
+        }
+      }
+    },
+    {
+      "name": "image col",
+      "context": {
+        "variantModifier": "c-promo-card--col",
         "promote": {
           "text": false,
           "image": true
