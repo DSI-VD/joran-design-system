@@ -215,8 +215,9 @@
     block
     xl:absolute
     xl:top-40
-    xl:left-14
+    xl:left-0
     xl:flex
+    xl:px-14
   ;
 }
 

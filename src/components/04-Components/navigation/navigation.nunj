@@ -21,7 +21,7 @@
               Projets
             </button>
             <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
-            {% render '@slider-js' %}
+            {% render '@slider-js-nav' %}
             </ul>
           </li>
           {% for firstLevelItem in firstLevelItems %}

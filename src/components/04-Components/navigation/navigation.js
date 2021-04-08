@@ -31,6 +31,7 @@ class MobileNavigation {
     if (!this.navOpen) {
       document.documentElement.style.overflow = 'hidden';
       document.body.classList.add('js-b-nav--open');
+      window.dispatchEvent(new Event('resize'));
       this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
       this.nav.classList.add('js-c-nav--open');
       this.navOpen = true;
@@ -107,6 +108,7 @@ class DesktopNavigation {
           this.close();
         } else {
           this.close();
+          window.dispatchEvent(new Event('resize'));
           event.target.setAttribute('aria-expanded', true);
           event.target.classList.add('js-c-nav__list-link--active');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');

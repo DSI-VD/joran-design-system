@@ -1,0 +1,36 @@
+<div class="c-slider-js-nav">
+  <div class="c-slider-js-nav-container">
+    <div class="c-slider-js-nav__container-left">
+      <h2 class="c-slider-js-nav__heading">{{ title }}</h2>
+      <div class="c-slider-js-nav__sidebar" aria-hidden="true">
+        <ul class="c-slider-js-nav__sidebar-list">
+          {% for article in articles %}
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">{{ article.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="c-slider-js-nav__container-right">
+      <div class="c-slider-js-nav-carousel">
+        {% for article in articles %}
+        <article class="c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="{{ article.image.src }}" alt="{{ article.image.alt }}"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>{{ article.date }}
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">{{ article.title }}</h3>
+            {% render '@button--transparent-alternate-arrow-right',
+            {styleModifier: 'c-slider-js-nav__article-button', text: 'lire la
+            suite'}, true %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

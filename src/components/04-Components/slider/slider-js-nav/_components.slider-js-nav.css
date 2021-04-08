@@ -1,0 +1,222 @@
+.c-slider-js-nav {
+  @apply
+    overflow-hidden
+    w-full
+  ;
+}
+
+.c-slider-js-nav-container {
+  @apply
+    flex
+  ;
+}
+
+.c-slider-js-nav-container .flickity-viewport {
+  @apply
+    overflow-visible
+  ;
+}
+
+.c-slider-js-nav__container-left {
+  @apply
+    opacity-100
+  ;
+
+  transition: opacity 0.35s ease-in-out;
+}
+
+.c-slider-js-nav__container-left--hidden {
+  @apply
+    opacity-0
+  ;
+}
+
+.c-slider-js-nav__container-right {
+  @apply
+    flex-grow
+    pt-4
+    pb-14
+  ;
+}
+
+.c-slider-js-nav__article {
+  @apply
+    w-96
+    mb-6
+  ;
+}
+
+.c-slider-js-nav__article:not(:last-child) {
+  @apply
+    mr-6
+  ;
+}
+
+.c-slider-js-nav__article h3 {
+  @apply
+    text-white
+    text-2xl
+    font-bold
+    tracking-tight
+  ;
+
+  line-height: 2.375rem;
+}
+
+.c-slider-js-nav__article img {
+  @apply
+    mb-5
+    w-full
+    h-auto
+    rounded
+  ;
+
+  background-color: var(--color__primary--600);
+  min-height: 200px;
+}
+
+.c-slider-js-nav__article-text-container {
+  @apply
+    pl-2.5
+    border-l
+    border-white
+    border-opacity-70
+  ;
+}
+
+.c-slider-js-nav__article .c-button {
+  @apply
+    text-white
+    text-opacity-70
+    text-sm
+  ;
+
+  transition: color 0.35s ease;
+}
+
+.c-slider-js-nav__article .c-button:hover {
+  @apply
+    text-opacity-100
+  ;
+}
+
+.c-slider-js-nav__article-date {
+  @apply
+    text-white
+    text-opacity-70
+    text-sm
+  ;
+}
+
+.c-slider-js-nav__heading {
+  @apply
+    text-white
+    text-4xl
+    uppercase
+    font-bold
+    tracking-tight
+    mb-5
+  ;
+}
+
+.c-slider-js-nav__sidebar {
+  @apply
+    pr-10
+    w-96
+  ;
+}
+
+.c-slider-js-nav__sidebar-list {
+  min-height: 400px;
+  overflow-y: auto;
+}
+
+.c-slider-js-nav__sidebar-list::-webkit-scrollbar-thumb {
+  @apply
+    bg-white
+  ;
+}
+
+.c-slider-js-nav__sidebar-list::-webkit-scrollbar-track {
+  @apply
+    bg-black
+    bg-opacity-25
+  ;
+}
+
+.c-slider-js-nav__sidebar-list::-webkit-scrollbar {
+  @apply
+    w-1
+    h-1
+  ;
+}
+
+.c-slider-js-nav__sidebar-list-link {
+  @apply
+    text-white
+    text-opacity-70
+    text-sm
+    inline-block
+    my-4
+    mr-3
+  ;
+
+  transition: color 0.35s ease;
+}
+
+.c-slider-js-nav__sidebar-list-link:hover {
+  @apply
+    text-opacity-100
+  ;
+}
+
+.c-slider-js-nav .flickity-button {
+  @apply
+    top-full
+    bg-white
+    bg-opacity-25
+  ;
+
+  transition: background-color 0.35s ease-in-out;
+}
+
+.c-slider-js-nav .flickity-button:hover .flickity-button-icon {
+  fill: var(--color__primary--600);
+}
+
+.c-slider-js-nav .flickity-button .flickity-button-icon {
+  transition: all 0.35s ease;
+  fill: rgb(252, 252, 252);
+  width: 15px;
+  left: 15px;
+}
+
+.c-slider-js-nav .flickity-button.previous {
+  @apply
+    left-auto
+    right-20
+  ;
+}
+
+.c-slider-js-nav .flickity-page-dots {
+  @apply
+    w-auto
+    left-0
+  ;
+}
+
+.c-slider-js-nav .flickity-page-dots .dot {
+  @apply
+    h-1
+    w-8
+    m-0
+    bg-black
+    rounded-none
+  ;
+}
+
+.c-slider-js-nav .flickity-page-dots .dot.is-selected {
+  @apply
+    bg-white
+  ;
+}
