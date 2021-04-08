@@ -1,14 +1,17 @@
 <article class="c-promo-card{% if variantModifier %} {{ variantModifier }}{% endif %}"> 
   <div class="c-promo-card__item c-promo-card__item--big">
-    {# {% render '@svg-important' %} #}
-    23'000
+    {% if promote.text %}
+      {{ promote.text }}
+    {% elif promote.image %}
+      {% render '@svg-important' %} 
+    {% endif %}
   </div>
   <div class="c-promo-card__item">
     {{ text }}
   </div>
   {% if link %}
     <a class="c-promo-card__link" href="{{ link.url }}">
-      <span class="u-visually-hidden">Lire la suite</span>
+      <span class="u-visually-hidden">Lire la suite de {{ text }}</span>
     </a>
   {% endif %}
 </article>

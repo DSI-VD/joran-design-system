@@ -1,8 +1,21 @@
 {
   "context": {
+    "promote": {
+      "text": "3 millions"
+    },
     "text": "Ceci est un text ou chiffre mis en évidence"
   },
   "variants": [
+    {
+      "name": "image",
+      "context": {
+        "variantModifier": "c-promo-card--row",
+        "promote": {
+          "text": false,
+          "image": true
+        }
+      }
+    },
     {
       "name": "col",
       "context": {
