@@ -11,15 +11,13 @@
   ;
 }
 
-.c-slider-js-nav-container .flickity-viewport {
-  @apply
-    overflow-visible
-  ;
-}
-
 .c-slider-js-nav__container-left {
   @apply
     opacity-100
+    hidden
+    invisible
+    xl:visible
+    xl:block
   ;
 
   transition: opacity 0.35s ease-in-out;
@@ -218,5 +216,11 @@
 .c-slider-js-nav .flickity-page-dots .dot.is-selected {
   @apply
     bg-white
+  ;
+}
+
+.c-slider-js-nav .flickity-viewport {
+  @apply
+    overflow-visible
   ;
 }

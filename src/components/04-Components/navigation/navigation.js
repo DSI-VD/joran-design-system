@@ -14,6 +14,7 @@ class MobileNavigation {
           event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
           item.setAttribute('aria-expanded', true);
+          window.dispatchEvent(new Event('resize'));
           this.currentLevel++;
         } else if (event.target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
           this.closeLevelTabs(event, 2);
@@ -31,7 +32,6 @@ class MobileNavigation {
     if (!this.navOpen) {
       document.documentElement.style.overflow = 'hidden';
       document.body.classList.add('js-b-nav--open');
-      window.dispatchEvent(new Event('resize'));
       this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
       this.nav.classList.add('js-c-nav--open');
       this.navOpen = true;
