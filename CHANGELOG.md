@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Force scrollbar to be visible to avoid awkward jump when there's not enough
+  content on a page
 - Upgrade node modules
 
 ## [0.0.26] - 2021-04-01
