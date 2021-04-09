@@ -127,6 +127,8 @@
 .c-slider-js-nav__sidebar-list {
   min-height: 450px;
   overflow-y: auto;
+  scrollbar-color: #fcfcfc rgba(0, 0, 0, 0.25);
+  scrollbar-width: thin;
 }
 
 .c-slider-js-nav__sidebar-list::-webkit-scrollbar-thumb {
