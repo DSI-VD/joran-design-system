@@ -1,0 +1,12 @@
+<div>
+  <div class="js-accordeon__fulltext o-prose">
+    {{ fulltext | safe }}
+  </div>
+  <button aria-expanded="false"
+          aria-controls="js-more-1"
+          aria-pressed="false"
+          class="c-button c-button--transparent js-accordeon__toggle-btn"
+          hidden>
+    <span class="js-accordeon__toggle-btn-text">Afficher plus</span>{% render '@svg-chevron-right' %}
+  </button>
+</div>

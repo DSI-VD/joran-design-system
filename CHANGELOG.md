@@ -9,8 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add an _accordeon_ object so that it can be used in multiple components
 - Add a _video--legend_ variant that use the _figure_ style to add a caption to
   a video
+
+### Changes
+
+- _testimonail_ us _accordeon_ object insted of his own script. `.js-testimonial` classes have been replace by `.js-accordeon`
+- `testimonial.js` have been replace by `accordeon.js` in _preview_
 
 ### Fixes
 
