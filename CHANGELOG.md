@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Fix CTA colors of blue theme
 - Force scrollbar to be visible to avoid awkward jump when there's not enough
   content on a page
 - Upgrade node modules
