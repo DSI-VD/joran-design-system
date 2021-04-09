@@ -12,7 +12,7 @@ for (let i = 0; i < articleCount; i++) {
       styleModifier: 'c-carousel__figure',
       src: faker.image.unsplash.image('1024', '576', randomWord),
       alt: faker.lorem.words(),
-      caption: faker.lorem.sentence(),
+      caption: faker.lorem.sentence()
     },
     link: faker.datatype.boolean()
   });

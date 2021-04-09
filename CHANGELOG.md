@@ -25,8 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add _figure--link_ variant that show a `<figure>` with a link in it
 
 ### Fixes
-- Fine tune padding of _hero_ and _hero--full_
 
+- Fine tune padding of _hero_ and _hero--full_
 
 ## [0.0.25] - 2021-03-31
 
