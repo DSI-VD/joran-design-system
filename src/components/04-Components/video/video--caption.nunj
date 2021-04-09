@@ -1,0 +1,6 @@
+<div class="o-container">
+  <figure class="c-figure">
+    {% render '@ratio--16x9' %}
+    <figcaption class="c-figure__caption">Caption</figcaption>
+  </figure>
+</div>

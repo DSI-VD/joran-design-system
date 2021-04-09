@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add a _video--legend_ variant that use the _figure_ style to add a caption to
+  a video
+
 ### Fixes
 
 - Fix CTA colors of blue theme
