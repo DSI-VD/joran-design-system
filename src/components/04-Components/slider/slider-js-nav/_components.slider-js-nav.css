@@ -86,9 +86,9 @@
   @apply
     text-white
     text-opacity-70
-    text-sm
   ;
 
+  font-size: 0.95rem;
   transition: color 0.35s ease;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .c-slider-js-nav__sidebar-list {
-  min-height: 400px;
+  min-height: 450px;
   overflow-y: auto;
 }
 
@@ -201,6 +201,8 @@
     w-auto
     left-0
   ;
+
+  bottom: -5px;
 }
 
 .c-slider-js-nav .flickity-page-dots .dot {
