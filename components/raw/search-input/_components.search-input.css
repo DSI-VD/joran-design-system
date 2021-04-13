@@ -5,12 +5,18 @@
 /**
  *  1. Place the magnifier
  */
-
-.c-search-input {
+ .c-search-input {
   @apply
     relative
     text-base
+    md:w-full
+    md:flex
     ;
+ }
+
+ .c-search-input__row {
+  @apply
+    w-full;
 }
 
 .c-search-input__field {
@@ -22,16 +28,45 @@
     w-full
     py-4
     px-6
-    text-gray-700
     leading-tight
-
     pl-16
-      text-primary
-
+    text-primary
     focus:outline-focus
     ;
 }
 
+/**
+ *  2. Select
+ */
+ .c-search-select__row {
+  @apply
+    w-full
+}
+
+.c-search-select {
+  @apply
+    w-full
+    mb-3
+    text-primary
+    ;
+}
+
+.c-search-select option {
+  @apply
+    text-primary
+    ;
+}
+.c-content--with-selectors {
+  @apply
+    w-full
+    block
+    mb-3
+    ;
+}
+
+/**
+ *  3. Search button
+ */
 .c-search-input__button {
   @apply
     absolute
@@ -40,10 +75,59 @@
     mt-5
     ml-6
     text-primary
-
     ;
 
   svg {
     height: 1em;
+  }
+}
+
+.c-search-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right .5rem center;
+  background-size: 1.5em 1.5em;
+  background-color: #fff;
+  appearance: none;
+  @apply
+    bg-no-repeat
+    shadow
+    border
+    leading-tight
+    rounded
+    p-4
+    md:py-4
+    md:px-1
+    ;
+}
+
+@screen md {
+
+  .c-search-select__row {
+    @apply
+      w-1/3
+      px-3
+      ;
+  }
+
+  .c-search-select__row.c-search-select__last {
+    @apply
+      w-1/3
+      ;
+  }
+
+  .c-content--with-selectors {
+    @apply
+      w-1/2
+      mb-6
+      mb-0
+      pr-3
+      ;
+  }
+
+  .c-search-select {
+    @apply
+      px-4
+      mb-0
+      ;
   }
 }

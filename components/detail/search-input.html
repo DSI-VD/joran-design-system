@@ -179,8 +179,11 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input&quot;</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Recherche<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__field&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;search&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__row&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Recherche<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__field&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;search&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__button&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 20 20&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;8&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;8&quot;</span> <span class="hljs-attr">r</span>=<span class="hljs-string">&quot;7&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;currentColor&quot;</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">&quot;1.5&quot;</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">&quot;round&quot;</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">&quot;round&quot;</span> /&gt;</span>
@@ -200,8 +203,29 @@
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> 
         <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Recherche<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__field&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;search&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__row</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> selectors %}</span><span class="hljs-template-variable">{{ styleWithSelectors }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Recherche<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__field&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;search&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> selectors %}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-select__row&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;filter-1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Filtrer par publication<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;filter-1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-select&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Choisir une publication<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Une publication avec un titre<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Une seconde publication<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-select__row c-search-select__last&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;filter-2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;u-visually-hidden&quot;</span>&gt;</span>Filtrer par année<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;filter-2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-select&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Choisir une année<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>2021<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>2020<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>2019<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-search-input__button&quot;</span>&gt;</span>
           </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="svg-search.html">@svg-search</a>&#x27; %}</span><span class="xml">
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -215,7 +239,9 @@
     <code class="Code Code--lang-json hljs">
         
             
-            <pre><span class="hljs-comment">/* No context defined. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">&quot;selectors&quot;</span>: <span class="hljs-literal">false</span>
+}</pre>
             
         
     </code>
@@ -253,12 +279,18 @@
 <span class="hljs-comment">/**
  *  1. Place the magnifier
  */</span>
-
-<span class="hljs-selector-class">.c-search-input</span> {
+ <span class="hljs-selector-class">.c-search-input</span> {
   <span class="hljs-keyword">@apply</span>
     relative
     text-base
+    <span class="hljs-attribute">md</span>:w-full
+    <span class="hljs-attribute">md</span>:flex
     ;
+ }
+
+ <span class="hljs-selector-class">.c-search-input__row</span> {
+  <span class="hljs-keyword">@apply</span>
+    w-full;
 }
 
 <span class="hljs-selector-class">.c-search-input__field</span> {
@@ -270,16 +302,45 @@
     w-full
     py-<span class="hljs-number">4</span>
     px-<span class="hljs-number">6</span>
-    text-gray-<span class="hljs-number">700</span>
     leading-tight
-
     pl-<span class="hljs-number">16</span>
-      text-primary
-
+    text-primary
     <span class="hljs-attribute">focus</span>:outline-focus
     ;
 }
 
+<span class="hljs-comment">/**
+ *  2. Select
+ */</span>
+ <span class="hljs-selector-class">.c-search-select__row</span> {
+  <span class="hljs-keyword">@apply</span>
+    w-full
+}
+
+.c-search-select {
+  <span class="hljs-keyword">@apply</span>
+    w-full
+    mb-<span class="hljs-number">3</span>
+    text-primary
+    ;
+}
+
+<span class="hljs-selector-class">.c-search-select</span> option {
+  <span class="hljs-keyword">@apply</span>
+    text-primary
+    ;
+}
+<span class="hljs-selector-class">.c-content--with-selectors</span> {
+  <span class="hljs-keyword">@apply</span>
+    w-full
+    block
+    mb-<span class="hljs-number">3</span>
+    ;
+}
+
+<span class="hljs-comment">/**
+ *  3. Search button
+ */</span>
 <span class="hljs-selector-class">.c-search-input__button</span> {
   <span class="hljs-keyword">@apply</span>
     absolute
@@ -288,14 +349,62 @@
     mt-<span class="hljs-number">5</span>
     ml-<span class="hljs-number">6</span>
     text-primary
-
     ;
 
   svg {
     <span class="hljs-attribute">height</span>: <span class="hljs-number">1em</span>;
   }
 }
-</pre>
+
+<span class="hljs-selector-class">.c-search-select</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;data:image/svg+xml,%3csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; fill=&#x27;none&#x27; viewBox=&#x27;0 0 20 20&#x27;%3e%3cpath stroke=&#x27;%236b7280&#x27; stroke-linecap=&#x27;round&#x27; stroke-linejoin=&#x27;round&#x27; stroke-width=&#x27;1.5&#x27; d=&#x27;M6 8l4 4 4-4&#x27;/%3e%3c/svg%3e&quot;</span>);
+  <span class="hljs-attribute">background-position</span>: right .<span class="hljs-number">5rem</span> center;
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">1.5em</span> <span class="hljs-number">1.5em</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+  appearance: none;
+  <span class="hljs-keyword">@apply</span>
+    bg-no-repeat
+    shadow
+    border
+    leading-tight
+    rounded
+    p-<span class="hljs-number">4</span>
+    <span class="hljs-attribute">md</span>:py-<span class="hljs-number">4</span>
+    <span class="hljs-attribute">md</span>:px-<span class="hljs-number">1</span>
+    ;
+}
+
+<span class="hljs-keyword">@screen</span> md {
+
+  <span class="hljs-selector-class">.c-search-select__row</span> {
+    <span class="hljs-keyword">@apply</span>
+      w-<span class="hljs-number">1</span>/<span class="hljs-number">3</span>
+      px-<span class="hljs-number">3</span>
+      ;
+  }
+
+  <span class="hljs-selector-class">.c-search-select__row</span><span class="hljs-selector-class">.c-search-select__last</span> {
+    <span class="hljs-keyword">@apply</span>
+      w-<span class="hljs-number">1</span>/<span class="hljs-number">3</span>
+      ;
+  }
+
+  <span class="hljs-selector-class">.c-content--with-selectors</span> {
+    <span class="hljs-keyword">@apply</span>
+      w-<span class="hljs-number">1</span>/<span class="hljs-number">2</span>
+      mb-<span class="hljs-number">6</span>
+      mb-<span class="hljs-number">0</span>
+      pr-<span class="hljs-number">3</span>
+      ;
+  }
+
+  <span class="hljs-selector-class">.c-search-select</span> {
+    <span class="hljs-keyword">@apply</span>
+      px-<span class="hljs-number">4</span>
+      mb-<span class="hljs-number">0</span>
+      ;
+  }
+}</pre>
                             </code>
                             
                         </div>
@@ -311,7 +420,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">645 Bytes</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -406,9 +515,11 @@
 
     
     
+        
+    
 
 
-<nav class="Navigation" data-behaviour="navigation">
+<nav class="Navigation in-variants-panel" data-behaviour="navigation">
     <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
     
         <div class="Navigation-group Navigation-search">
@@ -1989,7 +2100,7 @@
         
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-role="tree-link" data-pjax data-handle="search-input">
+            <a class="Tree-entityLink" href="search-input--default.html" data-role="tree-link" data-pjax data-handle="search-input">
                 <span>Search Input</span>
                 
 
@@ -2113,8 +2224,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="slider-js.html" data-role="tree-link" data-pjax data-handle="slider-js">
-                <span>Slider Js</span>
+            <a class="Tree-entityLink" href="slider-js-nav.html" data-role="tree-link" data-pjax data-handle="slider-js-nav">
+                <span>Slider Js Nav</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2383,7 +2494,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.26
+                            0.0.27
                         
                     </dd>
                 </div>
@@ -2392,8 +2503,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-09T05:18:11.913Z">
-                                09.04.2021, 07:18:11
+                            <time datetime="2021-04-13T09:52:40.688Z">
+                                13.04.2021, 11:52:40
                             </time>
                         
                     </dd>
@@ -2416,7 +2527,7 @@
     
     </div>
 
-    <div class="Navigation-panel Navigation-panel--variants" data-role="variant-panel">
+    <div class="Navigation-panel Navigation-panel--variants is-visible" data-role="variant-panel">
         <div class="Navigation-backButtonWrapper">
             <button class="Navigation-backButton" data-role="back" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -4257,6 +4368,79 @@
             </div>
         
     
+        
+            
+            <div class="Navigation-group is-visible" data-role="variant-group" data-component="search-input">
+                
+<div class="Tree" data-behaviour="tree" id="tree-search-input-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Search Input Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search-input--default.html" data-role="tree-link" data-pjax data-handle="search-input">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search-input--with-selectors.html" data-role="tree-link" data-pjax data-handle="search-input">
+                <span>With Selectors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
         
     
         

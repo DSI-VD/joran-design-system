@@ -4413,8 +4413,10 @@ body {
 @media (min-width: 1280px) {
   .js-c-nav__list--open {
     display: flex;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     position: absolute;
-    left: 3.5rem;
+    left: 0px;
     top: 10rem;
   }
 }
@@ -4428,10 +4430,14 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .c-nav__list--level-1:not(.c-nav_list--level-2) > .c-nav__list-item {
+  .c-nav__list--level-1:not(.c-nav_list--level-2):not(.c-nav_list--level-project) > .c-nav__list-item {
     margin-bottom: 2.5rem;
     width: 20rem;
   }
+}
+
+.c-nav__list-item-project .c-nav__list-item {
+  width: 100%;
 }
 
 @media (min-width: 1280px) {
@@ -4758,6 +4764,17 @@ body {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .c-search-input {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.c-search-input__row {
+  width: 100%;
+}
+
 .c-search-input__field {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4780,11 +4797,37 @@ body {
   padding-left: 4rem;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity));
   color: rgb(var(--color-raw__primary--900));
   width: 100%;
 }
+
+/**
+ *  2. Select
+ */
+
+.c-search-select__row {
+  width: 100%
+}
+
+.c-search-select {
+  margin-bottom: 0.75rem;
+  color: rgb(var(--color-raw__primary--900));
+  width: 100%;
+}
+
+.c-search-select option {
+  color: rgb(var(--color-raw__primary--900));
+}
+
+.c-content--with-selectors {
+  display: block;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+
+/**
+ *  3. Search button
+ */
 
 .c-search-input__button {
   margin-top: 1.25rem;
@@ -4798,6 +4841,57 @@ body {
 .c-search-input__button svg {
     height: 1em;
   }
+
+.c-search-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right .5rem center;
+  background-size: 1.5em 1.5em;
+  background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-repeat: no-repeat;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  line-height: 1.25;
+  padding: 1rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .c-search-select {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-search-select__row {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: 33.333333%;
+  }
+
+  .c-search-select__row.c-search-select__last {
+    width: 33.333333%;
+  }
+
+  .c-content--with-selectors {
+    margin-bottom: 0px;
+    margin-bottom: 1.5rem;
+    padding-right: 0.75rem;
+    width: 50%;
+  }
+
+  .c-search-select {
+    margin-bottom: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 /* ======================================================================
    # _components.search-result-item.css
@@ -4901,407 +4995,202 @@ body {
   }
 }
 
-/* ======================================================================
-   # _components.slider.css
-   ====================================================================== */
-
-/***
- * 1. Make the list item 100% of the screen to make the item scroll side to side
- * 2. Prevent the page for being the same width as the overflow element on iOS/Safari
- */
-
-.c-slider-js {
-  --c-slider-js__min-height: 25rem;
-  --c-slider__prev-next-position: -6.4rem;
-  --c-slider__dots-position: -4rem;
-  --c-slider-js__height: 100%;
-  --c-slider-js__padding: 4rem;
-  --c-slider-js__container-height: 75vh; /* Do not work with `%` because slider can't calculate height */
-  --c-slider__margin: 1rem; /* [1] */
-  --c-slider__container-width: 100%;
+.c-slider-js-nav {
+  overflow: hidden;
+  width: 100%;
 }
 
-/* [1] */
-
-@media (min-width: 640px) {
-
-.c-slider-js {
-    --c-slider__container-width: 640px; /* [1] */
+.c-slider-js-nav-wrap {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: var(--color__primary--600);
 }
-  }
 
-@media (min-width: 768px) {
-
-.c-slider-js {
-    --c-slider__margin: 0.5rem; /* [1] */
-
-    --c-slider__container-width: 768px; /* [1] */
+.c-slider-js-nav-container {
+  display: flex;
 }
-  }
 
-@media (min-width: 1024px) {
-
-.c-slider-js {
-    --c-slider__margin: 1rem; /* [1] */
-
-    --c-slider__container-width: 1024px; /* [1] */
+.c-slider-js-nav__container-left {
+  display: none;
+  opacity: 1;
+  visibility: hidden;
 }
-  }
 
 @media (min-width: 1280px) {
-
-.c-slider-js {
-    --c-slider__margin: 2rem; /* [1] */
-
-    --c-slider__container-width: 1280px; /* [1] */
-}
-  }
-
-@media (min-width: 1536px) {
-
-.c-slider-js {
-    --c-slider__margin: 4rem; /* [1] */
-
-    --c-slider__container-width: 1536px; /* [1] */
-}
-  }
-
-.c-slider-js {
-  background-color: rgb(var(--color-raw__primary--900));
-  overflow-x: hidden;
-  position: relative;
-  padding-top: var(--c-slider-js__padding);
-  padding-bottom: var(--c-slider-js__padding);
-  min-height: var(--c-slider-js__min-height);
-  height: var(--c-slider-js__height);
-}
-
-.c-slider-js__container {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 1024px) {
-  .c-slider-js__container {
-    flex-direction: row;
+  .c-slider-js-nav__container-left {
+    display: block;
+    visibility: visible;
   }
 }
 
-.c-slider-js__container {
-  height: var(--c-slider-js__container-height);
+.c-slider-js-nav__container-left {
+  transition: opacity 0.35s ease-in-out;
 }
 
-.c-slider-js__container-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+.c-slider-js-nav__container-left--hidden {
+  opacity: 0;
 }
 
-.c-slider-js__container-right {
-  flex: 3;
-  margin-right: calc(var(--c-slider__margin) * -1);
+.c-slider-js-nav__container-right {
+  flex-grow: 1;
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
 }
 
-/* [2] */
-
-@media (min-width: 640px) {
-
-.c-slider-js__container-right {
-    margin-right:
-      calc(
-        calc(
-          calc(
-            calc(
-              100vw - var(--c-slider__container-width)
-            )
-            /
-            2
-          )
-          +
-          var(--c-slider__margin)
-        )
-        *
-        -1
-      ) /* [2] */
+.c-slider-js-nav__article {
+  margin-bottom: 1.5rem;
+  width: 24rem;
 }
-  }
 
-/* -----------------------------------
- # Heading
- ----------------------------------- */
+.c-slider-js-nav__article:not(:last-child) {
+  margin-right: 1.5rem;
+}
 
-.c-slider-js__heading {
+.c-slider-js-nav__article h3 {
   font-weight: 700;
-  font-size: 2.375rem;
-  color: rgb(var(--color-raw__primary--900));
-  text-transform: uppercase;
-  line-height: 1.05;
-}
-
-@media (min-width: 768px) {
-
-.c-slider-js__heading {
-    line-height: 1.0833;
-
-    font-size: 3rem;
-}
-  }
-
-.c-slider-js__heading {
-  margin-bottom: 2rem;
+  font-size: 2.125rem;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
+  letter-spacing: -0.025em;
+  line-height: 2.375rem;
 }
 
-/* -----------------------------------
- # Sidebar
- ----------------------------------- */
-
-.c-slider-js__sidebar::-webkit-scrollbar-thumb {
-  background-color: #fcfcfc;
+.c-slider-js-nav__article img {
+  border-radius: 0.25rem;
+  height: auto;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  background-color: var(--color__primary--600);
+  min-height: 200px;
 }
 
-.c-slider-js__sidebar::-webkit-scrollbar-track {
-  background-color: var(--color__primary--900);
+.c-slider-js-nav__article-text-container {
+  --tw-border-opacity: 1;
+  border-color: rgba(252, 252, 252, var(--tw-border-opacity));
+  --tw-border-opacity: 0.7;
+  border-left-width: 1px;
+  padding-left: 0.625rem;
 }
 
-.c-slider-js__sidebar::-webkit-scrollbar-corner {
-  background-color: var(--color__primary--900);
+.c-slider-js-nav__article .c-button {
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+  --tw-text-opacity: 0.7;
+  font-size: 0.95rem;
+  transition: color 0.35s ease;
 }
 
-.c-slider-js__sidebar::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+.c-slider-js-nav__article .c-button:hover {
+  --tw-text-opacity: 1;
 }
 
-.c-slider-js__sidebar {
-  -ms-overflow-style: auto;
-  scrollbar-color: #fcfcfc var(--color__primary--900);
+.c-slider-js-nav__article-date {
+  font-size: 1.125rem;
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+  --tw-text-opacity: 0.7;
+}
+
+.c-slider-js-nav__heading {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+}
+
+.c-slider-js-nav__sidebar {
+  padding-right: 2.5rem;
+  width: 24rem;
+}
+
+.c-slider-js-nav__sidebar-list {
+  min-height: 450px;
+  overflow-y: auto;
+  scrollbar-color: #fcfcfc rgba(0, 0, 0, 0.25);
   scrollbar-width: thin;
 }
 
-.c-slider-js__sidebar {
-  margin-right: 2rem;
-  max-height: 100%;
-  overflow-y: auto;
-  padding-right: 2rem;
-}
-
-.c-slider-js__sidebar-list {
-  display: none;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 1024px) {
-
-.c-slider-js__sidebar-list {
-    display: block;
-
-    margin-right: 2rem;
-
-    overflow-y: auto;
-
-    padding-right: 2rem
-}
-  }
-
-.c-slider-js__sidebar-list-item {
-  margin-bottom: 1rem;
-}
-
-.c-slider-js__sidebar-list-link {
-  font-size: 1.125rem;
-  line-height: 1.3333
-}
-
-.c-slider-js__sidebar-list-link {
-  color: rgb(var(--color-raw__primary--200));
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  color: rgba(var(--color-raw__primary--200), var(--tw-text-opacity))
-}
-
-.c-slider-js__sidebar-list-link:hover, .c-slider-js__sidebar-list-link:active {
-  --tw-text-opacity: 1;
-  color: rgba(252, 252, 252, var(--tw-text-opacity));
-}
-
-.c-slider-js__sidebar-list-link:focus {
-  outline: 3px solid #FFB703;
-  outline-offset: 1px;
-}
-
-/* -----------------------------------
- # Article
- ----------------------------------- */
-
-/*
-article
-┌─────────────────────────────────────────┐
-│  article-figure                         │
-│ ┌─────────────────────────────────────┐ │
-│ │                                     │ │
-│ │                                     │ │
-│ │                                     │ │
-│ │                                     │ │
-│ │                                     │ │
-│ └─────────────────────────────────────┘ │
-│  article-text-container                 │
-│ ┌─────────────────────────────────────┐ │
-│ │  article-date                       │ │
-│ │ ┌─────────────────────────────────┐ │ │
-│ │ │                                 │ │ │
-│ │ └─────────────────────────────────┘ │ │
-│ │  article-heading                    │ │
-│ │ ┌─────────────────────────────────┐ │ │
-│ │ │                                 │ │ │
-│ │ └─────────────────────────────────┘ │ │
-│ │  article-button                     │ │
-│ │ ┌─────────────────────────────────┐ │ │
-│ │ │                                 │ │ │
-│ │ └─────────────────────────────────┘ │ │
-│ │                                     │ │
-│ └─────────────────────────────────────┘ │
-│                                         │
-└─────────────────────────────────────────┘
-*/
-
-/***
- * 1. Put image visually before text
- * 2. Image take all available space and push the text at the bottom
- * 3. Hide `<img>` tag and make it visible only for print and screen reader
- * 4. Reorder text content. Date first then heading and finally the button
- * 5. Add a line ont the left of the text when on desktop
- */
-
-.c-slider-js__article {
-  min-width: 20rem;
-  width: 25vw;
-  max-width: 75vw;
-  height: var(--c-slider-js__container-height);
-  display: flex;
-  flex-direction: column;
-  margin-right: 1rem;
-}
-
-.c-slider-js__article-figure {
-  background-color: rgb(var(--color-raw__primary--800));
-  background-position: center;
-  background-size: cover;
-  border-radius: 0.25rem;
-  flex: 1 1 0%;
-  order: -9999;
-  margin-bottom: 0.5rem;
-  background-color: rgba(var(--color-raw__primary--800), var(--tw-bg-opacity));
-}
-
-.c-slider-js__article-image {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.c-slider-js__article-text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-
-.c-slider-js__article-text-container {
-    --tw-border-opacity: 1;
-
-    border-color: rgba(252, 252, 252, var(--tw-border-opacity));
-
-    border-left-width: 1px;
-
-    padding-left: 1rem
-}
-  }
-
-.c-slider-js__article-heading {
-  font-weight: 500;
-  font-size: 1.25rem;
-  color: rgb(var(--color-raw__primary--900));
-  text-transform: uppercase;
-  line-height: 1.3;
-}
-
-.c-slider-js__article-heading {
-  --tw-text-opacity: 1;
-  color: rgba(252, 252, 252, var(--tw-text-opacity));
-}
-
-.c-slider-js__article-date {
-  font-size: 1.125rem;
-  line-height: 1.3333;
-}
-
-.c-slider-js__article-date {
-  order: -9999;
-  margin-bottom: 0.25rem;
-  color: rgb(var(--color-raw__primary--100));
-  color: rgba(var(--color-raw__primary--100), var(--tw-text-opacity));
-}
-
-.c-slider-js__article-button {
-  --tw-text-opacity: 1;
-  color: rgba(252, 252, 252, var(--tw-text-opacity));
-}
-
-/* -----------------------------------
- # Flickity
- ----------------------------------- */
-
-/***
- * 1. Position dots
- * 2. Transform dots into lines
- * 3. Position prev & next button
- * 4. Fix dots line being over prev and next button and making them not
- *    100% clickable
- */
-
-.c-slider-js .flickity-page-dots {
-  bottom: var(--c-slider__dots-position); /* [1] */
-}
-
-/* dots are lines */
-
-.c-slider-js .flickity-page-dots .dot {
-  height: 0.25rem; /* [2] */
-  width: 1.5vw; /* [2] */
-  margin: 0; /* [2] */
-  border-radius: 0; /* [2] */
-}
-
-.c-slider-js .flickity-page-dots .dot.is-selected {
+.c-slider-js-nav__sidebar-list::-webkit-scrollbar-thumb {
   --tw-bg-opacity: 1;
   background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
 }
 
-.c-slider-js .flickity-prev-next-button {
-  top: auto; /* [3] */
-  z-index: 20; /* [4] */
+.c-slider-js-nav__sidebar-list::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
 }
 
-.c-slider-js .flickity-prev-next-button.previous,
-.c-slider-js .flickity-prev-next-button.next {
-  bottom: var(--c-slider__prev-next-position); /* [3] */
+.c-slider-js-nav__sidebar-list::-webkit-scrollbar {
+  height: 0.25rem;
+  width: 0.25rem;
 }
 
-.c-slider-js .flickity-prev-next-button.previous {
-  left: 0;
+.c-slider-js-nav__sidebar-list-link {
+  display: inline-block;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+  --tw-text-opacity: 0.7;
+  transition: color 0.35s ease;
 }
 
-.c-slider-js .flickity-prev-next-button.next {
-  right: var(--c-slider__margin);
+.c-slider-js-nav__sidebar-list-link:hover {
+  --tw-text-opacity: 1;
+}
+
+.c-slider-js-nav .flickity-button {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
+  top: 100%;
+  transition: background-color 0.35s ease-in-out;
+}
+
+.c-slider-js-nav .flickity-button:hover .flickity-button-icon {
+  fill: var(--color__primary--600);
+}
+
+.c-slider-js-nav .flickity-button .flickity-button-icon {
+  transition: all 0.35s ease;
+  fill: rgb(252, 252, 252);
+  width: 15px;
+  left: 15px;
+}
+
+.c-slider-js-nav .flickity-button.previous {
+  right: 5rem;
+  left: auto;
+}
+
+.c-slider-js-nav .flickity-page-dots {
+  left: 0px;
+  width: auto;
+  bottom: -5px;
+}
+
+.c-slider-js-nav .flickity-page-dots .dot {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  border-radius: 0px;
+  height: 0.25rem;
+  margin: 0px;
+  width: 2rem;
+}
+
+.c-slider-js-nav .flickity-page-dots .dot.is-selected {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
+}
+
+.c-slider-js-nav .flickity-viewport {
+  overflow: visible;
 }
 
 /* ======================================================================
@@ -6455,6 +6344,10 @@ https://flickity.metafizzy.co
 
 .sticky {
   position: sticky;
+}
+
+.resize {
+  resize: both;
 }
 
 * {

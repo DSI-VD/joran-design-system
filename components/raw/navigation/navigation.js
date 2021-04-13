@@ -14,6 +14,7 @@ class MobileNavigation {
           event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
           item.setAttribute('aria-expanded', true);
+          window.dispatchEvent(new Event('resize'));
           this.currentLevel++;
         } else if (event.target.parentNode.parentNode.matches('.c-nav__list--level-1')) {
           this.closeLevelTabs(event, 2);
@@ -107,6 +108,7 @@ class DesktopNavigation {
           this.close();
         } else {
           this.close();
+          window.dispatchEvent(new Event('resize'));
           event.target.setAttribute('aria-expanded', true);
           event.target.classList.add('js-c-nav__list-link--active');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
