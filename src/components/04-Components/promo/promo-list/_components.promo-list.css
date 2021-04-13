@@ -22,6 +22,6 @@
 .c-promo-list__grid-item {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 30rem;
-    max-width: 40rem;
+    flex-basis: 50%;
+    max-width: 50%;
 }
