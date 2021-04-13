@@ -4,12 +4,12 @@
     "selectors": false
   },
   "variants": [
-  {
-    "name": "with selectors",
-    "context": {
-      "styleWithSelectors": " c-content--with-selectors",
-      "selectors": true
+    {
+      "name": "with selectors",
+      "context": {
+        "styleWithSelectors": " c-content--with-selectors",
+        "selectors": true
+      }
     }
-  }
   ]
 }

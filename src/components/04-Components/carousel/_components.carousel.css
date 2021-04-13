@@ -126,8 +126,8 @@
       border-primary
       border-opacity-50
 
-        transform
-        transition
+      transform
+      transition
         scale-100
     ;
   }
