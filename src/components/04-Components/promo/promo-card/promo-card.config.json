@@ -1,50 +1,17 @@
 {
   "context": {
-    "promote": {
-      "text": "3 millions"
-    },
-    "text": "Ceci est un text ou chiffre mis en évidence"
+    "title": "Ceci est un titre",
+    "text": "Ceci est un text ou chiffre mis en évidence",
+    "button": {
+      "text": "Lire la suite",
+      "url": "https://www.vd.ch"
+    }
   },
   "variants": [
     {
-      "name": "image row",
+      "name": "image",
       "context": {
-        "variantModifier": "c-promo-card--row",
-        "promote": {
-          "text": false,
-          "image": true
-        }
-      }
-    },
-    {
-      "name": "image col",
-      "context": {
-        "variantModifier": "c-promo-card--col",
-        "promote": {
-          "text": false,
-          "image": true
-        }
-      }
-    },
-    {
-      "name": "col",
-      "context": {
-        "variantModifier": "c-promo-card--col"
-      }
-    },
-    {
-      "name": "row",
-      "context": {
-        "variantModifier": "c-promo-card--row"
-      }
-    },
-    {
-      "name": "link",
-      "context": {
-        "variantModifier": "c-promo-card--col",
-        "link": {
-          "url": "https://www.vd.ch"
-        }
+        "image": true
       }
     }
   ]

@@ -3,9 +3,7 @@
     "title": "Données mises en évidences",
     "promos": [
       {
-        "promote": {
-          "text": "400"
-        },
+        "title": "400",
         "text": "Nombre de visiteurs moyen par jour",
         "image": {
           "src": "https://source.unsplash.com/500x500?panel",
@@ -13,10 +11,7 @@
         }
       },
       {
-        "promote": {
-          "text": false,
-          "image": true
-        },
+        "title": "Des images !",
         "text": "Il est possible de mettre des images",
         "image": {
           "src": "https://source.unsplash.com/500x500?Mouse",
@@ -24,66 +19,59 @@
         }
       },
       {
-        "promote": {
-          "text": "32 kg"
-        },
+        "title": "32 kg",
         "text": "le poid du jambon au concours du comptoire du Nord Vaudois",
         "image": {
           "src": "https://source.unsplash.com/500x500?Alabama",
           "alt": "veritatis odit suscipit"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://marilyne.biz"
         }
       },
       {
-        "promote": {
-          "text": "5'000'000"
-        },
+        "title": "5'000'000",
         "text": "fourmis rouges"
       },
       {
-        "promote": {
-          "text": "1"
-        },
+        "title": "1",
         "text": "Pour les gouverner tous",
         "image": {
           "src": "https://source.unsplash.com/500x500?Baby",
           "alt": "non facilis ipsam"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://waldo.org"
         }
       },
       {
-        "promote": {
-          "text": "7 milliards"
-        },
+        "title": "7 milliards",
         "text": "Population mondiale",
         "image": {
           "src": "https://source.unsplash.com/500x500?Soft",
           "alt": "voluptatibus nisi excepturi"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "https://alana.name"
         }
       },
       {
-        "promote": {
-          "text": false,
-          "image": true
-        },
-        "text": "Dolorum omnis placeat voluptas repudiandae.",
+        "title": "1000 mots",
+        "text": "Curabitur auctor urna magna, eget ultrices lacus semper et. Nunc at nulla hendrerit, tincidunt erat vel, feugiat tortor. Nam iaculis nisi ut felis rutrum blandit. Maecenas rutrum condimentum erat, et molestie velit viverra nec. Sed ullamcorper tortor congue purus venenatis, at porttitor felis pharetra. Sed sollicitudin id tortor vel faucibus. Donec laoreet leo a venenatis fringilla. Aliquam consequat dignissim massa eget mollis. In posuere magna ut ex pulvinar egestas.",
         "image": {
           "src": "https://source.unsplash.com/500x500?conglomeration",
           "alt": "dolore qui incidunt"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "https://coucou.com"
         }
       },
       {
-        "text": "Aliquid nostrum vitae qui.",
+        "title": "Aliquid nostrum vitae qui.",
         "image": {
           "src": "https://source.unsplash.com/500x500?Metal",
           "alt": "et officiis dolorem"
@@ -102,7 +90,8 @@
           "src": "https://source.unsplash.com/500x500?Executive",
           "alt": "nulla et eveniet"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "https://jerrod.info"
         }
       },
@@ -112,7 +101,8 @@
           "src": "https://source.unsplash.com/500x500?Small",
           "alt": "corporis recusandae reprehenderit"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://aurelio.biz"
         }
       },
@@ -122,7 +112,8 @@
           "src": "https://source.unsplash.com/500x500?Buckinghamshire",
           "alt": "sunt sunt quaerat"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://camille.biz"
         }
       },
@@ -132,7 +123,8 @@
           "src": "https://source.unsplash.com/500x500?Bedfordshire",
           "alt": "necessitatibus ducimus earum"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://cody.info"
         }
       },
@@ -142,7 +134,8 @@
           "src": "https://source.unsplash.com/500x500",
           "alt": "et aut voluptas"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://makenna.org"
         }
       },
@@ -152,7 +145,8 @@
           "src": "https://source.unsplash.com/500x500?silver",
           "alt": "excepturi iste velit"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "https://keenan.name"
         }
       },
@@ -162,7 +156,8 @@
           "src": "https://source.unsplash.com/500x500?Cliffs",
           "alt": "accusantium accusantium incidunt"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "https://lowell.info"
         }
       },
@@ -172,7 +167,8 @@
           "src": "https://source.unsplash.com/500x500?Technician",
           "alt": "culpa perspiciatis est"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "https://kevin.org"
         }
       },
@@ -182,7 +178,8 @@
           "src": "https://source.unsplash.com/500x500?bypassing",
           "alt": "repellat voluptatem quibusdam"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://sarina.biz"
         }
       },
@@ -192,7 +189,8 @@
           "src": "https://source.unsplash.com/500x500?Sharable",
           "alt": "optio sit non"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://susie.name"
         }
       },
@@ -202,7 +200,8 @@
           "src": "https://source.unsplash.com/500x500?green",
           "alt": "ut qui voluptas"
         },
-        "link": {
+        "button": {
+          "text": "lire la suite",
           "url": "http://mortimer.net"
         }
       }

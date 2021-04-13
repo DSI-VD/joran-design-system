@@ -3,7 +3,7 @@
   <ul class="c-promo-list__grid">
     {% for promo in promos %}
       <li class="c-promo-list__grid-item">
-        {% render '@promo-card--row', promo, true %}
+        {% render '@promo-card', promo %}
       </li>
     {% endfor %}
   </ul>

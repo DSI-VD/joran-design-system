@@ -4,115 +4,52 @@
 
 .c-promo-card {
     @apply
-        relative
-
         bg-primary
-        text-white
-        rounded
-
         flex
+        flex-row
+        justify-end
+    ;
+}
 
-        h-full
+.c-promo-card__col-left {
+    @apply
+        text-center
+        pt-1
+        px-1
+        pb-4
+        sm:p-4
+        mt-1
+        w-1/4
+        sm:w-1/6
     ;
 
-    a {
+    svg {
         @apply
-            underline
+            text-white
         ;
-
-        &:hover {
-            @apply
-                no-underline
-            ;
-        }
     }
 }
 
-
-
-/* -------------------------------------
-   # Col
-   ------------------------------------- */
-
-.c-promo-card--col {
+.c-promo-card__col-right {
     @apply
-        flex-col
+        p-1
+          sm:p-4
+        w-3/4
+          sm:w-5/6
+          border-t
+          border-primary-800
     ;
 }
 
-
-
-/* -------------------------------------
-   # Row
-   ------------------------------------- */
-
-.c-promo-card--row {
-    @apply
-      flex-col
-        sm:flex-row
-    ;
-}
-
-
-
-/* -------------------------------------
-   # Item
-   ------------------------------------- */
-
-.c-promo-card__item {
-    @extend %h3;
+.c-promo-card__header {
+    @extend %h1;
     @apply
         text-white
-        self-center
-
-        flex-1
-
-        p-4
-
-        text-center
-          sm:text-left
     ;
 }
 
-.c-promo-card__item.c-promo-card__item--big {
-    @extend %h2;
+.c-promo-card__content {
     @apply
         text-white
-        text-center
-
-        flex-none
-        w-48
     ;
-}
-
-
-
-/* -------------------------------------
-   # Link
-   ------------------------------------- */
-
-.c-promo-card__link {
-    &::after {
-      content: "";
-      @apply
-          absolute
-          inset-1
-
-          rounded
-
-          ring-1
-          ring-white
-          ring-inset
-          ring-opacity-100
-
-          transition
-      ;
-    }
-
-    &:hover::after {
-      @apply
-          ring-opacity-20
-          ring-8
-      ;
-    }
 }
