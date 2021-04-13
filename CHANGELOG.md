@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Fix _button_ `hover` style
 - Upgrade node packages
 - Fix CSS formating and typo in _search-input_ and _search-result-item_
 
