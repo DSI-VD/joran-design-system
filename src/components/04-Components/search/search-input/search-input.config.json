@@ -1,3 +1,15 @@
 {
-  "status": "ready"
+  "status": "ready",
+  "context": {
+    "selectors": false
+  },
+  "variants": [
+  {
+    "name": "with selectors",
+    "context": {
+      "styleWithSelectors": " c-content--with-selectors",
+      "selectors": true
+    }
+  }
+  ]
 }
