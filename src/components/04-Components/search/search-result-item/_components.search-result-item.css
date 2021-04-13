@@ -37,20 +37,7 @@
     flex
     flex-row
     flex-wrap
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ;
 }
 
 .c-search-result-item__breadcrumb-item + .c-search-result-item__breadcrumb-item::before {
