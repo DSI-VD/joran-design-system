@@ -2,8 +2,8 @@
 if ('querySelector' in document &&
     'localStorage' in window &&
     'addEventListener' in window) {
-  const toggleButtons = document.querySelectorAll('.js-testimonial__toggle-btn');
-  const fullTextWrappers = document.querySelectorAll('.js-testimonial__fulltext');
+  const toggleButtons = document.querySelectorAll('.js-accordeon__toggle-btn');
+  const fullTextWrappers = document.querySelectorAll('.js-accordeon__fulltext');
   let fullText;
   let toggleButtonText;
 
@@ -18,8 +18,8 @@ if ('querySelector' in document &&
 
     // Add listener for each button
     toggleButton.addEventListener('click', function () {
-      fullTextWrapper = this.parentElement.querySelector('.js-testimonial__fulltext');
-      toggleButtonText = this.querySelector('.js-testimonial__toggle-btn-text');
+      fullTextWrapper = this.parentElement.querySelector('.js-accordeon__fulltext');
+      toggleButtonText = this.querySelector('.js-accordeon__toggle-btn-text');
 
       // Change attributes and text if full text is shown/hidden
       console.log(fullTextWrapper.hasAttribute('hidden'));

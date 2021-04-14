@@ -27,16 +27,16 @@
                 </div>
                 {% if fulltext %}
             
-                    <div id="js-more-1" class="js-testimonial__fulltext o-prose">
+                    <div id="js-more-1" class="js-accordeon__fulltext o-prose">
                         {{ fulltext | safe }}
                     </div>
                 
                     <button aria-expanded="false"
                             aria-controls="js-more-1"
                             aria-pressed="false"
-                            class="c-button c-button--transparent c-testimonial__button js-testimonial__toggle-btn"
+                            class="c-button c-button--transparent c-testimonial__button js-accordeon__toggle-btn"
                             hidden>
-                        <span class="js-testimonial__toggle-btn-text">Afficher plus</span>{% render '@svg-chevron-right' %}
+                        <span class="js-accordeon__toggle-btn-text">Afficher plus</span>{% render '@svg-chevron-right' %}
                     </button>
                 
                 {% endif %}
