@@ -5,7 +5,7 @@
     </div>
     <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
       <span class="c-menu-icon c-menu-icon--cross">
-        <span>Ouvrir le menu</span>
+        <span></span>
       </span>
     </button>
     <div class="c-nav__list-container">
