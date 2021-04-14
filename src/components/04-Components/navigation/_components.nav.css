@@ -215,8 +215,9 @@
     block
     xl:absolute
     xl:top-40
-    xl:left-14
+    xl:left-0
     xl:flex
+    xl:px-14
   ;
 }
 
@@ -228,10 +229,16 @@
   ;
 }
 
-.c-nav__list--level-1:not(.c-nav_list--level-2) > .c-nav__list-item {
+.c-nav__list--level-1:not(.c-nav_list--level-2):not(.c-nav_list--level-project) > .c-nav__list-item {
   @apply
     xl:w-80
     xl:mb-10
+  ;
+}
+
+.c-nav__list-item-project .c-nav__list-item {
+  @apply
+    w-full
   ;
 }
 

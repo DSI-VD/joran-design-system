@@ -2,8 +2,29 @@
 <div class="o-container">
   <form class="c-search-input{% if styleModifier %} {{ styleModifier }}{% endif %}" 
         action="#">
-        <label for="search" class="u-visually-hidden">Recherche</label>
-        <input id="search" class="c-search-input__field" type="search">
+        <div class="c-search-input__row{% if selectors %}{{ styleWithSelectors }}{% endif %}">
+          <label for="search" class="u-visually-hidden">Recherche</label>
+          <input id="search" class="c-search-input__field" type="search">
+        </div>
+        {% if selectors %}
+        <div class="c-search-select__row">
+          <label for="filter-1" class="u-visually-hidden">Filtrer par publication</label>
+          <select id="filter-1" class="c-search-select">
+            <option>Choisir une publication</option>
+            <option>Une publication avec un titre</option>
+            <option>Une seconde publication</option>
+          </select>
+        </div>
+        <div class="c-search-select__row c-search-select__last">
+          <label for="filter-2" class="u-visually-hidden">Filtrer par année</label>
+          <select id="filter-2" class="c-search-select">
+            <option>Choisir une année</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+          </select>
+        </div>
+        {% endif %}
         <button type="submit" class="c-search-input__button">
           {% render '@svg-search' %}
         </button>

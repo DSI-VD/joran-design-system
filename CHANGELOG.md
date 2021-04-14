@@ -21,6 +21,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Upgrade node packages
+- Fix CSS formating and typo in _search-input_ and _search-result-item_
+
+## [0.0.27] - 2021-04-13
+
+
+### Changed
+
+- Add _slider-js_ in _navigation_
+- Add variants with selects in _search-input_
+
+### Fixes
+
 - Fix CTA colors of blue theme
 - Force scrollbar to be visible to avoid awkward jump when there's not enough
   content on a page
@@ -445,7 +458,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.26...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.27...HEAD
+[0.0.27]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.26...v0.0.27
 [0.0.26]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.25...v.0.0.26
 [0.0.25]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.24...v0.0.25
 [0.0.24]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.23...v0.0.24
