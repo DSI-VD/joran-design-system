@@ -14,14 +14,15 @@
 .c-promo-list__grid {
     @apply
         flex
-        flex-row
+        flex-col
         flex-wrap
+          md:flex-row
     ;
 }
 
 .c-promo-list__grid-item {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 50%;
-    max-width: 50%;
+    @apply
+      md:w-1/2
+      p-4
+    ;
 }
