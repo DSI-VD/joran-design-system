@@ -32,9 +32,9 @@
               <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
                 {{ firstLevelItem.name }}
               </button>
-              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1">
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 masonry">
                 {% for secondLevelItem in firstLevelItem.secondLevelItems %}
-                <li class="c-nav__list-item" data-level="1">
+                <li class="c-nav__list-item masonry-item" data-level="1">
                   {% if secondLevelItem.thirdLevelItems %}
                     <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
                       {{ secondLevelItem.name }}
