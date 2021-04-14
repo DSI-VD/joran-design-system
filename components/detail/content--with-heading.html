@@ -182,14 +182,13 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text&quot;</span>&gt;</span>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item o-prose&quot;</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Inter-titre<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -199,18 +198,32 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-0a4cb7ba87364130ce393a8004964b09-panel-view">
     <code class="Code Code--lang-django hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>
-  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-content</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleVariant %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleVariant }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-&gt;</span>
-  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> heading %}</span><span class="xml">
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"> </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> content %}</span><span class="xml">
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item o-prose&quot;</span>&gt;</span>
-    </span><span class="hljs-template-variable">{{ content | safe }}</span><span class="xml">
-    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> button %}</span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="button--default-arrow-right.html">@button--default-arrow-right</a>&#x27;, button, true %}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container c-content</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> styleVariant %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ styleVariant }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
+    &gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> heading %}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__heading-text&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-content__item o-prose&quot;</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"> </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> content %}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{ content | safe }}</span><span class="xml">
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> fulltext %}</span><span class="xml">
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;js-more-1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;js-accordeon__fulltext&quot;</span>&gt;</span>
+          </span><span class="hljs-template-variable">{{ fulltext | safe }}</span><span class="xml">
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>
+                <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;js-more-1&quot;</span>
+                <span class="hljs-attr">aria-pressed</span>=<span class="hljs-string">&quot;false&quot;</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-button c-button--transparent js-accordeon__toggle-btn&quot;</span>
+                <span class="hljs-attr">hidden</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;js-accordeon__toggle-btn-text&quot;</span>&gt;</span>Afficher plus<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;<a href="svg-chevron-right.html">@svg-chevron-right</a>&#x27; %}</span><span class="xml">
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+      </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -380,7 +393,7 @@
             <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
-                <a href="button--default-arrow-right.html">@<span>button--default-arrow-right</span></a>
+                <a href="svg-chevron-right.html">@<span>svg-chevron-right</span></a>
             
             </span>
         </li class="Meta-item">
@@ -1216,6 +1229,32 @@
                 
                 
                 
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="accordeon.html" data-role="tree-link" data-pjax data-handle="accordeon">
+                <span>Accordeon</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
     
         
         
@@ -2427,8 +2466,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-13T11:26:17.539Z">
-                                13.04.2021, 13:26:17
+                            <time datetime="2021-04-14T13:43:01.711Z">
+                                14.04.2021, 15:43:01
                             </time>
                         
                     </dd>
@@ -2828,6 +2867,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

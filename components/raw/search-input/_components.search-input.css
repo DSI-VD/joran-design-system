@@ -5,16 +5,16 @@
 /**
  *  1. Place the magnifier
  */
- .c-search-input {
+.c-search-input {
   @apply
     relative
     text-base
     md:w-full
     md:flex
     ;
- }
+}
 
- .c-search-input__row {
+.c-search-input__row {
   @apply
     w-full;
 }
@@ -38,9 +38,10 @@
 /**
  *  2. Select
  */
- .c-search-select__row {
+.c-search-select__row {
   @apply
     w-full
+    ;
 }
 
 .c-search-select {
@@ -56,6 +57,7 @@
     text-primary
     ;
 }
+
 .c-content--with-selectors {
   @apply
     w-full
@@ -84,10 +86,11 @@
 
 .c-search-select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
-  background-position: right .5rem center;
+  background-position: right 0.5rem center;
   background-size: 1.5em 1.5em;
   background-color: #fff;
   appearance: none;
+
   @apply
     bg-no-repeat
     shadow
@@ -101,7 +104,6 @@
 }
 
 @screen md {
-
   .c-search-select__row {
     @apply
       w-1/3
