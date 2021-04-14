@@ -123,7 +123,7 @@ class DesktopNavigation {
       new Masonry( item, {
         // options
         itemSelector: '.masonry-item',
-        columnWidth: 360,
+        columnWidth: 320,
         transitionDuration: 0,
         containerStyle: { position: 'absolute' }
       });
