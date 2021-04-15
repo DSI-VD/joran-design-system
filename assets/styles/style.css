@@ -4650,6 +4650,121 @@ body {
   margin-left: auto;
 }
 
+/* ==========================================================================
+   # _components.promo-card.css
+   ========================================================================== */
+
+.c-promo-card {
+  background-color: rgb(var(--color-raw__primary--900));
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.c-promo-card__col-left {
+  margin-top: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 25%
+}
+
+@media (min-width: 640px) {
+  .c-promo-card__col-left {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 16.666667%;
+  }
+}
+
+.c-promo-card__col-left > * {
+    max-width: 3rem;
+  }
+
+.c-promo-card__col-left svg {
+    --tw-text-opacity: 1;
+    color: rgba(252, 252, 252, var(--tw-text-opacity));
+  }
+
+.c-promo-card__col-right {
+  border-color: rgb(var(--color-raw__primary--800));
+  border-top-width: 1px;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 75%;
+}
+
+@media (min-width: 640px) {
+  .c-promo-card__col-right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 83.333333%;
+  }
+}
+
+.c-promo-card__header {
+  font-weight: 700;
+  font-size: 2.375rem;
+  color: rgb(var(--color-raw__primary--900));
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+@media (min-width: 768px) {
+
+.c-promo-card__header {
+    line-height: 1.0833;
+
+    font-size: 3rem;
+}
+  }
+
+.c-promo-card__header {
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+}
+
+.c-promo-card__content {
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+}
+
+/* ==========================================================================
+   # _settings.promo-list.css
+   ========================================================================== */
+
+.c-promo-list {
+  background-color: rgb(var(--color-raw__primary--900));
+  border-radius: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
+}
+
+.c-promo-list__grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .c-promo-list__grid {
+    flex-direction: row;
+  }
+}
+
+.c-promo-list__grid-item {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-promo-list__grid-item {
+    width: 50%;
+  }
+}
+
 /* ======================================================================
    # _components.quotes.css
    ====================================================================== */
