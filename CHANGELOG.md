@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.29] - 2021-05-15
+
 ### Changes
 
 - Fix padding betwwen _highlight_ and other eleemnts. It was biased because
@@ -474,7 +476,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.28...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.29...HEAD
+[0.0.29]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.28...v0.0.29
 [0.0.28]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.27...v0.0.28
 [0.0.27]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.26...v0.0.27
 [0.0.26]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.25...v.0.0.26
