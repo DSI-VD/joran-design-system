@@ -3,41 +3,40 @@
    ========================================================================== */
 
 .u-image-link {
-    @apply
-        rounded
-        inline-block
-        border-2
-        border-primary
-        border-opacity-50
+  @apply
+    rounded
+    inline-block
+    border-2
+    border-primary
+    border-opacity-50
     ;
 
+  > * {
+    @apply
+      transform
+      transition
+      scale-100
+        ;
+  }
+
+  &:hover,
+  &:active {
     > * {
-        @apply
-            transform
-            transition
-            scale-100
-        ;
-    }
-
-    &:hover,
-    &:active {
-
-        > * {
-            @apply
-                scale-95
+      @apply
+        scale-95
             ;
-        }
     }
+  }
 
-    &:active {
-        @apply
-            bg-primary-100
+  &:active {
+    @apply
+      bg-primary-100
         ;
-    }
+  }
 
-    &:focus {
-        @apply
-            outline-focus
+  &:focus {
+    @apply
+      outline-focus
         ;
-    }
+  }
 }

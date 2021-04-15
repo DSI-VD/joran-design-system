@@ -26,9 +26,13 @@
     {% render '@promo-list' %}
 
     {% render '@content--default' %}
-    
-    {% render '@slider' %}
-    
+
+    <div class="c-slider-js-nav-wrap">
+      <div class="o-container o-container--large">
+        {% render '@slider-js-nav' %}
+      </div>
+    </div>
+
     <!-- 
       TODO: refactorize to put the o-container in the component
     -->
