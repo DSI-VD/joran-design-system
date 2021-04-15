@@ -5,7 +5,8 @@
 .c-page {
   @apply
     min-h-screen
-    ;
+    bg-white
+  ;
 }
 
 .c-page__content {
