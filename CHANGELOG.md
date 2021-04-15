@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changes
+
+- Fix padding betwwen _highlight_ and other eleemnts. It was biased because
+  _highlight_ had the `o-stack` class. It has been removed
+
 ## [0.0.28] - 2021-05-15
 
 ### Added
