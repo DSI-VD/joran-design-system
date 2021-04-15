@@ -4,11 +4,14 @@
 
 .o-box {
   @apply
-    bg-primary-100
     rounded
 
     py-24
     px-2
+
+    bg-gradient-to-b
+    from-primary-100
+    to-primary-400
   ;
 }
 
