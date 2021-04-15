@@ -1,0 +1,89 @@
+{
+  "context": {
+    "title": "Données mises en évidences",
+    "promos": [
+      {
+        "title": "400",
+        "text": "Nombre de visiteurs moyen par jour",
+        "image": {
+          "src": "https://source.unsplash.com/500x500?panel",
+          "alt": "ipsam alias et"
+        }
+      },
+      {
+        "title": "Des images !",
+        "text": "Il est possible de mettre des images",
+        "image": {
+          "src": "https://source.unsplash.com/500x500?Mouse",
+          "alt": "eos culpa qui"
+        },
+        "button": {
+          "text": "Lire la suite"
+        }
+
+      },
+      {
+        "title": "32 kg",
+        "text": "le poid du jambon au concours du comptoire du Nord Vaudois",
+        "image": {
+          "src": "https://source.unsplash.com/500x500?Alabama",
+          "alt": "veritatis odit suscipit"
+        },
+        "button": {
+          "text": "lire la suite",
+          "url": "http://marilyne.biz"
+        }
+      },
+      {
+        "title": "5'000'000",
+        "text": "fourmis rouges"
+      },
+      {
+        "title": "1",
+        "text": "Pour les gouverner tous",
+        "image": {
+          "src": "https://source.unsplash.com/500x500?Baby",
+          "alt": "non facilis ipsam"
+        },
+        "button": {
+          "text": "lire la suite",
+          "url": "http://waldo.org"
+        }
+      },
+      {
+        "title": "7 milliards",
+        "text": "Population mondiale",
+        "image": {
+          "src": "https://source.unsplash.com/500x500?Soft",
+          "alt": "voluptatibus nisi excepturi"
+        },
+        "button": {
+          "text": "lire la suite",
+          "url": "https://alana.name"
+        }
+      },
+      {
+        "title": "1000 mots",
+        "text": "Curabitur auctor urna magna, eget ultrices lacus semper et. Nunc at nulla hendrerit, tincidunt erat vel, feugiat tortor. Nam iaculis nisi ut felis rutrum blandit. Maecenas rutrum condimentum erat, et molestie velit viverra nec. Sed ullamcorper tortor congue purus venenatis, at porttitor felis pharetra. Sed sollicitudin id tortor vel faucibus. Donec laoreet leo a venenatis fringilla. Aliquam consequat dignissim massa eget mollis. In posuere magna ut ex pulvinar egestas.",
+        "button": {
+          "text": "lire la suite",
+          "url": "https://coucou.com"
+        }
+      },
+      {
+        "title": "Aliquid nostrum vitae qui.",
+        "image": {
+          "src": "https://source.unsplash.com/500x500?Metal",
+          "alt": "et officiis dolorem"
+        }
+      },
+      {
+        "text": "Ea et dolor ea non.",
+        "image": {
+          "src": "https://source.unsplash.com/500x500?plum",
+          "alt": "eum reiciendis ipsam"
+        }
+      }
+    ]
+  }
+}

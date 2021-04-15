@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add _promo-list_ and _promo-card_ component
 - Add an _accordeon_ object so that it can be used in multiple components
 - Add a _video--legend_ variant that use the _figure_ style to add a caption to
   a video
@@ -25,7 +26,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix CSS formating and typo in _search-input_ and _search-result-item_
 
 ## [0.0.27] - 2021-04-13
-
 
 ### Changed
 

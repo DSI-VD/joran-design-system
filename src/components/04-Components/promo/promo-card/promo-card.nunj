@@ -1,0 +1,20 @@
+<article class="c-promo-card{% if variantModifier %} {{ variantModifier }}{% endif %}">
+  {% if image %}
+  <div class="c-promo-card__col-left">
+    {% render '@svg-mail' %}
+  </div>
+  {% endif %}
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>{{ title }}</h3>
+    </header>
+    <div class="c-promo-card__content">
+      {{ text }}
+    </div>
+    {% if button %}
+    <div class="c-promo-card__link">
+      {% render '@button--transparent-alternate-arrow-right', button, true %}
+    </div>
+    {% endif %}
+  </div>
+</article>
