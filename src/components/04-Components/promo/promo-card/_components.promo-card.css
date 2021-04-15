@@ -3,39 +3,39 @@
    ========================================================================== */
 
 .c-promo-card {
-    @apply
-        bg-primary
-        flex
+  @apply
+    bg-primary
+    flex
         flex-row
         justify-end
     ;
 }
 
 .c-promo-card__col-left {
-    @apply
-        px-1
-        py-4
+  @apply
+    px-1
+    py-4
         sm:px-4
         mt-1
         w-1/4
         sm:w-1/6
     ;
 
-    > * {
-        max-width: 3rem;
-    }
+  > * {
+    max-width: 3rem;
+  }
 
-    svg {
-        @apply
-            text-white
+  svg {
+    @apply
+      text-white
         ;
-    }
+  }
 }
 
 .c-promo-card__col-right {
-    @apply
-        py-4
-        px-1
+  @apply
+    py-4
+    px-1
           sm:px-4
         w-3/4
           sm:w-5/6
@@ -45,14 +45,15 @@
 }
 
 .c-promo-card__header {
-    @extend %h1;
-    @apply
-        text-white
+  @extend %h1;
+
+  @apply
+    text-white
     ;
 }
 
 .c-promo-card__content {
-    @apply
-        text-white
+  @apply
+    text-white
     ;
 }
