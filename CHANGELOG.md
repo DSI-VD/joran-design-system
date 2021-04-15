@@ -24,6 +24,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Upgrade node packages
 - Fix CSS formating and typo in _search-input_ and _search-result-item_
+- Fix styling in desktop nav (column position with masonry and inverted title style)
+- Fix chevron on mobile nav
+- Improve footer
+- Add bg-white on c-page
+- Add linear-gradient for quote
+
+### Aded
+
+- Slider in navigation
 
 ## [0.0.27] - 2021-04-13
 

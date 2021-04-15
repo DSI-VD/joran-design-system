@@ -29,6 +29,7 @@
     {{ yield | safe }}
     <!-- Scripts -->
     <script src="{{ '/assets/scripts/flickity.pkgd.min.js' | path  }}"></script>
+    <script src="{{ '/assets/scripts/masonry.pkgd.min.js' | path  }}"></script>
     <script src="{{ '/assets/scripts/navigation.js' | path  }}"></script>
     <script src="{{ '/assets/scripts/accordeon.js' | path  }}"></script>
     <script src="{{ '/assets/scripts/timeline.js' | path  }}"></script>
