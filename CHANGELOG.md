@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add _promo-list_ and _promo-card_ component
+
 ## [0.0.26] - 2021-04-01
 
 ### Added
