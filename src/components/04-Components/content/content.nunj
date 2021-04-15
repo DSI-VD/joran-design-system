@@ -5,24 +5,25 @@
       <div class="c-content__item">
         <h2 class="c-content__heading-text">{{ heading }}</h2>
       </div>
+    {% endif %}
+    {% if content %}
       <div class="c-content__item o-prose">
-        {% endif %} {% if content %}
         {{ content | safe }}
-      {% endif %}
-      {% if fulltext %}
+        {% if fulltext %}
 
-        <div id="js-more-1" class="js-accordeon__fulltext">
-          {{ fulltext | safe }}
-        </div>
+          <div id="js-more-1" class="js-accordeon__fulltext">
+            {{ fulltext | safe }}
+          </div>
 
-        <button aria-expanded="false"
-                aria-controls="js-more-1"
-                aria-pressed="false"
-                class="c-button c-button--transparent js-accordeon__toggle-btn"
-                hidden>
-          <span class="js-accordeon__toggle-btn-text">Afficher plus</span>{% render '@svg-chevron-right' %}
-        </button>
+          <button aria-expanded="false"
+                  aria-controls="js-more-1"
+                  aria-pressed="false"
+                  class="c-button c-button--transparent js-accordeon__toggle-btn"
+                  hidden>
+            <span class="js-accordeon__toggle-btn-text">Afficher plus</span>{% render '@svg-chevron-right' %}
+          </button>
 
-      {% endif %}
+        {% endif %}
       </div>
+    {% endif %}
 </div>
