@@ -3535,7 +3535,12 @@ body {
 .c-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .c-content {
+    align-items: center;
+  }
 }
 
 .c-content .c-content__item {
