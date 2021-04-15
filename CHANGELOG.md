@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.28] - 2021-05-15
+
 ### Added
 
 - Add _promo-list_ and _promo-card_ component
@@ -467,7 +469,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.27...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.28...HEAD
+[0.0.28]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.27...v0.0.28
 [0.0.27]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.26...v0.0.27
 [0.0.26]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.25...v.0.0.26
 [0.0.25]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.24...v0.0.25
