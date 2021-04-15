@@ -197,8 +197,8 @@
     uppercase
   ;
 
-  font-size: 10px;
-  letter-spacing: 1px;
+  font-size: 0.625rem;
+  letter-spacing: 0.0625rem;
 }
 
 @screen md {
