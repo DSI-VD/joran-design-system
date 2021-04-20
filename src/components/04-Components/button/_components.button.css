@@ -78,11 +78,20 @@
 .c-button--transparent {
   @apply
     text-primary-cta
+    tracking-normal
 
     py-3
   ;
 
-  font-weight: 100;
+    font-weight: 100;
+
+    &:hover,
+    &:active {
+        @apply 
+            text-primary-600
+            tracking-wider
+        ;
+    }
 }
 
 
@@ -94,9 +103,18 @@
 .c-button--transparent-alt {
   @apply
     text-white
+    tracking-normal
 
     py-3
   ;
 
-  font-weight: 100;
+    font-weight: 100;
+
+    &:hover,
+    &:active {
+        @apply
+            text-primary-200
+            tracking-wider
+        ;
+    }
 }
