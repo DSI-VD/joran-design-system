@@ -324,11 +324,20 @@
 <span class="hljs-selector-class">.c-button--transparent</span> {
   <span class="hljs-keyword">@apply</span>
     text-primary-cta
+    tracking-normal
 
     py-<span class="hljs-number">3</span>
   ;
 
-  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">100</span>;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">100</span>;
+
+    &amp;<span class="hljs-selector-pseudo">:hover</span>,
+    &amp;<span class="hljs-selector-pseudo">:active</span> {
+        <span class="hljs-keyword">@apply</span> 
+            text-primary-<span class="hljs-number">600</span>
+            tracking-wider
+        ;
+    }
 }
 
 
@@ -340,11 +349,20 @@
 <span class="hljs-selector-class">.c-button--transparent-alt</span> {
   <span class="hljs-keyword">@apply</span>
     text-white
+    tracking-normal
 
     py-<span class="hljs-number">3</span>
   ;
 
-  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">100</span>;
+    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">100</span>;
+
+    &amp;<span class="hljs-selector-pseudo">:hover</span>,
+    &amp;<span class="hljs-selector-pseudo">:active</span> {
+        <span class="hljs-keyword">@apply</span>
+            text-primary-<span class="hljs-number">200</span>
+            tracking-wider
+        ;
+    }
 }
 </pre>
                             </code>
@@ -362,7 +380,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -2553,8 +2571,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-15T10:11:32.344Z">
-                                15.04.2021, 12:11:32
+                            <time datetime="2021-04-20T11:49:47.211Z">
+                                20.04.2021, 13:49:47
                             </time>
                         
                     </dd>

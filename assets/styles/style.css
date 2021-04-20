@@ -3352,9 +3352,16 @@ body {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: rgb(var(--color-raw__primary--cta));
+  letter-spacing: 0em;
   color: rgba(var(--color-raw__primary--cta), var(--tw-text-opacity));
   font-weight: 100;
 }
+
+.c-button--transparent:hover, .c-button--transparent:active {
+    color: rgb(var(--color-raw__primary--600));
+    letter-spacing: 0.05em;
+    color: rgba(var(--color-raw__primary--600), var(--tw-text-opacity));
+  }
 
 /***
  * Transparent alt
@@ -3365,8 +3372,15 @@ body {
   padding-bottom: 0.75rem;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
+  letter-spacing: 0em;
   font-weight: 100;
 }
+
+.c-button--transparent-alt:hover, .c-button--transparent-alt:active {
+    color: rgb(var(--color-raw__primary--200));
+    letter-spacing: 0.05em;
+    color: rgba(var(--color-raw__primary--200), var(--tw-text-opacity));
+  }
 
 /* ======================================================================
    # _components.carousel.css
