@@ -1,0 +1,18 @@
+{
+  "context": {
+    "title": "Ceci est un titre",
+    "text": "Ceci est un text ou chiffre mis en évidence",
+    "button": {
+      "text": "Lire la suite",
+      "url": "https://www.vd.ch"
+    }
+  },
+  "variants": [
+    {
+      "name": "image",
+      "context": {
+        "image": true
+      }
+    }
+  ]
+}

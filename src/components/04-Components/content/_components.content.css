@@ -6,7 +6,7 @@
   @apply
     flex
     flex-col
-    items-center
+    md:items-center
   ;
 }
 

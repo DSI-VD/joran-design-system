@@ -10,15 +10,51 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Fix _button_ `hover` style
-- Upgrade node packages
-- Fix CSS formating and typo in _search-input_ and _search-result-item_
 
-## [0.0.27] - 2021-04-13
+## [0.0.30] - 2021-05-15
+
+### Changes
+
+- Fix button margin in _hightlight--with-button_
+
+## [0.0.29] - 2021-05-15
+
+### Changes
+
+- Fix _content_ HTML structure
+- Fix padding betwwen _highlight_ and other eleemnts. It was biased because
+  _highlight_ had the `o-stack` class. It has been removed
+
+## [0.0.28] - 2021-05-15
 
 ### Added
 
+- Add _promo-list_ and _promo-card_ component
+- Add an _accordeon_ object so that it can be used in multiple components
 - Add a _video--legend_ variant that use the _figure_ style to add a caption to
   a video
+
+### Changes
+
+- Replace button with an accordeon in _content--intro_
+- _testimonail_ us _accordeon_ object insted of his own script. `.js-testimonial` classes have been replace by `.js-accordeon`
+- `testimonial.js` have been replace by `accordeon.js` in _preview_
+
+### Fixes
+
+- Upgrade node packages
+- Fix CSS formating and typo in _search-input_ and _search-result-item_
+- Fix styling in desktop nav (column position with masonry and inverted title style)
+- Fix chevron on mobile nav
+- Improve footer
+- Add bg-white on c-page
+- Add linear-gradient for quote
+
+### Aded
+
+- Slider in navigation
+
+## [0.0.27] - 2021-04-13
 
 ### Changed
 
@@ -451,7 +487,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.27...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.30...HEAD
+[0.0.30]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.29...v0.0.30
+[0.0.29]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.28...v0.0.29
+[0.0.28]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.27...v0.0.28
 [0.0.27]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.26...v0.0.27
 [0.0.26]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.25...v.0.0.26
 [0.0.25]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.24...v0.0.25

@@ -1,10 +1,12 @@
-<div class="c-highlight o-stack" aria-label="Contenu mis en évidence">
-  {% render '@content--with-heading', content %}
-  {% if button %}
-    <div class="o-container c-content">
-      <div class="c-content__item">
-        {% render '@button--default-arrow-right' %}
+<div class="c-highlight" aria-label="Contenu mis en évidence">
+  <div class="o-stack">
+    {% render '@content--with-heading', content %}
+    {% if button %}
+      <div class="o-container c-content">
+        <div class="c-content__item">
+          {% render '@button--default-arrow-right' %}
+        </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
 </div>

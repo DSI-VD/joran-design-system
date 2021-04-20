@@ -1,0 +1,10 @@
+<div class="o-container o-container--large c-promo-list">
+  <h2 class="u-visually-hidden">{{ title }}</h2>
+  <ul class="c-promo-list__grid">
+    {% for promo in promos %}
+      <li class="c-promo-list__grid-item">
+        {% render '@promo-card', promo %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

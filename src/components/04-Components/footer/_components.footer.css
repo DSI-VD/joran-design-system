@@ -6,7 +6,12 @@
   @apply
     bg-primary
     text-white
-    ;
+    mt-0
+    pt-24
+    pb-6
+  ;
+
+  letter-spacing: 0.05625rem;
 }
 
 
@@ -187,10 +192,13 @@
 .c-footer__secondary {
   @apply
     text-center
-    mt-12
+    mt-36
     text-xs
     uppercase
-    ;
+  ;
+
+  font-size: 0.625rem;
+  letter-spacing: 0.0625rem;
 }
 
 @screen md {
