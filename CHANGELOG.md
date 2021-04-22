@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Fix contrast ratio in _o-box_. Contrast was to low with buttons and links.
 - Fix _footer_ margin top
 
 ## [0.0.31] - 2021-05-20
