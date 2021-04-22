@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+
+- Fix _footer_ margin top
+
 ## [0.0.31] - 2021-05-20
 
 ### Fixes
