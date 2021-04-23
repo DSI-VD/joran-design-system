@@ -1736,15 +1736,13 @@ body {
    ====================================================================== */
 
 .o-box {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-  --tw-gradient-from: rgb(var(--color-raw__primary--100));
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  --tw-gradient-to: rgb(var(--color-raw__primary--400));
+  background-color: rgb(var(--color-raw__primary--100));
   border-radius: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  background-color: rgba(var(--color-raw__primary--100), var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
@@ -1766,6 +1764,17 @@ body {
     padding-left: 6rem;
     padding-right: 6rem;
   }
+}
+
+/* -----------------------------------
+ # Variants
+ ----------------------------------- */
+
+.o-box.o-box--gradient {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: rgb(var(--color-raw__primary--100));
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  --tw-gradient-to: rgb(var(--color-raw__primary--400))
 }
 
 /* ======================================================================
@@ -3666,7 +3675,6 @@ body {
 
 .c-footer {
   background-color: rgb(var(--color-raw__primary--900));
-  margin-top: 0px;
   padding-bottom: 1.5rem;
   padding-top: 6rem;
   --tw-text-opacity: 1;

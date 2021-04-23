@@ -83,7 +83,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
 
 </div>
 
@@ -189,7 +189,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-b82220e0b7fe64b1d2843ff3736ba5e0-panel-view">
     <code class="Code Code--lang-django hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-box&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height:20rem;&quot;</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-box</span></span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> variantModifier %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{ variantModifier }}</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;height:20rem;&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;o-container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a box ! It had some nice background color.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -244,9 +244,7 @@
     py-<span class="hljs-number">24</span>
     px-<span class="hljs-number">2</span>
 
-    bg-gradient-to-b
-    from-primary-<span class="hljs-number">100</span>
-    to-primary-<span class="hljs-number">400</span>
+    bg-primary-<span class="hljs-number">100</span>
   ;
 }
 
@@ -273,7 +271,17 @@
     ;
   }
 }
-</pre>
+
+<span class="hljs-comment">/* -----------------------------------
+ # Variants
+ ----------------------------------- */</span>
+
+<span class="hljs-selector-class">.o-box</span><span class="hljs-selector-class">.o-box--gradient</span> {
+  <span class="hljs-keyword">@apply</span>
+    bg-gradient-to-b
+    from-primary-<span class="hljs-number">100</span>
+    to-primary-<span class="hljs-number">400</span>
+}</pre>
                             </code>
                             
                         </div>
@@ -289,7 +297,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">471 Bytes</span>
+                    <span class="Meta-value">618 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -362,9 +370,11 @@
 
     
     
+        
+    
 
 
-<nav class="Navigation" data-behaviour="navigation">
+<nav class="Navigation in-variants-panel" data-behaviour="navigation">
     <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
     
         <div class="Navigation-group Navigation-search">
@@ -1195,7 +1205,7 @@
         
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-role="tree-link" data-pjax data-handle="box">
+            <a class="Tree-entityLink" href="box--default.html" data-role="tree-link" data-pjax data-handle="box">
                 <span>Box</span>
                 
 
@@ -1204,7 +1214,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -2437,7 +2447,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            0.0.31
+                            0.0.32
                         
                     </dd>
                 </div>
@@ -2446,8 +2456,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-20T11:56:51.378Z">
-                                20.04.2021, 13:56:51
+                            <time datetime="2021-04-23T13:56:05.200Z">
+                                23.04.2021, 15:56:05
                             </time>
                         
                     </dd>
@@ -2470,7 +2480,7 @@
     
     </div>
 
-    <div class="Navigation-panel Navigation-panel--variants" data-role="variant-panel">
+    <div class="Navigation-panel Navigation-panel--variants is-visible" data-role="variant-panel">
         <div class="Navigation-backButtonWrapper">
             <button class="Navigation-backButton" data-role="back" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -2889,6 +2899,79 @@
     
         
     
+        
+            
+            <div class="Navigation-group is-visible" data-role="variant-group" data-component="box">
+                
+<div class="Tree" data-behaviour="tree" id="tree-box-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Box Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="box--default.html" data-role="tree-link" data-pjax data-handle="box">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="box--gradient.html" data-role="tree-link" data-pjax data-handle="box">
+                <span>Gradient</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
         
     
         
