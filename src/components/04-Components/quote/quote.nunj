@@ -1,5 +1,5 @@
 <div class="o-container o-container--large c-quote">
-    <div class="o-box">
+    <div class="o-box o-box--gradient">
         {% if heading %}<h3 class="c-quote__heading">Témoignage</h3>{% endif %}
         <blockquote>
             <span class="c-quote__text">{{ quote }}</span>

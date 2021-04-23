@@ -9,9 +9,7 @@
     py-24
     px-2
 
-    bg-gradient-to-b
-    from-primary-100
-    to-primary-400
+    bg-primary-100
   ;
 }
 
@@ -37,4 +35,15 @@
       px-24
     ;
   }
+}
+
+/* -----------------------------------
+ # Variants
+ ----------------------------------- */
+
+.o-box.o-box--gradient {
+  @apply
+    bg-gradient-to-b
+    from-primary-100
+    to-primary-400
 }

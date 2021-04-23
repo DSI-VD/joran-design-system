@@ -7,8 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- _box_ has a variant _box--gradient_ with a background gradient
+
+### Changed
+- Gradient background of _box_ has been removed. There is a unify color instead.
+- Add `.o-box--gradient` class on _quotes_ to get a gradient background
+
 ### Fixes
 
+- Fix contrast ratio in _o-box_. Contrast was to low with buttons and links.
 - Fix _footer_ margin top
 
 ## [0.0.31] - 2021-05-20
