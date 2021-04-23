@@ -36,3 +36,14 @@
     ;
   }
 }
+
+/* -----------------------------------
+ # Variants
+ ----------------------------------- */
+
+.o-box.o-box--gradient {
+  @apply
+    bg-gradient-to-b
+    from-primary-100
+    to-primary-400
+}
