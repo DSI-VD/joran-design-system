@@ -7,10 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.32] - 2021-05-23
+
 ### Added
+
 - _box_ has a variant _box--gradient_ with a background gradient
 
 ### Changed
+
 - Gradient background of _box_ has been removed. There is a unify color instead.
 - Add `.o-box--gradient` class on _quotes_ to get a gradient background
 
@@ -501,7 +505,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.31...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.32...HEAD
+[0.0.32]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.31...v0.0.32
 [0.0.31]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.30...v0.0.31
 [0.0.30]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.29...v0.0.30
 [0.0.29]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.28...v0.0.29
