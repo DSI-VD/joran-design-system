@@ -1,0 +1,37 @@
+/* ======================================================================
+   # _color.utilities.css
+   ====================================================================== */
+
+.u-color--primary-100 {
+  color: var(--color__primary--100);
+}
+
+.u-color--primary-200 {
+  color: var(--color__primary--200);
+}
+
+.u-color--primary-400 {
+  color: var(--color__primary--400);
+}
+
+.u-color--primary-600 {
+  color: var(--color__primary--600);
+}
+
+.u-color--primary-800 {
+  color: var(--color__primary--800);
+}
+
+.u-color--primary-900 {
+  color: var(--color__primary--900);
+}
+
+.u-color--primary-cta {
+  color: var(--color__primary--cta);
+}
+
+.u-color--white {
+  @apply
+    text-white
+  ;
+}
