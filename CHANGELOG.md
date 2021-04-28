@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add a pink themes in prototypes
+- Add color utilities _color_ and _background_
+
+### Fixes
+
+- Refactor color theme management. Colors are set in _color_ config file
+
 ## [0.0.32] - 2021-05-23
 
 ### Added

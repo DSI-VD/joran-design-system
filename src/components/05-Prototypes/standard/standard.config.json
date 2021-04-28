@@ -8,6 +8,10 @@
     {
       "preview": "@preview--prototype-orange",
       "name": "theme orange"
+    },
+    {
+      "preview": "@preview--prototype-pink",
+      "name": "theme pink"
     }
   ]
 }
