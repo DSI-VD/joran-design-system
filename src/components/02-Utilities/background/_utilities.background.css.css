@@ -9,3 +9,31 @@
     to-primary-100
     ;
 }
+
+.u-bg--primary-100 {
+  background-color: var(--color__primary--100);
+}
+
+.u-bg--primary-200 {
+  background-color: var(--color__primary--200);
+}
+
+.u-bg--primary-400 {
+  background-color: var(--color__primary--400);
+}
+
+.u-bg--primary-600 {
+  background-color: var(--color__primary--600);
+}
+
+.u-bg--primary-800 {
+  background-color: var(--color__primary--800);
+}
+
+.u-bg--primary-900 {
+  background-color: var(--color__primary--900);
+}
+
+.u-bg--primary-cta {
+  background-color: var(--color__primary--cta);
+}
