@@ -1,2 +1,25 @@
+<div class="flex flex-row flex-wrap">
 <div class="u-bg--gradient h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
+
+<div class="u-bg--primary-100 h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
+
+<div class="u-bg--primary-200 h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
+
+<div class="u-bg--primary-400 h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
+
+<div class="u-bg--primary-600 h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
+
+<div class="u-bg--primary-800 h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
+
+<div class="u-bg--primary-900 h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
+
+<div class="u-bg--primary-cta h-48 w-48 block rounded-full p-6 m-4 shadow">
+</div>
 </div>
