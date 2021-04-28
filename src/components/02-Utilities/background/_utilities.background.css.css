@@ -37,3 +37,9 @@
 .u-bg--primary-cta {
   background-color: var(--color__primary--cta);
 }
+
+.u-bg--white {
+  @apply
+    bg-white
+  ;
+}
