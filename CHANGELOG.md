@@ -14,6 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a pink themes in prototypes
 - Add color utilities _color_ and _background_
 
+### Changed
+
+- Add hidden text to button in _promo-card_ and _promo-list_ to make them
+  accessible
+
 ### Fixes
 
 - Upgrade node packages
