@@ -9,8 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add _button--accessible-text_ variant that show how to add accessible text
+  for a link to an article's detail
 - Add a pink themes in prototypes
 - Add color utilities _color_ and _background_
+
+### Changed
+
+- Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to 
+  make them accessible
 
 ### Fixes
 

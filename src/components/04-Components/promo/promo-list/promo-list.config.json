@@ -18,7 +18,8 @@
           "alt": "eos culpa qui"
         },
         "button": {
-          "text": "Lire la suite"
+          "text": "Lire la suite",
+          "hiddentext": "de Des images !"
         }
       },
       {
@@ -30,6 +31,7 @@
         },
         "button": {
           "text": "lire la suite",
+          "hiddentext": "de le poid du jambon au concours du comptoire du Nord Vaudois",
           "url": "http://marilyne.biz"
         }
       },
@@ -46,6 +48,7 @@
         },
         "button": {
           "text": "lire la suite",
+          "hiddentext": "de Pour les gouverner tous",
           "url": "http://waldo.org"
         }
       },
@@ -58,6 +61,7 @@
         },
         "button": {
           "text": "lire la suite",
+          "hiddentext": "de 7 milliards",
           "url": "https://alana.name"
         }
       },
@@ -66,6 +70,7 @@
         "text": "Curabitur auctor urna magna, eget ultrices lacus semper et. Nunc at nulla hendrerit, tincidunt erat vel, feugiat tortor. Nam iaculis nisi ut felis rutrum blandit. Maecenas rutrum condimentum erat, et molestie velit viverra nec. Sed ullamcorper tortor congue purus venenatis, at porttitor felis pharetra. Sed sollicitudin id tortor vel faucibus. Donec laoreet leo a venenatis fringilla. Aliquam consequat dignissim massa eget mollis. In posuere magna ut ex pulvinar egestas.",
         "button": {
           "text": "lire la suite",
+          "hiddentext": "de 1000 mots",
           "url": "https://coucou.com"
         }
       },

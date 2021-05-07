@@ -36,7 +36,7 @@
                             aria-pressed="false"
                             class="c-button c-button--transparent c-testimonial__button js-accordeon__toggle-btn"
                             hidden>
-                        <span class="js-accordeon__toggle-btn-text">Afficher plus</span>{% render '@svg-chevron-right' %}
+                        <span class="js-accordeon__toggle-btn-text">Afficher plus</span><span class="u-visually-hidden"> de {{ header }}</span>{% render '@svg-chevron-right' %}
                     </button>
                 
                 {% endif %}

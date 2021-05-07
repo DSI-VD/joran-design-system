@@ -12,6 +12,14 @@
       }
     },
     {
+      "name": "accessible text",
+      "context": {
+        "variantModifier": "c-button--default",
+        "text": "Lire la suite",
+        "hiddentext": "de l'article nom de larticle"
+      }
+    },
+    {
       "name": "default arrow right",
       "context": {
         "svg": {

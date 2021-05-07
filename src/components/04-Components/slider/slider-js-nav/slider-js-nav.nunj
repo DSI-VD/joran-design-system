@@ -24,9 +24,7 @@
               <span class="u-visually-hidden">Date:</span>{{ article.date }}
             </div>
             <h3 class="c-slider-js-nav__article-heading">{{ article.title }}</h3>
-            {% render '@button--transparent-alternate-arrow-right',
-            {styleModifier: 'c-slider-js-nav__article-button', text: 'lire la
-            suite'}, true %}
+            {% render '@button--transparent-alternate-arrow-right', article.button, true %}
           </div>
         </article>
         {% endfor %}

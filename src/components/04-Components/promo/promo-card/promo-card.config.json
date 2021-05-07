@@ -4,6 +4,7 @@
     "text": "Ceci est un text ou chiffre mis en évidence",
     "button": {
       "text": "Lire la suite",
+      "hiddentext": "de titre de l'élément",
       "url": "https://www.vd.ch"
     }
   },
