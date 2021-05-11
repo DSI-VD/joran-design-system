@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Fix contrast in _table_ header
 - Fix contrast in navigation
 - Upgrade node packages
 - Refactor color theme management. Colors are set in _color_ config file
