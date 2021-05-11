@@ -34,8 +34,7 @@
 
 .js-c-nav--open {
   @apply
-    bg-primary-600
-    bg-opacity-95
+    bg-primary
     h-screen
     overflow-y-scroll
   ;
@@ -43,8 +42,7 @@
 
 .js-c-nav--sticky {
   @apply
-    bg-primary-600
-    bg-opacity-95
+    bg-primary
   ;
 }
 
