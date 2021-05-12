@@ -7,11 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.1] - 2021-05-12
+## [1.0.2] - 2021-05-12
 
 ### Fixes
 
 - Fix color background in _timeline_
+
+## [1.0.1] - 2021-05-12
+
+### Fixes
+
 - Fix contrast in _slider-js-nav_ component
 
 ## [1.0.0] - 2021-05-12
@@ -533,7 +538,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.1...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.32...v1.0.0
 [0.0.32]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.31...v0.0.32
