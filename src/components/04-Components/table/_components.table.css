@@ -25,8 +25,8 @@
 .c-table table thead,
 .c-table table tfoot {
   @apply
-    bg-primary-200
-    text-primary
+    bg-primary
+    text-white
     font-bold
     uppercase
     ;
