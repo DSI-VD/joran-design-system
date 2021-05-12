@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2021-05-12
+
 ### Added
 
 - Add _button--accessible-text_ variant that show how to add accessible text
@@ -524,7 +526,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.32...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.32...v1.0.0
 [0.0.32]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.31...v0.0.32
 [0.0.31]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.30...v0.0.31
 [0.0.30]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.29...v0.0.30
