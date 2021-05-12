@@ -5153,9 +5153,9 @@ body {
 }
 
 .c-slider-js-nav-wrap {
+  background-color: rgb(var(--color-raw__primary--900));
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: var(--color__primary--600);
 }
 
 .c-slider-js-nav-container {
