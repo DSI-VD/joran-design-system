@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2021-05-12
+
+### Fixes
+
+- Fix contrast in _slider-js-nav_ component
+
 ## [1.0.0] - 2021-05-12
 
 ### Added
@@ -526,7 +532,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.0...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.32...v1.0.0
 [0.0.32]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.31...v0.0.32
 [0.0.31]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.30...v0.0.31

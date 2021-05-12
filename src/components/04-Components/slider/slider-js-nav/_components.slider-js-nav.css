@@ -8,9 +8,8 @@
 .c-slider-js-nav-wrap {
   @apply
     py-24
+    bg-primary
   ;
-
-  background-color: var(--color__primary--600);
 }
 
 .c-slider-js-nav-container {
