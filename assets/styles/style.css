@@ -5897,7 +5897,7 @@ body {
   padding-bottom: 6rem;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
-  background-image: linear-gradient(180deg, #5d50db 0%, #463d9d 100%);
+  background-image: linear-gradient(180deg, var(--color__primary--800) 0%, var(--color__primary--900) 100%);
 }
 
 .c-timeline h2 {
