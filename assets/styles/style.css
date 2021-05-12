@@ -127,7 +127,7 @@
 
 /* Include Tailwind */
 
-/* ! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -4221,17 +4221,13 @@ body {
 }
 
 .js-c-nav--open {
-  background-color: rgb(var(--color-raw__primary--600));
-  --tw-bg-opacity: 0.95;
+  background-color: rgb(var(--color-raw__primary--900));
   height: 100vh;
   overflow-y: scroll;
-  background-color: rgba(var(--color-raw__primary--600), var(--tw-bg-opacity));
 }
 
 .js-c-nav--sticky {
-  background-color: rgb(var(--color-raw__primary--600));
-  --tw-bg-opacity: 0.95;
-  background-color: rgba(var(--color-raw__primary--600), var(--tw-bg-opacity));
+  background-color: rgb(var(--color-raw__primary--900));
 }
 
 .c-nav__toggle:focus {
@@ -5709,11 +5705,11 @@ body {
 }
 
 .c-table table thead, .c-table table tfoot {
-  background-color: rgb(var(--color-raw__primary--200));
+  background-color: rgb(var(--color-raw__primary--900));
   font-weight: 700;
-  color: rgb(var(--color-raw__primary--900));
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
   text-transform: uppercase;
-  background-color: rgba(var(--color-raw__primary--200), var(--tw-bg-opacity));
 }
 
 .c-table table th, .c-table table td {
