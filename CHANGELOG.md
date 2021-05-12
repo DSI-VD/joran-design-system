@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade node packages
 - Refactor color theme management. Colors are set in _color_ config file
 
-## [0.0.32] - 2021-05-23
+## [0.0.32] - 2021-04-23
 
 ### Added
 
@@ -42,19 +42,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix contrast ratio in _o-box_. Contrast was to low with buttons and links.
 - Fix _footer_ margin top
 
-## [0.0.31] - 2021-05-20
+## [0.0.31] - 2021-04-20
 
 ### Fixes
 
 - Fix _button_ `hover` style
 
-## [0.0.30] - 2021-05-15
+## [0.0.30] - 2021-04-15
 
 ### Changes
 
 - Fix button margin in _hightlight--with-button_
 
-## [0.0.29] - 2021-05-15
+## [0.0.29] - 2021-04-15
 
 ### Changes
 
@@ -62,7 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix padding betwwen _highlight_ and other eleemnts. It was biased because
   _highlight_ had the `o-stack` class. It has been removed
 
-## [0.0.28] - 2021-05-15
+## [0.0.28] - 2021-04-15
 
 ### Added
 
