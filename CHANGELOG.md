@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Fix color background in _timeline_
 - Fix contrast in _slider-js-nav_ component
 
 ## [1.0.0] - 2021-05-12
