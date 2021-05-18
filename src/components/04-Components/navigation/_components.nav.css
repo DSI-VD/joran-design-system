@@ -17,6 +17,7 @@
    # c-nav
    ----------------------------------- */
 .c-nav {
+  @extend .u-print-hidden;
   @apply
     text-white
     py-4
