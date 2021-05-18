@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Do not hide breadcrumb element when printing
 - Add `.u-print-hidden` utility
 - Remove _alert_, _arrow_, _navigation_, _footer_, _pagination_ when medi is
   print

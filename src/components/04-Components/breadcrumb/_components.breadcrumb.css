@@ -69,27 +69,32 @@
 
 /***
  * Hide all items except last two
+ *
+ * 1. Do not hide when printing the breadcrumb
  */
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link {
-  @apply
-    inline-block
-  ;
 
-  height: 100%;
-}
+@media screen { /* [1] */
+  .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link {
+    @apply
+      inline-block
+    ;
 
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
-  @apply
-    sr-only
-    w-4
-  ;
-}
+    height: 100%;
+  }
 
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
-.c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
-  @apply
-    not-sr-only
-    inline-block
-  ;
+  .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
+    @apply
+      sr-only
+      w-4
+    ;
+  }
+
+  .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:hover .c-breadcrumb__link-text,
+  .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
+  .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
+    @apply
+      not-sr-only
+      inline-block
+    ;
+  }
 }
