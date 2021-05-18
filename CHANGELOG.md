@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- `h1`, `h2` and `h3` are smaller when printing
 - Make text size smaller and add link after anchors in _prose_ when printing
 - All images of _carousel_ are visible when printing
 - Do not hide _breadcrumb_ elements when printing
