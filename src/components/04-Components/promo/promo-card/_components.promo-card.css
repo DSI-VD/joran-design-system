@@ -16,10 +16,10 @@
     px-1
     py-4
     sm:px-4
-        mt-1
-        w-1/4
-        sm:w-1/6
-    ;
+    mt-1
+    w-1/4
+    sm:w-1/6
+  ;
 
   > * {
     max-width: 3rem;
@@ -28,7 +28,7 @@
   svg {
     @apply
       text-white
-        ;
+    ;
   }
 }
 
@@ -37,11 +37,11 @@
     py-4
     px-1
     sm:px-4
-        w-3/4
-          sm:w-5/6
-          border-t
-          border-primary-800
-    ;
+    w-3/4
+    sm:w-5/6
+    border-t
+    border-primary-800
+  ;
 }
 
 .c-promo-card__header {
@@ -49,11 +49,11 @@
 
   @apply
     text-white
-    ;
+  ;
 }
 
 .c-promo-card__content {
   @apply
     text-white
-    ;
+  ;
 }
