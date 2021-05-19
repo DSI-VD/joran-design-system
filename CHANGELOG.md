@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Make _testimonial_ print friendly
 - Remove backgorund colors and make text smaller in _table_ when printing
 - Remove background in _box_ when printing
 - Remove background colors in _promo-card_ and _promo-list_ when printing
