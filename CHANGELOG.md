@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Make components print friendly
+  - Remove background, set text in black and realign elements in _timeline_
   - Make _testimonial_ print friendly
   - Remove background colors and make text smaller in _table_
   - Remove background in _box_
@@ -51,7 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to 
+- Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to
   make them accessible
 
 ### Fixes
