@@ -8,49 +8,44 @@
         <div class="c-timeline__items">
             <a href="#nowhere" class="c-timeline__item">
                 <div class="c-timeline__item-content">
-                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <div class="c-timeline__item-img">
+                        <div class="c-timeline__item-img-bg">
+                            <img src="https://source.unsplash.com/280x120" alt="">
+                        </div>
+                    </div>
                     {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
                     <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
                 </div>
             </a>
             <a href="#nowhere" class="c-timeline__item">
                 <div class="c-timeline__item-content">
-                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <div class="c-timeline__item-img">
+                        <div class="c-timeline__item-img-bg">
+                            <img src="https://source.unsplash.com/280x373" alt="">
+                        </div>
+                    </div>
                     {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
                     <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
                 </div>
             </a>
             <a href="#nowhere" class="c-timeline__item">
                 <div class="c-timeline__item-content">
-                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <div class="c-timeline__item-img">
+                        <div class="c-timeline__item-img-bg">
+                            <img src="https://source.unsplash.com/280x373" alt="">
+                        </div>
+                    </div>
                     {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
                     <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
                 </div>
             </a>
             <a href="#nowhere" class="c-timeline__item">
                 <div class="c-timeline__item-content">
-                    <img src="https://source.unsplash.com/280x373" alt="">
-                    {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
-                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-                </div>
-            </a>
-            <a href="#nowhere" class="c-timeline__item">
-                <div class="c-timeline__item-content">
-                    <img src="https://source.unsplash.com/280x373" alt="">
-                    {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
-                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-                </div>
-            </a>
-            <a href="#nowhere" class="c-timeline__item">
-                <div class="c-timeline__item-content">
-                    <img src="https://source.unsplash.com/280x373" alt="">
-                    {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
-                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-                </div>
-            </a>
-            <a href="#nowhere" class="c-timeline__item">
-                <div class="c-timeline__item-content">
-                    <img src="https://source.unsplash.com/280x373" alt="">
+                    <div class="c-timeline__item-img">
+                        <div class="c-timeline__item-img-bg">
+                            <img src="https://source.unsplash.com/280x280" alt="">
+                        </div>
+                    </div>
                     {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
                     <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
                 </div>

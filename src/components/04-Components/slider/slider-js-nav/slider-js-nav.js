@@ -3,10 +3,7 @@ const initSlider = () => {
     let sidebar = item.parentNode.parentNode.querySelector('.c-slider-js-nav__container-left');
     let highest = 0;
     new Flickity(item, {
-      groupCells: 2,
       contain: true,
-      freeScroll: true,
-      percentPosition: true,
       imagesLoaded: true,
       on: {
         ready: function () {
