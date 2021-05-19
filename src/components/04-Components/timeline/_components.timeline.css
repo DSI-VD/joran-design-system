@@ -146,7 +146,7 @@
 
 .c-timeline__item-content .c-timeline__item-img {
   @apply
-    absolute
+    sm:absolute
     rounded-md
     left-2/4
   ;
@@ -167,13 +167,14 @@
 .c-timeline__item-img .c-timeline__item-img-bg::after {
   @apply
     rounded-md
+    h-auto
+    sm:h-full
   ;
 
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
   width: 286px;
   background-color: rgba(0, 0, 0, 0.37);
   transition: background-color 0.55s linear;
