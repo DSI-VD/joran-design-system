@@ -20,6 +20,14 @@
     rounded
     min-w-full
     ;
+
+  @media print {
+    @apply
+      text-xs
+      bg-transparent;
+    ;
+  }
+
 }
 
 .c-table table thead,
@@ -30,6 +38,14 @@
     font-bold
     uppercase
     ;
+
+  @media print {
+    @apply
+      text-black
+      bg-transparent
+    ;
+  }
+
 }
 
 .c-table table th,
