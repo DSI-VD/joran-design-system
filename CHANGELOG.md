@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Margin between elements are smaller for print
 - Make _hero_ print friendly
 - Make _content_ print friendly
 - `h1`, `h2` and `h3` are smaller when printing
