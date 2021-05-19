@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Replace _highlight_ background with a border when printing
 - Margin between elements are smaller for print
 - Make _hero_ print friendly
 - Make _content_ print friendly
