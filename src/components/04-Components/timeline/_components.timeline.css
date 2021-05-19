@@ -123,7 +123,7 @@
 }
 
 .c-timeline__item:nth-child(2n) {
-  margin-top: 27rem;
+  margin-top: 32rem;
 }
 
 .c-timeline__item:focus {
@@ -149,9 +149,9 @@
     absolute
     rounded-md
     left-2/4
-    -top-full
   ;
 
+  top: -43%;
   width: 286px;
 }
 

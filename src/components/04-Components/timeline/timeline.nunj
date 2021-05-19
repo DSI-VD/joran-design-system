@@ -32,7 +32,7 @@
                 <div class="c-timeline__item-content">
                     <div class="c-timeline__item-img">
                         <div class="c-timeline__item-img-bg">
-                            <img src="https://source.unsplash.com/280x120" alt="">
+                            <img src="https://source.unsplash.com/280x373" alt="">
                         </div>
                     </div>
                     {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
