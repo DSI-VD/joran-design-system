@@ -1,31 +1,37 @@
 {
   "status": "ready",
   "context": {
-    "previousLabel": "Précédent",
-    "nextLabel": "Suivant",
+    "buttons": {
+      "previous": {
+        "text": "Précédent",
+        "hiddentext": ": Page X sur Y"
+      },
+      "next": {
+        "text": "Suivant",
+        "hiddentext": ": Page X sur Y"
+      }
+    },
     "previous": false,
     "next": true
   },
   "variants": [
     {
-      "name": "default",
-      "context": {
-        "previous": true,
-        "next": true
-      }
+      "name": "default"
     },
     {
       "name": "first page",
       "context": {
-        "previous": false,
-        "next": true
+        "buttons": {
+          "previous": false
+        }
       }
     },
     {
       "name": "last page",
       "context": {
-        "previous": true,
-        "next": false
+        "buttons": {
+          "next": false
+        }
       }
     }
   ]

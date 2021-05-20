@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Make _pagination_ accessible by adding hidden text in the link
+
 ### Fixes
 
 - Level 2 item are no more clickable in _navigation_
@@ -35,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to 
+- Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to
   make them accessible
 
 ### Fixes
