@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Make _pagination_ accessible by adding hidden text in the link
+
 ### Fixes
 
 - Make components print friendly
