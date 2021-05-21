@@ -8,7 +8,7 @@
   "scripts": {
     "beautify": "run-p beautify:*",
     "beautify:all": "prettier --write .",
-    "beautify:scripts": "xo --space --fix",
+    "beautify:scripts": "xo --space --fix --env=browser",
     "beautify:styles": "stylelint src/**/*.css --fix",
     "prebuild": "npm run clean",
     "build": "run-s build:*",
@@ -23,7 +23,7 @@
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git",
     "lint": "run-s lint:*",
     "lint:all": "prettier --check .",
-    "lint:scripts": "xo --space",
+    "lint:scripts": "xo --space --env=browser",
     "lint:styles": "stylelint src/**/*.css",
     "prepublishOnly": "npm run build",
     "start": "npm run watch",
