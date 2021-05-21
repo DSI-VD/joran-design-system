@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-05-21
+
 ### Changed
 
 - Make _pagination_ accessible by adding hidden text in the link
@@ -564,7 +566,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.2...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.3...v1.1.0
 [1.0.2]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/DSI-VD/joran-design-system/compare/v0.0.32...v1.0.0
