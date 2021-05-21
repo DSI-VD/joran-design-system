@@ -1784,7 +1784,7 @@ body {
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
     --tw-gradient-from: rgb(var(--color-raw__primary--100));
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-    --tw-gradient-to: rgb(var(--color-raw__primary--400))
+    --tw-gradient-to: rgb(var(--color-raw__primary--400));
   }
 }
 
@@ -3929,7 +3929,7 @@ body {
  # Content heading left
  ----------------------------------- */
 
-@medi not print {
+@media not print {
   @media (min-width: 768px) {
     .c-content--2-col {
       flex-direction: row;
@@ -6469,7 +6469,7 @@ body {
 }
   }
 
-/*-----------------------------------
+/* -----------------------------------
  # Heading
  ----------------------------------- */
 

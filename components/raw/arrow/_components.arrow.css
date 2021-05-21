@@ -4,6 +4,7 @@
 
 .c-arrow {
   @extend .u-print-hidden;
+
   @apply
     h-12
     w-12

@@ -274,46 +274,46 @@
    ====================================================================== */</span>
 
 <span class="hljs-selector-class">.c-content</span> {
-    <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
-      <span class="hljs-keyword">@apply</span>
-        flex
-        flex-col
-        <span class="hljs-attribute">md</span>:items-center
+  <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+    <span class="hljs-keyword">@apply</span>
+      flex
+      flex-col
+      <span class="hljs-attribute">md</span>:items-center
       ;
-    }
   }
+}
 
+<span class="hljs-selector-class">.c-content</span> <span class="hljs-selector-class">.c-content__item</span> {
+  <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+    <span class="hljs-keyword">@apply</span>
+      flex-<span class="hljs-number">1</span>
+        ;
+  }
+}
+
+<span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-content</span> <span class="hljs-selector-class">.c-content__item</span> {
     <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
       <span class="hljs-keyword">@apply</span>
-        flex-<span class="hljs-number">1</span>
+        <span class="hljs-attribute">md</span>:w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
         ;
     }
   }
+}
 
-  <span class="hljs-keyword">@screen</span> md {
-    <span class="hljs-selector-class">.c-content</span> <span class="hljs-selector-class">.c-content__item</span> {
-      <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
-        <span class="hljs-keyword">@apply</span>
-          <span class="hljs-attribute">md</span>:w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
-        ;
-      }
-    }
-  }
+<span class="hljs-selector-class">.c-content__heading-text</span> {
+  <span class="hljs-keyword">@extend</span> %h2;
 
-  <span class="hljs-selector-class">.c-content__heading-text</span> {
-    <span class="hljs-keyword">@extend</span> %h2;
-
-    <span class="hljs-keyword">@apply</span>
-      mb-<span class="hljs-number">8</span>
+  <span class="hljs-keyword">@apply</span>
+    mb-<span class="hljs-number">8</span>
     ;
-  }
+}
 
 <span class="hljs-comment">/* -----------------------------------
  # Content heading left
  ----------------------------------- */</span>
 
-<span class="hljs-keyword">@medi</span> <span class="hljs-keyword">not</span> print {
+<span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
   <span class="hljs-keyword">@screen</span> md {
     <span class="hljs-selector-class">.c-content--2-col</span> {
       <span class="hljs-keyword">@apply</span>
@@ -343,7 +343,6 @@
     text-black
   ;
 }
-
 </pre>
                             </code>
                             
@@ -2594,7 +2593,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.1.0
+                            1.1.1
                         
                     </dd>
                 </div>
@@ -2603,8 +2602,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-05-21T07:11:12.746Z">
-                                21.05.2021, 09:11:12
+                            <time datetime="2021-05-21T08:08:13.872Z">
+                                21.05.2021, 10:08:13
                             </time>
                         
                     </dd>

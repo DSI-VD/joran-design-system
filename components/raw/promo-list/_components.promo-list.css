@@ -7,12 +7,12 @@
     rounded
     ;
 
-    @media not print {
-      @apply
-        bg-primary
-        text-white
+  @media not print {
+    @apply
+      bg-primary
+      text-white
       ;
-    }
+  }
 }
 
 .c-promo-list__grid {
