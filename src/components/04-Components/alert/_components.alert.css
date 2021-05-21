@@ -6,12 +6,14 @@
  *  1. Position of the close button
  */
 .c-alert {
+  @extend .u-print-hidden;
   @apply
     fixed
     bottom-0
     z-50
     w-full
     ;
+
 }
 
 .c-alert__container {

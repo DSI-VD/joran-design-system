@@ -9,6 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Make components print friendly
+  - Remove background, set text in black and realign elements in _timeline_
+  - Make _testimonial_ print friendly
+  - Remove background colors and make text smaller in _table_
+  - Remove background in _box_
+  - Remove background colors in _promo-card_ and _promo-list_
+  - Replace _highlight_ background with a border
+  - Margin between elements are smaller
+  - Make _hero_ print friendly
+  - Make _content_ print friendly
+  - `h1`, `h2` and `h3` are smaller
+  - Make text size smaller and add link after anchors in _prose_
+  - All images of _carousel_ are visible
+  - Do not hide _breadcrumb_ elements
+  - Remove _alert_, _arrow_, _navigation_, _footer_, _pagination_ when printing
+
+- Add `.u-print-hidden` utility
 - Level 2 item are no more clickable in _navigation_
 - Fix _timeline_ first card alignement on mobile
 
@@ -35,7 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to 
+- Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to
   make them accessible
 
 ### Fixes

@@ -4,11 +4,15 @@
 
 .c-promo-list {
   @apply
-    bg-primary
-    text-white
-
     rounded
     ;
+
+    @media not print {
+      @apply
+        bg-primary
+        text-white
+      ;
+    }
 }
 
 .c-promo-list__grid {
@@ -16,8 +20,8 @@
     flex
     flex-col
     flex-wrap
-          md:flex-row
-    ;
+    md:flex-row
+  ;
 }
 
 .c-promo-list__grid-item {

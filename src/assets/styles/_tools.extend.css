@@ -31,6 +31,10 @@
 
     line-height: 1.0833;
   }
+
+  @screen print {
+    @apply text-xl
+  }
 }
 
 /***
@@ -54,6 +58,10 @@
     ;
 
     line-height: 1.1176;
+  }
+
+  @screen print {
+    @apply text-lg;
   }
 }
 

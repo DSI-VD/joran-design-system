@@ -27,3 +27,21 @@
 .o-prose a {
   @extend %anchor;
 }
+
+/* -------------------------------------
+   # Print
+   ------------------------------------- */
+
+/**
+ * 1. Add link after anchors
+ */
+
+@media print {
+    .o-prose {
+        @apply prose-sm;
+
+        a::after {
+          content: " (" attr(href) ")"; /* [1] */
+        }
+    }
+}
