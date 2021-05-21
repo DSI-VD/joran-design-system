@@ -122,16 +122,16 @@ class DesktopNavigation {
     for (const item of document.querySelectorAll('.c-nav__list--level button.c-nav__list-link--w-children')) {
       item.addEventListener('click', event => {
         event.preventDefault();
-      })
+      });
     }
 
     for (const item of document.querySelectorAll('.masonry')) {
-      new Masonry( item, {
-        // options
+      new Masonry(item, {
+        // Options
         itemSelector: '.masonry-item',
         columnWidth: 320,
         transitionDuration: 0,
-        containerStyle: { position: 'absolute' }
+        containerStyle: {position: 'absolute'}
       });
     }
   }

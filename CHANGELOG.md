@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+
+- Beautify
+
 ## [1.1.0] - 2021-05-21
 
 ### Changed
@@ -16,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Make components print friendly
+
   - Remove background, set text in black and realign elements in _timeline_
   - Make _testimonial_ print friendly
   - Remove background colors and make text smaller in _table_

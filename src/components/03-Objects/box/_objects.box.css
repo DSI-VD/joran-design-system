@@ -12,10 +12,9 @@
 
   @media not print {
     @apply
-        bg-primary-100
+      bg-primary-100
     ;
   }
-
 }
 
 @media not print {
@@ -54,5 +53,6 @@
       bg-gradient-to-b
       from-primary-100
       to-primary-400
+      ;
   }
 }

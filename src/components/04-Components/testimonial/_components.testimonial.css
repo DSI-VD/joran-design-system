@@ -26,7 +26,6 @@
    # Image
    ----------------------------------- */
 @media not print {
-
   .c-testimonial__facecontainer {
     @apply
       flex
@@ -43,7 +42,6 @@
         ;
     }
   }
-
 }
 
 .c-testimonial__face {
@@ -61,7 +59,7 @@
   @apply
     text-black
   ;
-  
+
   @media not print {
     @apply
       text-center
@@ -75,7 +73,6 @@
    ----------------------------------- */
 
 @media not print {
-
   .c-testimonial__textcontainer {
     @apply
       text-center
@@ -90,7 +87,6 @@
       ;
     }
   }
-
 }
 
 /* -----------------------------------
@@ -136,7 +132,6 @@
    ----------------------------------- */
 
 @media not print {
-
   .c-testimonial__button {
     @apply mx-auto;
   }
@@ -146,5 +141,4 @@
       @apply mx-0;
     }
   }
-
 }
