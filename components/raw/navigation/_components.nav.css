@@ -17,6 +17,7 @@
    # c-nav
    ----------------------------------- */
 .c-nav {
+  @extend .u-print-hidden;
   @apply
     text-white
     py-4
@@ -273,6 +274,12 @@
 
   transition: background-color 0.35s ease;
   will-change: background-color;
+}
+
+.c-nav__list--level button.c-nav__list-link--w-children:hover,
+.c-nav__list--level button.c-nav__list-link--w-children:focus {
+  cursor: default;
+  outline: none;
 }
 
 .c-nav__list-item--active,

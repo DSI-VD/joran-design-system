@@ -147,3 +147,35 @@
     ;
   }
 }
+
+
+
+/* -------------------------------------
+   # Print style
+   ------------------------------------- */
+
+/**
+ * 1. Override inline style
+ */
+
+.c-carousel .flickity-page-dots,
+.c-carousel .flickity-button {
+    @extend .u-visually-hidden;
+}
+
+.c-carousel {
+  @media print {
+      .flickity-viewport {
+        overflow: initial;
+    }
+    .c-carousel__cell.carousel-cell {
+      position: relative !important; /* [1] */
+      left: auto !important; /* [1] */
+    }
+    .c-carousel__cell + .c-carousel__cell {
+        @apply
+            mt-3
+        ;
+    }
+  }
+}

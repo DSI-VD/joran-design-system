@@ -277,11 +277,23 @@
 
 <span class="hljs-selector-class">.c-promo-card</span> {
   <span class="hljs-keyword">@apply</span>
-    bg-primary
     flex
     flex-row
-        justify-end
+    justify-end
+  ;
+
+  <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+    <span class="hljs-keyword">@apply</span>
+      bg-primary
     ;
+  }
+
+  <span class="hljs-keyword">@media</span> print {
+    <span class="hljs-keyword">@apply</span>
+        border-<span class="hljs-number">4</span>
+        border-primary
+    ;
+  }
 }
 
 <span class="hljs-selector-class">.c-promo-card__col-left</span> {
@@ -289,19 +301,26 @@
     px-<span class="hljs-number">1</span>
     py-<span class="hljs-number">4</span>
     <span class="hljs-attribute">sm</span>:px-<span class="hljs-number">4</span>
-        mt-<span class="hljs-number">1</span>
-        w-<span class="hljs-number">1</span>/<span class="hljs-number">4</span>
-        <span class="hljs-attribute">sm</span>:w-<span class="hljs-number">1</span>/<span class="hljs-number">6</span>
-    ;
+    mt-<span class="hljs-number">1</span>
+    w-<span class="hljs-number">1</span>/<span class="hljs-number">4</span>
+    <span class="hljs-attribute">sm</span>:w-<span class="hljs-number">1</span>/<span class="hljs-number">6</span>
+  ;
 
   &gt; * {
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">3rem</span>;
   }
 
   svg {
-    <span class="hljs-keyword">@apply</span>
-      text-white
-        ;
+    <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+      <span class="hljs-keyword">@apply</span>
+        text-white
+      ;
+    }
+    <span class="hljs-keyword">@media</span> print {
+      <span class="hljs-keyword">@apply</span>
+          text-primary
+      ;
+    }
   }
 }
 
@@ -310,25 +329,30 @@
     py-<span class="hljs-number">4</span>
     px-<span class="hljs-number">1</span>
     <span class="hljs-attribute">sm</span>:px-<span class="hljs-number">4</span>
-        w-<span class="hljs-number">3</span>/<span class="hljs-number">4</span>
-          <span class="hljs-attribute">sm</span>:w-<span class="hljs-number">5</span>/<span class="hljs-number">6</span>
-          border-t
-          border-primary-<span class="hljs-number">800</span>
-    ;
+    w-<span class="hljs-number">3</span>/<span class="hljs-number">4</span>
+    <span class="hljs-attribute">sm</span>:w-<span class="hljs-number">5</span>/<span class="hljs-number">6</span>
+    border-t
+    border-primary-<span class="hljs-number">800</span>
+  ;
 }
 
 <span class="hljs-selector-class">.c-promo-card__header</span> {
   <span class="hljs-keyword">@extend</span> %h1;
-
-  <span class="hljs-keyword">@apply</span>
-    text-white
-    ;
 }
 
+<span class="hljs-selector-class">.c-promo-card__header</span>,
 <span class="hljs-selector-class">.c-promo-card__content</span> {
-  <span class="hljs-keyword">@apply</span>
-    text-white
+  <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+    <span class="hljs-keyword">@apply</span>
+      text-white
     ;
+  }
+
+  <span class="hljs-keyword">@media</span> print {
+    <span class="hljs-keyword">@apply</span>
+        text-primary
+    ;
+  }
 }
 </pre>
                             </code>
@@ -346,7 +370,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">772 Bytes</span>
+                    <span class="Meta-value">1 KB</span>
                 </li>
             </ul>
         </div>
@@ -707,6 +731,32 @@
                 </ul>
             </li>
             
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="print.html" data-role="tree-link" data-pjax data-handle="print">
+                <span>Print</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
         
     
         
@@ -2542,7 +2592,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.0.2
+                            1.1.0
                         
                     </dd>
                 </div>
@@ -2551,8 +2601,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-05-12T14:15:20.553Z">
-                                12.05.2021, 16:15:20
+                            <time datetime="2021-05-21T07:10:31.292Z">
+                                21.05.2021, 09:10:31
                             </time>
                         
                     </dd>
@@ -2976,6 +3026,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

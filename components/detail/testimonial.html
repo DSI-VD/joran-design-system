@@ -331,32 +331,38 @@
     ;
 }
 
-<span class="hljs-keyword">@screen</span> md {
-  <span class="hljs-selector-class">.c-testimonial__flex</span> {
-    <span class="hljs-keyword">@apply</span>
-      flex-row
-      ;
+<span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+  <span class="hljs-keyword">@screen</span> md {
+    <span class="hljs-selector-class">.c-testimonial__flex</span> {
+      <span class="hljs-keyword">@apply</span>
+        flex-row
+        ;
+    }
   }
 }
 
 <span class="hljs-comment">/* -----------------------------------
    # Image
    ----------------------------------- */</span>
-<span class="hljs-selector-class">.c-testimonial__facecontainer</span> {
-  <span class="hljs-keyword">@apply</span>
-    flex
-    flex-row
-    justify-center
-    ;
-}
+<span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
 
-<span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-testimonial__facecontainer</span> {
     <span class="hljs-keyword">@apply</span>
-      w-<span class="hljs-number">1</span>/<span class="hljs-number">3</span>
-      justify-start
+      flex
+      flex-row
+      justify-center
       ;
   }
+
+  <span class="hljs-keyword">@screen</span> md {
+    <span class="hljs-selector-class">.c-testimonial__facecontainer</span> {
+      <span class="hljs-keyword">@apply</span>
+        w-<span class="hljs-number">1</span>/<span class="hljs-number">3</span>
+        justify-start
+        ;
+    }
+  }
+
 }
 
 <span class="hljs-selector-class">.c-testimonial__face</span> {
@@ -373,27 +379,37 @@
 
   <span class="hljs-keyword">@apply</span>
     text-black
-    text-center
-    <span class="hljs-attribute">md</span>:text-left
-      ;
+  ;
+  
+  <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+    <span class="hljs-keyword">@apply</span>
+      text-center
+      <span class="hljs-attribute">md</span>:text-left
+    ;
+  }
 }
 
 <span class="hljs-comment">/* -----------------------------------
    # Text
    ----------------------------------- */</span>
-<span class="hljs-selector-class">.c-testimonial__textcontainer</span> {
-  <span class="hljs-keyword">@apply</span>
-    text-center
-      ;
-}
 
-<span class="hljs-keyword">@screen</span> md {
+<span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+
   <span class="hljs-selector-class">.c-testimonial__textcontainer</span> {
     <span class="hljs-keyword">@apply</span>
-      text-left
-      w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
-        ;
+      text-center
+    ;
   }
+
+  <span class="hljs-keyword">@screen</span> md {
+    <span class="hljs-selector-class">.c-testimonial__textcontainer</span> {
+      <span class="hljs-keyword">@apply</span>
+        text-left
+        w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
+      ;
+    }
+  }
+
 }
 
 <span class="hljs-comment">/* -----------------------------------
@@ -404,9 +420,14 @@
 
   <span class="hljs-keyword">@apply</span>
     text-black
-    text-center
-    <span class="hljs-attribute">md</span>:text-left
+  ;
+
+  <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+    <span class="hljs-keyword">@apply</span>
+      text-center
+      <span class="hljs-attribute">md</span>:text-left
     ;
+  }
 }
 
 <span class="hljs-comment">/* -----------------------------------
@@ -416,7 +437,7 @@
   <span class="hljs-keyword">@apply</span>
     block
     <span class="hljs-attribute">md</span>:inline
-      ;
+  ;
 }
 
 <span class="hljs-selector-class">.c-testimonial__author--function</span><span class="hljs-selector-pseudo">::before</span> {
@@ -433,14 +454,18 @@
    # Button
    ----------------------------------- */</span>
 
-<span class="hljs-selector-class">.c-testimonial__button</span> {
-  <span class="hljs-keyword">@apply</span> mx-auto;
-}
+<span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
 
-<span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-testimonial__button</span> {
-    <span class="hljs-keyword">@apply</span> mx-<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">@apply</span> mx-auto;
   }
+
+  <span class="hljs-keyword">@screen</span> md {
+    <span class="hljs-selector-class">.c-testimonial__button</span> {
+      <span class="hljs-keyword">@apply</span> mx-<span class="hljs-number">0</span>;
+    }
+  }
+
 }
 </pre>
                             </code>
@@ -458,7 +483,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -823,6 +848,32 @@
                 </ul>
             </li>
             
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="print.html" data-role="tree-link" data-pjax data-handle="print">
+                <span>Print</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
         
     
         
@@ -2658,7 +2709,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.0.2
+                            1.1.0
                         
                     </dd>
                 </div>
@@ -2667,8 +2718,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-05-12T14:15:20.553Z">
-                                12.05.2021, 16:15:20
+                            <time datetime="2021-05-21T07:10:31.292Z">
+                                21.05.2021, 09:10:31
                             </time>
                         
                     </dd>
@@ -3092,6 +3143,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

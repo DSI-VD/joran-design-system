@@ -24,18 +24,26 @@
  ----------------------------------- */
 .o-stack--big {
   --stack-space: 3rem;
-}
 
-@screen md {
-  .o-stack--big {
-    --stack-space: 6rem;
+  @media print {
+    --stack-space: 1.5rem;
   }
 }
 
-@screen lg {
-  .o-stack--big {
-    --stack-space: 9rem;
+@media not print {
+
+  @screen md {
+    .o-stack--big {
+      --stack-space: 6rem;
+    }
   }
+
+  @screen lg {
+    .o-stack--big {
+      --stack-space: 9rem;
+    }
+  }
+
 }
 
 /* -----------------------------------

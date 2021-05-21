@@ -267,45 +267,53 @@
    ====================================================================== */</span>
 
 <span class="hljs-selector-class">.c-content</span> {
-  <span class="hljs-keyword">@apply</span>
-    flex
-    flex-col
-    <span class="hljs-attribute">md</span>:items-center
-  ;
-}
+    <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+      <span class="hljs-keyword">@apply</span>
+        flex
+        flex-col
+        <span class="hljs-attribute">md</span>:items-center
+      ;
+    }
+  }
 
-<span class="hljs-selector-class">.c-content</span> <span class="hljs-selector-class">.c-content__item</span> {
-  <span class="hljs-keyword">@apply</span>
-    flex-<span class="hljs-number">1</span>
-  ;
-}
-
-<span class="hljs-keyword">@screen</span> md {
   <span class="hljs-selector-class">.c-content</span> <span class="hljs-selector-class">.c-content__item</span> {
+    <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+      <span class="hljs-keyword">@apply</span>
+        flex-<span class="hljs-number">1</span>
+        ;
+    }
+  }
+
+  <span class="hljs-keyword">@screen</span> md {
+    <span class="hljs-selector-class">.c-content</span> <span class="hljs-selector-class">.c-content__item</span> {
+      <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+        <span class="hljs-keyword">@apply</span>
+          <span class="hljs-attribute">md</span>:w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
+        ;
+      }
+    }
+  }
+
+  <span class="hljs-selector-class">.c-content__heading-text</span> {
+    <span class="hljs-keyword">@extend</span> %h2;
+
     <span class="hljs-keyword">@apply</span>
-      <span class="hljs-attribute">md</span>:w-<span class="hljs-number">2</span>/<span class="hljs-number">3</span>
+      mb-<span class="hljs-number">8</span>
     ;
   }
-}
-
-<span class="hljs-selector-class">.c-content__heading-text</span> {
-  <span class="hljs-keyword">@extend</span> %h2;
-
-  <span class="hljs-keyword">@apply</span>
-    mb-<span class="hljs-number">8</span>
-  ;
-}
 
 <span class="hljs-comment">/* -----------------------------------
  # Content heading left
  ----------------------------------- */</span>
 
-<span class="hljs-keyword">@screen</span> md {
-  <span class="hljs-selector-class">.c-content--2-col</span> {
-    <span class="hljs-keyword">@apply</span>
-      flex-row
-      items-start
-    ;
+<span class="hljs-keyword">@medi</span> <span class="hljs-keyword">not</span> print {
+  <span class="hljs-keyword">@screen</span> md {
+    <span class="hljs-selector-class">.c-content--2-col</span> {
+      <span class="hljs-keyword">@apply</span>
+        flex-row
+        items-start
+      ;
+    }
   }
 }
 
@@ -328,6 +336,7 @@
     text-black
   ;
 }
+
 </pre>
                             </code>
                             
@@ -344,7 +353,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">908 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -694,6 +703,32 @@
                 </ul>
             </li>
             
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="print.html" data-role="tree-link" data-pjax data-handle="print">
+                <span>Print</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
         
     
         
@@ -2529,7 +2564,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.0.2
+                            1.1.0
                         
                     </dd>
                 </div>
@@ -2538,8 +2573,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-05-12T14:15:20.553Z">
-                                12.05.2021, 16:15:20
+                            <time datetime="2021-05-21T07:10:31.292Z">
+                                21.05.2021, 09:10:31
                             </time>
                         
                     </dd>
@@ -2963,6 +2998,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

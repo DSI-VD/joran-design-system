@@ -1315,6 +1315,24 @@ color: hsla(60, 100%, 80%, .75);
 <span class="hljs-selector-class">.o-prose</span> <span class="hljs-selector-tag">a</span> {
   <span class="hljs-keyword">@extend</span> %anchor;
 }
+
+<span class="hljs-comment">/* -------------------------------------
+   # Print
+   ------------------------------------- */</span>
+
+<span class="hljs-comment">/**
+ * 1. Add link after anchors
+ */</span>
+
+<span class="hljs-keyword">@media</span> print {
+    <span class="hljs-selector-class">.o-prose</span> {
+        <span class="hljs-keyword">@apply</span> prose-sm;
+
+        <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">::after</span> {
+          <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot; (&quot;</span> <span class="hljs-built_in">attr</span>(href) <span class="hljs-string">&quot;)&quot;</span>; <span class="hljs-comment">/* [1] */</span>
+        }
+    }
+}
 </pre>
                             </code>
                             
@@ -1331,7 +1349,7 @@ color: hsla(60, 100%, 80%, .75);
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">496 Bytes</span>
+                    <span class="Meta-value">775 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1670,6 +1688,32 @@ color: hsla(60, 100%, 80%, .75);
                 </ul>
             </li>
             
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="print.html" data-role="tree-link" data-pjax data-handle="print">
+                <span>Print</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
         
     
         
@@ -3505,7 +3549,7 @@ color: hsla(60, 100%, 80%, .75);
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.0.2
+                            1.1.0
                         
                     </dd>
                 </div>
@@ -3514,8 +3558,8 @@ color: hsla(60, 100%, 80%, .75);
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-05-12T14:15:20.553Z">
-                                12.05.2021, 16:15:20
+                            <time datetime="2021-05-21T07:10:31.292Z">
+                                21.05.2021, 09:10:31
                             </time>
                         
                     </dd>
@@ -3939,6 +3983,8 @@ color: hsla(60, 100%, 80%, .75);
 </div>
 
             </div>
+        
+    
         
     
         

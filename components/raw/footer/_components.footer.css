@@ -3,6 +3,7 @@
    ====================================================================== */
 
 .c-footer {
+  @extend .u-print-hidden;
   @apply
     bg-primary
     text-white

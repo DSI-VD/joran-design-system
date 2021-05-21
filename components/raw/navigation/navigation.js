@@ -119,6 +119,12 @@ class DesktopNavigation {
       });
     }
 
+    for (const item of document.querySelectorAll('.c-nav__list--level button.c-nav__list-link--w-children')) {
+      item.addEventListener('click', event => {
+        event.preventDefault();
+      })
+    }
+
     for (const item of document.querySelectorAll('.masonry')) {
       new Masonry( item, {
         // options

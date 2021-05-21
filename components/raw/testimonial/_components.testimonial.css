@@ -12,32 +12,38 @@
     ;
 }
 
-@screen md {
-  .c-testimonial__flex {
-    @apply
-      flex-row
-      ;
+@media not print {
+  @screen md {
+    .c-testimonial__flex {
+      @apply
+        flex-row
+        ;
+    }
   }
 }
 
 /* -----------------------------------
    # Image
    ----------------------------------- */
-.c-testimonial__facecontainer {
-  @apply
-    flex
-    flex-row
-    justify-center
-    ;
-}
+@media not print {
 
-@screen md {
   .c-testimonial__facecontainer {
     @apply
-      w-1/3
-      justify-start
+      flex
+      flex-row
+      justify-center
       ;
   }
+
+  @screen md {
+    .c-testimonial__facecontainer {
+      @apply
+        w-1/3
+        justify-start
+        ;
+    }
+  }
+
 }
 
 .c-testimonial__face {
@@ -54,27 +60,37 @@
 
   @apply
     text-black
-    text-center
-    md:text-left
-      ;
+  ;
+  
+  @media not print {
+    @apply
+      text-center
+      md:text-left
+    ;
+  }
 }
 
 /* -----------------------------------
    # Text
    ----------------------------------- */
-.c-testimonial__textcontainer {
-  @apply
-    text-center
-      ;
-}
 
-@screen md {
+@media not print {
+
   .c-testimonial__textcontainer {
     @apply
-      text-left
-      w-2/3
-        ;
+      text-center
+    ;
   }
+
+  @screen md {
+    .c-testimonial__textcontainer {
+      @apply
+        text-left
+        w-2/3
+      ;
+    }
+  }
+
 }
 
 /* -----------------------------------
@@ -85,9 +101,14 @@
 
   @apply
     text-black
-    text-center
-    md:text-left
+  ;
+
+  @media not print {
+    @apply
+      text-center
+      md:text-left
     ;
+  }
 }
 
 /* -----------------------------------
@@ -97,7 +118,7 @@
   @apply
     block
     md:inline
-      ;
+  ;
 }
 
 .c-testimonial__author--function::before {
@@ -114,12 +135,16 @@
    # Button
    ----------------------------------- */
 
-.c-testimonial__button {
-  @apply mx-auto;
-}
+@media not print {
 
-@screen md {
   .c-testimonial__button {
-    @apply mx-0;
+    @apply mx-auto;
   }
+
+  @screen md {
+    .c-testimonial__button {
+      @apply mx-0;
+    }
+  }
+
 }

@@ -2,6 +2,10 @@
    # _components.pagination.css
    ====================================================================== */
 
+.c-pagination-pages {
+  @extend .u-print-hidden;
+}
+
 .c-pagination-pages__list {
   @apply
     flex

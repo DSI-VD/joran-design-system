@@ -3,8 +3,19 @@
    ====================================================================== */
 
 .c-highlight {
-  @apply
-    py-24
-    bg-primary-100
+
+  @media not print {
+    @apply
+      py-24
+      bg-primary-100
     ;
+  }
+
+  @media print {
+    @apply
+      py-4
+      border-4
+      border-primary-100
+    ;
+  }
 }
