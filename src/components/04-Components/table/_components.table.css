@@ -25,9 +25,7 @@
     @apply
       text-xs
       bg-transparent;
-    ;
   }
-
 }
 
 .c-table table thead,
@@ -45,7 +43,6 @@
       bg-transparent
     ;
   }
-
 }
 
 .c-table table th,

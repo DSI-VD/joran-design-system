@@ -1,11 +1,11 @@
 {
-    "status": "ready",
-    "variants": [
-        {
-            "name": "gradient",
-            "context": {
-                "variantModifier": "o-box--gradient"
-            }
-        }
-    ]
+  "status": "ready",
+  "variants": [
+    {
+      "name": "gradient",
+      "context": {
+        "variantModifier": "o-box--gradient"
+      }
+    }
+  ]
 }

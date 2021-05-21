@@ -33,7 +33,7 @@
   }
 
   @screen print {
-    @apply text-xl
+    @apply text-xl;
   }
 }
 

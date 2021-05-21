@@ -3,46 +3,46 @@
    ====================================================================== */
 
 .c-content {
-    @media not print {
-      @apply
-        flex
-        flex-col
-        md:items-center
+  @media not print {
+    @apply
+      flex
+      flex-col
+      md:items-center
       ;
-    }
   }
+}
 
+.c-content .c-content__item {
+  @media not print {
+    @apply
+      flex-1
+        ;
+  }
+}
+
+@screen md {
   .c-content .c-content__item {
     @media not print {
       @apply
-        flex-1
+        md:w-2/3
         ;
     }
   }
+}
 
-  @screen md {
-    .c-content .c-content__item {
-      @media not print {
-        @apply
-          md:w-2/3
-        ;
-      }
-    }
-  }
+.c-content__heading-text {
+  @extend %h2;
 
-  .c-content__heading-text {
-    @extend %h2;
-
-    @apply
-      mb-8
+  @apply
+    mb-8
     ;
-  }
+}
 
 /* -----------------------------------
  # Content heading left
  ----------------------------------- */
 
-@medi not print {
+@media not print {
   @screen md {
     .c-content--2-col {
       @apply
@@ -72,4 +72,3 @@
     text-black
   ;
 }
-

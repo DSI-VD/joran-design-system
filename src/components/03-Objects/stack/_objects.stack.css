@@ -31,7 +31,6 @@
 }
 
 @media not print {
-
   @screen md {
     .o-stack--big {
       --stack-space: 6rem;
@@ -43,7 +42,6 @@
       --stack-space: 9rem;
     }
   }
-
 }
 
 /* -----------------------------------

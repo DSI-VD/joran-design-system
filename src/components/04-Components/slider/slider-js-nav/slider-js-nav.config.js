@@ -4,11 +4,11 @@ const faker = require('faker'); // Require the faker module
 const articleCount = 20; // How many articles we should generate data for
 const articleData = [];
 const dateOptions = {year: 'numeric', month: 'long', day: 'numeric'};
-const randomSizes = [{w:384, h:295},{w:384, h:371},{w:384, h:333},{w:384, h:295}];
+const randomSizes = [{w: 384, h: 295}, {w: 384, h: 371}, {w: 384, h: 333}, {w: 384, h: 295}];
 
 for (let i = 0; i < articleCount; i++) {
-  let randomSize = randomSizes[Math.floor(Math.random() * randomSizes.length)];
-  let randomTitle = faker.lorem.sentence();
+  const randomSize = randomSizes[Math.floor(Math.random() * randomSizes.length)];
+  const randomTitle = faker.lorem.sentence();
 
   articleData.push({
     title: randomTitle,
@@ -22,12 +22,12 @@ for (let i = 0; i < articleCount; i++) {
       styleModifier: 'c-slider-js-nav__article-button',
       text: 'Lire la suite',
       hiddentext: 'de ' + randomTitle
-    },
+    }
   });
 }
 
 module.exports = {
-  preview: "@preview--bg",
+  preview: '@preview--bg',
   context: {
     title: 'Projets',
     articles: articleData // Use our generated list of articles as context data for our template.
