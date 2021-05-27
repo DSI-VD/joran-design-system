@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Make _carousel_'s buttons and dots visible
 - `.o-stack--big` is smaller on big screens
 
 ## [1.1.2] - 2021-05-21
