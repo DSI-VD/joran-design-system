@@ -36,12 +36,6 @@
       --stack-space: 6rem;
     }
   }
-
-  @screen lg {
-    .o-stack--big {
-      --stack-space: 9rem;
-    }
-  }
 }
 
 /* -----------------------------------
