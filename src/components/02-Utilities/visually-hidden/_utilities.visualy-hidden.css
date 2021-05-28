@@ -15,3 +15,21 @@
     ;
   }
 }
+
+.u-d-xl-none {
+  @apply
+    xl:hidden
+  ;
+}
+
+.u-d-none {
+  @apply
+    hidden
+  ;
+}
+
+.u-d-xl-block {
+  @apply
+    xl:block
+  ;
+}
