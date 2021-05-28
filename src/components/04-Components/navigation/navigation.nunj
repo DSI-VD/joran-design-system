@@ -20,9 +20,6 @@
             <button class="c-nav__list-link c-nav__list-link--w-children u-d-none u-d-xl-block" aria-haspopup="true" aria-expanded="false">
               Projets
             </button>
-            <span class="c-nav__list-link c-nav__list-link--w-children u-d-xl-none">
-              Projets
-            </span>
             <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 c-nav_list--level-project">
               <li class="c-nav__list-item" data-level="1">
                 {% render '@slider-js-nav' %}
