@@ -35,6 +35,12 @@
    # Link
    ------------------------------------- */
 
+/***
+ * 1. When there is hidden list items on the same horizontal lines, nothing is
+*     setting the min-height. So the items are a few pixel height. This is here
+      to avoid this problem.
+ */
+
 .c-breadcrumb__link {
   @apply
     inline-block
@@ -45,6 +51,7 @@
     transition
     text-sm
     ;
+    min-height: 2.1875rem;
 }
 
 .c-breadcrumb__link:hover,
@@ -71,21 +78,14 @@
  * Hide all items except last two
  *
  * 1. Do not hide when printing the breadcrumb
+ * 2. Hide all items except the two last ones
  */
 
 @media screen { /* [1] */
-  .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link {
-    @apply
-      inline-block
-    ;
-
-    height: 100%;
-  }
-
   .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
     @apply
-      sr-only
-      w-4
+      sr-only /* [2] */
+      w-4  /* [2] */
     ;
   }
 
@@ -94,7 +94,6 @@
   .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
     @apply
       not-sr-only
-      inline-block
     ;
   }
 }

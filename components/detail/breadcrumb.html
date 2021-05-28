@@ -335,6 +335,12 @@
    # Link
    ------------------------------------- */</span>
 
+<span class="hljs-comment">/***
+ * 1. When there is hidden list items on the same horizontal lines, nothing is
+*     setting the min-height. So the items are a few pixel height. This is here
+      to avoid this problem.
+ */</span>
+
 <span class="hljs-selector-class">.c-breadcrumb__link</span> {
   <span class="hljs-keyword">@apply</span>
     inline-block
@@ -345,6 +351,7 @@
     transition
     text-sm
     ;
+    <span class="hljs-attribute">min-height</span>: <span class="hljs-number">2.1875rem</span>;
 }
 
 <span class="hljs-selector-class">.c-breadcrumb__link</span><span class="hljs-selector-pseudo">:hover</span>,
@@ -371,21 +378,14 @@
  * Hide all items except last two
  *
  * 1. Do not hide when printing the breadcrumb
+ * 2. Hide all items except the two last ones
  */</span>
 
 <span class="hljs-keyword">@media</span> screen { <span class="hljs-comment">/* [1] */</span>
-  <span class="hljs-selector-class">.c-breadcrumb__list-item</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:nth-last-child</span>(-n+<span class="hljs-number">2</span>)) <span class="hljs-selector-class">.c-breadcrumb__link</span> {
-    <span class="hljs-keyword">@apply</span>
-      inline-block
-    ;
-
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-  }
-
   <span class="hljs-selector-class">.c-breadcrumb__list-item</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:nth-last-child</span>(-n+<span class="hljs-number">2</span>)) <span class="hljs-selector-class">.c-breadcrumb__link-text</span> {
     <span class="hljs-keyword">@apply</span>
-      sr-only
-      w-<span class="hljs-number">4</span>
+      sr-only /* [<span class="hljs-number">2</span>] */
+      w-<span class="hljs-number">4</span>  /* [<span class="hljs-number">2</span>] */
     ;
   }
 
@@ -394,7 +394,6 @@
   <span class="hljs-selector-class">.c-breadcrumb__list-item</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:nth-last-child</span>(-n+<span class="hljs-number">2</span>)) <span class="hljs-selector-class">.c-breadcrumb__link</span><span class="hljs-selector-pseudo">:focus</span> <span class="hljs-selector-class">.c-breadcrumb__link-text</span> {
     <span class="hljs-keyword">@apply</span>
       not-sr-only
-      inline-block
     ;
   }
 }
@@ -414,7 +413,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.8 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -2638,8 +2637,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-05-21T09:50:08.985Z">
-                                21.05.2021, 11:50:08
+                            <time datetime="2021-05-28T12:30:56.501Z">
+                                28.05.2021, 14:30:56
                             </time>
                         
                     </dd>

@@ -2922,12 +2922,6 @@ body {
       --stack-space: 6rem;
     }
   }
-
-  @media (min-width: 1024px) {
-    .o-stack--big {
-      --stack-space: 9rem;
-    }
-  }
 }
 
 /* -----------------------------------
@@ -3487,6 +3481,12 @@ body {
    # Link
    ------------------------------------- */
 
+/***
+ * 1. When there is hidden list items on the same horizontal lines, nothing is
+*     setting the min-height. So the items are a few pixel height. This is here
+      to avoid this problem.
+ */
+
 .c-breadcrumb__link {
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
@@ -3502,6 +3502,7 @@ body {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  min-height: 2.1875rem;
 }
 
 .c-breadcrumb__link:hover, .c-breadcrumb__link:active {
@@ -3526,14 +3527,10 @@ body {
  * Hide all items except last two
  *
  * 1. Do not hide when printing the breadcrumb
+ * 2. Hide all items except the two last ones
  */
 
 @media screen { /* [1] */
-
-  .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link {
-    display: inline-block;
-    height: 100%;
-  }
 
   .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
     position: absolute;
@@ -3557,7 +3554,6 @@ body {
     overflow: visible;
     clip: auto;
     white-space: normal;
-    display: inline-block;
   }
 }
 
@@ -3841,16 +3837,11 @@ body {
  * 1. Override inline style
  */
 
-.c-carousel .flickity-page-dots, .c-carousel .flickity-button {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+@media print {
+  .c-carousel .flickity-page-dots,
+.c-carousel .flickity-button {
+    display: none;
+  }
 }
 
 @media print {

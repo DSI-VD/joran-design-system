@@ -160,7 +160,7 @@
 
 .c-carousel .flickity-page-dots,
 .c-carousel .flickity-button {
-  @extend .u-visually-hidden;
+  @extend .u-print-hidden;
 }
 
 .c-carousel {
