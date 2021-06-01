@@ -8,9 +8,9 @@
 
 .c-breadcrumb__list {
   @apply
-    flex
-    flex-row
-    flex-wrap
+  flex
+  flex-row
+  flex-wrap
   ;
 }
 
@@ -20,15 +20,15 @@
 
 .c-breadcrumb__list-item {
   @apply
-    flex
-    mb-2
-    ;
+  flex
+  mb-2
+  ;
 }
 
 .c-breadcrumb__list-item:not(:last-child) {
   @apply
-    mr-4
-    ;
+  mr-4
+  ;
 }
 
 /* -------------------------------------
@@ -43,31 +43,31 @@
 
 .c-breadcrumb__link {
   @apply
-    inline-block
-    bg-gray-200
-    rounded
-    py-1
-    px-4
-    transition
-    text-sm
-    ;
-    min-height: 2.1875rem;
+  inline-block
+  bg-gray-200
+  rounded
+  py-1
+  px-4
+  transition
+  text-sm
+  ;
+  min-height: 2.1875rem;
 }
 
 .c-breadcrumb__link:hover,
 .c-breadcrumb__link:active {
   @apply
-    bg-primary
-    text-white
-    ;
+  bg-primary
+  text-white
+  ;
 }
 
 .c-breadcrumb__link:focus {
   @apply
-    bg-primary
-    text-white
-    outline-focus
-    ;
+  bg-primary
+  text-white
+  outline-focus
+  ;
 }
 
 /* -----------------------------------
@@ -84,8 +84,8 @@
 @media screen { /* [1] */
   .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
     @apply
-      sr-only /* [2] */
-      w-4  /* [2] */
+    sr-only /* [2] */
+    w-4  /* [2] */
     ;
   }
 
@@ -93,7 +93,7 @@
   .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:active .c-breadcrumb__link-text,
   .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link:focus .c-breadcrumb__link-text {
     @apply
-      not-sr-only
+    not-sr-only
     ;
   }
 }

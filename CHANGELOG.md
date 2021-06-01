@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
-- Fix breadcrumb items being too small in some case
+- Add right margin for text and image content element
 - Make _carousel_'s buttons and dots visible
 - `.o-stack--big` is smaller on big screens
 
