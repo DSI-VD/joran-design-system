@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Remove _navigation_ second level being a button on desktop to make it
+  accessible
+
 ### Fixes
 
 - Fix breadcrumb items being too small in some case
