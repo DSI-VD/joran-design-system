@@ -36,9 +36,12 @@
                 {% for secondLevelItem in firstLevelItem.secondLevelItems %}
                 <li class="c-nav__list-item masonry-item" data-level="1">
                   {% if secondLevelItem.thirdLevelItems %}
-                    <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+                    <button class="c-nav__list-link c-nav__list-link--w-children u-display-xl-none" aria-haspopup="true" aria-expanded="false">
                       {{ secondLevelItem.name }}
                     </button>
+                    <span class="c-nav__list-link c-nav__list-link--w-children u-display-none u-display-xl-block">
+                      {{ secondLevelItem.name }}
+                    </span>
                     <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
                       {% for thirdLevelItem in secondLevelItem.thirdLevelItems %}
                       <li class="c-nav__list-item" data-level="2">
