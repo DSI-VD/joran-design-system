@@ -3,38 +3,38 @@
    ====================================================================== */
 
 .c-content {
-@media not print {
-  @apply
-  flex
-  flex-col
+  @media not print {
+    @apply
+      flex
+      flex-col
   md:items-center
   ;
-}
+  }
 }
 
 .c-content .c-content__item {
-@media not print {
-  @apply
-  flex-1
+  @media not print {
+    @apply
+      flex-1
   ;
-}
+  }
 }
 
 @screen md {
   .c-content .c-content__item {
-  @media not print {
-    @apply
-    md:w-2/3
+    @media not print {
+      @apply
+        md:w-2/3
     ;
+    }
   }
-}
 }
 
 .c-content__heading-text {
   @extend %h2;
 
   @apply
-  mb-8
+    mb-8
   ;
 }
 
@@ -46,17 +46,17 @@
   @screen md {
     .c-content--2-col {
       @apply
-      flex-row
-      items-start
+        flex-row
+        items-start
       ;
 
       .c-content__heading-text {
         @apply
-        mr-6
+          mr-6
         ;
       }
+    }
   }
-}
 }
 
 /* -----------------------------------
@@ -67,6 +67,6 @@
   @extend %h1;
 
   @apply
-  text-black
+    text-black
   ;
 }
