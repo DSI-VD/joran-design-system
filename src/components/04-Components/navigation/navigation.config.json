@@ -24,7 +24,8 @@
               },
               {
                 "name": "Attaques fourgons blindés",
-                "url": "#"
+                "url": "#",
+                "current": true
               },
               {
                 "name": "100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes",

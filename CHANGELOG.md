@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Remove _navigation_ second level being a button on desktop to make it
   accessible
+- Add aria attributs in _navigation_ for current page
+- Add a visual style for current page in _navigation_ by adding
+  `.c-nav__list-link--current` class
 
 ### Fixes
 

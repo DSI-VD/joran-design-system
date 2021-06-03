@@ -45,7 +45,11 @@
                     <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
                       {% for thirdLevelItem in secondLevelItem.thirdLevelItems %}
                       <li class="c-nav__list-item" data-level="2">
+                        {% if thirdLevelItem.current %}
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--current" aria-current="page">
+                        {% else %}
                         <a href="#nowhere" class="c-nav__list-link">
+                        {% endif %}
                           {{ thirdLevelItem.name }}
                         </a>
                       </li>

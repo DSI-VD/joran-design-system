@@ -294,6 +294,15 @@
   ;
 }
 
+/***
+ * Current page
+ */
+.c-nav__list-link--current {
+  text-decoration-color: var(--color__primary--600);
+  text-decoration-thickness: 0.2em;
+  text-decoration-line: underline;
+}
+
 .c-nav__list-link--w-children::after {
   @apply
     absolute
