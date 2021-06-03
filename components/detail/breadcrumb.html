@@ -308,8 +308,8 @@
 
 <span class="hljs-selector-class">.c-breadcrumb__list</span> {
   <span class="hljs-keyword">@apply</span>
-  flex
-  flex-row
+    flex
+    flex-row
   flex-wrap
   ;
 }
@@ -320,14 +320,14 @@
 
 <span class="hljs-selector-class">.c-breadcrumb__list-item</span> {
   <span class="hljs-keyword">@apply</span>
-  flex
-  mb-<span class="hljs-number">2</span>
+    flex
+    mb-<span class="hljs-number">2</span>
   ;
 }
 
 <span class="hljs-selector-class">.c-breadcrumb__list-item</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:last-child</span>) {
   <span class="hljs-keyword">@apply</span>
-  mr-<span class="hljs-number">4</span>
+    mr-<span class="hljs-number">4</span>
   ;
 }
 
@@ -343,29 +343,30 @@
 
 <span class="hljs-selector-class">.c-breadcrumb__link</span> {
   <span class="hljs-keyword">@apply</span>
-  inline-block
-  bg-gray-<span class="hljs-number">200</span>
+    inline-block
+    bg-gray-<span class="hljs-number">200</span>
   rounded
   py-<span class="hljs-number">1</span>
   px-<span class="hljs-number">4</span>
   transition
   text-sm
   ;
+
   <span class="hljs-attribute">min-height</span>: <span class="hljs-number">2.1875rem</span>;
 }
 
 <span class="hljs-selector-class">.c-breadcrumb__link</span><span class="hljs-selector-pseudo">:hover</span>,
 <span class="hljs-selector-class">.c-breadcrumb__link</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-keyword">@apply</span>
-  bg-primary
-  text-white
+    bg-primary
+    text-white
   ;
 }
 
 <span class="hljs-selector-class">.c-breadcrumb__link</span><span class="hljs-selector-pseudo">:focus</span> {
   <span class="hljs-keyword">@apply</span>
-  bg-primary
-  text-white
+    bg-primary
+    text-white
   outline-focus
   ;
 }
@@ -384,8 +385,8 @@
 <span class="hljs-keyword">@media</span> screen { <span class="hljs-comment">/* [1] */</span>
   <span class="hljs-selector-class">.c-breadcrumb__list-item</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:nth-last-child</span>(-n+<span class="hljs-number">2</span>)) <span class="hljs-selector-class">.c-breadcrumb__link-text</span> {
     <span class="hljs-keyword">@apply</span>
-    sr-only /* [<span class="hljs-number">2</span>] */
-    w-<span class="hljs-number">4</span>  /* [<span class="hljs-number">2</span>] */
+      sr-only 
+      w-<span class="hljs-number">4</span>  /* [<span class="hljs-number">2</span>] */
     ;
   }
 
@@ -393,7 +394,7 @@
   <span class="hljs-selector-class">.c-breadcrumb__list-item</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:nth-last-child</span>(-n+<span class="hljs-number">2</span>)) <span class="hljs-selector-class">.c-breadcrumb__link</span><span class="hljs-selector-pseudo">:active</span> <span class="hljs-selector-class">.c-breadcrumb__link-text</span>,
   <span class="hljs-selector-class">.c-breadcrumb__list-item</span><span class="hljs-selector-pseudo">:not</span>(<span class="hljs-selector-pseudo">:nth-last-child</span>(-n+<span class="hljs-number">2</span>)) <span class="hljs-selector-class">.c-breadcrumb__link</span><span class="hljs-selector-pseudo">:focus</span> <span class="hljs-selector-class">.c-breadcrumb__link-text</span> {
     <span class="hljs-keyword">@apply</span>
-    not-sr-only
+      not-sr-only
     ;
   }
 }
@@ -2663,8 +2664,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-06-03T11:40:02.714Z">
-                                03.06.2021, 13:40:02
+                            <time datetime="2021-06-03T11:41:53.354Z">
+                                03.06.2021, 13:41:53
                             </time>
                         
                     </dd>
