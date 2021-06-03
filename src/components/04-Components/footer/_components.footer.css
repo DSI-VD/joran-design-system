@@ -193,7 +193,7 @@
 .c-footer__secondary {
   @apply
     text-center
-    mt-36
+    mt-12
     text-xs
     uppercase
   ;
