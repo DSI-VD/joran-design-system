@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
-- Smaller margin between copyright and the rest of _footer_'s content
+- Refine _footer_ margins
 - Add right margin for text and image content element
 - Make _carousel_'s buttons and dots visible
 - `.o-stack--big` is smaller on big screens
