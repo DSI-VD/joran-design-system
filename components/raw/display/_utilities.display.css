@@ -1,0 +1,21 @@
+/* ==========================================================================
+   # _utilities.display.css
+   ========================================================================== */
+
+.u-display-xl-none {
+  @apply
+    xl:hidden
+  ;
+}
+
+.u-display-none {
+  @apply
+    hidden
+  ;
+}
+
+.u-display-xl-block {
+  @apply
+    xl:block
+  ;
+}

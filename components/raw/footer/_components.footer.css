@@ -8,8 +8,8 @@
   @apply
     bg-primary
     text-white
-    pt-24
-    pb-6
+    py-12
+    md:py-24
   ;
 
   letter-spacing: 0.05625rem;
@@ -193,7 +193,7 @@
 .c-footer__secondary {
   @apply
     text-center
-    mt-36
+    mt-12
     text-xs
     uppercase
   ;

@@ -127,7 +127,7 @@
 
 /* Include Tailwind */
 
-/* ! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -684,11 +684,27 @@ video {
   --list-counter-style: lower-alpha;
 }
 
+.prose ol[type="A" s] {
+  --list-counter-style: upper-alpha;
+}
+
+.prose ol[type="a" s] {
+  --list-counter-style: lower-alpha;
+}
+
 .prose ol[type="I"] {
   --list-counter-style: upper-roman;
 }
 
 .prose ol[type="i"] {
+  --list-counter-style: lower-roman;
+}
+
+.prose ol[type="I" s] {
+  --list-counter-style: upper-roman;
+}
+
+.prose ol[type="i" s] {
   --list-counter-style: lower-roman;
 }
 
@@ -1983,11 +1999,11 @@ body {
   --list-counter-style: lower-alpha;
 }
 
-.o-prose ol[type="A s"] {
+.o-prose ol[type="A" s] {
   --list-counter-style: upper-alpha;
 }
 
-.o-prose ol[type="a s"] {
+.o-prose ol[type="a" s] {
   --list-counter-style: lower-alpha;
 }
 
@@ -1999,11 +2015,11 @@ body {
   --list-counter-style: lower-roman;
 }
 
-.o-prose ol[type="I s"] {
+.o-prose ol[type="I" s] {
   --list-counter-style: upper-roman;
 }
 
-.o-prose ol[type="i s"] {
+.o-prose ol[type="i" s] {
   --list-counter-style: lower-roman;
 }
 
@@ -3010,11 +3026,11 @@ body {
   --list-counter-style: lower-alpha;
 }
 
-.c-alert__content ol[type="A s"], .c-alert__heading ol[type="A s"] {
+.c-alert__content ol[type="A" s], .c-alert__heading ol[type="A" s] {
   --list-counter-style: upper-alpha;
 }
 
-.c-alert__content ol[type="a s"], .c-alert__heading ol[type="a s"] {
+.c-alert__content ol[type="a" s], .c-alert__heading ol[type="a" s] {
   --list-counter-style: lower-alpha;
 }
 
@@ -3026,11 +3042,11 @@ body {
   --list-counter-style: lower-roman;
 }
 
-.c-alert__content ol[type="I s"], .c-alert__heading ol[type="I s"] {
+.c-alert__content ol[type="I" s], .c-alert__heading ol[type="I" s] {
   --list-counter-style: upper-roman;
 }
 
-.c-alert__content ol[type="i s"], .c-alert__heading ol[type="i s"] {
+.c-alert__content ol[type="i" s], .c-alert__heading ol[type="i" s] {
   --list-counter-style: lower-roman;
 }
 
@@ -3926,6 +3942,9 @@ body {
       flex-direction: row;
       align-items: flex-start;
     }
+      .c-content--2-col .c-content__heading-text {
+        margin-right: 1.5rem;
+      }
   }
 }
 
@@ -3989,10 +4008,20 @@ body {
 
 .c-footer {
   background-color: rgb(var(--color-raw__primary--900));
-  padding-bottom: 1.5rem;
-  padding-top: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .c-footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.c-footer {
   letter-spacing: 0.05625rem;
 }
 
@@ -4119,7 +4148,7 @@ body {
 
 .c-footer__secondary {
   font-size: 1rem;
-  margin-top: 9rem;
+  margin-top: 3rem;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.625rem;
@@ -6910,6 +6939,26 @@ https://flickity.metafizzy.co
 .u-color--white {
   --tw-text-opacity: 1;
   color: rgba(252, 252, 252, var(--tw-text-opacity));
+}
+
+/* ==========================================================================
+   # _utilities.display.css
+   ========================================================================== */
+
+@media (min-width: 1280px) {
+  .u-display-xl-none {
+    display: none;
+  }
+}
+
+.u-display-none {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .u-display-xl-block {
+    display: block;
+  }
 }
 
 /* ======================================================================
