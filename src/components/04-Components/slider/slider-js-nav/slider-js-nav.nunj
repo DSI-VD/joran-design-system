@@ -15,7 +15,7 @@
     <div class="c-slider-js-nav__container-right">
       <div class="c-slider-js-nav-carousel">
         {% for article in articles %}
-        <article class="c-slider-js-nav__article carousel-cell">
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
           <figure class="c-slider-js-nav__article-figure">
             <img class="c-slider-js-nav__article-image" src="{{ article.image.src }}" alt="{{ article.image.alt }}"/>
           </figure>
