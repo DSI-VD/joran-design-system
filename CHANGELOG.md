@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add a _card-link_ object to make an entire card clickable
+
 ### Changed
 
 - Remove _navigation_ second level being a button on desktop to make it
