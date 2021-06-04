@@ -19,7 +19,8 @@
         },
         "button": {
           "text": "Lire la suite",
-          "hiddentext": "de Des images !"
+          "hiddentext": "de Des images !",
+          "styleModifier": "o-card-link__link"
         }
       },
       {
@@ -32,7 +33,8 @@
         "button": {
           "text": "lire la suite",
           "hiddentext": "de le poid du jambon au concours du comptoire du Nord Vaudois",
-          "url": "http://marilyne.biz"
+          "url": "http://marilyne.biz",
+          "styleModifier": "o-card-link__link"
         }
       },
       {
@@ -49,7 +51,8 @@
         "button": {
           "text": "lire la suite",
           "hiddentext": "de Pour les gouverner tous",
-          "url": "http://waldo.org"
+          "url": "http://waldo.org",
+          "styleModifier": "o-card-link__link"
         }
       },
       {
@@ -62,7 +65,8 @@
         "button": {
           "text": "lire la suite",
           "hiddentext": "de 7 milliards",
-          "url": "https://alana.name"
+          "url": "https://alana.name",
+          "styleModifier": "o-card-link__link"
         }
       },
       {
@@ -71,7 +75,8 @@
         "button": {
           "text": "lire la suite",
           "hiddentext": "de 1000 mots",
-          "url": "https://coucou.com"
+          "url": "https://coucou.com",
+          "styleModifier": "o-card-link__link"
         }
       },
       {

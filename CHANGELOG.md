@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- The whole _promo-card_ is clickable by using _card-link_
 - Remove _navigation_ second level being a button on desktop to make it
   accessible
 
