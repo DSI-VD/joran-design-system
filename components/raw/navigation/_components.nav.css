@@ -284,7 +284,8 @@
 }
 
 .c-nav__list-item--active,
-.js-c-nav__list-link--active {
+.js-c-nav__list-link--active,
+a.c-nav__list-link:hover {
   background-color: rgba(252, 252, 252, 0.25);
 }
 
