@@ -4,17 +4,17 @@
 
 .c-timeline {
   @apply
-  py-24
-  overflow-hidden
+    py-24
+    overflow-hidden
   ;
 
-@media not print {
-  @apply
-  text-white
+  @media not print {
+    @apply
+      text-white
   ;
 
-  background-image: linear-gradient(180deg, var(--color__primary--800) 0%, var(--color__primary--900) 100%);
-}
+    background-image: linear-gradient(180deg, var(--color__primary--800) 0%, var(--color__primary--900) 100%);
+  }
 }
 
 
@@ -24,17 +24,17 @@
  ----------------------------------- */
 .c-timeline h2 {
   @apply
-  text-white
-  tracking-tight
-  text-2xl
-  relative
+    text-white
+    tracking-tight
+    text-2xl
+    relative
   z-20
   mb-1
   ;
 
-@media print {
-  @apply text-black;
-}
+  @media print {
+    @apply text-black;
+  }
 }
 
 
@@ -45,10 +45,10 @@
 
 .c-timeline__link {
   @apply
-  text-base
-  font-medium
-  not-italic
-  tracking-wider
+    text-base
+    font-medium
+    not-italic
+    tracking-wider
   z-20
   relative
   text-left
@@ -58,7 +58,7 @@
 
 .c-timeline__link:focus {
   @apply
-  outline-focus
+    outline-focus
   ;
 }
 
@@ -70,10 +70,10 @@
 
 .c-timeline__item h3 {
   @apply
-  text-white
-  text-2xl
-  font-bold
-  not-italic
+    text-white
+    text-2xl
+    font-bold
+    not-italic
   tracking-tight
   text-left
   uppercase
@@ -84,24 +84,24 @@
   will-change: letter-spacing;
   transition: letter-spacing 0.15s ease-in-out;
 
-@media print {
-  @apply text-black;
-}
+  @media print {
+    @apply text-black;
+  }
 }
 
 .c-timeline__item p {
   @apply
-  text-base
-  font-normal
-  not-italic
-  text-left
+    text-base
+    font-normal
+    not-italic
+    text-left
   relative
   tracking-normal
   ;
 
-@media not print {
-  color: #ddd9f9;
-}
+  @media not print {
+    color: #ddd9f9;
+  }
 }
 
 .c-timeline__item svg {
@@ -112,7 +112,7 @@
 
 .c-timeline__items {
   @apply
-  lg:pl-52
+    lg:pl-52
   ;
 }
 
@@ -124,7 +124,7 @@
 
 .c-timeline__items .flickity-viewport {
   @apply
-  overflow-visible
+    overflow-visible
   ;
 }
 
@@ -132,7 +132,7 @@
   @extend .u-print-hidden;
 
   @apply
-  top-full
+    top-full
   ;
 }
 
@@ -163,14 +163,14 @@
 
 .c-timeline__item-content {
   @apply
-  relative
+    relative
   ;
 }
 
 .c-timeline__item {
   @apply
-  w-80
-  my-40
+    w-80
+    my-40
   ;
 }
 
@@ -180,7 +180,7 @@
 
 .c-timeline__item:focus {
   @apply
-  outline-focus
+    outline-focus
   ;
 }
 
@@ -192,15 +192,15 @@
 .c-timeline__item:focus h3,
 .c-timeline__item:hover h3 {
   @apply
-  tracking-wide
+    tracking-wide
   ;
 }
 
 .c-timeline__item-content .c-timeline__item-img {
   @apply
-  sm:absolute
-  rounded-md
-  left-2/4
+    sm:absolute
+    rounded-md
+    left-2/4
   ;
 
   top: -43%;
@@ -209,7 +209,7 @@
 
 .c-timeline__item-img img {
   @apply
-  rounded-md
+    rounded-md
   ;
 
   position: relative;
@@ -218,9 +218,9 @@
 
 .c-timeline__item-img .c-timeline__item-img-bg::after {
   @apply
-  rounded-md
-  h-auto
-  sm:h-full
+    rounded-md
+    h-auto
+    sm:h-full
   ;
 
   content: '';

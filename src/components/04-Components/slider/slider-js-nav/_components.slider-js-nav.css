@@ -235,6 +235,7 @@
       w-8
     ;
   }
+
   .c-slider-js-nav .flickity-button .flickity-button-icon {
     left: 15px;
   }
@@ -244,7 +245,6 @@
     height: 44px;
   }
 }
-
 
 .c-slider-js-nav .flickity-page-dots .dot.is-selected {
   @apply
