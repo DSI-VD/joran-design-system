@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2021-06-09
+
 ### Added
 
 - Add a _card-link_ object to make an entire card clickable
@@ -603,7 +605,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.2...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.1...v.1.1.2
 [1.1.1]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.0...v.1.1.1
 [1.1.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.0.3...v1.1.0
