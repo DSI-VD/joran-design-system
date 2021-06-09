@@ -187,6 +187,11 @@
   transition: background-color 0.35s ease-in-out;
 }
 
+.c-slider-js-nav .flickity-prev-next-button {
+  width: 35px;
+  height: 35px;
+}
+
 .c-slider-js-nav .flickity-button:hover .flickity-button-icon {
   fill: var(--color__primary--600);
 }
@@ -195,7 +200,7 @@
   transition: all 0.35s ease;
   fill: rgb(252, 252, 252);
   width: 15px;
-  left: 15px;
+  left: 10px;
 }
 
 .c-slider-js-nav .flickity-button.previous {
@@ -217,12 +222,29 @@
 .c-slider-js-nav .flickity-page-dots .dot {
   @apply
     h-1
-    w-8
+    w-3.5
     m-0
     bg-black
     rounded-none
   ;
 }
+
+@screen sm {
+  .c-slider-js-nav .flickity-page-dots .dot {
+    @apply
+      w-8
+    ;
+  }
+  .c-slider-js-nav .flickity-button .flickity-button-icon {
+    left: 15px;
+  }
+
+  .c-slider-js-nav .flickity-prev-next-button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 
 .c-slider-js-nav .flickity-page-dots .dot.is-selected {
   @apply
