@@ -11,7 +11,7 @@
   @media not print {
     @apply
       text-white
-    ;
+  ;
 
     background-image: linear-gradient(180deg, var(--color__primary--800) 0%, var(--color__primary--900) 100%);
   }
@@ -28,8 +28,8 @@
     tracking-tight
     text-2xl
     relative
-    z-20
-    mb-1
+  z-20
+  mb-1
   ;
 
   @media print {
@@ -49,10 +49,10 @@
     font-medium
     not-italic
     tracking-wider
-    z-20
-    relative
-    text-left
-    uppercase
+  z-20
+  relative
+  text-left
+  uppercase
   ;
 }
 
@@ -74,11 +74,11 @@
     text-2xl
     font-bold
     not-italic
-    tracking-tight
-    text-left
-    uppercase
-    relative
-    mb-2
+  tracking-tight
+  text-left
+  uppercase
+  relative
+  mb-2
   ;
 
   will-change: letter-spacing;
@@ -95,8 +95,8 @@
     font-normal
     not-italic
     text-left
-    relative
-    tracking-normal
+  relative
+  tracking-normal
   ;
 
   @media not print {

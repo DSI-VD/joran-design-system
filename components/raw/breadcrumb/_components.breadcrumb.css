@@ -10,7 +10,7 @@
   @apply
     flex
     flex-row
-  flex-wrap
+    flex-wrap
   ;
 }
 
@@ -45,11 +45,11 @@
   @apply
     inline-block
     bg-gray-200
-  rounded
-  py-1
-  px-4
-  transition
-  text-sm
+    rounded
+    py-1
+    px-4
+    transition
+    text-sm
   ;
 
   min-height: 2.1875rem;
@@ -67,7 +67,7 @@
   @apply
     bg-primary
     text-white
-  outline-focus
+    outline-focus
   ;
 }
 
@@ -85,7 +85,7 @@
 @media screen { /* [1] */
   .c-breadcrumb__list-item:not(:nth-last-child(-n+2)) .c-breadcrumb__link-text {
     @apply
-      sr-only 
+      sr-only
       w-4  /* [2] */
     ;
   }
