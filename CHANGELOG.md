@@ -7,8 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add a _card-link_ object to make an entire card clickable
+
 ### Changed
 
+- The whole _slider-js-nav_ items are clickable by using _card-link_
+- The whole _promo-card_ is clickable by using _card-link_
 - Remove _navigation_ second level being a button on desktop to make it
   accessible
 

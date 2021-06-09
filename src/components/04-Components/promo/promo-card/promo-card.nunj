@@ -1,4 +1,4 @@
-<article class="c-promo-card{% if variantModifier %} {{ variantModifier }}{% endif %}">
+<article class="o-card-link c-promo-card{% if variantModifier %} {{ variantModifier }}{% endif %}{% if styleModifier %} {{ styleModifier }}{% endif %}">
   {% if image %}
   <div class="c-promo-card__col-left">
     {% render '@svg-mail' %}

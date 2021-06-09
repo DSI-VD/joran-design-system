@@ -21,7 +21,8 @@ for (let i = 0; i < articleCount; i++) {
     button: {
       styleModifier: 'c-slider-js-nav__article-button',
       text: 'Lire la suite',
-      hiddentext: 'de ' + randomTitle
+      hiddentext: 'de ' + randomTitle,
+      styleModifier: 'o-card-link__link'
     }
   });
 }

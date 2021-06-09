@@ -5,7 +5,8 @@
     "button": {
       "text": "Lire la suite",
       "hiddentext": "de titre de l'élément",
-      "url": "https://www.vd.ch"
+      "url": "https://www.vd.ch",
+      "styleModifier": "o-card-link__link"
     }
   },
   "variants": [
