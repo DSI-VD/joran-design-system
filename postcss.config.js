@@ -4,6 +4,9 @@ module.exports = {
     'postcss-extend-rule': {},
     'postcss-nested': {},
     tailwindcss: {},
-    autoprefixer: {}
+    autoprefixer: {},
+    'postcss-header': {
+      header: "/*! Joran v" + require('./package.json').version + " */"
+    }
   }
 };

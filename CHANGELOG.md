@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixes
 
+- Add a banner with version in CSS file
 - Add a visual style when hovering a link in the _navigation_
 - Update node modules
 - Add right margin for text and image content element
