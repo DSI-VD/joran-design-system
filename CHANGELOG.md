@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The whole _promo-card_ is clickable by using _card-link_
 - Remove _navigation_ second level being a button on desktop to make it
   accessible
+- Add aria attributs in _navigation_ for current page
+- Add a visual style for current page in _navigation_ by adding
+  `.c-nav__list-link--current` class
 
 ### Fixes
 
