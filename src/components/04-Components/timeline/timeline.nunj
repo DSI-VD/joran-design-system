@@ -15,8 +15,10 @@
                                     <img src="{{ item.img.src }}" alt="{{ item.img.alt }}">
                                 </div>
                             </div>
-                            {% render '@svg-triangle-right' %} <h3><span class="u-visually-hidden">du </span><time datetime="2021-01-09">09.01</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-01-22">22.01</time></h3>
-                            <p>{{ item.name }}</p>
+                            <div class="c-timeline__item-text-container">
+                                <h3 class="c-timeline__item-text">{{ item.name }}</h3>
+                                {% render '@svg-triangle-right' %} <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="2021-01-09">09.01</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-01-22">22.01</time></span>
+                            </div>
                         </div>
                     </a>
                 </li>

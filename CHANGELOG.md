@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Use list instead of `<div>` to structure content
   - Hide the timeline for screen reader and add a visually hidden alternative
     liste
+  - Switch paragraphe to be the `<h3>` because more meaningful
+  - Reorder `<h3>` to be before before p but keep visually the `<p>` before the
+    header
 
 ## [1.2.0] - 2021-06-09
 
