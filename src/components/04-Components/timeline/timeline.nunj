@@ -5,7 +5,7 @@
         {styleModifier: 'c-slider__article-button', text: 'lire la suite'},
         true %}
 
-        <ul class="c-timeline__items">
+        <ul class="c-timeline__items" aria-hidden="true">
             {% for item in items %}
                 <li class="c-timeline__item">
                     <a href="{{ item.url }}" >
@@ -20,6 +20,15 @@
                         </div>
                     </a>
                 </li>
+            {% endfor %}
+        </ul>
+
+        <ul class="u-visually-hidden">
+            {% for item in items %}
+            <li>
+                <h3><a href="{{ item.url }}">{{ item.name }}</a></h3>
+                <p>du <time datetime="2021-01-09">09.01</time> au <time datetime="2021-01-22">22.01</time></p>
+            </li>
             {% endfor %}
         </ul>
 
