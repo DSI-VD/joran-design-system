@@ -9,7 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Hide _svg-triangle-right_ to screen readers
+- Improve accessibility of _timeline_
+  - Hide _svg-triangle-right_ to screen readers
+  - Use list instead of `<div>` to structure content
 
 ## [1.2.0] - 2021-06-09
 

@@ -5,21 +5,23 @@
         {styleModifier: 'c-slider__article-button', text: 'lire la suite'},
         true %}
 
-        <div class="c-timeline__items">
+        <ul class="c-timeline__items">
             {% for item in items %}
-                <a href="{{ item.url }}" class="c-timeline__item">
-                    <div class="c-timeline__item-content">
-                        <div class="c-timeline__item-img">
-                            <div class="c-timeline__item-img-bg">
-                                <img src="{{ item.img.src }}" alt="{{ item.img.alt }}">
+                <li class="c-timeline__item">
+                    <a href="{{ item.url }}" >
+                        <div class="c-timeline__item-content">
+                            <div class="c-timeline__item-img">
+                                <div class="c-timeline__item-img-bg">
+                                    <img src="{{ item.img.src }}" alt="{{ item.img.alt }}">
+                                </div>
                             </div>
+                            {% render '@svg-triangle-right' %} <h3><span class="u-visually-hidden">du </span><time datetime="2021-01-09">09.01</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-01-22">22.01</time></h3>
+                            <p>{{ item.name }}</p>
                         </div>
-                        {% render '@svg-triangle-right' %} <h3><span class="u-visually-hidden">du </span><time datetime="2021-01-09">09.01</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-01-22">22.01</time></h3>
-                        <p>{{ item.name }}</p>
-                    </div>
-                </a>
+                    </a>
+                </li>
             {% endfor %}
-        </div>
+        </ul>
 
     </div>
 </div>
