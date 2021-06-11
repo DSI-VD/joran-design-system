@@ -8,19 +8,17 @@
         <ul class="c-timeline__items" aria-hidden="true">
             {% for item in items %}
                 <li class="c-timeline__item">
-                    <a href="{{ item.url }}" >
-                        <div class="c-timeline__item-content">
+                        <div class="o-card-link c-timeline__item-content">
                             <div class="c-timeline__item-img">
                                 <div class="c-timeline__item-img-bg">
                                     <img src="{{ item.img.src }}" alt="{{ item.img.alt }}">
                                 </div>
                             </div>
                             <div class="c-timeline__item-text-container">
-                                <h3 class="c-timeline__item-text">{{ item.name }}</h3>
+                                <h3 class="c-timeline__item-text"><a href="{{ item.url }}" class="o-card-link__link">{{ item.name }}</a></h3>
                                 {% render '@svg-triangle-right' %} <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="2021-01-09">09.01</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-01-22">22.01</time></span>
                             </div>
                         </div>
-                    </a>
                 </li>
             {% endfor %}
         </ul>

@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Switch paragraphe to be the `<h3>` because more meaningful
   - Reorder `<h3>` to be before before p but keep visually the `<p>` before the
     header
+  - Put the link on the header and not on the whole card but keep the whole card
+    clickable
 
 ## [1.2.0] - 2021-06-09
 
