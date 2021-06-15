@@ -8,6 +8,10 @@
         "img": {
           "src": "https://source.unsplash.com/6uneKLGrJPs/280x120",
           "alt": "alternative text"
+        },
+        "date": {
+          "start": "2021-01-09",
+          "end": "2021-01-22"
         }
       },
       {
@@ -16,6 +20,10 @@
         "img": {
           "src": "https://source.unsplash.com/JHOKa8qcQ_A/280x373",
           "alt": "alternative text"
+        },
+        "date": {
+          "start": "2021-02-02",
+          "end": "2021-03-01"
         }
       },
       {
@@ -24,6 +32,10 @@
         "img": {
           "src": "https://source.unsplash.com/m1AfZRZQ-sg/280x280",
           "alt": "alternative text"
+        },
+        "date": {
+          "start": "2021-07-28",
+          "end": "2021-08-03"
         }
       },
       {
@@ -32,6 +44,10 @@
         "img": {
           "src": "https://source.unsplash.com/pLFNq3iQ8ew/280x280",
           "alt": "alternative text"
+        },
+        "date": {
+          "start": "2021-11-10",
+          "end": "2021-11-11"
         }
       }
     ]

@@ -2,7 +2,14 @@
 
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = (module.exports = require('@frctl/fractal').create());
-//
+
+// Nunjucks env
+const nunj = require("@frctl/nunjucks")({
+  filters: {
+    date: require('nunjucks-date-filter')
+  }
+});
+
 // require the Mandelbrot theme module
 const mandelbrot = require('@frctl/mandelbrot');
 
@@ -34,7 +41,7 @@ fractal.set('project.title', 'Joran design system');
 
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/src/components');
-fractal.components.engine('@frctl/nunjucks'); // Register the Nunjucks adapter for your components
+fractal.components.engine(nunj); // Register the Nunjucks adapter for your components
 fractal.components.set('ext', '.nunj'); // Look for files with a .nunj file extension
 fractal.components.set('default.status', 'wip');
 fractal.components.set('statuses', {

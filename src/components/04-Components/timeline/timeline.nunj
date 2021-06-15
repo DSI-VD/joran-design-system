@@ -16,7 +16,7 @@
                         </div>
                         <div class="c-timeline__item-text-container">
                             <h3 class="c-timeline__item-text"><a href="{{ item.url }}" class="o-card-link__link">{{ item.name }}</a></h3>
-                            {% render '@svg-triangle-right' %} <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="2021-01-09">09.01</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-01-22">22.01</time></span>
+                            {% render '@svg-triangle-right' %} <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="{{ item.date.start | date("YYYY-MM-DD") }}">{{ item.date.start | date("DD.MM") }}</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="{{ item.date.end | date("YYYY-MM-DD") }}">{{ item.date.end | date("DD.MM") }}</time></span>
                         </div>
                     </div>
                 </li>
