@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     header
   - Put the link on the header and not on the whole card but keep the whole card
     clickable
+  - Hide an hidden accessible list and hide the flickity list to screen reader
 
 ## [1.2.0] - 2021-06-09
 
