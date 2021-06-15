@@ -1,6 +1,6 @@
 <div class="c-timeline">
     <div class="o-container">
-        <h2 class="u-h2">Dates clés</h2>
+        <h2 class="u-h2">L'activité en 2020</h2>
         {% render '@button--transparent-alternate-arrow-right',
         {styleModifier: 'c-slider__article-button', text: 'lire la suite'},
         true %}
@@ -23,11 +23,10 @@
             {% endfor %}
         </ul>
 
+        <!-- Alternative list for screen reader -->
         <ul class="u-visually-hidden">
             {% for item in items %}
-            <li>
-                <h3><a href="{{ item.url }}">{{ item.name }}</a></h3>
-                <p>du <time datetime="2021-01-09">09.01</time> au <time datetime="2021-01-22">22.01</time></p>
+            <li><a href="{{ item.url }}">{{ item.name }} du <time datetime="{{ item.date.start | date("YYYY-MM-DD") }}">{{ item.date.start | date("DD.MM") }}</time> au <time datetime="{{ item.date.end | date("YYYY-MM-DD") }}">{{ item.date.end | date("DD.MM") }}</time></a>
             </li>
             {% endfor %}
         </ul>
