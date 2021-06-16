@@ -21,6 +21,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     clickable
   - Hide an hidden accessible list and hide the flickity list to screen reader
 
+### Fixed
+
+- Add a width value to _button_ to prevent wrong margin in _pagination_
+
 ## [1.2.0] - 2021-06-09
 
 ### Added
