@@ -6,12 +6,12 @@
   @extend %cta;
 
   @apply
-    inline-flex
+    flex
     flex-row
     flex-nowrap
     items-center
 
-    max-w-max
+    w-max
 
     transition-all
     ;
