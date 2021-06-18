@@ -26,6 +26,18 @@
 
 .o-prose a {
   @extend %anchor;
+
+  &:focus {
+    @apply outline-focus;
+  }
+}
+
+/*  -----------------------------------
+ # Details
+ ----------------------------------- */
+
+.o-prose details:focus {
+  @apply outline-focus;
 }
 
 /* -------------------------------------

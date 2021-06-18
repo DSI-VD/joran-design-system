@@ -63,4 +63,8 @@
 
 .c-table a {
   @extend %anchor;
+
+  &:focus {
+    @apply outline-focus;
+  }
 }
