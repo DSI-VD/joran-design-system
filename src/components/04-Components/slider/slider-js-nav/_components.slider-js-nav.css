@@ -246,6 +246,10 @@
   }
 }
 
+.c-slider-js-nav .flickity-button:focus {
+  @apply outline-focus;
+}
+
 .c-slider-js-nav .flickity-page-dots .dot.is-selected {
   @apply
     bg-white

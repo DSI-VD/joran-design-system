@@ -134,6 +134,10 @@
   @apply
     top-full
   ;
+
+  &:focus {
+    @apply outline-focus;
+  }
 }
 
 .c-timeline__items .flickity-button.previous {

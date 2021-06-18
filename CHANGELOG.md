@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Add a width value to _button_ to prevent wrong margin in _pagination_
+- Fix missing focus style on some focusable elements
 
 ## [1.2.0] - 2021-06-09
 
