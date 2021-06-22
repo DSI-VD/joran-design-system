@@ -245,7 +245,8 @@
 .c-nav__list--level-2:not(.c-nav_list--level-1) > .c-nav__list-item > .c-nav__list-link {
   @apply
     xl:normal-case
-    xl:font-normal
+    xl:font-light
+    xl:text-primary-100
   ;
 }
 
