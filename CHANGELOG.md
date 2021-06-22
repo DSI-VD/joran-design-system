@@ -41,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a visual style for current page in _navigation_ by adding
   `.c-nav__list-link--current` class
 
-### Fixes
+### Fixed
 
 - Add a banner with version in CSS file
 - Add a visual style when hovering a link in the _navigation_
@@ -53,13 +53,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.2] - 2021-05-21
 
-### Fixes
+### Fixed
 
 - Better margin in _content--intro_
 
 ## [1.1.1] - 2021-05-21
 
-### Fixes
+### Fixed
 
 - Beautify
 
@@ -69,7 +69,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Make _pagination_ accessible by adding hidden text in the link
 
-### Fixes
+### Fixed
 
 - Make components print friendly
 
@@ -94,13 +94,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.2] - 2021-05-12
 
-### Fixes
+### Fixed
 
 - Fix color background in _timeline_
 
 ## [1.0.1] - 2021-05-12
 
-### Fixes
+### Fixed
 
 - Fix contrast in _slider-js-nav_ component
 
@@ -118,7 +118,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add hidden text to button in _slider-js-nav_, _testimonial_, _promo-card_ and _promo-list_ to
   make them accessible
 
-### Fixes
+### Fixed
 
 - Fix contrast in _table_ header
 - Fix contrast in navigation
@@ -136,14 +136,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Gradient background of _box_ has been removed. There is a unify color instead.
 - Add `.o-box--gradient` class on _quotes_ to get a gradient background
 
-### Fixes
+### Fixed
 
 - Fix contrast ratio in _o-box_. Contrast was to low with buttons and links.
 - Fix _footer_ margin top
 
 ## [0.0.31] - 2021-04-20
 
-### Fixes
+### Fixed
 
 - Fix _button_ `hover` style
 
@@ -176,7 +176,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - _testimonail_ us _accordeon_ object insted of his own script. `.js-testimonial` classes have been replace by `.js-accordeon`
 - `testimonial.js` have been replace by `accordeon.js` in _preview_
 
-### Fixes
+### Fixed
 
 - Upgrade node packages
 - Fix CSS formating and typo in _search-input_ and _search-result-item_
@@ -197,7 +197,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add _slider-js_ in _navigation_
 - Add variants with selects in _search-input_
 
-### Fixes
+### Fixed
 
 - Fix CTA colors of blue theme
 - Force scrollbar to be visible to avoid awkward jump when there's not enough
@@ -215,7 +215,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - _carousel_ items can have a link
 - Add _figure--link_ variant that show a `<figure>` with a link in it
 
-### Fixes
+### Fixed
 
 - Fine tune padding of _hero_ and _hero--full_
 
@@ -233,14 +233,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   for more info
 - Update the "Lire la suite" link to "Afficher plus" for introduction and preabule components, both with accordeon
 
-### Fixes
+### Fixed
 
 - Refine style of alert
 - _logo-header_ is set as ready
 
 ## [0.0.24] - 2021-03-30
 
-### Fixes
+### Fixed
 
 - Use flickity library in _timeline_ component
 
@@ -273,7 +273,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - _intro_ component has been removed and replaced with _content--intro_
 
-### Fixes
+### Fixed
 
 - Scoped Revenge CSS. You need to put `.debug` class on the `<body>` to lint accessibility issues
 - Fix transition for hovered transparent button
@@ -312,7 +312,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add aria-haspopup, aria-expanded on main navigation
 - Add aria-label on menu toggle
 
-### Fixes
+### Fixed
 
 - Refactor _button_ components
 - Fix _button_ typography. Font weight is medium and there is a wider tracking
@@ -342,7 +342,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Remove _title_ component. _content_ will be used instead
 
-### Fixes
+### Fixed
 
 - Remove negative padding on _o-box_. It's handle by _container--big_
 - _testimonial_ and _highlight_ background are not a gradient
@@ -355,7 +355,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added _title_ component
 - Added _navigation_ component
 
-### Fixes
+### Fixed
 
 - Remove AlpineJS
 - Fix typography. Font size in body, _footer_ and _button_ were not the right one
@@ -383,7 +383,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - _footer_ has _logo-entity_ and not _logo-vd_
 - Text can be expended in _testimonial_ and columns size has been refine
 
-### Fixes
+### Fixed
 
 - _pagination_ is ready
 - _pagination-pages_ is ready
@@ -403,7 +403,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - _logo_ as been renamed in _logo-vd_ because there will be two logo
 - Removed _card_ component
 
-### Fixes
+### Fixed
 
 - Refine typography in _hero_
 - Refine typography in _footer_
