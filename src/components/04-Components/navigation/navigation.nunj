@@ -29,7 +29,7 @@
           {% for firstLevelItem in firstLevelItems %}
           <li class="c-nav__list-item" data-level="0">
             {% if firstLevelItem.secondLevelItems %}
-              <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+              <button class="c-nav__list-link c-nav__list-link--w-children c-nav__list-link--level-0" aria-haspopup="true" aria-expanded="false">
                 {{ firstLevelItem.name }}
               </button>
               <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 masonry">
@@ -39,16 +39,16 @@
                     <button class="c-nav__list-link c-nav__list-link--w-children u-display-xl-none" aria-haspopup="true" aria-expanded="false">
                       {{ secondLevelItem.name }}
                     </button>
-                    <span class="c-nav__list-link c-nav__list-link--w-children u-display-none u-display-xl-block">
+                    <span class="c-nav__list-link c-nav__list-link--level-1 c-nav__list-link--w-children u-display-none u-display-xl-block">
                       {{ secondLevelItem.name }}
                     </span>
                     <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
                       {% for thirdLevelItem in secondLevelItem.thirdLevelItems %}
                       <li class="c-nav__list-item" data-level="2">
                         {% if thirdLevelItem.current %}
-                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--current" aria-current="page">
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2 c-nav__list-link--current" aria-current="page">
                         {% else %}
-                        <a href="#nowhere" class="c-nav__list-link">
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
                         {% endif %}
                           {{ thirdLevelItem.name }}
                         </a>
@@ -56,7 +56,7 @@
                       {% endfor %}
                     </ul>
                   {% else %}
-                    <a href="#nowhere" class="c-nav__list-link">
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
                       {{ secondLevelItem.name }}
                     </a>
                   {% endif %}
@@ -64,7 +64,7 @@
                 {% endfor %}
               </ul>
             {% else %}
-              <a href="#nowhere" class="c-nav__list-link">
+              <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-0">
                 {{ firstLevelItem.name }}
               </a>
             {% endif %}

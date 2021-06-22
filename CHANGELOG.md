@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Increase visual contrast between level 1 and level 2 links in _navigation_ on desktop
 - Improve accessibility of _timeline_
   - Hide _svg-triangle-right_ to screen readers
   - Use list instead of `<div>` to structure content
