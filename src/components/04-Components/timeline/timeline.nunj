@@ -1,56 +1,36 @@
 <div class="c-timeline">
     <div class="o-container">
-        <h2 class="u-h2">Dates clés</h2>
+        <h2 class="u-h2">L'activité en 2020</h2>
         {% render '@button--transparent-alternate-arrow-right',
         {styleModifier: 'c-slider__article-button', text: 'lire la suite'},
         true %}
 
-        <div class="c-timeline__items">
-            <a href="#nowhere" class="c-timeline__item">
-                <div class="c-timeline__item-content">
-                    <div class="c-timeline__item-img">
-                        <div class="c-timeline__item-img-bg">
-                            <img src="https://source.unsplash.com/280x120" alt="">
+        <ul class="c-timeline__items" aria-hidden="true">
+            {% for item in items %}
+                <li class="c-timeline__item">
+                    <div class="o-card-link c-timeline__item-content">
+                        <div class="c-timeline__item-img">
+                            <div class="c-timeline__item-img-bg">
+                                <img src="{{ item.img.src }}" alt="{{ item.img.alt }}">
+                            </div>
+                        </div>
+                        <div class="c-timeline__item-text-container">
+                            <h3 class="c-timeline__item-text"><a href="{{ item.url }}" class="o-card-link__link">{{ item.name }}</a></h3>
+                            {% render '@svg-triangle-right' %} <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="{{ item.date.start | date("YYYY-MM-DD") }}">{{ item.date.start | date("DD.MM") }}</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="{{ item.date.end | date("YYYY-MM-DD") }}">{{ item.date.end | date("DD.MM") }}</time></span>
                         </div>
                     </div>
-                    {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
-                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-                </div>
-            </a>
-            <a href="#nowhere" class="c-timeline__item">
-                <div class="c-timeline__item-content">
-                    <div class="c-timeline__item-img">
-                        <div class="c-timeline__item-img-bg">
-                            <img src="https://source.unsplash.com/280x373" alt="">
-                        </div>
-                    </div>
-                    {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
-                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-                </div>
-            </a>
-            <a href="#nowhere" class="c-timeline__item">
-                <div class="c-timeline__item-content">
-                    <div class="c-timeline__item-img">
-                        <div class="c-timeline__item-img-bg">
-                            <img src="https://source.unsplash.com/280x373" alt="">
-                        </div>
-                    </div>
-                    {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
-                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-                </div>
-            </a>
-            <a href="#nowhere" class="c-timeline__item">
-                <div class="c-timeline__item-content">
-                    <div class="c-timeline__item-img">
-                        <div class="c-timeline__item-img-bg">
-                            <img src="https://source.unsplash.com/280x280" alt="">
-                        </div>
-                    </div>
-                    {% render '@svg-triangle-right' %} <h3>XX.XX – XX.XX</h3>
-                    <p>[CAPTION] Lorem ipsum sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
-                </div>
-            </a>
-        </div>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Alternative list for screen reader -->
+        <ul class="u-visually-hidden">
+            {% for item in items %}
+            <li><a href="{{ item.url }}">{{ item.name }} du <time datetime="{{ item.date.start | date("YYYY-MM-DD") }}">{{ item.date.start | date("DD.MM") }}</time> au <time datetime="{{ item.date.end | date("YYYY-MM-DD") }}">{{ item.date.end | date("DD.MM") }}</time></a>
+            </li>
+            {% endfor %}
+        </ul>
+
     </div>
 </div>
 
