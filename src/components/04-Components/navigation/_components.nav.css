@@ -242,14 +242,6 @@
   ;
 }
 
-.c-nav__list--level-2:not(.c-nav_list--level-1) > .c-nav__list-item > .c-nav__list-link {
-  @apply
-    xl:normal-case
-    xl:font-light
-    xl:text-primary-100
-  ;
-}
-
 .js-c-nav__list--hide {
   transform: translate3d(-100vw, 0, 0);
 }
@@ -259,10 +251,9 @@
  ----------------------------------- */
 .c-nav__list-link {
   @apply
-    py-2
+    tracking-wide
     uppercase
     font-bold
-    tracking-wide
     py-2
     pr-6
     block
@@ -293,6 +284,23 @@ a.c-nav__list-link:hover {
 .c-nav__list-link:focus {
   @apply
     outline-focus
+  ;
+}
+
+.c-nav__list-link--level-0 {
+}
+
+.c-nav__list-link--level-1 {
+  @apply
+    xl:text-base
+  ;
+}
+
+.c-nav__list-link--level-2 {
+  @apply
+    xl:normal-case
+    xl:font-light
+    xl:text-primary-100
   ;
 }
 
