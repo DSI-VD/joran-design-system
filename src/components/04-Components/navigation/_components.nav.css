@@ -100,8 +100,12 @@
   @apply
     mt-6
     mb-4
+    flex
+    flex-col
+
     xl:order-last
     xl:m-0
+    xl:flex-row
   ;
 }
 
@@ -121,13 +125,13 @@
     xl:px-3
     xl:py-2
   ;
+
+  &:focus {
+    @apply
+      outline-focus
+    ;
+  }
 }
-
-
-
-/* -----------------------------------
- # c-nav__button-search
- ----------------------------------- */
 
 .c-nav__button-search svg {
   @apply
@@ -138,15 +142,36 @@
   ;
 }
 
-.c-nav__button-search span {
+
+
+/* -----------------------------------
+ # c-nav__button-pdf
+ ----------------------------------- */
+
+.c-nav__button-pdf {
   @apply
-    xl:sr-only
+    p-4
+    text-white
+    flex
+    items-center
+
+    xl:px-3
+    xl:py-2
   ;
+
+  &:focus {
+    @apply
+      outline-focus
+    ;
+  }
 }
 
-.c-nav__button-search:focus {
+.c-nav__button-pdf svg {
   @apply
-    outline-focus
+    h-full
+    w-5
+    mr-4
+    xl:mr-0
   ;
 }
 

@@ -10,7 +10,10 @@
     </button>
     <div class="c-nav__list-container">
       <div class="c-nav__alt-actions">
-        <a href="#nowhere" class="c-nav__button-search">{% render '@svg-search' %} <span>Rechercher</span></a>
+        <a href="#nowhere" class="c-nav__button-search">{% render '@svg-search' %} <span class="u-display-xl-none">Rechercher</span></a>
+        {%- if pdfdownload -%}
+        <a href="#nowhere" class="c-nav__button-pdf" title="Télécharger le rapport PDF">{% render '@svg-file-earmark-pdf' %} <span class="u-display-xl-none">Télécharger le rapport PDF</span></a>
+        {%- endif -%}
       </div>
       <ul class="c-nav__level-indicator" aria-hidden="true">
       </ul>

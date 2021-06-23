@@ -159,5 +159,13 @@
         ]
       }
     ]
-  }
+  },
+  "variants": [
+    {
+      "name": "PDF download",
+      "context": {
+        "pdfdownload": true
+      }
+    }
+  ]
 }
