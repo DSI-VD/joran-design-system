@@ -88,9 +88,9 @@
 }
 
 /* -----------------------------------
- # c-nav__search-bar
+ # c-nav__alt-actions
  ----------------------------------- */
-.c-nav__search-bar {
+.c-nav__alt-actions {
   @apply
     mt-6
     mb-4
@@ -99,7 +99,7 @@
   ;
 }
 
-.c-nav__search-bar .c-button--search {
+.c-nav__alt-actions .c-button--search {
   @apply
     p-4
     bg-white
@@ -117,7 +117,7 @@
   ;
 }
 
-.c-nav__search-bar .c-button--search svg {
+.c-nav__alt-actions .c-button--search svg {
   @apply
     h-full
     w-5
@@ -126,13 +126,13 @@
   ;
 }
 
-.c-nav__search-bar .c-button--search span {
+.c-nav__alt-actions .c-button--search span {
   @apply
     xl:sr-only
   ;
 }
 
-.c-nav__search-bar .c-button--search:focus {
+.c-nav__alt-actions .c-button--search:focus {
   @apply
     outline-focus
   ;

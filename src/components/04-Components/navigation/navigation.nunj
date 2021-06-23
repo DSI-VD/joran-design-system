@@ -9,7 +9,7 @@
       </span>
     </button>
     <div class="c-nav__list-container">
-      <div class="c-nav__search-bar">
+      <div class="c-nav__alt-actions">
         <a href="#nowhere" class="c-button--search">{% render '@svg-search' %} <span>Rechercher</span></a>
       </div>
       <ul class="c-nav__level-indicator" aria-hidden="true">
