@@ -99,7 +99,7 @@
   ;
 }
 
-.c-nav__alt-actions .c-button--search {
+.c-nav__button-search {
   @apply
     p-4
     bg-white
@@ -117,7 +117,11 @@
   ;
 }
 
-.c-nav__alt-actions .c-button--search svg {
+/* -----------------------------------
+ # c-nav__button-search
+ ----------------------------------- */
+
+.c-nav__button-search svg {
   @apply
     h-full
     w-5
@@ -126,13 +130,13 @@
   ;
 }
 
-.c-nav__alt-actions .c-button--search span {
+.c-nav__button-search span {
   @apply
     xl:sr-only
   ;
 }
 
-.c-nav__alt-actions .c-button--search:focus {
+.c-nav__button-search:focus {
   @apply
     outline-focus
   ;
