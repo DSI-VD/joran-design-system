@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2021-06-23
+
 ### Added
 
 - Add _navigation--pdf-download_ variant that include a PDF download button
@@ -631,7 +633,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.3.0...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.1...v.1.1.2
