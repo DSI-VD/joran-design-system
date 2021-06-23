@@ -20,7 +20,7 @@ for (let i = 0; i < articleCount; i++) {
 
 module.exports = {
   context: {
-    title: 'Carouel',
+    heading: 'Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless',
     articles: articleData // Use our generated list of articles as context data for our template.
   }
 };

@@ -1,0 +1,24 @@
+<div class="c-gallery">
+    {% if heading %}
+        <div>
+            <h2 class="c-gallery__heading-text">{{ heading }}</h2>
+        </div>
+    {% endif %}
+    <div class="o-grid c-gallery-grid">
+        <div>
+            {% render '@figure' %}
+        </div>
+        <div>
+            {% render '@figure' %}
+        </div>
+        <div>
+            {% render '@figure' %}
+        </div>
+        <div>
+            {% render '@figure' %}
+        </div>
+        <div>
+            Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.
+        </div>
+    </div>
+</div>

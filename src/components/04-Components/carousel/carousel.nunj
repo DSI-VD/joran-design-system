@@ -1,5 +1,9 @@
 <div class="o-container">
-  <h2 class="u-visually-hidden">{{ title }}</h2>
+  {% if heading %}
+      <div class="c-carousel__item">
+        <h2 class="c-carousel_heading-text">{{ heading }}</h2>
+      </div>
+  {% endif %}
   <ul class="c-carousel main-carousel" data-flickity='{ "contain": true, "accessibility": true, "pageDots": true }'>
     {% for article in articles %}
       <li class="c-carousel__cell carousel-cell">
