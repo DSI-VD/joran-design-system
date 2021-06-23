@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2021-06-23
+
 ### Added
 
-- Add a header on top of carousel component or grid object
+- Add a header on top of _carousel_ component or grid object
 
 ## [1.4.0] - 2021-06-23
 
@@ -637,7 +639,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.4.0...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.1.2...v1.2.0
