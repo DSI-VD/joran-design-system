@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add _navigation--pdf-download_ variant that include a PDF download button
+
 ## [1.3.0] - 2021-06-22
 
 ### Changed

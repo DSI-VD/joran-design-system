@@ -13,9 +13,12 @@
   touch-action: none;
 }
 
+
+
 /* -----------------------------------
    # c-nav
    ----------------------------------- */
+
 .c-nav {
   @extend .u-print-hidden;
 
@@ -76,6 +79,7 @@
 /* -----------------------------------
  # c-nav__container
  ----------------------------------- */
+
 .c-nav__container {
   @apply
     flex
@@ -87,19 +91,25 @@
   ;
 }
 
+
+
 /* -----------------------------------
- # c-nav__search-bar
+ # c-nav__alt-actions
  ----------------------------------- */
-.c-nav__search-bar {
+.c-nav__alt-actions {
   @apply
     mt-6
     mb-4
+    flex
+    flex-col
+
     xl:order-last
     xl:m-0
+    xl:flex-row
   ;
 }
 
-.c-nav__search-bar .c-button--search {
+.c-nav__button-search {
   @apply
     p-4
     bg-white
@@ -115,9 +125,15 @@
     xl:px-3
     xl:py-2
   ;
+
+  &:focus {
+    @apply
+      outline-focus
+    ;
+  }
 }
 
-.c-nav__search-bar .c-button--search svg {
+.c-nav__button-search svg {
   @apply
     h-full
     w-5
@@ -126,17 +142,44 @@
   ;
 }
 
-.c-nav__search-bar .c-button--search span {
+
+
+/* -----------------------------------
+ # c-nav__button-pdf
+ ----------------------------------- */
+
+.c-nav__button-pdf {
   @apply
-    xl:sr-only
+    p-4
+    text-white
+    flex
+    items-center
+
+    xl:px-3
+    xl:py-2
+  ;
+
+  &:focus {
+    @apply
+      outline-focus
+    ;
+  }
+}
+
+.c-nav__button-pdf svg {
+  @apply
+    h-full
+    w-5
+    mr-4
+    xl:mr-0
   ;
 }
 
-.c-nav__search-bar .c-button--search:focus {
-  @apply
-    outline-focus
-  ;
-}
+
+
+/* -----------------------------------
+ # Toggle icon
+ ----------------------------------- */
 
 .c-nav__toggle {
   @apply
@@ -147,9 +190,12 @@
   ;
 }
 
+
+
 /* -----------------------------------
  # c-nav__list-container
  ----------------------------------- */
+
 .c-nav__list-container {
   @apply
     flex-initial
@@ -171,6 +217,12 @@
   ;
 }
 
+
+
+/* -----------------------------------
+ # c-nav__list-wrapper
+ ----------------------------------- */
+
 .c-nav__list-wrapper {
   @apply
     relative
@@ -178,9 +230,12 @@
   ;
 }
 
+
+
 /* -----------------------------------
  # c-nav__list
  ----------------------------------- */
+
 .c-nav__list {
   @apply
     absolute
@@ -246,9 +301,12 @@
   transform: translate3d(-100vw, 0, 0);
 }
 
+
+
 /* -----------------------------------
  # c-nav__list-link
  ----------------------------------- */
+
 .c-nav__list-link {
   @apply
     tracking-wide
@@ -328,9 +386,12 @@ a.c-nav__list-link:hover {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 14'%3E%3Cpath d='M1 1l6 6-6 6' fill='none' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E%0A");
 }
 
+
+
 /* -----------------------------------
  # c-nav__level-indicator
  ----------------------------------- */
+
 .c-nav__level-indicator {
   @apply
     mb-6

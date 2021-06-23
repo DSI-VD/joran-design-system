@@ -1,5 +1,5 @@
 {% render '@alert' %}
-{% render '@navigation' %}
+{% render '@navigation--pdf-download' %}
 <div class="c-page__content o-stack o-stack--big">
 
   <main class="c-page__main o-stack o-stack--big">
@@ -8,21 +8,21 @@
     {% render '@breadcrumb' %}
 
     {% render '@content--with-heading-left' %}
-    
+
     {% render '@content--intro' %}
-    
+
     {% render '@table' %}
-    
+
     {% render '@quote' %}
-  
+
     {% render '@highlight--heading-only' %}
-    
+
     {% render '@content--default' %}
-    
+
     {% render '@content--with-heading' %}
-    
+
     {% render '@testimonial' %}
-    
+
     {% render '@promo-list' %}
 
     {% render '@content--default' %}
@@ -33,30 +33,30 @@
       </div>
     </div>
 
-    <!-- 
+    <!--
       TODO: refactorize to put the o-container in the component
     -->
     <div class="o-container">
     {% render '@grid--item-centered' %}
     </div>
-    
-    <!-- 
+
+    <!--
       TODO: refactorize to put the o-container in the component
     -->
     <div class="o-container">
     {% render '@figure' %}
     </div>
-    
+
     {% render '@timeline' %}
 
     {% render '@video' %}
-    
+
     {% render '@content--with-heading' %}
-    
+
     {% render '@highlight--with-heading' %}
-    
+
   </main>
-  
+
   {% render '@footer' %}
 
 </div>
