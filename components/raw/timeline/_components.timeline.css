@@ -68,7 +68,14 @@
  # Items
  ----------------------------------- */
 
-.c-timeline__item h3 {
+.c-timeline__item-text-container {
+  @apply
+    flex
+    flex-col
+    ;
+}
+
+.c-timeline__item-header {
   @apply
     text-white
     text-2xl
@@ -79,6 +86,7 @@
     uppercase
     relative
     mb-2
+    order-first
   ;
 
   will-change: letter-spacing;
@@ -89,7 +97,7 @@
   }
 }
 
-.c-timeline__item p {
+.c-timeline__item-text {
   @apply
     text-base
     font-normal
@@ -134,6 +142,10 @@
   @apply
     top-full
   ;
+
+  &:focus {
+    @apply outline-focus;
+  }
 }
 
 .c-timeline__items .flickity-button.previous {
@@ -189,8 +201,8 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.c-timeline__item:focus h3,
-.c-timeline__item:hover h3 {
+.c-timeline__item:focus .c-timeline__item-header,
+.c-timeline__item:hover .c-timeline__item-header {
   @apply
     tracking-wide
   ;
