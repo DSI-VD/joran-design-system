@@ -1,4 +1,4 @@
-<div class="c-gallery">
+<div class="o-container o-container--large c-gallery">
     {% if heading %}
         <div>
             <h2 class="c-gallery__heading-text">{{ heading }}</h2>
