@@ -4,8 +4,8 @@
 
 .c-figure img {
   @media print {
-    max-width: 9cm;
-    max-height: 9cm;
+    max-width: 15cm;
+    max-height: 15cm;
   }
 }
 
