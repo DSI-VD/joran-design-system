@@ -148,6 +148,10 @@
     ;
 
   line-height: 1.3333;
+
+  @media print {
+    font-size: 6pt;
+  }
 }
 
 /***

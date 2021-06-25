@@ -2,6 +2,13 @@
    # _components.figure.css
    ====================================================================== */
 
+.c-figure {
+  @media print {
+    max-width: 9cm;
+    max-height: 9cm;
+  }
+}
+
 .c-figure__media {
   @apply
     rounded
