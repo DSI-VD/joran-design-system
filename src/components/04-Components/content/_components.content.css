@@ -3,30 +3,24 @@
    ====================================================================== */
 
 .c-content {
-  @media not print {
     @apply
       flex
       flex-col
       md:items-center
   ;
-  }
 }
 
 .c-content .c-content__item {
-  @media not print {
     @apply
       flex-1
   ;
-  }
 }
 
 @screen md {
   .c-content .c-content__item {
-    @media not print {
       @apply
         md:w-2/3
     ;
-    }
   }
 }
 
@@ -42,19 +36,17 @@
  # Content heading left
  ----------------------------------- */
 
-@media not print {
-  @screen md {
-    .c-content--2-col {
-      @apply
-        flex-row
-        items-start
-      ;
+@screen md {
+  .c-content--2-col {
+    @apply
+      flex-row
+      items-start
+    ;
 
-      .c-content__heading-text {
-        @apply
-          mr-6
-        ;
-      }
+    .c-content__heading-text {
+      @apply
+        mr-6
+      ;
     }
   }
 }
