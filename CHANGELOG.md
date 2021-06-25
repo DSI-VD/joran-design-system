@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Upgrade node_modules
+- Put gallery in large container
 
 ## [1.5.0] - 2021-06-23
 

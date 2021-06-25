@@ -55,6 +55,10 @@
 
     {% render '@highlight--with-heading' %}
 
+    {% render '@gallery' %}
+
+    {% render '@carousel' %}
+
   </main>
 
   {% render '@footer' %}
