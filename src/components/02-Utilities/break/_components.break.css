@@ -3,11 +3,9 @@
    ====================================================================== */
 
 .u-break-avoid {
-    break-inside: avoid;
+  break-inside: avoid;
 }
 
-
-
 .u-break-after {
-    break-after: always;
+  break-after: always;
 }

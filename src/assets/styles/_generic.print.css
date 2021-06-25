@@ -3,23 +3,27 @@
    ====================================================================== */
 
 @page :right {
-    @bottom-left {
-        margin: 10pt 0 30pt 0;
-        border-top: .25pt solid #666;
-        content: "Our Cats";
-        font-size: 9pt;
-        color: #333;
-    } @bottom-right {
-        margin: 10pt 0 30pt 0;
-        border-top: .25pt solid #666;
-        content: counter(page);
-        font-size: 9pt;
-    } @top-right {
-        content: string(doctitle);
-        margin: 30pt 0 10pt 0;
-        font-size: 9pt;
-        color: #333;
-    }
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: "Our Cats";
+    font-size: 9pt;
+    color: #333;
+  }
+
+  @bottom-right {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: counter(page);
+    font-size: 9pt;
+  }
+
+  @top-right {
+    content: string(doctitle);
+    margin: 30pt 0 10pt 0;
+    font-size: 9pt;
+    color: #333;
+  }
 }
 
 
@@ -29,27 +33,27 @@
  */
 
 .o-container {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .chapter {
-    position: relative;
-    min-height: 700px;
-    background: var(--color__primary--100);
-    page-break-before: always;
+  position: relative;
+  min-height: 700px;
+  background: var(--color__primary--100);
+  page-break-before: always;
 }
 
 .chapter-title {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    background: var(--color__primary--900);
-    color: white;
-    width: 500px;
-    padding: 4rem;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  background: var(--color__primary--900);
+  color: white;
+  width: 500px;
+  padding: 4rem;
 }
 
 .chapter-title h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
