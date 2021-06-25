@@ -37,14 +37,20 @@
   margin-top: 4rem;
 }
 
-.chapter {
+.o-prose ul ul {
+  padding-left: 25px;
+}
+
+.pdf-chapter-cover {
   position: relative;
-  min-height: 700px;
+  min-height: 500px;
   background: var(--color__primary--100);
   page-break-before: always;
 }
-
-.chapter-title {
+.pdf-chapter-cover img {
+  min-width: 100%;
+}
+.pdf-chapter-title {
   position: absolute;
   top: 60px;
   left: 60px;
@@ -53,7 +59,6 @@
   width: 500px;
   padding: 4rem;
 }
-
-.chapter-title h1 {
+.pdf-chapter-title h1 {
   font-size: 2rem;
 }
