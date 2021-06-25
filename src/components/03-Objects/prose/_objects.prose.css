@@ -82,8 +82,8 @@
       font-size: 14pt;
     }
 
-    a::after {
-      content: " (" attr(href) ")"; /* [1] */
-    }
+    /* a::after {
+      content: " (" attr(href) ")";
+    } */
   }
 }
