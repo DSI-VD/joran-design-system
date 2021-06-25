@@ -2,7 +2,7 @@
    # _components.figure.css
    ====================================================================== */
 
-.c-figure {
+.c-figure img {
   @media print {
     max-width: 9cm;
     max-height: 9cm;
