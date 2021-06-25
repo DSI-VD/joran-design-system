@@ -44,7 +44,7 @@
 .pdf-chapter-cover {
   position: relative;
   min-height: 500px;
-  background: var(--color__primary--100);
+  background-color: var(--color__primary--100);
   page-break-before: always;
 }
 .pdf-chapter-cover img {
@@ -54,7 +54,7 @@
   position: absolute;
   top: 60px;
   left: 60px;
-  background: var(--color__primary--900);
+  background-color: var(--color__primary--900);
   color: white;
   width: 500px;
   padding: 4rem;
