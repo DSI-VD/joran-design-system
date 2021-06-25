@@ -52,6 +52,36 @@
   .o-prose {
     @apply prose-sm;
 
+    max-width: unset;
+
+    h1 {
+      font-size: 25pt;
+    }
+
+    h2 {
+      font-size: 22pt;
+    }
+
+    h3 {
+      font-size: 18pt;
+    }
+
+    h4 {
+      font-size: 16pt;
+    }
+
+    h5 {
+      font-size: 14pt;
+    }
+
+    h6 {
+      font-size: 14pt;
+    }
+
+    p {
+     font-size: 14pt;
+    }
+
     a::after {
       content: " (" attr(href) ")"; /* [1] */
     }
