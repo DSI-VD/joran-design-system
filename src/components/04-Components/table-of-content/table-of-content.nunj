@@ -1,4 +1,8 @@
 <div class="o-container o-prose c-table-of-content">
+  {% if heading -%}
+  <h2>{{ heading }}</h2>
+  {%- endif%}
+
   <ul class="c-table-of-content__list">
     {% for item in items %}
     <li class="c-table-of-content__list-item">
