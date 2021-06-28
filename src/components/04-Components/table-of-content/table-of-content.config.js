@@ -1,7 +1,7 @@
 'use strict';
 
 const faker = require('faker'); // Require the faker module
-const itemsCount = 5; // How many articles we should generate data for
+const itemsCount = 10; // How many articles we should generate data for
 const itemsData = [];
 const subItemsData = [];
 
