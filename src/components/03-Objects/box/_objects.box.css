@@ -8,13 +8,13 @@
 
     py-24
     px-2
+    bg-primary-100
   ;
 
-  @media not print {
-    @apply
-      bg-primary-100
-    ;
+  @screen print {
+    @apply py-12;
   }
+
 }
 
 @media not print {
@@ -47,12 +47,12 @@
  # Variants
  ----------------------------------- */
 
-@media not print {
-  .o-box.o-box--gradient {
-    @apply
-      bg-gradient-to-b
-      from-primary-100
-      to-primary-400
-      ;
-  }
+
+.o-box.o-box--gradient {
+  @apply
+    bg-gradient-to-b
+    from-primary-100
+    to-primary-400
+    ;
 }
+
