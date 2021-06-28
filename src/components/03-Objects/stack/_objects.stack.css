@@ -26,7 +26,7 @@
   --stack-space: 3rem;
 
   @media print {
-    --stack-space: 1.5rem;
+    --stack-space: 15pt;
   }
 }
 
