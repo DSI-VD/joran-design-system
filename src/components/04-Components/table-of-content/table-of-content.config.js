@@ -1,25 +1,27 @@
 'use strict';
 
 const faker = require('faker'); // Require the faker module
-const itemsCount = 25; // How many articles we should generate data for
+const itemsCount = 5; // How many articles we should generate data for
 const itemsData = [];
 const subItemsData = [];
 
+const subItemsCount = faker.datatype.number({min:0, max:5});
+
 for (let i = 0; i < itemsCount; i++) {
-
-    const subItemsCount = faker.datatype.number({min:0, max:5});
-
-    for (let y = 0; y < subItemsCount; y++) {
-          subItemsData.push({
-            name: faker.lorem.sentence(),
-            link: faker.internet.url()
-          });
-      }
-
   itemsData.push({
     name: faker.lorem.sentence(),
     link: faker.internet.url(),
+    i: i,
     items: subItemsData
+  });
+}
+
+for (let y = 0; y < subItemsCount; y++) {
+  subItemsData.push({
+    name: faker.lorem.sentence(),
+    link: faker.internet.url(),
+    y: y,
+    subItemsCount: subItemsCount
   });
 }
 
