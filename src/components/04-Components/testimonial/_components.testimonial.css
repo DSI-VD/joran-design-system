@@ -15,6 +15,11 @@
     @apply
       flex-row
   }
+
+  @screen print {
+    @apply
+      flex-row
+  }
 }
 
 /* -----------------------------------
@@ -38,6 +43,15 @@
   }
 }
 
+@screen print {
+  .c-testimonial__facecontainer {
+    @apply
+      w-1/3
+      justify-start
+      ;
+  }
+}
+
 
 .c-testimonial__face {
   @apply
@@ -53,14 +67,14 @@
 
   @apply
     text-black
+    text-center
+    md:text-left
   ;
 
-  @media not print {
-    @apply
-      text-center
-      md:text-left
-    ;
+  @screen print {
+    @apply text-left;
   }
+
 }
 
 /* -----------------------------------
@@ -82,6 +96,15 @@
   }
 }
 
+@screen print {
+  .c-testimonial__textcontainer {
+    @apply
+      text-left
+      w-2/3
+    ;
+  }
+}
+
 
 /* -----------------------------------
    # Author
@@ -95,6 +118,10 @@
     text-center
     md:text-left
   ;
+
+  @screen print {
+    @apply text-left;
+  }
 }
 
 /* -----------------------------------
@@ -105,6 +132,10 @@
     block
     md:inline
   ;
+
+  @screen print {
+    @apply inline;
+  }
 }
 
 .c-testimonial__author--function::before {
@@ -121,14 +152,18 @@
    # Button
    ----------------------------------- */
 
-@media not print {
-  .c-testimonial__button {
-    @apply mx-auto;
-  }
+.c-testimonial__button {
+  @apply mx-auto;
+}
 
-  @screen md {
-    .c-testimonial__button {
-      @apply mx-0;
-    }
+@screen md {
+  .c-testimonial__button {
+    @apply mx-0;
+  }
+}
+
+@screen print {
+  .c-testimonial__button {
+    @apply mx-0;
   }
 }
