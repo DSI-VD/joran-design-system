@@ -5,14 +5,9 @@
 .c-promo-list {
   @apply
     rounded
+    bg-primary
+    text-white
     ;
-
-  @media not print {
-    @apply
-      bg-primary
-      text-white
-      ;
-  }
 }
 
 .c-promo-list__grid {
@@ -22,6 +17,10 @@
     flex-wrap
     md:flex-row
   ;
+
+  @media print {
+    @apply flex-row;
+  }
 }
 
 .c-promo-list__grid-item {
@@ -29,4 +28,7 @@
     md:w-1/2
     p-4
     ;
+  @media print {
+    @apply w-1/2;
+  }
 }
