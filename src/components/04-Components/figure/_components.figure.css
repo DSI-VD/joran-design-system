@@ -2,12 +2,6 @@
    # _components.figure.css
    ====================================================================== */
 
-.c-figure img {
-  @media print {
-    max-width: 15cm;
-    max-height: 15cm;
-  }
-}
 
 .c-figure__media {
   @apply
