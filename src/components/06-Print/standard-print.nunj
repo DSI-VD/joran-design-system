@@ -1,4 +1,4 @@
-<body class="c-page">
+
   <div class="pdf-cover">
     <div class="pdf-cover-logo-top o-container">
       <img
@@ -30568,7 +30568,7 @@
     .o-prose ul ul {
       padding-left: 25px;
     }
-    @page: right{
+    @page: right {
       @bottom-left {
         margin: 10pt 0 30pt 0;
         border-top: 0.25pt solid #666;
@@ -30588,10 +30588,9 @@
         font-size: 9pt;
         color: #333;
       }
-    };</style
+    } ;</style
   ><style>
     #p157 {
       background-image: url("/fileadmin/user_upload/Coucher_de_soleil_a___Parfendaz.jpg");
     }
   </style>
-</body>
