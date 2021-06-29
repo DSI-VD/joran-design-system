@@ -9,6 +9,7 @@
     page-break-before: always;
     margin-left: -5mm;
     margin-right: -5mm;
+    margin-bottom: 1rem;
 }
 
 .c-pdf-chapter-cover img {
