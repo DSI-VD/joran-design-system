@@ -5,3 +5,37 @@
 .c-table-of-content {
     @extend .u-break-after;
 }
+
+/***
+ * 1. Override `.o-prose` counter styles and set an increment
+ *    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+ */
+
+.c-table-of-content__list {
+   counter-reset: section !important; /* [1] */
+}
+
+/***
+ * 1. Override `.o-prose` counter styles
+ */
+
+.c-table-of-content__list-item::before {
+   counter-increment: section !important; /* [1] */
+   content: counters(section, ".") " " !important; /* [1] */
+}
+
+/***
+ * Level 2
+ */
+
+.c-table-of-content__list > .c-table-of-content__list-item .c-table-of-content__list-item {
+   @apply pl-12 !important;
+}
+
+/***
+ * Level 3
+ */
+
+.c-table-of-content__list > .c-table-of-content__list-item .c-table-of-content__list-item .c-table-of-content__list-item {
+   @apply pl-24 !important;
+}
