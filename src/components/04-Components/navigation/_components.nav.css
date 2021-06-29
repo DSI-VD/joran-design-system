@@ -357,7 +357,7 @@ a.c-nav__list-link:hover {
 .c-nav__list-link--level-2 {
   @apply
     xl:normal-case
-    xl:font-light
+    xl:font-normal
     xl:text-primary-100
   ;
 }
