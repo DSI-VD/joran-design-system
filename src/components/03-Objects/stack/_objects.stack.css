@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @screen print {
+    --stack-space: 30pt;
+  }
 }
 
 .o-stack > * {
@@ -26,7 +30,7 @@
   --stack-space: 3rem;
 
   @media print {
-    --stack-space: 1.5rem;
+    --stack-space: 60pt;
   }
 }
 

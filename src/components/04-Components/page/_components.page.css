@@ -7,6 +7,10 @@
     min-h-screen
     bg-white
   ;
+
+  @screen print {
+    @apply bg-none;
+  }
 }
 
 .c-page__content {

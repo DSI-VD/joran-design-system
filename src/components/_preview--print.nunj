@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jorant print preview</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+
+    {% render '@colors-inc', colors %}
+
+    <!-- Stylesheets -->
+    <link
+      media="all"
+      rel="stylesheet"
+      href="{{ '/assets/styles/style.css' | path }}"
+    />
+  </head>
+
+  <body>
+    {{ yield | safe }}
+  </body>
+</html>

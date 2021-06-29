@@ -1,0 +1,34 @@
+<div class="o-container o-prose c-table-of-content">
+  {% if heading -%}
+  <h2>{{ heading }}</h2>
+  {%- endif%}
+
+  <ol class="c-table-of-content__list">
+    {% for item in items %}
+    <li class="c-table-of-content__list-item">
+      <a class="c-table-of-content__link" href="#{{ item.url }}"
+        >{{ item.name }}</a>
+      {% if item.items %}
+      <ol class="c-table-of-content__list">
+        {% for item in item.items %}
+        <li class="c-table-of-content__list-item">
+          <a class="c-table-of-content__link" href="#{{ item.url }}"
+            >{{ item.name }}</a
+          >
+        </li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+
+<!-- Fake content to test anchors
+{% for item in items %}
+<article>
+  <h3 id="{{ item.url }}">{{ item.name }}</h3>
+  <p>
+</div>
+{% endfor %}
+-->

@@ -35,15 +35,10 @@
     flex /* [1] */
     items-center /* [1] */
     flex-col
+    bg-cover
+    bg-center
+    bg-primary
   ;
-
-  @media not print {
-    @apply
-      bg-cover
-      bg-center
-      bg-primary
-    ;
-  }
 
   padding-top: calc(var(--c-hero__nav-height) + var(--c-hero__padding));
   padding-bottom: var(--c-hero__padding);
@@ -54,30 +49,24 @@
 }
 
 .c-hero--full {
-  @media not print {
-    @apply
-      min-h-screen
-    ;
-  }
+  @apply
+    min-h-screen
+  ;
 }
+
+
 
 /***
  * 2. If there's an image, an overlay is applied to darken it
- * 3. Remove background image when printing
  */
 
 .c-hero--with-image {
   @apply
     relative /* [2] */
   ;
-
-  @media print {
-    background-image: none !important; /* [3] */
-  }
 }
 
 .c-hero--with-image::before {
-  @extend .u-print-hidden; /* [3] */
 
   content: "";
 
@@ -138,11 +127,10 @@
 .c-hero__heading {
   @extend %h1;
 
-  @media not print {
-    @apply
-      text-white
-    ;
-  }
+  @apply
+    text-white
+  ;
+
 
   max-width: 25ch;
   hyphens: auto;
@@ -167,13 +155,9 @@
   @apply
     order-first
     mb-4
-  ;
-
-  @media not print {
-    @apply
-      text-white
+    text-white
     ;
-  }
+
 }
 
 /* -----------------------------------

@@ -1,11 +1,11 @@
 /* ======================================================================
-   # _objects.grid-css
+   # _generic.print.css
    ====================================================================== */
 
-.c-gallery__heading-text {
-  @extend %h2;
+@page {
+  margin: 5mm;
+}
 
-  @apply
-    mb-8
-    ;
+@page :first {
+  margin: 0;
 }

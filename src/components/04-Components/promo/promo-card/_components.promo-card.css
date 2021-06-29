@@ -3,25 +3,15 @@
    ========================================================================== */
 
 .c-promo-card {
+  @extend .u-break-avoid;
   @apply
     flex
     flex-row
     justify-end
+    bg-primary
   ;
-
-  @media not print {
-    @apply
-      bg-primary
-    ;
-  }
-
-  @media print {
-    @apply
-      border-4
-      border-primary
-    ;
-  }
 }
+
 
 .c-promo-card__col-left {
   @apply
@@ -38,17 +28,9 @@
   }
 
   svg {
-    @media not print {
-      @apply
-        text-white
-      ;
-    }
-
-    @media print {
-      @apply
-        text-primary
-      ;
-    }
+    @apply
+      text-white
+    ;
   }
 }
 
@@ -70,15 +52,7 @@
 
 .c-promo-card__header,
 .c-promo-card__content {
-  @media not print {
-    @apply
-      text-white
-    ;
-  }
-
-  @media print {
-    @apply
-      text-primary
-    ;
-  }
+  @apply
+    text-white
+  ;
 }

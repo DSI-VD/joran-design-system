@@ -3,29 +3,31 @@
    ====================================================================== */
 
 .c-content {
-  @media not print {
     @apply
       flex
       flex-col
       md:items-center
   ;
+  @screen print {
+    @apply items-center;
+
+    max-width: 1245px;
   }
 }
 
 .c-content .c-content__item {
-  @media not print {
     @apply
       flex-1
   ;
-  }
 }
 
 @screen md {
   .c-content .c-content__item {
-    @media not print {
-      @apply
-        md:w-2/3
+    @apply
+      md:w-2/3
     ;
+    @screen print {
+      @apply w-2/3;
     }
   }
 }
@@ -36,25 +38,44 @@
   @apply
     mb-8
   ;
+
+  @screen print {
+    @apply
+      mb-4
+    ;
+  }
 }
 
 /* -----------------------------------
  # Content heading left
  ----------------------------------- */
 
-@media not print {
-  @screen md {
-    .c-content--2-col {
-      @apply
-        flex-row
-        items-start
-      ;
+@screen md {
+  .c-content--2-col {
+    @apply
+      flex-row
+      items-start
+    ;
 
-      .c-content__heading-text {
-        @apply
-          mr-6
-        ;
-      }
+    .c-content__heading-text {
+      @apply
+        mr-6
+      ;
+    }
+  }
+}
+
+@screen print {
+  .c-content--2-col {
+    @apply
+      flex-row
+      items-start
+    ;
+
+    .c-content__heading-text {
+      @apply
+        mr-6
+      ;
     }
   }
 }
