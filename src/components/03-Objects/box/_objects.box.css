@@ -17,29 +17,35 @@
 
 }
 
-@media not print {
-  @screen md {
-    .o-box {
-      @apply
-        px-4
-      ;
-    }
+@screen md {
+  .o-box {
+    @apply
+      px-4
+    ;
   }
+}
 
-  @screen lg {
-    .o-box {
-      @apply
-        px-12
-      ;
-    }
+@screen print {
+  .o-box {
+    @apply
+      px-4
+    ;
   }
+}
 
-  @screen xl {
-    .o-box {
-      @apply
-        px-24
-      ;
-    }
+@screen lg {
+  .o-box {
+    @apply
+      px-12
+    ;
+  }
+}
+
+@screen xl {
+  .o-box {
+    @apply
+      px-24
+    ;
   }
 }
 
