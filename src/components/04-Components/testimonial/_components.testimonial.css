@@ -161,7 +161,3 @@
     @apply mx-0;
   }
 }
-
-@screen print {
-  @extend .u-print-hidden;
-}
