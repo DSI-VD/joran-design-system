@@ -2,26 +2,66 @@
    # _generic.print.css
    ====================================================================== */
 
-@page :right {
-  @bottom-left {
-    margin: 10pt 0 30pt 0;
-    border-top: 0.25pt solid #666;
-    content: "Our Cats";
-    font-size: 9pt;
-    color: #333;
-  }
+@page {
+  margin: 5mm;
+}
 
-  @bottom-right {
-    margin: 10pt 0 30pt 0;
-    border-top: 0.25pt solid #666;
-    content: counter(page);
-    font-size: 9pt;
-  }
+@page :first {
+  margin: 0;
+}
 
-  @top-right {
-    content: string(doctitle);
-    margin: 30pt 0 10pt 0;
-    font-size: 9pt;
-    color: #333;
-  }
+/***
+ * The following styles need to be refactor in components styles
+ */
+
+.o-container {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.o-prose ul ul {
+  padding-left: 25px;
+}
+
+.pdf-chapter-cover {
+  position: relative;
+  min-height: 270px;
+  background: var(--color__primary--100);
+  page-break-before: always;
+  margin-left: -5mm;
+  margin-right: -5mm;
+}
+
+.pdf-chapter-cover img {
+  min-width: 100%;
+}
+
+.pdf-cover-logo-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  right: 0;
+}
+
+.pdf-cover-logo-bottom img {
+  float: right;
+}
+
+.pdf-cover-logo-top {
+  position: absolute;
+  z-index: 98;
+}
+
+.pdf-chapter-title {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  background: rgba(var(--color-raw__primary--900), .85);
+  color: white;
+  width: 500px;
+  padding: 3rem;
+}
+
+.pdf-chapter-title h1 {
+  font-size: 2rem;
 }
