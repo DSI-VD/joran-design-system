@@ -5,12 +5,12 @@ const itemsCount = 10; // How many articles we should generate data for
 const itemsData = [];
 const subItemsData = [];
 
-const subItemsCount = faker.datatype.number({min:0, max:5});
+const subItemsCount = faker.datatype.number({min:2, max:5});
 
 for (let i = 0; i < itemsCount; i++) {
   itemsData.push({
     name: faker.lorem.sentence(),
-    link: faker.internet.url(),
+    url: faker.datatype.uuid(),
     i: i,
     items: subItemsData
   });
@@ -19,7 +19,7 @@ for (let i = 0; i < itemsCount; i++) {
 for (let y = 0; y < subItemsCount; y++) {
   subItemsData.push({
     name: faker.lorem.sentence(),
-    link: faker.internet.url(),
+    url: 'coucou',
     y: y,
     subItemsCount: subItemsCount
   });
