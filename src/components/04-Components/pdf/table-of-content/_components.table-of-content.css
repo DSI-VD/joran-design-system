@@ -3,7 +3,7 @@
    ====================================================================== */
 
 .c-table-of-content {
-    @extend .u-break-after;
+  @extend .u-break-after;
 }
 
 /***
@@ -12,7 +12,7 @@
  */
 
 .c-table-of-content__list {
-   counter-reset: section !important; /* [1] */
+  counter-reset: section !important; /* [1] */
 }
 
 /***
@@ -20,8 +20,8 @@
  */
 
 .c-table-of-content__list-item::before {
-   counter-increment: section !important; /* [1] */
-   content: counters(section, ".") " " !important; /* [1] */
+  counter-increment: section !important; /* [1] */
+  content: counters(section, ".") " " !important; /* [1] */
 }
 
 /***
@@ -29,7 +29,7 @@
  */
 
 .c-table-of-content__list > .c-table-of-content__list-item .c-table-of-content__list-item {
-   @apply pl-12 !important;
+  @apply pl-12 !important;
 }
 
 /***
@@ -37,12 +37,12 @@
  */
 
 .c-table-of-content__list > .c-table-of-content__list-item .c-table-of-content__list-item .c-table-of-content__list-item {
-   @apply pl-24 !important;
+  @apply pl-24 !important;
 }
 
 /***
  * FIXME: Add page number
  */
 .c-table-of-content__link::after {
-   content: leader(dotted) " " target-counter(attr(href, url), page) !important;
+  content: leader(dotted) " " target-counter(attr(href, url), page) !important;
 }

@@ -4,6 +4,7 @@
 
 .c-promo-card {
   @extend .u-break-avoid;
+
   @apply
     flex
     flex-row
@@ -11,7 +12,6 @@
     bg-primary
   ;
 }
-
 
 .c-promo-card__col-left {
   @apply

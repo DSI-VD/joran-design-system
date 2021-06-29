@@ -23,6 +23,7 @@
 
   @media print {
     font-size: 10pt;
+
     @apply
       bg-transparent
     ;

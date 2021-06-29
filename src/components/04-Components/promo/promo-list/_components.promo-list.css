@@ -28,6 +28,7 @@
     md:w-1/2
     p-4
     ;
+
   @media print {
     @apply w-1/2;
   }

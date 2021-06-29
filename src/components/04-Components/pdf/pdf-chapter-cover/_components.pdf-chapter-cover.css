@@ -3,32 +3,32 @@
    ====================================================================== */
 
 .c-pdf-chapter-cover {
-    position: relative;
-    min-height: 270px;
-    background: var(--color__primary--100);
-    page-break-before: always;
-    margin-left: -5mm;
-    margin-right: -5mm;
-    margin-bottom: 1rem;
+  position: relative;
+  min-height: 270px;
+  background: var(--color__primary--100);
+  page-break-before: always;
+  margin-left: -5mm;
+  margin-right: -5mm;
+  margin-bottom: 1rem;
 }
 
 .c-pdf-chapter-cover img {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 .c-pdf-chapter-cover__logo-bottom {
-    position: absolute;
-    bottom: 50px;
-    z-index: 99;
-    right: 0;
+  position: absolute;
+  bottom: 50px;
+  z-index: 99;
+  right: 0;
 }
 
 .c-pdf-chapter-cover__logo-bottom img {
-    float: right;
+  float: right;
 }
 
 .c-pdf-chapter-cover__logo-top {
-    position: absolute;
-    z-index: 98;
-    top: 20px;
+  position: absolute;
+  z-index: 98;
+  top: 20px;
 }

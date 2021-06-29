@@ -50,8 +50,8 @@
 
 @media print {
   .o-prose {
-
     @apply prose-sm;
+
     font-size: 10pt;
     max-width: 100%;
 

@@ -4,6 +4,7 @@
 
 .o-box {
   @extend .u-break-avoid;
+
   @apply
     rounded
 
@@ -15,7 +16,6 @@
   @screen print {
     @apply py-12;
   }
-
 }
 
 @screen md {
@@ -54,7 +54,6 @@
  # Variants
  ----------------------------------- */
 
-
 .o-box.o-box--gradient {
   @apply
     bg-gradient-to-b
@@ -62,4 +61,3 @@
     to-primary-400
     ;
 }
-

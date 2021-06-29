@@ -3,11 +3,12 @@
    ====================================================================== */
 
 .c-content {
-    @apply
-      flex
-      flex-col
+  @apply
+    flex
+    flex-col
       md:items-center
   ;
+
   @screen print {
     @apply items-center;
 
@@ -16,8 +17,8 @@
 }
 
 .c-content .c-content__item {
-    @apply
-      flex-1
+  @apply
+    flex-1
   ;
 }
 
@@ -26,6 +27,7 @@
     @apply
       md:w-2/3
     ;
+
     @screen print {
       @apply w-2/3;
     }

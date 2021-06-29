@@ -14,11 +14,13 @@
   @screen md {
     @apply
       flex-row
+  
   }
 
   @screen print {
     @apply
       flex-row
+  
   }
 }
 
@@ -52,7 +54,6 @@
   }
 }
 
-
 .c-testimonial__face {
   @apply
     mb-4
@@ -74,7 +75,6 @@
   @screen print {
     @apply text-left;
   }
-
 }
 
 /* -----------------------------------

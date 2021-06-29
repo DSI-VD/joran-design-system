@@ -67,7 +67,6 @@
 }
 
 .c-hero--with-image::before {
-
   content: "";
 
   @apply
@@ -131,7 +130,6 @@
     text-white
   ;
 
-
   max-width: 25ch;
   hyphens: auto;
 }
@@ -157,7 +155,6 @@
     mb-4
     text-white
     ;
-
 }
 
 /* -----------------------------------

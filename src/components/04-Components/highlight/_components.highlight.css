@@ -4,11 +4,11 @@
 
 .c-highlight {
   @extend .u-break-avoid;
+
   @apply
     py-24
     bg-primary-100
   ;
-
 
   @media print {
     @apply
