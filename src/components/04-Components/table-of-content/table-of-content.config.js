@@ -19,7 +19,7 @@ for (let i = 0; i < itemsCount; i++) {
 for (let y = 0; y < subItemsCount; y++) {
   subItemsData.push({
     name: faker.lorem.sentence(),
-    url: 'coucou',
+    url: faker.datatype.uuid(),
     y: y,
     subItemsCount: subItemsCount
   });
