@@ -24,4 +24,11 @@
   </ol>
 </div>
 
-<a id="#coucou">coucou</a>
+<!-- Fake content to test anchors
+{% for item in items %}
+<article>
+  <h3 id="{{ item.url }}">{{ item.name }}</h3>
+  <p>
+</div>
+{% endfor %}
+-->
