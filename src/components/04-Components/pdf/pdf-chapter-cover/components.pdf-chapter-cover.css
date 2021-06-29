@@ -15,18 +15,18 @@
     min-width: 100%;
 }
 
-.c-pdf-cover-logo-bottom {
+.c-pdf-chapter-cover__logo-bottom {
     position: absolute;
     bottom: 0;
     z-index: 99;
     right: 0;
 }
 
-.c-pdf-cover-logo-bottom img {
+.c-pdf-chapter-cover__logo-bottom img {
     float: right;
 }
 
-.c-pdf-cover-logo-top {
+.c-pdf-chapter-cover__logo-top {
     position: absolute;
     z-index: 98;
 }
