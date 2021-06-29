@@ -3,13 +3,16 @@
    ====================================================================== */
 
 .u-break-avoid {
+  page-break-inside: avoid;
   break-inside: avoid;
 }
 
 .u-break-after {
+  page-break-after: always;
   break-after: always;
 }
 
 .u-break-before {
+  page-break-before: always;
   break-before: always;
 }
