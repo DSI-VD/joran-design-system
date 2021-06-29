@@ -1,0 +1,32 @@
+/* ======================================================================
+   # components.pdf-chapter-cover.css
+   ====================================================================== */
+
+.c-pdf-chapter-cover {
+    position: relative;
+    min-height: 270px;
+    background: var(--color__primary--100);
+    page-break-before: always;
+    margin-left: -5mm;
+    margin-right: -5mm;
+}
+
+.c-pdf-chapter-cover img {
+    min-width: 100%;
+}
+
+.c-pdf-cover-logo-bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    right: 0;
+}
+
+.c-pdf-cover-logo-bottom img {
+    float: right;
+}
+
+.c-pdf-cover-logo-top {
+    position: absolute;
+    z-index: 98;
+}

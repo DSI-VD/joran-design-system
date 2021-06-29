@@ -1,0 +1,17 @@
+/* ======================================================================
+   # components.pdf-chapter-title.css
+   ====================================================================== */
+
+.c-pdf-chapter-title {
+   position: absolute;
+   top: 60px;
+   left: 60px;
+   background: rgba(var(--color-raw__primary--900), .85);
+   color: white;
+   width: 500px;
+   padding: 3rem;
+}
+
+.c-pdf-chapter-title h1 {
+   font-size: 2rem;
+}
