@@ -7,8 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add _table-of-content_, _pdf-chapter-cover_ and _pdf-chapter-title_ component
+  for pdf export
+- Add _standard-print_ prototype which is an HTML export of TYPO3 page generation
+- Add page _break_ utilities for print
+
 ### Fixed
 
+- Improve print styles
 - Upgrade node_modules
 
 ## [1.5.0] - 2021-06-23
