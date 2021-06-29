@@ -9,12 +9,3 @@
 @page :first {
   margin: 0;
 }
-
-/***
- * The following styles need to be refactor in components styles
- */
-
-.o-container {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}

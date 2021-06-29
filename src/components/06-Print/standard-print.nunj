@@ -283,7 +283,7 @@
         </ol>
     </div>
 </div>
-<div class="pdf-chapter">
+<div class="pdf-chapter o-stack">
     <div id="c1431" class="o-container o-container--large c-testimonial">
         <div class="o-box">
             <div class="c-testimonial__flex">
@@ -350,7 +350,7 @@
 </div>
 <div id="chapter-171">
     <div id="chapter-173">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Cadre légal de l&#039;activité communale </h1></div>
                 <img src="/fileadmin/_processed_/d/6/csm_bg-test-header_a1ec915649.jpg" width="1280" height="500"
@@ -526,7 +526,7 @@
         </div>
     </div>
     <div id="chapter-174">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> La Municipalité </h1></div>
             </div>
@@ -670,7 +670,7 @@
         </div>
     </div>
     <div id="chapter-180">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Les Conseillers municipaux </h1></div>
             </div>
@@ -815,7 +815,7 @@
         </div>
     </div>
     <div id="chapter-181">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Le Conseil général/communal </h1></div>
             </div>
@@ -940,7 +940,7 @@
         </div>
     </div>
     <div id="chapter-182">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Les Conseillers généraux/communaux </h1></div>
             </div>
@@ -1048,7 +1048,7 @@
         </div>
     </div>
     <div id="chapter-183">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Compétences respectives du Conseil et de la Municipalité </h1></div>
             </div>
@@ -1194,7 +1194,7 @@
         </div>
     </div>
     <div id="chapter-184">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Délégations de compétences </h1></div>
             </div>
@@ -1324,7 +1324,7 @@
         </div>
     </div>
     <div id="chapter-185">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Relations Municipalité-Conseil </h1></div>
             </div>
@@ -1483,7 +1483,7 @@
         </div>
     </div>
     <div id="chapter-186">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Droits de proposition </h1></div>
             </div>
@@ -1627,7 +1627,7 @@
         </div>
     </div>
     <div id="chapter-187">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Les relations avec l&#039;Etat </h1></div>
             </div>
@@ -1772,7 +1772,7 @@
         </div>
     </div>
     <div id="chapter-188">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Les préfets </h1></div>
             </div>
@@ -1905,7 +1905,7 @@
         </div>
     </div>
     <div id="chapter-189">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> La justice vaudoise </h1></div>
             </div>
@@ -2113,7 +2113,7 @@
 </div>
 <div id="chapter-192">
     <div id="chapter-190">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Administration générale </h1></div>
             </div>
@@ -2239,7 +2239,7 @@
         </div>
     </div>
     <div id="chapter-194">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Information et transparence de l&#039;administration </h1></div>
             </div>
@@ -2403,7 +2403,7 @@
         </div>
     </div>
     <div id="chapter-195">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Droits politiques </h1></div>
             </div>
@@ -2565,7 +2565,7 @@
         </div>
     </div>
     <div id="chapter-196">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Protection des données </h1></div>
             </div>
@@ -2740,7 +2740,7 @@
         </div>
     </div>
     <div id="chapter-197">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Fusions de communes </h1></div>
             </div>
@@ -2909,7 +2909,7 @@
         </div>
     </div>
     <div id="chapter-198">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Collaborations intercommunales </h1></div>
             </div>
@@ -3095,7 +3095,7 @@
         </div>
     </div>
     <div id="chapter-200">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Contrôle des habitants </h1></div>
             </div>
@@ -3259,7 +3259,7 @@
         </div>
     </div>
     <div id="chapter-201">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Bureau des étrangers </h1></div>
             </div>
@@ -3440,7 +3440,7 @@
         </div>
     </div>
     <div id="chapter-202">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Naturalisations </h1></div>
             </div>
@@ -3600,7 +3600,7 @@
         </div>
     </div>
     <div id="chapter-203">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Intégration </h1></div>
             </div>
@@ -3780,7 +3780,7 @@
         </div>
     </div>
     <div id="chapter-204">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Egalité entre femmes et hommes </h1></div>
             </div>
@@ -4002,7 +4002,7 @@
         </div>
     </div>
     <div id="chapter-205">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Archives </h1></div>
             </div>
@@ -4186,7 +4186,7 @@
         </div>
     </div>
     <div id="chapter-206">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Statistique et recensement </h1></div>
             </div>
@@ -4344,7 +4344,7 @@
         </div>
     </div>
     <div id="chapter-207">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Recensement de l&#039;agriculture : données agricoles </h1></div>
             </div>
@@ -4494,7 +4494,7 @@
 </div>
 <div id="chapter-208">
     <div id="chapter-209">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Finances communales et péréquation </h1></div>
             </div>
@@ -4651,7 +4651,7 @@
         </div>
     </div>
     <div id="chapter-210">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Fiscalité </h1></div>
             </div>
@@ -4832,7 +4832,7 @@
         </div>
     </div>
     <div id="chapter-211">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Marchés publics </h1></div>
             </div>
@@ -5047,7 +5047,7 @@
         </div>
     </div>
     <div id="chapter-212">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Participations financières </h1></div>
             </div>
@@ -5174,7 +5174,7 @@
 </div>
 <div id="chapter-213">
     <div id="chapter-214">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Propriété rurale : droit foncier et affermage </h1></div>
             </div>
@@ -5319,7 +5319,7 @@
         </div>
     </div>
     <div id="chapter-215">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Améliorations foncières </h1></div>
             </div>
@@ -5506,7 +5506,7 @@
         </div>
     </div>
     <div id="chapter-216">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Expropriations </h1></div>
             </div>
@@ -5656,7 +5656,7 @@
         </div>
     </div>
     <div id="chapter-217">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Protection du patrimoine bâti </h1></div>
             </div>
@@ -5867,7 +5867,7 @@
         </div>
     </div>
     <div id="chapter-218">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Construction durable </h1></div>
             </div>
@@ -6124,7 +6124,7 @@
         </div>
     </div>
     <div id="chapter-219">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Constructions et énergie </h1></div>
             </div>
@@ -6286,7 +6286,7 @@
         </div>
     </div>
     <div id="chapter-220">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Archéologie </h1></div>
             </div>
@@ -6432,7 +6432,7 @@
         </div>
     </div>
     <div id="chapter-221">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Procédure de demande de permis de construire </h1></div>
             </div>
@@ -6592,7 +6592,7 @@
         </div>
     </div>
     <div id="chapter-222">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Alpages </h1></div>
             </div>
@@ -6747,7 +6747,7 @@
         </div>
     </div>
     <div id="chapter-223">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Infrastructures sportives </h1></div>
             </div>
@@ -6914,7 +6914,7 @@
 </div>
 <div id="chapter-224">
     <div id="chapter-225">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Mensuration officielle, géodonnées </h1></div>
             </div>
@@ -7085,7 +7085,7 @@
         </div>
     </div>
     <div id="chapter-226">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Instruments et procédures d&#039;aménagement du territoire </h1>
                 </div>
@@ -7281,7 +7281,7 @@
         </div>
     </div>
     <div id="chapter-227">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Logement </h1></div>
             </div>
@@ -7500,7 +7500,7 @@
         </div>
     </div>
     <div id="chapter-228">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Mobilité multimodale </h1></div>
             </div>
@@ -7668,7 +7668,7 @@
         </div>
     </div>
     <div id="chapter-229">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Routes </h1></div>
             </div>
@@ -7873,7 +7873,7 @@
         </div>
     </div>
     <div id="chapter-230">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Transports publics </h1></div>
             </div>
@@ -8021,7 +8021,7 @@
         </div>
     </div>
     <div id="chapter-231">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Autorisations et permis en matière de transports et mobilité </h1>
                 </div>
@@ -8261,7 +8261,7 @@
 </div>
 <div id="chapter-232">
     <div id="chapter-233">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Géologie et sous-sol </h1></div>
             </div>
@@ -8425,7 +8425,7 @@
         </div>
     </div>
     <div id="chapter-234">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Durabilité dans les communes </h1></div>
             </div>
@@ -8588,7 +8588,7 @@
         </div>
     </div>
     <div id="chapter-235">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Plans climats communaux </h1></div>
             </div>
@@ -8733,7 +8733,7 @@
         </div>
     </div>
     <div id="chapter-236">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Planification énergétique territoriale </h1></div>
             </div>
@@ -8906,7 +8906,7 @@
         </div>
     </div>
     <div id="chapter-237">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Eau potable </h1></div>
             </div>
@@ -9059,7 +9059,7 @@
         </div>
     </div>
     <div id="chapter-238">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Distribution de l&#039;eau </h1></div>
             </div>
@@ -9225,7 +9225,7 @@
         </div>
     </div>
     <div id="chapter-239">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Taxes sur l&#039;électricité </h1></div>
             </div>
@@ -9383,7 +9383,7 @@
 </div>
 <div id="chapter-240">
     <div id="chapter-241">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Dangers naturels </h1></div>
             </div>
@@ -9559,7 +9559,7 @@
         </div>
     </div>
     <div id="chapter-242">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Surveillance des chantiers </h1></div>
             </div>
@@ -9740,7 +9740,7 @@
         </div>
     </div>
     <div id="chapter-243">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Gestion des déchets </h1></div>
             </div>
@@ -9989,7 +9989,7 @@
         </div>
     </div>
     <div id="chapter-244">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Incinération des déchets en plein air </h1></div>
             </div>
@@ -10152,7 +10152,7 @@
         </div>
     </div>
     <div id="chapter-245">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Assainissement, gestion des eaux urbaines </h1></div>
             </div>
@@ -10335,7 +10335,7 @@
         </div>
     </div>
     <div id="chapter-246">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Ressources en eau souterraine - eau potable </h1></div>
             </div>
@@ -10495,7 +10495,7 @@
         </div>
     </div>
     <div id="chapter-247">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Agriculture urbaine, périurbaine et micro-fermes </h1></div>
             </div>
@@ -10676,7 +10676,7 @@
         </div>
     </div>
     <div id="chapter-248">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Gestion des lacs et des cours d&#039;eau </h1></div>
             </div>
@@ -10822,7 +10822,7 @@
         </div>
     </div>
     <div id="chapter-249">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Chasse, pêche et surveillance </h1></div>
             </div>
@@ -11055,7 +11055,7 @@
         </div>
     </div>
     <div id="chapter-250">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Forêts </h1></div>
             </div>
@@ -11211,7 +11211,7 @@
         </div>
     </div>
     <div id="chapter-251">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Protection et gestion des biotopes, des espèces et du paysage </h1>
                 </div>
@@ -11511,7 +11511,7 @@
 </div>
 <div id="chapter-259">
     <div id="chapter-260">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Organisation de l&#039;école obligatoire </h1></div>
             </div>
@@ -11674,7 +11674,7 @@
         </div>
     </div>
     <div id="chapter-261">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Transports scolaires </h1></div>
             </div>
@@ -11848,7 +11848,7 @@
         </div>
     </div>
     <div id="chapter-262">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Constructions scolaires </h1></div>
             </div>
@@ -12013,7 +12013,7 @@
         </div>
     </div>
     <div id="chapter-263">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Éducation physique et sportive scolaire </h1></div>
             </div>
@@ -12158,7 +12158,7 @@
         </div>
     </div>
     <div id="chapter-264">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Protection des mineurs en danger dans leur développement </h1></div>
             </div>
@@ -12307,7 +12307,7 @@
         </div>
     </div>
     <div id="chapter-265">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Accueil de jour des enfants </h1></div>
             </div>
@@ -12525,7 +12525,7 @@
         </div>
     </div>
     <div id="chapter-266">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Soutien aux activités de la jeunesse </h1></div>
             </div>
@@ -12699,7 +12699,7 @@
 </div>
 <div id="chapter-267">
     <div id="chapter-269">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Vie culturelle et création artistique </h1></div>
             </div>
@@ -12818,7 +12818,7 @@
         </div>
     </div>
     <div id="chapter-270">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Patrimoine mobilier et immatériel </h1></div>
             </div>
@@ -12935,7 +12935,7 @@
         </div>
     </div>
     <div id="chapter-271">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Ecoles de musique </h1></div>
             </div>
@@ -13041,7 +13041,7 @@
         </div>
     </div>
     <div id="chapter-268">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Affaires religieuses </h1></div>
             </div>
@@ -13252,7 +13252,7 @@
 </div>
 <div id="chapter-272">
     <div id="chapter-273">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Division prévention de la criminalité </h1></div>
             </div>
@@ -13388,7 +13388,7 @@
         </div>
     </div>
     <div id="chapter-274">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Sentences municipales </h1></div>
             </div>
@@ -13611,7 +13611,7 @@
         </div>
     </div>
     <div id="chapter-275">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Infractions et contraventions commises par des mineurs </h1></div>
             </div>
@@ -13757,7 +13757,7 @@
         </div>
     </div>
     <div id="chapter-276">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Risques phytosanitaires et organismes de quarantaine </h1></div>
             </div>
@@ -13912,7 +13912,7 @@
         </div>
     </div>
     <div id="chapter-277">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Piscines publiques </h1></div>
             </div>
@@ -14058,7 +14058,7 @@
         </div>
     </div>
     <div id="chapter-278">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Plages publiques </h1></div>
             </div>
@@ -14170,7 +14170,7 @@
         </div>
     </div>
     <div id="chapter-279">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Inhumations </h1></div>
             </div>
@@ -14315,7 +14315,7 @@
         </div>
     </div>
     <div id="chapter-280">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Sécurité incendie et éléments naturels </h1></div>
             </div>
@@ -14464,7 +14464,7 @@
         </div>
     </div>
     <div id="chapter-281">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Protection de la population </h1></div>
             </div>
@@ -14606,7 +14606,7 @@
         </div>
     </div>
     <div id="chapter-282">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Protection civile </h1></div>
             </div>
@@ -14763,7 +14763,7 @@
         </div>
     </div>
     <div id="chapter-283">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Manifestations publiques </h1></div>
             </div>
@@ -14923,7 +14923,7 @@
         </div>
     </div>
     <div id="chapter-284">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Niveau sonore et laser lors de manifestations </h1></div>
             </div>
@@ -15079,7 +15079,7 @@
         </div>
     </div>
     <div id="chapter-285">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Administration de l&#039;obligation de servir </h1></div>
             </div>
@@ -15268,7 +15268,7 @@
         </div>
     </div>
     <div id="chapter-286">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Interdiction de fumer </h1></div>
             </div>
@@ -15433,7 +15433,7 @@
 </div>
 <div id="chapter-287">
     <div id="chapter-288">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Participation à la cohésion sociale </h1></div>
             </div>
@@ -15567,7 +15567,7 @@
         </div>
     </div>
     <div id="chapter-289">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Conseil de politique sociale </h1></div>
             </div>
@@ -15879,7 +15879,7 @@
         </div>
     </div>
     <div id="chapter-290">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Prestations sociales (hors revenu d&#039;insertion) </h1></div>
             </div>
@@ -16054,7 +16054,7 @@
         </div>
     </div>
     <div id="chapter-291">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Revenu d&#039;insertion </h1></div>
             </div>
@@ -16213,7 +16213,7 @@
         </div>
     </div>
     <div id="chapter-292">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Jeunes adultes en difficulté </h1></div>
             </div>
@@ -16383,7 +16383,7 @@
         </div>
     </div>
     <div id="chapter-293">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Prévention sociale </h1></div>
             </div>
@@ -16534,7 +16534,7 @@
         </div>
     </div>
     <div id="chapter-294">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Promotion de la santé </h1></div>
             </div>
@@ -16676,7 +16676,7 @@
 </div>
 <div id="chapter-295">
     <div id="chapter-296">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Bureau du conseil </h1></div>
             </div>
@@ -16793,7 +16793,7 @@
         </div>
     </div>
     <div id="chapter-297">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Récusation </h1></div>
             </div>
@@ -16965,7 +16965,7 @@
 </div>
 <div id="chapter-304">
     <div id="chapter-305">
-        <div class="pdf-chapter">
+        <div class="pdf-chapter o-stack">
             <div class="c-pdf-chapter-cover">
                 <div class="c-pdf-chapter-title"><h1> Contact </h1></div>
             </div>
