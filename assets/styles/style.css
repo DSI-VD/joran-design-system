@@ -1,4 +1,4 @@
-/*! Joran v1.5.0 */
+/*! Joran v1.6.0 */
 
 /* Settings */
 
@@ -195,7 +195,7 @@
 
 /* Include Tailwind */
 
-/* ! tailwindcss v2.2.2 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v2.2.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -499,16 +499,6 @@ pre {
 button {
   background-color: transparent;
   background-image: none;
-}
-
-/**
- * Work around a Firefox/IE bug where the transparent `button` background
- * results in a loss of the default `button` focus styles.
- */
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 fieldset {
@@ -1239,6 +1229,18 @@ video {
 
 /* Generic */
 
+/* ======================================================================
+   # _generic.print.css
+   ====================================================================== */
+
+@page {
+  margin: 5mm;
+}
+
+@page :first {
+  margin: 0;
+}
+
 /* Elements */
 
 /*!
@@ -1782,6 +1784,24 @@ body.debug [data-toggle="dropdown"]:not([aria-haspopup])::after {
   }
 
 /* ==========================================================================
+   #GROUPING
+   ========================================================================== */
+
+/**
+ * Grouping
+ *
+ * https://html.spec.whatwg.org/multipage/grouping-content.html
+ */
+
+/* -----------------------------------
+   # Figure
+   ----------------------------------- */
+
+figure {
+  page-break-inside: avoid;
+}
+
+/* ==========================================================================
    #SECTIONS
    ========================================================================== */
 
@@ -1813,6 +1833,39 @@ body {
   height: 100%;
 }
 
+/* -----------------------------------
+ # Headings
+ ----------------------------------- */
+
+@media print {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+}
+
+/* ==========================================================================
+   #TABULAR-DATA
+   =========================================================================
+*/
+
+/**
+ * Tablular data
+ *
+ * https://html.spec.whatwg.org/multipage/tables.html
+ */
+
+/* -----------------------------------
+   # Table
+   ----------------------------------- */
+
+table {
+  page-break-inside: avoid;
+}
+
 /* Objects */
 
 /* ======================================================================
@@ -1834,42 +1887,55 @@ body {
    ====================================================================== */
 
 .o-box {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid
+}
+
+.o-box {
   border-radius: 0.25rem;
+  background-color: rgb(var(--color-raw__primary--100));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  background-color: rgba(var(--color-raw__primary--100), var(--tw-bg-opacity));
 }
 
-@media not print {
+@media print {
 
 .o-box {
-    background-color: rgb(var(--color-raw__primary--100));
+    padding-top: 3rem;
 
-    background-color: rgba(var(--color-raw__primary--100), var(--tw-bg-opacity)) !important
+    padding-bottom: 3rem
 }
   }
 
-@media not print {
-  @media (min-width: 768px) {
-    .o-box {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
+@media (min-width: 768px) {
+  .o-box {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+}
 
-  @media (min-width: 1024px) {
-    .o-box {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
+@media print {
+  .o-box {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+}
 
-  @media (min-width: 1280px) {
-    .o-box {
-      padding-left: 6rem;
-      padding-right: 6rem;
-    }
+@media (min-width: 1024px) {
+  .o-box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .o-box {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -1877,13 +1943,11 @@ body {
  # Variants
  ----------------------------------- */
 
-@media not print {
-  .o-box.o-box--gradient {
-    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-    --tw-gradient-from: rgb(var(--color-raw__primary--100));
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-    --tw-gradient-to: rgb(var(--color-raw__primary--400));
-  }
+.o-box.o-box--gradient {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: rgb(var(--color-raw__primary--100));
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  --tw-gradient-to: rgb(var(--color-raw__primary--400));
 }
 
 /* ======================================================================
@@ -2023,6 +2087,12 @@ body {
   }
 }
 
+@media print {
+  .o-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* -----------------------------------
 # Items
 ----------------------------------- */
@@ -2044,6 +2114,12 @@ body {
 }
 
 @media (min-width: 768px) {
+  .o-grid__item--pushed {
+    grid-column-start: 2;
+  }
+}
+
+@media print {
   .o-grid__item--pushed {
     grid-column-start: 2;
   }
@@ -2984,8 +3060,31 @@ body {
   .o-prose > :last-child {
     margin-bottom: 0;
   }
-    .o-prose a::after {
-      content: " (" attr(href) ")"; /* [1] */
+
+  .o-prose {
+    font-size: 10pt;
+    max-width: 100%;
+    /* a::after {
+      content: " (" attr(href) ")";
+    } */
+  }
+    .o-prose h1 {
+      font-size: 18pt;
+    }
+    .o-prose h2 {
+      font-size: 15pt;
+    }
+    .o-prose h3 {
+      font-size: 13pt;
+    }
+    .o-prose h4 {
+      font-size: 11pt;
+    }
+    .o-prose h5 {
+      font-size: 10pt;
+    }
+    .o-prose h6 {
+      font-size: 10pt;
     }
 }
 
@@ -3021,6 +3120,13 @@ body {
   justify-content: flex-start;
 }
 
+@media print {
+
+.o-stack {
+    --stack-space: 30pt
+}
+  }
+
 .o-stack > * {
   margin-top: 0;
   margin-bottom: 0;
@@ -3041,7 +3147,7 @@ body {
 @media print {
 
 .o-stack--big {
-    --stack-space: 1.5rem
+    --stack-space: 60pt
 }
   }
 
@@ -3062,6 +3168,28 @@ body {
 }
 
 /* Components */
+
+/* ======================================================================
+   # _components.break.css
+   ====================================================================== */
+
+.u-break-avoid {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.u-break-after {
+  page-break-after: always;
+  -moz-column-break-after: always;
+       break-after: always;
+}
+
+.u-break-before {
+  page-break-before: always;
+  -moz-column-break-before: always;
+       break-before: always;
+}
 
 /* ======================================================================
    # _components.alert.css
@@ -3587,6 +3715,12 @@ body {
   --stack-space: 1.4375rem;
 }
 
+@media print {
+  .c-breadcrumb {
+    display: none;
+  }
+}
+
 .c-breadcrumb__list {
   display: flex;
   flex-direction: row;
@@ -3848,6 +3982,12 @@ body {
   line-height: 1.3333;
 }
 
+@media print {
+  .c-carousel__figcaption {
+    font-size: 9pt;
+  }
+}
+
 .c-carousel_heading-text {
   font-size: 1.75rem;
   font-weight: 700;
@@ -3867,7 +4007,7 @@ body {
 @media print {
 
 .c-carousel_heading-text {
-    font-size: 1.5rem;
+    font-size: 15pt;
 }
   }
 
@@ -4017,28 +4157,40 @@ body {
    # _components.content.css
    ====================================================================== */
 
-@media not print {
-
 .c-content {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center
+  display: flex;
+  flex-direction: column
 }
-  }
-
-@media not print {
-
-.c-content .c-content__item {
-    flex: 1 1 0%
-}
-  }
 
 @media (min-width: 768px) {
-    @media not print {
+  .c-content {
+    align-items: center;
+  }
+}
+
+@media print {
+
+.c-content {
+    max-width: 1245px;
+
+    align-items: center;
+}
+  }
+
+.c-content .c-content__item {
+  flex: 1 1 0%;
+}
+
+@media (min-width: 768px) {
+  @media (min-width: 768px) {
+    .c-content .c-content__item {
+      width: 66.666667%;
+    }
+  }
+    @media print {
+
   .c-content .c-content__item {
-      width: 66.666667%
+      width: 66.666667%;
   }
     }
 }
@@ -4055,14 +4207,14 @@ body {
 .c-content__heading-text {
     line-height: 1.1176;
 
-    font-size: 2.125rem;
+    font-size: 2.125rem
 }
   }
 
 @media print {
 
 .c-content__heading-text {
-    font-size: 1.5rem;
+    font-size: 15pt
 }
   }
 
@@ -4070,20 +4222,35 @@ body {
   margin-bottom: 2rem;
 }
 
+@media print {
+
+.c-content__heading-text {
+    margin-bottom: 1rem
+}
+  }
+
 /* -----------------------------------
  # Content heading left
  ----------------------------------- */
 
-@media not print {
-  @media (min-width: 768px) {
-    .c-content--2-col {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-      .c-content--2-col .c-content__heading-text {
-        margin-right: 1.5rem;
-      }
+@media (min-width: 768px) {
+  .c-content--2-col {
+    flex-direction: row;
+    align-items: flex-start;
   }
+    .c-content--2-col .c-content__heading-text {
+      margin-right: 1.5rem;
+    }
+}
+
+@media print {
+  .c-content--2-col {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+    .c-content--2-col .c-content__heading-text {
+      margin-right: 1.5rem;
+    }
 }
 
 /* -----------------------------------
@@ -4110,7 +4277,7 @@ body {
 @media print {
 
 .c-content--intro .c-content__heading-text {
-    font-size: 1.75rem;
+    font-size: 18pt;
 }
   }
 
@@ -4132,6 +4299,12 @@ body {
 .c-figure__caption {
   font-size: 1.125rem;
   line-height: 1.3333;
+}
+
+@media print {
+  .c-figure__caption {
+    font-size: 9pt;
+  }
 }
 
 /* ======================================================================
@@ -4365,7 +4538,7 @@ body {
 @media print {
 
 .c-gallery__heading-text {
-    font-size: 1.5rem;
+    font-size: 15pt;
 }
   }
 
@@ -4422,20 +4595,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media not print {
-
-.c-hero {
-    background-color: rgb(var(--color-raw__primary--900));
-
-    background-size: cover;
-
-    background-position: center
-}
-  }
-
-.c-hero {
+  background-color: rgb(var(--color-raw__primary--900));
+  background-size: cover;
+  background-position: center;
   padding-top: calc(var(--c-hero__nav-height) + var(--c-hero__padding));
   padding-bottom: var(--c-hero__padding);
 }
@@ -4447,36 +4609,19 @@ body {
 }
   }
 
-@media not print {
-
 .c-hero--full {
-    min-height: 100vh
+  min-height: 100vh;
 }
-  }
 
 /***
  * 2. If there's an image, an overlay is applied to darken it
- * 3. Remove background image when printing
  */
 
 .c-hero--with-image {
   position: relative;
 }
 
-@media print {
-
-.c-hero--with-image {
-    background-image: none !important /* [3] */
-}
-  }
-
-@media print {
-  .c-hero--with-image::before {
-    display: none;
-  }
-}
-
-.c-hero--with-image::before { /* [3] */
+.c-hero--with-image::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -4547,18 +4692,13 @@ body {
 @media print {
 
 .c-hero__heading {
-    font-size: 1.75rem;
+    font-size: 18pt;
 }
   }
-
-@media not print {
-  .c-hero__heading {
-    --tw-text-opacity: 1;
-    color: rgba(252, 252, 252, var(--tw-text-opacity));
-  }
-}
 
 .c-hero__heading {
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
   max-width: 25ch;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -4585,19 +4725,21 @@ body {
   font-size: 1.125rem;
   text-transform: uppercase;
   color: rgb(var(--color-raw__primary--900));
-  line-height: 1.3333
+  line-height: 1.3333;
 }
+
+@media print {
+
+.c-hero__caption {
+    font-size: 11pt;
+}
+  }
 
 .c-hero__caption {
   order: -9999;
-  margin-bottom: 1rem
-}
-
-@media not print {
-  .c-hero__caption {
-    --tw-text-opacity: 1;
-    color: rgba(252, 252, 252, var(--tw-text-opacity))
-  }
+  margin-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
 }
 
 /* -----------------------------------
@@ -4627,31 +4769,25 @@ body {
    # _components.highlight.css
    ====================================================================== */
 
-@media not print {
+.c-highlight {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid
+}
 
 .c-highlight {
-    background-color: rgb(var(--color-raw__primary--100));
-
-    padding-top: 6rem;
-
-    padding-bottom: 6rem;
-
-    background-color: rgba(var(--color-raw__primary--100), var(--tw-bg-opacity)) !important
+  background-color: rgb(var(--color-raw__primary--100));
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: rgba(var(--color-raw__primary--100), var(--tw-bg-opacity))
 }
-  }
 
 @media print {
-
-.c-highlight {
-    border-width: 4px;
-
-    border-color: rgb(var(--color-raw__primary--100));
-
-    padding-top: 1rem;
-
-    padding-bottom: 1rem
-}
+  .c-highlight {
+    padding-top: 3rem;
+    padding-bottom: 3rem
   }
+}
 
 /* ======================================================================
    # _components.logo-entity.css
@@ -5167,7 +5303,7 @@ a.c-nav__list-link:hover {
 
 @media (min-width: 1280px) {
   .c-nav__list-link--level-2 {
-    font-weight: 300;
+    font-weight: 400;
     text-transform: none;
     color: rgb(var(--color-raw__primary--100));
     color: rgba(var(--color-raw__primary--100), var(--tw-text-opacity));
@@ -5254,6 +5390,13 @@ a.c-nav__list-link:hover {
   background-color: rgba(252, 252, 252, var(--tw-bg-opacity));
 }
 
+@media print {
+
+.c-page {
+    background-image: none
+}
+  }
+
 .c-page__content {
   display: flex;
   min-height: 100vh;
@@ -5297,6 +5440,12 @@ a.c-nav__list-link:hover {
 .c-pagination-pages__link {
   font-size: 1.125rem;
   line-height: 1.3333;
+}
+
+@media print {
+  .c-pagination-pages__link {
+    font-size: 9pt;
+  }
 }
 
 .c-pagination-pages__link {
@@ -5360,31 +5509,129 @@ a.c-nav__list-link:hover {
   margin-left: auto;
 }
 
+/* ======================================================================
+   # components.pdf-chapter-cover.css
+   ====================================================================== */
+
+.c-pdf-chapter-cover {
+  position: relative;
+  min-height: 270px;
+  background: var(--color__primary--100);
+  page-break-before: always;
+  margin-left: -5mm;
+  margin-right: -5mm;
+  margin-bottom: 1rem;
+}
+
+.c-pdf-chapter-cover img {
+  min-width: 100%;
+}
+
+.c-pdf-chapter-cover__logo-bottom {
+  position: absolute;
+  bottom: 50px;
+  z-index: 99;
+  right: 0;
+}
+
+.c-pdf-chapter-cover__logo-bottom img {
+  float: right;
+}
+
+.c-pdf-chapter-cover__logo-top {
+  position: absolute;
+  z-index: 98;
+  top: 20px;
+}
+
+/* ======================================================================
+   # components.pdf-chapter-title.css
+   ====================================================================== */
+
+.c-pdf-chapter-title {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  background: rgba(var(--color-raw__primary--900), 0.85);
+  color: white;
+  width: 500px;
+  padding: 3rem;
+}
+
+.c-pdf-chapter-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.05;
+}
+
+/* ======================================================================
+   # _components.table-of-content.css
+   ====================================================================== */
+
+.c-table-of-content {
+  page-break-after: always;
+  -moz-column-break-after: always;
+       break-after: always;
+}
+
+/***
+ * 1. Override `.o-prose` counter styles and set an increment
+ *    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+ */
+
+.c-table-of-content__list {
+  counter-reset: section !important; /* [1] */
+}
+
+/***
+ * 1. Override `.o-prose` counter styles
+ */
+
+.c-table-of-content__list-item::before {
+  counter-increment: section !important; /* [1] */
+  content: counters(section, ".") " " !important; /* [1] */
+}
+
+/***
+ * Level 2
+ */
+
+.c-table-of-content__list > .c-table-of-content__list-item .c-table-of-content__list-item {
+  padding-left: 3rem !important;
+}
+
+/***
+ * Level 3
+ */
+
+.c-table-of-content__list > .c-table-of-content__list-item .c-table-of-content__list-item .c-table-of-content__list-item {
+  padding-left: 6rem !important;
+}
+
+/***
+ * FIXME: Add page number
+ */
+
+.c-table-of-content__link::after {
+  content: leader(dotted) " " target-counter(attr(href, url), page) !important;
+}
+
 /* ==========================================================================
    # _components.promo-card.css
    ========================================================================== */
 
 .c-promo-card {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.c-promo-card {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  background-color: rgb(var(--color-raw__primary--900));
 }
-
-@media not print {
-
-.c-promo-card {
-    background-color: rgb(var(--color-raw__primary--900))
-}
-  }
-
-@media print {
-
-.c-promo-card {
-    border-width: 4px;
-
-    border-color: rgb(var(--color-raw__primary--900))
-}
-  }
 
 .c-promo-card__col-left {
   margin-top: 0.25rem;
@@ -5407,21 +5654,10 @@ a.c-nav__list-link:hover {
     max-width: 3rem;
   }
 
-@media not print {
-
 .c-promo-card__col-left svg {
-      --tw-text-opacity: 1;
-
-      color: rgba(252, 252, 252, var(--tw-text-opacity))
+    --tw-text-opacity: 1;
+    color: rgba(252, 252, 252, var(--tw-text-opacity));
   }
-    }
-
-@media print {
-
-.c-promo-card__col-left svg {
-      color: rgb(var(--color-raw__primary--900))
-  }
-    }
 
 .c-promo-card__col-right {
   width: 75%;
@@ -5461,27 +5697,14 @@ a.c-nav__list-link:hover {
 @media print {
 
 .c-promo-card__header {
-    font-size: 1.75rem;
+    font-size: 18pt;
 }
   }
 
-@media not print {
-
-.c-promo-card__header,
-.c-promo-card__content {
-    --tw-text-opacity: 1;
-
-    color: rgba(252, 252, 252, var(--tw-text-opacity))
+.c-promo-card__header, .c-promo-card__content {
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
 }
-  }
-
-@media print {
-
-.c-promo-card__header,
-.c-promo-card__content {
-    color: rgb(var(--color-raw__primary--900))
-}
-  }
 
 /* ==========================================================================
    # _settings.promo-list.css
@@ -5489,23 +5712,15 @@ a.c-nav__list-link:hover {
 
 .c-promo-list {
   border-radius: 0.25rem;
+  background-color: rgb(var(--color-raw__primary--900));
+  --tw-text-opacity: 1;
+  color: rgba(252, 252, 252, var(--tw-text-opacity));
 }
-
-@media not print {
-
-.c-promo-list {
-    background-color: rgb(var(--color-raw__primary--900));
-
-    --tw-text-opacity: 1;
-
-    color: rgba(252, 252, 252, var(--tw-text-opacity))
-}
-  }
 
 .c-promo-list__grid {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 @media (min-width: 768px) {
@@ -5514,8 +5729,15 @@ a.c-nav__list-link:hover {
   }
 }
 
+@media print {
+
+.c-promo-list__grid {
+    flex-direction: row;
+}
+  }
+
 .c-promo-list__grid-item {
-  padding: 1rem;
+  padding: 1rem
 }
 
 @media (min-width: 768px) {
@@ -5523,6 +5745,13 @@ a.c-nav__list-link:hover {
     width: 50%;
   }
 }
+
+@media print {
+
+.c-promo-list__grid-item {
+    width: 50%;
+}
+  }
 
 /* ======================================================================
    # _components.quotes.css
@@ -5539,6 +5768,12 @@ a.c-nav__list-link:hover {
 .c-quote__heading {
   font-size: 1.125rem;
   line-height: 1.3333;
+}
+
+@media print {
+  .c-quote__heading {
+    font-size: 9pt;
+  }
 }
 
 .c-quote__heading {
@@ -5577,7 +5812,7 @@ a.c-nav__list-link:hover {
 @media print {
 
 .c-quote__text {
-    font-size: 1.5rem;
+    font-size: 15pt;
 }
   }
 
@@ -5620,6 +5855,12 @@ a.c-nav__list-link:hover {
 .c-quote__reference {
   font-size: 1.125rem;
   line-height: 1.3333;
+}
+
+@media print {
+  .c-quote__reference {
+    font-size: 9pt;
+  }
 }
 
 .c-quote__reference {
@@ -5815,6 +6056,12 @@ a.c-nav__list-link:hover {
   line-height: 1.3333;
 }
 
+@media print {
+  .c-search-result-item__breadcrumb {
+    font-size: 9pt;
+  }
+}
+
 .c-search-result-item__breadcrumb {
   order: -9999;
   margin-bottom: 0.5rem;
@@ -5858,7 +6105,7 @@ a.c-nav__list-link:hover {
 @media print {
 
 .c-search-result-list__heading {
-    font-size: 1.75rem;
+    font-size: 18pt;
 }
   }
 
@@ -6188,7 +6435,7 @@ a.c-nav__list-link:hover {
 @media print {
 
 .c-slider__heading {
-    font-size: 1.75rem;
+    font-size: 18pt;
 }
   }
 
@@ -6251,6 +6498,12 @@ a.c-nav__list-link:hover {
 .c-slider__sidebar-list-item {
   font-size: 1.125rem;
   line-height: 1.3333;
+}
+
+@media print {
+  .c-slider__sidebar-list-item {
+    font-size: 9pt;
+  }
 }
 
 .c-slider__sidebar-list-item {
@@ -6400,6 +6653,13 @@ a.c-nav__list-link:hover {
   line-height: 1.3;
 }
 
+@media print {
+
+.c-slider__article-heading {
+    font-size: 13pt;
+}
+  }
+
 .c-slider__article-heading {
   flex: 0 1 auto;
   --tw-text-opacity: 1;
@@ -6409,6 +6669,12 @@ a.c-nav__list-link:hover {
 .c-slider__article-date {
   font-size: 1.125rem;
   line-height: 1.3333;
+}
+
+@media print {
+  .c-slider__article-date {
+    font-size: 9pt;
+  }
 }
 
 .c-slider__article-date {
@@ -6472,9 +6738,14 @@ a.c-nav__list-link:hover {
 @media print {
 
 .c-table table {
-    background-color: transparent;
+    font-size: 10pt
+}
+  }
 
-    font-size: 1rem
+@media print {
+
+.c-table table {
+    background-color: transparent
 }
   }
 
@@ -6544,30 +6815,41 @@ a.c-nav__list-link:hover {
   flex-direction: column;
 }
 
-@media not print {
-  @media (min-width: 768px) {
-    .c-testimonial__flex {
-      flex-direction: row;
-    }
-  }
+@media (min-width: 768px) {
+
+.c-testimonial__flex {
+    flex-direction: row
 }
+  }
+
+@media print {
+
+.c-testimonial__flex {
+    flex-direction: row
+}
+  }
 
 /* -----------------------------------
    # Image
    ----------------------------------- */
 
-@media not print {
-  .c-testimonial__facecontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+.c-testimonial__facecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  @media (min-width: 768px) {
-    .c-testimonial__facecontainer {
-      width: 33.333333%;
-      justify-content: flex-start;
-    }
+@media (min-width: 768px) {
+  .c-testimonial__facecontainer {
+    width: 33.333333%;
+    justify-content: flex-start;
+  }
+}
+
+@media print {
+  .c-testimonial__facecontainer {
+    width: 33.333333%;
+    justify-content: center;
   }
 }
 
@@ -6599,41 +6881,48 @@ a.c-nav__list-link:hover {
 @media print {
 
 .c-testimonial__header {
-    font-size: 1.75rem
+    font-size: 18pt
 }
   }
 
 .c-testimonial__header {
+  text-align: center;
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity))
 }
 
-@media not print {
+@media (min-width: 768px) {
   .c-testimonial__header {
-    text-align: center
-  }
-
-  @media (min-width: 768px) {
-    .c-testimonial__header {
-      text-align: left;
-    }
+    text-align: left;
   }
 }
+
+@media print {
+
+.c-testimonial__header {
+    text-align: left;
+}
+  }
 
 /* -----------------------------------
    # Text
    ----------------------------------- */
 
-@media not print {
-  .c-testimonial__textcontainer {
-    text-align: center;
-  }
+.c-testimonial__textcontainer {
+  text-align: center;
+}
 
-  @media (min-width: 768px) {
-    .c-testimonial__textcontainer {
-      width: 66.666667%;
-      text-align: left;
-    }
+@media (min-width: 768px) {
+  .c-testimonial__textcontainer {
+    width: 66.666667%;
+    text-align: left;
+  }
+}
+
+@media print {
+  .c-testimonial__textcontainer {
+    width: 66.666667%;
+    text-align: left;
   }
 }
 
@@ -6645,32 +6934,41 @@ a.c-nav__list-link:hover {
   font-size: 1.125rem;
   text-transform: uppercase;
   color: rgb(var(--color-raw__primary--900));
-  line-height: 1.3333
+  line-height: 1.3333;
 }
 
+@media print {
+
 .c-testimonial__author {
+    font-size: 11pt
+}
+  }
+
+.c-testimonial__author {
+  text-align: center;
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity))
 }
 
-@media not print {
+@media (min-width: 768px) {
   .c-testimonial__author {
-    text-align: center
-  }
-
-  @media (min-width: 768px) {
-    .c-testimonial__author {
-      text-align: left;
-    }
+    text-align: left;
   }
 }
+
+@media print {
+
+.c-testimonial__author {
+    text-align: left;
+}
+  }
 
 /* -----------------------------------
    # Function
    ----------------------------------- */
 
 .c-testimonial__author--function {
-  display: block;
+  display: block
 }
 
 @media (min-width: 768px) {
@@ -6678,6 +6976,13 @@ a.c-nav__list-link:hover {
     display: inline;
   }
 }
+
+@media print {
+
+.c-testimonial__author--function {
+    display: inline;
+}
+  }
 
 .c-testimonial__author--function::before {
   content: "";
@@ -6693,17 +6998,15 @@ a.c-nav__list-link:hover {
    # Button
    ----------------------------------- */
 
-@media not print {
-  .c-testimonial__button {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.c-testimonial__button {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  @media (min-width: 768px) {
-    .c-testimonial__button {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
+@media (min-width: 768px) {
+  .c-testimonial__button {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -6725,6 +7028,13 @@ a.c-nav__list-link:hover {
     --tw-text-opacity: 1;
 
     color: rgba(252, 252, 252, var(--tw-text-opacity))
+}
+  }
+
+@media print {
+
+.c-timeline {
+    display: none
 }
   }
 
@@ -7248,6 +7558,13 @@ https://flickity.metafizzy.co
   color: rgb(var(--color-raw__primary--900));
 }
 
+@media print {
+
+.u-subhead {
+    font-size: 12pt;
+}
+  }
+
 /* -----------------------------------
  # Heanding 1
  ----------------------------------- */
@@ -7272,7 +7589,7 @@ https://flickity.metafizzy.co
 @media print {
 
 .u-h1 {
-    font-size: 1.75rem;
+    font-size: 18pt;
 }
   }
 
@@ -7299,7 +7616,7 @@ https://flickity.metafizzy.co
 @media print {
 
 .u-h2 {
-    font-size: 1.5rem;
+    font-size: 15pt;
 }
   }
 
@@ -7315,6 +7632,13 @@ https://flickity.metafizzy.co
   line-height: 1.3;
 }
 
+@media print {
+
+.u-h3 {
+    font-size: 13pt;
+}
+  }
+
 /* -----------------------------------
  # Heanding 4
  ----------------------------------- */
@@ -7326,6 +7650,13 @@ https://flickity.metafizzy.co
   line-height: 1.3333;
 }
 
+@media print {
+
+.u-h4 {
+    font-size: 11pt;
+}
+  }
+
 /* -----------------------------------
  # Heanding 5
  ----------------------------------- */
@@ -7334,6 +7665,13 @@ https://flickity.metafizzy.co
   font-size: 1.125rem;
   color: rgb(var(--color-raw__primary--900));
 }
+
+@media print {
+
+.u-h5 {
+    font-size: 10pt;
+}
+  }
 
 /* -----------------------------------
  # Heanding 6
@@ -7344,6 +7682,13 @@ https://flickity.metafizzy.co
   color: rgb(var(--color-raw__primary--900));
 }
 
+@media print {
+
+.u-h6 {
+    font-size: 10pt;
+}
+  }
+
 /* -----------------------------------
  # Caption
  ----------------------------------- */
@@ -7351,6 +7696,12 @@ https://flickity.metafizzy.co
 .u-caption {
   font-size: 1.125rem;
   line-height: 1.3333;
+}
+
+@media print {
+  .u-caption {
+    font-size: 9pt;
+  }
 }
 
 /* -----------------------------------
@@ -7521,6 +7872,10 @@ https://flickity.metafizzy.co
 
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .sticky {

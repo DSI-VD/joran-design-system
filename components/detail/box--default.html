@@ -238,43 +238,50 @@
    ====================================================================== */</span>
 
 <span class="hljs-selector-class">.o-box</span> {
+  <span class="hljs-keyword">@extend</span> .u-break-avoid;
+
   <span class="hljs-keyword">@apply</span>
     rounded
 
     py-<span class="hljs-number">24</span>
     px-<span class="hljs-number">2</span>
+    bg-primary-<span class="hljs-number">100</span>
   ;
 
-  <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
+  <span class="hljs-keyword">@screen</span> print {
+    <span class="hljs-keyword">@apply</span> py-<span class="hljs-number">12</span>;
+  }
+}
+
+<span class="hljs-keyword">@screen</span> md {
+  <span class="hljs-selector-class">.o-box</span> {
     <span class="hljs-keyword">@apply</span>
-      bg-primary-<span class="hljs-number">100</span>
+      px-<span class="hljs-number">4</span>
     ;
   }
 }
 
-<span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
-  <span class="hljs-keyword">@screen</span> md {
-    <span class="hljs-selector-class">.o-box</span> {
-      <span class="hljs-keyword">@apply</span>
-        px-<span class="hljs-number">4</span>
-      ;
-    }
+<span class="hljs-keyword">@screen</span> print {
+  <span class="hljs-selector-class">.o-box</span> {
+    <span class="hljs-keyword">@apply</span>
+      px-<span class="hljs-number">4</span>
+    ;
   }
+}
 
-  <span class="hljs-keyword">@screen</span> lg {
-    <span class="hljs-selector-class">.o-box</span> {
-      <span class="hljs-keyword">@apply</span>
-        px-<span class="hljs-number">12</span>
-      ;
-    }
+<span class="hljs-keyword">@screen</span> lg {
+  <span class="hljs-selector-class">.o-box</span> {
+    <span class="hljs-keyword">@apply</span>
+      px-<span class="hljs-number">12</span>
+    ;
   }
+}
 
-  <span class="hljs-keyword">@screen</span> xl {
-    <span class="hljs-selector-class">.o-box</span> {
-      <span class="hljs-keyword">@apply</span>
-        px-<span class="hljs-number">24</span>
-      ;
-    }
+<span class="hljs-keyword">@screen</span> xl {
+  <span class="hljs-selector-class">.o-box</span> {
+    <span class="hljs-keyword">@apply</span>
+      px-<span class="hljs-number">24</span>
+    ;
   }
 }
 
@@ -282,14 +289,12 @@
  # Variants
  ----------------------------------- */</span>
 
-<span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> print {
-  <span class="hljs-selector-class">.o-box</span><span class="hljs-selector-class">.o-box--gradient</span> {
-    <span class="hljs-keyword">@apply</span>
-      bg-gradient-to-b
-      from-primary-<span class="hljs-number">100</span>
-      to-primary-<span class="hljs-number">400</span>
-      ;
-  }
+<span class="hljs-selector-class">.o-box</span><span class="hljs-selector-class">.o-box--gradient</span> {
+  <span class="hljs-keyword">@apply</span>
+    bg-gradient-to-b
+    from-primary-<span class="hljs-number">100</span>
+    to-primary-<span class="hljs-number">400</span>
+    ;
 }
 </pre>
                             </code>
@@ -307,7 +312,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">767 Bytes</span>
+                    <span class="Meta-value">754 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -533,6 +538,32 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="background.html" data-role="tree-link" data-pjax data-handle="background">
                 <span>Background</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="break.html" data-role="tree-link" data-pjax data-handle="break">
+                <span>Break</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2106,6 +2137,104 @@
         
             
             
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-pdf">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pdf-items">
+                    Pdf
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pdf-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="pdf-chapter-cover.html" data-role="tree-link" data-pjax data-handle="pdf-chapter-cover">
+                <span>Pdf Chapter Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="pdf-chapter-title.html" data-role="tree-link" data-pjax data-handle="pdf-chapter-title">
+                <span>Pdf Chapter Title</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="table-of-content.html" data-role="tree-link" data-pjax data-handle="table-of-content">
+                <span>Table Of Content</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
             <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-promo">
                 <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-promo-items">
                     Promo
@@ -2552,6 +2681,52 @@
             
         
     
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-print">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-print-items">
+                    Print
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-print-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="standard-print.html" data-role="tree-link" data-pjax data-handle="standard-print">
+                <span>Standard Print</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
 
     </ul>
 </div>
@@ -2613,7 +2788,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.5.0
+                            1.6.0
                         
                     </dd>
                 </div>
@@ -2622,8 +2797,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-06-23T13:15:48.304Z">
-                                23.06.2021, 15:15:48
+                            <time datetime="2021-06-29T12:38:11.612Z">
+                                29.06.2021, 14:38:11
                             </time>
                         
                     </dd>
@@ -2784,6 +2959,8 @@
 </div>
 
             </div>
+        
+    
         
     
         
@@ -4724,6 +4901,12 @@
         
     
         
+    
+        
+    
+        
+    
+        
             
             <div class="Navigation-group" data-role="variant-group" data-component="promo-card">
                 
@@ -5291,6 +5474,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

@@ -3,43 +3,50 @@
    ====================================================================== */
 
 .o-box {
+  @extend .u-break-avoid;
+
   @apply
     rounded
 
     py-24
     px-2
+    bg-primary-100
   ;
 
-  @media not print {
+  @screen print {
+    @apply py-12;
+  }
+}
+
+@screen md {
+  .o-box {
     @apply
-      bg-primary-100
+      px-4
     ;
   }
 }
 
-@media not print {
-  @screen md {
-    .o-box {
-      @apply
-        px-4
-      ;
-    }
+@screen print {
+  .o-box {
+    @apply
+      px-4
+    ;
   }
+}
 
-  @screen lg {
-    .o-box {
-      @apply
-        px-12
-      ;
-    }
+@screen lg {
+  .o-box {
+    @apply
+      px-12
+    ;
   }
+}
 
-  @screen xl {
-    .o-box {
-      @apply
-        px-24
-      ;
-    }
+@screen xl {
+  .o-box {
+    @apply
+      px-24
+    ;
   }
 }
 
@@ -47,12 +54,10 @@
  # Variants
  ----------------------------------- */
 
-@media not print {
-  .o-box.o-box--gradient {
-    @apply
-      bg-gradient-to-b
-      from-primary-100
-      to-primary-400
-      ;
-  }
+.o-box.o-box--gradient {
+  @apply
+    bg-gradient-to-b
+    from-primary-100
+    to-primary-400
+    ;
 }

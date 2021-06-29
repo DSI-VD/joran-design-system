@@ -4,6 +4,8 @@
 
 .c-breadcrumb {
   --stack-space: 1.4375rem;
+
+  @extend .u-print-hidden;
 }
 
 .c-breadcrumb__list {

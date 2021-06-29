@@ -22,9 +22,11 @@
     ;
 
   @media print {
+    font-size: 10pt;
+
     @apply
-      text-xs
-      bg-transparent;
+      bg-transparent
+    ;
   }
 }
 
