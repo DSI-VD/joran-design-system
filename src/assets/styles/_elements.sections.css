@@ -44,6 +44,6 @@ body {
   h4,
   h5,
   h6 {
-    page-break-after: avoid;
+    @extend .u-break-after-avoid;
   }
 }
