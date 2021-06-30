@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fix page page break inside paragraphe, headings, liste elements and other HTML
+- Fix page break inside paragraphe, headings, liste elements and other HTML
   elements
 
 ## [1.6.2] - 2021-06-30
