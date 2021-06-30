@@ -2,17 +2,22 @@
    # _components.break.css
    ====================================================================== */
 
-.u-break-avoid {
+.u-break-inside-avoid {
   page-break-inside: avoid;
   break-inside: avoid;
 }
 
+.u-break-after-avoid {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
 .u-break-after {
   page-break-after: always;
-  break-after: always;
+  break-after: page;
 }
 
 .u-break-before {
   page-break-before: always;
-  break-before: always;
+  break-before: page;
 }
