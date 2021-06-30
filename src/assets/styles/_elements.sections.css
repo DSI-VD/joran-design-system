@@ -44,4 +44,5 @@ h4,
 h5,
 h6 {
   @extend .u-break-after-avoid;
+  @extend .u-break-inside-avoid;
 }
