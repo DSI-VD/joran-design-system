@@ -1,4 +1,4 @@
-/*! Joran v1.6.0 */
+/*! Joran v1.6.1 */
 
 /* Settings */
 
@@ -1837,14 +1837,14 @@ body {
  # Headings
  ----------------------------------- */
 
-@media print {
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    page-break-after: avoid;
-  }
+h2,
+h3,
+h4,
+h5,
+h6 {
+  page-break-after: avoid;
+  -moz-column-break-after: avoid;
+       break-after: avoid;
 }
 
 /* ==========================================================================
@@ -2040,6 +2040,13 @@ table {
   }
 }
 
+@media print {
+  .o-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 /* -----------------------------------
  # Container large
  ----------------------------------- */
@@ -2069,6 +2076,13 @@ table {
   .o-container.o-container--large {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+@media print {
+  .o-container.o-container--large {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -3173,22 +3187,28 @@ table {
    # _components.break.css
    ====================================================================== */
 
-.u-break-avoid {
+.u-break-inside-avoid {
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
 
+.u-break-after-avoid {
+  page-break-after: avoid;
+  -moz-column-break-after: avoid;
+       break-after: avoid;
+}
+
 .u-break-after {
   page-break-after: always;
-  -moz-column-break-after: always;
-       break-after: always;
+  -moz-column-break-after: page;
+       break-after: page;
 }
 
 .u-break-before {
   page-break-before: always;
-  -moz-column-break-before: always;
-       break-before: always;
+  -moz-column-break-before: page;
+       break-before: page;
 }
 
 /* ======================================================================
@@ -4159,7 +4179,7 @@ table {
 
 .c-content {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -4169,30 +4189,25 @@ table {
 }
 
 @media print {
-
-.c-content {
-    max-width: 1245px;
-
+  .c-content {
     align-items: center;
-}
   }
+}
 
 .c-content .c-content__item {
   flex: 1 1 0%;
 }
 
 @media (min-width: 768px) {
-  @media (min-width: 768px) {
-    .c-content .c-content__item {
-      width: 66.666667%;
-    }
-  }
-    @media print {
-
   .c-content .c-content__item {
-      width: 66.666667%;
+    width: 66.666667%;
   }
-    }
+}
+
+@media print {
+  .c-content .c-content__item {
+    width: 66.666667%;
+  }
 }
 
 .c-content__heading-text {
@@ -4207,14 +4222,14 @@ table {
 .c-content__heading-text {
     line-height: 1.1176;
 
-    font-size: 2.125rem
+    font-size: 2.125rem;
 }
   }
 
 @media print {
 
 .c-content__heading-text {
-    font-size: 15pt
+    font-size: 15pt;
 }
   }
 
@@ -4223,11 +4238,10 @@ table {
 }
 
 @media print {
-
-.c-content__heading-text {
-    margin-bottom: 1rem
-}
+  .c-content__heading-text {
+    margin-bottom: 1rem;
   }
+}
 
 /* -----------------------------------
  # Content heading left
@@ -5570,8 +5584,8 @@ a.c-nav__list-link:hover {
 
 .c-table-of-content {
   page-break-after: always;
-  -moz-column-break-after: always;
-       break-after: always;
+  -moz-column-break-after: page;
+       break-after: page;
 }
 
 /***

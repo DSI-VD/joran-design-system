@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .c-promo-card {
-  @extend .u-break-avoid;
+  @extend .u-break-inside-avoid;
 
   @apply
     flex
