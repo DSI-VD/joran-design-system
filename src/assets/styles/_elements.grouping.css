@@ -16,5 +16,5 @@
    ----------------------------------- */
 
 figure {
-  page-break-inside: avoid;
+  @extend .u-break-inside-avoid;
 }

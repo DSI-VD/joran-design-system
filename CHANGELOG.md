@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.2] - 2021-06-30
+
+### Fixed
+
+- Fix _table_ and _figure_ werer using old CSS properties for avoiding page
+  break
+
 ## [1.6.1] - 2021-06-30
 
 ### Fixed
@@ -662,7 +669,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setup Fractal
 - Basic styles
 
-[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.6.1...HEAD
+[unreleased]: https://github.com/DSI-VD/joran-design-system/compare/v1.6.2...HEAD
+[1.6.1]: https://github.com/DSI-VD/joran-design-system/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/DSI-VD/joran-design-system/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.5.0...v1.6.0
 [1.5.0]: https://github.com/DSI-VD/joran-design-system/compare/v1.4.0...v1.5.0
