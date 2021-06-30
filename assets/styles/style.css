@@ -1,4 +1,4 @@
-/*! Joran v1.6.1 */
+/*! Joran v1.6.2 */
 
 /* Settings */
 
@@ -1799,6 +1799,8 @@ body.debug [data-toggle="dropdown"]:not([aria-haspopup])::after {
 
 figure {
   page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 
 /* ==========================================================================
@@ -1864,6 +1866,8 @@ h6 {
 
 table {
   page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 
 /* Objects */
