@@ -7,12 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix page page break inside paragraphe, headings, liste elements and other HTML
+  elements
+
 ## [1.6.2] - 2021-06-30
 
 ### Fixed
 
-- Fix _table_ and _figure_ werer using old CSS properties for avoiding page
-  break
+- Fix _table_ and _figure_ were using old CSS properties for avoiding page break
 
 ## [1.6.1] - 2021-06-30
 
