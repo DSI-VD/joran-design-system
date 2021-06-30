@@ -6,23 +6,9 @@
   @apply
     grid
     gap-4
+    md:grid-cols-2
+    print:grid-cols-2
    ;
-}
-
-@screen md {
-  .o-grid {
-    @apply
-      grid-cols-2
-      ;
-  }
-}
-
-@screen print {
-  .o-grid {
-    @apply
-      grid-cols-2
-      ;
-  }
 }
 
 /* -----------------------------------
@@ -47,18 +33,9 @@
   }
 }
 
-@screen md {
-  .o-grid__item--pushed {
-    @apply
-      col-start-2
-      ;
-  }
-}
-
-@screen print {
-  .o-grid__item--pushed {
-    @apply
-      col-start-2
-      ;
-  }
+.o-grid__item--pushed {
+  @apply
+    md:col-start-2
+    print:col-start-2
+  ;
 }

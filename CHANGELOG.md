@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix print media queries recognized by Chrome in _container_, _grid_ and
+  _content_ resulting in awkward rendering when printing
+
 ## [1.6.0] - 2021-06-29
 
 ### Added
