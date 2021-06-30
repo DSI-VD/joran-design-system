@@ -13,3 +13,28 @@
 p {
   @extend .u-break-inside-avoid;
 }
+
+/* -----------------------------------
+ # Quotes
+ ----------------------------------- */
+
+blockquote {
+  @extend .u-break-inside-avoid;
+}
+
+/* -----------------------------------
+ # List
+ ----------------------------------- */
+
+li {
+  @extend .u-break-inside-avoid;
+}
+
+
+/* -----------------------------------
+ # Definition list
+ ----------------------------------- */
+
+dt {
+  @extend .u-break-after-avoid;
+}
