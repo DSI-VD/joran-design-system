@@ -38,3 +38,11 @@ li {
 dt {
   @extend .u-break-after-avoid;
 }
+
+/* -----------------------------------
+ # Figures
+ ----------------------------------- */
+
+figure {
+  @extend .u-break-inside-avoid;
+}
