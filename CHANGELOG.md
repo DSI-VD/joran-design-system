@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fix page break inside paragraphe, headings, liste elements and other HTML
   elements
+- Hide `.c-testimonial__button` on print
+- Remove negative margin from `.c-pdf-chapter-cover`
 
 ## [1.6.2] - 2021-06-30
 
