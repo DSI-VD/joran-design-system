@@ -5,7 +5,7 @@
 /**
  * Sections
  *
- * https://w3c.github.io/html/sections.html
+ * https://html.spec.whatwg.org/multipage/sections.html
  *
  * 1. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
@@ -44,4 +44,5 @@ h4,
 h5,
 h6 {
   @extend .u-break-after-avoid;
+  @extend .u-break-inside-avoid;
 }
