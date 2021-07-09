@@ -154,6 +154,8 @@
 
 .c-testimonial__button {
   @apply mx-auto;
+
+  @extend .u-print-hidden;
 }
 
 @screen md {

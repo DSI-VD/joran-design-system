@@ -1,4 +1,4 @@
-/*! Joran v1.6.2 */
+/*! Joran v1.6.3 */
 
 /* Settings */
 
@@ -1793,9 +1793,49 @@ body.debug [data-toggle="dropdown"]:not([aria-haspopup])::after {
  * https://html.spec.whatwg.org/multipage/grouping-content.html
  */
 
+/* -------------------------------------
+   # P
+   ------------------------------------- */
+
+p {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
 /* -----------------------------------
-   # Figure
-   ----------------------------------- */
+ # Quotes
+ ----------------------------------- */
+
+blockquote {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+/* -----------------------------------
+ # List
+ ----------------------------------- */
+
+li {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+/* -----------------------------------
+ # Definition list
+ ----------------------------------- */
+
+dt {
+  page-break-after: avoid;
+  -moz-column-break-after: avoid;
+       break-after: avoid;
+}
+
+/* -----------------------------------
+ # Figures
+ ----------------------------------- */
 
 figure {
   page-break-inside: avoid;
@@ -1810,7 +1850,7 @@ figure {
 /**
  * Sections
  *
- * https://w3c.github.io/html/sections.html
+ * https://html.spec.whatwg.org/multipage/sections.html
  *
  * 1. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
@@ -1849,13 +1889,21 @@ h6 {
        break-after: avoid;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .u-break-inside-avoid;
+}
+
 /* ==========================================================================
    #TABULAR-DATA
    =========================================================================
 */
 
 /**
- * Tablular data
+ * Tabular data
  *
  * https://html.spec.whatwg.org/multipage/tables.html
  */
@@ -1865,6 +1913,26 @@ h6 {
    ----------------------------------- */
 
 table {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+/* ==========================================================================
+   #TEXT
+   ========================================================================== */
+
+/**
+ * Text-level semantics
+ *
+ * https://html.spec.whatwg.org/multipage/text-level-semantics.html
+ */
+
+/* -------------------------------------
+   # a
+   ------------------------------------- */
+
+a {
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
@@ -5536,8 +5604,6 @@ a.c-nav__list-link:hover {
   min-height: 270px;
   background: var(--color__primary--100);
   page-break-before: always;
-  margin-left: -5mm;
-  margin-right: -5mm;
   margin-bottom: 1rem;
 }
 
@@ -7019,6 +7085,12 @@ a.c-nav__list-link:hover {
 .c-testimonial__button {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media print {
+  .c-testimonial__button {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {

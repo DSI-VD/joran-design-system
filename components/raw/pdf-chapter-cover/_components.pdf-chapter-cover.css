@@ -7,8 +7,6 @@
   min-height: 270px;
   background: var(--color__primary--100);
   page-break-before: always;
-  margin-left: -5mm;
-  margin-right: -5mm;
   margin-bottom: 1rem;
 }
 
