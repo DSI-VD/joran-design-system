@@ -11,6 +11,8 @@
 
   @screen print {
     --stack-space: 30pt;
+
+    display: block;
   }
 }
 
