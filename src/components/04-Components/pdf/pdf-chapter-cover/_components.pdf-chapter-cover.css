@@ -7,7 +7,7 @@
   background: var(--color__primary--100);
   page-break-before: always;
   margin-bottom: 1rem;
-  padding: 60px;
+  min-height: 300px;
 }
 
 .c-pdf-chapter-cover img {

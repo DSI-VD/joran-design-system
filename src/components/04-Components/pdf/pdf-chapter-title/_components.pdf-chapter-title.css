@@ -7,6 +7,9 @@
   color: white;
   width: 500px;
   padding: 3rem;
+  position: absolute;
+  left: 60px;
+  top: 60px;
 }
 
 .c-pdf-chapter-title h1 {
