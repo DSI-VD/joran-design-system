@@ -3,9 +3,6 @@
    ====================================================================== */
 
 .c-pdf-chapter-title {
-  position: absolute;
-  top: 60px;
-  left: 60px;
   background: rgba(var(--color-raw__primary--900), 0.85);
   color: white;
   width: 500px;
@@ -16,4 +13,9 @@
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.05;
+}
+
+.c-pdf-chapter-title .c-pdf-chapter-counter {
+  font-weight: bold;
+  font-size: 18px;
 }

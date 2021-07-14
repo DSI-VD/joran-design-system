@@ -6,12 +6,14 @@
   <ol class="c-table-of-content__list">
     {% for item in items %}
     <li class="c-table-of-content__list-item">
+      <span class="c-table-of-content__counter">4</span>
       <a class="c-table-of-content__link" href="#{{ item.url }}"
         >{{ item.name }}</a>
       {% if item.items %}
       <ol class="c-table-of-content__list">
         {% for item in item.items %}
         <li class="c-table-of-content__list-item">
+          <span class="c-table-of-content__counter">4.2</span>
           <a class="c-table-of-content__link" href="#{{ item.url }}"
             >{{ item.name }}</a
           >

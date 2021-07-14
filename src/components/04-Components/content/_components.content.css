@@ -8,7 +8,7 @@
     flex-col
     md:items-center
     print:block
-    print:w-10/12
+    print:w-3/4
   ;
 }
 
@@ -16,7 +16,7 @@
   @apply
     flex-1
     md:w-2/3
-    print:w-2/3
+    print:w-full
   ;
 }
 

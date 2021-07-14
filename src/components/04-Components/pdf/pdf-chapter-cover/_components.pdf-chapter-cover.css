@@ -4,10 +4,10 @@
 
 .c-pdf-chapter-cover {
   position: relative;
-  min-height: 270px;
   background: var(--color__primary--100);
   page-break-before: always;
   margin-bottom: 1rem;
+  padding: 60px;
 }
 
 .c-pdf-chapter-cover img {
