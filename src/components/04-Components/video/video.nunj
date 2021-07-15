@@ -1,1 +1,1 @@
-<div class="o-container">{% render '@ratio--16x9' %}</div>
+<div class="o-container u-print-hidden">{% render '@ratio--16x9' %}</div>

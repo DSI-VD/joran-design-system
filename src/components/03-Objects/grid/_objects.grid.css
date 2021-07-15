@@ -9,6 +9,8 @@
     md:grid-cols-2
     print:grid-cols-2
    ;
+
+  @extend .u-break-inside-avoid;
 }
 
 /* -----------------------------------
