@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.6.4] - 2021-07-15
+
+### Fixed
+
+- Improved print rendering
+
 ## [1.6.3] - 2021-07-09
 
 ### Fixed
@@ -15,7 +21,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   elements
 - Hide `.c-testimonial__button` on print
 - Remove negative margin from `.c-pdf-chapter-cover`
-- Improved print rendering
 
 ## [1.6.2] - 2021-06-30
 
