@@ -1,4 +1,4 @@
-/*! Joran v1.6.3 */
+/*! Joran v1.6.4 */
 
 /* Settings */
 
@@ -1234,10 +1234,6 @@ video {
    ====================================================================== */
 
 @page {
-  margin: 5mm;
-}
-
-@page :first {
   margin: 0;
 }
 
@@ -2177,6 +2173,12 @@ a {
   .o-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+.o-grid {
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 
 /* -----------------------------------
@@ -3209,7 +3211,9 @@ a {
 @media print {
 
 .o-stack {
-    --stack-space: 30pt
+    --stack-space: 30pt;
+
+    display: block
 }
   }
 
@@ -4262,7 +4266,8 @@ a {
 
 @media print {
   .c-content {
-    align-items: center;
+    display: block;
+    width: 75%;
   }
 }
 
@@ -4278,7 +4283,7 @@ a {
 
 @media print {
   .c-content .c-content__item {
-    width: 66.666667%;
+    width: 100%;
   }
 }
 
@@ -5601,10 +5606,10 @@ a.c-nav__list-link:hover {
 
 .c-pdf-chapter-cover {
   position: relative;
-  min-height: 270px;
   background: var(--color__primary--100);
   page-break-before: always;
   margin-bottom: 1rem;
+  min-height: 300px;
 }
 
 .c-pdf-chapter-cover img {
@@ -5633,19 +5638,24 @@ a.c-nav__list-link:hover {
    ====================================================================== */
 
 .c-pdf-chapter-title {
-  position: absolute;
-  top: 60px;
-  left: 60px;
   background: rgba(var(--color-raw__primary--900), 0.85);
   color: white;
   width: 500px;
   padding: 3rem;
+  position: absolute;
+  left: 60px;
+  top: 60px;
 }
 
 .c-pdf-chapter-title h1 {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.05;
+}
+
+.c-pdf-chapter-title .c-pdf-chapter-counter {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* ======================================================================
@@ -5658,22 +5668,16 @@ a.c-nav__list-link:hover {
        break-after: page;
 }
 
-/***
- * 1. Override `.o-prose` counter styles and set an increment
- *    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
- */
-
-.c-table-of-content__list {
-  counter-reset: section !important; /* [1] */
+.c-table-of-content__list-item::before {
+  content: '' !important;
 }
 
-/***
- * 1. Override `.o-prose` counter styles
- */
-
-.c-table-of-content__list-item::before {
-  counter-increment: section !important; /* [1] */
-  content: counters(section, ".") " " !important; /* [1] */
+.c-table-of-content__list-item .c-table-of-content__counter {
+  position: absolute;
+  font-weight: 400;
+  color: #6b7280;
+  left: 0;
+  margin-top: 0 !important;
 }
 
 /***

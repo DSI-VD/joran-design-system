@@ -6,22 +6,16 @@
   @extend .u-break-after;
 }
 
-/***
- * 1. Override `.o-prose` counter styles and set an increment
- *    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
- */
-
-.c-table-of-content__list {
-  counter-reset: section !important; /* [1] */
+.c-table-of-content__list-item::before {
+  content: '' !important;
 }
 
-/***
- * 1. Override `.o-prose` counter styles
- */
-
-.c-table-of-content__list-item::before {
-  counter-increment: section !important; /* [1] */
-  content: counters(section, ".") " " !important; /* [1] */
+.c-table-of-content__list-item .c-table-of-content__counter {
+  position: absolute;
+  font-weight: 400;
+  color: #6b7280;
+  left: 0;
+  margin-top: 0 !important;
 }
 
 /***
