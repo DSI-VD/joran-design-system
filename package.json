@@ -49,7 +49,7 @@
     "flickity": "^2.2.2",
     "gh-pages": "^3.2.3",
     "imagemin": "^8.0.1",
-    "imagemin-cli": "^6.0.0",
+    "imagemin-cli": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
     "masonry-layout": "^4.2.2",
