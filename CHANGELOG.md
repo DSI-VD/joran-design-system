@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Upgrade chockidar to v3.0.0
 - Upgrade Roboto font files
 - Upgrade svgo to minify SVG
 - Upgrade autoprefixer
