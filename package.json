@@ -37,8 +37,8 @@
   },
   "devDependencies": {
     "@fontsource/roboto": "^4.4.5",
-    "@frctl/fractal": "^1.5.8",
-    "@frctl/nunjucks": "^2.0.11",
+    "@frctl/fractal": "^1.5.11",
+    "@frctl/nunjucks": "^2.0.13",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
@@ -48,7 +48,7 @@
     "faker": "^5.5.3",
     "flickity": "^2.2.2",
     "gh-pages": "^3.2.3",
-    "imagemin": "^8.0.0",
+    "imagemin": "^8.0.1",
     "imagemin-cli": "^6.0.0",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
@@ -56,17 +56,17 @@
     "npm-run-all": "^4.1.5",
     "nunjucks-date": "^1.5.0",
     "nunjucks-date-filter": "^0.1.1",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "postcss-easy-import": "^3.0.0",
     "postcss-extend-rule": "^3.0.0",
     "postcss-header": "^3.0.1",
-    "postcss-nested": "^5.0.5",
+    "postcss-nested": "^5.0.6",
     "rimraf": "^3.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "svgo": "^2.3.1",
-    "tailwindcss": "^2.2.4",
-    "xo": "^0.40.3"
+    "tailwindcss": "^2.2.7",
+    "xo": "^0.44.0"
   }
 }
