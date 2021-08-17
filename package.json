@@ -36,13 +36,13 @@
     "watch:vectors": "chokidar \"src/assets/vectors/**/*.*\" -c \"npm run build:vectors\" --initial"
   },
   "devDependencies": {
-    "@fontsource/roboto": "^4.4.5",
+    "@fontsource/roboto": "^4.5.0",
     "@frctl/fractal": "^1.5.11",
     "@frctl/nunjucks": "^2.0.13",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.3.1",
     "chokidar-cli": "^2.1.0",
     "copyfiles": "^2.4.1",
     "faker": "^5.5.3",
@@ -65,7 +65,7 @@
     "rimraf": "^3.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "svgo": "^2.3.1",
+    "svgo": "^2.4.0",
     "tailwindcss": "^2.2.7",
     "xo": "^0.44.0"
   }
