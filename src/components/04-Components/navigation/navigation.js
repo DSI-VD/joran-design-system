@@ -1,3 +1,4 @@
+// Navigation mobile
 class MobileNavigation {
   constructor(nav) {
     this.levelIndicator = document.querySelector('.c-nav__level-indicator');
@@ -28,7 +29,7 @@ class MobileNavigation {
     this.navToggle.addEventListener('click', event => this.toggle(event));
   }
 
-  // toggle icon style
+  // Toggle icon style
   toggle(event) {
     if (this.navOpen) {
       document.documentElement.style.overflow = 'auto';
@@ -99,9 +100,11 @@ class MobileNavigation {
   }
 }
 
+// Navigation desktop
 class DesktopNavigation {
   constructor(nav) {
     this.nav = nav;
+
     // Open menu tab
     for (const item of document.querySelectorAll('.c-nav__list:not(.c-nav__list--level) > .c-nav__list-item > .c-nav__list-link--w-children')) {
       item.addEventListener('click', event => {
