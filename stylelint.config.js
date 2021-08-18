@@ -15,6 +15,7 @@ module.exports = {
       },
     ],
     'declaration-block-trailing-semicolon': null,
+    'max-empty-lines': 5,
     'no-descending-specificity': null,
   },
   ignoreFiles: ['src/assets/styles/_elements.a11y.css'],
