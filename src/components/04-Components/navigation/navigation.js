@@ -29,19 +29,19 @@ class MobileNavigation {
   }
 
   toggle(event) {
-    if (!this.navOpen) {
-      document.documentElement.style.overflow = 'hidden';
-      document.body.classList.add('js-b-nav--open');
-      this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
-      this.nav.classList.add('js-c-nav--open');
-      this.navOpen = true;
-    } else {
+    if (this.navOpen) {
       document.documentElement.style.overflow = 'auto';
       document.body.classList.remove('js-b-nav--open');
       this.navToggle.querySelector('.c-menu-icon').classList.remove('js-c-menu-icon--open');
       this.nav.classList.remove('js-c-nav--open');
       this.closeAllTabs(event);
       this.navOpen = false;
+    } else {
+      document.documentElement.style.overflow = 'hidden';
+      document.body.classList.add('js-b-nav--open');
+      this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
+      this.nav.classList.add('js-c-nav--open');
+      this.navOpen = true;
     }
 
     this.navToggle.setAttribute('aria-expanded', this.navOpen);
