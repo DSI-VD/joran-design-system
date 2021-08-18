@@ -1,16 +1,14 @@
-'use strict';
-
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = (module.exports = require('@frctl/fractal').create());
 
 // Nunjucks env
-const nunj = require("@frctl/nunjucks")({
+const nunj = require('@frctl/nunjucks')({
   filters: {
-    date: require('nunjucks-date-filter')
-  }
+    date: require('nunjucks-date-filter'),
+  },
 });
 
-// require the Mandelbrot theme module
+// Require the Mandelbrot theme module
 const mandelbrot = require('@frctl/mandelbrot');
 
 // Create a new instance with custom config options
@@ -18,21 +16,19 @@ const myCustomisedTheme = mandelbrot({
   information: [
     {
       label: 'Version',
-      value: require('./package.json').version
+      value: require('./package.json').version,
     },
     {
       label: 'Built on',
       value: new Date(),
       type: 'time', // Outputs a <time /> HTML tag
-      format: value => {
-        return value.toLocaleString('CH-fr');
-      }
+      format: value => value.toLocaleString('CH-fr'),
     },
     {
       label: 'Changelog',
-      value: '<a href="https://github.com/DSI-VD/joran-design-system/blob/master/CHANGELOG.md">Voir les changements</a>'
-    }
-  ]
+      value: '<a href="https://github.com/DSI-VD/joran-design-system/blob/master/CHANGELOG.md">Voir les changements</a>',
+    },
+  ],
   // Any other theme configuration values here
 });
 
@@ -48,23 +44,23 @@ fractal.components.set('statuses', {
   prototype: {
     label: 'Prototype',
     description: 'Do not implement.',
-    color: '#FF3333'
+    color: '#FF3333',
   },
   wip: {
     label: 'WIP',
     description: 'Work in progress. Implement with caution.',
-    color: '#FF9233'
+    color: '#FF9233',
   },
   review: {
     label: 'Waiting for review',
     description: 'Waiting for BIC review',
-    color: '#a544ea'
+    color: '#a544ea',
   },
   ready: {
     label: 'Ready',
     description: 'Ready to implement.',
-    color: '#29CC29'
-  }
+    color: '#29CC29',
+  },
 });
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/src/docs');

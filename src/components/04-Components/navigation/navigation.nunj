@@ -3,22 +3,35 @@
     <div class="c-nav__logo">
       {% render '@logo-header' %}
     </div>
+
+    <!-- Menu icon -->
     <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
       <span class="c-menu-icon c-menu-icon--cross">
         <span></span>
       </span>
     </button>
+
+    <!-- Nav container -->
     <div class="c-nav__list-container">
+
+      <!-- Nav alternative actions (search) -->
       <div class="c-nav__alt-actions">
         <a href="#nowhere" class="c-nav__button-search">{% render '@svg-search' %} <span class="u-display-xl-none">Rechercher</span></a>
         {%- if pdfdownload -%}
         <a href="#nowhere" class="c-nav__button-pdf" title="Télécharger le rapport PDF">{% render '@svg-file-earmark-pdf' %} <span class="u-display-xl-none">Télécharger le rapport PDF</span></a>
         {%- endif -%}
       </div>
+
+      <!-- Nav Level indicator -->
       <ul class="c-nav__level-indicator" aria-hidden="true">
       </ul>
+
+      <!-- Nav list wrapper -->
       <div class="c-nav__list-wrapper">
+
+        <!-- Level 0 -->
         <ul class="c-nav__list" aria-label="Arborescence des pages">
+
           <li class="c-nav__list-item c-nav__list-item-project" data-level="0">
             <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
               Projets
@@ -29,12 +42,15 @@
               </li>
             </ul>
           </li>
+
           {% for firstLevelItem in firstLevelItems %}
           <li class="c-nav__list-item" data-level="0">
             {% if firstLevelItem.secondLevelItems %}
               <button class="c-nav__list-link c-nav__list-link--w-children c-nav__list-link--level-0" aria-haspopup="true" aria-expanded="false">
                 {{ firstLevelItem.name }}
               </button>
+
+              <!-- Level 1 -->
               <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 masonry">
                 {% for secondLevelItem in firstLevelItem.secondLevelItems %}
                 <li class="c-nav__list-item masonry-item" data-level="1">
@@ -45,6 +61,8 @@
                     <span class="c-nav__list-link c-nav__list-link--level-1 c-nav__list-link--w-children u-display-none u-display-xl-block">
                       {{ secondLevelItem.name }}
                     </span>
+
+                    <!-- Level 2 -->
                     <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
                       {% for thirdLevelItem in secondLevelItem.thirdLevelItems %}
                       <li class="c-nav__list-item" data-level="2">
@@ -57,7 +75,7 @@
                         </a>
                       </li>
                       {% endfor %}
-                    </ul>
+                    </ul><!-- /Level 2 -->
                   {% else %}
                     <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
                       {{ secondLevelItem.name }}
@@ -65,7 +83,7 @@
                   {% endif %}
                 </li>
                 {% endfor %}
-              </ul>
+              </ul><!-- /Level 1 -->
             {% else %}
               <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-0">
                 {{ firstLevelItem.name }}
@@ -73,7 +91,9 @@
             {% endif %}
           </li>
           {% endfor %}
-        </ul>
+
+
+        </ul><!-- /Level 0 -->
       </div>
     </div>
   </nav>

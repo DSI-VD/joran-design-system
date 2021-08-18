@@ -1,6 +1,5 @@
-'use strict';
-
-const faker = require('faker'); // Require the faker module
+const faker = require('faker');
+// Require the faker module
 const articleCount = 10; // How many articles we should generate data for
 const articleData = [];
 
@@ -12,15 +11,15 @@ for (let i = 0; i < articleCount; i++) {
       styleModifier: 'c-carousel__figure',
       src: faker.image.unsplash.image('1024', '576', randomWord),
       alt: faker.lorem.words(),
-      caption: faker.lorem.sentence()
+      caption: faker.lorem.sentence(),
     },
-    link: faker.datatype.boolean()
+    link: faker.datatype.boolean(),
   });
 }
 
 module.exports = {
   context: {
     heading: 'Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless',
-    articles: articleData // Use our generated list of articles as context data for our template.
-  }
+    articles: articleData, // Use our generated list of articles as context data for our template.
+  },
 };

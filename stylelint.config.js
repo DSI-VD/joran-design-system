@@ -10,12 +10,13 @@ module.exports = {
           'variants',
           'responsive',
           'screen',
-          'extend'
-        ]
-      }
+          'extend',
+        ],
+      },
     ],
     'declaration-block-trailing-semicolon': null,
-    'no-descending-specificity': null
+    'max-empty-lines': 5,
+    'no-descending-specificity': null,
   },
-  ignoreFiles: ['src/assets/styles/_elements.a11y.css']
+  ignoreFiles: ['src/assets/styles/_elements.a11y.css'],
 };

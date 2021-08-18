@@ -1,3 +1,4 @@
+// Navigation mobile
 class MobileNavigation {
   constructor(nav) {
     this.levelIndicator = document.querySelector('.c-nav__level-indicator');
@@ -9,7 +10,7 @@ class MobileNavigation {
     // Open menu tab
     for (const item of document.querySelectorAll('.c-nav__list-link--w-children')) {
       item.addEventListener('click', event => {
-        if (this.currentLevel === Number.parseInt(event.target.parentNode.dataset.level)) {
+        if (this.currentLevel === Number(event.target.parentNode.dataset.level)) {
           this.levelIndicator.append(this.createLevelIndicator(event.target));
           event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
@@ -28,20 +29,21 @@ class MobileNavigation {
     this.navToggle.addEventListener('click', event => this.toggle(event));
   }
 
+  // Toggle icon style
   toggle(event) {
-    if (!this.navOpen) {
-      document.documentElement.style.overflow = 'hidden';
-      document.body.classList.add('js-b-nav--open');
-      this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
-      this.nav.classList.add('js-c-nav--open');
-      this.navOpen = true;
-    } else {
+    if (this.navOpen) {
       document.documentElement.style.overflow = 'auto';
       document.body.classList.remove('js-b-nav--open');
       this.navToggle.querySelector('.c-menu-icon').classList.remove('js-c-menu-icon--open');
       this.nav.classList.remove('js-c-nav--open');
       this.closeAllTabs(event);
       this.navOpen = false;
+    } else {
+      document.documentElement.style.overflow = 'hidden';
+      document.body.classList.add('js-b-nav--open');
+      this.navToggle.querySelector('.c-menu-icon').classList.add('js-c-menu-icon--open');
+      this.nav.classList.add('js-c-nav--open');
+      this.navOpen = true;
     }
 
     this.navToggle.setAttribute('aria-expanded', this.navOpen);
@@ -98,9 +100,11 @@ class MobileNavigation {
   }
 }
 
+// Navigation desktop
 class DesktopNavigation {
   constructor(nav) {
     this.nav = nav;
+
     // Open menu tab
     for (const item of document.querySelectorAll('.c-nav__list:not(.c-nav__list--level) > .c-nav__list-item > .c-nav__list-link--w-children')) {
       item.addEventListener('click', event => {
@@ -131,7 +135,7 @@ class DesktopNavigation {
         itemSelector: '.masonry-item',
         columnWidth: 320,
         transitionDuration: 0,
-        containerStyle: {position: 'absolute'}
+        containerStyle: {position: 'absolute'},
       });
     }
   }

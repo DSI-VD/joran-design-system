@@ -14,13 +14,13 @@
   @screen md {
     @apply
       flex-row
-  
+      ;
   }
 
   @screen print {
     @apply
       flex-row
-  
+      ;
   }
 }
 
