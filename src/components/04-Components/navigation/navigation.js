@@ -9,7 +9,7 @@ class MobileNavigation {
     // Open menu tab
     for (const item of document.querySelectorAll('.c-nav__list-link--w-children')) {
       item.addEventListener('click', event => {
-        if (this.currentLevel === Number.parseInt(event.target.parentNode.dataset.level)) {
+        if (this.currentLevel === Number(event.target.parentNode.dataset.level)) {
           this.levelIndicator.append(this.createLevelIndicator(event.target));
           event.target.closest('.c-nav__list').classList.add('js-c-nav__list--hide');
           event.target.parentNode.querySelector('.c-nav__list').classList.add('js-c-nav__list--open');
