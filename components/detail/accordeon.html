@@ -249,20 +249,20 @@
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">// Cut the mustard</span>
-<span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;querySelector&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">document</span> &amp;&amp;
-    <span class="hljs-string">&#x27;localStorage&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span> &amp;&amp;
-    <span class="hljs-string">&#x27;addEventListener&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>) {
+<span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;querySelector&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">document</span>
+    &amp;&amp; <span class="hljs-string">&#x27;localStorage&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>
+    &amp;&amp; <span class="hljs-string">&#x27;addEventListener&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-built_in">window</span>) {
   <span class="hljs-keyword">const</span> toggleButtons = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.js-accordeon__toggle-btn&#x27;</span>);
   <span class="hljs-keyword">const</span> fullTextWrappers = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.js-accordeon__fulltext&#x27;</span>);
   <span class="hljs-keyword">let</span> fullText;
   <span class="hljs-keyword">let</span> toggleButtonText;
 
-  [].forEach.call(fullTextWrappers, <span class="hljs-function"><span class="hljs-params">fullTextWrapper</span> =&gt;</span> {
+  <span class="hljs-built_in">Array</span>.prototype.forEach.call(fullTextWrappers, <span class="hljs-function"><span class="hljs-params">fullTextWrapper</span> =&gt;</span> {
     <span class="hljs-comment">// Hide all full text on load</span>
     fullTextWrapper.setAttribute(<span class="hljs-string">&#x27;hidden&#x27;</span>, <span class="hljs-literal">true</span>);
   });
 
-  [].forEach.call(toggleButtons, <span class="hljs-function"><span class="hljs-params">toggleButton</span> =&gt;</span> {
+  <span class="hljs-built_in">Array</span>.prototype.forEach.call(toggleButtons, <span class="hljs-function"><span class="hljs-params">toggleButton</span> =&gt;</span> {
     <span class="hljs-comment">// Show toggle more buttons</span>
     toggleButton.removeAttribute(<span class="hljs-string">&#x27;hidden&#x27;</span>);
 
@@ -2795,8 +2795,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-08-18T04:34:27.442Z">
-                                18.08.2021, 06:34:27
+                            <time datetime="2021-08-18T08:58:58.722Z">
+                                18.08.2021, 10:58:58
                             </time>
                         
                     </dd>

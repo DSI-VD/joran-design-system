@@ -345,9 +345,6 @@ a.c-nav__list-link:hover {
   ;
 }
 
-.c-nav__list-link--level-0 {
-}
-
 .c-nav__list-link--level-1 {
   @apply
     xl:text-base

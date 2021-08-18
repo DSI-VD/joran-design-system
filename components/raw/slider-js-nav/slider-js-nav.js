@@ -21,8 +21,8 @@ const initSlider = () => {
           } else {
             sidebar.classList.remove('c-slider-js-nav__container-left--hidden');
           }
-        }
-      }
+        },
+      },
     });
   }
 };
