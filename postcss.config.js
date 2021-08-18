@@ -6,7 +6,7 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
     'postcss-header': {
-      header: "/*! Joran v" + require('./package.json').version + " */"
-    }
-  }
+      header: '/*! Joran v' + require('./package.json').version + ' */',
+    },
+  },
 };

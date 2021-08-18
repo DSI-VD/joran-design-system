@@ -1,12 +1,12 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./src/**/*.html', './src/**/*.nunj', './src/**/*.js', './src/**/*.json']
+    content: ['./src/**/*.html', './src/**/*.nunj', './src/**/*.js', './src/**/*.json'],
   },
   darkMode: false, // Or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['roboto', 'system-ui', 'sans-serif']
+      sans: ['roboto', 'system-ui', 'sans-serif'],
     },
     extend: {
       fontSize: {
@@ -21,7 +21,7 @@ module.exports = {
         '4xl': '3rem',
         '5xl': '4rem',
         '6xl': '5rem',
-        '7xl': '6rem'
+        '7xl': '6rem',
       },
       colors: {
         transparent: 'transparent',
@@ -33,27 +33,27 @@ module.exports = {
           600: 'rgb(var(--color-raw__primary--600))',
           400: 'rgb(var(--color-raw__primary--400))',
           200: 'rgb(var(--color-raw__primary--200))',
-          100: 'rgb(var(--color-raw__primary--100))'
+          100: 'rgb(var(--color-raw__primary--100))',
         },
         white: {
-          DEFAULT: '#fcfcfc'
+          DEFAULT: '#fcfcfc',
         },
         black: {
-          DEFAULT: '#000000'
+          DEFAULT: '#000000',
         },
         focus: {
-          DEFAULT: '#FFB703'
+          DEFAULT: '#FFB703',
         },
         gray: {
           darkest: '#1f2d3d',
           dark: '#3c4858',
           DEFAULT: '#c0ccda',
           light: '#e0e6ed',
-          lightest: '#f9fafc'
-        }
+          lightest: '#f9fafc',
+        },
       },
       outline: {
-        focus: ['3px solid #FFB703', '1px']
+        focus: ['3px solid #FFB703', '1px'],
       },
       typography: {
         DEFAULT: {
@@ -64,13 +64,13 @@ module.exports = {
               color: 'var(--color__primary--900)',
               fontWeight: 700,
               lineHeight: '1.05',
-              fontSize: '2.375rem'
+              fontSize: '2.375rem',
             },
             h2: {
               color: 'var(--color__primary--900)',
               fontWeight: 700,
               lineHeight: '1.1429',
-              fontSize: '1.75rem'
+              fontSize: '1.75rem',
             },
             h3: {
               color: 'var(--color__primary--900)',
@@ -78,24 +78,24 @@ module.exports = {
               marginBottom: '0',
               fontWeight: 500,
               lineHeight: '1.3',
-              fontSize: '1.25rem'
+              fontSize: '1.25rem',
             },
             h4: {
               color: 'var(--color__primary--900)',
               textTransform: 'uppercase',
               marginBottom: '0',
-              fontWeight: 500
+              fontWeight: 500,
             },
             h5: {
               color: 'var(--color__primary--900)',
-              marginBottom: '0'
+              marginBottom: '0',
             },
             h6: {
               color: 'var(--color__primary--900)',
-              marginBottom: '0'
-            }
+              marginBottom: '0',
+            },
 
-          }
+          },
         },
         lg: {
           css: {
@@ -103,37 +103,37 @@ module.exports = {
             fontSize: '1.25rem',
             h1: {
               lineHeight: '1.0833',
-              fontSize: '3rem'
+              fontSize: '3rem',
             },
             h2: {
               lineHeight: '1.1176',
-              fontSize: '2.125rem'
+              fontSize: '2.125rem',
             },
             h3: {
               marginBottom: '0',
               lineHeight: '1.3',
-              fontSize: '1.25rem'
+              fontSize: '1.25rem',
             },
             h4: {
               marginBottom: '0',
-              lineHeight: '1.3333'
+              lineHeight: '1.3333',
             },
             h5: {
-              marginBottom: '0'
+              marginBottom: '0',
             },
             h6: {
-              marginBottom: '0'
-            }
-          }
-        }
+              marginBottom: '0',
+            },
+          },
+        },
       },
       screens: {
-        print: {raw: 'print'}
-      }
-    }
+        print: {raw: 'print'},
+      },
+    },
   },
   variants: {
-    extend: {}
+    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),
@@ -146,23 +146,20 @@ module.exports = {
         addUtilities(Object.keys(t)
           .reduce((_o, _k) => ({
             ..._o,
-            ...Object.keys(t[_k])
+            ...Object.fromEntries(Object.keys(t[_k])
               .filter(x => /^rgb\(.*\)$/i.test(t[_k][x]))
-              .reduce((o, k) => ({
-                ...o,
-                [`.${prefix}-${_k}-${k}`]: {
-                  [key]: t[_k][k].replace(/^rgb\((.*)\)$/i, `rgba($1, var(${opacity})) !important`)
-                }
-              }), {})
+              .map(k => [`.${prefix}-${_k}-${k}`, {
+                [key]: t[_k][k].replace(/^rgb\((.*)\)$/i, `rgba($1, var(${opacity})) !important`),
+              }])),
           }), {}), {
           respectImportant: false,
-          variants: variants(prop)
+          variants: variants(prop),
         });
       };
 
       // Add more utils here...
       fn('bg', 'background-color', 'backgroundColor', '--tw-bg-opacity');
       fn('text', 'color', 'textColor', '--tw-text-opacity');
-    }
-  ]
+    },
+  ],
 };

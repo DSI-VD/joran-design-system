@@ -1,18 +1,18 @@
 // Cut the mustard
-if ('querySelector' in document &&
-    'localStorage' in window &&
-    'addEventListener' in window) {
+if ('querySelector' in document
+    && 'localStorage' in window
+    && 'addEventListener' in window) {
   const toggleButtons = document.querySelectorAll('.js-accordeon__toggle-btn');
   const fullTextWrappers = document.querySelectorAll('.js-accordeon__fulltext');
   let fullText;
   let toggleButtonText;
 
-  [].forEach.call(fullTextWrappers, fullTextWrapper => {
+  Array.prototype.forEach.call(fullTextWrappers, fullTextWrapper => {
     // Hide all full text on load
     fullTextWrapper.setAttribute('hidden', true);
   });
 
-  [].forEach.call(toggleButtons, toggleButton => {
+  Array.prototype.forEach.call(toggleButtons, toggleButton => {
     // Show toggle more buttons
     toggleButton.removeAttribute('hidden');
 

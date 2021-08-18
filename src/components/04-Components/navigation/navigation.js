@@ -131,7 +131,7 @@ class DesktopNavigation {
         itemSelector: '.masonry-item',
         columnWidth: 320,
         transitionDuration: 0,
-        containerStyle: {position: 'absolute'}
+        containerStyle: {position: 'absolute'},
       });
     }
   }
