@@ -28,6 +28,7 @@ class MobileNavigation {
     this.navToggle.addEventListener('click', event => this.toggle(event));
   }
 
+  // toggle icon style
   toggle(event) {
     if (this.navOpen) {
       document.documentElement.style.overflow = 'auto';
