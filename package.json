@@ -8,7 +8,7 @@
   "scripts": {
     "beautify": "run-p beautify:*",
     "beautify:all": "prettier --write .",
-    "beautify:scripts": "xo --space --fix --env=browser",
+    "beautify:scripts": "xo --fix ",
     "beautify:styles": "stylelint src/**/*.css --fix",
     "prebuild": "npm run clean",
     "build": "run-s build:*",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d build -r https://github.com/DSI-VD/joran-design-system.git",
     "lint": "run-s lint:*",
     "lint:all": "prettier --check .",
-    "lint:scripts": "xo --space --env=browser",
+    "lint:scripts": "xo",
     "lint:styles": "stylelint src/**/*.css",
     "prepublishOnly": "npm run build",
     "start": "npm run watch",
@@ -45,6 +45,8 @@
     "autoprefixer": "^10.3.1",
     "chokidar-cli": "^3.0.0",
     "copyfiles": "^2.4.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsdoc": "^36.0.7",
     "faker": "^5.5.3",
     "flickity": "^2.2.2",
     "gh-pages": "^3.2.3",
@@ -68,5 +70,43 @@
     "svgo": "^2.4.0",
     "tailwindcss": "^2.2.7",
     "xo": "^0.44.0"
+  },
+  "xo": {
+    "space": true,
+    "extends": [
+      "plugin:import/errors",
+      "plugin:jsdoc/recommended"
+    ],
+    "plugins": [
+      "import",
+      "jsdoc"
+    ],
+    "envs": "browser",
+    "ignores": [
+      "www/**"
+    ],
+    "rules": {
+      "camelcase": [
+        "warn",
+        {
+          "properties": "never"
+        }
+      ],
+      "import/extensions": [
+        "error",
+        "always"
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "moduleDirectory": [
+            "node_modules",
+            "src/",
+            "lib/"
+          ]
+        }
+      }
+    }
   }
 }
