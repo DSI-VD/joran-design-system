@@ -38,6 +38,7 @@
   "devDependencies": {
     "@fontsource/roboto": "^4.5.0",
     "@frctl/fractal": "^1.5.11",
+    "@frctl/mandelbrot": "^1.9.4",
     "@frctl/nunjucks": "^2.0.13",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/line-clamp": "^0.2.1",
