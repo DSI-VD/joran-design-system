@@ -195,7 +195,7 @@
 
 /* Include Tailwind */
 
-/* ! tailwindcss v2.2.4 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -717,6 +717,14 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+[hidden] {
+  display: none;
 }
 
 *, ::before, ::after {
@@ -1510,7 +1518,6 @@ body.debug a[href^="javascript"]::after {
 
 body.debug .button:not(a):not(button):not(input):not([tabindex])::after,
 body.debug .btn:not(a):not(button):not(input):not([tabindex])::after {
-    content: 'You are not using a standard focusable -moz-element for your "button". Can keyboard users focus on it?' !important;
     content: 'You are not using a standard focusable element for your "button". Can keyboard users focus on it?' !important;
   }
 
@@ -1524,7 +1531,6 @@ body.debug a[role="button"][href^="javascript"]::after {
 body.debug a[href].button[class*="disabled"]::after,
 body.debug a[href].disabled::after,
 body.debug a[href][class*="button"][class*="disabled"]::after {
-    content: 'You cannot disable a hyperlink. Use a button -moz-element with disabled attribute or remove the href' !important;
     content: 'You cannot disable a hyperlink. Use a button element with disabled attribute or remove the href' !important;
   }
 
@@ -1562,7 +1568,6 @@ body.debug form:not([action])::after {
   }
 
 body.debug fieldset > *:first-child:not(legend)::after {
-    content: 'Place a legend as the first -moz-element in this fieldset.' !important;
     content: 'Place a legend as the first element in this fieldset.' !important;
   }
 
@@ -1600,7 +1605,6 @@ body.debug marquee::after,
 body.debug nobr::after,
 body.debug noembed::after,
 body.debug wbr::after {
-    content: 'This -moz-element is deprecated, non-standard or obsolete.' !important;
     content: 'This element is deprecated, non-standard or obsolete.' !important;
   }
 
@@ -1610,7 +1614,6 @@ body.debug wbr::after {
 */
 
 body.debug *:empty:not(script):not(input):not(br):not(img):not(link):not(hr):not(embed):not(area):not(command):not(col):not(param):not(source):not(track):not(wbr):not(base):not(keygen)::after {
-    content: 'This -moz-element is empty. Why?' !important;
     content: 'This element is empty. Why?' !important;
   }
 
@@ -1651,18 +1654,15 @@ body.debug aside [role="contentinfo"]::after {
   }
 
 body.debug #main:not(main):not([role="main"])::after {
-    content: 'Use the standard <main> -moz-element or role of main.' !important;
     content: 'Use the standard <main> element or role of main.' !important;
   }
 
 body.debug #footer:not(footer):not([role="contentinfo"])::after {
-    content: 'Use the standard <footer> -moz-element or contentinfo role' !important;
     content: 'Use the standard <footer> element or contentinfo role' !important;
   }
 
 body.debug #header:not(header):not([role="banner"])::after,
 body.debug #banner:not(header):not([role="banner"])::after {
-    content: 'Use the standard <header> -moz-element or banner role' !important;
     content: 'Use the standard <header> element or banner role' !important;
   }
 
@@ -1706,7 +1706,6 @@ body.debug ul > *:not(li)::after {
   }
 
 body.debug dl > *:not(dt):not(dd)::after {
-    content: 'This -moz-element does not belong directly inside a definition list.' !important;
     content: 'This element does not belong directly inside a definition list.' !important;
   }
 
