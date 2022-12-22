@@ -43,6 +43,15 @@
           "colors": "@colors--pink"
         }
       }
+    },
+    {
+      "name": "prototype green",
+      "context": {
+        "styleModifier": "c-page",
+        "colors": {
+          "colors": "@colors--green"
+        }
+      }
     }
   ]
 }
