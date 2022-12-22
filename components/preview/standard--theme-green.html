@@ -1,0 +1,3100 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jorant preview</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <style>
+:root {
+--color__primary--100: rgb(242, 255, 222);
+    --color-raw__primary--100: 242, 255, 222;
+--color__primary--200: rgb(222, 255, 171);
+    --color-raw__primary--200: 222, 255, 171;
+--color__primary--400: rgb(222, 255, 171);
+    --color-raw__primary--400: 222, 255, 171;
+--color__primary--600: rgb(197, 255, 105);
+    --color-raw__primary--600: 197, 255, 105;
+--color__primary--800: rgb(182, 255, 68);
+    --color-raw__primary--800: 182, 255, 68;
+--color__primary--900: rgb(17, 164, 60);
+    --color-raw__primary--900: 17, 164, 60;
+--color__primary--cta: rgb(58, 134, 45);
+    --color-raw__primary--cta: 58, 134, 45;
+
+}
+</style>
+
+
+    <!-- Stylesheets -->
+    <link
+      media="all"
+      rel="stylesheet"
+      href="../../assets/styles/style.css"
+    />
+  </head>
+
+  <body  class="c-page">
+    <div class="c-alert" role="alert">
+  <div class="o-container">
+    <div class="o-container c-alert__container">
+      <div class="c-alert__heading">
+        <h2>Cookies sur publications.vd.ch</h2>
+      </div>
+      <div class="c-alert__content">
+        <p>Nous utilisons certains cookies essentiels pour faire fonctionner <a
+          href="https://www.vd.ch">ce site web </a>.</p>
+        <p>Nous souhaitons définir des cookies supplémentaires pour comprendre comment vous utilisez publications.vd.ch, mémoriser vos paramètres et améliorer les services gouvernementaux.</p>
+        <p>Nous utilisons également des cookies définis par d'autres sites pour nous aider à diffuser le contenu de leurs services.</p>
+      </div>
+      <button class="c-alert__close" onclick="closeAlert(event)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+  <path
+    d="M13 1L1 13M1 1l12 12"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+<span class="u-visually-hidden">Fermer</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="c-nav">
+  <nav class="o-container o-container--large c-nav__container" aria-label="Navigation principale">
+    <div class="c-nav__logo">
+      <div class="c-logo-header">
+  <div class="c-logo-header__logo">
+    <img class="c-logo-vd" src="../../assets/vectors/logo.svg" />
+
+  </div>
+  <div class="c-logo-header__text">
+    
+      
+        Tribunal des baux
+    
+  </div>
+</div>
+
+
+    </div>
+
+    <!-- Menu icon -->
+    <button class="c-nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="c-menu-icon c-menu-icon--cross">
+        <span></span>
+      </span>
+    </button>
+
+    <!-- Nav container -->
+    <div class="c-nav__list-container">
+
+      <!-- Nav alternative actions (search) -->
+      <div class="c-nav__alt-actions">
+        <a href="#nowhere" class="c-nav__button-search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <circle
+    cx="8"
+    cy="8"
+    r="7"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M19 19l-6-6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ <span class="u-display-xl-none">Rechercher</span></a><a href="#nowhere" class="c-nav__button-pdf" title="Télécharger le rapport PDF"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+  <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+</svg>
+ <span class="u-display-xl-none">Télécharger le rapport PDF</span></a></div>
+
+      <!-- Nav Level indicator -->
+      <ul class="c-nav__level-indicator" aria-hidden="true">
+      </ul>
+
+      <!-- Nav list wrapper -->
+      <div class="c-nav__list-wrapper">
+
+        <!-- Level 0 -->
+        <ul class="c-nav__list" aria-label="Arborescence des pages">
+
+          <li class="c-nav__list-item c-nav__list-item-project" data-level="0">
+            <button class="c-nav__list-link c-nav__list-link--w-children" aria-haspopup="true" aria-expanded="false">
+              Projets
+            </button>
+            <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 c-nav_list--level-project">
+              <li class="c-nav__list-item" data-level="1">
+                <div class="c-slider-js-nav">
+  <div class="c-slider-js-nav-container">
+    <div class="c-slider-js-nav__container-left">
+      <h2 class="c-slider-js-nav__heading">Projets</h2>
+      <div class="c-slider-js-nav__sidebar" aria-hidden="true">
+        <ul class="c-slider-js-nav__sidebar-list">
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Consequuntur dolorem deserunt dolore incidunt fugiat dolore quaerat harum.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Est et aut.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Enim sunt ipsa est dolorum.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Soluta veniam vitae maiores sunt.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Voluptas laborum excepturi.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Facere voluptatem beatae sunt sed est nisi aut ipsam tenetur.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Libero voluptas suscipit voluptatem nulla qui recusandae ut officia explicabo.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Aut veritatis delectus.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Rem nihil rem placeat nisi inventore sed cumque.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Voluptas eaque est voluptatibus.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Et odio eum laboriosam sapiente.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Sed doloribus fuga ut velit dolor non.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Ut et nihil quibusdam.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Asperiores explicabo necessitatibus quia nihil consectetur et qui dolorem.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Magnam ratione esse expedita reprehenderit quia.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Sit qui molestiae consectetur doloribus.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Aliquam quia aspernatur hic atque aspernatur.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Porro nisi eos consectetur dolor.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Dolores sit perspiciatis.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Possimus voluptates fugit rem voluptates.</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="c-slider-js-nav__container-right">
+      <div class="c-slider-js-nav-carousel">
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?back" alt="non enim placeat"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>16 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Consequuntur dolorem deserunt dolore incidunt fugiat dolore quaerat harum.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Consequuntur dolorem deserunt dolore incidunt fugiat dolore quaerat harum.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?microchip" alt="corrupti qui ea"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>17 avril 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Est et aut.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Est et aut.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Account" alt="sint nam dolorum"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>15 avril 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Enim sunt ipsa est dolorum.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Enim sunt ipsa est dolorum.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Planner" alt="velit nulla necessitatibus"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>16 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Soluta veniam vitae maiores sunt.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Soluta veniam vitae maiores sunt.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Belarus" alt="voluptatem error distinctio"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>15 février 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Voluptas laborum excepturi.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Voluptas laborum excepturi.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?connecting" alt="consequatur accusantium et"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>4 mai 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Facere voluptatem beatae sunt sed est nisi aut ipsam tenetur.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Facere voluptatem beatae sunt sed est nisi aut ipsam tenetur.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Sleek" alt="et minus id"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>4 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Libero voluptas suscipit voluptatem nulla qui recusandae ut officia explicabo.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Libero voluptas suscipit voluptatem nulla qui recusandae ut officia explicabo.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?Soap" alt="sed saepe autem"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>13 mai 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Aut veritatis delectus.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Aut veritatis delectus.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?transmitter" alt="quae expedita aut"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>7 octobre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Rem nihil rem placeat nisi inventore sed cumque.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Rem nihil rem placeat nisi inventore sed cumque.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295" alt="accusamus velit quam"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>18 décembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Voluptas eaque est voluptatibus.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Voluptas eaque est voluptatibus.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?bypass" alt="natus asperiores voluptatem"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>23 février 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Et odio eum laboriosam sapiente.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Et odio eum laboriosam sapiente.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?standardization" alt="soluta corporis saepe"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>21 octobre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Sed doloribus fuga ut velit dolor non.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Sed doloribus fuga ut velit dolor non.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Gorgeous" alt="sequi et nemo"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>30 avril 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Ut et nihil quibusdam.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Ut et nihil quibusdam.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?strategize" alt="quibusdam dolorum soluta"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>19 novembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Asperiores explicabo necessitatibus quia nihil consectetur et qui dolorem.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Asperiores explicabo necessitatibus quia nihil consectetur et qui dolorem.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?XSS" alt="est eveniet ut"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>13 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Magnam ratione esse expedita reprehenderit quia.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Magnam ratione esse expedita reprehenderit quia.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Berkshire" alt="enim rem dolore"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>11 septembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Sit qui molestiae consectetur doloribus.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Sit qui molestiae consectetur doloribus.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Pizza" alt="quo sit porro"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>28 septembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Aliquam quia aspernatur hic atque aspernatur.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Aliquam quia aspernatur hic atque aspernatur.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?convergence" alt="voluptate numquam expedita"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>24 décembre 2021
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Porro nisi eos consectetur dolor.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Porro nisi eos consectetur dolor.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Producer" alt="placeat eligendi repellat"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>10 novembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Dolores sit perspiciatis.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Dolores sit perspiciatis.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?scalable" alt="sed cumque veritatis"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>27 juillet 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Possimus voluptates fugit rem voluptates.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Possimus voluptates fugit rem voluptates.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+              </li>
+            </ul>
+          </li>
+
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <button class="c-nav__list-link c-nav__list-link--w-children c-nav__list-link--level-0" aria-haspopup="true" aria-expanded="false">
+                Somaire
+              </button>
+
+              <!-- Level 1 -->
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 masonry">
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children u-display-xl-none" aria-haspopup="true" aria-expanded="false">
+                      Organigrame
+                    </button>
+                    <span class="c-nav__list-link c-nav__list-link--level-1 c-nav__list-link--w-children u-display-none u-display-xl-block">
+                      Organigrame
+                    </span>
+
+                    <!-- Level 2 -->
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Facebook live
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Paléo Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Visite du président indien
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2 c-nav__list-link--current" aria-current="page">
+                        
+                          Attaques fourgons blindés
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          100ème anniversaire de la Fédération vaudoise des jeunesses campagnardes
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Fermeture de l&#39;autoroute A12
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Bol d&#39;Or
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Inauguration CIO
+                        </a>
+                      </li>
+                      
+                    </ul><!-- /Level 2 -->
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children u-display-xl-none" aria-haspopup="true" aria-expanded="false">
+                      La police en chiffres
+                    </button>
+                    <span class="c-nav__list-link c-nav__list-link--level-1 c-nav__list-link--w-children u-display-none u-display-xl-block">
+                      La police en chiffres
+                    </span>
+
+                    <!-- Level 2 -->
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Communication tactique
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Bilderberg
+                        </a>
+                      </li>
+                      
+                    </ul><!-- /Level 2 -->
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Finances
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children u-display-xl-none" aria-haspopup="true" aria-expanded="false">
+                      Objectifs 2020
+                    </button>
+                    <span class="c-nav__list-link c-nav__list-link--level-1 c-nav__list-link--w-children u-display-none u-display-xl-block">
+                      Objectifs 2020
+                    </span>
+
+                    <!-- Level 2 -->
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Montreux Jazz Festival
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Fête des Vignerons
+                        </a>
+                      </li>
+                      
+                    </ul><!-- /Level 2 -->
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <button class="c-nav__list-link c-nav__list-link--w-children u-display-xl-none" aria-haspopup="true" aria-expanded="false">
+                      Valorisation des colabirateurs
+                    </button>
+                    <span class="c-nav__list-link c-nav__list-link--level-1 c-nav__list-link--w-children u-display-none u-display-xl-block">
+                      Valorisation des colabirateurs
+                    </span>
+
+                    <!-- Level 2 -->
+                    <ul class="c-nav__list c-nav__list--level c-nav__list--level-2">
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Cérémonie du souvenir
+                        </a>
+                      </li>
+                      
+                      <li class="c-nav__list-item" data-level="2">
+                        
+                        <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-2">
+                        
+                          Escrocrie à la caisse de chômage
+                        </a>
+                      </li>
+                      
+                    </ul><!-- /Level 2 -->
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Témoignages
+                    </a>
+                  
+                </li>
+                
+              </ul><!-- /Level 1 -->
+            
+          </li>
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-0">
+                Remerciement
+              </a>
+            
+          </li>
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <button class="c-nav__list-link c-nav__list-link--w-children c-nav__list-link--level-0" aria-haspopup="true" aria-expanded="false">
+                Où sommes-nous ?
+              </button>
+
+              <!-- Level 1 -->
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 masonry">
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.1
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.2
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.3
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.4
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.5
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.6
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.7
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.8
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 4.9
+                    </a>
+                  
+                </li>
+                
+              </ul><!-- /Level 1 -->
+            
+          </li>
+          
+          <li class="c-nav__list-item" data-level="0">
+            
+              <button class="c-nav__list-link c-nav__list-link--w-children c-nav__list-link--level-0" aria-haspopup="true" aria-expanded="false">
+                Menu 5 est passablement très très long
+              </button>
+
+              <!-- Level 1 -->
+              <ul class="c-nav__list c-nav__list--level c-nav__list--level-1 masonry">
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 5.1 très très très très très très très très très très très très long
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 5.2
+                    </a>
+                  
+                </li>
+                
+                <li class="c-nav__list-item masonry-item" data-level="1">
+                  
+                    <a href="#nowhere" class="c-nav__list-link c-nav__list-link--level-1">
+                      Menu 5.3
+                    </a>
+                  
+                </li>
+                
+              </ul><!-- /Level 1 -->
+            
+          </li>
+          
+
+
+        </ul><!-- /Level 0 -->
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="c-page__content o-stack o-stack--big">
+
+  <main class="c-page__main o-stack o-stack--big">
+    <div class="c-hero c-hero--with-image">
+    <style scoped>
+        .c-hero--with-image {
+            background-image: url('https://source.unsplash.com/SUBNTil9beU/320x580');
+        }
+        @media (min-width: 320px) { 
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/SUBNTil9beU/640x640');
+            }
+         }
+        @media (min-width: 640px) { 
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/SUBNTil9beU/800x600');
+            }
+         }
+        @media (min-width: 768px) {
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/SUBNTil9beU/1024x768');
+            }
+        }
+        @media (min-width: 1024px) {
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/SUBNTil9beU/1280x960');
+            }
+        }
+        @media (min-width: 1280px) {
+            .c-hero--with-image {
+                background-image: url('https://source.unsplash.com/SUBNTil9beU/1280x960');
+            }
+        }
+    </style>
+    <div class="c-hero__top o-container">
+        <div class="c-hero__heading">[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.</div>
+        <div class="c-hero__caption">[H4] caption</div>
+    </div>
+    
+</div>
+
+
+    <nav class="o-container o-container--large c-breadcrumb" aria-label="Fil d'Ariane">
+  <h2 class="u-visually-hidden">Fil d'Arianie</h2>
+  <ul
+    class="c-breadcrumb__list"
+    itemscope
+    itemtype="https://schema.org/BreadcrumbList"
+  >
+    
+    <li
+      class="c-breadcrumb__list-item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      <a
+        class="c-breadcrumb__link"
+        href="#nowehre"
+        
+        itemprop="item"
+        ><span class="c-breadcrumb__link-text" itemprop="name"
+          >Rapport annuel de gestion 2019</span
+        ></a
+      >
+      <meta itemprop="position" content="1" />
+    </li>
+    
+    <li
+      class="c-breadcrumb__list-item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      <a
+        class="c-breadcrumb__link"
+        href="#nowehre"
+        
+        itemprop="item"
+        ><span class="c-breadcrumb__link-text" itemprop="name"
+          >Département du territoire et de l&#39;environnement (DTE)</span
+        ></a
+      >
+      <meta itemprop="position" content="2" />
+    </li>
+    
+    <li
+      class="c-breadcrumb__list-item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      <a
+        class="c-breadcrumb__link"
+        href="#nowehre"
+        
+        itemprop="item"
+        ><span class="c-breadcrumb__link-text" itemprop="name"
+          >Service des automobiles et de la navigation (SAN)</span
+        ></a
+      >
+      <meta itemprop="position" content="3" />
+    </li>
+    
+    <li
+      class="c-breadcrumb__list-item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      <a
+        class="c-breadcrumb__link"
+        href="#nowehre"
+        
+        aria-current="true"
+        
+        itemprop="item"
+        ><span class="c-breadcrumb__link-text" itemprop="name"
+          >Projets particuliers et réalisation des objectifs 198 du SAN</span
+        ></a
+      >
+      <meta itemprop="position" content="4" />
+    </li>
+    
+  </ul>
+</nav>
+
+
+    <div
+    class="o-container c-content c-content--2-col"
+    >
+    
+      <div class="c-content__item">
+        <h2 class="c-content__heading-text">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
+      </div>
+    
+    
+      <div class="c-content__item o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+        
+      </div>
+    
+</div>
+
+
+    <div
+    class="o-container c-content c-content--intro"
+    >
+    
+      <div class="c-content__item">
+        <h2 class="c-content__heading-text">Huck cruiser crank endo</h2>
+      </div>
+    
+    
+      <div class="c-content__item o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+
+          <div id="js-more-1" class="js-accordeon__fulltext">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus maximus blandit. Donec dui enim, finibus ut mi vel, gravida rutrum est. Donec sed lectus fringilla, ultricies metus sed, lobortis ligula. Nullam vitae fermentum sem. Proin sollicitudin varius ante at faucibus. Suspendisse ut tellus lectus. Ut non leo vel ipsum facilisis fermentum. Morbi molestie ornare nibh, nec iaculis augue sodales et. Fusce molestie convallis interdum. Nullam sit amet luctus quam, eget hendrerit mi. Aenean lorem diam, pellentesque ac vestibulum a, dapibus sed felis. Nam rutrum leo quis dignissim eleifend.</p><p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+          </div>
+
+          <button aria-expanded="false"
+                  aria-controls="js-more-1"
+                  aria-pressed="false"
+                  class="c-button c-button--transparent js-accordeon__toggle-btn"
+                  hidden>
+            <span class="js-accordeon__toggle-btn-text">Afficher plus</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+          </button>
+
+        
+      </div>
+    
+</div>
+
+
+    <div class="o-container">
+  <div class="c-table">
+    <table>
+      <thead>
+        <tr>
+          <th>The Very Best Eggnog</th>
+          <th>Serves 12</th>
+          <th>Serves 24</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Milk</td>
+          <td>1 quart</td>
+          <td>2 quart</td>
+        </tr>
+        <tr>
+          <td>Cinnamon Sticks</td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Vanilla Bean, Split</td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Cloves</td>
+          <td>5</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Mace</td>
+          <td>10</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Egg Yolks</td>
+          <td>12</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>Cups Sugar</td>
+          <td>1 1/2 cups</td>
+          <td>3 cups</td>
+        </tr>
+        <tr>
+          <td>Dark Rum</td>
+          <td>1 1/2 cups</td>
+          <td>3 cups</td>
+        </tr>
+        <tr>
+          <td>Brandy</td>
+          <td>1 1/2 cups</td>
+          <td>3 cups</td>
+        </tr>
+        <tr>
+          <td>Vanilla</td>
+          <td>1 tbsp</td>
+          <td>2 tbsp</td>
+        </tr>
+        <tr>
+          <td>Light Cream</td>
+          <td>1 quart</td>
+          <td>2 quart</td>
+        </tr>
+        <tr>
+          <td><a href="#nowhere">This is a link</a></td>
+          <td><strong>This is strong</strong></td>
+          <td><em>This is emphasis</em></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+    <div class="o-container o-container--large c-quote">
+    <div class="o-box o-box--gradient">
+        
+        <blockquote>
+            <span class="c-quote__text">Si le chemin n&#39;existe pas nous le créerons</span>
+            
+            <footer class="c-quote__footer">
+                
+                <span class="c-quote__reference">
+                
+                
+                <cite class="c-quote__reference-item">Hannibal, la traversée des alpes, -212 AJC</cite>
+                </span>
+            </footer>
+            
+        </blockquote>
+    </div>
+</div>
+
+    <div class="c-highlight" aria-label="Contenu mis en évidence">
+  <div class="o-stack">
+    <div
+    class="o-container c-content"
+    >
+    
+      <div class="c-content__item">
+        <h2 class="c-content__heading-text">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
+      </div>
+    
+    
+</div>
+
+    
+  </div>
+</div>
+
+
+    <div
+    class="o-container c-content"
+    >
+    
+    
+      <div class="c-content__item o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+        
+      </div>
+    
+</div>
+
+
+    <div
+    class="o-container c-content"
+    >
+    
+      <div class="c-content__item">
+        <h2 class="c-content__heading-text">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
+      </div>
+    
+    
+      <div class="c-content__item o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+        
+      </div>
+    
+</div>
+
+
+    <div class="o-container o-container--large c-testimonial">
+    <div class="o-box">
+        <div class="c-testimonial__flex"> 
+            
+            <div class="c-testimonial__facecontainer">
+                <img class="c-avatar c-avatar--responsive c-testimonial__face" src="https://source.unsplash.com/200x200/?face" alt="This is an avatar" itemprop="image">
+            </div>
+            
+            <div class="o-stack c-testimonial__textcontainer">
+                <div class="o-stack o-stack--small">
+                    <div class="c-testimonial__author">
+                        
+                        <span class="u-visually-hidden">Auteur: </span><span>MME Prénom Nom</span>
+                        
+                            <span class="u-visually-hidden">, Fonction: </span> <span class="c-testimonial__author--function">Fonction</span>
+                        
+                    </div>
+                    
+                    <h3 class="c-testimonial__header">[H1] Lorem ipsum dolor sit amet</h3>
+                </div>
+                
+                <div class="c-testimonial__text o-prose">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus maximus blandit. Donec dui enim, finibus ut mi vel, gravida rutrum est. Donec sed lectus fringilla, ultricies metus sed, lobortis ligula. Nullam vitae fermentum sem. Proin sollicitudin varius ante at faucibus. Suspendisse ut tellus lectus. Ut non leo vel ipsum facilisis fermentum. Morbi molestie ornare nibh, nec iaculis augue sodales et. Fusce molestie convallis interdum. Nullam sit amet luctus quam, eget hendrerit mi. Aenean lorem diam, pellentesque ac vestibulum a, dapibus sed felis. Nam rutrum leo quis dignissim eleifend.
+                </div>
+                
+            
+                    <div id="js-more-1" class="js-accordeon__fulltext o-prose">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus maximus blandit. Donec dui enim, finibus ut mi vel, gravida rutrum est. Donec sed lectus fringilla, ultricies metus sed, lobortis ligula. Nullam vitae fermentum sem. Proin sollicitudin varius ante at faucibus. Suspendisse ut tellus lectus. Ut non leo vel ipsum facilisis fermentum. Morbi molestie ornare nibh, nec iaculis augue sodales et. Fusce molestie convallis interdum. Nullam sit amet luctus quam, eget hendrerit mi. Aenean lorem diam, pellentesque ac vestibulum a, dapibus sed felis. Nam rutrum leo quis dignissim eleifend.</p><p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+                    </div>
+                
+                    <button aria-expanded="false"
+                            aria-controls="js-more-1"
+                            aria-pressed="false"
+                            class="c-button c-button--transparent c-testimonial__button js-accordeon__toggle-btn"
+                            hidden>
+                        <span class="js-accordeon__toggle-btn-text">Afficher plus</span><span class="u-visually-hidden"> de [H1] Lorem ipsum dolor sit amet</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+                    </button>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="o-container o-container--large c-promo-list">
+  <h2 class="u-visually-hidden">Données mises en évidences</h2>
+  <ul class="c-promo-list__grid">
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-left">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+  </div>
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>400</h3>
+    </header>
+    <div class="c-promo-card__content">
+      Nombre de visiteurs moyen par jour
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-left">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+  </div>
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>Des images !</h3>
+    </header>
+    <div class="c-promo-card__content">
+      Il est possible de mettre des images
+    </div>
+    
+    <div class="c-promo-card__link">
+      <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Des images !</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-left">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+  </div>
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>32 kg</h3>
+    </header>
+    <div class="c-promo-card__content">
+      le poid du jambon au concours du comptoire du Nord Vaudois
+    </div>
+    
+    <div class="c-promo-card__link">
+      <a
+  href="http://marilyne.biz"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>lire la suite<span class="u-visually-hidden"> de le poid du jambon au concours du comptoire du Nord Vaudois</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>5&#39;000&#39;000</h3>
+    </header>
+    <div class="c-promo-card__content">
+      fourmis rouges
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-left">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+  </div>
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>1</h3>
+    </header>
+    <div class="c-promo-card__content">
+      Pour les gouverner tous
+    </div>
+    
+    <div class="c-promo-card__link">
+      <a
+  href="http://waldo.org"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>lire la suite<span class="u-visually-hidden"> de Pour les gouverner tous</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-left">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+  </div>
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>7 milliards</h3>
+    </header>
+    <div class="c-promo-card__content">
+      Population mondiale
+    </div>
+    
+    <div class="c-promo-card__link">
+      <a
+  href="https://alana.name"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>lire la suite<span class="u-visually-hidden"> de 7 milliards</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>1000 mots</h3>
+    </header>
+    <div class="c-promo-card__content">
+      Curabitur auctor urna magna, eget ultrices lacus semper et. Nunc at nulla hendrerit, tincidunt erat vel, feugiat tortor. Nam iaculis nisi ut felis rutrum blandit. Maecenas rutrum condimentum erat, et molestie velit viverra nec. Sed ullamcorper tortor congue purus venenatis, at porttitor felis pharetra. Sed sollicitudin id tortor vel faucibus. Donec laoreet leo a venenatis fringilla. Aliquam consequat dignissim massa eget mollis. In posuere magna ut ex pulvinar egestas.
+    </div>
+    
+    <div class="c-promo-card__link">
+      <a
+  href="https://coucou.com"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>lire la suite<span class="u-visually-hidden"> de 1000 mots</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-left">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+  </div>
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3>Aliquid nostrum vitae qui.</h3>
+    </header>
+    <div class="c-promo-card__content">
+      
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+      <li class="c-promo-list__grid-item">
+        <article class="o-card-link c-promo-card">
+  
+  <div class="c-promo-card__col-left">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+  </div>
+  
+  <div class="c-promo-card__col-right o-stack o-stack--small">
+    <header class="c-promo-card__header">
+      <h3></h3>
+    </header>
+    <div class="c-promo-card__content">
+      Ea et dolor ea non.
+    </div>
+    
+  </div>
+</article>
+
+      </li>
+    
+  </ul>
+</div>
+
+
+    <div
+    class="o-container c-content"
+    >
+    
+    
+      <div class="c-content__item o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+        
+      </div>
+    
+</div>
+
+
+    <div class="c-slider-js-nav-wrap">
+      <div class="o-container o-container--large">
+        <div class="c-slider-js-nav">
+  <div class="c-slider-js-nav-container">
+    <div class="c-slider-js-nav__container-left">
+      <h2 class="c-slider-js-nav__heading">Projets</h2>
+      <div class="c-slider-js-nav__sidebar" aria-hidden="true">
+        <ul class="c-slider-js-nav__sidebar-list">
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Consequuntur dolorem deserunt dolore incidunt fugiat dolore quaerat harum.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Est et aut.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Enim sunt ipsa est dolorum.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Soluta veniam vitae maiores sunt.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Voluptas laborum excepturi.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Facere voluptatem beatae sunt sed est nisi aut ipsam tenetur.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Libero voluptas suscipit voluptatem nulla qui recusandae ut officia explicabo.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Aut veritatis delectus.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Rem nihil rem placeat nisi inventore sed cumque.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Voluptas eaque est voluptatibus.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Et odio eum laboriosam sapiente.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Sed doloribus fuga ut velit dolor non.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Ut et nihil quibusdam.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Asperiores explicabo necessitatibus quia nihil consectetur et qui dolorem.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Magnam ratione esse expedita reprehenderit quia.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Sit qui molestiae consectetur doloribus.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Aliquam quia aspernatur hic atque aspernatur.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Porro nisi eos consectetur dolor.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Dolores sit perspiciatis.</a>
+          </li>
+          
+          <li class="c-slider-js-nav__sidebar-list-item">
+            <a href="#nowhere" class="c-slider-js-nav__sidebar-list-link">Possimus voluptates fugit rem voluptates.</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="c-slider-js-nav__container-right">
+      <div class="c-slider-js-nav-carousel">
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?back" alt="non enim placeat"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>16 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Consequuntur dolorem deserunt dolore incidunt fugiat dolore quaerat harum.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Consequuntur dolorem deserunt dolore incidunt fugiat dolore quaerat harum.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?microchip" alt="corrupti qui ea"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>17 avril 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Est et aut.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Est et aut.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Account" alt="sint nam dolorum"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>15 avril 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Enim sunt ipsa est dolorum.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Enim sunt ipsa est dolorum.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Planner" alt="velit nulla necessitatibus"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>16 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Soluta veniam vitae maiores sunt.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Soluta veniam vitae maiores sunt.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Belarus" alt="voluptatem error distinctio"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>15 février 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Voluptas laborum excepturi.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Voluptas laborum excepturi.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?connecting" alt="consequatur accusantium et"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>4 mai 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Facere voluptatem beatae sunt sed est nisi aut ipsam tenetur.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Facere voluptatem beatae sunt sed est nisi aut ipsam tenetur.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Sleek" alt="et minus id"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>4 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Libero voluptas suscipit voluptatem nulla qui recusandae ut officia explicabo.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Libero voluptas suscipit voluptatem nulla qui recusandae ut officia explicabo.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?Soap" alt="sed saepe autem"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>13 mai 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Aut veritatis delectus.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Aut veritatis delectus.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?transmitter" alt="quae expedita aut"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>7 octobre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Rem nihil rem placeat nisi inventore sed cumque.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Rem nihil rem placeat nisi inventore sed cumque.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295" alt="accusamus velit quam"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>18 décembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Voluptas eaque est voluptatibus.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Voluptas eaque est voluptatibus.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?bypass" alt="natus asperiores voluptatem"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>23 février 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Et odio eum laboriosam sapiente.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Et odio eum laboriosam sapiente.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?standardization" alt="soluta corporis saepe"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>21 octobre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Sed doloribus fuga ut velit dolor non.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Sed doloribus fuga ut velit dolor non.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?Gorgeous" alt="sequi et nemo"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>30 avril 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Ut et nihil quibusdam.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Ut et nihil quibusdam.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?strategize" alt="quibusdam dolorum soluta"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>19 novembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Asperiores explicabo necessitatibus quia nihil consectetur et qui dolorem.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Asperiores explicabo necessitatibus quia nihil consectetur et qui dolorem.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?XSS" alt="est eveniet ut"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>13 mars 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Magnam ratione esse expedita reprehenderit quia.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Magnam ratione esse expedita reprehenderit quia.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Berkshire" alt="enim rem dolore"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>11 septembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Sit qui molestiae consectetur doloribus.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Sit qui molestiae consectetur doloribus.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Pizza" alt="quo sit porro"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>28 septembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Aliquam quia aspernatur hic atque aspernatur.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Aliquam quia aspernatur hic atque aspernatur.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x333?convergence" alt="voluptate numquam expedita"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>24 décembre 2021
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Porro nisi eos consectetur dolor.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Porro nisi eos consectetur dolor.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x295?Producer" alt="placeat eligendi repellat"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>10 novembre 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Dolores sit perspiciatis.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Dolores sit perspiciatis.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+        <article class="o-card-link c-slider-js-nav__article carousel-cell">
+          <figure class="c-slider-js-nav__article-figure">
+            <img class="c-slider-js-nav__article-image" src="https://source.unsplash.com/384x371?scalable" alt="sed cumque veritatis"/>
+          </figure>
+          <div class="c-slider-js-nav__article-text-container">
+            <div class="c-slider-js-nav__article-date">
+              <span class="u-visually-hidden">Date:</span>27 juillet 2022
+            </div>
+            <h3 class="c-slider-js-nav__article-heading">Possimus voluptates fugit rem voluptates.</h3>
+            <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt o-card-link__link"
+><span>Lire la suite<span class="u-visually-hidden"> de Possimus voluptates fugit rem voluptates.</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <!--
+      TODO: refactorize to put the o-container in the component
+    -->
+    <div class="o-container">
+    <div class="o-grid">
+    <div class="o-prose o-grid__item--self-center">
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag.</p>
+    </div>
+    <figure class="c-figure">
+  
+      <img class="c-figure__media" 
+           src="https://source.unsplash.com/800x800/daily" 
+           alt="Des basket et des fleurs"
+           
+             srcset="https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,">
+    
+    <figcaption class="c-figure__caption">
+        This is the caption
+      </figcaption>
+</figure>
+
+</div>
+    </div>
+
+    <!--
+      TODO: refactorize to put the o-container in the component
+    -->
+    <div class="o-container">
+    <figure class="c-figure">
+  
+      <img class="c-figure__media" 
+           src="https://source.unsplash.com/QDHhz4lPnkU" 
+           alt="Des basket et des fleurs"
+           
+             srcset="https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,">
+    
+    <figcaption class="c-figure__caption">
+        This is the caption
+      </figcaption>
+</figure>
+
+    </div>
+
+    <div class="c-timeline">
+    <div class="o-container">
+        <h2 class="u-h2">L'activité en 2020</h2>
+        <a
+  href="#nowhere"
+  class="c-button c-button--transparent-alt c-slider__article-button"
+><span>lire la suite</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14">
+  <path
+    d="M1 1l6 6-6 6"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a>
+
+
+        <ul class="c-timeline__items" aria-hidden="true">
+            
+                <li class="c-timeline__item">
+                    <div class="o-card-link c-timeline__item-content">
+                        <div class="c-timeline__item-img">
+                            <div class="c-timeline__item-img-bg">
+                                <img src="https://source.unsplash.com/6uneKLGrJPs/280x120" alt="alternative text">
+                            </div>
+                        </div>
+                        <div class="c-timeline__item-text-container">
+                            <h3 class="c-timeline__item-text"><a href="#nowehre" class="o-card-link__link">Jeux olympique de la jeunesse</a></h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" aria-hidden="true">
+    <g>
+        <g transform="rotate(90 5 5.5)">
+            <path fill="#fff" d="M5 .5l5.5 10h-11z"/>
+        </g>
+    </g>
+</svg>
+ <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="2021-01-09">09.01</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-01-22">22.01</time></span>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="c-timeline__item">
+                    <div class="o-card-link c-timeline__item-content">
+                        <div class="c-timeline__item-img">
+                            <div class="c-timeline__item-img-bg">
+                                <img src="https://source.unsplash.com/JHOKa8qcQ_A/280x373" alt="alternative text">
+                            </div>
+                        </div>
+                        <div class="c-timeline__item-text-container">
+                            <h3 class="c-timeline__item-text"><a href="#nowehre" class="o-card-link__link">Gestion de la crise sanitaire du COVID-19</a></h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" aria-hidden="true">
+    <g>
+        <g transform="rotate(90 5 5.5)">
+            <path fill="#fff" d="M5 .5l5.5 10h-11z"/>
+        </g>
+    </g>
+</svg>
+ <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="2021-02-02">02.02</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-03-01">01.03</time></span>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="c-timeline__item">
+                    <div class="o-card-link c-timeline__item-content">
+                        <div class="c-timeline__item-img">
+                            <div class="c-timeline__item-img-bg">
+                                <img src="https://source.unsplash.com/m1AfZRZQ-sg/280x280" alt="alternative text">
+                            </div>
+                        </div>
+                        <div class="c-timeline__item-text-container">
+                            <h3 class="c-timeline__item-text"><a href="#nowehre" class="o-card-link__link">Homicide et tentative d&#39;homicide à Grandson</a></h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" aria-hidden="true">
+    <g>
+        <g transform="rotate(90 5 5.5)">
+            <path fill="#fff" d="M5 .5l5.5 10h-11z"/>
+        </g>
+    </g>
+</svg>
+ <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="2021-07-28">28.07</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-08-03">03.08</time></span>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="c-timeline__item">
+                    <div class="o-card-link c-timeline__item-content">
+                        <div class="c-timeline__item-img">
+                            <div class="c-timeline__item-img-bg">
+                                <img src="https://source.unsplash.com/pLFNq3iQ8ew/280x280" alt="alternative text">
+                            </div>
+                        </div>
+                        <div class="c-timeline__item-text-container">
+                            <h3 class="c-timeline__item-text"><a href="#nowehre" class="o-card-link__link">Fraudes présumées aux crédits COVID-19</a></h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" aria-hidden="true">
+    <g>
+        <g transform="rotate(90 5 5.5)">
+            <path fill="#fff" d="M5 .5l5.5 10h-11z"/>
+        </g>
+    </g>
+</svg>
+ <span class="c-timeline__item-header"><span class="u-visually-hidden">du </span><time datetime="2021-11-10">10.11</time> <span class="u-visually-hidden">au</span><span aria-hidden="true">-</span> <time datetime="2021-11-11">11.11</time></span>
+                        </div>
+                    </div>
+                </li>
+            
+        </ul>
+
+        <!-- Alternative list for screen reader -->
+        <ul class="u-visually-hidden">
+            
+            <li><a href="#nowehre">Jeux olympique de la jeunesse du <time datetime="2021-01-09">09.01</time> au <time datetime="2021-01-22">22.01</time></a>
+            </li>
+            
+            <li><a href="#nowehre">Gestion de la crise sanitaire du COVID-19 du <time datetime="2021-02-02">02.02</time> au <time datetime="2021-03-01">01.03</time></a>
+            </li>
+            
+            <li><a href="#nowehre">Homicide et tentative d&#39;homicide à Grandson du <time datetime="2021-07-28">28.07</time> au <time datetime="2021-08-03">03.08</time></a>
+            </li>
+            
+            <li><a href="#nowehre">Fraudes présumées aux crédits COVID-19 du <time datetime="2021-11-10">10.11</time> au <time datetime="2021-11-11">11.11</time></a>
+            </li>
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+    <div class="o-container u-print-hidden"><div class="aspect-w-16 aspect-h-9">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
+
+
+    <div
+    class="o-container c-content"
+    >
+    
+      <div class="c-content__item">
+        <h2 class="c-content__heading-text">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
+      </div>
+    
+    
+      <div class="c-content__item o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+        
+      </div>
+    
+</div>
+
+
+    <div class="c-highlight" aria-label="Contenu mis en évidence">
+  <div class="o-stack">
+    <div
+    class="o-container c-content"
+    >
+    
+      <div class="c-content__item">
+        <h2 class="c-content__heading-text">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
+      </div>
+    
+    
+      <div class="c-content__item o-prose">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h3>Inter-titre</h3><p>Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless. Schraeder drop gondy, rail fatty slash gear jammer steeps clipless rip bowl couloir bomb hole berm. Huck cruiser crank endo, sucker hole piste ripping ACL huck greasy flow face plant pinner. Japan air Skate park big ring trucks shuttle stoked rock-ectomy.</p>
+        
+      </div>
+    
+</div>
+
+    
+  </div>
+</div>
+
+
+    <div class="o-container o-container--large c-gallery">
+    
+        <div>
+            <h2 class="c-gallery__heading-text">Bro ipsum dolor sit amet gaper backside single track, many Bike epic clipless</h2>
+        </div>
+    
+    <div class="o-grid c-gallery-grid">
+        <div>
+            <figure class="c-figure">
+  
+      <img class="c-figure__media" 
+           src="https://source.unsplash.com/QDHhz4lPnkU" 
+           alt="Des basket et des fleurs"
+           
+             srcset="https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,">
+    
+    <figcaption class="c-figure__caption">
+        This is the caption
+      </figcaption>
+</figure>
+
+        </div>
+        <div>
+            <figure class="c-figure">
+  
+      <img class="c-figure__media" 
+           src="https://source.unsplash.com/QDHhz4lPnkU" 
+           alt="Des basket et des fleurs"
+           
+             srcset="https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,">
+    
+    <figcaption class="c-figure__caption">
+        This is the caption
+      </figcaption>
+</figure>
+
+        </div>
+        <div>
+            <figure class="c-figure">
+  
+      <img class="c-figure__media" 
+           src="https://source.unsplash.com/QDHhz4lPnkU" 
+           alt="Des basket et des fleurs"
+           
+             srcset="https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,">
+    
+    <figcaption class="c-figure__caption">
+        This is the caption
+      </figcaption>
+</figure>
+
+        </div>
+        <div>
+            <figure class="c-figure">
+  
+      <img class="c-figure__media" 
+           src="https://source.unsplash.com/QDHhz4lPnkU" 
+           alt="Des basket et des fleurs"
+           
+             srcset="https://source.unsplash.com/QDHhz4lPnkU/320x210 320w,https://source.unsplash.com/QDHhz4lPnkU/540x360 540w,https://source.unsplash.com/QDHhz4lPnkU/720x480 720w,https://source.unsplash.com/QDHhz4lPnkU/960x640 960w,https://source.unsplash.com/QDHhz4lPnkU/1140x760 1140w,">
+    
+    <figcaption class="c-figure__caption">
+        This is the caption
+      </figcaption>
+</figure>
+
+        </div>
+        <div>
+            Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.
+        </div>
+    </div>
+</div>
+
+    <div class="o-container">
+  
+      <div class="c-carousel__item">
+        <h2 class="c-carousel_heading-text">Bro ipsum dolor sit amet gaper backside single track, manny Bike epic clipless</h2>
+      </div>
+  
+  <ul class="c-carousel main-carousel" data-flickity='{ "contain": true, "accessibility": true, "pageDots": true }'>
+    
+      <li class="c-carousel__cell carousel-cell">
+        <a href="https://www.vd.ch" class="c-carousel__link">
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?Virtual');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?Virtual"
+                  alt="earum in molestias">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Ullam nisi sequi reiciendis.</figcaption>
+          </figure>
+        </a>
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?calculate');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?calculate"
+                  alt="asperiores nobis officia">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Nam et sed minima.</figcaption>
+          </figure>
+        
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?Rufiyaa');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?Rufiyaa"
+                  alt="ratione dolores aperiam">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Explicabo voluptatibus mollitia ipsam et magnam non.</figcaption>
+          </figure>
+        
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        <a href="https://www.vd.ch" class="c-carousel__link">
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?Borders');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?Borders"
+                  alt="numquam omnis eos">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">A dolore at voluptas ab illum.</figcaption>
+          </figure>
+        </a>
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        <a href="https://www.vd.ch" class="c-carousel__link">
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?convergence');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?convergence"
+                  alt="molestias beatae quibusdam">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Esse ea vero doloremque quia accusantium culpa aliquam consequatur qui.</figcaption>
+          </figure>
+        </a>
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576"
+                  alt="praesentium quisquam quia">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Et cumque qui.</figcaption>
+          </figure>
+        
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        <a href="https://www.vd.ch" class="c-carousel__link">
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?Integrated');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?Integrated"
+                  alt="aliquam qui necessitatibus">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Quibusdam velit rerum.</figcaption>
+          </figure>
+        </a>
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?Dollar');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?Dollar"
+                  alt="assumenda vel velit">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Dolorum modi praesentium sequi cupiditate impedit.</figcaption>
+          </figure>
+        
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?communities');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?communities"
+                  alt="aut quia neque">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Impedit omnis aut optio ipsum.</figcaption>
+          </figure>
+        
+      </li>
+    
+      <li class="c-carousel__cell carousel-cell">
+        <a href="https://www.vd.ch" class="c-carousel__link">
+          <figure class="c-carousel__figure">
+            <div class="c-carousel__img-container"
+                style="
+                        background-image: url('https://source.unsplash.com/1024x576?Guinea');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        ">
+              <img class="c-carousel__img"
+                  src="https://source.unsplash.com/1024x576?Guinea"
+                  alt="consectetur saepe neque">
+            </div>
+            <figcaption
+              class="c-carousel__figcaption">Et soluta rerum.</figcaption>
+          </figure>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  </main>
+
+  <footer class="c-footer" aria-label="Pied de page" role="contentinfo">
+  <div class="o-container o-container--large">
+    <h2 class="u-visually-hidden">Pied de page</h2>
+    
+    <div class="c-footer__main">
+      
+      <div class="c-footer__page">
+        <h3 class="u-visually-hidden">Liens connexes</h3>
+        <nav aria-label="Navigation pied de page">
+          <ul class="c-footer__list-page">
+            <li><a href="#nowhere">Mentions légales</a></li>
+            <li><a href="#nowhere">Plan du site</a></li>
+            <li><a href="#nowhere">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="c-footer__social">
+        <h3 class="u-visually-hidden md:u-not-visually-hidden">Partager</h3>
+        <nav aria-label="Navigation réseaux sociaux">
+          <ul class="c-footer__list-social">
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <path
+    d="M12.5.5C5.9.5.5 5.9.5 12.5s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm6 9.7v.4c0 4.5-3.6 8.2-8.1 8.2h-.1c-1.6 0-3.1-.5-4.4-1.3h.7c1.3 0 2.6-.4 3.6-1.2-1.2 0-2.3-.8-2.7-2 .2 0 .4.1.5.1.3 0 .5 0 .8-.1-1.3-.3-2.3-1.5-2.3-2.8.4.2.9.3 1.3.4-.8-.5-1.3-1.4-1.3-2.4 0-.5.1-1 .4-1.5 1.5 1.8 3.6 2.9 6 3-.1-.2-.1-.4-.1-.7 0-1.6 1.3-2.9 2.9-2.9.8 0 1.6.3 2.1.9.6-.1 1.3-.4 1.8-.7-.2.7-.7 1.2-1.3 1.6.6-.1 1.1-.2 1.7-.5-.4.6-.9 1.1-1.5 1.5z"
+  />
+</svg>
+</a></li>
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+  <path
+    d="M24.5 12.6c0-6.7-5.4-12.1-12-12.1S.5 5.9.5 12.6c0 5.9 4.3 11 10.1 11.9v-8.4h-3v-3.5h3V9.9c0-3 1.8-4.7 4.5-4.7.9 0 1.8.1 2.7.2v3h-1.5c-.9-.1-1.8.5-1.9 1.5V12.6h3.3l-.5 3.5h-2.8v8.4c5.8-.9 10.1-6 10.1-11.9z"
+  />
+</svg>
+</a></li>
+            <li><a href="#nowhere"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path
+    d="M8.2 11.8L19 .9m0 0l-6.4 18c-.1.3-.4.4-.7.3l-.3-.3-3.4-7-6.9-3.6C1 8.2.9 7.9 1 7.6c.1-.1.1-.2.3-.3L19 .9"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="c-footer__logo">
+        <h3 class="u-visually-hidden">Logo de l'entité</h3>
+        <img
+  class="c-logo-entity"
+  src="../../assets/images/logo-entity.png"
+  alt="logo de l'entité"
+/>
+
+      </div>
+      
+    </div>
+    <div class="c-footer__secondary">
+      &copy; Name of the service - 2021
+    </div>
+  </div>
+</footer>
+
+
+</div>
+
+    <!-- Scripts -->
+    <script src="../../assets/scripts/flickity.pkgd.min.js"></script>
+    <script src="../../assets/scripts/masonry.pkgd.min.js"></script>
+    <script src="../../assets/scripts/navigation.js"></script>
+    <script src="../../assets/scripts/accordeon.js"></script>
+    <script src="../../assets/scripts/timeline.js"></script>
+    <script src="../../assets/scripts/slider-js-nav.js"></script>
+    <script src="../../assets/scripts/alert.js"></script>
+  </body>
+</html>
+
