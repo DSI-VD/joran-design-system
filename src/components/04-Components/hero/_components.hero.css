@@ -147,6 +147,7 @@
 .c-hero__caption {
   @extend %h4;
 
+  order: -5;
   @apply
     mb-4
     text-white
@@ -160,6 +161,7 @@
 .c-hero__uptitle {
   @extend %h4;
 
+  order: -10;
   @apply
     mb-1
     text-white
