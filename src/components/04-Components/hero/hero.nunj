@@ -34,7 +34,7 @@
     <div class="c-hero__top o-container">
         {% if title %}<h1 class="c-hero__heading">{{ heading }}</h1>
         {% else %}<div class="c-hero__heading">{{ heading }}</div>{% endif %}
-        {% if title %}
+        {% if uptitle %}
         <div class="c-hero__uptitle">{{ uptitle }}</div>
         {% endif %}
         <div class="c-hero__caption">{{ caption }}</div>
