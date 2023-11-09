@@ -144,17 +144,28 @@
  # Caption
  ----------------------------------- */
 
-/***
- * 1. Put the caption before the title visually
- */
 .c-hero__caption {
   @extend %h4;
 
+  order: -5;
   @apply
-    order-first
     mb-4
     text-white
     ;
+}
+
+/* -----------------------------------
+ # Uptitle
+ ----------------------------------- */
+
+.c-hero__uptitle {
+  @extend %h4;
+
+  order: -10;
+  @apply
+    mb-1
+    text-white
+  ;
 }
 
 /* -----------------------------------

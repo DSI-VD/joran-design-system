@@ -216,6 +216,8 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__top o-container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span>[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__uptitle&quot;</span>&gt;</span>[H4] uptitle<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span>[H4] caption<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__bottom o-container&quot;</span>&gt;</span>
@@ -268,6 +270,9 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__top o-container&quot;</span>&gt;</span>
         </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> title %}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">else</span></span> %}</span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__heading&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ heading }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> uptitle %}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__uptitle&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ uptitle }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-hero__caption&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ caption }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> arrow -%}</span><span class="xml">
@@ -285,6 +290,7 @@
         
             
             <pre>{
+  <span class="hljs-attr">&quot;uptitle&quot;</span>: <span class="hljs-string">&quot;[H4] uptitle&quot;</span>,
   <span class="hljs-attr">&quot;caption&quot;</span>: <span class="hljs-string">&quot;[H4] caption&quot;</span>,
   <span class="hljs-attr">&quot;heading&quot;</span>: <span class="hljs-string">&quot;[H1] Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.&quot;</span>,
   <span class="hljs-attr">&quot;variantModifier&quot;</span>: <span class="hljs-string">&quot;c-hero--full c-hero--with-image&quot;</span>,
@@ -308,13 +314,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-e92c33f924bed889fba08235a18f4cff">_components.hero.css</option>
+                <option value="file-5da27967665c143192e0aa41731bbdf5">_components.hero.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-e92c33f924bed889fba08235a18f4cff" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-5da27967665c143192e0aa41731bbdf5" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -468,17 +474,28 @@
  # Caption
  ----------------------------------- */</span>
 
-<span class="hljs-comment">/***
- * 1. Put the caption before the title visually
- */</span>
 <span class="hljs-selector-class">.c-hero__caption</span> {
   <span class="hljs-keyword">@extend</span> %h4;
 
+  <span class="hljs-attribute">order</span>: -<span class="hljs-number">5</span>;
   <span class="hljs-keyword">@apply</span>
-    order-first
     mb-<span class="hljs-number">4</span>
     text-white
     ;
+}
+
+<span class="hljs-comment">/* -----------------------------------
+ # Uptitle
+ ----------------------------------- */</span>
+
+<span class="hljs-selector-class">.c-hero__uptitle</span> {
+  <span class="hljs-keyword">@extend</span> %h4;
+
+  <span class="hljs-attribute">order</span>: -<span class="hljs-number">10</span>;
+  <span class="hljs-keyword">@apply</span>
+    mb-<span class="hljs-number">1</span>
+    text-white
+  ;
 }
 
 <span class="hljs-comment">/* -----------------------------------
@@ -516,7 +533,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.5 KB</span>
+                    <span class="Meta-value">2.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -3001,7 +3018,7 @@
                     <dt class="Tree-asideTerm">Version:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            1.6.5
+                            1.6.6
                         
                     </dd>
                 </div>
@@ -3010,8 +3027,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-12-22T14:17:34.209Z">
-                                22.12.2022 15:17:34
+                            <time datetime="2023-11-09T09:44:09.818Z">
+                                11/9/2023, 10:44:09 AM
                             </time>
                         
                     </dd>
